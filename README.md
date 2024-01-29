@@ -1,3 +1,5 @@
+![fig](https://raw.githubusercontent.com/ChenZhu-Xie/NJU_thesis_doctor__xcz/master/img/cover.png)
+
 # NJU Thesis: 南京大学学位论文 LaTeX 模板
 
 ![build status](https://github.com/nju-lug/NJUThesis/actions/workflows/build.yml/badge.svg)
