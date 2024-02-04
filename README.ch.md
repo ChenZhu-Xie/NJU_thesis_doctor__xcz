@@ -1,4 +1,5 @@
-![fig](https://raw.githubusercontent.com/ChenZhu-Xie/NJU_thesis_doctor__xcz/master/img/cover.png "『谢尘竹 博士论文』封面")
+<!-- ![fig](https://raw.githubusercontent.com/ChenZhu-Xie/NJU_thesis_doctor__xcz/master/img/cover.png "『谢尘竹 博士论文』封面") -->
+![fig](https://gitee.com/ChenZhu-Xie/NJU_thesis_doctor__xcz/raw/master/img/cover.png "『谢尘竹 博士论文』封面")
 
 # NJU Thesis: 南京大学学位论文 LaTeX 模板
 
