@@ -1,4 +1,4 @@
-![fig](https://raw.githubusercontent.com/ChenZhu-Xie/NJU_thesis_doctor__xcz/master/img/cover.png)
+![fig](https://raw.githubusercontent.com/ChenZhu-Xie/NJU_thesis_doctor__xcz/master/img/cover.png "The cover of『Xcz's doctor thesis』")
 
 # NJU Thesis: 南京大学学位论文 LaTeX 模板
 
