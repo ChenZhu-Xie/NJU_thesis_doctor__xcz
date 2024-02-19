@@ -1,5 +1,7 @@
 ![fig](https://raw.githubusercontent.com/ChenZhu-Xie/NJU_thesis_doctor__xcz/master/img/cover.png "The cover of『Xcz's doctor thesis』")
 
+* 中文「自述文档」㊥ 👉 [xcz 的 NJU 博士毕业论文](https://gitee.com/ChenZhu-Xie/NJU_thesis_doctor__xcz)
+
 # NJU Thesis: 南京大学学位论文 LaTeX 模板
 
 ![build status](https://github.com/nju-lug/NJUThesis/actions/workflows/build.yml/badge.svg)
