@@ -112,16 +112,16 @@ To produce the documentation run the original source files ending with
 %
 %<class>\NeedsTeXFormat{LaTeX2e}
 %<*!(driver|install)>
-%<+!driver>\GetIdInfo $Id: njuthesis.dtx 1.3.2 2023-12-05 16:30:00
+%<+!driver>\GetIdInfo $Id: njuthesis.dtx 1.4.0 2024-03-19 20:30:00
 %<+!driver>  +0800 NJU LUG <git+nju-lug-email-3104-issue-@yaoge123.cn>$
 %<class>  {Thesis template for Nanjing University}
 %<class>\ProvidesExplClass{njuthesis}
 %<def-u>  {Undergraduate definition file for njuthesis}
+% ^^A 诚耀百廿，雄创一流
+% ^^A 南京大学一百二十周年华诞邀您共襄盛举！
 %<def-u>\ProvidesExplFile{njuthesis-undergraduate.def}
 %<def-g>  {Graduate definition file for njuthesis}
 %<def-g>\ProvidesExplFile{njuthesis-graduate.def}
-% ^^A 诚耀百廿，雄创一流
-% ^^A 南京大学一百二十周年华诞邀您共襄盛举！
 %<def-p>  {Postdoctoral definition file for njuthesis}
 %<def-p>\ProvidesExplFile{njuthesis-postdoctoral.def}
 %<doc-cls>  {Documentation style for njuthesis}
@@ -148,7 +148,7 @@ To produce the documentation run the original source files ending with
 %   \thanks{E-mail: \href{mailto:git+nju-lug-email-3104-issue-@yaoge123.cn}
 %     {git+nju-lug-email-3104-issue-@yaoge123.cn}}}
 %
-% \date{v1.3.2 \quad 2023-12-05}
+% \date{v1.4.0 \quad 2024-03-19}
 %
 % \changes{v0.1}{2021/09/04}{开始开发。}
 % \changes{v0.2}{2021/09/07}{初步搭建了可用的模板。}
@@ -183,6 +183,8 @@ To produce the documentation run the original source files ending with
 % \changes{v1.0}{2022/08/02}{删除 \LaTeX 基础用法的说明。}
 % \changes{v1.1}{2023/01/05}{适配2023届本科生毕业毕业论文（设计）规范。}
 % \changes{v1.1}{2023/01/05}{适配新版南大 \LaTeX 在线编辑器。}
+% \changes{v1.4}{2024/03/11}{总是全局修改全局变量。}
+% \changes{v1.4}{2024/03/18}{将变量统一为 |l| 类型。}
 %
 % \maketitle
 %
@@ -799,9 +801,9 @@ To produce the documentation run the original source files ending with
 % 新的一章以及封面、摘要、参考文献表等特殊页面都会从奇数页开始，
 % 在奇数页结束的内容后会补上一页空页，更适合印刷输出。
 %
-% \begin{function}[added=2021-12-15]{draft}
+% \begin{function}[added=2021-12-15,updated=2024-03-19]{draft}
 %   \begin{syntax}
-%     \OPT{draft} = <\TFF>
+%      <\OPT{draft}>
 %   \end{syntax}
 % 是否开启草稿模式，默认关闭。
 % \end{function}
@@ -2650,6 +2652,7 @@ To produce the documentation run the original source files ending with
 \@ifpackagelater { expl3 } { 2023/10/10 } { }
   {
     \cs_generate_variant:Nn \tl_set:Nn        { Ne }
+    \cs_generate_variant:Nn \tl_gset:Nn       { Ne }
     \cs_generate_variant:Nn \tl_const:Nn      { Ne }
     \cs_generate_variant:Nn \tl_gput_right:Nn { Ne }
   }
@@ -2713,11 +2716,11 @@ To produce the documentation run the original source files ending with
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{variable}{\g_@@_opt_twoside_bool}
-% 定义用于判断是否使用双面模式的变量，初始值为使用双面模式。
+% \begin{variable}{\g_@@_opt_draft_bool}
+% 用于判断草稿模式的变量。
 %    \begin{macrocode}
-\bool_new:N      \g_@@_opt_twoside_bool
-\bool_set_true:N \g_@@_opt_twoside_bool
+\bool_new:N        \g_@@_opt_draft_bool
+\bool_gset_false:N \g_@@_opt_draft_bool
 %    \end{macrocode}
 % \end{variable}
 %
@@ -2840,19 +2843,20 @@ To produce the documentation run the original source files ending with
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_quad:,\@@_qquad:}
+% \begin{macro}{\@@_space:,\@@_quad:,\@@_qquad:}
 % 等价于 \LaTeXe{} 中的 \tn{quad} 和 \tn{qquad}。
 %    \begin{macrocode}
-\cs_new:Nn \@@_quad:  { \skip_horizontal:n { 1 em } }
-\cs_new:Nn \@@_qquad: { \skip_horizontal:n { 2 em } }
+\cs_new:Nn \@@_space: { \skip_horizontal:n { .5 em } }
+\cs_new:Nn \@@_quad:  { \skip_horizontal:n {  1 em } }
+% \cs_new:Nn \@@_qquad: { \skip_horizontal:n {  2 em } }
 %    \end{macrocode}
 % \end{macro}
 %
 % \begin{macro}{\@@_vskip:,\@@_hskip:}
 % 生成一个较小的 skip。
 %    \begin{macrocode}
-\cs_new:Nn \@@_vskip: { \skip_vertical:N   \c_@@_vsep_dim }
-\cs_new:Nn \@@_hskip: { \skip_horizontal:N \c_@@_hsep_dim }
+\cs_new:Nn \@@_vskip: { \skip_vertical:N   \l_@@_vsep_dim }
+\cs_new:Nn \@@_hskip: { \skip_horizontal:N \l_@@_hsep_dim }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -2874,12 +2878,15 @@ To produce the documentation run the original source files ending with
 % \begin{macro}{\@@_define_name:nn,\@@_define_name:nnn}
 % 用来定义默认名称的辅助函数。
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_define_name:nn #1#2
-  { \tl_const:cn { c_@@_name_ #1    _tl } {#2} }
-\cs_new_protected:Npn \@@_define_name:nnn #1#2#3
+\cs_new:Npn \@@_define_name:nn #1
   {
-    \tl_const:cn { c_@@_name_ #1    _tl } {#2}
-    \tl_const:cn { c_@@_name_ #1 _en_tl } {#3}
+    \tl_new:c  { l_@@_name_ #1    _tl }
+    \tl_set:cn { l_@@_name_ #1    _tl }
+  }
+\cs_new:Npn \@@_define_name:nnn #1#2#3
+  {
+    \@@_define_name:nn { #1     } {#2}
+    \@@_define_name:nn { #1 _en } {#3}
   }
 %    \end{macrocode}
 % \end{macro}
@@ -2887,27 +2894,32 @@ To produce the documentation run the original source files ending with
 % \begin{macro}{\@@_define_fmt:nn}
 % 用来定义默认样式的辅助函数。
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_define_fmt:nn #1#2
-  { \tl_const:cn { c_@@_fmt_ #1 _tl } {#2} }
+\cs_new:Npn \@@_define_fmt:nn #1 { \tl_set:cn { l_@@_fmt_ #1 _tl } }
 %    \end{macrocode}
 % \end{macro}
 %
 % \begin{macro}{\@@_define_dim:nn,\@@_define_skip:nn}
 % 用来定义默认间距的辅助函数。
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_define_dim:nn #1#2
-  { \dim_const:cn  { c_@@_ #1 _dim  } {#2} }
-\cs_new_protected:Npn \@@_define_skip:nn #1#2
-  { \skip_const:cn { c_@@_ #1 _skip } {#2} }
+\cs_new:Npn \@@_define_dim:nn  #1
+  {
+    \dim_new:c   { l_@@_ #1 _dim  }
+    \dim_set:cn  { l_@@_ #1 _dim  }
+  }
+\cs_new:Npn \@@_define_skip:nn #1
+  {
+    \skip_new:c  { l_@@_ #1 _skip }
+    \skip_set:cn { l_@@_ #1 _skip }
+  }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_name:n,\@@_info:n,\@@_fmt:n}
+% \begin{macro}{\@@_info:n,\@@_name:n,\@@_fmt:n}
 % 根据变量名调用名称、内容或格式信息。
 %    \begin{macrocode}
-\cs_new:Npn \@@_name:n #1 { \tl_use:c { c_@@_name_ #1 _tl } }
 \cs_new:Npn \@@_info:n #1 { \tl_use:c { g_@@_info_ #1 _tl } }
-\cs_new:Npn \@@_fmt:n  #1 { \tl_use:c { c_@@_fmt_  #1 _tl } }
+\cs_new:Npn \@@_name:n #1 { \tl_use:c { l_@@_name_ #1 _tl } }
+\cs_new:Npn \@@_fmt:n  #1 { \tl_use:c { l_@@_fmt_  #1 _tl } }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -2976,7 +2988,7 @@ To produce the documentation run the original source files ending with
 \cs_new_protected:Npn \@@_box_ulined:NN #1#2
   {
     \mode_leave_vertical:
-    \rule [ \c_@@_ruledpi_dim ] {#1} { \c_@@_rulehti_dim }
+    \rule [ \l_@@_ruledpi_dim ] {#1} { \l_@@_rulehti_dim }
     \skip_horizontal:n { -#1 }
     \hbox_to_wd:nn {#1} { \tex_hfil:D #2 \tex_hfil:D }
   }
@@ -3031,12 +3043,12 @@ To produce the documentation run the original source files ending with
 % \end{macro}
 %
 % \begin{macro}{\@@_box_spread_name:Nn,\@@_box_spread_name:NNn}
-% 以上盒子只用来打印 \cs[no-index]{c_@@_name_\meta{描述}_tl} 变量。
+% 以上盒子只用来打印 \cs[no-index]{l_@@_name_\meta{描述}_tl} 变量。
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_box_spread_name:Nn #1#2
-  { \@@_box_spread:NNv #1 \c_empty_tl { c_@@_name_ #2 _tl } }
+  { \@@_box_spread:NNv #1 \c_empty_tl { l_@@_name_ #2 _tl } }
 \cs_new_protected:Npn \@@_box_spread_name:NNn #1#2#3
-  { \@@_box_spread:NNv #1 #2 { c_@@_name_ #3 _tl } }
+  { \@@_box_spread:NNv #1 #2 { l_@@_name_ #3 _tl } }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -3071,7 +3083,7 @@ To produce the documentation run the original source files ending with
 % \changes{v1.1}{2022/11/29}{修复空返回值在国家图书馆封面引发的死循环。}
 % 防止空的返回值引发死循环。
 %    \begin{macrocode}
-        \clist_pop:NNF #3 #2 { \tl_set_eq:NN #2 \c_empty_tl }
+        \clist_gpop:NNF #3 #2 { \tl_set_eq:NN #2 \c_empty_tl }
         \@@_box_ulined:NN #4 #2 \tex_par:D
       }
   }
@@ -3094,7 +3106,7 @@ To produce the documentation run the original source files ending with
 \cs_new_protected:Npn \@@_uline:n #1
   {
     \mode_leave_vertical:
-    \rule [ \c_@@_ruledpi_dim ] {#1} { \c_@@_rulehti_dim }
+    \rule [ \l_@@_ruledpi_dim ] {#1} { \l_@@_rulehti_dim }
     \skip_horizontal:n { -#1 }
   }
 %    \end{macrocode}
@@ -3109,9 +3121,9 @@ To produce the documentation run the original source files ending with
 \cs_new_protected:Npn \@@_uuline:N #1
   {
     \mode_leave_vertical:
-    \rule [ \c_@@_ruledpii_dim  ] {#1} { \c_@@_rulehtii_dim }
+    \rule [ \l_@@_ruledpii_dim  ] {#1} { \l_@@_rulehtii_dim }
     \skip_horizontal:n { -#1 }
-    \rule [ \c_@@_ruledpiii_dim ] {#1} { \c_@@_rulehtii_dim }
+    \rule [ \l_@@_ruledpiii_dim ] {#1} { \l_@@_rulehtii_dim }
     \skip_horizontal:n { -#1 }
   }
 %    \end{macrocode}
@@ -3189,7 +3201,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_uline_entry:Nn #1#2
   {
-    \@@_get_width_print:Nv #1 { c_@@_name_ #2 _tl }
+    \@@_get_width_print:Nv #1 { l_@@_name_ #2 _tl }
     \@@_box_ulined_info:Nn #1 {#2}
   }
 %    \end{macrocode}
@@ -3204,7 +3216,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_uline_bientry:Nn #1#2
   {
-    \@@_get_width_print:Nv #1 { c_@@_name_ #2 _tl }
+    \@@_get_width_print:Nv #1 { l_@@_name_ #2 _tl }
     \dim_sub:Nn #1 { \textwidth / 2 }
     \@@_box_ulined_info:Nn #1 {#2}
   }
@@ -3244,7 +3256,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \cs_new:Npn \@@_date:nnn #1#2#3
   {
-    \tl_set:cx { g_@@_info_ #2 date #1 _tl }
+    \tl_gset:cx { g_@@_info_ #2 date #1 _tl }
       {
         \tl_if_empty:nTF {#3}
           { \@@_name:n { blankdate #1 } }
@@ -3304,7 +3316,7 @@ To produce the documentation run the original source files ending with
 \cs_new:Npn \@@_breakpar_loop:n #1
   {
     \dim_set:Nn \l_@@_tmpa_dim
-      { - \tex_prevdepth:D - \c_@@_ruledpi_dim - \c_@@_rulehti_dim }
+      { - \tex_prevdepth:D - \l_@@_ruledpi_dim - \l_@@_rulehti_dim }
     \hbox_gset:Nn \l_@@_tmpc_box { }
     \@@_loop_until:nnn { \box_if_empty_p:N \l_@@_tmpb_box }
       {
@@ -3389,7 +3401,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
     \parbox [ t ] {#3}
       {
-        \c_@@_fmt_covertitle_tl \@@_uline_title:
+        \l_@@_fmt_covertitle_tl \@@_uline_title:
         \dim_gset_eq:NN \l_@@_tmpa_dim \tex_prevdepth:D
       }
     \tex_par:D
@@ -3468,9 +3480,9 @@ To produce the documentation run the original source files ending with
 % 此时 \tn{njuemblem}、\tn{njuname} 和相关长度都是没有定义的。
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_emblem:N #1
-  { \njuemblem [ \c_@@_fmt_emblemcolor_tl ] {#1} { ! } }
+  { \njuemblem [ \l_@@_fmt_emblemcolor_tl ] {#1} { ! } }
 \cs_new_protected:Npn \@@_name:N   #1
-  { \njuname   [ \c_@@_fmt_namecolor_tl   ] {#1} { ! } }
+  { \njuname   [ \l_@@_fmt_namecolor_tl   ] {#1} { ! } }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -3809,6 +3821,26 @@ To produce the documentation run the original source files ending with
 % \subsection{模板选项}
 % \changes{v0.11}{2021/11/15}{进行了效率优化。}
 %
+% \begin{macro}{\@@_pass_option:nn}
+% 封装 \LaTeXe{} 传参函数。注意参数顺序有变化。
+%    \begin{macrocode}
+\cs_new:Npn \@@_pass_option:nn #1#2 { \PassOptionsToClass {#2} {#1} }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_pass_option:n,\@@_pass_option:V,\@@_pass_option:e}
+%    \begin{macrocode}
+\cs_new:Npn \@@_pass_option:n { \@@_pass_option:nn { ctexbook } }
+\cs_generate_variant:Nn \@@_pass_option:n { V }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_pass_option:}
+%    \begin{macrocode}
+\cs_new:Npn \@@_pass_option: { \@@_pass_option:V \l_keys_key_str }
+%    \end{macrocode}
+% \end{macro}
+%
 %    \begin{macrocode}
 \keys_define:nn { nju }
   {
@@ -3830,9 +3862,9 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
     degree              .choice:,
     degree / academic     .code:n  =
-      { \bool_set_true:N  \g_@@_opt_academic_bool },
+      { \bool_gset_true:N  \g_@@_opt_academic_bool },
     degree / professional .code:n  =
-      { \bool_set_false:N \g_@@_opt_academic_bool },
+      { \bool_gset_false:N \g_@@_opt_academic_bool },
     degree             .initial:n  = academic,
 %    \end{macrocode}
 % \end{macro}
@@ -3841,7 +3873,7 @@ To produce the documentation run the original source files ending with
 % 是否需要国家图书馆封面。本选项仅用于研究生模板，默认关闭。
 % \footnote{nl 代表 National Library。}
 %    \begin{macrocode}
-    nl-cover          .bool_set:N  = \g_@@_opt_nlcover_bool,
+    nl-cover         .bool_gset:N  = \g_@@_opt_nlcover_bool,
     nl-cover           .initial:n  = false,
 %    \end{macrocode}
 % \end{macro}
@@ -3853,17 +3885,22 @@ To produce the documentation run the original source files ending with
 % \footnote{原创性声明的英文翻译为 Declaration of Originality，
 % 为了使选项表义更清晰同时缩减名称长度，将其修改为“声明页”这一名称。}
 %    \begin{macrocode}
-    decl-page         .bool_set:N  = \g_@@_opt_decl_bool,
+    decl-page        .bool_gset:N  = \g_@@_opt_decl_bool,
     decl-page          .initial:n  = false,
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{draft,\g_@@_opt_draft_bool}
+% \begin{macro}{draft}
 % \changes{v0.13}{2021/12/15}{新增草稿模式选项。}
+% \changes{v1.4}{2024/03/19}{草稿模式选项不接受传入值。}
 % 是否开启草稿模式（默认关闭）。
 %    \begin{macrocode}
-    draft            .bool_gset:N  = \g_@@_opt_draft_bool,
-    draft              .initial:n  = false,
+    draft      .value_forbidden:n  = true,
+    draft                 .code:n  =
+      {
+        \bool_gset_true:N \g_@@_opt_draft_bool
+        \@@_pass_option:
+      },
 %    \end{macrocode}
 % \end{macro}
 %
@@ -3873,7 +3910,18 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
     oneside    .value_forbidden:n  = true,
     twoside    .value_forbidden:n  = true,
-    oneside  .bool_gset_inverse:N  = \g_@@_opt_twoside_bool,
+    oneside               .code:n  =
+      {
+        \bool_gset_false:N \g_@@_opt_twoside_bool
+        \tl_gset:Nn \g_@@_name_pagemode_tl { oneside }
+        \@@_pass_option:
+      },
+    twoside               .code:n  =
+      {
+        \bool_gset_true:N  \g_@@_opt_twoside_bool
+        \tl_gset:Nn \g_@@_name_pagemode_tl { twoside }
+        \@@_pass_option:
+      },
 %    \end{macrocode}
 % \end{macro}
 %
@@ -3883,7 +3931,7 @@ To produce the documentation run the original source files ending with
 % \begin{macro}{\g_@@_opt_anon_bool}
 % 盲审模式。
 %    \begin{macrocode}
-    anonymous         .bool_set:N  = \g_@@_opt_anon_bool,
+    anonymous        .bool_gset:N  = \g_@@_opt_anon_bool,
     anonymous          .initial:n  = false,
 %    \end{macrocode}
 % \end{macro}
@@ -3895,10 +3943,10 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
     latin-font         .choices:nn =
       { fandol, gyre, mac, macoffice, win, none }
-      { \tl_set:Nn \g_@@_font_latin_tl {#1} },
+      { \tl_gset:Nn \g_@@_font_latin_tl {#1} },
     cjk-font           .choices:nn =
       { fandol, founder, mac, macoffice, noto, source, win, none }
-      { \tl_set:Nn \g_@@_font_cjk_tl   {#1} },
+      { \tl_gset:Nn \g_@@_font_cjk_tl   {#1} },
 %    \end{macrocode}
 % \end{macro}
 %
@@ -3922,7 +3970,7 @@ To produce the documentation run the original source files ending with
         asana, cambria, fira, garamond, lm, libertinus, newcm,
         stix, bonum, dejavu, pagella, schola, termes, xits, none
       }
-      { \tl_set_eq:NN \g_@@_font_math_tl  \l_keys_choice_tl },
+      { \tl_gset_eq:NN \g_@@_font_math_tl  \l_keys_choice_tl },
     math-font          .initial:n  = xits,
 %    \end{macrocode}
 % \end{macro}
@@ -3932,8 +3980,8 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
     font-path             .code:n  =
       {
-        \bool_set_true:N \g_@@_font_path_bool
-        \tl_set_eq:NN \g_@@_font_path_tl \l_keys_value_tl
+        \bool_gset_true:N \g_@@_font_path_bool
+        \tl_gset_eq:NN \g_@@_font_path_tl \l_keys_value_tl
       },
 %    \end{macrocode}
 % \end{macro}
@@ -3943,7 +3991,8 @@ To produce the documentation run the original source files ending with
 % \begin{macro}{\g_@@_opt_zihao_tl}
 % 字号。默认为小四号。
 %    \begin{macrocode}
-    zihao               .tl_set:N  = \g_@@_opt_zihao_tl,
+    zihao                 .code:n  =
+      { \@@_pass_option:n { zihao      = #1 } },
     zihao              .initial:n  = -4,
 %    \end{macrocode}
 % \end{macro}
@@ -3956,7 +4005,8 @@ To produce the documentation run the original source files ending with
 % Word 行距，故默认值为 $1.5\times\frac{1.3}{1.2} = 1.625$。
 % 更详细的说明请参考 \pkg{zhlineskip} 宏包文档。
 %    \begin{macrocode}
-    linespread          .tl_set:N  = \g_@@_opt_linespread_tl,
+    linespread            .code:n  =
+      { \@@_pass_option:n { linespread = #1 } },
     linespread         .initial:n  = 1.625,
 %    \end{macrocode}
 % \end{macro}
@@ -3966,10 +4016,15 @@ To produce the documentation run the original source files ending with
 % \changes{v0.16}{2022/02/23}{新增 \opt{config} 选项。}
 % 配置文件路径。
 %    \begin{macrocode}
-    config           .clist_set:N  = \g_@@_config_clist
+    config          .clist_gset:N  = \g_@@_config_clist
   }
 %    \end{macrocode}
 % \end{macro}
+%
+% 初始化为双页模式。
+%    \begin{macrocode}
+\keys_set:nn { nju } { twoside }
+%    \end{macrocode}
 %
 % \begin{macro}{\g_@@_name_optional_pkg_clist}
 %    \begin{macrocode}
@@ -3997,7 +4052,7 @@ To produce the documentation run the original source files ending with
         \bool_if:cT { g_@@_opt_load_ #2 _bool }
           { \RequirePackage {#1} }
       }
-    \clist_put_right:Nn \g_@@_name_optional_pkg_clist {#1}
+    \clist_gput_right:Nn \g_@@_name_optional_pkg_clist {#1}
   }
 %    \end{macrocode}
 % \end{macro}
@@ -4057,18 +4112,11 @@ To produce the documentation run the original source files ending with
 \ProcessKeysOptions { nju }
 %    \end{macrocode}
 %
-% 处理单双面模式选项。
-%    \begin{macrocode}
-\bool_if:NTF \g_@@_opt_twoside_bool
-  { \tl_const:Nn \c_@@_name_pagemode_tl { twoside } }
-  { \tl_const:Nn \c_@@_name_pagemode_tl { oneside } }
-%    \end{macrocode}
-%
 % \changes{v1.1}{2022/09/26}{盲审模式下不显示声明页。}
 % 盲审模式下不显示声明页。
 %    \begin{macrocode}
 \bool_if:NT \g_@@_opt_anon_bool
-  { \bool_set_false:N \g_@@_opt_decl_bool }
+  { \bool_gset_false:N \g_@@_opt_decl_bool }
 %    \end{macrocode}
 %
 %
@@ -4141,7 +4189,7 @@ To produce the documentation run the original source files ending with
 % 定义修改默认样式的接口。
 %    \begin{macrocode}
 \NewDocumentCommand \njusetformat { m m }
-  { \tl_gset:cn { c_@@_fmt_ #1 _tl } {#2} }
+  { \@@_define_fmt:nn {#1} {#2} }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -4153,8 +4201,8 @@ To produce the documentation run the original source files ending with
 \NewDocumentCommand \njusetlength { s m m }
   {
     \bool_if:nTF {#1}
-      { \skip_gset:cn { c_@@_ #2 _skip } {#3} }
-      { \dim_gset:cn  { c_@@_ #2 _dim  } {#3} }
+      { \skip_gset:cn { l_@@_ #2 _skip } {#3} }
+      { \dim_gset:cn  { l_@@_ #2 _dim  } {#3} }
   }
 %    \end{macrocode}
 % \end{macro}
@@ -4184,9 +4232,9 @@ To produce the documentation run the original source files ending with
 \cs_new_protected:Npn \@@_set_tokenlist:nnnnn #1#2#3#4#5
   {
     \bool_if:nTF {#1}
-      { \tl_set_eq:NN \l_@@_tmpb_tl \c_@@_name_suffix_en_tl }
+      { \tl_set_eq:NN \l_@@_tmpb_tl \l_@@_name_suffix_en_tl }
       { \tl_clear:N   \l_@@_tmpb_tl }
-    \tl_gset:cn { c_@@_ #5 _ #2 #3 \l_@@_tmpb_tl _tl } {#4}
+    \tl_gset:cn { l_@@_ #5 _ #2 #3 \l_@@_tmpb_tl _tl } {#4}
   }
 %    \end{macrocode}
 % \end{macro}
@@ -4199,33 +4247,16 @@ To produce the documentation run the original source files ending with
 % \changes{v0.12}{2021/12/07}{重新组织宏包载入顺序。}
 % 将选项传入 \cls{ctexbook} 文档类。
 %    \begin{macrocode}
-\exp_args:Ne \PassOptionsToClass
+\@@_pass_option:n
   {
     a4paper,
     UTF8,
     scheme = chinese,
 %    \end{macrocode}
-% 传入单双面模式选项。
-%    \begin{macrocode}
-    \c_@@_name_pagemode_tl,
-%    \end{macrocode}
-% 开启草稿模式后传入 |draft| 选项。
-%    \begin{macrocode}
-    \bool_if:NT \g_@@_opt_draft_bool { draft, }
-%    \end{macrocode}
-% 行距。
-%    \begin{macrocode}
-    linespread = \g_@@_opt_linespread_tl,
-%    \end{macrocode}
 % 默认不载入任何字体，供本模板自行设置。
 %    \begin{macrocode}
-    fontset    = none,
-%    \end{macrocode}
-% 正文字号设置。
-%    \begin{macrocode}
-    zihao      = \g_@@_opt_zihao_tl
+    fontset    = none
   }
-  { ctexbook }
 %    \end{macrocode}
 %
 % 传入各宏包选项。
@@ -4326,7 +4357,7 @@ To produce the documentation run the original source files ending with
 \sys_if_engine_xetex:T
   {
     \RequirePackage { xeCJKfntef }
-    \NewDocumentCommand \njuline { m } { \CJKunderline{#1} }
+    \cs_new_eq:NN \njuline \CJKunderline
   }
 %    \end{macrocode}
 % \pkg{lua-ul} 中需要在结尾使用 \tn{null} 保护尾部空白。
@@ -4334,7 +4365,7 @@ To produce the documentation run the original source files ending with
 \sys_if_engine_luatex:T
   {
     \RequirePackage { lua-ul }
-    \NewDocumentCommand \njuline { m } { \underLine{#1} \@@_null: }
+    \NewDocumentCommand \njuline { m } { \underLine {#1} \@@_null: }
   }
 %</class>
 %    \end{macrocode}
@@ -4443,9 +4474,9 @@ To produce the documentation run the original source files ending with
 % \changes{v0.14}{2022/01/14}{将标题断行控制符修改为 |\\|。}
 % 题目。中文题目可使用 |\\| 手动断行。以下标注星号（|*|）的皆为对应的英文字段。
 %    \begin{macrocode}
-    title               .tl_set:N = \g_@@_info_title_tl             ,
+    title              .tl_gset:N = \g_@@_info_title_tl             ,
     title              .initial:n = { 空 }                            ,
-    title*              .tl_set:N = \g_@@_info_title_en_tl          ,
+    title*             .tl_gset:N = \g_@@_info_title_en_tl          ,
     title*             .initial:n = { Empty }                         ,
 %    \end{macrocode}
 % \end{macro}
@@ -4454,18 +4485,18 @@ To produce the documentation run the original source files ending with
 % \changes{v0.11}{2021/10/01}{修改了添加关键词的方式。}
 % 关键词列表。
 %    \begin{macrocode}
-    keywords         .clist_set:N = \g_@@_info_keywords_clist       ,
-    keywords*        .clist_set:N = \g_@@_info_keywords_en_clist    ,
+    keywords        .clist_gset:N = \g_@@_info_keywords_clist       ,
+    keywords*       .clist_gset:N = \g_@@_info_keywords_en_clist    ,
 %    \end{macrocode}
 % \end{macro}
 %
 % \begin{macro}{info/grade,info/student-id,info/author,info/author*}
 % 年级、学号、姓名。
 %    \begin{macrocode}
-    grade               .tl_set:N = \g_@@_info_grade_tl             ,
-    student-id          .tl_set:N = \g_@@_info_id_tl                ,
-    author              .tl_set:N = \g_@@_info_author_tl            ,
-    author*             .tl_set:N = \g_@@_info_author_en_tl         ,
+    grade              .tl_gset:N = \g_@@_info_grade_tl             ,
+    student-id         .tl_gset:N = \g_@@_info_id_tl                ,
+    author             .tl_gset:N = \g_@@_info_author_tl            ,
+    author*            .tl_gset:N = \g_@@_info_author_en_tl         ,
 %    \end{macrocode}
 % \end{macro}
 %
@@ -4473,11 +4504,11 @@ To produce the documentation run the original source files ending with
 %   info/major*,info/field,info/field*}
 % 院系、专业、方向。
 %    \begin{macrocode}
-    department          .tl_set:N = \g_@@_info_dept_tl              ,
-    department*         .tl_set:N = \g_@@_info_dept_en_tl           ,
-    major*              .tl_set:N = \g_@@_info_major_en_tl          ,
-    field               .tl_set:N = \g_@@_info_field_tl             ,
-    field*              .tl_set:N = \g_@@_info_field_en_tl          ,
+    department         .tl_gset:N = \g_@@_info_dept_tl              ,
+    department*        .tl_gset:N = \g_@@_info_dept_en_tl           ,
+    major*             .tl_gset:N = \g_@@_info_major_en_tl          ,
+    field              .tl_gset:N = \g_@@_info_field_tl             ,
+    field*             .tl_gset:N = \g_@@_info_field_en_tl          ,
 %    \end{macrocode}
 % \end{macro}
 %
@@ -4489,11 +4520,16 @@ To produce the documentation run the original source files ending with
     major                 .code:n =
       {
         \bool_if:NTF \g_@@_opt_academic_bool
-          { \clist_pop:NN  \l_keys_value_tl \g_@@_info_major_tl }
           {
-            \clist_pop:NN  \l_keys_value_tl \g_@@_info_majorc_tl
-            \clist_pop:NNF \l_keys_value_tl \g_@@_info_major_tl
-              { \tl_set_eq:NN \g_@@_info_major_tl \g_@@_info_majorc_tl }
+            \clist_pop:NN  \l_keys_value_tl \l_@@_tmpa_tl
+            \tl_gset_eq:NN \g_@@_info_major_tl \l_@@_tmpa_tl
+          }
+          {
+            \clist_pop:NN  \l_keys_value_tl \l_@@_tmpa_tl
+            \tl_gset_eq:NN \g_@@_info_majorc_tl \l_@@_tmpa_tl
+            \clist_pop:NNTF \l_keys_value_tl \l_@@_tmpa_tl
+              { \tl_gset_eq:NN \g_@@_info_major_tl \l_@@_tmpa_tl }
+              { \tl_gset_eq:NN \g_@@_info_major_tl \g_@@_info_majorc_tl }
           }
       },
 %    \end{macrocode}
@@ -4504,46 +4540,46 @@ To produce the documentation run the original source files ending with
 % \changes{v0.14}{2022/01/12}{精简导师信息选项。}
 % 导师信息。中文导师全称使用 |clist| 存储，便于在本科生封面中进行分割。
 %    \begin{macrocode}
-    supervisor       .clist_set:N = \g_@@_info_supv_clist           ,
-    supervisor*         .tl_set:N = \g_@@_info_supv_en_tl           ,
+    supervisor      .clist_gset:N = \g_@@_info_supv_clist           ,
+    supervisor*        .tl_gset:N = \g_@@_info_supv_en_tl           ,
 %    \end{macrocode}
 % \end{macro}
 %
 % \begin{macro}{info/supervisor-ii,info/supervisor-ii*}
 % 第二导师信息。
 %    \begin{macrocode}
-    supervisor-ii    .clist_set:N = \g_@@_info_supvii_clist         ,
-    supervisor-ii*      .tl_set:N = \g_@@_info_supvii_en_tl         ,
+    supervisor-ii   .clist_gset:N = \g_@@_info_supvii_clist         ,
+    supervisor-ii*     .tl_gset:N = \g_@@_info_supvii_en_tl         ,
 %    \end{macrocode}
 % \end{macro}
 %
 % \begin{macro}{info/chairman,info/reviewer}
 % 答辩委员会信息。
 %    \begin{macrocode}
-    chairman            .tl_set:N = \g_@@_info_chairman_tl          ,
-    reviewer         .clist_set:N = \g_@@_info_reviewer_clist       ,
+    chairman           .tl_gset:N = \g_@@_info_chairman_tl          ,
+    reviewer        .clist_gset:N = \g_@@_info_reviewer_clist       ,
 %    \end{macrocode}
 % \end{macro}
 %
 % \begin{macro}{info/clc,info/udc}
 % 分类号。
 %    \begin{macrocode}
-    clc                 .tl_set:N = \g_@@_info_clc_tl               ,
-    udc                 .tl_set:N = \g_@@_info_udc_tl               ,
+    clc                .tl_gset:N = \g_@@_info_clc_tl               ,
+    udc                .tl_gset:N = \g_@@_info_udc_tl               ,
 %    \end{macrocode}
 % \end{macro}
 %
 % \begin{macro}{info/secret-level}
 % 密级。
 %    \begin{macrocode}
-    secret-level        .tl_set:N = \g_@@_info_secretlv_tl          ,
+    secret-level       .tl_gset:N = \g_@@_info_secretlv_tl          ,
 %    \end{macrocode}
 % \end{macro}
 %
 % \begin{macro}{info/supervisor-contact}
 % 导师联系方式。
 %    \begin{macrocode}
-    supervisor-contact  .tl_set:N = \g_@@_info_supvcont_tl          ,
+    supervisor-contact .tl_gset:N = \g_@@_info_supvcont_tl          ,
 %    \end{macrocode}
 % \end{macro}
 %
@@ -4551,7 +4587,7 @@ To produce the documentation run the original source files ending with
 % \changes{v0.14}{2022/01/12}{新增电邮地址设置项。}
 % 用于学位论文出版授权书的电子邮件地址。
 %    \begin{macrocode}
-    email               .tl_set:N = \g_@@_info_email_tl             ,
+    email              .tl_gset:N = \g_@@_info_email_tl             ,
 %    \end{macrocode}
 % \end{macro}
 %
@@ -4559,7 +4595,7 @@ To produce the documentation run the original source files ending with
 % \changes{v1.2}{2023/04/27}{新增学校代码设置项。}
 % 学校代码。
 %    \begin{macrocode}
-    school-code         .tl_set:N = \g_@@_info_code_tl              ,
+    school-code        .tl_gset:N = \g_@@_info_code_tl              ,
     school-code        .initial:n = { 10284 }                       ,
 %    \end{macrocode}
 % \end{macro}
@@ -4568,8 +4604,8 @@ To produce the documentation run the original source files ending with
 % \changes{v1.2}{2023/04/24}{新增学位名称设置项。}
 % 覆盖预定义的学位字段。
 %    \begin{macrocode}
-    degree              .tl_set:N = \g_@@_info_degree_tl            ,
-    degree*             .tl_set:N = \g_@@_info_degree_en_tl         ,
+    degree             .tl_gset:N = \g_@@_info_degree_tl            ,
+    degree*            .tl_gset:N = \g_@@_info_degree_en_tl         ,
 %    \end{macrocode}
 % \end{macro}
 %
@@ -4625,15 +4661,15 @@ To produce the documentation run the original source files ending with
 %    \end{macrocode}
 % 拼合双导师的姓名和职称。
 %    \begin{macrocode}
-    \tl_set:Ne \g_@@_info_supvfull_tl
-      { \clist_use:Nn \g_@@_info_supv_clist { \@@_hskip: } }
+    \tl_gset:Ne \g_@@_info_supvfull_tl
+      { \clist_use:Nn \g_@@_info_supv_clist { \@@_quad: } }
     \clist_if_empty:NF \g_@@_info_supvii_clist
       {
         \bool_gset_true:N \g_@@_opt_supvii_bool
         \tl_gput_right:Ne \g_@@_info_supvfull_tl
-          { \@@_quad: \clist_use:Nn \g_@@_info_supvii_clist { \@@_hskip: } }
+          { \@@_quad: \clist_use:Nn \g_@@_info_supvii_clist { \@@_quad: } }
       }
-    \tl_set_eq:NN \g_@@_info_supvfull_en_tl \g_@@_info_supv_en_tl
+    \tl_gset_eq:NN \g_@@_info_supvfull_en_tl \g_@@_info_supv_en_tl
     \tl_if_empty:NF \g_@@_info_supvii_en_tl
       {
         \tl_gput_right:Ne \g_@@_info_supvfull_en_tl
@@ -4655,9 +4691,9 @@ To produce the documentation run the original source files ending with
 % \begin{variable}{\g_@@_info_confer_tl}
 %    \begin{macrocode}
 \tl_new:N  \g_@@_info_confer_tl
-\tl_set:Nn \g_@@_info_confer_tl
+\tl_gset:Nn \g_@@_info_confer_tl
   {
-    \textbf { \c_@@_name_nju_tl } \hfil
+    \textbf { \l_@@_name_nju_tl } \hfil
     \g_@@_info_conferdate_tl
   }
 %    \end{macrocode}
@@ -4670,7 +4706,7 @@ To produce the documentation run the original source files ending with
 % 文档类型字样。
 %    \begin{macrocode}
 \tl_new:N  \g_@@_info_type_tl
-\tl_set:Ne \g_@@_info_type_tl
+\tl_gset:Ne \g_@@_info_type_tl
   { \clist_item:Nn \c_@@_name_type_clist { \g_@@_info_type_int } }
 %    \end{macrocode}
 % \end{variable}
@@ -4679,9 +4715,9 @@ To produce the documentation run the original source files ending with
 % 学位类型字样。
 %    \begin{macrocode}
 \tl_new:N     \g_@@_info_degree_tl
-\tl_set_eq:NN \g_@@_info_degree_tl \g_@@_info_type_tl
+\tl_gset_eq:NN \g_@@_info_degree_tl \g_@@_info_type_tl
 \bool_if:NF \g_@@_opt_academic_bool
-  { \tl_put_right:Nn \g_@@_info_degree_tl { 专业 } }
+  { \tl_gput_right:Nn \g_@@_info_degree_tl { 专业 } }
 %    \end{macrocode}
 % \end{variable}
 %
@@ -4689,7 +4725,7 @@ To produce the documentation run the original source files ending with
 % 英文的学位字样。
 %    \begin{macrocode}
 \tl_new:N  \g_@@_info_degree_en_tl
-\tl_set:Ne \g_@@_info_degree_en_tl
+\tl_gset:Ne \g_@@_info_degree_en_tl
   { \clist_item:Nn \c_@@_name_type_en_clist { \g_@@_info_type_int } }
 %</def-g>
 %    \end{macrocode}
@@ -4700,8 +4736,8 @@ To produce the documentation run the original source files ending with
 %<*class>
 \bool_if:NT \g_@@_opt_anon_bool
   {
-    \tl_gclear:N \c_@@_name_nju_tl
-    \tl_gclear:N \c_@@_name_nju_en_tl
+    \tl_clear:N \l_@@_name_nju_tl
+    \tl_clear:N \l_@@_name_nju_en_tl
   }
 %    \end{macrocode}
 %
@@ -4786,16 +4822,16 @@ To produce the documentation run the original source files ending with
 \cs_new_protected:Npn \@@_loadfont_latin_macoffice:
   {
     \__fontspec_main_setmainfont:nn
-      { \c_@@_name_macofficefeature_clist } { times }
+      { \l_@@_name_macofficefeature_clist } { times }
     \__fontspec_main_setsansfont:nn
-      { \c_@@_name_macofficefeature_clist } { arial }
+      { \l_@@_name_macofficefeature_clist } { arial }
     \__fontspec_main_setmonofont:nn
       { Scale     = MatchLowercase } { Menlo }
   }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{variable}{\c_@@_name_macofficefeature_clist}
+% \begin{variable}{\l_@@_name_macofficefeature_clist}
 % 用于 \pkg{fontspec} 的 mac Office 字体特性列表。
 %    \begin{macrocode}
 \clist_const:Nn \c_@@_name_macofficefeature_clist
@@ -4874,7 +4910,7 @@ To produce the documentation run the original source files ending with
     \setCJKfamilyfont { zhhei  } { SimHei   } [#1]
     \setCJKfamilyfont { zhfs   } { FangSong } [#1]
     \setCJKfamilyfont { zhkai  } { KaiTi    } [#1]
-    \@@_stzhongs:n {#1}
+    \@@_define_stzhongs:nn { STZhongsong } {#1}
   }
 \cs_new:Npn \@@_loadfont_cjk_win:
   { \@@_loadfont_cjk_win:N \c_@@_name_fakebold_tl }
@@ -4917,7 +4953,7 @@ To produce the documentation run the original source files ending with
     \setCJKfamilyfont { zhhei  } { SimHei.ttf   } [#1]
     \setCJKfamilyfont { zhfs   } { Fangsong.ttf } [#1]
     \setCJKfamilyfont { zhkai  } { Kaiti.ttf    } [#1]
-    \@@_stzhongs:nn { STZHONGS.ttf } {#1}
+    \@@_define_stzhongs:nn { STZHONGS.ttf } {#1}
   }
 \cs_new:Npn \@@_loadfont_cjk_macoffice:
   {
@@ -5008,7 +5044,7 @@ To produce the documentation run the original source files ending with
     \setCJKfamilyfont { zhhei  } { Noto~Sans~CJK~SC  }
     \setCJKfamilyfont { zhfs   } { FZFangSong-Z02    }
     \setCJKfamilyfont { zhkai  } { FZKai-Z03         }
-      [ \c__nju_name_fakebold_tl ]
+      [ \c_@@_name_fakebold_tl ]
   }
 %    \end{macrocode}
 % \end{macro}
@@ -5055,34 +5091,58 @@ To produce the documentation run the original source files ending with
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{macro}{\@@_loadfont_stzhongs:,\@@_stzhongs:nn,\@@_stzhongs:n,\@@_stzhongs:}
+% \begin{variable}{\l_@@_name_stzhongsopts_tl}
+% 华文中宋的字体特性列表，默认为仅使用伪粗体。
+%    \begin{macrocode}
+\tl_new:N     \l_@@_name_stzhongsopts_tl
+\tl_set_eq:NN \l_@@_name_stzhongsopts_tl \c_@@_name_fakebold_tl
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{\@@_define_stzhongs:nn}
 % \changes{v1.2}{2023/04/30}{在研究生模板载入华文中宋。}
 % \changes{v1.3}{2023/10/09}{可以手动指定华文中宋文件位置。}
 % 研究生封面额外需要的华文中宋。
 %    \begin{macrocode}
-\cs_new:Npn \@@_stzhongs:nn #1#2
-  { \newCJKfontfamily \@@_stzhongs: {#1} [#2] }
-\cs_new:Npn \@@_stzhongs:n { \@@_stzhongs:nn { 华文中宋 } }
-\cs_new_protected:Npn \@@_loadfont_stzhongs:
+\cs_new:Npn \@@_define_stzhongs:nn #1#2
   {
-    \cs_if_exist_use:NF \@@_stzhongs:
-  {
-    \fontspec_font_if_exist:nTF { 华文中宋 }
-          { \@@_stzhongs:n { \c_@@_name_fakebold_tl } }
+    \tl_set:Nn \l_@@_name_stzhongsfile_tl {#1}
+    \tl_set:Nn \l_@@_name_stzhongsopts_tl {#2}
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_loadfont_stzhongs:n}
+% \changes{v1.2}{2023/04/30}{在研究生模板载入华文中宋。}
+% \changes{v1.3}{2023/10/09}{可以手动指定华文中宋文件位置。}
+% \changes{v1.4}{2024/04/03}{调整载入华文中宋文件的逻辑。}
+% \begin{macro}{\@@_loadfont_stzhongs:V,\@@_loadfont_stzhongs:,\@@_stzhongs:}
+% 研究生封面额外需要的华文中宋。
+%    \begin{macrocode}
+\cs_new:Npn \@@_loadfont_stzhongs:
+  { \@@_loadfont_stzhongs:V \l_@@_name_stzhongsfile_tl }
+\cs_new_protected:Npn \@@_loadfont_stzhongs:n #1
       {
-        \bool_if:NTF \g_@@_font_path_bool
+    \fontspec_font_if_exist:nTF {#1}
+      {
+        \newCJKfontfamily \@@_stzhongs: {#1}
+          [ \l_@@_name_stzhongsopts_tl ]
+      }
           {
-                \@@_stzhongs:nn { \c_@@_name_stzhongsfile_tl }
-                  { Path = \g_@@_font_path_tl, \c_@@_name_fakebold_tl }
-          }
-          {
-            \cs_set_eq:NN \@@_stzhongs: \rmfamily
-            \msg_warning:nn { njuthesis } { missing-stzhongs }
+            \bool_if:NTF \g_@@_font_path_bool
+              {
+            \newCJKfontfamily \@@_stzhongs: {#1}
+              [ Path = \g_@@_font_path_tl, \c_@@_name_fakebold_tl ]
+              }
+              {
+                \cs_set_eq:NN \@@_stzhongs: \rmfamily
+                \msg_warning:nn { njuthesis } { missing-stzhongs }
               }
           }
       }
-  }
+\cs_generate_variant:Nn \@@_loadfont_stzhongs:n { V }
 %    \end{macrocode}
+% \end{macro}
 % \end{macro}
 %
 %
@@ -5352,10 +5412,10 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \ctex_at_end_preamble:n
   {
-    \clist_set_eq:Nc \g_@@_header_clist
-      { g_@@_header_ \c_@@_name_pagemode_tl _clist }
-    \clist_set_eq:Nc \g_@@_footer_clist
-      { g_@@_footer_ \c_@@_name_pagemode_tl _clist }
+    \clist_gset_eq:Nc \g_@@_header_clist
+      { g_@@_header_ \g_@@_name_pagemode_tl _clist }
+    \clist_gset_eq:Nc \g_@@_footer_clist
+      { g_@@_footer_ \g_@@_name_pagemode_tl _clist }
   }
 %    \end{macrocode}
 %
@@ -5363,9 +5423,9 @@ To produce the documentation run the original source files ending with
 % 对 \pkg{fancyhdr} 的命令进行包装，便于设置页眉页脚。
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_header:nn #1#2
-  { \fancyhead [#1] { \c_@@_fmt_header_tl \nouppercase {#2} } }
+  { \fancyhead [#1] { \l_@@_fmt_header_tl \nouppercase {#2} } }
 \cs_new_protected:Npn \@@_footer:nn #1#2
-  { \fancyfoot [#1] { \c_@@_fmt_footer_tl \nouppercase {#2} } }
+  { \fancyfoot [#1] { \l_@@_fmt_footer_tl \nouppercase {#2} } }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -5409,7 +5469,7 @@ To produce the documentation run the original source files ending with
 \RenewDocumentCommand \frontmatter { }
   {
     \cleardoublepage
-    \exp_args:NV \pagestyle \c_@@_fmt_pagestyle_tl
+    \exp_args:NV \pagestyle \l_@@_fmt_pagestyle_tl
     \pagenumbering { Roman }
   }
 %    \end{macrocode}
@@ -5424,7 +5484,7 @@ To produce the documentation run the original source files ending with
 \RenewDocumentCommand \mainmatter { }
   {
     \cleardoublepage
-    \exp_args:NV \pagestyle \c_@@_fmt_pagestyle_tl
+    \exp_args:NV \pagestyle \l_@@_fmt_pagestyle_tl
     \pagenumbering { arabic }
     \normalfont \normalsize
   }
@@ -5436,7 +5496,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \AtBeginEnvironment { document }
   {
-    \exp_args:NV \pagestyle \c_@@_fmt_pagestyle_tl
+    \exp_args:NV \pagestyle \l_@@_fmt_pagestyle_tl
     \pagenumbering { Roman }
   }
 %    \end{macrocode}
@@ -5448,7 +5508,7 @@ To produce the documentation run the original source files ending with
 % 为无编号章添加目录条目，需手动指定格式为四号、不加粗、黑体。
 %    \begin{macrocode}
 \cs_new:Npn \@@_bookmark_toc:n #1
-  { \addcontentsline { toc } { chapter } { \c_@@_fmt_chapterintoc_tl #1 } }
+  { \addcontentsline { toc } { chapter } { \l_@@_fmt_chapterintoc_tl #1 } }
 \cs_generate_variant:Nn \@@_bookmark_toc:n { V }
 %    \end{macrocode}
 % \end{macro}
@@ -5522,14 +5582,14 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \keys_set:nn { ctex }
   {
-    chapter        / beforeskip = \c_@@_chapterbefore_dim,
-    chapter        / afterskip  = \c_@@_chapterafter_dim,
-    chapter        / format     = \c_@@_fmt_chapter_tl,
-    section        / format     = \c_@@_fmt_section_tl,
-    subsection     / format     = \c_@@_fmt_subsection_tl,
-    subsubsection  / format     = \c_@@_fmt_subsubsection_tl,
-    paragraph      / format     = \c_@@_fmt_paragraph_tl,
-    subparagraph   / format     = \c_@@_fmt_subparagraph_tl,
+    chapter        / beforeskip = \l_@@_chapterbefore_dim,
+    chapter        / afterskip  = \l_@@_chapterafter_dim,
+    chapter        / format     = \l_@@_fmt_chapter_tl,
+    section        / format     = \l_@@_fmt_section_tl,
+    subsection     / format     = \l_@@_fmt_subsection_tl,
+    subsubsection  / format     = \l_@@_fmt_subsubsection_tl,
+    paragraph      / format     = \l_@@_fmt_paragraph_tl,
+    subparagraph   / format     = \l_@@_fmt_subparagraph_tl,
 %    \end{macrocode}
 %
 %
@@ -5538,13 +5598,13 @@ To produce the documentation run the original source files ending with
 %
 % 设置目录标题默认名称。
 %    \begin{macrocode}
-    contentsname   = \c_@@_name_tableofcontents_tl,
-    listfigurename = \c_@@_name_listoffigures_tl,
-    listtablename  = \c_@@_name_listoftables_tl,
+    contentsname   = \l_@@_name_tableofcontents_tl,
+    listfigurename = \l_@@_name_listoffigures_tl,
+    listtablename  = \l_@@_name_listoftables_tl,
 %    \end{macrocode}
 % 设置目录中章标题的样式。
 %    \begin{macrocode}
-    chapter / tocline = \c_@@_fmt_chapterintoc_tl \CTEXnumberline {#1} #2
+    chapter / tocline = \l_@@_fmt_chapterintoc_tl \CTEXnumberline {#1} #2
   }
 %    \end{macrocode}
 %
@@ -5558,7 +5618,7 @@ To produce the documentation run the original source files ending with
   {
     \group_begin:
       \keys_set:nn { ctex }
-        { chapter/format = \c_@@_fmt_toctitle_tl }
+        { chapter/format = \l_@@_fmt_toctitle_tl }
       \@@_chapter:cnn { g_@@_ #2 _showentry_bool } {#1} {#2}
     \group_end:
     \@starttoc {#2}
@@ -5575,7 +5635,7 @@ To produce the documentation run the original source files ending with
   {
     \keys_define:nn { nju / #1 }
       {
-        toc-entry  .bool_set:c = { g_@@_ #3 _showentry_bool },
+        toc-entry .bool_gset:c = { g_@@_ #3 _showentry_bool },
         toc-entry   .initial:n = true
       }
     \exp_args:Nc \RenewDocumentCommand {#1} { }
@@ -5609,8 +5669,8 @@ To produce the documentation run the original source files ending with
   {
     \bool_if:NF \g_@@_toc_showentry_bool
       {
-        \bool_set_false:N \g_@@_lof_showentry_bool
-        \bool_set_false:N \g_@@_lot_showentry_bool
+        \bool_gset_false:N \g_@@_lof_showentry_bool
+        \bool_gset_false:N \g_@@_lot_showentry_bool
       }
   }
 %    \end{macrocode}
@@ -5690,10 +5750,7 @@ To produce the documentation run the original source files ending with
 % |\PassoptionsToPackage{|\meta{key}|=|\meta{value}|}{biblatex}| 命令。
 %    \begin{macrocode}
     option              .code:n =
-      {
-            \clist_gput_right:NV \g_@@_blx_option_clist
-              \l_keys_value_tl
-      },
+      { \clist_gput_right:NV \g_@@_blx_option_clist \l_keys_value_tl },
 %    \end{macrocode}
 % \end{macro}
 %
@@ -5745,15 +5802,14 @@ To produce the documentation run the original source files ending with
 % 如果需要在每章后附上一个参考文献表，即对 \pkg{biblatex} 传入了
 %  |refsection = chapter| 选项，则默认为 |section| 级别。
 %    \begin{macrocode}
-    \defbibheading { njubibintoc } [ \bibname ] { \@@_chapter:n { ##1 } }
+    \defbibheading { njubibintoc } [ \bibname ] { \@@_chapter:n {##1} }
     \tl_if_eq:NnTF \blx@refsecreset@level { 2 }
       { \DeclarePrintbibliographyDefaults { heading = subbibintoc } }
       { \DeclarePrintbibliographyDefaults { heading = njubibintoc } }
 %    \end{macrocode}
 % 传入参考文献源文件，此时可正常使用 \tn{addbibresource} 命令。
 %    \begin{macrocode}
-    \clist_map_inline:Nn \g_@@_blx_resource_clist
-      { \addbibresource { ##1 } }
+    \clist_map_inline:Nn \g_@@_blx_resource_clist { \addbibresource {##1} }
   }
 %    \end{macrocode}
 % \end{macro}
@@ -5775,34 +5831,38 @@ To produce the documentation run the original source files ending with
 %
 % \subsection{引用}
 %
-% 在导言区末尾进行 \pkg{hyperref} 设置。
-% \changes{v0.11}{2021/10/01}{写入 PDF 元数据。}
+% \changes{v1.4}{2024/03/06}{将可能需要覆盖的 \pkg{hyperref} 设置移动到导言区前。}
+%    \begin{macrocode}
+\hypersetup
+  {
+    bookmarksnumbered = true,
+    psdextra          = true,
+    unicode           = true,
+    hidelinks
+  }
+%    \end{macrocode}
 % \changes{v0.17}{2022/04/09}{PDF 书签中不生成额外空格。}
+% 忽略 PDF 字符串中的特定命令，从而抑制 \pkg{hyperref} 警告。
+%    \begin{macrocode}
+\pdfstringdefDisableCommands
+  {
+    \clist_map_inline:nn
+      { \\, \quad, \qquad, \bigger }
+      { \@@_cs_clear:N #1 }
+    \cs_set_eq:NN \zihao \use_none:n
+  }
+%    \end{macrocode}
+% 在导言区末尾进行 \pkg{hyperref} 设置。填写 PDF 元信息。
+% \changes{v0.11}{2021/10/01}{写入 PDF 元数据。}
 %    \begin{macrocode}
 \ctex_at_end_preamble:n
   {
-%    \end{macrocode}
-% 忽略 PDF 字符串中的特定命令，从而抑制 \pkg{hyperref} 警告。
-%    \begin{macrocode}
-    \pdfstringdefDisableCommands
-      {
-        \clist_map_inline:nn
-          { \\, \quad, \qquad, \bigger }
-          { \@@_cs_clear:N #1 }
-      }
     \hypersetup
       {
-        bookmarksnumbered = true,
-        psdextra          = true,
-        unicode           = true,
-        hidelinks,
-%    \end{macrocode}
-% 填写 PDF 元信息。
-%    \begin{macrocode}
         pdftitle    = \g_@@_info_title_tl,
         pdfauthor   = \g_@@_info_author_tl,
         pdfkeywords = \g_@@_info_keywords_clist,
-        pdfcreator  = \c_@@_name_pdfcreator_tl
+        pdfcreator  = \l_@@_name_pdfcreator_tl
       }
   }
 %    \end{macrocode}
@@ -5845,7 +5905,7 @@ To produce the documentation run the original source files ending with
 % 存储传入 \pkg{circledtext} 宏包的选项列表。
 % 由于当前版本放在编号位置的带圈数字无法正确缩放，这里手动指定了字体大小。
 %    \begin{macrocode}
-\clist_set:Nn \g_@@_fn_ctext_option_clist { charf = \scriptsize }
+\clist_gset:Nn \g_@@_fn_ctext_option_clist { charf = \scriptsize }
 %    \end{macrocode}
 % \end{variable}
 %
@@ -5912,7 +5972,7 @@ To produce the documentation run the original source files ending with
         \cs_set:Npn \@@_fn_hang:
           {
             \int_set:Nn \tex_hangafter:D { 1 }
-            \dim_set_eq:NN \tex_hangindent:D \c_@@_fnhang_dim
+            \dim_set_eq:NN \tex_hangindent:D \l_@@_fnhang_dim
           }
       },
     hang / false       .code:n = { \@@_cs_clear:N \@@_fn_hang: },
@@ -5970,7 +6030,7 @@ To produce the documentation run the original source files ending with
     \cs_set:Npn \@makefntext #1
       {
         \mode_leave_vertical:
-        \hbox_to_wd:nn { \c_@@_fnhang_dim } { \@thefnmark \tex_hfil:D }
+        \hbox_to_wd:nn { \l_@@_fnhang_dim } { \@thefnmark \tex_hfil:D }
         \tex_penalty:D \@M
         \@@_fn_hang:
         #1
@@ -5997,9 +6057,10 @@ To produce the documentation run the original source files ending with
 %
 % \changes{v0.16}{2022/03/11}{表格内字体设为五号。}
 % \changes{v1.0}{2022/08/06}{兼容 \pkg{tabularray} 设置。}
+% \changes{v1.4}{2024/03/06}{调整 \pkg{tabularray} 设置。}
 % 表格默认居中，字号设置为五号。^^A  https://www.zhihu.com/question/366803177/answer/977853129
 %    \begin{macrocode}
-\BeforeBeginEnvironment { tabular } { \centering \c_@@_fmt_tabular_tl }
+\BeforeBeginEnvironment { tabular } { \centering \l_@@_fmt_tabular_tl }
 \ctex_at_end_package:nn { tabularray }
   {
 %    \end{macrocode}
@@ -6007,16 +6068,21 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
     \__tblr_use_lib_booktabs:
     \tl_set:Nn \l_@@_tmpb_tl
-      { , abovesep = 4 pt, stretch  = 0.8, cells = { font = \c_@@_fmt_tabular_tl } }
+      { , abovesep = 4 pt, stretch  = 0.8, cells = { font = \l_@@_fmt_tabular_tl } }
     \tl_put_right:NV \l__tblr_default_tblr_inner_tl     \l_@@_tmpb_tl
     \tl_put_right:NV \l__tblr_default_talltblr_inner_tl \l_@@_tmpb_tl
-    \tl_put_right:Nn \l__tblr_default_talltblr_outer_tl { , headsep = -4 pt }
+    \tl_put_right:NV \l__tblr_default_longtblr_inner_tl \l_@@_tmpb_tl
+%    \end{macrocode}
+% 为了和标准文档类中的间距一致，文档介绍的值为 \qty{10}{pt}，实际是 \qty{12.63}{pt}。
+%    \begin{macrocode}
+    \tl_put_right:Nn \l__tblr_default_talltblr_outer_tl { , headsep = 12.63 pt }
+    \tl_put_right:Nn \l__tblr_default_longtblr_outer_tl { , headsep = 12.63 pt }
 %    \end{macrocode}
 % 处理 \env{talltblr} 表注的限宽问题。
 % \footnote{\url{https://github.com/lvjr/tabularray/issues/255}}
 %    \begin{macrocode}
     \DefTblrTemplate { caption-tag } { default }
-      { \c_@@_name_table_tl \hspace { 0.25em } \thetable }
+      { \l_@@_name_table_tl \hspace { 0.25em } \thetable }
     \DefTblrTemplate { caption-sep } { default } { \quad }
     \DefTblrTemplate { firsthead   } { caption }
       {
@@ -6026,6 +6092,7 @@ To produce the documentation run the original source files ending with
     \SetTblrTemplate { firsthead   } { caption }
     \SetTblrStyle { caption } { font = \normalfont \bfseries \small }
     \SetTblrStyle { note    } { font = \normalfont \footnotesize    }
+    \SetTblrStyle { remark  } { font = \normalfont \footnotesize    }
   }
 %    \end{macrocode}
 %
@@ -6035,8 +6102,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \DeclareCaptionStyle{njucap}
   {
-    font          = small,
-    font         += bf,
+    font          = {small, bf},
     labelsep      = quad,
     justification = centering
   }
@@ -6059,7 +6125,7 @@ To produce the documentation run the original source files ending with
   {
     \keys_define:nn { nju / label-sep }
       {
-        #1  .tl_set:c = { g_@@_sep_ #1 _tl },
+        #1 .tl_gset:c = { g_@@_sep_ #1 _tl },
 %    \end{macrocode}
 % 根据本科生撰写规范的建议，默认连接符为短横线（en dash）。
 %    \begin{macrocode}
@@ -6274,12 +6340,12 @@ To produce the documentation run the original source files ending with
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{variable}{\c_@@_name_integral_tl}
+% \begin{variable}{\l_@@_name_integral_tl}
 % 保存 \pkg{unicode-math} 内置的所有积分号命令。
 %    \begin{macrocode}
 \bool_if:NTF \g_@@_opt_load_um_bool
-  { \tl_set_eq:NN \c_@@_name_integral_tl \l__um_nolimits_tl }
-  { \tl_set_eq:NN \c_@@_name_integral_tl \c_empty_tl        }
+  { \tl_set_eq:NN \l_@@_name_integral_tl \l__um_nolimits_tl }
+  { \tl_set_eq:NN \l_@@_name_integral_tl \c_empty_tl        }
 %    \end{macrocode}
 % \end{variable}
 %
@@ -6302,9 +6368,9 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
     integral                      .choice:,
     integral / upright              .code:n  =
-      { \bool_set_true:N  \g_@@_opt_math_int_bool },
+      { \bool_gset_true:N  \g_@@_opt_math_int_bool },
     integral / slanted              .code:n  =
-      { \bool_set_false:N \g_@@_opt_math_int_bool },
+      { \bool_gset_false:N \g_@@_opt_math_int_bool },
 %    \end{macrocode}
 % \end{macro}
 %
@@ -6316,7 +6382,7 @@ To produce the documentation run the original source files ending with
     integral-limits / true          .code:n  =
       { \tl_clear:N   \l__um_nolimits_tl },
     integral-limits / false         .code:n  =
-      { \tl_set_eq:NN \l__um_nolimits_tl \c_@@_name_integral_tl },
+      { \tl_set_eq:NN \l__um_nolimits_tl \l_@@_name_integral_tl },
 %    \end{macrocode}
 % \end{macro}
 %
@@ -6325,9 +6391,9 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
     less-than-or-equal            .choice:,
     less-than-or-equal / slanted    .code:n  =
-      { \bool_set_true:N  \g_@@_opt_math_leq_bool },
+      { \bool_gset_true:N  \g_@@_opt_math_leq_bool },
     less-than-or-equal / horizontal .code:n  =
-      { \bool_set_false:N \g_@@_opt_math_leq_bool },
+      { \bool_gset_false:N \g_@@_opt_math_leq_bool },
 %    \end{macrocode}
 % \end{macro}
 %
@@ -6372,9 +6438,9 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
     vector                        .choice:,
     vector / boldfont               .code:n  =
-      { \bool_set_true:N  \g_@@_opt_math_vec_bool },
+      { \bool_gset_true:N  \g_@@_opt_math_vec_bool },
     vector / arrow                  .code:n  =
-      { \bool_set_false:N \g_@@_opt_math_vec_bool },
+      { \bool_gset_false:N \g_@@_opt_math_vec_bool },
 %    \end{macrocode}
 % \end{macro}
 %
@@ -6489,7 +6555,7 @@ To produce the documentation run the original source files ending with
 %<*def-u>
 \@@_declare_element:nn { u / cover / emblem-img }
   {
-    content     = \@@_emblem:N \c_@@_emblemwd_dim,
+    content     = \@@_emblem:N \l_@@_emblemwd_dim,
     bottom-skip = 1.2 cm
   }
 %    \end{macrocode}
@@ -6500,7 +6566,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { u / cover / name-img }
   {
-    content     = \@@_name:N \c_@@_namewd_dim,
+    content     = \@@_name:N \l_@@_namewd_dim,
     bottom-skip = 1 cm,
   }
 %    \end{macrocode}
@@ -6563,8 +6629,8 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \cs_new:Npn \@@_u_cover_info:
   {
-    \@@_u_cover_info:NNNN \c_@@_clabelwd_dim \c_@@_crulewd_dim
-      \c_@@_hsep_dim \kaishu
+    \@@_u_cover_info:NNNN \l_@@_clabelwd_dim \l_@@_crulewd_dim
+      \l_@@_hsep_dim \kaishu
   }
 %    \end{macrocode}
 % \end{macro}
@@ -6577,7 +6643,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { u / decl / orig / emblem }
   {
-    content     = \@@_emblem:N \c_@@_emblemwdi_dim,
+    content     = \@@_emblem:N \l_@@_emblemwdi_dim,
     bottom-skip = 30 pt
   }
 %    \end{macrocode}
@@ -6589,7 +6655,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { u / decl / orig / title }
   {
-    content     = \c_@@_name_origdecl_tl,
+    content     = \l_@@_name_origdecl_tl,
     format      = \sffamily \@@_fontsize:nn { 24 bp } { 22.15 bp } \bfseries,
     bottom-skip = 50 pt
   }
@@ -6601,7 +6667,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { u / decl / orig / text }
   {
-    content     = \c_@@_text_origdecl_tl,
+    content     = \l_@@_text_origdecl_tl,
     format      = \@@_zihao:nn { 1.9 } { -3 },
     align       = n,
     bottom-skip = 2.7 cm
@@ -6630,7 +6696,7 @@ To produce the documentation run the original source files ending with
   {
 %<def-u>    \clist_map_inline:nn { origsign, id, date }
 %<def-g>    \clist_map_inline:nn { origsign,     date }
-      { \tex_par:D \@@_name:n { ##1 } ： \hbox_to_wd:nn { 6 em } { } }
+      { \tex_par:D \@@_name:n {##1} ： \hbox_to_wd:nn { 6 em } { } }
   }
 %</(def-u|def-g)>
 %    \end{macrocode}
@@ -6664,7 +6730,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { g / cover-front / emblem-img }
   {
-    content     = \@@_emblem:N \c_@@_emblemwd_dim,
+    content     = \@@_emblem:N \l_@@_emblemwd_dim,
     bottom-skip = .47 cm
   }
 %    \end{macrocode}
@@ -6675,7 +6741,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { g / cover-front / name-img }
   {
-    content     = \@@_name:N \c_@@_namewd_dim,
+    content     = \@@_name:N \l_@@_namewd_dim,
     bottom-skip = 2.25 cm
   }
 %    \end{macrocode}
@@ -6727,8 +6793,8 @@ To produce the documentation run the original source files ending with
     \@@_get_width:NV \l_@@_tmpb_dim \g_@@_info_id_tl
     \clist_map_inline:nn { code, clc, secretlv, udc, id }
       {
-        \@@_cover_entry:NNNNn \c_@@_name_colon_tl \l_@@_tmpa_dim
-          \l_@@_tmpb_dim \tex_relax:D { ##1 }
+        \@@_cover_entry:NNNNn \l_@@_name_colon_tl \l_@@_tmpa_dim
+          \l_@@_tmpb_dim \tex_relax:D {##1}
       }
   }
 %    \end{macrocode}
@@ -6744,7 +6810,7 @@ To produce the documentation run the original source files ending with
       { \clist_set:Nn #1 { author, majorc, field, supvfull } }
     \@@_cover_entry_title:NNNN #2 #3 #4 #5
     \clist_map_inline:Nn #1
-      { \@@_cover_entry:NNNNn #2 #3 #4 #5 { ##1 } }
+      { \@@_cover_entry:NNNNn #2 #3 #4 #5 {##1} }
   }
 %    \end{macrocode}
 % \end{macro}
@@ -6755,7 +6821,7 @@ To produce the documentation run the original source files ending with
   {
     \tl_set:Nn \l_@@_tmpa_tl { \skip_horizontal:n { .7 cm } }
     \@@_g_cover_info:NNNNN \l_@@_tmp_clist \l_@@_tmpa_tl
-      \c_@@_clabelwd_dim \c_@@_crulewd_dim \c_@@_fmt_coverlabel_tl
+      \l_@@_clabelwd_dim \l_@@_crulewd_dim \l_@@_fmt_coverlabel_tl
   }
 %    \end{macrocode}
 % \end{macro}
@@ -6809,8 +6875,8 @@ To produce the documentation run the original source files ending with
   }
 \cs_new:Npn \@@_g_cover_back:
   {
-    \@@_g_cover_back:NNN \c_@@_clabelwdi_dim
-      \c_@@_crulewdi_dim \c_@@_fmt_coverlabel_tl
+    \@@_g_cover_back:NNN \l_@@_clabelwdi_dim
+      \l_@@_crulewdi_dim \l_@@_fmt_coverlabel_tl
   }
 %    \end{macrocode}
 % \end{macro}
@@ -6830,8 +6896,8 @@ To produce the documentation run the original source files ending with
   }
 \cs_new:Npn \@@_g_cover_sign:
   {
-    \@@_g_cover_sign:NNN \c_@@_clabelwdii_dim
-      \c_@@_fmt_coverlabel_tl \c_@@_name_colon_tl
+    \@@_g_cover_sign:NNN \l_@@_clabelwdii_dim
+      \l_@@_fmt_coverlabel_tl \l_@@_name_colon_tl
   }
 %    \end{macrocode}
 % \end{macro}
@@ -6877,7 +6943,7 @@ To produce the documentation run the original source files ending with
 \@@_declare_element:nn { g / cover-en / middle }
   {
     content     =
-      \c_@@_text_cover_en_tl \@@_vskip:
+      \l_@@_text_cover_en_tl \@@_vskip:
       \group_begin: \scshape \g_@@_info_degree_en_tl \group_end:
       \@@_vskip: { in } \@@_vskip: \g_@@_info_major_en_tl,
     bottom-skip = .5 cm plus 1 fil
@@ -6890,7 +6956,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { g / cover-en / emblem-img }
   {
-    content     = \@@_emblem:N \c_@@_emblemwdii_dim,
+    content     = \@@_emblem:N \l_@@_emblemwdii_dim,
     bottom-skip = 1 cm minus .5 cm
   }
 %    \end{macrocode}
@@ -6903,7 +6969,7 @@ To produce the documentation run the original source files ending with
   {
     content =
       \g_@@_info_dept_en_tl \skip_vertical:N \c_zero_skip
-      \c_@@_name_nju_en_tl  \skip_vertical:n { 1 cm }
+      \l_@@_name_nju_en_tl  \skip_vertical:n { 1 cm }
       \g_@@_info_submitdate_en_tl
   }
 %    \end{macrocode}
@@ -6983,19 +7049,21 @@ To produce the documentation run the original source files ending with
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_cover_top_nl:}
+% \begin{macro}{\@@_cover_top_nl:,\@@_cover_top_nl:NN}
 % 国家图书馆封面顶部信息。
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_cover_top_nl:
+\cs_new:Npn \@@_cover_top_nl:
+  { \@@_cover_top_nl:NN \l_@@_tmpa_dim \l_@@_tmpb_dim }
+\cs_new_protected:Npn \@@_cover_top_nl:NN #1#2
   {
-    \dim_set:Nn               \l_@@_tmpa_dim { 38.6 pt  }
-    \dim_set:Nn               \l_@@_tmpb_dim { 109  pt  }
-    \@@_box_spread_name:Nn \l_@@_tmpa_dim { clc      } \@@_hskip:
-    \@@_box_ulined_info:Nn \l_@@_tmpb_dim { clc      } \tex_hfill:D
-    \@@_box_spread_name:Nn \l_@@_tmpa_dim { secretlv } \@@_hskip:
-    \@@_box_ulined_info:Nn \l_@@_tmpb_dim { secretlv } \tex_par:D
-    \@@_box_spread_name:Nn \l_@@_tmpa_dim { udc      } \@@_hskip:
-    \@@_box_ulined_info:Nn \l_@@_tmpb_dim { udc      } \tex_hfill:D
+    \dim_set:Nn               #1 { 38.6 pt  }
+    \dim_set:Nn               #2 { 109  pt  }
+    \@@_box_spread_name:Nn #1 { clc      } \@@_hskip:
+    \@@_box_ulined_info:Nn #2 { clc      } \tex_hfill:D
+    \@@_box_spread_name:Nn #1 { secretlv } \@@_hskip:
+    \@@_box_ulined_info:Nn #2 { secretlv } \tex_par:D
+    \@@_box_spread_name:Nn #1 { udc      } \@@_hskip:
+    \@@_box_ulined_info:Nn #2 { udc      } \tex_hfill:D
     \@@_null:
   }
 %    \end{macrocode}
@@ -7008,12 +7076,12 @@ To produce the documentation run the original source files ending with
   {
     \parbox [ b ] { 15 em } { \@@_uline_title: } \tex_par:D
     \skip_vertical:n { - 0.5 cm }
-    { \zihao { 4 } \c_@@_name_subtitle_tl }
+    { \zihao { 4 } \l_@@_name_subtitle_tl }
     \skip_vertical:N \c_zero_skip
     \dim_set:Nn \l_@@_tmpa_dim { 4.5 em }
     \@@_box_ulined_info:Nn \l_@@_tmpa_dim { author }
     \skip_vertical:n { - 0.5 cm }
-    { \zihao { 4 } { ( } \c_@@_name_author_tl { ) } }
+    { \zihao { 4 } { ( } \l_@@_name_author_tl { ) } }
   }
 %    \end{macrocode}
 % \end{macro}
@@ -7033,12 +7101,12 @@ To produce the documentation run the original source files ending with
       }
     \skip_set:Nn \l_@@_tmp_skip { .5 em plus 1 fill }
     \@@_uline_list:NNn \l_@@_tmpa_tl \l_@@_tmp_skip
-      { \c_@@_name_supvinfo_tl }
+      { \l_@@_name_supvinfo_tl }
 %    \end{macrocode}
 % 临时替换显示的名称字样。
 %    \begin{macrocode}
     \group_begin:
-      \tl_set_eq:NN \c_@@_name_major_tl \c_@@_name_majorb_tl
+      \tl_set_eq:NN \l_@@_name_major_tl \l_@@_name_majorb_tl
       \@@_uline_bientry:Nn \l_@@_tmpa_dim { degree   }
       \@@_uline_bientry:Nn \l_@@_tmpa_dim { major    }
       \tex_par:D
@@ -7074,9 +7142,9 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { g / decl / orig / title }
   {
-    content     = \c_@@_name_origdecl_tl,
-    format      = \c_@@_fmt_chapter_tl,
-    bottom-skip = \c_@@_chapterafter_dim
+    content     = \l_@@_name_origdecl_tl,
+    format      = \l_@@_fmt_chapter_tl,
+    bottom-skip = \l_@@_chapterafter_dim
   }
 %    \end{macrocode}
 % \end{macro}
@@ -7086,7 +7154,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { g / decl / orig / text }
   {
-    content     = \c_@@_text_origdecl_tl,
+    content     = \l_@@_text_origdecl_tl,
     align       = n,
     bottom-skip = 0 pt plus 1 fil
   }
@@ -7111,9 +7179,9 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { g / decl / auth / title }
   {
-    content     = \c_@@_name_authdecl_tl,
-    format      = \c_@@_fmt_chapter_tl,
-    bottom-skip = \c_@@_chapterafter_dim
+    content     = \l_@@_name_authdecl_tl,
+    format      = \l_@@_fmt_chapter_tl,
+    bottom-skip = \l_@@_chapterafter_dim
   }
 %    \end{macrocode}
 % \end{macro}
@@ -7123,7 +7191,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { g / decl / auth / text }
   {
-    content     = \c_@@_text_authdecl_tl,
+    content     = \l_@@_text_authdecl_tl,
     align       = n,
     bottom-skip = 2 cm
   }
@@ -7198,20 +7266,20 @@ To produce the documentation run the original source files ending with
         cell{1}{2} = {c=5}{m}, cell{3}{2} = {c=5}{m},
         cell{4}{2} = {c=5}{m}, cell{5}{2} = {c=5}{m}
       }
-      \c_@@_name_titlec_tl  & \g_@@_info_title_tl \\
-      \c_@@_name_ida_tl     & \g_@@_info_id_tl    &
-      \c_@@_name_depta_tl   & \g_@@_info_dept_tl  &
-      \c_@@_name_year_tl    &
+      \l_@@_name_titlec_tl  & \g_@@_info_title_tl \\
+      \l_@@_name_ida_tl     & \g_@@_info_id_tl    &
+      \l_@@_name_depta_tl   & \g_@@_info_dept_tl  &
+      \l_@@_name_year_tl    &
         \tl_range:Nnn \g_@@_info_submitdate_tl {1} {4} \\
-      \c_@@_name_degreea_tl &
+      \l_@@_name_degreea_tl &
         {
           \@@_degree_checkbox:nn {   } { 2 } 学术学位硕士 \qquad
           \@@_degree_checkbox:nn { ! } { 2 } 专业学位硕士 \\
           \@@_degree_checkbox:nn {   } { 3 } 学术学位博士 \qquad
           \@@_degree_checkbox:nn { ! } { 3 } 专业学位博士
         } \\
-      \c_@@_name_email_tl   & \g_@@_info_email_tl \\
-      \c_@@_name_supvb_tl   &
+      \l_@@_name_email_tl   & \g_@@_info_email_tl \\
+      \l_@@_name_supvb_tl   &
         \clist_item:Nn \g_@@_info_supv_clist { 1 }
         \bool_if:NT \g_@@_opt_supvii_bool
           { \@@_quad: \clist_item:Nn \g_@@_info_supvii_clist { 1 } } \\
@@ -7224,10 +7292,7 @@ To produce the documentation run the original source files ending with
 % 签名区内容。
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_g_decl_auth_sign:
-  {
-    \c_@@_name_authsign_tl \tex_par:D
-    \c_@@_name_blankdatea_tl
-  }
+  { \l_@@_name_authsign_tl \tex_par:D \l_@@_name_blankdatea_tl }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -7236,9 +7301,9 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_g_decl_auth_secretlv:
   {
-    \c_@@_name_secretstatus_tl \tex_par:D
-    \ensuremath { \mdwhtsquare } \c_@@_name_secretfree_tl \tex_par:D
-    \ensuremath { \mdwhtsquare } \c_@@_name_secretdate_tl
+    \l_@@_name_secretstatus_tl \tex_par:D
+    \ensuremath { \mdwhtsquare } \l_@@_name_secretfree_tl \tex_par:D
+    \ensuremath { \mdwhtsquare } \l_@@_name_secretdate_tl
   }
 %</def-g>
 %    \end{macrocode}
@@ -7252,7 +7317,7 @@ To produce the documentation run the original source files ending with
 %<*def-p>
 \@@_declare_element:nn { p / cover / name-img }
   {
-    content     = \@@_name:N \c_@@_namewd_dim,
+    content     = \@@_name:N \l_@@_namewd_dim,
     bottom-skip = 40 pt
   }
 %    \end{macrocode}
@@ -7263,7 +7328,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { p / cover / report }
   {
-    content     = \c_@@_name_report_tl,
+    content     = \l_@@_name_report_tl,
     format      = \zihao { 0 } \sffamily,
     bottom-skip = 40 pt plus 1.5 fil
   }
@@ -7276,8 +7341,8 @@ To produce the documentation run the original source files ending with
 \@@_declare_element:nn { p / cover / title }
   {
     content     =
-      \c_@@_name_title_tl
-      \c_@@_name_colon_tl
+      \l_@@_name_title_tl
+      \l_@@_name_colon_tl
       \g_@@_info_title_tl,
     format      = \zihao { 4 },
     bottom-skip = 80 pt
@@ -7290,23 +7355,22 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { p / cover / info }
   {
-    content     =
-      \@@_p_cover_info:NN
-        \c_@@_clabelwd_dim
-        \c_@@_fmt_coverlabel_tl,
+    content     = \@@_p_cover_info:,
     format      = \zihao { -4 },
     bottom-skip = 0 pt
   }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_p_cover_info:NN}
+% \begin{macro}{\@@_p_cover_info:,\@@_p_cover_info:NN}
 % 博士后封面信息栏。
 % \begin{arguments}
 %   \item 名称盒子宽度，|dim| 型变量
 %   \item 标签格式
 % \end{arguments}
 %    \begin{macrocode}
+\cs_new:Npn \@@_p_cover_info:
+  { \@@_p_cover_info:NN \l_@@_clabelwd_dim \l_@@_fmt_coverlabel_tl }
 \cs_new_protected:Npn \@@_p_cover_info:NN #1#2
   {
     \clist_set:Nn \l_@@_tmp_clist
@@ -7321,9 +7385,9 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
     \clist_map_inline:Nn \l_@@_tmp_clist
       {
-        \@@_box_spread_name:NNn #1 #2 { ##1 }
-        \c_@@_name_colon_tl
-        \@@_box_center:Nn \l_@@_tmpb_dim { \@@_info:n { ##1 } }
+        \@@_box_spread_name:NNn #1 #2 {##1}
+        \l_@@_name_colon_tl
+        \@@_box_center:Nn \l_@@_tmpb_dim { \@@_info:n {##1} }
         \tex_par:D
       }
   }
@@ -7337,9 +7401,9 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { p / decl / orig / title }
   {
-    content     = \c_@@_name_origdecl_tl,
-    format      = \c_@@_fmt_chapter_tl,
-    bottom-skip = \c_@@_chapterafter_dim
+    content     = \l_@@_name_origdecl_tl,
+    format      = \l_@@_fmt_chapter_tl,
+    bottom-skip = \l_@@_chapterafter_dim
   }
 %    \end{macrocode}
 % \end{macro}
@@ -7349,7 +7413,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { p / decl / orig / text }
   {
-    content     = \c_@@_text_origdecl_tl,
+    content     = \l_@@_text_origdecl_tl,
     align       = n,
     bottom-skip = 2 cm
   }
@@ -7372,9 +7436,9 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { p / decl / auth / title }
   {
-    content     = \c_@@_name_authdecl_tl,
-    format      = \c_@@_fmt_chapter_tl,
-    bottom-skip = \c_@@_chapterafter_dim
+    content     = \l_@@_name_authdecl_tl,
+    format      = \l_@@_fmt_chapter_tl,
+    bottom-skip = \l_@@_chapterafter_dim
   }
 %    \end{macrocode}
 % \end{macro}
@@ -7384,7 +7448,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { p / decl / auth / text }
   {
-    content     = \c_@@_text_authdecl_tl,
+    content     = \l_@@_text_authdecl_tl,
     align       = n,
     bottom-skip = 2 cm
   }
@@ -7409,8 +7473,8 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_p_decl_sign:nn #1#2
   {
-    \@@_name:n {#1} \c_@@_name_colon_tl \tex_hfill:D
-    \@@_name:n {#2} \c_@@_name_colon_tl
+    \@@_name:n {#1} \l_@@_name_colon_tl \tex_hfill:D
+    \@@_name:n {#2} \l_@@_name_colon_tl
     \skip_horizontal:n { 160 pt } \@@_null: \@@_vskip:
   }
 %</def-p>
@@ -7512,9 +7576,9 @@ To produce the documentation run the original source files ending with
   {
     element     = { title, text, sign },
     prefix      = g / decl / orig /,
-    top-skip    = \c_@@_chapterbefore_dim,
+    top-skip    = \l_@@_chapterbefore_dim,
     bottom-skip = 0 pt plus 1 fil,
-    bm-text     = \c_@@_name_origdecl_tl,
+    bm-text     = \l_@@_name_origdecl_tl,
     bm-name     = origdecl
   }
 %    \end{macrocode}
@@ -7527,9 +7591,9 @@ To produce the documentation run the original source files ending with
   {
     element     = { title, text, sign, info, date },
     prefix      = g / decl / auth /,
-    top-skip    = \c_@@_chapterbefore_dim,
+    top-skip    = \l_@@_chapterbefore_dim,
     bottom-skip = 0.5 cm plus 1.5 fill,
-    bm-text     = \c_@@_name_authdecl_tl,
+    bm-text     = \l_@@_name_authdecl_tl,
     bm-name     = authdecl,
     bookmark    = toc
   }
@@ -7564,7 +7628,7 @@ To produce the documentation run the original source files ending with
     prefix      = p / decl /,
     bm-text     = 声明页,
     bm-name     = decl,
-    top-skip    = \c_@@_chapterbefore_dim,
+    top-skip    = \l_@@_chapterbefore_dim,
     bottom-skip = 0 pt
   }
 %</def-p>
@@ -7700,6 +7764,7 @@ To produce the documentation run the original source files ending with
 % \changes{v0.12}{2021/12/01}{仅会生成国家图书馆封面或者普通封面之一。}
 % \changes{v0.13}{2021/12/12}{重新绘制封面。}
 % \changes{v0.13}{2021/12/15}{草稿模式下不绘制封面。}
+% \changes{v1.4}{2024/03/12}{在生成封面时删除标题换行符。}
 % 重定义 \tn{maketitle} 以生成封面。
 % 在草稿模式下，封面绘制将被禁用，有助于提升编译速度。
 %    \begin{macrocode}
@@ -7710,23 +7775,21 @@ To produce the documentation run the original source files ending with
         \pagenumbering { gobble }
         \@@_make_cover:
       }
+    \tl_gremove_all:Nn \g_@@_info_title_tl    { \\ }
+    \tl_gremove_all:Nn \g_@@_info_title_en_tl { \\ }
 %    \end{macrocode}
 % 如果在选择了 \opt{decl-page}，就生成本科生的诚信承诺书，
 % 或研究生的原创性声明和出版授权书。
 %    \begin{macrocode}
-    \bool_if:NF \g_@@_opt_draft_bool
-      {
-        \bool_if:NT \g_@@_opt_decl_bool
-          {
-            \@@_make_decl_i:
-            \@@_make_decl_ii:
-          }
-      }
+    \bool_lazy_and:nnT
+      { ! \g_@@_opt_draft_bool }
+      {   \g_@@_opt_decl_bool  }
+      { \@@_make_decl_i: \@@_make_decl_ii: }
 %    \end{macrocode}
 % 在标题页后使用大写罗马字母页码，恢复正常字体设置。
 %    \begin{macrocode}
     \cleardoublepage
-    \exp_args:NV \pagestyle \c_@@_fmt_pagestyle_tl
+    \exp_args:NV \pagestyle \l_@@_fmt_pagestyle_tl
     \pagenumbering { Roman }
   }
 %</class>
@@ -7746,7 +7809,7 @@ To produce the documentation run the original source files ending with
 %<*(def-u|def-g|def-p)>
 \@@_declare_element:nn { abstract / title }
   {
-%<def-u|def-g>    content     = \@@_abs_title:N \c_@@_name_abstracttitle_tl,
+%<def-u|def-g>    content     = \@@_abs_title:N \l_@@_name_abstracttitle_tl,
 %<def-p>    content     = \g_@@_info_title_tl,
 %<def-u|def-g>    format      = \bfseries \kaishu \zihao { -2 },
 %<def-p>    format      = \bfseries,
@@ -7760,7 +7823,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { abstract / en / title }
   {
-%<def-u|def-g>    content     = \@@_abs_title:N \c_@@_name_abstracttitle_en_tl,
+%<def-u|def-g>    content     = \@@_abs_title:N \l_@@_name_abstracttitle_en_tl,
 %<def-p>    content     = \g_@@_info_title_en_tl,
 %<def-u|def-g>    format      = \bfseries \kaishu \zihao { -2 },
 %<def-p>    format      = \bfseries,
@@ -7810,7 +7873,7 @@ To produce the documentation run the original source files ending with
 %<*(def-g|def-p)>
 \@@_declare_element:nn { abstract / mark }
   {
-    content     = \c_@@_name_abstractb_tl,
+    content     = \l_@@_name_abstractb_tl,
     format      = \sffamily \zihao { -3 },
     bottom-skip = 15 pt
   }
@@ -7822,7 +7885,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \@@_declare_element:nn { abstract / en / mark }
   {
-    content     = \c_@@_name_abstractb_en_tl,
+    content     = \l_@@_name_abstractb_en_tl,
     format      = \sffamily \zihao { -3 },
     bottom-skip = 15 pt
   }
@@ -7839,9 +7902,9 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 %<*def-u>
 \cs_new_protected:Npn \@@_abs_info_u:
-  { \@@_abs_info_u:nn {     } { \c_@@_name_colon_tl    } }
+  { \@@_abs_info_u:nn {     } { \l_@@_name_colon_tl    } }
 \cs_new_protected:Npn \@@_abs_info_en_u:
-  { \@@_abs_info_u:nn { _en } { \c_@@_name_colon_en_tl } }
+  { \@@_abs_info_u:nn { _en } { \l_@@_name_colon_en_tl } }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -7858,7 +7921,7 @@ To produce the documentation run the original source files ending with
 %    \end{macrocode}
 % 由于作者姓名使用的字样发生了变动，这里进行替换以便嵌入循环。
 %    \begin{macrocode}
-    \tl_set_eq:NN \c_@@_name_author_tl \c_@@_name_authora_tl
+    \tl_set_eq:NN \l_@@_name_author_tl \l_@@_name_authora_tl
 %    \end{macrocode}
 % 使用循环输出院系、专业、作者、导师信息。
 %    \begin{macrocode}
@@ -7881,9 +7944,9 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 %<*def-g>
 \cs_new_protected:Npn \@@_abs_info_g:
-  { \@@_abs_info_g:N    \c_@@_name_colon_tl    }
+  { \@@_abs_info_g:N    \l_@@_name_colon_tl    }
 \cs_new_protected:Npn \@@_abs_info_en_g:
-  { \@@_abs_info_en_g:N \c_@@_name_colon_en_tl }
+  { \@@_abs_info_en_g:N \l_@@_name_colon_en_tl }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -7900,7 +7963,7 @@ To produce the documentation run the original source files ending with
 \cs_new_protected:Npn \@@_abs_info_g:N #1
   {
     \@@_uline_list:NNe \g_@@_info_title_tl \g_@@_abs_title_left_skip
-      { \c_@@_name_titlea_tl #1 }
+      { \l_@@_name_titlea_tl #1 }
 %    \end{macrocode}
 % 专业、年级、姓名。
 %    \begin{macrocode}
@@ -7909,15 +7972,15 @@ To produce the documentation run the original source files ending with
         \dim_set:Nn \l_@@_tmpa_dim { 11 em }
         \dim_set:Nn \l_@@_tmpb_dim { 4  em }
         \@@_box_ulined_info:Nn \l_@@_tmpa_dim { major }
-        \c_@@_name_majora_tl
+        \l_@@_name_majora_tl
         \@@_box_ulined_info:Nn \l_@@_tmpb_dim { grade }
-        \c_@@_name_grade_tl \c_@@_name_authora_tl #1
+        \l_@@_name_grade_tl \l_@@_name_authora_tl #1
       }
     \@@_box_ulined_info:Nn \l_@@_tmp_skip { author } \tex_par:D
 %    \end{macrocode}
 % 导师姓名、职称。
 %    \begin{macrocode}
-    \@@_get_width_print:Ne \l_@@_tmpa_dim { \c_@@_name_supva_tl #1 }
+    \@@_get_width_print:Ne \l_@@_tmpa_dim { \l_@@_name_supva_tl #1 }
     \@@_box_ulined_info:Nn \l_@@_tmpa_dim { supvfull }
   }
 %    \end{macrocode}
@@ -7937,7 +8000,7 @@ To produce the documentation run the original source files ending with
     \bool_if:NTF \g_@@_abs_underline_bool
       {
         \@@_uline_list:NNe \g_@@_info_title_en_tl
-          \g_@@_abs_title_left_skip { \c_@@_name_title_en_tl #1 }
+          \g_@@_abs_title_left_skip { \l_@@_name_title_en_tl #1 }
         \clist_map_inline:nn { major, author, supvfull }
           {
             \tex_par:D
@@ -7958,8 +8021,6 @@ To produce the documentation run the original source files ending with
 % \paragraph{关键词列表}
 %
 % \begin{macro}{\@@_print_keywords:nn}
-% \changes{v0.15}{2022/01/26}{为关键词列表添加悬挂缩进。}
-% \changes{v0.20}{2022/05/26}{修复英文关键词列表不整齐的缩进间距。}
 % 生成中英文关键词列表。
 % \begin{arguments}
 %   \item 语言，空置为中文，|_en| 为英文
@@ -7967,30 +8028,39 @@ To produce the documentation run the original source files ending with
 % \end{arguments}
 %    \begin{macrocode}
 %<*class>
-\cs_new_protected:Npn \@@_print_keywords:nn #1#2
+\cs_new_protected:Npn \@@_print_keywords:nn
+  { \@@_print_keywords:NNnn \l_@@_tmpa_tl \l_@@_tmpa_dim }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_print_keywords:NNnn}
+% \begin{arguments}
+%   \item |tl| 临时变量
+%   \item |dim| 临时变量
+% \end{arguments}
+%    \begin{macrocode}
+\cs_new:Npn \@@_print_keywords:NNnn #1#2#3#4
   {
-    \tl_set:Nv \l_@@_tmpa_tl { c_@@_name_keywords #1 _tl }
-    \exp_args:NNv \tl_put_left:Nn
-      \l_@@_tmpa_tl { c_@@_fmt_abslabel #1 _tl }
-    \exp_args:NNv \tl_put_right:Nn
-      \l_@@_tmpa_tl { c_@@_name_colon #1 _tl }
-    \@@_get_width:NV \l_@@_tmpa_dim \l_@@_tmpa_tl
+    \tl_set:Nv #1 { l_@@_name_keywords #3 _tl }
+    \exp_args:NNv \tl_put_left:Nn  #1 { l_@@_fmt_abslabel #3 _tl }
+    \exp_args:NNv \tl_put_right:Nn #1 { l_@@_name_colon   #3 _tl }
+    \@@_get_width:NV #2 #1
 %    \end{macrocode}
 % 关键词列表的悬挂缩进样式由 \tn{list} 环境产生。
 %    \begin{macrocode}
-    \list { \l_@@_tmpa_tl }
+    \list {#1}
       {
-        \labelwidth  \l_@@_tmpa_dim
+        \labelwidth  #2
         \labelsep    \c_zero_dim
         \leftmargin  \c_zero_dim
         \rightmargin \c_zero_dim
-        \advance \leftmargin \l_@@_tmpa_dim
+        \advance \leftmargin #2
 %    \end{macrocode}
 % 使用粗体作为标签样式。
 %    \begin{macrocode}
         \__nju_cs_clear:N \makelabel
       }
-    \item \clist_use:cn { g_@@_info_keywords #1 _clist } {#2}
+    \item \clist_use:cn { g_@@_info_keywords #3 _clist } {#4}
     \endlist
   }
 %</class>
@@ -8041,7 +8111,7 @@ To produce the documentation run the original source files ending with
 % \changes{v0.15}{2022/02/04}{可选择摘要是否出现在目录中。}
 % 是否将摘要添加到目录。
 %    \begin{macrocode}
-    toc-entry          .bool_set:N = \g_@@_abs_showentry_bool,
+    toc-entry         .bool_gset:N = \g_@@_abs_showentry_bool,
     toc-entry           .initial:n = true,
 %    \end{macrocode}
 % \end{macro}
@@ -8050,7 +8120,7 @@ To produce the documentation run the original source files ending with
 % \changes{v1.2}{2023/04/23}{新增研究生英文摘要页下划线选项。}
 % 是否为研究生英文摘要条目内容添加下划线。
 %    \begin{macrocode}
-    underline          .bool_set:N = \g_@@_abs_underline_bool,
+    underline         .bool_gset:N = \g_@@_abs_underline_bool,
     underline           .initial:n = true,
 %    \end{macrocode}
 % \end{macro}
@@ -8062,18 +8132,18 @@ To produce the documentation run the original source files ending with
     title-style          .choice:,
     title-style / strict   .code:n =
       {
-        \bool_set_true:N  \g_@@_abs_title_strict_bool
-        \skip_set:Nn \g_@@_abs_title_left_skip { .5 em }
+        \bool_gset_true:N  \g_@@_abs_title_strict_bool
+        \skip_gset:Nn \g_@@_abs_title_left_skip { .5 em }
       },
     title-style / centered .code:n =
       {
-        \bool_set_true:N \g_@@_abs_title_strict_bool
-        \skip_set:Nn \g_@@_abs_title_left_skip { .5 em plus 1 fill }
+        \bool_gset_true:N \g_@@_abs_title_strict_bool
+        \skip_gset:Nn \g_@@_abs_title_left_skip { .5 em plus 1 fill }
       },
     title-style / natural  .code:n =
       {
-        \bool_set_false:N \g_@@_abs_title_strict_bool
-        \skip_set:Nn \g_@@_abs_title_left_skip { .5 em plus 1 fill }
+        \bool_gset_false:N \g_@@_abs_title_strict_bool
+        \skip_gset:Nn \g_@@_abs_title_left_skip { .5 em plus 1 fill }
       },
     title-style         .initial:n = strict
   }
@@ -8088,7 +8158,7 @@ To produce the documentation run the original source files ending with
   {
     \cleardoublepage
     \thispagestyle { plain }
-    \@@_abs_bookmark:Vn \c_@@_name_abstracta_tl { abstract }
+    \@@_abs_bookmark:Vn \l_@@_name_abstracta_tl { abstract }
     \tl_gremove_all:Nn \g_@@_info_title_tl { \\ }
     \@@_make_abstract:
     \group_begin: \kaishu \zihao { -4 } #1
@@ -8104,7 +8174,7 @@ To produce the documentation run the original source files ending with
   {
     \cleardoublepage
     \thispagestyle { plain }
-    \@@_abs_bookmark:Vn \c_@@_name_abstracta_en_tl { abstract-en }
+    \@@_abs_bookmark:Vn \l_@@_name_abstracta_en_tl { abstract-en }
 %    \end{macrocode}
 % \changes{v1.3}{2023/08/21}{修复英文标题手动换行与摘要页的冲突。}
 % 生成封面后清除标题中的换行控制符，便于在摘要中输出。
@@ -8125,13 +8195,13 @@ To produce the documentation run the original source files ending with
 % 单独制作的前言致谢页。
 %    \begin{macrocode}
 \NewDocumentEnvironment { preface         } { +b }
-  { \@@_chapter:V \c_@@_name_preface_tl #1 }
+  { \@@_chapter:V \l_@@_name_preface_tl #1 }
   { \cleardoublepage }
 \NewDocumentEnvironment { acknowledgement } { +b }
   {
     \bool_if:NTF \g_@@_opt_anon_bool
-      { \@@_bookmark_toc:V \c_@@_name_acknowledgementa_tl   }
-      { \@@_chapter:V      \c_@@_name_acknowledgement_tl #1 }
+      { \@@_bookmark_toc:V \l_@@_name_acknowledgementa_tl   }
+      { \@@_chapter:V      \l_@@_name_acknowledgement_tl #1 }
   }
   { \cleardoublepage }
 %    \end{macrocode}
@@ -8145,26 +8215,31 @@ To produce the documentation run the original source files ending with
 % \changes{v0.10}{2021/09/29}{新增了成果列表页面。}
 % \changes{v0.14}{2021/12/20}{成果列表中可突出指定作者姓名及年份。}
 % \changes{v1.2}{2023/04/07}{修复成果列表与章末参考文献表的冲突。}
+% \changes{v1.4}{2024/03/21}{修复成果列表中文姓名加粗的问题。}
 % 成果列表。
 %    \begin{macrocode}
 \NewDocumentCommand \njupaperlist
-  { O { \c_@@_name_paperlist_tl } m }
+  { O { \l_@@_name_paperlist_tl } m }
   {
     \group_begin:
 %    \end{macrocode}
 % 修改姓名的显示方式，使被注解的姓名可被加粗下划线表示。
+% 由于 \pkg{biblatex} 提供的 \tn{MakeCapital} 是一个 robust 命令，
+% 在绘制下划线过程中无法被完全展开，我们将其替换为
+% 可被展开的 \cs{str_uppercase:f} 以避免造成错误。
 %    \begin{macrocode}
+      \cs_set_eq:NN \MakeCapital \str_uppercase:f
       \RenewDocumentCommand \mkbibnamegiven  { m }
         { \ifitemannotation { thesisauthor }
-            { \njuline { \bf ##1 } } { ##1 } }
+            { \bfseries \njuline {##1} } {##1} }
       \RenewDocumentCommand \mkbibnamefamily { m }
         { \ifitemannotation { thesisauthor }
-            { \njuline { \bf ##1 } } { ##1 } }
+            { \bfseries \njuline {##1} } {##1} }
 %    \end{macrocode}
 % 修改年份的显示方式，默认进行加粗。
 %    \begin{macrocode}
       \RenewDocumentCommand \mkbibdateshort { m m m }
-        { \textbf { \thefield { ##1 } } }
+        { \textbf { \thefield {##1} } }
 %    \end{macrocode}
 % \changes{v1.1}{2023/04/07}{修复章末参考文献表与成果列表的冲突问题。}
 % 相较于直接使用 \env{refsection} 环境，\tn{newrefsection} 命令可以
@@ -8231,7 +8306,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \NewDocumentEnvironment { notation } { O { 10 em } O { 5 em } }
   {
-    \@@_chapter:V \c_@@_name_notation_tl
+    \@@_chapter:V \l_@@_name_notation_tl
     \@@_make_notation:nn {#1} {#2}
   }
   { \endlist \cleardoublepage }
@@ -8243,7 +8318,7 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \NewDocumentEnvironment { notation* } { O { 10 em } O { 5 em } }
   {
-    \chapter * { \c_@@_name_notation_tl }
+    \chapter * { \l_@@_name_notation_tl }
     \@@_make_notation:nn {#1} {#2}
   }
   { \endlist \cleardoublepage }
@@ -8346,8 +8421,8 @@ To produce the documentation run the original source files ending with
 %<def-g>    { secret status     } { 论文涉密情况：                     },
 %<def-g>    { secret free       } { 不保密                             },
 %<def-g>    { secret date       }
-%<def-g>      { 保密，保密期（ \c_@@_name_blankdatea_tl 至
-%<def-g>                       \c_@@_name_blankdatea_tl ）           },
+%<def-g>      { 保密，保密期（ \l_@@_name_blankdatea_tl 至
+%<def-g>                       \l_@@_name_blankdatea_tl ）           },
 %<def-g>    { sign              } { （签字）                           },
 %<def-g>    { sign            a } { 研究生签名                         },
 %<def-g>    { sign            b } { 导师签名                           },
@@ -8405,17 +8480,21 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
     { abstract    b } { 摘\qquad{}要    } { ABSTRACT              },
 %<def-u|def-g>    { abstracttitle }
-%<def-u>      { \c_@@_name_nju_tl 本科生毕业论文（设计、作品）中文摘要  }
-%<def-u>      { \c_@@_name_nju_tl 本科生毕业论文（设计、作品）英文摘要  },
-%<def-g>      { \c_@@_name_nju_tl 研究生毕业论文中文摘要首页用纸        }
-%<def-g>      { \c_@@_name_nju_tl 研究生毕业论文英文摘要首页用纸        },
+%<def-u>      { \l_@@_name_nju_tl 本科生毕业论文（设计、作品）中文摘要  }
+%<def-u>      { \l_@@_name_nju_tl 本科生毕业论文（设计、作品）英文摘要  },
+%<def-g>      { \l_@@_name_nju_tl 研究生毕业论文中文摘要首页用纸        }
+%<def-g>      { \l_@@_name_nju_tl 研究生毕业论文英文摘要首页用纸        },
     { appendix      } { 附录            } { appendix              },
 %<def-u>    { author        } { 学生姓名        } { UNDERGRADUATE         },
 %<def-g>    { author        } { 作者姓名        } { POSTGRADUATE          },
     { blankdate     } { \qquad{}年 \quad{}月 \quad{}日   } {      },
     { blankdate   a } { \njuline{\qquad\qquad} 年
             \njuline{\qquad} 月 \njuline{\qquad} 日      } {      },
-    { colon         } { ：              } { : \c_space_tl         },
+%    \end{macrocode}
+% \changes{v1.4}{2024/04/03}{修复 \hologo{LuaLaTeX} 下的摘要页多余换行。}
+% 这里加入伸缩量，是因为 \hologo{LuaLaTeX} 下全角冒号的宽度并不能被正确识别。
+%    \begin{macrocode}
+    { colon         } { ：\hskip 0pt minus .4em } { : \c_space_tl },
 %<def-u|def-g>    { dept          } { 院系            } { DEPARTMENT            },
     { figure        } { 图              } { figure                },
     { keywords      } { 关键词          } { KEYWORDS              },
@@ -8438,10 +8517,10 @@ To produce the documentation run the original source files ending with
 % \subsubsection{文本}
 % \label{subsubsec:constant-text}
 %
-% \begin{variable}{\c_@@_text_origdecl_tl}
+% \begin{variable}{\l_@@_text_origdecl_tl}
 % 本科生的学位论文诚信承诺书，或研究生的学位论文原创性声明。
 %    \begin{macrocode}
-\tl_const:Nn \c_@@_text_origdecl_tl
+\tl_set:Nn \l_@@_text_origdecl_tl
   {
 %<*def-u>
     本人郑重承诺：所呈交的毕业论文（设计）（题目： \g_@@_info_title_tl ）
@@ -8467,11 +8546,11 @@ To produce the documentation run the original source files ending with
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{variable}{\c_@@_text_authdecl_tl}
+% \begin{variable}{\l_@@_text_authdecl_tl}
 % 研究生的学位论文出版授权书。
 %    \begin{macrocode}
 %<*(def-g|def-p)>
-\tl_const:Nn \c_@@_text_authdecl_tl
+\tl_set:Nn \l_@@_text_authdecl_tl
   {
 %<*def-g>
     本人完全同意《中国优秀博硕士学位论文全文数据库出版章程》（以下简称“章
@@ -8494,14 +8573,14 @@ To produce the documentation run the original source files ending with
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{variable}{\c_@@_text_cover_en_tl}
+% \begin{variable}{\l_@@_text_cover_en_tl}
 % 研究生的英文封面字样。
 %    \begin{macrocode}
 %<*def-g>
-\tl_const:Nn \c_@@_text_cover_en_tl
+\tl_set:Nn \l_@@_text_cover_en_tl
   {
     A~ dissertation~ submitted~ to \\
-    the~ graduate~ school~ of~ \c_@@_name_nju_en_tl \\
+    the~ graduate~ school~ of~ \l_@@_name_nju_en_tl \\
     in~ partial~ fulfilment~ of~ the~ requirements~ for~ the~ degree~ of
   }
 %</def-g>
@@ -8602,15 +8681,15 @@ To produce the documentation run the original source files ending with
 % 各级标题样式。
 %    \begin{macrocode}
     { section       } { \bigger \normalfont \sffamily     },
-    { chapter       } { \c_@@_fmt_section_tl \centering },
-    { subsection    } { \c_@@_fmt_section_tl            },
-    { subsubsection } { \c_@@_fmt_section_tl            },
-    { paragraph     } { \c_@@_fmt_section_tl            },
-    { subparagraph  } { \c_@@_fmt_section_tl            },
+    { chapter       } { \l_@@_fmt_section_tl \centering },
+    { subsection    } { \l_@@_fmt_section_tl            },
+    { subsubsection } { \l_@@_fmt_section_tl            },
+    { paragraph     } { \l_@@_fmt_section_tl            },
+    { subparagraph  } { \l_@@_fmt_section_tl            },
 %    \end{macrocode}
 % 目录中的章标题样式。
 %    \begin{macrocode}
-    { chapterintoc  } { \c_@@_fmt_section_tl            },
+    { chapterintoc  } { \l_@@_fmt_section_tl            },
 %    \end{macrocode}
 % “目录”二字的样式。
 %    \begin{macrocode}
@@ -8646,8 +8725,8 @@ To produce the documentation run the original source files ending with
 %    \begin{macrocode}
 \keys_define:nn { njudoc }
   {
-    codehigh .bool_set:N = \g_@@_codehigh_bool,
-    codehigh  .initial:n = false
+    codehigh .bool_gset:N = \g_@@_codehigh_bool,
+    codehigh   .initial:n = false
   }
 \ProcessKeysOptions { njudoc }
 %    \end{macrocode}
@@ -8690,10 +8769,27 @@ To produce the documentation run the original source files ending with
   }
 %    \end{macrocode}
 %
-% 处理 \cls{l3doc} 新追加的 |e| 型展开。
+% 处理丢失的展开类型实现向后兼容。在2023年11月，\cls{l3doc} 进行了一系列展开类型修改。
+% 详见 \href{https://github.com/CTeX-org/ctex-kit/pull/678}{\texttt{CTeX-org/ctex-kit\#678}}
+% 以及 \href{https://github.com/CTeX-org/ctex-kit/pull/700}{\texttt{CTeX-org/ctex-kit\#700}}。
 %    \begin{macrocode}
-\cs_if_exist:NF \__codedoc_get_hyper_target:xN
-  { \cs_new_eq:NN \__codedoc_get_hyper_target:xN \__codedoc_get_hyper_target:eN }
+\cs_generate_variant:Nn \__codedoc_get_hyper_target:nN { x }
+\cs_generate_variant:Nn \tl_replace_all:Nnn { No }
+%    \end{macrocode}
+%
+% 处理向后兼容。见 \href{https://github.com/CTeX-org/ctex-kit/pull/703}{\texttt{CTeX-org/ctex-kit\#703}}。
+%    \begin{macrocode}
+\cs_if_exist:NF \__codedoc_macroname_prefix:o
+  {
+    \cs_new_protected:Npn \__codedoc_macroname_prefix:n #1
+      {
+        \__codedoc_if_macro_internal:nTF {#1}
+          { \__codedoc_typeset_aux:n {#1} } {#1}
+      }
+    \cs_generate_variant:Nn \__codedoc_macroname_prefix:n { o }
+    \cs_new_protected:Npn \__codedoc_macroname_suffix:N #1
+      { \bool_if:NTF #1 { \__codedoc_typeset_TF: } { } }
+  }
 %    \end{macrocode}
 %
 % \subsubsection{杂项}

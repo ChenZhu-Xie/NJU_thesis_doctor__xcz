@@ -6,6 +6,14 @@
 
 ## [未发布]
 
+### 修复
+
+- 修复成果列表中文姓名加粗的问题 - [#192]
+- 修复 LuaLaTeX 下华文中宋的载入问题
+- 修复 LuaLaTeX 下的摘要页多余换行 - [#248]
+
+## [1.4.0] - 2024-03-19
+
 ### 新增
 
 - 增加 `macoffice` 字体配置 - [#164],[#169]
@@ -14,10 +22,20 @@
 ### 修复
 
 - 修复定理类环境在共享计数器时的 `cleveref` 引用名问题 - [#234]
+- 将部分 `hyperref` 默认设置项放在导言区前以便用户覆盖
+- 修正 `tabularray` 默认标题间距
+- 修复本科生诚信承诺书的换行问题
+- 修复导师名和职称之间没有空格的问题 - [#243]
+- 使用正确的变量类型 - [#240],[#243]
+  - 感谢 [@muzimuzhi]！
+- 匹配 l3doc 的修改 - [CTeX-org/ctex-kit#700], [CTeX-org/ctex-kit#703]
+- `draft` 选项不接受输入值
 
 ### 杂项
 
 - 跟进 2024 届本科毕业论文规定
+- 美化 issue template 样式 - [#241]
+  - 感谢 [@muzimuzhi]！
 
 ## [1.3.2] - 2023-12-05
 
@@ -538,8 +556,9 @@
 - 模板上传至 CTAN
 
 
-[未发布]: https://github.com/nju-lug/NJUThesis/compare/v1.3.1...HEAD
+[未发布]: https://github.com/nju-lug/NJUThesis/compare/v1.4.0...HEAD
 
+[1.4.0]: https://github.com/nju-lug/NJUThesis/compare/v1.3.2...v1.4.0
 [1.3.2]: https://github.com/nju-lug/NJUThesis/compare/v1.3.1...v1.3.2
 [1.3.1]: https://github.com/nju-lug/NJUThesis/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/nju-lug/NJUThesis/compare/v1.2.1...v1.3.0
@@ -613,6 +632,7 @@
 [#173]: https://github.com/nju-lug/NJUThesis/issues/173
 [#181]: https://github.com/nju-lug/NJUThesis/issues/181
 [#191]: https://github.com/nju-lug/NJUThesis/issues/191
+[#192]: https://github.com/nju-lug/NJUThesis/discussions/192
 [#200]: https://github.com/nju-lug/NJUThesis/discussions/200
 [#202]: https://github.com/nju-lug/NJUThesis/discussions/202
 [#204]: https://github.com/nju-lug/NJUThesis/issues/204
@@ -628,8 +648,12 @@
 [#230]: https://github.com/nju-lug/NJUThesis/issues/230
 [#232]: https://github.com/nju-lug/NJUThesis/issues/232
 [#234]: https://github.com/nju-lug/NJUThesis/issues/234
+[#243]: https://github.com/nju-lug/NJUThesis/issues/243
+[#248]: https://github.com/nju-lug/NJUThesis/issues/248
 
 [CTeX-org/ctex-kit#678]: https://github.com/CTeX-org/ctex-kit/pull/678
+[CTeX-org/ctex-kit#700]: https://github.com/CTeX-org/ctex-kit/pull/700
+[CTeX-org/ctex-kit#703]: https://github.com/CTeX-org/ctex-kit/pull/703
 
 [更新日志]: https://keepachangelog.com/zh-CN/1.0.0/
 [语义化版本]: https://semver.org/lang/zh-CN/
@@ -644,3 +668,4 @@
 [@AlphaZTX]: https://github.com/AlphaZTX
 [@stone-zeng]: https://github.com/stone-zeng
 [@liudongmiao]: https://github.com/liudongmiao
+[@muzimuzhi]: https://github.com/muzimuzhi
