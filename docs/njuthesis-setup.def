@@ -11,12 +11,12 @@
 % info 类用于录入个人信息
 %   带*号的为对应英文字段
 \njusetup[info]{
-    title = {任意 $\overset{=}{\symbf{\varepsilon}}, \overset{\equiv}{\symbf{\chi}}$ 电介质中的解析矢量\\线性、非线性傅立叶晶体光学},
+    title = {任意 $\overset{=}{\symbf{\varepsilon}}, \overset{\equiv}{\symbf{\chi}}$ 电介质中的\\解析矢量线性、非线性\\傅立叶晶体光学},
     % 中文题目
     % 直接填写标题就是自动换行
     % 可以使用换行控制符(\\)手动指定换行位置
     %
-    title* = {Analytic vector linear and nonlinear Fourier crystal optics in arbitrary $\bar{\bar{\symbf{\varepsilon}}}, \bar{\bar{\bar{\symbf{\chi}}}}$ dielectric},
+    title* = {Analytic vector linear and nonlinear \\Fourier crystal optics in \\arbitrary $\bar{\bar{\symbf{\varepsilon}}}, \bar{\bar{\bar{\symbf{\chi}}}}$ dielectric},
     % 英文题目
     %
     author = {谢尘竹},
@@ -180,7 +180,7 @@
 
 % abstract 类用于设置摘要样式
 \njusetup[abstract]{
-    toc-entry = true,
+    toc-entry = false,
     % 摘要是否显示在目录条目中
     %
     % underline = false,
@@ -192,7 +192,7 @@
 
 % 目录自身是否显示在目录条目中
 \njusetup{
-    % tableofcontents/toc-entry = false,
+    tableofcontents/toc-entry = false,
     % listoffigures/toc-entry   = false,
     % listoftables/toc-entry    = false
 }
@@ -233,6 +233,8 @@
 
 % footnote 类用于设置脚注样式，功能详见手册
 \njusetup[footnote]{
+	style={circled},
+	circledtext-option={resize=none,boxcolor=black,boxtype=o,boxfill=cyan!30}
   % style = pifont|circled,
   % 使用圈码编号
   %
@@ -245,7 +247,7 @@
   % header/content = {
   %     {OR}{\thepage},{OL}{\rightmark},
   %     {EL}{\thepage},{ER}{\leftmark}
-  %   },
+  % },
   % 页眉设置，详见手册
   % 奇数页页眉：左侧章名，右侧页码
   % 偶数页页眉：左侧页码，右侧节名

@@ -25,9 +25,14 @@
 % http://mirrors.ctan.org/macros/unicodetex/latex/njuthesis/njuthesis.pdf
 %---------------------------------------------------------------------
 
+\PassOptionsToPackage{%%%%%%%%%%%%%%%%%%%%%%%
+	backref=true,
+	}{biblatex}%%%%%%%%%%%%%%%%%%%%%%%
+
 \documentclass[
     % 模板选项(注意右端逗号)：
     %
+    type = doctor,
     % type = bachelor|master|doctor|postdoc, % 文档类型，默认为本科生
     % degree = academic|professional,        % 学位类型，默认为学术型
     %
@@ -45,26 +50,122 @@
     %
     %   字体设置，不填写则自动调用系统预装字体，详见手册
     % fontset = win|mac|macoffice|fandol|none,
+    % latin-font = win|mac|gyre|none,
+    % cjk-font   = win|mac|fandol|founder|noto|source|none,
+    % math-font  = cambria|newcm|xits, % 完整列表见手册
+%    biblatex = false,
+%    unicode-math = false,
   ]{njuthesis}
 
 % 模板选项设置，包括个人信息、外观样式等
 % 较为冗长且一般不需要反复修改，我们把它放在单独的文件里
 \input{njuthesis-setup.def}
 
+\njusetformat{chapter}{\raggedleft\kaishu\zihao{-1}}
+
 % 自行载入所需宏包
 % \usepackage{subcaption} % 嵌套小幅图像，比 subfig 和 subfigure 更新更好
 % \usepackage{siunitx} % 标准单位符号
-% \usepackage{physics} % 物理百宝箱
+\usepackage{physics} % 物理百宝箱
 % \usepackage[version=4]{mhchem} % 绘制分子式
 % \usepackage{listings} % 展示代码
 % \usepackage{algorithm,algorithmic} % 展示算法伪代码
+
+%%%%%%%%%%%%%%%%%%%%%%% my packages
+\usepackage{hyperref} % 只读的 njuthesis.cls 中，已经用 RequirePackage 定义了
+\usepackage{cases}
+\usepackage{accents}
+\usepackage{xeCJKfntef}
+\usepackage{stmaryrd}
+\usepackage{esvect}
+\usepackage{fontspec,xunicode-addon} % fontspec 需要 XeLaTeX；xunicode-addon 带圈数字
+\usepackage{graphicx}  % resize 表格的宽度 不超过文本宽度
+\usepackage{booktabs}  % 经典三线表 \toprule、\midrule、\bottomrule
+\usepackage{cancel}
+
+%\usepackage{amsmath,amssymb,amsfonts}%
+%\usepackage{amsthm}%
+%\usepackage{mathrsfs}%
+%\usepackage[title]{appendix}%
+%\usepackage[table,dvipsnames]{xcolor}% [dvipsnames] for custom .sty;
+\usepackage{tikzsetup}
+% -------------------- currently these custom packages are coupled together, sharing some public \cmds, so the package below may rely on the one above
+\usepackage{secbacklinktoc}% custom .sty
+\usepackage{optsection}% custom .sty
+%\usepackage{tocformat}% custom .sty
+\usepackage{apptoc}% custom .sty
+\usepackage{bibbackref}% custom .sty
+\usepackage{amseqfloatbackref}% custom .sty
+\usepackage{footnotebacklink}% custom .sty
 
 % 在导言区随意定制所需命令
 % \DeclareMathOperator{\spn}{span}
 % \NewDocumentCommand\mathbi{m}{\textbf{\em #1}}
 
+%%%%%%%%%%%%%%%%%%%%%%% my commands
+\makeatletter
+\def\ubar{\underaccent{{\underline{\mskip10mu}}}}
+\def\uddot{\underaccent{\"}} % 选这个 还是选 \undertilde{} ← 这个类似 underline
+\makeatother
+
+\def\sf{\fontspec{Lato-Italic.ttf}} % \text{\sf g}
+\setmathtt{Arial Italic} % 需要 \usepackage{fontspec}（现在已经用 isomath 来替代）
+
+\allowdisplaybreaks[4] % 允许 align 环境自动跨页
+\ctexset{
+	chapter = {
+		%		format={\centering\sffamily},
+		%		nameformat={\heiti\zihao{3}},
+		%		titleformat={\heiti \zihao {3}},
+		%		numberformat={\heiti \zihao {3}},
+		beforeskip={0pt},afterskip={36pt},
+		%		name={第, 章},number={\arabic {chapter}}
+	},
+	section = {
+		%		format={\flushleft \sffamily \heiti \zihao {4}},
+		beforeskip={40pt},afterskip={16pt},
+	},
+	subsection = {
+		%		format={\flushleft\sffamily\heiti\zihao{-4}},
+		beforeskip={24pt},afterskip={16pt},
+	},   
+	subsubsection = {
+		%		format={\flushleft\sffamily\heiti\zihao{-4}},
+		beforeskip={24pt},afterskip={16pt},
+}}
+
+%% ------------------------------------------------
+% XeLaTeX 下需要把全体带圈数字都设置成 Default 类
+% LuaLaTeX 下无须额外设置
+\xeCJKDeclareCharClass{Default}{"24EA, "2460->"2473, "3251->"32BF}
+
+% 将中文字体声明为（西文）字体族
+\newfontfamily\EnclosedNumbers{Source Han Serif SC}
+
+% 放置钩子，只让带圈字符才需更换字体
+\AtBeginUTFCommand[\textcircled]{\begingroup\EnclosedNumbers}
+\AtEndUTFCommand[\textcircled]{\endgroup}
+
+%% ------------------------------------------------
+% 为设置 无衬线反白（negative circled sans-serif digits） 而设置字体
+\newfontfamily{\SHSC}{Source Han Serif SC}
+%\def\negacircled#1{\SHSC \symbol{"#1}}
+\def\zero{\SHSC \symbol{"24FF}}
+\def\one{\SHSC \symbol{"2776}}
+\def\two{\SHSC \symbol{"2777}}
+\def\three{\SHSC \symbol{"2778}}
+\def\four{\SHSC \symbol{"2779}}
+\def\five{\SHSC \symbol{"277A}}
+\def\six{\SHSC \symbol{"277B}}
+\def\seven{\SHSC \symbol{"277C}}
+\def\eight{\SHSC \symbol{"277D}}
+\def\nine{\SHSC \symbol{"277E}}
+\def\ten{\SHSC \symbol{"277F}}
+
 % 开始编写论文
 \begin{document}
+
+
 
 %---------------------------------------------------------------------
 %	封面、摘要、前言和目录
@@ -76,7 +177,7 @@
 % 模板默认使用 \flushbottom，即底部平齐
 % 效果更好，但可能出现 underfull \vbox 信息
 % 以下命令用于抑制这些信息
-\raggedbottom
+% \raggedbottom
 
 \begin{abstract}
   中文摘要
@@ -113,13 +214,8 @@
 % 然后在这里用 \include 导入，例如
 %   \include{chapters/introduction}
 %   \include{chapters/environments}
-
-\chapter{引言}
-
-\section{量子计算}
-
-John Preskill 认为我们现在处于“含噪声的中型量子时代”。\cite{preskill2018}
-量子位的不稳定性和有限的量子比特数量限制了量子计算机的复杂度和纠错能力。
+\include{./chapters/chapter1.tex}
+\include{./chapters/chapter2.tex}
 
 %---------------------------------------------------------------------
 %	参考文献
@@ -150,9 +246,20 @@ John Preskill 认为我们现在处于“含噪声的中型量子时代”。\ci
 
 % 附录部分使用单独的字母序号
 \appendix
+\let\appthechapter\thechapter% for secbacklinktoc .sty
+\let\appthesection\thesection% for secbacklinktoc .sty
+\let\appthesubsection\thesubsection% for secbacklinktoc .sty
+\let\appthesubsubsection\thesubsubsection% for secbacklinktoc .sty
+\counterwithin{figure}{section} % for custom .sty
+\counterwithin{table}{section}% for custom .sty
 
 % 可以在这里插入补充材料
-\chapter{正文中涉及的数据及源代码}
+\appchapter{正文中涉及的数据及源代码}
+
+\appsection{test}
+
+\appsubsection{ddddd}
+
 \dots
 
 % 完工

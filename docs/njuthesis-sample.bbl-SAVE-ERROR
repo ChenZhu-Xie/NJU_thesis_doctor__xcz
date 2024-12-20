@@ -1,0 +1,195 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{berryOpticalSingularitiesBirefringent2003}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=1c4ffbcd1b13d6128da27921b5ce5a62}{%
+           family={Berry},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi V.},
+           giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=14617aabe74fc8d76668abcd756a2171}{%
+           family={Dennis},
+           familyi={D\bibinitperiod},
+           given={M.\bibnamedelimi R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=1c4ffbcd1b13d6128da27921b5ce5a62}{%
+           family={Berry},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi V.},
+           giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=14617aabe74fc8d76668abcd756a2171}{%
+           family={Dennis},
+           familyi={D\bibinitperiod},
+           given={M.\bibnamedelimi R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{4fec3c294f49642dfadb2c58938d0e93}
+      \strng{fullhash}{25bcaf4e692ff8ab89faee0df2f9897b}
+      \strng{fullhashraw}{25bcaf4e692ff8ab89faee0df2f9897b}
+      \strng{bibnamehash}{25bcaf4e692ff8ab89faee0df2f9897b}
+      \strng{authorbibnamehash}{25bcaf4e692ff8ab89faee0df2f9897b}
+      \strng{authornamehash}{4fec3c294f49642dfadb2c58938d0e93}
+      \strng{authorfullhash}{25bcaf4e692ff8ab89faee0df2f9897b}
+      \strng{authorfullhashraw}{25bcaf4e692ff8ab89faee0df2f9897b}
+      \strng{nameabibnamehash}{25bcaf4e692ff8ab89faee0df2f9897b}
+      \strng{nameanamehash}{4fec3c294f49642dfadb2c58938d0e93}
+      \strng{nameafullhash}{25bcaf4e692ff8ab89faee0df2f9897b}
+      \strng{nameafullhashraw}{25bcaf4e692ff8ab89faee0df2f9897b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{issn}{1364-5021, 1471-2946}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{5}
+      \field{number}{2033}
+      \field{shortjournal}{Proc. R. Soc. Lond. A}
+      \field{title}{The Optical Singularities of Birefringent Dichroic Chiral Crystals}
+      \field{urlday}{19}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{459}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1261\bibrangedash 1292}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1098/rspa.2003.1155
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\9XC3GKIF\2003_-_the_optical_singularities_of_birefringent_dichroic_chiral_crystals_-_proc._r._soc._lond._a_-_Berry,_Dennis_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://royalsocietypublishing.org/doi/10.1098/rspa.2003.1155
+      \endverb
+      \verb{url}
+      \verb https://royalsocietypublishing.org/doi/10.1098/rspa.2003.1155
+      \endverb
+      \keyw{berryOpticalSingularitiesBirefringent2003}
+    \endentry
+    \entry{ossikovskiConstitutiveRelationsOptically2021}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=4d7816ec914e0747805be12bed78f9cc}{%
+           family={Ossikovski},
+           familyi={O\bibinitperiod},
+           given={Razvigor},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0c50a7d4718948a57819391f11d93955}{%
+           family={Arteaga},
+           familyi={A\bibinitperiod},
+           given={Oriol},
+           giveni={O\bibinitperiod}}}%
+        {{hash=c5e6e06ea26c2f97869ec063ca77210c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=4d7816ec914e0747805be12bed78f9cc}{%
+           family={Ossikovski},
+           familyi={O\bibinitperiod},
+           given={Razvigor},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0c50a7d4718948a57819391f11d93955}{%
+           family={Arteaga},
+           familyi={A\bibinitperiod},
+           given={Oriol},
+           giveni={O\bibinitperiod}}}%
+        {{hash=c5e6e06ea26c2f97869ec063ca77210c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{b8f316c46a190f08d5a884fa07c6202a}
+      \strng{fullhash}{e2d995be3dc6c2812f7f944a0ba26b6d}
+      \strng{fullhashraw}{e2d995be3dc6c2812f7f944a0ba26b6d}
+      \strng{bibnamehash}{e2d995be3dc6c2812f7f944a0ba26b6d}
+      \strng{authorbibnamehash}{e2d995be3dc6c2812f7f944a0ba26b6d}
+      \strng{authornamehash}{b8f316c46a190f08d5a884fa07c6202a}
+      \strng{authorfullhash}{e2d995be3dc6c2812f7f944a0ba26b6d}
+      \strng{authorfullhashraw}{e2d995be3dc6c2812f7f944a0ba26b6d}
+      \strng{nameabibnamehash}{e2d995be3dc6c2812f7f944a0ba26b6d}
+      \strng{nameanamehash}{b8f316c46a190f08d5a884fa07c6202a}
+      \strng{nameafullhash}{e2d995be3dc6c2812f7f944a0ba26b6d}
+      \strng{nameafullhashraw}{e2d995be3dc6c2812f7f944a0ba26b6d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{2699-9293, 2699-9293}
+      \field{journaltitle}{Advanced Photonics Research}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{12}
+      \field{number}{12}
+      \field{shortjournal}{Advanced Photonics Research}
+      \field{shorttitle}{Constitutive {{Relations}} for {{Optically Active Anisotropic Media}}}
+      \field{title}{Constitutive Relations for Optically Active Anisotropic Media: {{A}} Review}
+      \field{urlday}{31}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{2}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2100160}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1002/adpr.202100160
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\QW2ECITA\2021_-_constitutive_relations_for_optically_active_anisotropic_media_a_review_-_advanced_photonics_research_-_Ossikovski,_Arteaga,_Sturm_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/adpr.202100160
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/adpr.202100160
+      \endverb
+      \keyw{ossikovskiConstitutiveRelationsOptically2021}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
