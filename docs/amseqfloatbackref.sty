@@ -1,0 +1,297 @@
+
+\ProvidesPackage{amseqfloatbackref}
+  [2024/07/07 v1.0 Amsmath equations/floats back referencing]% float = figure or table
+
+\RequirePackage[dvipsnames]{xcolor}
+%https://tex.stackexchange.com/questions/100905/best-practice-for-hyperref-link-colours
+%\newcommand\myshade{85}
+\edef\Aquamarine{Aquamarine!\myshade!black}% read only, so no \global need?
+\edef\YellowOrange{YellowOrange!\myshade!black}%
+\edef\Violet{violet!\myshade!black}%
+
+\newlength{\FloatLeftsep}
+\setlength{\FloatLeftsep}{1.3em}
+\newlength{\notEqinsep}
+\setlength{\notEqinsep}{0.7em}
+\newlength{\EqRightsep}
+\setlength{\EqRightsep}{1.0em}
+\newlength{\Eqinsep}
+\setlength{\Eqinsep}{0.5em}
+\newlength{\writewidth}
+\setlength{\writewidth}{2.3cm}
+
+% -------------------- https://tex.stackexchange.com/questions/558992/how-to-backreference-floating-environments-like-listings-or-figures-to-where-the?rq=1
+% add <page> to the list of pages where <label> was referenced
+% remember the first instance counter for each label/page combination
+% {<label>}{<backref instance counter>}
+\protected\def\rugk@ref@backref#1#2{%
+	\ifcsundef{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}% 如果 #1=\cref{a,b,c,...} 中的 a 或 b 或 c... 不在列表内，则加入这个列表
+	{\global\cslet{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}\@empty}
+	{}% don't have to check these actually
+	\ifinlistcs{#2}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}% 如果 #2=#1-BR.\the\value{#1-BR} 不在列表内，则加入这个列表
+	{}
+	{\listcsgadd{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}{#2}}}
+
+% write label backref to aux file
+% {<label>}
+\def\rugk@write@ref@backref#1{%
+	\if@filesw
+	\protected@write\@mainaux{}{\string\rugk@ref@backref
+		{#1}{#1-BR.\the\value{#1-BR}}}% #1 = \cref 的单个元素 = 1 个被反链的 label 名
+	\fi}
+
+%https://tex.stackexchange.com/questions/9939/multiply-defined-labels-using-hyperref#:~:text=%5Clet%5Ctextlabel%5Clabel
+%https://tex.stackexchange.com/questions/40129/amsmath-multiple-labels-in-one-equation#:~:text=%5Clet%5Cltxxlabel%5Clabel
+\let\textlabel\label
+\newcommand*{\rugk@create@backref@label}[1]{%
+	\begingroup%
+	\@ifundefined{c@#1-BR}{%
+		\newcounter{#1-BR}%
+	}{}%
+	\refstepcounter{#1-BR}% since having \refstc don't have to set \phantomsection
+	%	\stepcounter{#1-BR}\phantomsection% however, in order to define multiple labels in single equation, one must use \phantomsection to keep only 1 visible label → no, not this logic, "multi-labels in equation" problem already solved by \let\textlabel\label
+	%	\label{#1-BR.\the\value{#1-BR}}%
+	\textlabel{#1-BR.\the\value{#1-BR}}%
+	\rugk@write@ref@backref{#1}%
+	%	\global\let\df@label\@empty% 有了这句，可以不需要将 \label 替换为 \textlabel
+	% see https://tex.stackexchange.com/questions/9939/multiply-defined-labels-using-hyperref#:~:text=The%20mathmode%20%5Clabel%20in%20your%20document%20is%20defined%20in%20the%20following%20way
+	\endgroup%
+}
+
+\newrobustcmd\@BRlabels[1]{% 尝试 \newcommand → \newrobustcmd 以解决 \backcref 无法在 \backcaption 或 方程环境 下的问题。 额，不需要，只需要 \backcref 是 \newrobustcmd 就行
+	\def\do##1{%
+		\rugk@create@backref@label{##1}%
+	}%
+	\docsvlist{#1}%
+}
+
+\newcommand{\bref}[1]{% 尝试 \newcommand → \newrobustcmd 以解决 \backcref 无法在 \backcaption 或 方程环境 下的问题。 子命令 \@BRlabels 不需要是 鲁棒的。
+	% 因为 \cref 由 \DeclareRobustCommand 定义，\backcref 需要模仿它。
+%	Supplementary \cref{#1}%
+%	S\cref{#1}%
+	\cref{#1}%
+	\@BRlabels{#1}%
+}
+
+% -------------------- 
+
+%\NewExpandableDocumentCommand\XGap{m}{\noalign{\vskip #1}}
+\NewExpandableDocumentCommand\XGap{m}{\vskip #1}
+\NewExpandableDocumentCommand\Gap{}{\XGap{2pt}}
+
+\def\tempage{}
+\edef\colortemp{\Aquamarine}
+
+\newcounter{backrefpages}
+\newcounter{totalbackrefpages}
+\RequirePackage{refcount}% get page = \getpagerefnumber{label} of label
+
+\newrobustcmd*{\printlabelbackrefsLeft}[1]{%
+	\setcounter{backrefpages}{0}%
+	\setcounter{totalbackrefpages}{0}%
+	\ifcsundef{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}
+	{\color{gray}Not referenced} %\color{gray}Quoted~@~{\color{black}0}~p.
+	{\def\do##1{\stepcounter{backrefpages}}%
+		\dolistcsloop{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}%
+		\setcounter{totalbackrefpages}{\value{backrefpages}}%
+		\setcounter{backrefpages}{0}%
+		\small{\color{gray}Quoted~@}~\textit{\arabic{totalbackrefpages}}~\ifnumgreater{\value{totalbackrefpages}}{1}% Mentioned~@
+		{\color{gray}pp.}%
+		%		{p.}~%
+		{\color{gray}p.}\par\Gap%
+		\global\def\tempage\empty% initialize \temp, each time set a margin note
+		\global\edef\colortemp{\Aquamarine}% initialize \colortemp 为数值 1, each time set a margin note
+		{\forlistcsloop{\printbackrefpageLeft}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}}%
+}}
+
+\newcommand*{\printbackrefpageLeft}[1]{%
+	% sometimes #1 expands to `{name}` instead of `name`
+	\stepcounter{backrefpages}%
+	\edef\refpage{\getpagerefnumber{#1}}%
+	\ifx\tempage\refpage\else\ifx\colortemp\Aquamarine\global\edef\colortemp{\YellowOrange}\else\global\edef\colortemp{\Aquamarine}\fi\fi%
+	{\hypersetup{linkcolor=\colortemp}\footnotesize\textit{\pageref{#1}}}% YellowOrange!\myshade!black
+	\global\edef\tempage{\getpagerefnumber{#1}}%
+	\ifnumless{\value{backrefpages}}{\value{totalbackrefpages}}
+	{, }
+	{.\vphantom{,}}}% add a \vphantom{,} to keep normal vertical height nuchanged whether multiple or single line
+
+\newrobustcmd*{\printlabelbackrefsRight}[1]{%
+	\ifcsundef{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}
+	{\color{gray}Not referenced} %\color{gray}Quoted~@~{\color{black}0}~p.
+	{\global\def\tempage\empty% initialize \temp, each time set a margin note
+		\global\edef\colortemp{\Aquamarine}% initialize \colortemp 为数值 1, each time set a margin note
+		{\forlistcsloop{\printbackrefpageRight}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}}%
+}}
+
+\newcommand*{\printbackrefpageRight}[1]{%
+	% sometimes #1 expands to `{name}` instead of `name`
+	\stepcounter{backrefpages}%
+	\edef\refpage{\getpagerefnumber{#1}}%
+	\ifx\tempage\refpage\else\ifx\colortemp\Aquamarine\global\edef\colortemp{\Violet}\else\global\edef\colortemp{\Aquamarine}\fi\fi%
+	{\hypersetup{linkcolor=\colortemp}\footnotesize\textit{\pageref{#1}}}% YellowOrange!\myshade!black
+	\global\edef\tempage{\getpagerefnumber{#1}}%
+	\ifnumless{\value{backrefpages}}{\value{totalbackrefpages}}
+	{, }
+	{.\vphantom{,}}}% add a \vphantom{,} to keep normal vertical height nuchanged whether multiple or single line
+
+% -------------------- backlinks for table & figures % https://tex.stackexchange.com/questions/14981/usage-of-table-figures-shown-in-caption
+% \backcref{}s in \backcaption deprive {hypcap} package of its function, because @currentHref's been temporarily changed by those \backcref{}s
+\newcommand{\hypcaplabel}[1]{%
+	\ifx\hc@currentHref\@undefined\else%
+	\if Hy@hypertexnames%
+	\hyper@makecurrent{\@captype}%
+	\else% 设置 当前锚点位置 \@currentHref 为 之前储存的 浮动体 刚开始时 的 顶部锚点位置 \hc@currentHref，那么下一次 用户命令 \label 将调用该锚点位置。
+	\global\let\@currentHref\hc@currentHref%
+	\fi%
+	\fi%
+	\label{#1}%
+}
+
+\newrobustcmd{\backcaption}[4][]{
+	\if\relax\expandafter\detokenize\expandafter{#1}\relax% 空则执行 前面的，否则执行 else 后的
+	\def\rugk@tmpcapt{\caption[#3]}% #3 is \Caption
+	\else% \backcref{} is not allowed in \ShortCaption [], however \cref{eq:0-1} is allowed —— this problem seems to have been fixed by \newrobustcmd
+	\def\rugk@tmpcapt{\caption[#1]}% #1 is \ShortCaption, 
+	\fi%
+	\marginwriteLeft[#2]{#4}\rugk@tmpcapt{#3}\hypcaplabel{#4}% #4 is \label
+}
+
+\newcommand\marginwriteLeft[2][0pt]{% 第 2 个[] = 第 1 个参数 #1=纵向偏移 的 默认值是 0pt
+	\ifcsundef{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#2}}{}{% 如果 该列表 不存在 则不画
+		\marginwriteformatFloatLeft[#1]{%
+			\simplecolorparboxLeft{white!0}{\writewidth}{%
+				\scriptsize\raggedleft% \centering
+				\printlabelbackrefsLeft{#2}}% (see \printlabelbackrefs{#1})
+		}% 这个 % 非常重要，去掉会多个空格，而且会递增。
+	}% 这个 % 非常重要，去掉会多个空格，而且会递增。
+}%
+
+\newcommand{\marginwriteformatFloatLeft}[2][0pt]{% 第 2 个[] = 第 1 个参数 #1=纵向偏移 的 默认值是 0pt
+	\strut\vadjust{%
+		\vbox to 0pt{% \dimexpr\ht\strutbox+\dp\strutbox is more accurate than \dimexpr\baselineskip+\lineskip but not enough for lines involving math expressions
+			\sbox0{#2}\kern-\the\dimexpr+#1\relax%
+			\llap{\usebox0\kern\FloatLeftsep}\hfill% 这个 % 非常重要，去掉会多个空格？
+			\vss% {#1}pt is correct, but worse than #1 alone.
+		}% 这个 % 非常重要，去掉会多个空格。
+	}% 这个 % 非常重要，去掉会多个空格。
+}% \kern\FloatLeftsep should be in \llap
+
+\newcommand*{\simplecolorparboxLeft}[3]{%
+	\minipagewithvrule{#2}{#3}\usebox0\kern\notEqinsep{\color{gray} \vrule width 0.5pt height \dimexpr(\ht0+3pt)\relax depth \dimexpr(\dp0+3pt)\relax}%
+}
+
+%https://tex.stackexchange.com/questions/85776/change-figure-numbering-for-appendix
+\RequirePackage{chngcntr}% to use \counterwithin{figure}{section} within appendix
+% -------------------- left backlinks for sections or whatever
+%\renewcommand{\section}{\section}
+%just use \marginwriteLeft[#2]{#4} is OK
+
+\newrobustcmd*{\printbackrefsLeft}[1]{%
+	\setcounter{backrefpages}{0}%
+	\setcounter{totalbackrefpages}{0}%
+	\ifcsundef{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}
+	{\color{gray}Not referenced} %\color{gray}Quoted~@~{\color{black}0}~p.
+	{\def\do##1{\stepcounter{backrefpages}}%
+		\dolistcsloop{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}%
+		\setcounter{totalbackrefpages}{\value{backrefpages}}%
+		\setcounter{backrefpages}{0}%
+		\small{\color{gray}Quoted~@}~\textit{\arabic{totalbackrefpages}}~\ifnumgreater{\value{totalbackrefpages}}{1}% Mentioned~@
+		{\color{gray}pp.}%
+		%		{p.}~%
+		{\color{gray}p.}\par\Gap%
+		\global\def\tempage\empty% initialize \temp, each time set a margin note
+		\global\edef\colortemp{\Aquamarine}% initialize \colortemp 为数值 1, each time set a margin note
+		{\forlistcsloop{\printbrpageLeft}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}}%
+}}
+
+\newcommand*{\printbrpageLeft}[1]{%
+	% sometimes #1 expands to `{name}` instead of `name`
+	\stepcounter{backrefpages}%
+	\edef\refpage{\getpagerefnumber{#1}}%
+	\ifx\tempage\refpage\else\ifx\colortemp\Aquamarine\global\edef\colortemp{Sepia}\else\global\edef\colortemp{\Aquamarine}\fi\fi%
+	{\hypersetup{linkcolor=\colortemp}\footnotesize\textit{\pageref{#1}}}% YellowOrange!\myshade!black
+	\global\edef\tempage{\getpagerefnumber{#1}}%
+	\ifnumless{\value{backrefpages}}{\value{totalbackrefpages}}
+	{, }
+	{.\vphantom{,}}}% add a \vphantom{,} to keep normal vertical height nuchanged whether multiple or single line
+
+\newcommand\marginLeft[2][0pt]{%
+	\ifcsundef{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#2}}{}{% 如果 该列表 不存在 则不画
+		\marginwriteformatLeft[#1]{%
+			\simplecolorparboxLeft{white!0}{\writewidth}{%
+				\scriptsize\raggedleft% \centering
+				\printbackrefsLeft{#2}}% (see \printlabelbackrefs{#1})
+		}% 这个 % 非常重要，去掉会多个空格，而且会递增。
+	}% 这个 % 非常重要，去掉会多个空格，而且会递增。
+}
+
+%\newcommand{\marginwriteformatLeft}[2][0pt]{% 第 2 个[] = 第 1 个参数 #1=纵向偏移 的 默认值是 0pt
+%	\strut\vadjust{%
+%		\vbox to 0pt{% \dimexpr\ht\strutbox+\dp\strutbox is more accurate than \dimexpr\baselineskip+\lineskip but not enough for lines involving math expressions
+%			\sbox0{#2}\kern-\the\dimexpr-\ht\strutbox-\dp\strutbox+#1\relax%
+%			\llap{\usebox0\kern\FloatLeftsep}\hfill% 这个 % 非常重要，去掉会多个空格？
+%			\vss% {#1}pt is correct, but worse than #1 alone.
+%		}% 这个 % 非常重要，去掉会多个空格。
+%	}% 这个 % 非常重要，去掉会多个空格。
+%}% \kern\FloatLeftsep should be in \llap
+
+\newcommand{\marginwriteformatLeft}[2][0pt]{% 第 2 个[] = 第 1 个参数 #1=纵向偏移 的 默认值是 0pt
+	\llap{\sbox0{#2}\raisebox{\dimexpr-\ht0-\dp0-\ht\strutbox*3/2-\dp\strutbox*3/2+#1\relax}[0pt][0pt]{\usebox0}\kern\FloatLeftsep}\hfill% 这个 % 非常重要，去掉会多个空格。
+}% \kern\FloatLeftsep should be in \llap
+
+% -------------------- backlinks for equations % https://tex.stackexchange.com/questions/116046/backreferences-for-equations
+% patch tag display, show refsto in margin.
+\let\ams@make@display@tag=\make@display@tag
+
+% sometimes \df@label expands to `{name}` instead of `name`
+\def\@@removebrace@#1{#1}
+\def\@@removebrace#1{\@@removebrace@#1}
+
+% patch tag display, show refsto in margin.
+\let\ams@make@display@tag=\make@display@tag
+\renewcommand{\make@display@tag}{%
+	\ifdefempty{\df@label}{% can happen with package `autonum`.
+		\ams@make@display@tag%
+	}{% not empty, show refs
+		\edef\orig@label{\expandafter\@@removebrace\df@label}% save label
+		\ams@make@display@tag% resets label
+		\marginwriteRight[0pt]{\orig@label}%
+	}%
+}
+
+\newcommand\marginwriteRight[2][0pt]{% 第 2 个[] = 第 1 个参数 #1=纵向偏移 的 默认值是 0pt
+	\ifcsundef{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#2}}{}{% 如果 该列表 不存在 则不画
+		%		\mathbacklinkmarginnote{\scriptsize\raggedright% \centering
+			%			\printlabelbackrefsRight{#2}}%
+		%		\transparentrightmarginnote{testestsets}%
+		\marginwriteformatEqRight[#1]{%
+			\simplecolorparboxEqRight{white!0}{\writewidth}{#2}%
+		}% 这个 % 非常重要，去掉会多个空格，而且会递增。
+	}% 这个 % 非常重要，去掉会多个空格，而且会递增。
+}% 这个 % 好像不重要
+
+\newcommand{\marginwriteformatEqRight}[2][0pt]{% 第 2 个[] = 第 1 个参数 #1=纵向偏移 的 默认值是 0pt
+	\hfill\rlap{\raisebox{\dimexpr+#1\relax}[0pt][0pt]{\kern\EqRightsep#2}}% 这个 % 非常重要，去掉会多个空格。
+}% it is OK whether \kern\FloatLeftsep is inside or outside \raisebox
+
+\newcommand*{\simplecolorparboxEqRight}[3]{%
+	\setcounter{backrefpages}{0}%
+	\setcounter{totalbackrefpages}{0}%
+	\def\do##1{\stepcounter{backrefpages}}%
+	\dolistcsloop{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#3}}%
+	\setcounter{totalbackrefpages}{\value{backrefpages}}%
+	\setcounter{backrefpages}{0}%
+	\scriptsize\raggedright%
+	\small\textit{\arabic{totalbackrefpages}}\kern\Eqinsep% Mentioned~@
+	\minipagewithvrule{#2}{\scriptsize\raggedright\printlabelbackrefsRight{#3}}%
+	{\color{gray} \vrule width 0.5pt height \dimexpr(\ht0+5pt)\relax depth \dimexpr(\dp0+4pt)\relax}\kern\Eqinsep%
+	\usebox0%
+}%
+
+\newcommand{\minipagewithvrule}[2]{%
+	\sbox0{%
+		\begin{minipage}{#1}
+			#2%
+		\end{minipage}%
+	}%
+}

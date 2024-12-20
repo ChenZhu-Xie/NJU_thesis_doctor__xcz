@@ -16,7 +16,7 @@
 *.cls
 *.def
 *.ins
-*.sty
+#*.sty
 !docs/njuthesis-setup.def
 
 ## Zip file

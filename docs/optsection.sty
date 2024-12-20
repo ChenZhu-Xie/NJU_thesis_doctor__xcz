@@ -1,0 +1,45 @@
+
+\ProvidesPackage{optsection}
+  [2024/07/07 v1.0 Add optional section logo *]% including sections/subsections in appendix
+
+% -------------------- Left-align numbers in ToC
+% https://tex.stackexchange.com/questions/450791/alignment-in-table-of-contents
+
+% \optionalsection cannot be directly called, no knowing for what, evenif using \newcommand to define this \command
+% however, as alternative, the contents inside, can be used in the ducument.
+\NewDocumentCommand{\optionalsection}{O{#3}om}{%
+	\renewcommand{\thesection}{\optasterisk\standardthesection}%
+	\optzerotrue
+	\IfNoValueTF{#2}{\section[#1]{#3}}{\section[#1][#2]{#3}}%
+	\optzerofalse
+	\renewcommand{\thesection}{\standardthesection}%
+}
+\AtBeginDocument{\let\standardthesection\thesection}
+
+% \optionalsubsection can be directly called.
+\NewDocumentCommand{\optionalsubsection}{O{#3}om}{%
+	\renewcommand{\thesubsection}{\optasterisk\standardthesubsection}%
+	\optzerotrue
+	\IfNoValueTF{#2}{\subsection[#1]{#3}}{\subsection[#1][#2]{#3}}%
+	\optzerofalse
+	\renewcommand{\thesubsection}{\standardthesubsection}%
+}
+\AtBeginDocument{\let\standardthesubsection\thesubsection}
+
+% \optionalsubsubsection can be directly called.
+\NewDocumentCommand{\optionalsubsubsection}{O{#3}om}{%
+	\renewcommand{\thesubsubsection}{\optasterisk\standardthesubsubsection}%
+	\optzerotrue
+	\IfNoValueTF{#2}{\subsubsection[#1]{#3}}{\subsubsection[#1][#2]{#3}}%
+	\optzerofalse
+	\renewcommand{\thesubsubsection}{\standardthesubsubsection}%
+}
+\AtBeginDocument{\let\standardthesubsubsection\thesubsubsection}
+
+\NewDocumentCommand{\optasterisk}{}{%
+	\ifoptzero\makebox[0pt][r]{*\hspace{1pt}}\else*\hspace{1pt}\fi
+}
+\newif\ifoptzero
+
+
+

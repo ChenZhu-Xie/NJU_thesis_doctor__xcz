@@ -1,0 +1,58 @@
+
+\ProvidesPackage{apptoc}
+  [2024/07/07 v1.0 Add TOC to Appendix]% add TOC to appendix
+
+\RequirePackage{appendix}
+% -------------------- Appendix Toc: https://tex.stackexchange.com/questions/447662/separate-toc-for-appendix
+
+\setcounter{tocdepth}{3}
+%\renewcommand{\appendixtocname}{List of appendices}
+\renewcommand{\appendixtocname}{Appendices} % not crucial
+\renewcommand{\appendixpagename}{Appendices} % not crucial
+
+\let\oldappendix\appendices
+
+\g@addto@macro\tableofcontents{%
+	% Store the current toc file for later usage
+	\let\tf@toc@orig\tf@toc
+}
+\renewcommand{\appendices}{%
+	\clearpage
+	\renewcommand{\thesection}{\Roman{section}}
+	% From now, everything goes to the app - file and not to the toc
+	% is this how why we have to inplement toc.appendix. ?
+	\let\tf@toc\tf@app
+	\addtocontents{app}{\protect\setcounter{tocdepth}{3}}
+	\immediate\write\@auxout{%
+		\string\let\string\tf@toc\string\tf@app
+	}
+	\oldappendix
+}%
+
+\g@addto@macro\endappendices{%
+	% Switch back to the old toc file handle
+	\let\tf@toc\tf@toc@orig
+	\immediate\write\@auxout{%
+		\string\let\string\tf@toc\string\tf@toc@orig
+	}%
+}  
+
+\newcommand{\listofappendices}{%
+	\begingroup
+	%	\renewcommand{\contentsname}{\appendixtocname}
+	\renewcommand{\contentsname}{\protect\hyperlink{toc.section.\thesection}{\appendixtocname}}
+	%	toc.section.\thesection  % print the variable
+	%	toc.section.\theHsection
+	%	\renewcommand{\contentsname}{\protect\hyperlink{AppTocTitle}{\appendixtocname}}
+	%	\renewcommand{\contentsname}{}
+	%	\renewcommand{\contentsname}{\section{Appendices}}
+	\let\@oldstarttoc\@starttoc
+	\def\@starttoc##1{\@oldstarttoc{app}}
+	\tableofcontents% Reusing the code for \tableofcontents with different \contentsname and different file handle app
+	\endgroup
+}
+
+
+	
+
+

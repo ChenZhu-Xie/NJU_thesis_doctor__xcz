@@ -1,0 +1,31 @@
+
+\ProvidesPackage{footnotebacklink}
+  [2024/07/07 v1.0 Add backlink to footnote]% footnote backlink
+
+\RequirePackage{hyperref}
+
+\RequirePackage[dvipsnames]{xcolor}
+%\newcommand\myshade{85}
+\edef\Aquamarine{Aquamarine!\myshade!black}% read only, so no \global need?
+% ------------------------------------------------ footnote backlink
+%a new counter to create an unambiguous label-tag
+\newcounter{myHyperFootnoteCounter}
+% branch between the footnote with/without opt. argument
+\def\Footnote{\@ifnextchar[\my@OptHyperFootnote\my@HyperFootnote}
+%\def\myHyperFootnote{\@ifnextchar[\my@OptHyperFootnote\my@HyperFootnote}
+
+%define an new footnote without optional argument
+\def\my@HyperFootnote#1{%
+	\refstepcounter{myHyperFootnoteCounter}%
+	\def\myFootnoteTag{hfn:\themyHyperFootnoteCounter}%
+	\label{\myFootnoteTag}%
+	%	\footnote{\hyperref[\myFootnoteTag]{$\wedge$}#1}%
+	\footnote{\hyperref[\myFootnoteTag]{}#1}%
+	%	\footnote{\hyperref[\myFootnoteTag]{$\ \ \ \ $}#1}%
+}
+
+%if the footnote number should be the reference than redefine the footnote macro
+\renewcommand\@makefntext[1]{%
+	\noindent\makebox[1.8em][r]{%
+		\mbox{\textsuperscript{\normalfont\hyperref[\myFootnoteTag]{\color{\Aquamarine}\@thefnmark}}}\,}#1%
+}

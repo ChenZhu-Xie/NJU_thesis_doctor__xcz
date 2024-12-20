@@ -1,0 +1,66 @@
+
+\ProvidesPackage{tikzsetup}
+  [2024/07/07 v1.0 Setup for tikz]% setup for tikz
+
+\RequirePackage{tikz}
+
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{shapes.geometric} % trapezium
+\usetikzlibrary{tikzmark}
+\tikzset{
+	% style of arrows
+	%    >={Latex[width=2mm,length=2mm]},
+	>={Stealth[width=2mm,length=2mm]},
+	b/.style = {->,>=Stealth[{width=2mm,length=2mm}]},
+	b-o/.style = {->,>=Stealth[{open,width=2mm,length=2mm}]},
+	a/.style = {thick,double,->,>=Latex[{width=2.5mm,length=2.5mm}]},
+	a-o/.style = {thick,double,->,>=Latex[{open,width=2.5mm,length=2.5mm}]},
+	% Specifications for style of nodes:
+	base/.style = {rectangle, rounded corners, draw=black,
+		minimum width=4cm, minimum height=1cm,
+		text centered, font=\sffamily},
+	base1/.style = {trapezium, trapezium left angle=70, trapezium right angle=110, 
+		draw=black, minimum width=2cm, minimum height=1cm,
+		text centered, font=\sffamily},
+	% text width 可强制控制 trapezium 宽度
+	base2/.style = {rectangle, draw=black,
+		minimum width=2.5cm, minimum height=1cm,
+		text centered, font=\sffamily},
+	base3/.style = {diamond, draw=black, aspect=2,  % 横纵比
+		minimum width=2cm, minimum height=1cm,
+		text centered, font=\sffamily},
+	MainInput/.style = {base, fill=green!30},
+	%    Input/.style = {base1, trapezium stretches body, fill=green!15},
+	Input/.style = {base, fill=green!15},
+	InputProcess/.style = {base2, fill=green!15},
+	InputC/.style = {base, minimum width=2.5cm, fill=yellow!30, font=\ttfamily},
+	%    Start/.style = {base, minimum width=2.5cm, fill=yellow!15, font=\ttfamily},
+	ElseWhere/.style = {base, fill=cyan!30},
+	ElseWhereProcess/.style = {base2, fill=cyan!30},
+	StepStone/.style = {base1, trapezium stretches body, fill=orange!15},
+	Output/.style = {base, rectangle, fill=red!30},
+	If/.style = {base3, fill=blue!20},
+	%    If/.style = {base3, fill=orange!35},
+	%    End/.style = {base, minimum width=2.5cm, fill=red!15, font=\ttfamily},
+}
+
+%https://tex.stackexchange.com/questions/522469/multiple-intersections-problem
+\usetikzlibrary{intersections}
+
+%https://tex.stackexchange.com/questions/334483/decorate-path-precisely-on-intersections-with-tikz-avoiding-crossing-lines
+\usetikzlibrary{spath3}
+\def\FirstAboveSecond#1#2#3{
+	\tikzset{
+		spath/split at intersections with={#1}{#2},
+		spath/insert gaps after components={#1}{8pt},
+		spath/join components with={#1}{#3},
+		spath/split at intersections with={#2}{#1},
+		spath/insert gaps after components={#2}{4pt},
+	}
+}
+
+
+
+	
+
+

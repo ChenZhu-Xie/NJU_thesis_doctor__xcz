@@ -27,7 +27,15 @@
 
 \PassOptionsToPackage{%%%%%%%%%%%%%%%%%%%%%%%
 	backref=true,
-	}{biblatex}%%%%%%%%%%%%%%%%%%%%%%%
+}{biblatex}%%%%%%%%%%%%%%%%%%%%%%%
+
+%\PassOptionsToPackage{%%%%%%%%%%%%%%%%%%%%%%%
+%	linkcolor=blue, % normal internal links
+%	anchorcolor=black, % anchor (target) text
+%	citecolor=magenta, %　bibliographical citations
+%	filecolor=green, % open local files
+%	urlcolor=cyan % linked URLs
+%}{hyperref}%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[
     % 模板选项(注意右端逗号)：
@@ -87,7 +95,7 @@
 %\usepackage{amsthm}%
 %\usepackage{mathrsfs}%
 %\usepackage[title]{appendix}%
-%\usepackage[table,dvipsnames]{xcolor}% [dvipsnames] for custom .sty;
+\usepackage[table,dvipsnames]{xcolor}% [dvipsnames] for custom .sty;
 \usepackage{tikzsetup}
 % -------------------- currently these custom packages are coupled together, sharing some public \cmds, so the package below may rely on the one above
 \usepackage{secbacklinktoc}% custom .sty

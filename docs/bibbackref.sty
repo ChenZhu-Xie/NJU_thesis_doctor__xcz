@@ -1,0 +1,131 @@
+
+\ProvidesPackage{bibbackref}
+  [2024/07/07 v1.0 Bib margin backref formating]% add TOC to appendix
+
+\RequirePackage{hyperref}
+\RequirePackage{etoolbox}
+%\RequirePackage{backref}
+
+\RequirePackage[dvipsnames]{xcolor}
+%https://tex.stackexchange.com/questions/525261/better-default-colors-for-hyperref-links
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue, % normal internal links
+	anchorcolor=black, % anchor (target) text
+	citecolor=magenta, %　bibliographical citations
+	filecolor=green, % open local files
+	urlcolor=cyan % linked URLs
+}
+\newcommand\myshade{85}
+\edef\Aquamarine{Aquamarine!\myshade!black}% read only, so no \global need?
+
+% -------------------- Make bib.backref precise for hyperref
+% -------------------- make sure the backrefs point to the actual occurrences, not only pages (only work for [hyperref], rather than [biblatex]) https://tex.stackexchange.com/questions/54541/precise-back-reference-target-with-hyperref-and-backref 
+
+\AtBeginDocument{% for the delayed call of biblatex in njuthesis 
+	
+	\def\blx@addbackref@i#1{%
+		\ifbacktracker
+		\rugk@create@backref@label{#1}%
+		\blx@leavevmode
+		\if@filesw
+		\protected@write\@mainaux{}{\string\abx@aux@backref
+			{\the\c@instcount}{#1}{\the\c@refsection}%
+			{\thepage}{\noexpand\the\c@page}}%
+		\fi
+		\fi}
+		
+	\newcounter{numbibentries}
+	
+	\newlength{\bibLeftsep}
+	\setlength{\bibLeftsep}{\FloatLeftsep}
+	%\addtolength{\bibLeftsep}{\leftmargin}
+	% \dimexpr\textwidth-\linewidth\relax is more accurate than \leftmargin
+	\newlength{\bibwidth}
+	\setlength{\bibwidth}{2.6cm}
+	
+	\renewbibmacro*{pageref}{}
+	
+	\renewbibmacro*{begentry}{%
+		\iflistundef{pageref}
+		{}
+		{\begingroup%
+			\protected@edef\bibcitekey{\thefield{entrykey}}%
+			\leavevmode\llap{\addtolength{\bibLeftsep}{\dimexpr\textwidth-\linewidth\relax}\stepcounter{numbibentries}%\arabic{numbibentries}
+				\ifnumodd{\arabic{numbibentries}}{\marginbibLeft[-7pt]{\bibcitekey}}{\rlap{\kern\dimexpr\linewidth-2pt\relax\marginbibRight[-8pt]{\bibcitekey}}}}\ignorespaces%
+			\endgroup%
+		\blx@initunit}}
+	
+%	\renewbibmacro*{begentry}{%
+%		\iflistundef{pageref}
+%		{}
+%		{\colorbox{blue!5}{%
+%				\scriptsize\raggedright
+%				\printlist[pageref][-\value{listtotal}]{pageref}}%
+%			\blx@initunit}}
+	
+	\newcommand\marginbibLeft[2][0pt]{% 第 2 个[] = 第 1 个参数 #1=纵向偏移 的 默认值是 0pt
+		\ifcsundef{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#2}}{}{
+			\marginbibformatLeft[#1]{%
+				\simplecolorparboxLeft{white!0}{\bibwidth}{%
+					\scriptsize\raggedleft% \centering
+					\printbibbackrefs{#2}}% (see \printlabelbackrefs{#1})
+			}%
+		}{}%
+	}%
+	
+	\newcommand{\marginbibformatLeft}[2][0pt]{% 第 2 个[] = 第 1 个参数 #1=纵向偏移 的 默认值是 0pt
+		\llap{\sbox0{#2}\raisebox{\dimexpr-\ht0+(\ht\strutbox+\dp\strutbox)*4/5+#1\relax}[0pt][0pt]{\usebox0}\kern\bibLeftsep}\hfill% 这个 % 非常重要，去掉会多个空格。
+	}% \kern\FloatLeftsep should be in \llap
+	
+	\newrobustcmd*{\printbibbackrefs}[1]{%
+		\setcounter{backrefpages}{0}%
+		\setcounter{totalbackrefpages}{0}%
+		\ifcsundef{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}
+		{\color{gray}Not referenced} %\color{gray}Quoted~@~{\color{black}0}~p.
+		{\def\do##1{\stepcounter{backrefpages}}%
+			\dolistcsloop{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}%
+			\setcounter{totalbackrefpages}{\value{backrefpages}}%
+			\setcounter{backrefpages}{0}%
+			\small{\color{gray}Cited~@}~\textit{\arabic{totalbackrefpages}}~\ifnumgreater{\value{totalbackrefpages}}{1}% Mentioned~@
+			{\color{gray}pp.}%
+			%		{p.}~%
+			{\color{gray}p.}\par\XGap{-5.5pt}%
+			\global\def\tempage\empty% initialize \temp, each time set a margin note
+			\global\edef\colortemp{\Aquamarine}% initialize \colortemp 为数值 1, each time set a margin note
+			{\forlistcsloop{\printbibbackrefpage}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}}%
+	}}
+
+	\newcommand*{\printbibbackrefpage}[1]{%
+		% sometimes #1 expands to `{name}` instead of `name`
+		\stepcounter{backrefpages}%
+		\edef\refpage{\getpagerefnumber{#1}}%
+		\ifx\tempage\refpage\else\ifx\colortemp\Aquamarine\global\edef\colortemp{magenta}\else\global\edef\colortemp{\Aquamarine}\fi\fi%
+		{\hypersetup{linkcolor=\colortemp}\footnotesize\textit{\pageref{#1}}}% YellowOrange!\myshade!black
+		\global\edef\tempage{\getpagerefnumber{#1}}%
+		\ifnumless{\value{backrefpages}}{\value{totalbackrefpages}}
+		{, }
+		{.\vphantom{,}}}% add a \vphantom{,} to keep normal vertical height nuchanged whether multiple or single line
+	
+	% -------------------- bib right
+	
+	\newcommand\marginbibRight[2][0pt]{% 第 2 个[] = 第 1 个参数 #1=纵向偏移 的 默认值是 0pt
+		\ifcsundef{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#2}}{}{
+			\marginbibformatRight[#1]{%
+				\simplecolorparboxbibRight{white!0}{\bibwidth}{%
+					\scriptsize\raggedright% \centering
+					\printbibbackrefs{#2}}% (see \printlabelbackrefs{#1})
+			}%
+		}{}%
+	}%
+	
+	\newcommand{\marginbibformatRight}[2][0pt]{% 第 2 个[] = 第 1 个参数 #1=纵向偏移 的 默认值是 0pt
+		\hfill\rlap{\sbox0{#2}\raisebox{\dimexpr-\ht0+(\ht\strutbox+\dp\strutbox)*4/5+#1\relax}[0pt][0pt]{\kern\FloatLeftsep\usebox0}}% 这个 % 非常重要，去掉会多个空格。
+	}% it is OK whether \kern\FloatLeftsep is inside or outside \raisebox
+	
+	\newcommand*{\simplecolorparboxbibRight}[3]{%
+		\minipagewithvrule{#2}{#3}\color{gray} \vrule width 0.5pt height \dimexpr(\ht0+3pt)\relax depth \dimexpr(\dp0+3pt)\relax\kern\notEqinsep\usebox0%
+	}%
+	
+}
+

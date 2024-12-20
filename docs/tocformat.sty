@@ -1,0 +1,33 @@
+
+\ProvidesPackage{tocformat}
+  [2024/07/07 v1.0 Format TOC customly]% including TOC in appendix
+
+% -------------------- Toc hrule: https://tex.stackexchange.com/questions/64842/table-of-contents-horizontal-lines
+\RequirePackage{tocloft}
+\renewcommand{\cftaftertoctitle}{\par\noindent\hrulefill\par}
+%\renewcommand{\cftaftertoctitle}{\\\rule{\linewidth}{1pt}\vspace*{3ex}}
+%\renewcommand\cftaftertoctitle{\par\noindent\hrulefill\par\vskip-4.3em}
+
+% -------------------- Toc indents: https://tex.stackexchange.com/questions/503488/section-numbering-problem-in-toc-when-using-tocloft
+% https://tex.stackexchange.com/questions/445139/add-more-indent-of-section-and-subsection-in-table-of-contents
+\cftsetindents{sec}{0em}{2.0em}  % 1st length should be sum of lengths on preceding line
+\cftsetindents{subsec}{2.0em}{2.4em}
+\cftsetindents{subsubsec}{4.4em}{3.2em}
+
+% -------------------- Toc fonts: https://tex.stackexchange.com/questions/64229/how-to-change-font-size-in-table-of-contents
+\RequirePackage{anyfontsize}
+\renewcommand\cftsecfont{\fontsize{10.5}{10.5}\bfseries\selectfont}% \fontsize{字体}{行间距=字体*1.2}
+\renewcommand\cftsubsecfont{\fontsize{10.0}{10.0}}
+\renewcommand\cftsubsubsecfont{\fontsize{10.0}{10.0}}
+
+%\renewcommand\cftchappagefont{\large\bfseries}
+\renewcommand{\cftsecpagefont}{\cftsecfont}
+\renewcommand{\cftsubsecpagefont}{\cftsubsecfont}
+\renewcommand{\cftsubsubsecpagefont}{\cftsubsubsecfont}
+
+%\renewcommand\cftchapafterpnum{\par\addvspace{6pt}}
+%\renewcommand\cftsecafterpnum{\par\addvspace{4pt}}
+\renewcommand\cftsecafterpnum{\par\addvspace{2pt}}
+	
+
+
