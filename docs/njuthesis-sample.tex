@@ -104,6 +104,7 @@
 \usepackage{apptoc}% custom .sty
 \usepackage{bibbackref}% custom .sty
 \usepackage{amseqfloatbackref}% custom .sty
+\usepackage{textbackref}% custom .sty
 \usepackage{footnotebacklink}% custom .sty
 
 % 在导言区随意定制所需命令
@@ -264,9 +265,45 @@
 % 可以在这里插入补充材料
 \appchapter{正文中涉及的数据及源代码}
 
-\appsection{test}
+\appsection{类 Class - 实例 Instance}
 
-\appsubsection{ddddd}
+%teset \blabel{Maroon}
+
+\begin{table}[h!]
+	\caption{\label{tab:2-1} $J \in \left[ 1, 10 \right]$ 的和弦级数的 $a_0, \left\{ a_j, b_j \right\}$ 参数表。}
+	\resizebox{1.0\linewidth}{!}{  % 宽度不超文本宽度
+		\begin{tabular}{c|c|ccc}
+			\toprule[2pt]
+			类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
+			颜色 Color & {\color{Maroon} 褐红 Maroon} & 起补充说明作用的文字脚标 &  & test\blabel{Maroon}dd \\
+			$a_1$  & 1 & 0.3010 & 0.1695 & 0.1021 \\
+			$a_2$  &        & 0.4554 & 0.2984 & 0.2048 \\
+			$a_3$  &        &        & 0.3503 & 0.2606 \\
+			$a_4$  &        &        &        & 0.2859 \\
+			$a_5$  &        &        &        &        \\
+			$a_6$  &        &        &        &        \\
+			$a_7$  &        &        &        &        \\
+			$a_8$  &        &        &        &        \\
+			$a_9$  &        &        &        &        \\
+			$a_{10}$ &        &        &        &      \\ \midrule[1.2pt]
+			$b_1$  & 1.7321 & 1.1486 & 1.0745 & 1.0422 \\
+			$b_2$  &        & 2.0964 & 1.4534 & 1.2470 \\
+			$b_3$  &        &        & 2.7821 & 1.7670 \\
+			$b_5$  &        &        &        &        \\
+			$b_6$  &        &        &        &        \\
+			$b_7$  &        &        &        &        \\
+			$b_8$  &        &        &        &        \\
+			$b_9$  &        &        &        &        \\
+			$b_{10}$ &        &        &        &      \\ \bottomrule[2pt]
+		\end{tabular}
+	}
+\end{table}
+
+\appsubsection{颜色 Color - 褐红 Maroon}
+
+	
+
+\appsubsection{ Color}
 
 \dots
 

@@ -1,0 +1,39 @@
+
+\ProvidesPackage{textbackref}
+  [2024/12/24 v1.0 Maintext inline backref formating]% add backlink to all \labels that are not in any env
+
+
+\def\blabel#1{%
+	\label{#1}\printlabelbackrefs{#1}%
+	}
+
+\newrobustcmd*{\printlabelbackrefs}[1]{%
+	\setcounter{backrefpages}{0}%
+	\setcounter{totalbackrefpages}{0}%
+	\ifcsundef{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}
+	{\color{gray}Not referenced} %\color{gray}Quoted~@~{\color{black}0}~p.
+	{\def\do##1{\stepcounter{backrefpages}}%
+		\dolistcsloop{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}%
+		\setcounter{totalbackrefpages}{\value{backrefpages}}%
+		\setcounter{backrefpages}{0}%
+		\small{\color{gray}Refed~@}~\textit{\arabic{totalbackrefpages}}~\ifnumgreater{\value{totalbackrefpages}}{1}% Mentioned~@
+		{\color{gray}pp.}%
+		%		{p.}~%
+		{\color{gray}p.}%
+		\global\def\tempage\empty% initialize \temp, each time set a margin note
+		\global\edef\colortemp{\Aquamarine}% initialize \colortemp 为数值 1, each time set a margin note
+		{\forlistcsloop{\printlabelbackrefpage}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}}\color{black}% 恢复原 black 色
+}}
+
+\newcommand*{\printlabelbackrefpage}[1]{%
+	% sometimes #1 expands to `{name}` instead of `name`
+	\stepcounter{backrefpages}%
+	\ifnumless{\value{backrefpages}}{2}%
+	{~[}{}%
+	\edef\refpage{\getpagerefnumber{#1}}%
+	\ifx\tempage\refpage\else\ifx\colortemp\Aquamarine\global\edef\colortemp{orange}\else\global\edef\colortemp{\Aquamarine}\fi\fi%
+	{\hypersetup{linkcolor=\colortemp}\footnotesize\textit{\pageref{#1}}}% YellowOrange!\myshade!black
+	\global\edef\tempage{\getpagerefnumber{#1}}%
+	\ifnumless{\value{backrefpages}}{\value{totalbackrefpages}}
+	{, }
+	{]\vphantom{,}}}% add a \vphantom{,} to keep normal vertical height nuchanged whether multiple or single line
