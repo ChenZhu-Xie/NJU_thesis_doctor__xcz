@@ -97,6 +97,7 @@
 %\usepackage[title]{appendix}%
 \usepackage[table,dvipsnames]{xcolor}% [dvipsnames] for custom .sty;
 \usepackage{tikzsetup}
+\usepackage{bbm}%
 % -------------------- currently these custom packages are coupled together, sharing some public \cmds, so the package below may rely on the one above
 \usepackage{secbacklinktoc}% custom .sty
 \usepackage{optsection}% custom .sty
@@ -267,27 +268,53 @@
 
 \appsection{类 Class - 实例 Instance}
 
-%teset \blabel{Maroon}
-
 \begin{table}[h!]
-	\caption{\label{tab:2-1} $J \in \left[ 1, 10 \right]$ 的和弦级数的 $a_0, \left\{ a_j, b_j \right\}$ 参数表。}
+	\caption{\label{tab:font} 字体 —— 用于区分变量与常量，以及不同类变量，的含义。}
 	\resizebox{1.0\linewidth}{!}{  % 宽度不超文本宽度
-		\begin{tabular}{c|c|ccc}
+		\begin{tabular}{c|c|c|c|c}
 			\toprule[2pt]
 			类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
-			颜色 Color & {\color{Maroon} 褐红 Maroon} & 起补充说明作用的文字脚标 &  & test\blabel{Maroon}dd \\
-			$a_1$  & 1 & 0.3010 & 0.1695 & 0.1021 \\
-			$a_2$  &        & 0.4554 & 0.2984 & 0.2048 \\
-			$a_3$  &        &        & 0.3503 & 0.2606 \\
-			$a_4$  &        &        &        & 0.2859 \\
-			$a_5$  &        &        &        &        \\
-			$a_6$  &        &        &        &        \\
-			$a_7$  &        &        &        &        \\
-			$a_8$  &        &        &        &        \\
-			$a_9$  &        &        &        &        \\
-			$a_{10}$ &        &        &        &      \\ \midrule[1.2pt]
-			$b_1$  & 1.7321 & 1.1486 & 1.0745 & 1.0422 \\
-			$b_2$  &        & 2.0964 & 1.4534 & 1.2470 \\
+			字体 font & 直体 upright & 常量（非变量非场量非函数）、文字（说明） & $\upmu_0$ 中的 $\upmu$ 和 $0$ & \blabel{Maroon} \\
+			& \textit{斜体 oblique} & 变量（自变量或因变量）、场量、函数 & $\bar{E}$ 中的 $E$ & \blabel{oblique} \\ \midrule
+			粗细 width & 细体 thin\hphantom{k} & \hphantom{列向量 =} 张量：2 阶张量 & $\bar{\bar{\chi}},\bar{\bar{\varepsilon}}$ & \blabel{Maroon} \\
+			& \textbf{粗体 thick} & \hphantom{列向量 =} 张量：3 阶张量 & $\bar{\bar{\bar{\chi}}}$ & \blabel{Maroon} \\ \midrule
+			下线 down & 0 根下短线 \hphantom{$\underline{~}$} & $\in$ 实验（室）坐标系 = $\mathcal{Z}$ 系（下的物理量） & $\bar{\symbf{g}}$ & \blabel{Maroon} \\
+			& 1 根下短线 $\underline{~}$ & $\in$ 晶体（学）坐标系 = $\mathcal{C}$ 系（下的物理量） & $\bar{\underline{\symbf{g}}}$ & \blabel{Maroon} \\ \midrule
+			长线 long & 1 根上长线 $\overline{~~}$ & 广义列向量，其中每个元素可能都是列向量 & $\symbf{\underline{\bar{g}}}$ & \blabel{Maroon} \\
+			& 1 根下长线 $\underline{~~}$ & 未定义；保留的关键字符 &  & \blabel{Maroon} \\ 
+			\bottomrule[2pt]
+		\end{tabular}
+	}
+\end{table}
+
+\begin{table}[h!]
+	\caption{\label{tab:line} 上/下 \& 长/短 划线 —— 作为变量的装饰，的含义。}
+	\resizebox{1.0\linewidth}{!}{  % 宽度不超文本宽度
+		\begin{tabular}{c|c|c|c|c}
+			\toprule[2pt]
+			类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
+			划线 line & 0 条上短线 \hphantom{$\bar{~}$} & \hphantom{列向量 =} 标量 = 0 阶张量 & ${\rho}_{\;\!\textcolor{Maroon}{\symup{f}}}$ 中的 $\rho$ & \blabel{0bar} \\
+			& 1 条上短线 $\bar{~}$ & 列向量 = 矢量 = 1 阶张量 & $\bar{J}_{\;\!\textcolor{Maroon}{\symup{f}}}$ 中的 $\bar{J}$ & \blabel{1bar} \\
+			上线 up & 2 条上短线 $\bar{\bar{~}}$ & \hphantom{列向量 =} 张量：2 阶张量 & $\bar{J}_{\;\!\textcolor{Maroon}{\symup{f}}}$ 中的 $\bar{J}$ & \blabel{Maroon} \\
+			& 3 条上短线 $\bar{\bar{\bar{~}}}$ & \hphantom{列向量 =} 张量：3 阶张量 & $\bar{\bar{\bar{\chi}}}$ & \blabel{Maroon} \\ \midrule
+			长线 long & 1 条上长线 $\overline{~~}$ & 广义列向量，其中每个元素可能都是列向量 & $\symbf{\underline{\bar{g}}}$ & \blabel{Maroon} \\
+			& 2 条上长线 $\overline{\overline{~~}}$ & 广义张量：对角 2 阶张量 &  & \blabel{Maroon} \\ \midrule
+			下线 down & 0 条下短线 \hphantom{$\underline{~}$} & $\in$ 实验（室）坐标系 = $\mathcal{Z}$ 系（下的物理量） & $\bar{\symbf{g}}$ & \blabel{Maroon} \\
+			& 1 条下短线 $\underline{~}$ & $\in$ 晶体（学）坐标系 = $\mathcal{C}$ 系（下的物理量） & $\bar{\underline{\symbf{g}}}$ & \blabel{Maroon} \\ 
+			\bottomrule[2pt]
+		\end{tabular}
+	}
+\end{table}
+
+\begin{table}[h!]
+	\caption{\label{tab:color} $J \in \left[ 1, 10 \right]$ 的和弦级数的 $a_0, \left\{ a_j, b_j \right\}$ 划线 参数。}
+	\resizebox{1.0\linewidth}{!}{  % 宽度不超文本宽度
+		\begin{tabular}{c|c|c|c|c}
+			\toprule[2pt]
+			类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
+			颜色 color & 黑色 black & 非自变量，包括因变量和（非函数=无自变量的）独立变量 & $\bar{E}^{\;\!\textcolor{gray}{t}}_{\;\!\textcolor{gray}{z}}$ 中的 $\bar{E}$ & \blabel{black} \\
+			& {\color{gray} 灰色 gray} & （附属于某个因变量的）自变量，在视觉和含义上均更次要 & $\bar{E}^{\;\!\textcolor{gray}{t}}_{\;\!\textcolor{gray}{z}}$ 中的 $\textcolor{gray}{t,z}$ & \blabel{gray} \\
+			& {\color{Maroon} 褐红 Maroon} & 起补充说明作用的直体文字脚标 & ${\rho}_{\;\!\textcolor{Maroon}{\symup{f}}}, \bar{J}_{\;\!\textcolor{Maroon}{\symup{f}}}$ 中的 $\textcolor{Maroon}{\symup{f}}$ & \blabel{Maroon} \\
 			$b_3$  &        &        & 2.7821 & 1.7670 \\
 			$b_5$  &        &        &        &        \\
 			$b_6$  &        &        &        &        \\
