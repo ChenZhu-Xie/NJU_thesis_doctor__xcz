@@ -10,15 +10,15 @@
 \edef\Violet{violet!\myshade!black}%
 
 \newlength{\FloatLeftsep}
-\setlength{\FloatLeftsep}{1.3em}
+\setlength{\FloatLeftsep}{1.2em}
 \newlength{\notEqinsep}
-\setlength{\notEqinsep}{0.7em}
+\setlength{\notEqinsep}{0.6em}
 \newlength{\EqRightsep}
 \setlength{\EqRightsep}{1.0em}
 \newlength{\Eqinsep}
 \setlength{\Eqinsep}{0.5em}
 \newlength{\writewidth}
-\setlength{\writewidth}{2.3cm}
+\setlength{\writewidth}{2.2cm}
 
 % -------------------- https://tex.stackexchange.com/questions/558992/how-to-backreference-floating-environments-like-listings-or-figures-to-where-the?rq=1
 % add <page> to the list of pages where <label> was referenced
@@ -98,7 +98,7 @@
 		\small{\color{gray}Quoted~@}~\textit{\arabic{totalbackrefpages}}~\ifnumgreater{\value{totalbackrefpages}}{1}% Mentioned~@
 		{\color{gray}pp.}%
 		%		{p.}~%
-		{\color{gray}p.}\par\Gap%
+		{\color{gray}p.}\par\XGap{5pt}%
 		\global\def\tempage\empty% initialize \temp, each time set a margin note
 		\global\edef\colortemp{\Aquamarine}% initialize \colortemp 为数值 1, each time set a margin note
 		{\forlistcsloop{\printbackrefpageLeft}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}}%
@@ -160,6 +160,7 @@
 	\ifcsundef{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#2}}{}{% 如果 该列表 不存在 则不画
 		\marginwriteformatFloatLeft[#1]{%
 			\simplecolorparboxLeft{white!0}{\writewidth}{%
+				\setstretch{0.99}%
 				\scriptsize\raggedleft% \centering
 				\printlabelbackrefsLeft{#2}}% (see \printlabelbackrefs{#1})
 		}% 这个 % 非常重要，去掉会多个空格，而且会递增。
@@ -198,7 +199,7 @@
 		\small{\color{gray}Quoted~@}~\textit{\arabic{totalbackrefpages}}~\ifnumgreater{\value{totalbackrefpages}}{1}% Mentioned~@
 		{\color{gray}pp.}%
 		%		{p.}~%
-		{\color{gray}p.}\par\Gap%
+		{\color{gray}p.}\par\XGap{5pt}%
 		\global\def\tempage\empty% initialize \temp, each time set a margin note
 		\global\edef\colortemp{\Aquamarine}% initialize \colortemp 为数值 1, each time set a margin note
 		{\forlistcsloop{\printbrpageLeft}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}}%
@@ -219,6 +220,7 @@
 	\ifcsundef{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#2}}{}{% 如果 该列表 不存在 则不画
 		\marginwriteformatLeft[#1]{%
 			\simplecolorparboxLeft{white!0}{\writewidth}{%
+				\setstretch{0.99}%
 				\scriptsize\raggedleft% \centering
 				\printbackrefsLeft{#2}}% (see \printlabelbackrefs{#1})
 		}% 这个 % 非常重要，去掉会多个空格，而且会递增。
@@ -265,6 +267,7 @@
 			%			\printlabelbackrefsRight{#2}}%
 		%		\transparentrightmarginnote{testestsets}%
 		\marginwriteformatEqRight[#1]{%
+%			\setstretch{0.95}%
 			\simplecolorparboxEqRight{white!0}{\writewidth}{#2}%
 		}% 这个 % 非常重要，去掉会多个空格，而且会递增。
 	}% 这个 % 非常重要，去掉会多个空格，而且会递增。
