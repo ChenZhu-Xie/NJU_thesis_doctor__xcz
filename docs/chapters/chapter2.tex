@@ -1,6 +1,6 @@
 \marginLeft[-2.5em]{chap:N/LCO}\chapter{晶体中的（非）线性光学过程}\label{chap:N/LCO}
 
-\marginLeft[-2.5em]{sec:maxwell}\section{Maxwell-Lorentz-Heaviside 方程组、电磁源}\label{sec:maxwell}
+\marginLeft[-2.5em]{sec:maxwell}\section{\textcolor{Maroon}{Maxwell-Lorentz-Heaviside} 方程组、电磁源}\label{sec:maxwell}
 
 这一节我们从经典/现代的多极理论/张量分析视角，查看麦氏方程组、源和场的本构关系、守恒律、连续性、边界条件。
 
@@ -22,9 +22,9 @@ $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{H}^{\;\!\math
 \begin{subequations} \label{eq:Div-DB}
 \begin{align}
 	\textcolor{Maroon}{\text{Coulomb's}} \to \textcolor{Maroon}{\text{Gauss's law for electricity}}\text{:}&\hspace{0.5em} \mathcolor{gray}{\bar{\nabla} \cdot} \bar{D}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} \hspace{-3.8em} &&= {\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}} \label{eq:Div-D} \\ 
-	&\hspace{0.5em} \mathcolor{gray}{\nabla^j} D^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} \hspace{-3.8em} &&= {\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}}~, \label{eq:div-D} \\
+	&\hspace{0.5em} \mathcolor{gray}{\nabla^i} D^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} \hspace{-3.8em} &&= {\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}}~, \label{eq:div-D} \\
 	\textcolor{Maroon}{\text{Biot-Savart}} \to \textcolor{Maroon}{\text{Gauss's law for magnetism}}\text{:}&\hspace{0.5em} \mathcolor{gray}{\bar{\nabla} \cdot} \bar{B}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} \hspace{-3.8em} &&= {\kappa}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}} \label{eq:Div-Bk} \\
-	&\hspace{0.5em} \mathcolor{gray}{\nabla^j} B^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} \hspace{-3.8em} &&= {\kappa}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}}~. \label{eq:div-Bk}
+	&\hspace{0.5em} \mathcolor{gray}{\nabla^i} B^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} \hspace{-3.8em} &&= {\kappa}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}}~. \label{eq:div-Bk}
 \end{align}
 \end{subequations}
 其中，为数学形式对称（以方便引入相对论效应和检验其协变性\cite{lakhtakiaCovariancesInvariancesMaxwell1995,chen-zhuChenZhuxieUndergraduate_courses2024}），和物理上不排除可能存在的磁单极子，除自由电（荷/流）源${\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}}, \bar{J}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}}$外，还添加了自由磁（荷/流）源${\kappa}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}}, \bar{K}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}}$\cite{lakhtakiaCovariancesInvariancesMaxwell1995}。这 4 个自由源（体密度）项，满足 2 个连续性假设\cite{mackayElectromagneticAnisotropyBianisotropy2019,lakhtakiaCovariancesInvariancesMaxwell1995,chen-zhuChenZhuxieUndergraduate_courses2024}：
@@ -33,9 +33,9 @@ $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{H}^{\;\!\math
 	%\belowdisplayskip=0pt
 \begin{align}
 	\textcolor{Maroon}{\text{Continuity for free electric charge}}\text{:}&\hspace{0.5em} \mathcolor{gray}{\bar{\nabla} \cdot} \bar{J}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}} + \mathcolor{gray}{\nabla^t} {\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}} \hspace{-5.3em} &&= 0 \label{eq:Div-e-f} \\ 
-	&\hspace{0.5em} \mathcolor{gray}{\nabla^j} J^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}} i\mathcolor{gray}{z}} + \mathcolor{gray}{\nabla^t} {\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}} \hspace{-5.3em} &&= 0~, \label{eq:div-e-f} \\ 
+	&\hspace{0.5em} \mathcolor{gray}{\nabla^i} J^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}} i\mathcolor{gray}{z}} + \mathcolor{gray}{\nabla^t} {\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}} \hspace{-5.3em} &&= 0~, \label{eq:div-e-f} \\ 
 	\textcolor{Maroon}{\text{Continuity for free magnetic charge}}\text{:}&\hspace{0.5em} \mathcolor{gray}{\bar{\nabla} \cdot} \bar{K}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}} + \mathcolor{gray}{\nabla^t} {\kappa}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}} \hspace{-5.3em} &&= 0 \label{eq:Div-m-f} \\
-	&\hspace{0.5em} \mathcolor{gray}{\nabla^j} K^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}} i\mathcolor{gray}{z}} + \mathcolor{gray}{\nabla^t} {\kappa}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}} \hspace{-5.3em} &&= 0~. \label{eq:div-m-f}
+	&\hspace{0.5em} \mathcolor{gray}{\nabla^i} K^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}} i\mathcolor{gray}{z}} + \mathcolor{gray}{\nabla^t} {\kappa}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}} \hspace{-5.3em} &&= 0~. \label{eq:div-m-f}
 \end{align}
 \end{subequations}
 注意，对旋度 \bref{eq:Curl-EH} 两边取散度（$\mathcolor{gray}{\bar{\nabla} \cdot}$），连续性 \bref{eq:Div-em-f} 可导出散度 \bref{eq:Div-DB}，反之亦然\cite{lakhtakiaGenesisPostConstraint2004}。因此，2 条散度方程均不是必需的，可将其视为冗余\Footnote{并且不应简单地仅根据$\bar{D}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{B}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$的横向性，而将二者视为基本场\cite{quesadaPhotonPairsNonlinear2022,berryOpticalSingularitiesBianisotropic2005}。但从场能量体密度变化率$\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} \mathbb{d}\bar{D}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} +  \bar{H}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} \mathbb{d}\bar{B}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$中含有 2 个旋度\bref{eq:Curl-EH}中对$\bar{D}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{B}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$的微分\cite{chen-zhuChenZhuxieUndergraduate_courses2024}、方便引入适用于非线性量子光学的正确的哈密顿量\cite{quesadaPhotonPairsNonlinear2022}，将$\bar{D}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{B}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$视为基本场也有一定道理？但如此一来，电非线性 $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} \left( \bar{D}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} \right) \slashed{\propto} \bar{D}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 的显式表达式有悖常理。}。
@@ -61,9 +61,9 @@ $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{H}^{\;\!\math
 \begin{subequations} \label{eq:Div-EB}
 \begin{align}
 	\textcolor{Maroon}{\text{高斯定律（电）}}\text{:}~~~~~~~ {\symup{\varepsilon}}_0 \mathcolor{gray}{\bar{\nabla} \cdot} \bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} &= {\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} \label{eq:Div-E} \\ 
-	{\symup{\varepsilon}}_0 \mathcolor{gray}{\nabla^j} E^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} &= {\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}~, \label{eq:div-E} \\ 
+	{\symup{\varepsilon}}_0 \mathcolor{gray}{\nabla^i} E^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} &= {\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}~, \label{eq:div-E} \\ 
 	\textcolor{Maroon}{\text{高斯定律（磁）}}\text{:}~~~~~~~~~~ \mathcolor{gray}{\bar{\nabla} \cdot} \bar{B}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} &= 0 \label{eq:Div-B} \\ 
-	\mathcolor{gray}{\nabla^j} B^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} &= 0~. \label{eq:div-B} 
+	\mathcolor{gray}{\nabla^i} B^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} &= 0~. \label{eq:div-B} 
 \end{align}
 \end{subequations}
 同理，总电荷 ${\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 守恒方程从自由电荷 ${\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}}$ 所满足的连续性 \bref{eq:Div-e-f} 升级为：
@@ -71,7 +71,7 @@ $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{H}^{\;\!\math
 	%\abovedisplayskip=0pt
 	%\belowdisplayskip=0pt
 	\textcolor{Maroon}{\text{电荷守恒定律}}\text{:}~~~~~~~ \mathcolor{gray}{\bar{\nabla} \cdot} \bar{J}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} + \mathcolor{gray}{\nabla^t} {\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} &= 0 \label{eq:Div-e} \\ 
-	\mathcolor{gray}{\nabla^j} J^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} + \mathcolor{gray}{\nabla^t} {\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} &= 0~. \label{eq:div-e} 
+	\mathcolor{gray}{\nabla^i} J^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} + \mathcolor{gray}{\nabla^t} {\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} &= 0~. \label{eq:div-e} 
 \end{align}
 该 \bref{eq:Div-e} 即电荷 $Q$ 守恒，与磁流 $\varPhi$ 守恒（即法拉第电磁感应定律 \bref{eq:Curl-E}、安倍-麦克斯韦环路定律 \bref{eq:Curl-B}）一起\cite{hehlSpacetimeMetricLocal2006}，经受住了大量的实验考验\cite{hehlGentleIntroductionFoundations2000}，因此二者都是基本的物理定律\cite{hehlRecentDevelopmentsPremetric2006,hehlFOUNDATIONSCLASSICALELECTRODYNAMICS}。
 
@@ -133,7 +133,7 @@ $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{H}^{\;\!\math
 \begin{subequations}
 \begin{align}
 \bar{J}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{b}}\mathcolor{gray}{z}} = \mathcolor{gray}{\nabla^t} \bar{P}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} &- \left( \frac{1}{2!} \mathcolor{gray}{\bar{\nabla} \cdot} \mathcolor{gray}{\nabla^t} \bar{\bar{Q}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} - \mathcolor{gray}{\bar{\nabla} \times} \bar{M}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} \right) \label{eq:J-b} \\ &+ \left[ \frac{1}{3!} \mathcolor{gray}{\bar{\nabla}} \mathcolor{gray}{\bar{\nabla} \colon}\! \mathcolor{gray}{\nabla^t} \bar{\bar{\bar{O}}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} - \frac{1}{2!} \mathcolor{gray}{\bar{\nabla} \times} \left( \mathcolor{gray}{\bar{\nabla} \cdot}  \bar{\bar{N}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} \right) \right] - \cdots~, \\
-J^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{b}} i \mathcolor{gray}{z}} = \mathcolor{gray}{\nabla^t} P^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} &- \mathcolor{gray}{\nabla^j} \left( \frac{1}{2!} \mathcolor{gray}{\nabla^t} Q^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} - \epsilon^{\hphantom{ij}k}_{i\mathcolor{gray}{j}} M^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} \right) \label{eq:j-b} \\ &+ \mathcolor{gray}{\nabla^j} \mathcolor{gray}{\nabla^l} \left[ \frac{1}{3!}  \mathcolor{gray}{\nabla^t} O^{\;\!\mathcolor{gray}{t}}_{\;\! ijl\mathcolor{gray}{z}} - \frac{1}{2!} \epsilon^{\hphantom{ij}k}_{i\mathcolor{gray}{j}} N^{\;\!\mathcolor{gray}{t}}_{\;\! kl\mathcolor{gray}{z}} \right] - \cdots~.
+J^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{b}} i \mathcolor{gray}{z}} = \mathcolor{gray}{\nabla^t} P^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} &- \mathcolor{gray}{\nabla^j} \left( \frac{1}{2!} \mathcolor{gray}{\nabla^t} Q^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} - \epsilon^{\hphantom{ij}k}_{i\mathcolor{gray}{j}} M^{\;\!\mathcolor{gray}{t}}_{\;\! k\mathcolor{gray}{z}} \right) \label{eq:j-b} \\ &+ \mathcolor{gray}{\nabla^j} \mathcolor{gray}{\nabla^l} \left[ \frac{1}{3!}  \mathcolor{gray}{\nabla^t} O^{\;\!\mathcolor{gray}{t}}_{\;\! ijl\mathcolor{gray}{z}} - \frac{1}{2!} \epsilon^{\hphantom{ij}k}_{i\mathcolor{gray}{j}} N^{\;\!\mathcolor{gray}{t}}_{\;\! kl\mathcolor{gray}{z}} \right] - \cdots~.
 \end{align}
 \end{subequations}
 
@@ -143,45 +143,79 @@ J^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{b}} i \mathcolor{gray}
 \begin{subequations}
 \begin{align}
 	\bar{D}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} &= {\symup{\varepsilon}}_0 \bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} + \bar{P}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} - \frac{1}{2!} \mathcolor{gray}{\bar{\nabla} \cdot} \bar{\bar{Q}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} + \frac{1}{3!} \mathcolor{gray}{\bar{\nabla}} \mathcolor{gray}{\bar{\nabla} \colon}\! \bar{\bar{\bar{O}}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} - \cdots \label{eq:D} \\
-	&= \left( {\symup{\varepsilon}}_0 E^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} + P^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} - \frac{1}{2!} \mathcolor{gray}{\nabla^j} Q^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} + \frac{1}{3!} \mathcolor{gray}{\nabla^j} \mathcolor{gray}{\nabla^k} O^{\;\!\mathcolor{gray}{t}}_{\;\! ijk\mathcolor{gray}{z}} - \cdots \right) \hat{\symup{e}}^i~, \label{eq:d} \\
+	&= \left( {\symup{\varepsilon}}_0 E^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} + P^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} - \frac{1}{2!} \mathcolor{gray}{\nabla^j} Q^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} + \frac{1}{3!} \mathcolor{gray}{\nabla^j} \mathcolor{gray}{\nabla^k} O^{\;\!\mathcolor{gray}{t}}_{\;\! ijk\mathcolor{gray}{z}} - \cdots \right) \hat{\symup{e}}^i~, \label{eq:d-pre} \\
 	\bar{H}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} &= {\symup{\mu}}_0^{-1} \bar{B}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} - \bar{M}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} + \frac{1}{2!} \mathcolor{gray}{\bar{\nabla} \cdot} \bar{\bar{N}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} - \cdots \label{eq:H} \\
-	&= \left( {\symup{\mu}}_0^{-1} B^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} - M^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} + \frac{1}{2!} \mathcolor{gray}{\nabla^j} N^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} - \cdots \right) \hat{\symup{e}}^i~. \label{eq:h}
+	&= \left( {\symup{\mu}}_0^{-1} B^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} - M^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} + \frac{1}{2!} \mathcolor{gray}{\nabla^j} N^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} - \cdots \right) \hat{\symup{e}}^i~. \label{eq:h-pre}
 \end{align}
 \end{subequations}
 注意，此时组成 辅助场 $\bar{D}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{H}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 的介质/束缚源部分 $\bar{P}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}},\bar{\bar{Q}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}},\bar{\bar{\bar{O}}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} ; \bar{M}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{\bar{N}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 暂时不写作 基本场 $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{B}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 或任何其他（重力、应力）场的显示函数。
 
 由于矢量场 $\bar{A}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 的旋度无源、标量场 $\phi^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 的梯度无旋，\bref{eq:D} 中的 $\bar{D}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$、\bref{eq:H} 中的 $\bar{H}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 可以分别加上 $\mathcolor{gray}{\bar{\nabla} \times} \bar{A}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$、$\mathcolor{gray}{\bar{\nabla}} \phi^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 而不影响 \bref{eq:Div-D}、\bref{eq:Curl-H} 的成立，因此辅助场 $\bar{D}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ $~\left(~ + \mathcolor{gray}{\bar{\nabla} \times} \bar{A}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} ~\right)~$ 和 $\bar{H}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ $~\left(~ + \mathcolor{gray}{\bar{\nabla}} \phi^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} ~\right)~$ 都不是唯一确定的\Footnote{类似标势与矢势也需要某种“规范”（如库伦/洛伦兹规范）才能确定一样。多极理论中的这种“规范”为：源的宏观表达式在坐标原点的平移下需保持不变，也称本构张量的原点独立性。}。—— 这一额外的自由度可以被用于确定在微观上与坐标原点无关的平移不变源 $\bar{P}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}},\bar{\bar{Q}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}},\bar{\bar{\bar{O}}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} ; \bar{M}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{\bar{N}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ （关于基本场 $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{B}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 的本构关系）的唯一确定且正确的宏观表达式\cite{welterTranslationallyInvariantSemiclassical2013,delangeTranslationalInvariancePost2012,langeTransitionMicroscopicMacroscopic2012,langeMultipoleTheoryHehl2015,raabCommentOriginDependence2010a,OriginindependentCalculationQuadrupole}\Footnote{微观表达式却不是唯一确定的\cite{OriginDependenceMaterial}。}。
 
-\marginLeft[-2.5em]{ssec:step-delta}\subsection{$\bar{P},\bar{M}$ 表面源、$u,\delta$ 场源展开}\label{ssec:step-delta}
+\marginLeft[-2.5em]{ssec:step-delta}\subsection{$\bar{P},\bar{M}$ 表面源、${\mathbb{1}},\delta$ 场源展开}\label{ssec:step-delta}
 
-考虑在 $\mathcolor{gray}{z} = \mathcolor{gray}{z_0}$ 处面接触的两个半无限介质 \textcolor{Maroon}{0} 和 \textcolor{Maroon}{1}，输入场$=$泵浦的能流方向从介质 \textcolor{Maroon}{0} $\to$ 介质 \textcolor{Maroon}{1}，且与接触面法向夹成锐角。在上述初始条件下，束缚电/磁多极矩强度 $\bar{P}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}},\bar{\bar{Q}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}},\bar{\bar{\bar{O}}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} ; \bar{M}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{\bar{N}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 每一个都可以写成 2 个阶跃函数
+考虑在 $\mathcolor{gray}{z} = \mathcolor{gray}{z_0}$ 处面接触的两个半无限介质 \textcolor{Maroon}{0} 和介质 \textcolor{Maroon}{1}，输入场$=$泵浦的能流方向从介质 \textcolor{Maroon}{0} $\to$ 介质 \textcolor{Maroon}{1}，且与接触面内法向夹成锐角。在上述初始条件下，束缚电/磁多极矩强度 $\bar{P}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}},\bar{\bar{Q}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}},\bar{\bar{\bar{O}}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} ; \bar{M}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{\bar{N}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 每一个都可以写成 2 个阶跃 / \textcolor{Maroon}{Heaviside} 单位函数
 \begin{align} \label{eq:u}
-	u_{\mathcolor{gray}{z}} := u \left( \mathcolor{gray}{z} \right) = ~\left\{~ \begin{aligned} 
-		&1 &&, \mathcolor{gray}{z > z_0} \\ 
-		&\textcolor{Maroon}{\text{undefined}} &&, \mathcolor{gray}{z = z_0} \\
-		&0 &&, \mathcolor{gray}{z < z_0} \end{aligned}\right. ~,
+	\mathbb{1}_{\mathcolor{gray}{z}} := \mathbb{1} \left( \mathcolor{gray}{z} \right) = ~\left\{~ \begin{aligned} 
+		&1 &&, \mathcolor{gray}{z \mathcolor{black}{>} z_0} \\ 
+		&\textcolor{Maroon}{\text{undefined}} &&, \mathcolor{gray}{z \mathcolor{black}{=} z_0} \\
+		&0 &&, \mathcolor{gray}{z \mathcolor{black}{<} z_0} \end{aligned}\right. ~,
 \end{align}
 之和：即使用
 \begin{subequations} \label{eq:u-01}
 	\abovedisplayskip=-5pt
 	\belowdisplayskip=10pt
 \begin{align}
-	\leftindex_{\textcolor{Maroon}{0}} \;\! u_{\mathcolor{gray}{z}} &= u_{\mathcolor{gray}{z}} ~, \label{eq:u-0} \\ 
-	\leftindex_{\textcolor{Maroon}{1}} \;\! u_{\mathcolor{gray}{z}} &= u_{\mathcolor{gray}{-z}} ~, \label{eq:u-1}
+	\leftindex_{\textcolor{Maroon}{1}} {\mathbb{1}}_{\mathcolor{gray}{z}} &= {\mathbb{1}}_{\mathcolor{gray}{z}} ~, \label{eq:u-1} \\ 
+	\leftindex_{\textcolor{Maroon}{0}} {\mathbb{1}}_{\mathcolor{gray}{z}} &= {\mathbb{1}}_{ - \left( \mathcolor{gray}{z} - \mathcolor{gray}{z_0} \right) } ~, \label{eq:u-0}
 \end{align}
 \end{subequations}
-将束缚极矩 $P,Q,O,M,N$ 中的每一个（均暂记为 $X$）表达为：
+将束缚极矩 $P,Q,O;M,N$ 中的每一个（均暂记为 $X$）暂表达为：
 \begin{align} \label{eq:X-01}
-	X_{\mathcolor{gray}{z}} = \leftindex_{\textcolor{Maroon}{i}} \;\! u_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{i}} X_{\mathcolor{gray}{z}} ~~~~, \text{where} ~~~ \textcolor{Maroon}{i} = \textcolor{Maroon}{0,1} ~,
+	X_{\mathcolor{gray}{z}} = \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} X_{\mathcolor{gray}{z}} ~~~~, \text{其中} ~~~ \textcolor{Maroon}{\mathsfit{z}} = \textcolor{Maroon}{0,1} ~,
 \end{align}
-然后将它们 5 个代入 \bref{eq:p-b,eq:j-e,eq:j-m,eq:j-b} 得\Footnote{也可以，甚至原则上应该\cite{delangeElectromagneticBoundaryConditions2013} 代入 \bref{eq:p-b,eq:j-e,eq:j-m,eq:j-b} 中，接着再代入 \bref{eq:div-E,eq:curl-B}，但略有点迂回。}：
+然后将它们 5 个代入 \bref{eq:p-b,eq:j-e,eq:j-m,eq:j-b} 所构建的束缚电荷守恒\Footnote{通过物质对光子的线性、非线性吸收对应的内/外光伏效应\cite{boydNonlinearOptics2019}，实现价带/杂质能级到导带的跃迁，束缚电荷 与 自由电荷 可以相互转换，因此各自单独而言不一定守恒；因此 \bref{eq:div-e} 和 \bref{eq:div-e-f} 均不是定律，相比 \bref{eq:div-e} 而言。}中：
+
+并省略电八/磁四以上的项\cite{grahamMultipoleSolutionMacroscopic2000,delangeElectromagneticBoundaryConditions2013}，
+
+然后将它们 5 个代入 \bref{eq:d-pre,eq:h-pre} 并省略电八/磁四以上的项\Footnote{也可以，甚至原则上更应该 代入 \bref{eq:p-b,eq:j-e,eq:j-m,eq:j-b} 中，接着再代入 \bref{eq:div-E,eq:curl-B}，但略有点迂回/不够直接，就没这么做。}：
 \begin{subequations}
 \begin{align}
-	{\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{b}}\mathcolor{gray}{z}} &= - \mathcolor{gray}{\nabla^i} \left( P^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} - \frac{1}{2!} \mathcolor{gray}{\nabla^j} Q^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} + \frac{1}{3!} \mathcolor{gray}{\nabla^j} \mathcolor{gray}{\nabla^k} O^{\;\!\mathcolor{gray}{t}}_{\;\! ijk\mathcolor{gray}{z}} - \cdots \right)~, \label{eq:p-b-01} \\
-	&= \mathcolor{gray}{\nabla^t} \left( P^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} - \frac{1}{2!} \mathcolor{gray}{\nabla^j} Q^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} + \frac{1}{3!} \mathcolor{gray}{\nabla^j} \mathcolor{gray}{\nabla^k} O^{\;\!\mathcolor{gray}{t}}_{\;\! ijk\mathcolor{gray}{z}} - \cdots \right)~, \label{eq:j-e-01} \\
-	&= \epsilon^{\hphantom{ij}k}_{i\mathcolor{gray}{j}} \mathcolor{gray}{\nabla^j} \left( M^{\;\!\mathcolor{gray}{t}}_{\;\! k\mathcolor{gray}{z}} - \frac{1}{2!} \mathcolor{gray}{\nabla^l} N^{\;\!\mathcolor{gray}{t}}_{\;\! kl\mathcolor{gray}{z}} + \cdots \right)~. \label{eq:j-m-01} \\
+	\bar{D}^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} &= {\symup{\varepsilon}}_0 E^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} + P^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} - \frac{1}{2!} \mathcolor{gray}{\nabla^j} Q^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} + \frac{1}{3!} \mathcolor{gray}{\nabla^j} \mathcolor{gray}{\nabla^k} O^{\;\!\mathcolor{gray}{t}}_{\;\! ijk\mathcolor{gray}{z}} \label{eq:d} \\ 
+	&= {\symup{\varepsilon}}_0 E^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} + \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} P^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} - \frac{1}{2!} \mathcolor{gray}{\nabla^j} \left( \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} Q^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} \right) + \frac{1}{3!} \mathcolor{gray}{\nabla^j} \mathcolor{gray}{\nabla^k} \left( \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} O^{\;\!\mathcolor{gray}{t}}_{\;\! ijk\mathcolor{gray}{z}} \right) ~, \label{eq:d-01} \\
+	\bar{H}^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} &= {\symup{\mu}}_0^{-1} B^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} - M^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} + \frac{1}{2!} \mathcolor{gray}{\nabla^j} N^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} \label{eq:h} \\
+	&= {\symup{\mu}}_0^{-1} B^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} - \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} M^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} + \frac{1}{2!} \mathcolor{gray}{\nabla^j} \left( \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} N^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} \right) ~. \label{eq:h-01}
 \end{align}
 \end{subequations}
+接着将上述 2 者分别代入 \bref{eq:curl-EK,eq:curl-H}，得
+\begin{subequations} \label{eq:curl-EH}
+%	\abovedisplayskip=0pt
+	%\belowdisplayskip=0pt
+	\small
+\begin{align}
+	\epsilon^{\hphantom{ij}k}_{i\mathcolor{gray}{j}} \mathcolor{gray}{\nabla^j} E^{\;\!\mathcolor{gray}{t}}_{\;\! k\mathcolor{gray}{z}} + \mathcolor{gray}{\nabla^t} B^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} &= 0~, \label{eq:curl-E'} \\
+	\epsilon^{\hphantom{ij}k}_{i\mathcolor{gray}{j}} \mathcolor{gray}{\nabla^j} \left[ {\symup{\mu}}_0^{-1} B^{\;\!\mathcolor{gray}{t}}_{\;\! k\mathcolor{gray}{z}} - \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} M^{\;\!\mathcolor{gray}{t}}_{\;\! k\mathcolor{gray}{z}} + \frac{1}{2!} \mathcolor{gray}{\nabla^l} \left( \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} N^{\;\!\mathcolor{gray}{t}}_{\;\! kl\mathcolor{gray}{z}} \right) \right] & \label{eq:curl-H'} \\ - \mathcolor{gray}{\nabla^t} \left[ {\symup{\varepsilon}}_0 E^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} + \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} P^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} - \frac{1}{2!} \mathcolor{gray}{\nabla^j} \left( \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} Q^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} \right) + \frac{1}{3!} \mathcolor{gray}{\nabla^j} \mathcolor{gray}{\nabla^k} \left( \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} O^{\;\!\mathcolor{gray}{t}}_{\;\! ijk\mathcolor{gray}{z}} \right) \right] &= J^{\;\!\mathcolor{gray}{t}}_{\;\! \textcolor{Maroon}{\text{f}} i\mathcolor{gray}{z}}~, \\
+	\mathcolor{gray}{\nabla^i} \left[ {\symup{\varepsilon}}_0 E^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} + \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} P^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} - \frac{1}{2!} \mathcolor{gray}{\nabla^j} \left( \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} Q^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} \right) + \frac{1}{3!} \mathcolor{gray}{\nabla^j} \mathcolor{gray}{\nabla^k} \left( \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} O^{\;\!\mathcolor{gray}{t}}_{\;\! ijk\mathcolor{gray}{z}} \right) \right] &= {\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}}~, \label{eq:div-D'} \\
+	\mathcolor{gray}{\nabla^i} B^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} &= 0~, \label{eq:div-B'} \\
+	\mathcolor{gray}{\nabla^i} J^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}} i\mathcolor{gray}{z}} + \mathcolor{gray}{\nabla^t} {\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}} &= 0~. \label{eq:div-e-f'}
+\end{align}
+\end{subequations}
+注意到，在空域上对 $\leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} X_{\mathcolor{gray}{z}}$ 求 $\mathcolor{gray}{z}$ 向一阶或高阶偏导 $\mathcolor{gray}{\nabla_z}$，即
+\begin{subequations}
+\begin{align}
+	\mathcolor{gray}{\nabla_z} \left( \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} X_{\mathcolor{gray}{z}} \right) &= \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} \;\! \delta_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} X_{\mathcolor{gray}{z}} + \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \left( \mathcolor{gray}{\nabla_z} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} X_{\mathcolor{gray}{z}} \right) \label{eq:partial_z} \\ 
+	\mathcolor{gray}{\nabla_z^2} \left( \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} X_{\mathcolor{gray}{z}} \right) &= \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} \;\! \delta'_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} X_{\mathcolor{gray}{z}} + 2 \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} \;\! \delta_{\mathcolor{gray}{z}} \left( \mathcolor{gray}{\nabla_z} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} X_{\mathcolor{gray}{z}} \right) + \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \left( \mathcolor{gray}{\nabla_z^2} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} X_{\mathcolor{gray}{z}} \right) ~. \label{eq:partial_z^2}
+\end{align}
+\end{subequations}
+会产生 $\delta_{\mathcolor{gray}{z}}$ 函数
+\begin{subequations}
+\begin{align}
+	\leftindex_{\textcolor{Maroon}{1}} \;\! \delta_{\mathcolor{gray}{z}} &= \mathcolor{gray}{\nabla_z} \leftindex_{\textcolor{Maroon}{1}} {\mathbb{1}}_{\mathcolor{gray}{z}} = {\mathbb{1}'}_{\mathcolor{gray}{z}} = \delta_{\mathcolor{gray}{z}} ~, \label{eq:delta-1} \\ 
+	\leftindex_{\textcolor{Maroon}{0}} \;\! \delta_{\mathcolor{gray}{z}} &= \leftindex_{\textcolor{Maroon}{0}} {\mathbb{1}'}_{\mathcolor{gray}{z}} = - \leftindex_{\textcolor{Maroon}{1}} {\mathbb{1}'}_{\mathcolor{gray}{z}} = - \delta_{\mathcolor{gray}{z}} ~. \label{eq:delta-0}
+\end{align}
+\end{subequations}
+及其导数 $\delta'_{\mathcolor{gray}{z}}$ 等。而这些额外项只能期望通过 $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}},\bar{B}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中也含有的对应项来消除，以满足 \bref{eq:div-D',eq:curl-H'}。
+
 
 
 \marginLeft[-2.5em]{ssec:EB-boundary}\subsection{$\bar{E},\bar{B}$ 表面场、$\bar{E},\bar{B}$ 边界条件}\label{ssec:EB-boundary}
