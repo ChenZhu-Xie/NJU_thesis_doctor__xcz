@@ -109,7 +109,7 @@ $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{H}^{\;\!\math
 	\bar{J}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} &= \bar{J}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{f}}\mathcolor{gray}{z}} + \bar{J}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{b}}\mathcolor{gray}{z}}~, \label{eq:j=f+b} \\ \bar{J}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{b}}\mathcolor{gray}{z}} &= \bar{J}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{e}}\mathcolor{gray}{z}} + \bar{J}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{m}}\mathcolor{gray}{z}}~. \label{eq:b=e+m}
 \end{align}
 \end{subequations}
-其中，考虑有限区域内连续分布的时变电流源所产生的矢势场 $\bar{A}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$，等价于源全集中于其荷心时，在原点处的永久多极矩和（受到外场如 $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 和/或 $\bar{B}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$、应力场 $\bar{T}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 等后反作用出的）感应多极矩（的各项多极展开之和）之和，朝心外某一场点激发的矢势场\cite{raabMultipoleTheoryElectromagnetism2004,delangeTranslationalInvariancePost2012,chen-zhuChenZhuxieUndergraduate_courses2024}，可分别得到束缚电源 $\bar{J}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{e}}\mathcolor{gray}{z}}$ 和磁源 $\bar{J}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{m}}\mathcolor{gray}{z}}$ 体密度：
+其中，考虑有限区域内连续分布的时变电流源所产生的矢势场 $\bar{A}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$，等价于源全集中于其荷心时，在原点处的永久/自发多极矩和（受到外场如 $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 和/或 $\bar{B}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$、应力场 $\bar{T}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 等后反作用出的）感应多极矩（的各项多极展开之和）之和，朝心外某一场点激发的矢势场\cite{raabMultipoleTheoryElectromagnetism2004,delangeTranslationalInvariancePost2012,chen-zhuChenZhuxieUndergraduate_courses2024}，可分别得到束缚电源 $\bar{J}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{e}}\mathcolor{gray}{z}}$ 和磁源 $\bar{J}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{m}}\mathcolor{gray}{z}}$ 体密度：
 \begin{subequations} \label{eq:J-em}
 \begin{align}
 	\bar{J}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{e}}\mathcolor{gray}{z}} &= \mathcolor{gray}{\nabla^t} \left( \bar{P}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} - \frac{1}{2!} \mathcolor{gray}{\bar{\nabla} \cdot} \bar{\bar{Q}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} + \frac{1}{3!} \mathcolor{gray}{\bar{\nabla}} \mathcolor{gray}{\bar{\nabla} \colon}\! \bar{\bar{\bar{O}}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} - \cdots \right) \label{eq:J-e} \\ 
@@ -154,12 +154,12 @@ J^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{b}} i \mathcolor{gray}
 
 \marginLeft[-2.5em]{ssec:step-delta}\subsection{$\bar{P},\bar{M}$ 表面源、${\mathbb{1}},\delta$ 场源展开}\label{ssec:step-delta}
 
-考虑在 $\mathcolor{gray}{z} = \mathcolor{gray}{z_0}$ 处面接触的两个半无限介质 \textcolor{Maroon}{0} 和介质 \textcolor{Maroon}{1}，输入场$=$泵浦的能流方向从介质 \textcolor{Maroon}{0} $\to$ 介质 \textcolor{Maroon}{1}，且与接触面内法向夹成锐角。在上述初始条件下，束缚电/磁多极矩强度 $\bar{P}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}},\bar{\bar{Q}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}},\bar{\bar{\bar{O}}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} ; \bar{M}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{\bar{N}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 每一个都可以写成 2 个阶跃 / \textcolor{Maroon}{Heaviside} 单位函数
+考虑在 $\mathcolor{gray}{z} = \mathcolor{gray}{0}$ 处面接触的两个半无限介质 \textcolor{Maroon}{0} 和介质 \textcolor{Maroon}{1}，输入场$=$泵浦的能流方向从介质 \textcolor{Maroon}{0} $\to$ 介质 \textcolor{Maroon}{1}，且与接触面内法向夹成锐角。在上述初始条件下，束缚电/磁多极矩强度 $\bar{P}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}},\bar{\bar{Q}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}},\bar{\bar{\bar{O}}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}} ; \bar{M}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}, \bar{\bar{N}}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 每一个都可以写成 2 个阶跃 / \textcolor{Maroon}{Heaviside} 单位函数
 \begin{align} \label{eq:u}
 	\mathbb{1}_{\mathcolor{gray}{z}} := \mathbb{1} \left( \mathcolor{gray}{z} \right) = ~\left\{~ \begin{aligned} 
-		&1 &&, \mathcolor{gray}{z \mathcolor{black}{>} z_0} \\ 
-		&\textcolor{Maroon}{\text{undefined}} &&, \mathcolor{gray}{z \mathcolor{black}{=} z_0} \\
-		&0 &&, \mathcolor{gray}{z \mathcolor{black}{<} z_0} \end{aligned}\right. ~,
+		&1 &&, \mathcolor{gray}{z \mathcolor{black}{>} 0} \\ 
+		&\textcolor{Maroon}{\text{undefined}} &&, \mathcolor{gray}{z \mathcolor{black}{=} 0} \\
+		&0 &&, \mathcolor{gray}{z \mathcolor{black}{<} 0} \end{aligned}\right. ~,
 \end{align}
 之和：即使用
 \begin{subequations} \label{eq:u-01}
@@ -167,16 +167,24 @@ J^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{b}} i \mathcolor{gray}
 	\belowdisplayskip=10pt
 \begin{align}
 	\leftindex_{\textcolor{Maroon}{1}} {\mathbb{1}}_{\mathcolor{gray}{z}} &= {\mathbb{1}}_{\mathcolor{gray}{z}} ~, \label{eq:u-1} \\ 
-	\leftindex_{\textcolor{Maroon}{0}} {\mathbb{1}}_{\mathcolor{gray}{z}} &= {\mathbb{1}}_{ - \left( \mathcolor{gray}{z} - \mathcolor{gray}{z_0} \right) } ~, \label{eq:u-0}
+	\leftindex_{\textcolor{Maroon}{0}} {\mathbb{1}}_{\mathcolor{gray}{z}} &= {\mathbb{1}}_{ - \mathcolor{gray}{z} } ~, \label{eq:u-0}
 \end{align}
 \end{subequations}
 将束缚极矩 $P,Q,O;M,N$ 中的每一个（均暂记为 $X$）暂表达为：
 \begin{align} \label{eq:X-01}
 	X_{\mathcolor{gray}{z}} = \leftindex_{\textcolor{Maroon}{\mathsfit{z}}} {\mathbb{1}}_{\mathcolor{gray}{z}} \leftindex^{\textcolor{Maroon}{\mathsfit{z}}} X_{\mathcolor{gray}{z}} ~~~~, \text{其中} ~~~ \textcolor{Maroon}{\mathsfit{z}} = \textcolor{Maroon}{0,1} ~,
 \end{align}
-然后将它们 5 个代入 \bref{eq:p-b,eq:j-e,eq:j-m,eq:j-b} 所构建的束缚电荷守恒\Footnote{通过物质对光子的线性、非线性吸收对应的内/外光伏效应\cite{boydNonlinearOptics2019}，实现价带/杂质能级到导带的跃迁，束缚电荷 与 自由电荷 可以相互转换，因此各自单独而言不一定守恒；因此 \bref{eq:div-e} 和 \bref{eq:div-e-f} 均不是定律，相比 \bref{eq:div-e} 而言。}中：
-
-并省略电八/磁四以上的项\cite{grahamMultipoleSolutionMacroscopic2000,delangeElectromagneticBoundaryConditions2013}，
+然后将它们 5 个代入 \bref{eq:p-b,eq:j-b} ，并将所得结果代入由 \bref{eq:div-e,eq:div-e-f} 构建的束缚电荷守恒\Footnote{束缚电荷 与 自由电荷 可以相互转换，因此各自单独而言不一定守恒：通过价带/杂质能级到导带的跃迁，比如物质对光子的线性、非线性吸收并产生光电压/流所对应的内/外光伏/电效应\cite{boydNonlinearOptics2019}；因此 \bref{eq:div-e} 和 \bref{eq:div-e-f} 均不是定律，相比 \bref{eq:div-e} 而言。但在边界条件这里，我们暂时不考虑外光电效应、激光加工之强场激发等离子体\cite{boydNonlinearOptics2019,dengTheoryElectrodynamicResponse2020}等非平衡驰豫现象，因此暂认为束缚、自由电荷是分别独立守恒的。}中\cite{grahamMultipoleSolutionMacroscopic2000,delangeElectromagneticBoundaryConditions2013}，并省略电八/磁四以上的项：
+\begin{subequations}
+	%\abovedisplayskip=0pt
+	%\belowdisplayskip=0pt
+\begin{align}
+	\mathcolor{gray}{\nabla^i} J^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{b}} i\mathcolor{gray}{z}} + \mathcolor{gray}{\nabla^t} {\rho}^{\;\!\mathcolor{gray}{t}}_{\;\!\textcolor{Maroon}{\text{b}}\mathcolor{gray}{z}} &= 0~, \label{eq:div-e-b} \\ 
+	\mathcolor{gray}{\nabla^i} \left\{ \mathcolor{gray}{\nabla^t} P^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} - \mathcolor{gray}{\nabla^j} \left( \frac{1}{2!} \mathcolor{gray}{\nabla^t} Q^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} - \epsilon^{\hphantom{ij}k}_{i\mathcolor{gray}{j}} M^{\;\!\mathcolor{gray}{t}}_{\;\! k\mathcolor{gray}{z}} \right) \right.& \label{eq:div-e-b'} \\ \left. + \mathcolor{gray}{\nabla^j} \mathcolor{gray}{\nabla^l} \left[ \frac{1}{3!}  \mathcolor{gray}{\nabla^t} O^{\;\!\mathcolor{gray}{t}}_{\;\! ijl\mathcolor{gray}{z}} - \frac{1}{2!} \epsilon^{\hphantom{ij}k}_{i\mathcolor{gray}{j}} N^{\;\!\mathcolor{gray}{t}}_{\;\! kl\mathcolor{gray}{z}} \right] \right\}& \\ 
+	- \mathcolor{gray}{\nabla^t} \mathcolor{gray}{\nabla^i} \left( P^{\;\!\mathcolor{gray}{t}}_{\;\! i\mathcolor{gray}{z}} - \frac{1}{2!} \mathcolor{gray}{\nabla^j} Q^{\;\!\mathcolor{gray}{t}}_{\;\! ij\mathcolor{gray}{z}} + \frac{1}{3!} \mathcolor{gray}{\nabla^j} \mathcolor{gray}{\nabla^k} O^{\;\!\mathcolor{gray}{t}}_{\;\! ijk\mathcolor{gray}{z}} \right)& = 0~,
+\end{align}
+\end{subequations}
+可以看到，哪怕代入
 
 然后将它们 5 个代入 \bref{eq:d-pre,eq:h-pre} 并省略电八/磁四以上的项\Footnote{也可以，甚至原则上更应该 代入 \bref{eq:p-b,eq:j-e,eq:j-m,eq:j-b} 中，接着再代入 \bref{eq:div-E,eq:curl-B}，但略有点迂回/不够直接，就没这么做。}：
 \begin{subequations}
