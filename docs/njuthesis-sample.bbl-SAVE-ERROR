@@ -3084,6 +3084,62 @@
       \endverb
       \keyw{OriginindependentCalculationQuadrupole}
     \endentry
+    \entry{dengTheoryElectrodynamicResponse2020}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=37da91aac99fa8bf77bb42bcbf9bf130}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Hai-Yao},
+           giveni={H\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=37da91aac99fa8bf77bb42bcbf9bf130}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Hai-Yao},
+           giveni={H\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{37da91aac99fa8bf77bb42bcbf9bf130}
+      \strng{fullhash}{37da91aac99fa8bf77bb42bcbf9bf130}
+      \strng{fullhashraw}{37da91aac99fa8bf77bb42bcbf9bf130}
+      \strng{bibnamehash}{37da91aac99fa8bf77bb42bcbf9bf130}
+      \strng{authorbibnamehash}{37da91aac99fa8bf77bb42bcbf9bf130}
+      \strng{authornamehash}{37da91aac99fa8bf77bb42bcbf9bf130}
+      \strng{authorfullhash}{37da91aac99fa8bf77bb42bcbf9bf130}
+      \strng{authorfullhashraw}{37da91aac99fa8bf77bb42bcbf9bf130}
+      \strng{nameabibnamehash}{37da91aac99fa8bf77bb42bcbf9bf130}
+      \strng{nameanamehash}{37da91aac99fa8bf77bb42bcbf9bf130}
+      \strng{nameafullhash}{37da91aac99fa8bf77bb42bcbf9bf130}
+      \strng{nameafullhashraw}{37da91aac99fa8bf77bb42bcbf9bf130}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Annals of Physics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{shorttitle}{A Theory of Electrodynamic Response for Bounded Metals}
+      \field{title}{A Theory of Electrodynamic Response for Bounded Metals: {{Surface}} Capacitive Effects}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{418}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{168204}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.aop.2020.168204
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\AHCEED9K\2020_-_a_theory_of_electrodynamic_response_for_bounded_metals_surface_capacitive_effects_-_Deng_et_al.pdf
+      \endverb
+      \keyw{dengTheoryElectrodynamicResponse2020}
+    \endentry
     \entry{delangeElectromagneticBoundaryConditions2013}{article}{}{}
       \name{author}{2}{}{%
         {{useprefix=true,hash=9363d9ff51f614be3dc44ca9d93a9f92}{%
@@ -3205,8 +3261,8 @@
       \strng{nameanamehash}{2c9125f6919a6dc5a768b04d485e4a04}
       \strng{nameafullhash}{f5c2f5d9563ae3350536072e9a3097c5}
       \strng{nameafullhashraw}{f5c2f5d9563ae3350536072e9a3097c5}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1000-3290, 1000-3290}

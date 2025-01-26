@@ -3035,4 +3035,8 @@
     <bcf:citekey order="48" intorder="5">raabCommentOriginDependence2010a</bcf:citekey>
     <bcf:citekey order="48" intorder="6">OriginindependentCalculationQuadrupole</bcf:citekey>
     <bcf:citekey order="49" intorder="1">OriginDependenceMaterial</bcf:citekey>
-    <bcf:citekey order="50" intorder="1">delangeElectromagneticBoundaryConditions2013</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">boydNonlinearOptics2019</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">boydNonlinearOptics2019</bcf:citekey>
+    <bcf:citekey order="51" intorder="2">dengTheoryElectrodynamicResponse2020</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">grahamMultipoleSolutionMacroscopic2000</bcf:citekey>
+    <bcf:citekey order="52" intorder="2">delangeElectromagneticBoundaryConditions2013</bcf:citekey>
