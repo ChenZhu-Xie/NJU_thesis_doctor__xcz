@@ -3333,8 +3333,8 @@
       \strng{nameafullhash}{8782edfcbf32d6ea54a8a146903b7302}
       \strng{nameafullhashraw}{8782edfcbf32d6ea54a8a146903b7302}
       \field{extraname}{3}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{17}
@@ -3422,8 +3422,8 @@
       \strng{nameanamehash}{ea28270d53745d64b576613e76e2313f}
       \strng{nameafullhash}{1a68d38f8846b30ed0d23c206dbd796e}
       \strng{nameafullhashraw}{1a68d38f8846b30ed0d23c206dbd796e}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{EPL (Europhysics Letters)}

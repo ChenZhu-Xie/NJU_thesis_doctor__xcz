@@ -3042,5 +3042,11 @@
     <bcf:citekey order="52" intorder="2">delangeElectromagneticBoundaryConditions2013</bcf:citekey>
     <bcf:citekey order="53" intorder="1">grahamMultipoleSolutionMacroscopic2000</bcf:citekey>
     <bcf:citekey order="54" intorder="1">raabMultipoleTheoryElectromagnetism2004</bcf:citekey>
-    <bcf:citekey order="55" intorder="1">dengTheoryElectrodynamicResponse2020</bcf:citekey>
-    <bcf:citekey order="55" intorder="2">delangeElectromagneticBoundaryConditions2013</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">raabMultipoleTheoryElectromagnetism2004</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">grahamMultipoleSolutionMacroscopic2000</bcf:citekey>
+    <bcf:citekey order="56" intorder="2">raabMultipoleTheoryElectromagnetism2004</bcf:citekey>
+    <bcf:citekey order="56" intorder="3">delangeElectromagneticBoundaryConditions2013</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">raabMultipoleTheoryElectromagnetism2004</bcf:citekey>
+    <bcf:citekey order="57" intorder="2">delangeElectromagneticBoundaryConditions2013</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">dengTheoryElectrodynamicResponse2020</bcf:citekey>
+    <bcf:citekey order="58" intorder="2">delangeElectromagneticBoundaryConditions2013</bcf:citekey>
