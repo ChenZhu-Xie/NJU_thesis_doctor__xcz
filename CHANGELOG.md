@@ -6,6 +6,20 @@
 
 ## [未发布]
 
+### 新增
+
+- 增加 cleveref 的复数引用名称 - [#266]
+
+### 修复
+
+- 修复 macoffice 选项下无法自动加载华文中宋问题 - [#269]
+  - 感谢 [@liudongmiao]！
+- 提供新版 LaTeX2e 下兼容 cleveref 的补丁 - [#263]
+
+### 杂项
+
+- 手册匹配 `codehigh` 更新 - [lvjr/codehigh#12]
+
 ## [1.4.2] - 2024-11-08
 
 ### 新增
@@ -683,10 +697,14 @@
 [#248]: https://github.com/nju-lug/NJUThesis/issues/248
 [#251]: https://github.com/nju-lug/NJUThesis/discussions/251
 [#253]: https://github.com/nju-lug/NJUThesis/pull/253
+[#263]: https://github.com/nju-lug/NJUThesis/issues/263
+[#266]: https://github.com/nju-lug/NJUThesis/discussions/266
+[#269]: https://github.com/nju-lug/NJUThesis/pull/269
 
 [CTeX-org/ctex-kit#678]: https://github.com/CTeX-org/ctex-kit/pull/678
 [CTeX-org/ctex-kit#700]: https://github.com/CTeX-org/ctex-kit/pull/700
 [CTeX-org/ctex-kit#703]: https://github.com/CTeX-org/ctex-kit/pull/703
+[lvjr/codehigh#12]: https://github.com/lvjr/codehigh/issues/12
 
 [更新日志]: https://keepachangelog.com/zh-CN/1.0.0/
 [语义化版本]: https://semver.org/lang/zh-CN/
