@@ -93,6 +93,7 @@
 \makeatletter
 \def\uwav{\underaccent{\sim}} % 其他参考系
 \def\uo{\underaccent{\circ}} % 固有系
+\def\ucd{\underaccent{\smile}} % 数字 → 变量
 \def\ubar{\underaccent{{\underline{\mskip10mu}}}}
 \def\uddot{\underaccent{\"}} % 选这个 还是选 \undertilde{} ← 这个类似 underline
 \makeatother
@@ -300,14 +301,15 @@
 			划线 line & 0 条上短线 \hphantom{$\bar{~}$} & \hphantom{列向量 =} 标量 = 0 阶张量 & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\rho$ & \blabel{0bar} \\
 			& 1 条上短线 $\bar{~}$ & 列向量 = 矢量 = 1 阶张量 & $\bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\bar{J}$ & \blabel{1bar} \\
 			上线 up & 2 条上短线 $\bar{\bar{~}}$ & \hphantom{列向量 =} 张量：2 阶张量 & $\bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\bar{J}$ & \blabel{2bar} \\
-			& 3 条上短线 $\bar{\bar{\bar{~}}}$ & \hphantom{列向量 =} 张量：3 阶张量 & $\bar{\bar{\bar{\chi}}}$ & \blabel{3bar} \\ \midrule
+			& 3 条上短线 $\bar{\bar{\bar{~}}}$ & \hphantom{列向量 =} 张量：3 阶张量 & $\bar{\bar{\bar{\chi}}}$ & \blabel{3bar} \\
+			& 1 个上尖帽 $\hat{~}$ & 将对象提升为变量 or 归一化矢量 & $\mathcolor{gray}{\hat{1}},\mathcolor{gray}{\hat{e}}$ & \blabel{hat} \\ \midrule
 			长线 long & 1 条上长线 $\overline{~~}$ & 广义列向量，其中每个元素可能都是列向量 & $\underline{\bar{g}}$ & \blabel{uplong} \\
 			& 2 条上长线 $\overline{\overline{~~}}$ & 广义张量：如广义列向量本身所形成的张量 &  & \blabel{Maroon} \\ 
 			& 1 条下长线 $\underline{~~}$ & 未定义；保留的关键修饰符 &  & \blabel{ulong} \\ \midrule
 			下线 down & 0 条下短线 \hphantom{$\underline{~}$} & $\in$ 实验（室）坐标系 = $\mathcal{Z}$ 系（下的物理量） & $\bar{g}$ & \blabel{Maroon} \\
 			& 1 条下短线 $\underline{~}$ & $\in$ 晶体（学）坐标系 = $\mathcal{C}$ 系（下的物理量） & $\bar{\underline{g}}$ & \blabel{Maroon} \\ \midrule 
 			底标 other & 1 条下短波浪线 $\uwav{~}$ & $\in$ 另一个（地点、运动状态的）参考系 & $\mathcolor{gray}{\uwav{t}}, \mathcolor{gray}{\bar{\uwav{r}}}$ & \blabel{uwav} \\ 
-			& 1 个下空圈 $\uo{~}$ & $\in$ （所考虑的）事件/对象 本身的参考系 & $\mathcolor{gray}{\uo{t}}$ & \blabel{uo} \\
+			& 1 个下空圈 $\uo{~}$ & $\in$ （所考虑的）事件/对象 本身的参考系 & $\mathcolor{gray}{\uo{t}}$ & \blabel{uo} \\ 
 			\bottomrule[2pt]
 		\end{tabular}
 	}
