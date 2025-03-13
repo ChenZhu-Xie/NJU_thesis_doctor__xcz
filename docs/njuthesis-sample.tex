@@ -278,7 +278,7 @@
 \appsection{各字体、上下标、装饰符、颜色的含义}
 
 \begin{table}[h!]
-	\caption{\label{tab:font} 字体 —— 用于区分变量与常量，以及不同类变量，的含义。}
+	\caption{\label{tab:font} 字体 —— 用于区分变量与常量、不同类变量，的含义。}
 	\resizebox{1.0\linewidth}{!}{  % 宽度不超文本宽度
 		\begin{tabular}{c|c|c|c|c}
 			\toprule[2pt]
@@ -299,6 +299,9 @@
 		\begin{tabular}{c|c|c|c|c}
 			\toprule[2pt]
 			类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
+			实点 dot & 1 个上实点 $\dot{~}$ & 该转换张量对应的“结果张量”提升 1 阶 & $\dot{\chi}$ & \blabel{dot} \\
+			& 2 个上实点 $\ddot{~}$ & 该转换张量对应的“结果张量”提升 2 阶 & $\ddot{\chi}$ & \blabel{ddot} \\
+			& 3 个上实点 $\dot{\ddot{~}}$ & 该转换张量对应的“结果张量”提升 3 阶 & $\dot{\ddot{\chi}}$ & \blabel{dddot} \\ \midrule
 			划线 line & 0 条上短线 \hphantom{$\bar{~}$} & \hphantom{列向量 =} 标量 = 0 阶张量 & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\rho$ & \blabel{0bar} \\
 			& 1 条上短线 $\bar{~}$ & 列向量 = 矢量 = 1 阶张量 & $\bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\bar{J}$ & \blabel{1bar} \\
 			上线 up & 2 条上短线 $\bar{\bar{~}}$ & \hphantom{列向量 =} 张量：2 阶张量 & $\bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\bar{J}$ & \blabel{2bar} \\
@@ -317,14 +320,14 @@
 \end{table}
 
 \begin{table}[h!]
-	\caption{\label{tab:color} $J \in \left[ 1, 10 \right]$ 的和弦级数的 $a_0, \left\{ a_j, b_j \right\}$ 划线 参数。}
+	\caption{\label{tab:color} 颜色——用于区分变量与文字、变量的类型，的含义。}
 	\resizebox{1.0\linewidth}{!}{  % 宽度不超文本宽度
 		\begin{tabular}{c|c|c|c|c}
 			\toprule[2pt]
 			类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
 			颜色 color & 黑色 black & 非自变量，包括因变量和（非函数=无自变量的）独立变量 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\bar{E}$ & \blabel{black} \\
 			& {\color{gray} 灰色 gray} & （附属于某个因变量的）自变量，或与之相关的散度分量 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\mathcolor{gray}{t,z}$ & \blabel{gray} \\
-			& {\color{Maroon} 褐红 Maroon} & 起补充说明作用的直体文字脚标 & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}, \bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\textcolor{Maroon}{\text{f}}$ & \blabel{Maroon} \\
+			& {\color{Maroon} 褐红 Maroon} & 起补充说明作用的直体文字 & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}, \bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\textcolor{Maroon}{\text{f}}$ & \blabel{Maroon} \\
 			$b_3$  &        &        & 2.7821 & 1.7670 \\
 			$b_5$  &        &        &        &        \\
 			$b_6$  &        &        &        &        \\
