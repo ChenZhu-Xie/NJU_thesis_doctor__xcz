@@ -97,6 +97,28 @@
 \def\ubar{\underaccent{{\underline{\mskip10mu}}}}
 \def\uddot{\underaccent{\"}} % 选这个 还是选 \undertilde{} ← 这个类似 underline
 \makeatother
+
+%\usepackage{tipa} % 补充 脚标 和 符号
+\def\Xint#1#2#3{%
+	\mathchoice
+	{\XXint\displaystyle\textstyle{#1}{#3}{#2}}%
+	{\XXint\textstyle\scriptstyle{#1}{#3}{#2}}%
+	{\XXint\scriptstyle\scriptscriptstyle{#1}{#3}{#2}}%
+	{\XXint\scriptscriptstyle\scriptscriptstyle{#1}{#3}{#2}}%
+	\!#3}
+\def\XXint#1#2#3#4#5{%
+	{\setbox0=\hbox{$#1{#2#3}{#4}$}%
+		\vcenter{\hbox{$#2#3$}}%
+		\kern-.#5\wd0}}
+\def\ddashint{\Xint{=}{3}{\int}}
+\def\dashint{\Xint{-}{3}{\int}}
+%\Xint{\mathcolor{gray}{-}}{30}{\underline{D}}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}
+%\Xint{\mathcolor{gray}{-}}{295}{\underline{E}}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}
+%\Xint{\mathcolor{gray}{-}}{275}{\underline{H}}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}
+%\Xint{\mathcolor{gray}{-}}{305}{\underline{B}}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}
+
+%\usepackage{abraces} % 集合
+
 \usepackage{ulem} % 丰富下划线
 \usepackage{slashed} % \slashed
 \usepackage{leftindex} % \leftindex 左（上下）角标
@@ -283,37 +305,40 @@
 		\begin{tabular}{c|c|c|c|c}
 			\toprule[2pt]
 			类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
-			字体 font & 直体 upright & 物理常量、离散变量（如$\symup{\iota}$分量）、文字（说明） & $\upmu_0$ 中的 $\upmu$ 和 $0$ & \blabel{upright} \\
-			& 斜体 \textit{oblique} & 连续变量（自变量或因变量）、场量、函数 & $\bar{E}$ 中的 $E$ & \blabel{oblique} \\
-			& 黑板粗体 $\mathbb{mathbb}$ & 数学常量 $\mathbb{e},\mathbb{i}$、数学集合 $\mathbb{R},\mathbb{C}$、数学微分符号 $\mathbb{d}$ & $\mathbb{e},\mathbb{i};\mathbb{d};\mathbb{R},\mathbb{C}$ & \blabel{mathbb} \\ \midrule
-			粗细 width & 细体 thin\hphantom{k} & 每一个常量与变量 & $\bar{\bar{\chi}},\bar{\bar{\varepsilon}}$ & \blabel{thin} \\
-			& \textbf{粗体 bold} & 另一个（相关的）物理量，以缓解符号耗尽 & & \blabel{bold} \\
+			字体 font & 直体 upright & 物理常量、离散变量（如$\symup{\iota}$分量）、文字（说明） & $\upmu_0$ 中的 $\upmu$ 和 $0$ & \blabel{hook:upright} \\
+			& 斜体 \textit{oblique} & 连续变量（自变量或因变量）、场量、函数 & $\bar{E}$ 中的 $E$ & \blabel{hook:oblique} \\
+			& 黑板粗体 $\mathbb{mathbb}$ & 数学常量 $\mathbb{e},\mathbb{i}$、数学集合 $\mathbb{R},\mathbb{C}$、数学微分符号 $\mathbb{d}$ & $\mathbb{e},\mathbb{i};\mathbb{d};\mathbb{R},\mathbb{C}$ & \blabel{hook:mathbb} \\ \midrule
+			粗细 width & 细体 thin\hphantom{k} & 每一个常量与变量 & $\bar{\bar{\chi}},\bar{\bar{\varepsilon}}$ & \blabel{hook:thin} \\
+			& \textbf{粗体 bold} & 另一个（相关的）物理量，以缓解符号耗尽 & & \blabel{hook:bold} \\
 			\bottomrule[2pt]
 		\end{tabular}
 	}
 \end{table}
 
 \begin{table}[h!]
-	\caption{\label{tab:line} 上/下 \& 长/短 划线 —— 作为变量的装饰，的含义。}
+	\caption{\label{tab:line} 上/中/下 \& 长/短 划线 —— 作为变量的装饰，的含义。}
 	\resizebox{1.0\linewidth}{!}{  % 宽度不超文本宽度
 		\begin{tabular}{c|c|c|c|c}
 			\toprule[2pt]
 			类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
-			实点 dot & 1 个上实点 $\dot{~}$ & 该转换张量对应的“结果张量”提升 1 阶 & $\dot{\chi}$ & \blabel{dot} \\
-			& 2 个上实点 $\ddot{~}$ & 该转换张量对应的“结果张量”提升 2 阶 & $\ddot{\chi}$ & \blabel{ddot} \\
-			& 3 个上实点 $\dot{\ddot{~}}$ & 该转换张量对应的“结果张量”提升 3 阶 & $\dot{\ddot{\chi}}$ & \blabel{dddot} \\ \midrule
-			划线 line & 0 条上短线 \hphantom{$\bar{~}$} & \hphantom{列向量 =} 标量 = 0 阶张量 & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\rho$ & \blabel{0bar} \\
-			& 1 条上短线 $\bar{~}$ & 列向量 = 矢量 = 1 阶张量 & $\bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\bar{J}$ & \blabel{1bar} \\
-			上线 up & 2 条上短线 $\bar{\bar{~}}$ & \hphantom{列向量 =} 张量：2 阶张量 & $\bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\bar{J}$ & \blabel{2bar} \\
-			& 3 条上短线 $\bar{\bar{\bar{~}}}$ & \hphantom{列向量 =} 张量：3 阶张量 & $\bar{\bar{\bar{\chi}}}$ & \blabel{3bar} \\
-			& 1 个上尖帽 $\hat{~}$ & 将对象提升为变量 or 归一化矢量 & $\hat{1}, \hat{e}$ & \blabel{hat} \\ \midrule
-			长线 long & 1 条上长线 $\overline{~~}$ & 广义列向量，其中每个元素可能都是列向量 & $\underline{\bar{g}}$ & \blabel{uplong} \\
-			& 2 条上长线 $\overline{\overline{~~}}$ & 广义张量：如广义列向量本身所形成的张量 &  & \blabel{Maroon} \\ 
-			& 1 条下长线 $\underline{~~}$ & 未定义；保留的关键修饰符 &  & \blabel{ulong} \\ \midrule
-			下线 down & 0 条下短线 \hphantom{$\underline{~}$} & $\in$ 实验（室）坐标系 = $\mathcal{Z}$ 系（下的物理量） & $\bar{g}$ & \blabel{Maroon} \\
-			& 1 条下短线 $\underline{~}$ & $\in$ 晶体（学）坐标系 = $\mathcal{C}$ 系（下的物理量） & $\bar{\underline{g}}$ & \blabel{Maroon} \\ \midrule 
-			底标 other & 1 条下短波浪线 $\uwav{~}$ & $\in$ 另一个（地点、运动状态的）参考系 & $\mathcolor{gray}{\uwav{t}}, \mathcolor{gray}{\bar{\uwav{r}}}$ & \blabel{uwav} \\ 
-			& 1 个下空圈 $\uo{~}$ & $\in$ （所考虑的）事件/对象 本身的参考系 & $\mathcolor{gray}{\uo{t}}$ & \blabel{uo} \\ 
+			实点 dot & 1 个上实点 $\dot{~}$ & 该转换张量对应的“结果张量”提升 1 阶 & $\dot{\chi}$ & \blabel{hook:dot} \\
+			& 2 个上实点 $\ddot{~}$ & 该转换张量对应的“结果张量”提升 2 阶 & $\ddot{\chi}$ & \blabel{hook:ddot} \\
+			& 3 个上实点 $\dot{\ddot{~}}$ & 该转换张量对应的“结果张量”提升 3 阶 & $\dot{\ddot{\chi}}$ & \blabel{hook:dddot} \\ \midrule
+			划线 line & 0 条上短线 \hphantom{$\bar{~}$} & \hphantom{列向量 =} 标量 = 0 阶张量 & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\rho$ & \blabel{hook:0bar} \\
+			& 1 条上短线 $\bar{~}$ & 列向量 = 矢量 = 1 阶张量 & $\bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\bar{J}$ & \blabel{hook:1bar} \\
+			上线 up & 2 条上短线 $\bar{\bar{~}}$ & \hphantom{列向量 =} 张量：2 阶张量 & $\bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\bar{J}$ & \blabel{hook:2bar} \\
+			& 3 条上短线 $\bar{\bar{\bar{~}}}$ & \hphantom{列向量 =} 张量：3 阶张量 & $\bar{\bar{\bar{\chi}}}$ & \blabel{hook:3bar} \\
+			& 1 个上尖帽 $\hat{~}$ & 将对象提升为（不同于 $\check{~}$ 的）变量 or 归一化矢量 & $\hat{1}, \hat{e}$ & \blabel{hook:hat} \\ 
+			& 1 个下尖帽 $\check{~}$ & 将对象提升为（不同于 $\hat{~}$ 的）变量 or 归一化矢量 & $\check{1}, \check{\symup{\jmath}}, \check{\jmath}$ & \blabel{hook:check} \\ \midrule
+			长线 long & 1 条上长线 $\overline{~~}$ & 广义列向量，其中每个元素可能都是列向量 & $\underline{\bar{g}}$ & \blabel{hook:uplong} \\
+			& 2 条上长线 $\overline{\overline{~~}}$ & 广义张量：如广义列向量本身所形成的张量 &  & \blabel{hook:overline} \\ \midrule
+			中线 mid & 1 条中中线 \textcolor{gray}{--} & 自变量中含横向 2 维实空间频率 $\mathcolor{gray}{\bar{k}_{\symup{\rho}}}$ 的因变量 & $\Xint{\mathcolor{gray}{-}}{26}{D}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}} \Xint{\mathcolor{gray}{-}}{25}{E}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}$ & \blabel{hook:Xint} \\ \midrule
+			& 0 条下短线 \hphantom{$\underline{~}$} & $\in$ 实验（室）坐标系 = $\mathcal{Z}$ 系（下的物理量） & $\bar{g}$ & \blabel{hook:lab} \\
+			下线 down & 1 条下短线 $\underline{~}$ & $\in$ 晶体（学）坐标系 = $\mathcal{C}$ 系（下的物理量） & $\bar{\underline{g}}$ & \blabel{hook:crystal} \\
+			& 1 条下长线 $\underline{~~}$ & 未定义；保留的关键修饰符 &  & \blabel{hook:ulong} \\ \midrule 
+			底标 other & 1 条下短波浪线 $\uwav{~}$ & $\in$ 另一个（地点、运动状态的）参考系 & $\mathcolor{gray}{\uwav{t}}, \mathcolor{gray}{\bar{\uwav{r}}}$ & \blabel{hook:uwav} \\ 
+			& 1 个下空圈 $\uo{~}$ & $\in$ （所考虑的）事件/对象 本身的参考系 & $\mathcolor{gray}{\uo{t}}$ & \blabel{hook:uo} \\ 
+			& 1 个大括号 $\overbrace{~}$ 或 $\underbrace{~}$ & 所括对象同类变量的集合 & $\mathcolor{gray}{\overbrace{\check{\symup{\jmath}}}}~~, \mathcolor{gray}{\underbrace{\mathcolor{black}{k}^{\omega}_{\check{\symup{\jmath}}}}}$ & \blabel{hook:brace} \\ 
 			\bottomrule[2pt]
 		\end{tabular}
 	}
@@ -325,16 +350,9 @@
 		\begin{tabular}{c|c|c|c|c}
 			\toprule[2pt]
 			类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
-			颜色 color & 黑色 black & 非自变量，包括因变量和（非函数=无自变量的）独立变量 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\bar{E}$ & \blabel{black} \\
-			& {\color{gray} 灰色 gray} & （附属于某个因变量的）自变量，或与之相关的散度分量 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\mathcolor{gray}{t,z}$ & \blabel{gray} \\
-			& {\color{Maroon} 褐红 Maroon} & 起补充说明作用的直体文字 & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}, \bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\textcolor{Maroon}{\text{f}}$ & \blabel{Maroon} \\
-			$b_3$  &        &        & 2.7821 & 1.7670 \\
-			$b_5$  &        &        &        &        \\
-			$b_6$  &        &        &        &        \\
-			$b_7$  &        &        &        &        \\
-			$b_8$  &        &        &        &        \\
-			$b_9$  &        &        &        &        \\
-			$b_{10}$ &        &        &        &      \\ \bottomrule[2pt]
+			颜色 color & 黑色 black & 非自变量，包括因变量和（非函数=无自变量的）独立变量 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\bar{E}$ & \blabel{hook:black} \\
+			& {\color{gray} 灰色 gray} & （附属于某个因变量的）自变量，或与之相关的散度分量 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\mathcolor{gray}{t,z}$ & \blabel{hook:gray} \\
+			& {\color{Maroon} 褐红 Maroon} & 起补充说明作用的直体文字 & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}, \bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\textcolor{Maroon}{\text{f}}$ & \blabel{hook:Maroon} \\ \bottomrule[2pt]
 		\end{tabular}
 	}
 \end{table}
