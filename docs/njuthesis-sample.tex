@@ -302,60 +302,61 @@
 \begin{table}[h!]
 	\caption{\label{tab:font} 字体 —— 用于区分变量与常量、不同类变量，的含义。}
 	\resizebox{1.0\linewidth}{!}{  % 宽度不超文本宽度
-		\begin{tabular}{c|c|c|c|c}
-			\toprule[2pt]
-			类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
-			字体 font & 直体 upright & 物理常量、离散变量（如$\symup{\iota}$分量）、文字（说明） & $\upmu_0$ 中的 $\upmu$ 和 $0$ & \blabel{hook:upright} \\
-			& 斜体 \textit{oblique} & 连续变量（自变量或因变量）、场量、函数 & $\bar{E}$ 中的 $E$ & \blabel{hook:oblique} \\
-			& 黑板粗体 $\mathbb{mathbb}$ & 数学常量 $\mathbb{e},\mathbb{i}$、数学集合 $\mathbb{R},\mathbb{C}$、数学微分符号 $\mathbb{d}$ & $\mathbb{e},\mathbb{i};\mathbb{d};\mathbb{R},\mathbb{C}$ & \blabel{hook:mathbb} \\ \midrule
-			粗细 width & 细体 thin\hphantom{k} & 每一个常量与变量 & $\bar{\bar{\chi}},\bar{\bar{\varepsilon}}$ & \blabel{hook:thin} \\
-			& \textbf{粗体 bold} & 另一个（相关的）物理量，以缓解符号耗尽 & & \blabel{hook:bold} \\
-			\bottomrule[2pt]
-		\end{tabular}
+	\begin{tabular}{c|c|c|c|c}
+		\toprule[2pt]
+		类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
+		字体 font & 直体 upright & 物理常量、离散变量（如$\symup{\iota}$分量）、文字（说明） & $\upmu_0$ 中的 $\upmu$ 和 $0$ & \blabel{hook:upright} \\
+		& 斜体 \textit{oblique} & 连续变量（自变量或因变量）、场量、函数 & $\bar{E}$ 中的 $E$ & \blabel{hook:oblique} \\
+		& 黑板粗体 $\mathbb{mathbb}$ & 数学常量 $\mathbb{e},\mathbb{i}$、数学集合 $\mathbb{R},\mathbb{C}$、数学微分符号 $\mathbb{d}$ & $\mathbb{e},\mathbb{i};\mathbb{d};\mathbb{R},\mathbb{C}$ & \blabel{hook:mathbb} \\ \midrule
+		粗细 width & 细体 thin\hphantom{k} & 每一个常量与变量 & $\bar{\bar{\chi}},\bar{\bar{\varepsilon}}$ & \blabel{hook:thin} \\
+		& \textbf{粗体 bold} & 另一个（相关的）物理量，以缓解符号耗尽 & & \blabel{hook:bold} \\
+		\bottomrule[2pt]
+	\end{tabular}
 	}
 \end{table}
 
 \begin{table}[h!]
 	\caption{\label{tab:line} 上/中/下 \& 长/短 划线 —— 作为变量的装饰，的含义。}
 	\resizebox{1.0\linewidth}{!}{  % 宽度不超文本宽度
-		\begin{tabular}{c|c|c|c|c}
-			\toprule[2pt]
-			类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
-			实点 dot & 1 个上实点 $\dot{~}$ & 将对象提升为（不同于 $\hat{~},\check{~},\tilde{~}$ 的）变量 & $\dot{1}, \dot{2}$ & \blabel{hook:Dot} \\ 
-			& 1 个上实点 $\dot{~}$ & 该转换张量对应的“结果张量”提升 1 阶 & $\dot{\chi}$ & \blabel{hook:dot} \\
-			& 2 个上实点 $\ddot{~}$ & 该转换张量对应的“结果张量”提升 2 阶 & $\ddot{\chi}$ & \blabel{hook:ddot} \\ \midrule
+	\begin{tabular}{c|c|c|c|c}
+		\toprule[2pt]
+		类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
+		实点 dot & 1 个上实点 $\dot{~}$ & 将对象提升为（不同于 $\hat{~},\check{~},\breve{~}$ 的）变量 & $\dot{1}, \dot{2}$ & \blabel{hook:Dot} \\ 
+		& 1 个上实点 $\dot{~}$ & 该转换张量对应的“结果张量”提升 1 阶 & $\dot{\chi}$ & \blabel{hook:dot} \\
+		& 2 个上实点 $\ddot{~}$ & 该转换张量对应的“结果张量”提升 2 阶 & $\ddot{\chi}$ & \blabel{hook:ddot} \\ \midrule
 %			& 3 个上实点 $\dot{\ddot{~}}$ & 该转换张量对应的“结果张量”提升 3 阶 & $\dot{\ddot{\chi}}$ & \blabel{hook:dddot} \\ \midrule
-			划线 line & 0 条上短线 \hphantom{$\bar{~}$} & \hphantom{列向量 =} 标量 = 0 阶张量 & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\rho$ & \blabel{hook:0bar} \\
-			& 1 条上短线 $\bar{~}$ & 列向量 = 矢量 = 1 阶张量 & $\bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\bar{J}$ & \blabel{hook:1bar} \\
-			上线 up & 2 条上短线 $\bar{\bar{~}}$ & \hphantom{列向量 =} 张量：2 阶张量 & $\bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\bar{J}$ & \blabel{hook:2bar} \\
-			& 3 条上短线 $\bar{\bar{\bar{~}}}$ & \hphantom{列向量 =} 张量：3 阶张量 & $\bar{\bar{\bar{\chi}}}$ & \blabel{hook:3bar} \\
-			& 1 个上尖帽 $\hat{~}$ & 将对象提升为（不同于 $\check{~},\dot{~},\tilde{~}$ 的）变量 or 归一化矢量 & $\hat{1}, \hat{e}$ & \blabel{hook:hat} \\ 
-			& 1 个上波浪 $\tilde{~}$ & 将对象提升为（不同于 $\hat{~},\check{~},\dot{~}$ 的）变量 & $\tilde{1}$ & \blabel{hook:tilde} \\ 
-			& 1 个下尖帽 $\check{~}$ & 将对象提升为（不同于 $\hat{~},\dot{~},\tilde{~}$ 的）变量 & $\check{1}, \check{\symup{\jmath}}, \check{\jmath}$ & \blabel{hook:check} \\ \midrule
-			长线 long & 1 条上长线 $\overline{~~}$ & 广义列向量，其中每个元素可能都是列向量 & $\underline{\bar{g}}$ & \blabel{hook:uplong} \\
-			& 2 条上长线 $\overline{\overline{~~}}$ & 广义张量：如广义列向量本身所形成的张量 &  & \blabel{hook:overline} \\ \midrule
-			中线 mid & 1 条中中线 \textcolor{gray}{--} & 自变量中含横向 2 维实空间频率 $\mathcolor{gray}{\bar{k}_{\symup{\rho}}}$ 的因变量 & $\Xint{\mathcolor{gray}{-}}{26}{D}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}, \Xint{\mathcolor{gray}{-}}{25}{E}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}, \Xint{{}^{}_{\mathcolor{gray}{-}}}{23}{\chi}$ & \blabel{hook:Xint} \\ \midrule
-			& 0 条下短线 \hphantom{$\underline{~}$} & $\in$ 实验（室）坐标系 = $\mathcal{Z}$ 系（下的物理量） & $\bar{g}$ & \blabel{hook:lab} \\
-			下线 down & 1 条下短线 $\underline{~}$ & $\in$ 晶体（学）坐标系 = $\mathcal{C}$ 系（下的物理量） & $\bar{\underline{g}}$ & \blabel{hook:crystal} \\
-			& 1 条下长线 $\underline{~~}$ & 未定义；保留的关键修饰符 &  & \blabel{hook:ulong} \\ \midrule 
-			底标 other & 1 条下短波浪线 $\uwav{~}$ & $\in$ 另一个（地点、运动状态的）参考系 & $\mathcolor{gray}{\uwav{t}}, \mathcolor{gray}{\bar{\uwav{r}}}$ & \blabel{hook:uwav} \\ 
-			& 1 个下空圈 $\uo{~}$ & $\in$ （所考虑的）事件/对象 本身的参考系 & $\mathcolor{gray}{\uo{t}}$ & \blabel{hook:uo} \\ 
-			& 1 个$\!\overbrace{\text{上}}$/$\underbrace{\text{下}}\!$大括号 & 所括对象（0, 1, 2...个）同类变量的乘积或组合 & $\mathcolor{gray}{\overbrace{\check{\symup{\jmath}}}}~~, \mathcolor{gray}{\underbrace{\mathcolor{black}{k}^{\omega}_{\check{\symup{\jmath}}}}}$ & \blabel{hook:brace} \\ 
-			\bottomrule[2pt]
-		\end{tabular}
+		划线 line & 0 条上短线 \hphantom{$\bar{~}$} & \hphantom{列向量 =} 标量 = 0 阶张量 & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\rho$ & \blabel{hook:0bar} \\
+		& 1 条上短线 $\bar{~}$ & 列向量 = 矢量 = 1 阶张量 & $\bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\bar{J}$ & \blabel{hook:1bar} \\
+		上线 up & 2 条上短线 $\bar{\bar{~}}$ & \hphantom{列向量 =} 张量：2 阶张量 & $\bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\bar{J}$ & \blabel{hook:2bar} \\
+		& 3 条上短线 $\bar{\bar{\bar{~}}}$ & \hphantom{列向量 =} 张量：3 阶张量 & $\bar{\bar{\bar{\chi}}}$ & \blabel{hook:3bar} \\
+		& 1 个上波浪 $\tilde{~}$ & “泛函/变分式”对变量的微扰 & $\tilde{\varepsilon}^{\;\! \mathcolor{gray}{t} \hat{1}}_{\;\! \symup{\iota} \mathcolor{gray}{z} \textcolor{Maroon}{(1)}}, \tilde{\zeta}^{\;\! \mathcolor{gray}{t} \hat{1} \mathcolor{gray}{\check{1} \check{2}}}_{\;\! \symup{\iota} \mathcolor{gray}{z} \textcolor{Maroon}{(1)}}$ & \blabel{hook:tilde} \\ 
+		& 1 个上尖帽 $\hat{~}$ & 将对象提升为（不同于 $\check{~},\dot{~},\breve{~}$ 的）变量 or 归一化矢量 & $\hat{1}, \hat{e}$ & \blabel{hook:hat} \\ 
+		& 1 个上声调 $\breve{~}$ & 将对象提升为（不同于 $\hat{~},\check{~},\dot{~}$ 的）变量 & $\breve{1}$ & \blabel{hook:breve} \\ 
+		& 1 个下尖帽 $\check{~}$ & 将对象提升为（不同于 $\hat{~},\dot{~},\breve{~}$ 的）变量 & $\check{1}, \check{\symup{\jmath}}, \check{\jmath}$ & \blabel{hook:check} \\ \midrule
+		长线 long & 1 条上长线 $\overline{~~}$ & 广义列向量，其中每个元素可能都是列向量 & $\underline{\bar{g}}$ & \blabel{hook:uplong} \\
+		& 2 条上长线 $\overline{\overline{~~}}$ & 广义张量：如广义列向量本身所形成的张量 &  & \blabel{hook:overline} \\ \midrule
+		中线 mid & 1 条中中线 \textcolor{gray}{--} & 自变量中含横向 2 维实空间频率 $\mathcolor{gray}{\bar{k}_{\symup{\rho}}}$ 的因变量 & $\Xint{\mathcolor{gray}{-}}{26}{D}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}, \Xint{\mathcolor{gray}{-}}{25}{E}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}, \Xint{{}^{}_{\mathcolor{gray}{-}}}{23}{\chi}$ & \blabel{hook:Xint} \\ \midrule
+		& 0 条下短线 \hphantom{$\underline{~}$} & $\in$ 实验（室）坐标系 = $\mathcal{Z}$ 系（下的物理量） & $\bar{g}$ & \blabel{hook:lab} \\
+		下线 down & 1 条下短线 $\underline{~}$ & $\in$ 晶体（学）坐标系 = $\mathcal{C}$ 系（下的物理量） & $\bar{\underline{g}}$ & \blabel{hook:crystal} \\
+		& 1 条下长线 $\underline{~~}$ & 未定义；保留的关键修饰符 &  & \blabel{hook:ulong} \\ \midrule 
+		底标 other & 1 条下短波浪线 $\uwav{~}$ & $\in$ 另一个（地点、运动状态的）参考系 & $\mathcolor{gray}{\uwav{t}}, \mathcolor{gray}{\bar{\uwav{r}}}$ & \blabel{hook:uwav} \\ 
+		& 1 个下空圈 $\uo{~}$ & $\in$ （所考虑的）事件/对象 本身的参考系 & $\mathcolor{gray}{\uo{t}}$ & \blabel{hook:uo} \\ 
+		& 1 个$\!\overbrace{\text{上}}$/$\underbrace{\text{下}}\!$大括号 & 所括对象（0, 1, 2...个）同类变量的乘积或组合 & $\mathcolor{gray}{\overbrace{\check{\symup{\jmath}}}}~~, \mathcolor{gray}{\underbrace{\mathcolor{black}{k}^{\omega}_{\check{\symup{\jmath}}}}}$ & \blabel{hook:brace} \\ 
+		\bottomrule[2pt]
+	\end{tabular}
 	}
 \end{table}
 
 \begin{table}[h!]
 	\caption{\label{tab:color} 颜色——用于区分变量与文字、变量的类型，的含义。}
 	\resizebox{1.0\linewidth}{!}{  % 宽度不超文本宽度
-		\begin{tabular}{c|c|c|c|c}
-			\toprule[2pt]
-			类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
-			颜色 color & 黑色 black & 非自变量，包括因变量和（非函数=无自变量的）独立变量 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\bar{E}$ & \blabel{hook:black} \\
-			& {\color{gray} 灰色 gray} & （附属于某个因变量的）自变量，或与之相关的散度分量 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\mathcolor{gray}{t,z}$ & \blabel{hook:gray} \\
-			& {\color{Maroon} 褐红 Maroon} & 起补充说明作用的直体文字 & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}, \bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\textcolor{Maroon}{\text{f}}$ & \blabel{hook:Maroon} \\ \bottomrule[2pt]
-		\end{tabular}
+	\begin{tabular}{c|c|c|c|c}
+		\toprule[2pt]
+		类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
+		颜色 color & 黑色 black & 非自变量，包括因变量和（非函数=无自变量的）独立变量 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\bar{E}$ & \blabel{hook:black} \\
+		& {\color{gray} 灰色 gray} & （附属于某个因变量的）自变量，或与之相关的散度分量 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\mathcolor{gray}{t,z}$ & \blabel{hook:gray} \\
+		& {\color{Maroon} 褐红 Maroon} & 起补充说明作用的直体文字 & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}, \bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\textcolor{Maroon}{\text{f}}$ & \blabel{hook:Maroon} \\ \bottomrule[2pt]
+	\end{tabular}
 	}
 \end{table}
 

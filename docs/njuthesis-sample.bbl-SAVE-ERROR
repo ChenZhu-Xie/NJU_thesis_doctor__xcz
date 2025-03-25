@@ -189,6 +189,827 @@
       \endverb
       \keyw{ossikovskiConstitutiveRelationsOptically2021}
     \endentry
+    \entry{nelsonLagrangianTreatmentMagnetic1994}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={D.\bibnamedelimi F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=4813a7a1a94021e09e6c138d189a8ebe}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={D.\bibnamedelimi F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=4813a7a1a94021e09e6c138d189a8ebe}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{f41e3181f51184f4aa33fe9ad98f4d67}
+      \strng{fullhash}{484f7828c0fe4059d9f330d3ed51a301}
+      \strng{fullhashraw}{484f7828c0fe4059d9f330d3ed51a301}
+      \strng{bibnamehash}{484f7828c0fe4059d9f330d3ed51a301}
+      \strng{authorbibnamehash}{484f7828c0fe4059d9f330d3ed51a301}
+      \strng{authornamehash}{f41e3181f51184f4aa33fe9ad98f4d67}
+      \strng{authorfullhash}{484f7828c0fe4059d9f330d3ed51a301}
+      \strng{authorfullhashraw}{484f7828c0fe4059d9f330d3ed51a301}
+      \strng{nameabibnamehash}{484f7828c0fe4059d9f330d3ed51a301}
+      \strng{nameanamehash}{f41e3181f51184f4aa33fe9ad98f4d67}
+      \strng{nameafullhash}{484f7828c0fe4059d9f330d3ed51a301}
+      \strng{nameafullhashraw}{484f7828c0fe4059d9f330d3ed51a301}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{eprinttype}{pmid}
+      \field{issn}{0163-1829}
+      \field{journaltitle}{Physical Review. B, Condensed Matter}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{7}
+      \field{number}{2}
+      \field{shortjournal}{Phys Rev B Condens Matter}
+      \field{title}{Lagrangian Treatment of Magnetic Dielectrics}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{50}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \field{pages}{1023\bibrangedash 1038}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1103/physrevb.50.1023
+      \endverb
+      \verb{eprint}
+      \verb 9975770
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\ZJWXCDFX\1994_-_lagrangian_treatment_of_magnetic_dielectrics_-_phys_rev_b_condens_matter_-_Nelson,_Chen_et_al.pdf
+      \endverb
+      \keyw{nelsonLagrangianTreatmentMagnetic1994}
+    \endentry
+    \entry{chen-zhuChenZhuxieUndergraduate_courses2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=77a372d3ac89e9a56bf43ee8166ac297}{%
+           family={Chén-Zhú},
+           familyi={C\bibinithyphendelim Z\bibinitperiod},
+           given={Xiè},
+           giveni={X\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=77a372d3ac89e9a56bf43ee8166ac297}{%
+           family={Chén-Zhú},
+           familyi={C\bibinithyphendelim Z\bibinitperiod},
+           given={Xiè},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{77a372d3ac89e9a56bf43ee8166ac297}
+      \strng{fullhash}{77a372d3ac89e9a56bf43ee8166ac297}
+      \strng{fullhashraw}{77a372d3ac89e9a56bf43ee8166ac297}
+      \strng{bibnamehash}{77a372d3ac89e9a56bf43ee8166ac297}
+      \strng{authorbibnamehash}{77a372d3ac89e9a56bf43ee8166ac297}
+      \strng{authornamehash}{77a372d3ac89e9a56bf43ee8166ac297}
+      \strng{authorfullhash}{77a372d3ac89e9a56bf43ee8166ac297}
+      \strng{authorfullhashraw}{77a372d3ac89e9a56bf43ee8166ac297}
+      \strng{nameabibnamehash}{77a372d3ac89e9a56bf43ee8166ac297}
+      \strng{nameanamehash}{77a372d3ac89e9a56bf43ee8166ac297}
+      \strng{nameafullhash}{77a372d3ac89e9a56bf43ee8166ac297}
+      \strng{nameafullhashraw}{77a372d3ac89e9a56bf43ee8166ac297}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{3}
+      \field{hour}{15}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{minute}{12}
+      \field{month}{6}
+      \field{origday}{10}
+      \field{orighour}{5}
+      \field{origminute}{53}
+      \field{origmonth}{2}
+      \field{origsecond}{34}
+      \field{origtimezone}{Z}
+      \field{origyear}{2024}
+      \field{second}{45}
+      \field{timezone}{Z}
+      \field{title}{{{ChenZhu-xie}}/Undergraduate\_courses}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{usera}{CP}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{origdateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/ChenZhu-Xie/undergraduate_courses
+      \endverb
+      \verb{url}
+      \verb https://github.com/ChenZhu-Xie/undergraduate_courses
+      \endverb
+      \keyw{chen-zhuChenZhuxieUndergraduate_courses2024}
+    \endentry
+    \entry{lakhtakiaGenesisPostConstraint2004}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=3d82892d2ddb067873237774f503e4a4}{%
+           family={Lakhtakia},
+           familyi={L\bibinitperiod},
+           given={Akhlesh},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=3d82892d2ddb067873237774f503e4a4}{%
+           family={Lakhtakia},
+           familyi={L\bibinitperiod},
+           given={Akhlesh},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{3d82892d2ddb067873237774f503e4a4}
+      \strng{fullhash}{3d82892d2ddb067873237774f503e4a4}
+      \strng{fullhashraw}{3d82892d2ddb067873237774f503e4a4}
+      \strng{bibnamehash}{3d82892d2ddb067873237774f503e4a4}
+      \strng{authorbibnamehash}{3d82892d2ddb067873237774f503e4a4}
+      \strng{authornamehash}{3d82892d2ddb067873237774f503e4a4}
+      \strng{authorfullhash}{3d82892d2ddb067873237774f503e4a4}
+      \strng{authorfullhashraw}{3d82892d2ddb067873237774f503e4a4}
+      \strng{nameabibnamehash}{3d82892d2ddb067873237774f503e4a4}
+      \strng{nameanamehash}{3d82892d2ddb067873237774f503e4a4}
+      \strng{nameafullhash}{3d82892d2ddb067873237774f503e4a4}
+      \strng{nameafullhashraw}{3d82892d2ddb067873237774f503e4a4}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00304026}
+      \field{journaltitle}{Optik}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{shortjournal}{Optik}
+      \field{title}{On the Genesis of Post Constraint in Modern Electromagnetism}
+      \field{urlday}{5}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{115}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{151\bibrangedash 158}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/S0030-4026(08)70002-0
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\RPY8IVVH\2004_-_on_the_genesis_of_post_constraint_in_modern_electromagnetism_-_optik_-_Lakhtakia_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0030402608700020
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0030402608700020
+      \endverb
+      \keyw{lakhtakiaGenesisPostConstraint2004}
+    \endentry
+    \entry{boydNonlinearOptics2019}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=5deda664a6cf03ea0cb9cb40c827addd}{%
+           family={Boyd},
+           familyi={B\bibinitperiod},
+           given={Robert\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=5deda664a6cf03ea0cb9cb40c827addd}{%
+           family={Boyd},
+           familyi={B\bibinitperiod},
+           given={Robert\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {San Diego}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press is an imprint of Elsevier}%
+      }
+      \strng{namehash}{5deda664a6cf03ea0cb9cb40c827addd}
+      \strng{fullhash}{5deda664a6cf03ea0cb9cb40c827addd}
+      \strng{fullhashraw}{5deda664a6cf03ea0cb9cb40c827addd}
+      \strng{bibnamehash}{5deda664a6cf03ea0cb9cb40c827addd}
+      \strng{authorbibnamehash}{5deda664a6cf03ea0cb9cb40c827addd}
+      \strng{authornamehash}{5deda664a6cf03ea0cb9cb40c827addd}
+      \strng{authorfullhash}{5deda664a6cf03ea0cb9cb40c827addd}
+      \strng{authorfullhashraw}{5deda664a6cf03ea0cb9cb40c827addd}
+      \strng{nameabibnamehash}{5deda664a6cf03ea0cb9cb40c827addd}
+      \strng{nameanamehash}{5deda664a6cf03ea0cb9cb40c827addd}
+      \strng{nameafullhash}{5deda664a6cf03ea0cb9cb40c827addd}
+      \strng{nameafullhashraw}{5deda664a6cf03ea0cb9cb40c827addd}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{isbn}{978-0-12-811002-7}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Nonlinear Optics}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\3558RJ85\2019_-_nonlinear_optics_-_Boyd_et_al.pdf
+      \endverb
+      \keyw{boydNonlinearOptics2019}
+    \endentry
+    \entry{wenBriefIntroductionFlux2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=2cbca7b03c8607a5377a952013d3fbdf}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Hai-Hu},
+           giveni={H\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=5ff4440df7aa93da86709cd3de2e01fd}{%
+           family={{Physics Department, Nanjing University, Nanjing 210093, China}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=2cbca7b03c8607a5377a952013d3fbdf}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Hai-Hu},
+           giveni={H\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=5ff4440df7aa93da86709cd3de2e01fd}{%
+           family={{Physics Department, Nanjing University, Nanjing 210093, China}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{2c9125f6919a6dc5a768b04d485e4a04}
+      \strng{fullhash}{f5c2f5d9563ae3350536072e9a3097c5}
+      \strng{fullhashraw}{f5c2f5d9563ae3350536072e9a3097c5}
+      \strng{bibnamehash}{f5c2f5d9563ae3350536072e9a3097c5}
+      \strng{authorbibnamehash}{f5c2f5d9563ae3350536072e9a3097c5}
+      \strng{authornamehash}{2c9125f6919a6dc5a768b04d485e4a04}
+      \strng{authorfullhash}{f5c2f5d9563ae3350536072e9a3097c5}
+      \strng{authorfullhashraw}{f5c2f5d9563ae3350536072e9a3097c5}
+      \strng{nameabibnamehash}{f5c2f5d9563ae3350536072e9a3097c5}
+      \strng{nameanamehash}{2c9125f6919a6dc5a768b04d485e4a04}
+      \strng{nameafullhash}{f5c2f5d9563ae3350536072e9a3097c5}
+      \strng{nameafullhashraw}{f5c2f5d9563ae3350536072e9a3097c5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1000-3290, 1000-3290}
+      \field{journaltitle}{Acta Physica Sinica}
+      \field{langid}{chinese}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{shortjournal}{Acta Phys. Sin.}
+      \field{title}{Brief introduction to flux pinning and vortex dynamics in high temperature superconductors}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{70}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{017405}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.7498/aps.70.20201881
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\PS3XGGRK\2021_-_brief_introduction_to_flux_pinning_and_vortex_dynamics_in_high_temperature_superconductors_-_acta_phys._sin._-_Wen,_Physics Department, Nanjing University, Nanjing 210093, China_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://wulixb.iphy.ac.cn/article/doi/10.7498/aps.70.20201881
+      \endverb
+      \verb{url}
+      \verb https://wulixb.iphy.ac.cn/article/doi/10.7498/aps.70.20201881
+      \endverb
+      \keyw{wenBriefIntroductionFlux2021}
+    \endentry
+    \entry{mackayElectromagneticAnisotropyBianisotropy2019}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=42258399e0bf2e9abe45f70198746971}{%
+           family={Mackay},
+           familyi={M\bibinitperiod},
+           given={Tom\bibnamedelima G},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=3d82892d2ddb067873237774f503e4a4}{%
+           family={Lakhtakia},
+           familyi={L\bibinitperiod},
+           given={Akhlesh},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=42258399e0bf2e9abe45f70198746971}{%
+           family={Mackay},
+           familyi={M\bibinitperiod},
+           given={Tom\bibnamedelima G},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=3d82892d2ddb067873237774f503e4a4}{%
+           family={Lakhtakia},
+           familyi={L\bibinitperiod},
+           given={Akhlesh},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {WORLD SCIENTIFIC}%
+      }
+      \strng{namehash}{3f8c270b8c7b0d772e6c69b509a5f5c7}
+      \strng{fullhash}{374b670506985853cfefb701bd0a1a4e}
+      \strng{fullhashraw}{374b670506985853cfefb701bd0a1a4e}
+      \strng{bibnamehash}{374b670506985853cfefb701bd0a1a4e}
+      \strng{authorbibnamehash}{374b670506985853cfefb701bd0a1a4e}
+      \strng{authornamehash}{3f8c270b8c7b0d772e6c69b509a5f5c7}
+      \strng{authorfullhash}{374b670506985853cfefb701bd0a1a4e}
+      \strng{authorfullhashraw}{374b670506985853cfefb701bd0a1a4e}
+      \strng{nameabibnamehash}{374b670506985853cfefb701bd0a1a4e}
+      \strng{nameanamehash}{3f8c270b8c7b0d772e6c69b509a5f5c7}
+      \strng{nameafullhash}{374b670506985853cfefb701bd0a1a4e}
+      \strng{nameafullhashraw}{374b670506985853cfefb701bd0a1a4e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{2}
+      \field{isbn}{978-981-12-0313-8 978-981-12-0314-5}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{5}
+      \field{shorttitle}{Electromagnetic {{Anisotropy}} and {{Bianisotropy}}}
+      \field{title}{Electromagnetic {{Anisotropy}} and {{Bianisotropy}}: {{A Field Guide}}}
+      \field{urlday}{13}
+      \field{urlmonth}{4}
+      \field{urlyear}{2023}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1142/11351
+      \endverb
+      \verb{urlraw}
+      \verb https://www.worldscientific.com/worldscibooks/10.1142/11351
+      \endverb
+      \verb{url}
+      \verb https://www.worldscientific.com/worldscibooks/10.1142/11351
+      \endverb
+      \keyw{mackayElectromagneticAnisotropyBianisotropy2019}
+    \endentry
+    \entry{nelsonDerivingTransmissionReflection1995}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={D.\bibnamedelimi F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={D.\bibnamedelimi F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{fullhash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{fullhashraw}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{bibnamehash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{authorbibnamehash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{authornamehash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{authorfullhash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{authorfullhashraw}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{nameabibnamehash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{nameanamehash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{nameafullhash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{nameafullhashraw}{8782edfcbf32d6ea54a8a146903b7302}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{1063-651X, 1095-3787}
+      \field{journaltitle}{Physical Review E}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{6}
+      \field{number}{6}
+      \field{shortjournal}{Phys. Rev. E}
+      \field{title}{Deriving the Transmission and Reflection Coefficients of an Optically Active Medium without Using Boundary Conditions}
+      \field{urlday}{12}
+      \field{urlmonth}{4}
+      \field{urlyear}{2023}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{51}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{6142\bibrangedash 6153}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.51.6142
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\DNYGY9RW\1995_-_deriving_the_transmission_and_reflection_coefficients_of_an_optically_active_medium_without_using_bo_-_phys._rev._e_-_Nelson_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.51.6142
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.51.6142
+      \endverb
+      \keyw{nelsonDerivingTransmissionReflection1995}
+    \endentry
+    \entry{bethuneOpticalQuadrupoleSumfrequency1976}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=3d5180355cdbd7bb1c2af68837e75a28}{%
+           family={Bethune},
+           familyi={B\bibinitperiod},
+           given={D.\bibnamedelimi S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=51d871323da7e01e748e926086767f50}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=f3975d2bcd2401d0b82341d4549a68d0}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Y.\bibnamedelimi R.},
+           giveni={Y\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=3d5180355cdbd7bb1c2af68837e75a28}{%
+           family={Bethune},
+           familyi={B\bibinitperiod},
+           given={D.\bibnamedelimi S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=51d871323da7e01e748e926086767f50}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=f3975d2bcd2401d0b82341d4549a68d0}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Y.\bibnamedelimi R.},
+           giveni={Y\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{bdabdb437b46d29220944ec0efcfa1e5}
+      \strng{fullhash}{640b4967a57a7852ab1a47a4f21454e9}
+      \strng{fullhashraw}{640b4967a57a7852ab1a47a4f21454e9}
+      \strng{bibnamehash}{640b4967a57a7852ab1a47a4f21454e9}
+      \strng{authorbibnamehash}{640b4967a57a7852ab1a47a4f21454e9}
+      \strng{authornamehash}{bdabdb437b46d29220944ec0efcfa1e5}
+      \strng{authorfullhash}{640b4967a57a7852ab1a47a4f21454e9}
+      \strng{authorfullhashraw}{640b4967a57a7852ab1a47a4f21454e9}
+      \strng{nameabibnamehash}{640b4967a57a7852ab1a47a4f21454e9}
+      \strng{nameanamehash}{bdabdb437b46d29220944ec0efcfa1e5}
+      \strng{nameafullhash}{640b4967a57a7852ab1a47a4f21454e9}
+      \strng{nameafullhashraw}{640b4967a57a7852ab1a47a4f21454e9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{journaltitle}{Physical Review Letters}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{8}
+      \field{number}{7}
+      \field{shortjournal}{Phys. Rev. Lett.}
+      \field{title}{Optical Quadrupole Sum-Frequency Generation in Sodium Vapor}
+      \field{urlday}{4}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{37}
+      \field{year}{1976}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{431\bibrangedash 434}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.37.431
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\AWW2U8BZ\1976_-_optical_quadrupole_sum-frequency_generation_in_sodium_vapor_-_phys._rev._lett._-_Bethune,_Smith,_Shen_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.37.431
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.37.431
+      \endverb
+      \keyw{bethuneOpticalQuadrupoleSumfrequency1976}
+    \endentry
+    \entry{nelsonGeneralizingPoyntingVector1996}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={D.\bibnamedelimi F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={D.\bibnamedelimi F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{fullhash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{fullhashraw}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{bibnamehash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{authorbibnamehash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{authornamehash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{authorfullhash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{authorfullhashraw}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{nameabibnamehash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{nameanamehash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{nameafullhash}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{nameafullhashraw}{8782edfcbf32d6ea54a8a146903b7302}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{17}
+      \field{journaltitle}{Physical Review Letters}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{6}
+      \field{number}{25}
+      \field{shortjournal}{Phys. Rev. Lett.}
+      \field{title}{Generalizing the Poynting Vector}
+      \field{urlday}{4}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{76}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{4713\bibrangedash 4716}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.76.4713
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\YRWGG6I2\1996_-_generalizing_the_poynting_vector_-_phys._rev._lett._-_Nelson_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.76.4713
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.76.4713
+      \endverb
+      \keyw{nelsonGeneralizingPoyntingVector1996}
+    \endentry
+    \entry{loudonPropagationElectromagneticEnergy1997}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=5a3958d31ec123837c45d42e194f2ada}{%
+           family={Loudon},
+           familyi={L\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=31bdf1bd4d619f4738a741ad52891f89}{%
+           family={Allen},
+           familyi={A\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={D.\bibnamedelimi F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=5a3958d31ec123837c45d42e194f2ada}{%
+           family={Loudon},
+           familyi={L\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=31bdf1bd4d619f4738a741ad52891f89}{%
+           family={Allen},
+           familyi={A\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={D.\bibnamedelimi F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{bc90a0d69caec0fea73e1cebb3d5100c}
+      \strng{fullhash}{9f9ff36e000f0d0e6299b2a3b05e4806}
+      \strng{fullhashraw}{9f9ff36e000f0d0e6299b2a3b05e4806}
+      \strng{bibnamehash}{9f9ff36e000f0d0e6299b2a3b05e4806}
+      \strng{authorbibnamehash}{9f9ff36e000f0d0e6299b2a3b05e4806}
+      \strng{authornamehash}{bc90a0d69caec0fea73e1cebb3d5100c}
+      \strng{authorfullhash}{9f9ff36e000f0d0e6299b2a3b05e4806}
+      \strng{authorfullhashraw}{9f9ff36e000f0d0e6299b2a3b05e4806}
+      \strng{nameabibnamehash}{9f9ff36e000f0d0e6299b2a3b05e4806}
+      \strng{nameanamehash}{bc90a0d69caec0fea73e1cebb3d5100c}
+      \strng{nameafullhash}{9f9ff36e000f0d0e6299b2a3b05e4806}
+      \strng{nameafullhashraw}{9f9ff36e000f0d0e6299b2a3b05e4806}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{journaltitle}{Physical Review E}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Phys. Rev. E}
+      \field{title}{Propagation of Electromagnetic Energy and Momentum through an Absorbing Dielectric}
+      \field{urlday}{4}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{55}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1071\bibrangedash 1085}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.55.1071
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\B42CIGKP\1997_-_propagation_of_electromagnetic_energy_and_momentum_through_an_absorbing_dielectric_-_phys._rev._e_-_Loudon,_Allen,_Nelson_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.55.1071
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.55.1071
+      \endverb
+      \keyw{loudonPropagationElectromagneticEnergy1997}
+    \endentry
+    \entry{richterPoyntingsTheoremEnergy2008}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=ff9630b87ed366ee33cf3ebe59728636}{%
+           family={Richter},
+           familyi={R\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=de2c22865a2dd2ca552be3f79bb31d21}{%
+           family={Florian},
+           familyi={F\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=14ad34762a10ffcb2e5267aa2b260c23}{%
+           family={Henneberger},
+           familyi={H\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=ff9630b87ed366ee33cf3ebe59728636}{%
+           family={Richter},
+           familyi={R\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=de2c22865a2dd2ca552be3f79bb31d21}{%
+           family={Florian},
+           familyi={F\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=14ad34762a10ffcb2e5267aa2b260c23}{%
+           family={Henneberger},
+           familyi={H\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{ea28270d53745d64b576613e76e2313f}
+      \strng{fullhash}{1a68d38f8846b30ed0d23c206dbd796e}
+      \strng{fullhashraw}{1a68d38f8846b30ed0d23c206dbd796e}
+      \strng{bibnamehash}{1a68d38f8846b30ed0d23c206dbd796e}
+      \strng{authorbibnamehash}{1a68d38f8846b30ed0d23c206dbd796e}
+      \strng{authornamehash}{ea28270d53745d64b576613e76e2313f}
+      \strng{authorfullhash}{1a68d38f8846b30ed0d23c206dbd796e}
+      \strng{authorfullhashraw}{1a68d38f8846b30ed0d23c206dbd796e}
+      \strng{nameabibnamehash}{1a68d38f8846b30ed0d23c206dbd796e}
+      \strng{nameanamehash}{ea28270d53745d64b576613e76e2313f}
+      \strng{nameafullhash}{1a68d38f8846b30ed0d23c206dbd796e}
+      \strng{nameafullhashraw}{1a68d38f8846b30ed0d23c206dbd796e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{EPL (Europhysics Letters)}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{6}
+      \field{title}{Poynting's Theorem and Energy Conservation in the Propagation of Light in Bounded Media}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{81}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{67005}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1209/0295-5075/81/67005
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\ZYKHZ5Z5\2008_-_poynting's_theorem_and_energy_conservation_in_the_propagation_of_light_in_bounded_media_-_Richter,_Florian,_Henneberger_et_al.pdf
+      \endverb
+      \keyw{richterPoyntingsTheoremEnergy2008}
+    \endentry
     \entry{lakhtakiaCovariancesInvariancesMaxwell1995}{inbook}{}{}
       \name{author}{1}{}{%
         {{hash=3d82892d2ddb067873237774f503e4a4}{%
@@ -238,7 +1059,7 @@
       \strng{nameanamehash}{3d82892d2ddb067873237774f503e4a4}
       \strng{nameafullhash}{3d82892d2ddb067873237774f503e4a4}
       \strng{nameafullhashraw}{3d82892d2ddb067873237774f503e4a4}
-      \field{extraname}{1}
+      \field{extraname}{2}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -276,75 +1097,6 @@
       \endverb
       \keyw{lakhtakiaCovariancesInvariancesMaxwell1995}
     \endentry
-    \entry{chen-zhuChenZhuxieUndergraduate_courses2024}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=77a372d3ac89e9a56bf43ee8166ac297}{%
-           family={Chén-Zhú},
-           familyi={C\bibinithyphendelim Z\bibinitperiod},
-           given={Xiè},
-           giveni={X\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=77a372d3ac89e9a56bf43ee8166ac297}{%
-           family={Chén-Zhú},
-           familyi={C\bibinithyphendelim Z\bibinitperiod},
-           given={Xiè},
-           giveni={X\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{77a372d3ac89e9a56bf43ee8166ac297}
-      \strng{fullhash}{77a372d3ac89e9a56bf43ee8166ac297}
-      \strng{fullhashraw}{77a372d3ac89e9a56bf43ee8166ac297}
-      \strng{bibnamehash}{77a372d3ac89e9a56bf43ee8166ac297}
-      \strng{authorbibnamehash}{77a372d3ac89e9a56bf43ee8166ac297}
-      \strng{authornamehash}{77a372d3ac89e9a56bf43ee8166ac297}
-      \strng{authorfullhash}{77a372d3ac89e9a56bf43ee8166ac297}
-      \strng{authorfullhashraw}{77a372d3ac89e9a56bf43ee8166ac297}
-      \strng{nameabibnamehash}{77a372d3ac89e9a56bf43ee8166ac297}
-      \strng{nameanamehash}{77a372d3ac89e9a56bf43ee8166ac297}
-      \strng{nameafullhash}{77a372d3ac89e9a56bf43ee8166ac297}
-      \strng{nameafullhashraw}{77a372d3ac89e9a56bf43ee8166ac297}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{3}
-      \field{hour}{15}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{minute}{12}
-      \field{month}{6}
-      \field{origday}{10}
-      \field{orighour}{5}
-      \field{origminute}{53}
-      \field{origmonth}{2}
-      \field{origsecond}{34}
-      \field{origtimezone}{Z}
-      \field{origyear}{2024}
-      \field{second}{45}
-      \field{timezone}{Z}
-      \field{title}{{{ChenZhu-xie}}/Undergraduate\_courses}
-      \field{urlday}{1}
-      \field{urlmonth}{1}
-      \field{urlyear}{2025}
-      \field{usera}{CP}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{2024}
-      \field{dateera}{ce}
-      \field{origdateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://github.com/ChenZhu-Xie/undergraduate_courses
-      \endverb
-      \verb{url}
-      \verb https://github.com/ChenZhu-Xie/undergraduate_courses
-      \endverb
-      \keyw{chen-zhuChenZhuxieUndergraduate_courses2024}
-    \endentry
     \entry{berryOpticalSingularitiesBianisotropic2005}{article}{}{}
       \name{author}{1}{}{%
         {{hash=1c4ffbcd1b13d6128da27921b5ce5a62}{%
@@ -375,8 +1127,8 @@
       \strng{nameanamehash}{1c4ffbcd1b13d6128da27921b5ce5a62}
       \strng{nameafullhash}{1c4ffbcd1b13d6128da27921b5ce5a62}
       \strng{nameafullhashraw}{1c4ffbcd1b13d6128da27921b5ce5a62}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{8}
@@ -455,8 +1207,8 @@
       \strng{nameanamehash}{84ea56022581ff28756d0697ae9089ee}
       \strng{nameafullhash}{01d5daee9006ca64eb01c5259ae3fca7}
       \strng{nameafullhashraw}{01d5daee9006ca64eb01c5259ae3fca7}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -524,8 +1276,8 @@
       \strng{nameafullhash}{a4439960627bcad8bdea86e461663257}
       \strng{nameafullhashraw}{a4439960627bcad8bdea86e461663257}
       \field{extraname}{1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{17}
@@ -551,81 +1303,6 @@
       \verb E:\Application\Organizer\Zotero\Data1\storage\TTVXACIN\2005_-_linear_media_in_classical_electrodynamics_and_the_post_constraint_-_physics_letters_a_-_Hehl,_Obukhov_et_al.pdf
       \endverb
       \keyw{hehlLinearMediaClassical2005}
-    \endentry
-    \entry{mackayElectromagneticAnisotropyBianisotropy2019}{book}{}{}
-      \name{author}{2}{}{%
-        {{hash=42258399e0bf2e9abe45f70198746971}{%
-           family={Mackay},
-           familyi={M\bibinitperiod},
-           given={Tom\bibnamedelima G},
-           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=3d82892d2ddb067873237774f503e4a4}{%
-           family={Lakhtakia},
-           familyi={L\bibinitperiod},
-           given={Akhlesh},
-           giveni={A\bibinitperiod}}}%
-      }
-      \name{namea}{2}{}{%
-        {{hash=42258399e0bf2e9abe45f70198746971}{%
-           family={Mackay},
-           familyi={M\bibinitperiod},
-           given={Tom\bibnamedelima G},
-           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=3d82892d2ddb067873237774f503e4a4}{%
-           family={Lakhtakia},
-           familyi={L\bibinitperiod},
-           given={Akhlesh},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {WORLD SCIENTIFIC}%
-      }
-      \strng{namehash}{3f8c270b8c7b0d772e6c69b509a5f5c7}
-      \strng{fullhash}{374b670506985853cfefb701bd0a1a4e}
-      \strng{fullhashraw}{374b670506985853cfefb701bd0a1a4e}
-      \strng{bibnamehash}{374b670506985853cfefb701bd0a1a4e}
-      \strng{authorbibnamehash}{374b670506985853cfefb701bd0a1a4e}
-      \strng{authornamehash}{3f8c270b8c7b0d772e6c69b509a5f5c7}
-      \strng{authorfullhash}{374b670506985853cfefb701bd0a1a4e}
-      \strng{authorfullhashraw}{374b670506985853cfefb701bd0a1a4e}
-      \strng{nameabibnamehash}{374b670506985853cfefb701bd0a1a4e}
-      \strng{nameanamehash}{3f8c270b8c7b0d772e6c69b509a5f5c7}
-      \strng{nameafullhash}{374b670506985853cfefb701bd0a1a4e}
-      \strng{nameafullhashraw}{374b670506985853cfefb701bd0a1a4e}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{edition}{2}
-      \field{isbn}{978-981-12-0313-8 978-981-12-0314-5}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{month}{5}
-      \field{shorttitle}{Electromagnetic {{Anisotropy}} and {{Bianisotropy}}}
-      \field{title}{Electromagnetic {{Anisotropy}} and {{Bianisotropy}}: {{A Field Guide}}}
-      \field{urlday}{13}
-      \field{urlmonth}{4}
-      \field{urlyear}{2023}
-      \field{usera}{M}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{2019}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.1142/11351
-      \endverb
-      \verb{urlraw}
-      \verb https://www.worldscientific.com/worldscibooks/10.1142/11351
-      \endverb
-      \verb{url}
-      \verb https://www.worldscientific.com/worldscibooks/10.1142/11351
-      \endverb
-      \keyw{mackayElectromagneticAnisotropyBianisotropy2019}
     \endentry
     \entry{mackayModernAnalyticalElectromagnetic2020}{book}{}{}
       \name{author}{1}{}{%
@@ -660,8 +1337,8 @@
       \strng{nameanamehash}{c2757cabeb8468c0d6e34a51bd2560de}
       \strng{nameafullhash}{c2757cabeb8468c0d6e34a51bd2560de}
       \strng{nameafullhashraw}{c2757cabeb8468c0d6e34a51bd2560de}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-0-7503-3423-5}
@@ -691,62 +1368,6 @@
       \verb https://iopscience.iop.org/book/978-0-7503-3423-5
       \endverb
       \keyw{mackayModernAnalyticalElectromagnetic2020}
-    \endentry
-    \entry{boydNonlinearOptics2019}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=5deda664a6cf03ea0cb9cb40c827addd}{%
-           family={Boyd},
-           familyi={B\bibinitperiod},
-           given={Robert\bibnamedelima W.},
-           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=5deda664a6cf03ea0cb9cb40c827addd}{%
-           family={Boyd},
-           familyi={B\bibinitperiod},
-           given={Robert\bibnamedelima W.},
-           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{location}{1}{%
-        {San Diego}%
-      }
-      \list{publisher}{1}{%
-        {Academic Press is an imprint of Elsevier}%
-      }
-      \strng{namehash}{5deda664a6cf03ea0cb9cb40c827addd}
-      \strng{fullhash}{5deda664a6cf03ea0cb9cb40c827addd}
-      \strng{fullhashraw}{5deda664a6cf03ea0cb9cb40c827addd}
-      \strng{bibnamehash}{5deda664a6cf03ea0cb9cb40c827addd}
-      \strng{authorbibnamehash}{5deda664a6cf03ea0cb9cb40c827addd}
-      \strng{authornamehash}{5deda664a6cf03ea0cb9cb40c827addd}
-      \strng{authorfullhash}{5deda664a6cf03ea0cb9cb40c827addd}
-      \strng{authorfullhashraw}{5deda664a6cf03ea0cb9cb40c827addd}
-      \strng{nameabibnamehash}{5deda664a6cf03ea0cb9cb40c827addd}
-      \strng{nameanamehash}{5deda664a6cf03ea0cb9cb40c827addd}
-      \strng{nameafullhash}{5deda664a6cf03ea0cb9cb40c827addd}
-      \strng{nameafullhashraw}{5deda664a6cf03ea0cb9cb40c827addd}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{4}
-      \field{isbn}{978-0-12-811002-7}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{title}{Nonlinear Optics}
-      \field{usera}{M}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{2019}
-      \field{dateera}{ce}
-      \verb{file}
-      \verb E:\Application\Organizer\Zotero\Data\storage\3558RJ85\2019_-_nonlinear_optics_-_Boyd_et_al.pdf
-      \endverb
-      \keyw{boydNonlinearOptics2019}
     \endentry
     \entry{pyykkoRelativisticEffectsChemistry2012}{article}{}{}
       \name{author}{1}{}{%
@@ -781,8 +1402,8 @@
       \strng{nameanamehash}{baec7ede36f0a129577df49bd5de2fd9}
       \strng{nameafullhash}{baec7ede36f0a129577df49bd5de2fd9}
       \strng{nameafullhashraw}{baec7ede36f0a129577df49bd5de2fd9}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{day}{5}
@@ -894,8 +1515,8 @@
       \strng{nameanamehash}{e611524c0884bc1b76946917c516cc65}
       \strng{nameafullhash}{8c4169472e7be17d7159e5eab4edadc1}
       \strng{nameafullhashraw}{8c4169472e7be17d7159e5eab4edadc1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{5}
@@ -966,8 +1587,8 @@
       \strng{nameanamehash}{0e0ac8e86666cda39608de7de25cb549}
       \strng{nameafullhash}{0e0ac8e86666cda39608de7de25cb549}
       \strng{nameafullhashraw}{0e0ac8e86666cda39608de7de25cb549}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{day}{3}
@@ -1001,75 +1622,6 @@
       \verb https://www.cambridge.org/core/product/identifier/9781139061377/type/book
       \endverb
       \keyw{frankelGeometryPhysicsIntroduction2011}
-    \endentry
-    \entry{lakhtakiaGenesisPostConstraint2004}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=3d82892d2ddb067873237774f503e4a4}{%
-           family={Lakhtakia},
-           familyi={L\bibinitperiod},
-           given={Akhlesh},
-           giveni={A\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=3d82892d2ddb067873237774f503e4a4}{%
-           family={Lakhtakia},
-           familyi={L\bibinitperiod},
-           given={Akhlesh},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{3d82892d2ddb067873237774f503e4a4}
-      \strng{fullhash}{3d82892d2ddb067873237774f503e4a4}
-      \strng{fullhashraw}{3d82892d2ddb067873237774f503e4a4}
-      \strng{bibnamehash}{3d82892d2ddb067873237774f503e4a4}
-      \strng{authorbibnamehash}{3d82892d2ddb067873237774f503e4a4}
-      \strng{authornamehash}{3d82892d2ddb067873237774f503e4a4}
-      \strng{authorfullhash}{3d82892d2ddb067873237774f503e4a4}
-      \strng{authorfullhashraw}{3d82892d2ddb067873237774f503e4a4}
-      \strng{nameabibnamehash}{3d82892d2ddb067873237774f503e4a4}
-      \strng{nameanamehash}{3d82892d2ddb067873237774f503e4a4}
-      \strng{nameafullhash}{3d82892d2ddb067873237774f503e4a4}
-      \strng{nameafullhashraw}{3d82892d2ddb067873237774f503e4a4}
-      \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{00304026}
-      \field{journaltitle}{Optik}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{number}{4}
-      \field{shortjournal}{Optik}
-      \field{title}{On the Genesis of Post Constraint in Modern Electromagnetism}
-      \field{urlday}{5}
-      \field{urlmonth}{1}
-      \field{urlyear}{2025}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{115}
-      \field{year}{2004}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{151\bibrangedash 158}
-      \range{pages}{8}
-      \verb{doi}
-      \verb 10.1016/S0030-4026(08)70002-0
-      \endverb
-      \verb{file}
-      \verb E:\Application\Organizer\Zotero\Data1\storage\RPY8IVVH\2004_-_on_the_genesis_of_post_constraint_in_modern_electromagnetism_-_optik_-_Lakhtakia_et_al.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S0030402608700020
-      \endverb
-      \verb{url}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S0030402608700020
-      \endverb
-      \keyw{lakhtakiaGenesisPostConstraint2004}
     \endentry
     \entry{quesadaPhotonPairsNonlinear2022}{article}{}{}
       \name{author}{5}{}{%
@@ -1141,8 +1693,8 @@
       \strng{nameanamehash}{7b2a9ace661984d13bc7ab546d5b5615}
       \strng{nameafullhash}{9e5dbfec6fa61b092f34bbe8caae1206}
       \strng{nameafullhashraw}{9e5dbfec6fa61b092f34bbe8caae1206}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{day}{30}
@@ -1182,80 +1734,6 @@
       \endverb
       \keyw{quesadaPhotonPairsNonlinear2022}
     \endentry
-    \entry{nelsonLagrangianTreatmentMagnetic1994}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
-           family={Nelson},
-           familyi={N\bibinitperiod},
-           given={D.\bibnamedelimi F.},
-           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-        {{hash=4813a7a1a94021e09e6c138d189a8ebe}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod}}}%
-      }
-      \name{namea}{2}{}{%
-        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
-           family={Nelson},
-           familyi={N\bibinitperiod},
-           given={D.\bibnamedelimi F.},
-           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-        {{hash=4813a7a1a94021e09e6c138d189a8ebe}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{f41e3181f51184f4aa33fe9ad98f4d67}
-      \strng{fullhash}{484f7828c0fe4059d9f330d3ed51a301}
-      \strng{fullhashraw}{484f7828c0fe4059d9f330d3ed51a301}
-      \strng{bibnamehash}{484f7828c0fe4059d9f330d3ed51a301}
-      \strng{authorbibnamehash}{484f7828c0fe4059d9f330d3ed51a301}
-      \strng{authornamehash}{f41e3181f51184f4aa33fe9ad98f4d67}
-      \strng{authorfullhash}{484f7828c0fe4059d9f330d3ed51a301}
-      \strng{authorfullhashraw}{484f7828c0fe4059d9f330d3ed51a301}
-      \strng{nameabibnamehash}{484f7828c0fe4059d9f330d3ed51a301}
-      \strng{nameanamehash}{f41e3181f51184f4aa33fe9ad98f4d67}
-      \strng{nameafullhash}{484f7828c0fe4059d9f330d3ed51a301}
-      \strng{nameafullhashraw}{484f7828c0fe4059d9f330d3ed51a301}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{1}
-      \field{eprinttype}{pmid}
-      \field{issn}{0163-1829}
-      \field{journaltitle}{Physical Review. B, Condensed Matter}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{month}{7}
-      \field{number}{2}
-      \field{shortjournal}{Phys Rev B Condens Matter}
-      \field{title}{Lagrangian Treatment of Magnetic Dielectrics}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{50}
-      \field{year}{1994}
-      \field{dateera}{ce}
-      \field{pages}{1023\bibrangedash 1038}
-      \range{pages}{16}
-      \verb{doi}
-      \verb 10.1103/physrevb.50.1023
-      \endverb
-      \verb{eprint}
-      \verb 9975770
-      \endverb
-      \verb{file}
-      \verb E:\Application\Organizer\Zotero\Data1\storage\ZJWXCDFX\1994_-_lagrangian_treatment_of_magnetic_dielectrics_-_phys_rev_b_condens_matter_-_Nelson,_Chen_et_al.pdf
-      \endverb
-      \keyw{nelsonLagrangianTreatmentMagnetic1994}
-    \endentry
     \entry{hillionBasicFieldElectromagnetism1996}{article}{}{}
       \name{author}{1}{}{%
         {{hash=65ac18dfe1aa45c7a36d9a16739052f3}{%
@@ -1289,8 +1767,8 @@
       \strng{nameanamehash}{65ac18dfe1aa45c7a36d9a16739052f3}
       \strng{nameafullhash}{65ac18dfe1aa45c7a36d9a16739052f3}
       \strng{nameafullhashraw}{65ac18dfe1aa45c7a36d9a16739052f3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -1368,8 +1846,8 @@
       \strng{nameanamehash}{5957999eb747e9d6c68a99fe297d9701}
       \strng{nameafullhash}{6d146f3e462580fe88b015c79b4886ec}
       \strng{nameafullhashraw}{6d146f3e462580fe88b015c79b4886ec}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{31}
@@ -1449,8 +1927,8 @@
       \strng{nameafullhash}{d0e809dea9cbfbf6638b6c387dfd29eb}
       \strng{nameafullhashraw}{d0e809dea9cbfbf6638b6c387dfd29eb}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{15}
@@ -1530,8 +2008,8 @@
       \strng{nameafullhash}{d0e809dea9cbfbf6638b6c387dfd29eb}
       \strng{nameafullhashraw}{d0e809dea9cbfbf6638b6c387dfd29eb}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{15}
@@ -1570,77 +2048,6 @@
       \endverb
       \keyw{chenWavePropagationExciton1993}
     \endentry
-    \entry{nelsonDerivingTransmissionReflection1995}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
-           family={Nelson},
-           familyi={N\bibinitperiod},
-           given={D.\bibnamedelimi F.},
-           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \name{namea}{1}{}{%
-        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
-           family={Nelson},
-           familyi={N\bibinitperiod},
-           given={D.\bibnamedelimi F.},
-           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{fullhash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{fullhashraw}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{bibnamehash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{authorbibnamehash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{authornamehash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{authorfullhash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{authorfullhashraw}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{nameabibnamehash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{nameanamehash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{nameafullhash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{nameafullhashraw}{8782edfcbf32d6ea54a8a146903b7302}
-      \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{1}
-      \field{issn}{1063-651X, 1095-3787}
-      \field{journaltitle}{Physical Review E}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{month}{6}
-      \field{number}{6}
-      \field{shortjournal}{Phys. Rev. E}
-      \field{title}{Deriving the Transmission and Reflection Coefficients of an Optically Active Medium without Using Boundary Conditions}
-      \field{urlday}{12}
-      \field{urlmonth}{4}
-      \field{urlyear}{2023}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{51}
-      \field{year}{1995}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{6142\bibrangedash 6153}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1103/PhysRevE.51.6142
-      \endverb
-      \verb{file}
-      \verb E:\Application\Organizer\Zotero\Data\storage\DNYGY9RW\1995_-_deriving_the_transmission_and_reflection_coefficients_of_an_optically_active_medium_without_using_bo_-_phys._rev._e_-_Nelson_et_al.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevE.51.6142
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevE.51.6142
-      \endverb
-      \keyw{nelsonDerivingTransmissionReflection1995}
-    \endentry
     \entry{eimerlQuantumElectrodynamicsOptical1988}{article}{}{}
       \name{author}{1}{}{%
         {{hash=b4fe2e000da72651ba6493733a406245}{%
@@ -1671,8 +2078,8 @@
       \strng{nameanamehash}{b4fe2e000da72651ba6493733a406245}
       \strng{nameafullhash}{b4fe2e000da72651ba6493733a406245}
       \strng{nameafullhashraw}{b4fe2e000da72651ba6493733a406245}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -1744,9 +2151,9 @@
       \strng{nameanamehash}{8782edfcbf32d6ea54a8a146903b7302}
       \strng{nameafullhash}{8782edfcbf32d6ea54a8a146903b7302}
       \strng{nameafullhashraw}{8782edfcbf32d6ea54a8a146903b7302}
-      \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{extraname}{3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -1784,98 +2191,6 @@
       \verb https://opg.optica.org/josab/abstract.cfm?uri=josab-6-6-1110
       \endverb
       \keyw{nelsonMechanismsDispersionCrystalline1989}
-    \endentry
-    \entry{loudonPropagationElectromagneticEnergy1997}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=5a3958d31ec123837c45d42e194f2ada}{%
-           family={Loudon},
-           familyi={L\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=31bdf1bd4d619f4738a741ad52891f89}{%
-           family={Allen},
-           familyi={A\bibinitperiod},
-           given={L.},
-           giveni={L\bibinitperiod}}}%
-        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
-           family={Nelson},
-           familyi={N\bibinitperiod},
-           given={D.\bibnamedelimi F.},
-           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \name{namea}{3}{}{%
-        {{hash=5a3958d31ec123837c45d42e194f2ada}{%
-           family={Loudon},
-           familyi={L\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=31bdf1bd4d619f4738a741ad52891f89}{%
-           family={Allen},
-           familyi={A\bibinitperiod},
-           given={L.},
-           giveni={L\bibinitperiod}}}%
-        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
-           family={Nelson},
-           familyi={N\bibinitperiod},
-           given={D.\bibnamedelimi F.},
-           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{bc90a0d69caec0fea73e1cebb3d5100c}
-      \strng{fullhash}{9f9ff36e000f0d0e6299b2a3b05e4806}
-      \strng{fullhashraw}{9f9ff36e000f0d0e6299b2a3b05e4806}
-      \strng{bibnamehash}{9f9ff36e000f0d0e6299b2a3b05e4806}
-      \strng{authorbibnamehash}{9f9ff36e000f0d0e6299b2a3b05e4806}
-      \strng{authornamehash}{bc90a0d69caec0fea73e1cebb3d5100c}
-      \strng{authorfullhash}{9f9ff36e000f0d0e6299b2a3b05e4806}
-      \strng{authorfullhashraw}{9f9ff36e000f0d0e6299b2a3b05e4806}
-      \strng{nameabibnamehash}{9f9ff36e000f0d0e6299b2a3b05e4806}
-      \strng{nameanamehash}{bc90a0d69caec0fea73e1cebb3d5100c}
-      \strng{nameafullhash}{9f9ff36e000f0d0e6299b2a3b05e4806}
-      \strng{nameafullhashraw}{9f9ff36e000f0d0e6299b2a3b05e4806}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{1}
-      \field{journaltitle}{Physical Review E}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{month}{1}
-      \field{number}{1}
-      \field{shortjournal}{Phys. Rev. E}
-      \field{title}{Propagation of Electromagnetic Energy and Momentum through an Absorbing Dielectric}
-      \field{urlday}{4}
-      \field{urlmonth}{1}
-      \field{urlyear}{2025}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{55}
-      \field{year}{1997}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{1071\bibrangedash 1085}
-      \range{pages}{15}
-      \verb{doi}
-      \verb 10.1103/PhysRevE.55.1071
-      \endverb
-      \verb{file}
-      \verb E:\Application\Organizer\Zotero\Data1\storage\B42CIGKP\1997_-_propagation_of_electromagnetic_energy_and_momentum_through_an_absorbing_dielectric_-_phys._rev._e_-_Loudon,_Allen,_Nelson_et_al.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevE.55.1071
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevE.55.1071
-      \endverb
-      \keyw{loudonPropagationElectromagneticEnergy1997}
     \endentry
     \entry{laxLinearNonlinearElectrodynamics1971}{article}{}{}
       \name{author}{2}{}{%
@@ -1920,8 +2235,8 @@
       \strng{nameanamehash}{02786299e1d108089d8ab98bc6a6b3e3}
       \strng{nameafullhash}{62b0f24c4b49695dda0f6513ad390fc5}
       \strng{nameafullhashraw}{62b0f24c4b49695dda0f6513ad390fc5}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{15}
@@ -2000,8 +2315,8 @@
       \strng{nameafullhash}{e21ae91799dc9441d6d0a504f0b29524}
       \strng{nameafullhashraw}{e21ae91799dc9441d6d0a504f0b29524}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{14}
@@ -2075,8 +2390,8 @@
       \strng{nameafullhash}{25ba5773afad1605aaeebc6df5241082}
       \strng{nameafullhashraw}{25ba5773afad1605aaeebc6df5241082}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{day}{8}
@@ -2177,8 +2492,8 @@
       \strng{nameafullhash}{2586aefeca088339241f5480064c8706}
       \strng{nameafullhashraw}{2586aefeca088339241f5480064c8706}
       \field{extraname}{3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{booktitle}{Special {{Relativity}}: {{Will}} It {{Survive}} the {{Next}} 101 {{Years}}?}
@@ -2265,8 +2580,8 @@
       \strng{nameafullhash}{08191d11d304c004de0be8cbc4fdd123}
       \strng{nameafullhashraw}{08191d11d304c004de0be8cbc4fdd123}
       \field{extraname}{4}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{24}
@@ -2326,8 +2641,8 @@
       \strng{nameafullhash}{25ba5773afad1605aaeebc6df5241082}
       \strng{nameafullhashraw}{25ba5773afad1605aaeebc6df5241082}
       \field{extraname}{5}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -2397,8 +2712,8 @@
       \strng{nameafullhash}{3cc76a55ba03e925af7880bc633ee869}
       \strng{nameafullhashraw}{3cc76a55ba03e925af7880bc633ee869}
       \field{extraname}{1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{30}
@@ -2477,8 +2792,8 @@
       \strng{nameanamehash}{451f657566785a2111f5051a6b14ccf5}
       \strng{nameafullhash}{1ce76eca6e66a3479b0217d30bc46d18}
       \strng{nameafullhashraw}{1ce76eca6e66a3479b0217d30bc46d18}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society A}
@@ -2507,8 +2822,8 @@
       \list{language}{1}{%
         {english}%
       }
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{shorttitle}
       \field{langid}{english}
       \field{languageid}{english}
@@ -2534,98 +2849,6 @@
       \verb https://app.dimensions.ai/details/publication/pub.1007103184
       \endverb
       \keyw{OriginDependenceMaterial}
-    \endentry
-    \entry{bethuneOpticalQuadrupoleSumfrequency1976}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=3d5180355cdbd7bb1c2af68837e75a28}{%
-           family={Bethune},
-           familyi={B\bibinitperiod},
-           given={D.\bibnamedelimi S.},
-           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=51d871323da7e01e748e926086767f50}{%
-           family={Smith},
-           familyi={S\bibinitperiod},
-           given={R.\bibnamedelimi W.},
-           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=f3975d2bcd2401d0b82341d4549a68d0}{%
-           family={Shen},
-           familyi={S\bibinitperiod},
-           given={Y.\bibnamedelimi R.},
-           giveni={Y\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \name{namea}{3}{}{%
-        {{hash=3d5180355cdbd7bb1c2af68837e75a28}{%
-           family={Bethune},
-           familyi={B\bibinitperiod},
-           given={D.\bibnamedelimi S.},
-           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=51d871323da7e01e748e926086767f50}{%
-           family={Smith},
-           familyi={S\bibinitperiod},
-           given={R.\bibnamedelimi W.},
-           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=f3975d2bcd2401d0b82341d4549a68d0}{%
-           family={Shen},
-           familyi={S\bibinitperiod},
-           given={Y.\bibnamedelimi R.},
-           giveni={Y\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{bdabdb437b46d29220944ec0efcfa1e5}
-      \strng{fullhash}{640b4967a57a7852ab1a47a4f21454e9}
-      \strng{fullhashraw}{640b4967a57a7852ab1a47a4f21454e9}
-      \strng{bibnamehash}{640b4967a57a7852ab1a47a4f21454e9}
-      \strng{authorbibnamehash}{640b4967a57a7852ab1a47a4f21454e9}
-      \strng{authornamehash}{bdabdb437b46d29220944ec0efcfa1e5}
-      \strng{authorfullhash}{640b4967a57a7852ab1a47a4f21454e9}
-      \strng{authorfullhashraw}{640b4967a57a7852ab1a47a4f21454e9}
-      \strng{nameabibnamehash}{640b4967a57a7852ab1a47a4f21454e9}
-      \strng{nameanamehash}{bdabdb437b46d29220944ec0efcfa1e5}
-      \strng{nameafullhash}{640b4967a57a7852ab1a47a4f21454e9}
-      \strng{nameafullhashraw}{640b4967a57a7852ab1a47a4f21454e9}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{16}
-      \field{journaltitle}{Physical Review Letters}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{month}{8}
-      \field{number}{7}
-      \field{shortjournal}{Phys. Rev. Lett.}
-      \field{title}{Optical Quadrupole Sum-Frequency Generation in Sodium Vapor}
-      \field{urlday}{4}
-      \field{urlmonth}{1}
-      \field{urlyear}{2025}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{37}
-      \field{year}{1976}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{431\bibrangedash 434}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1103/PhysRevLett.37.431
-      \endverb
-      \verb{file}
-      \verb E:\Application\Organizer\Zotero\Data1\storage\AWW2U8BZ\1976_-_optical_quadrupole_sum-frequency_generation_in_sodium_vapor_-_phys._rev._lett._-_Bethune,_Smith,_Shen_et_al.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevLett.37.431
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevLett.37.431
-      \endverb
-      \keyw{bethuneOpticalQuadrupoleSumfrequency1976}
     \endentry
     \entry{markelExternalInducedFree2018}{article}{}{}
       \name{author}{1}{}{%
@@ -2660,8 +2883,8 @@
       \strng{nameanamehash}{1a3e8471d44d0e941743c93755280fe9}
       \strng{nameafullhash}{1a3e8471d44d0e941743c93755280fe9}
       \strng{nameafullhashraw}{1a3e8471d44d0e941743c93755280fe9}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{day}{1}
@@ -2731,8 +2954,8 @@
       \strng{nameanamehash}{37da91aac99fa8bf77bb42bcbf9bf130}
       \strng{nameafullhash}{37da91aac99fa8bf77bb42bcbf9bf130}
       \strng{nameafullhashraw}{37da91aac99fa8bf77bb42bcbf9bf130}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{journaltitle}{Annals of Physics}
@@ -2802,8 +3025,8 @@
       \strng{nameafullhash}{a6a4c7422e7f840372afe33706498cc8}
       \strng{nameafullhashraw}{a6a4c7422e7f840372afe33706498cc8}
       \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{27}
@@ -2904,8 +3127,8 @@
       \strng{nameanamehash}{94a10fa7e47c5b7fe8a44b84bfd17700}
       \strng{nameafullhash}{0c0920d244a4ef518dc023815875721c}
       \strng{nameafullhashraw}{0c0920d244a4ef518dc023815875721c}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Electrodynamics of {{Continuous Media}} ({{Second Edition}})}
@@ -2976,8 +3199,8 @@
       \strng{nameafullhash}{a6a4c7422e7f840372afe33706498cc8}
       \strng{nameafullhashraw}{a6a4c7422e7f840372afe33706498cc8}
       \field{extraname}{3}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences}
@@ -3055,8 +3278,8 @@
       \strng{nameafullhash}{b4dd29fda911b54adcb859c5af0255ad}
       \strng{nameafullhashraw}{b4dd29fda911b54adcb859c5af0255ad}
       \field{extraname}{2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
@@ -3143,8 +3366,8 @@
       \strng{nameanamehash}{b1a6112cd1168c8b268d337307d05d3c}
       \strng{nameafullhash}{a22ad5d11040d5a5c6b18407775b4b15}
       \strng{nameafullhashraw}{a22ad5d11040d5a5c6b18407775b4b15}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{21}
@@ -3238,8 +3461,8 @@
       \strng{nameafullhash}{3cc76a55ba03e925af7880bc633ee869}
       \strng{nameafullhashraw}{3cc76a55ba03e925af7880bc633ee869}
       \field{extraname}{4}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Mathematical Physics}
@@ -3313,8 +3536,8 @@
       \strng{nameafullhash}{1657a678f3411d62ece3ef4e1be50a6e}
       \strng{nameafullhashraw}{1657a678f3411d62ece3ef4e1be50a6e}
       \field{extraname}{3}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{22}
@@ -3357,8 +3580,8 @@
       \list{language}{1}{%
         {english}%
       }
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
       \field{eprinttype}{pmid}
       \field{langid}{english}
@@ -3418,8 +3641,8 @@
       \strng{nameanamehash}{2f4f2956169eccddf3371119448a6813}
       \strng{nameafullhash}{2f4f2956169eccddf3371119448a6813}
       \strng{nameafullhashraw}{2f4f2956169eccddf3371119448a6813}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{24054283}
@@ -3621,8 +3844,8 @@
       \strng{nameafullhash}{74dd605a5a612a9fd213086ed85e6105}
       \strng{nameafullhashraw}{74dd605a5a612a9fd213086ed85e6105}
       \field{extraname}{1}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1476-4687}
@@ -3800,8 +4023,8 @@
       \strng{nameanamehash}{7e106cbef0d6d3a578b13faadfc405b2}
       \strng{nameafullhash}{371f013ebd2cb105aecda51583f14314}
       \strng{nameafullhashraw}{371f013ebd2cb105aecda51583f14314}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1749-4885, 1749-4893}
@@ -3960,8 +4183,8 @@
       \strng{nameafullhash}{495b448a115e8c54e7ca9309067b8ba0}
       \strng{nameafullhashraw}{495b448a115e8c54e7ca9309067b8ba0}
       \field{extraname}{2}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1749-4885, 1749-4893}
@@ -4039,8 +4262,8 @@
       \strng{nameanamehash}{69d68d2c2aa2e40562021a3a73e60438}
       \strng{nameafullhash}{c979d474dea7bb6c01a520f671381032}
       \strng{nameafullhashraw}{c979d474dea7bb6c01a520f671381032}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1749-4885, 1749-4893}
@@ -4128,8 +4351,8 @@
       \strng{nameanamehash}{eee811908848b35b67b5961866fdf7a9}
       \strng{nameafullhash}{d2c6595f4fc243335871db10a3936af9}
       \strng{nameafullhashraw}{d2c6595f4fc243335871db10a3936af9}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{pmid}
@@ -4241,8 +4464,8 @@
       \strng{nameanamehash}{5ed9704785a3aefc56bdd8fdfdea0fc2}
       \strng{nameafullhash}{aa038cb8160fb0affa732cf259d331e0}
       \strng{nameafullhashraw}{aa038cb8160fb0affa732cf259d331e0}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1006-4125}
@@ -4329,8 +4552,8 @@
       \strng{nameanamehash}{edd6ee94f9565ac275e46d4074a5c460}
       \strng{nameafullhash}{f0d64cc6aaf418e9005ca49063b88e6a}
       \strng{nameafullhashraw}{f0d64cc6aaf418e9005ca49063b88e6a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -4446,8 +4669,8 @@
       \strng{nameanamehash}{f3975d2bcd2401d0b82341d4549a68d0}
       \strng{nameafullhash}{f3975d2bcd2401d0b82341d4549a68d0}
       \strng{nameafullhashraw}{f3975d2bcd2401d0b82341d4549a68d0}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Encyclopedia of {{Materials}}: {{Science}} and {{Technology}}}
@@ -4538,8 +4761,8 @@
       \strng{nameanamehash}{881c0ce03f11c84124261b39b727f9af}
       \strng{nameafullhash}{e521a3fb1fb8a87c74debd350f8ee7cb}
       \strng{nameafullhashraw}{e521a3fb1fb8a87c74debd350f8ee7cb}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{11}
@@ -4608,8 +4831,8 @@
       \strng{nameanamehash}{ef4374f552e49c3bddf1c8ad0b117285}
       \strng{nameafullhash}{ef4374f552e49c3bddf1c8ad0b117285}
       \strng{nameafullhashraw}{ef4374f552e49c3bddf1c8ad0b117285}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -4747,8 +4970,9 @@
       \strng{nameanamehash}{7c6577b2d35f2f0740901109d6027327}
       \strng{nameafullhash}{08f824ecc16c76c5e3522f1db3143390}
       \strng{nameafullhashraw}{08f824ecc16c76c5e3522f1db3143390}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{4}
@@ -4785,6 +5009,62 @@
       \verb http://arxiv.org/abs/1407.8108
       \endverb
       \keyw{zhangNonlinearQuantumInputoutput2014}
+    \endentry
+    \entry{xieAnalytic3DVector}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=72a5e489700c4a3102878620b75bafe2}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Chenzhu},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2c81656c924858824dfb10d50423b77a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=72a5e489700c4a3102878620b75bafe2}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Chenzhu},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2c81656c924858824dfb10d50423b77a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{c579cfc715aaca63fb79dc7f273d93f5}
+      \strng{fullhash}{423fdc887f4b946fb3e546fe541aa6a4}
+      \strng{fullhashraw}{423fdc887f4b946fb3e546fe541aa6a4}
+      \strng{bibnamehash}{423fdc887f4b946fb3e546fe541aa6a4}
+      \strng{authorbibnamehash}{423fdc887f4b946fb3e546fe541aa6a4}
+      \strng{authornamehash}{c579cfc715aaca63fb79dc7f273d93f5}
+      \strng{authorfullhash}{423fdc887f4b946fb3e546fe541aa6a4}
+      \strng{authorfullhashraw}{423fdc887f4b946fb3e546fe541aa6a4}
+      \strng{nameabibnamehash}{423fdc887f4b946fb3e546fe541aa6a4}
+      \strng{nameanamehash}{c579cfc715aaca63fb79dc7f273d93f5}
+      \strng{nameafullhash}{423fdc887f4b946fb3e546fe541aa6a4}
+      \strng{nameafullhashraw}{423fdc887f4b946fb3e546fe541aa6a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Analytic {{3D}} Vector Non-Uniform Fourier Crystal Optics in Arbitrary {$E$}¯¯{} Dielectric}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\ABQ42GU4\analytic_3d_vector_non-uniform_fourier_crystal_optics_in_arbitrary_ε¯¯_dielectric_-_Xie,_Zhang_et_al.pdf
+      \endverb
+      \keyw{xieAnalytic3DVector}
     \endentry
     \entry{barronTimeReversalMolecular2001a}{article}{}{}
       \name{author}{2}{}{%
@@ -4829,8 +5109,8 @@
       \strng{nameanamehash}{f5ab53fcaf9f12d980ed8ba5a743d265}
       \strng{nameafullhash}{958b0b6d86feebb43e6b40e78e9a3a9b}
       \strng{nameafullhashraw}{958b0b6d86feebb43e6b40e78e9a3a9b}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -4912,8 +5192,8 @@
       \strng{nameanamehash}{95d126a53a996408a5fd42eacb8b461b}
       \strng{nameafullhash}{6e0571a5e40a2e9e376f1771b1d38299}
       \strng{nameafullhashraw}{6e0571a5e40a2e9e376f1771b1d38299}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -4951,62 +5231,6 @@
       \endverb
       \keyw{buckinghamQuadrupoleMomentsDipolar1968}
     \endentry
-    \entry{xieAnalytic3DVector}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=72a5e489700c4a3102878620b75bafe2}{%
-           family={Xie},
-           familyi={X\bibinitperiod},
-           given={Chenzhu},
-           giveni={C\bibinitperiod}}}%
-        {{hash=2c81656c924858824dfb10d50423b77a}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Yong},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \name{namea}{2}{}{%
-        {{hash=72a5e489700c4a3102878620b75bafe2}{%
-           family={Xie},
-           familyi={X\bibinitperiod},
-           given={Chenzhu},
-           giveni={C\bibinitperiod}}}%
-        {{hash=2c81656c924858824dfb10d50423b77a}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Yong},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{c579cfc715aaca63fb79dc7f273d93f5}
-      \strng{fullhash}{423fdc887f4b946fb3e546fe541aa6a4}
-      \strng{fullhashraw}{423fdc887f4b946fb3e546fe541aa6a4}
-      \strng{bibnamehash}{423fdc887f4b946fb3e546fe541aa6a4}
-      \strng{authorbibnamehash}{423fdc887f4b946fb3e546fe541aa6a4}
-      \strng{authornamehash}{c579cfc715aaca63fb79dc7f273d93f5}
-      \strng{authorfullhash}{423fdc887f4b946fb3e546fe541aa6a4}
-      \strng{authorfullhashraw}{423fdc887f4b946fb3e546fe541aa6a4}
-      \strng{nameabibnamehash}{423fdc887f4b946fb3e546fe541aa6a4}
-      \strng{nameanamehash}{c579cfc715aaca63fb79dc7f273d93f5}
-      \strng{nameafullhash}{423fdc887f4b946fb3e546fe541aa6a4}
-      \strng{nameafullhashraw}{423fdc887f4b946fb3e546fe541aa6a4}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{english}
-      \field{languageid}{english}
-      \field{lansortorder}{4}
-      \field{title}{Analytic {{3D}} Vector Non-Uniform Fourier Crystal Optics in Arbitrary {$E$}¯¯{} Dielectric}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \verb{file}
-      \verb E:\Application\Organizer\Zotero\Data1\storage\ABQ42GU4\analytic_3d_vector_non-uniform_fourier_crystal_optics_in_arbitrary_ε¯¯_dielectric_-_Xie,_Zhang_et_al.pdf
-      \endverb
-      \keyw{xieAnalytic3DVector}
-    \endentry
     \entry{vandendriesscheInfluenceMagneticFields2014}{online}{}{}
       \name{author}{1}{}{%
         {{hash=22f0354b4cc5a1a7ec397e058f5476e9}{%
@@ -5037,8 +5261,8 @@
       \strng{nameanamehash}{22f0354b4cc5a1a7ec397e058f5476e9}
       \strng{nameafullhash}{22f0354b4cc5a1a7ec397e058f5476e9}
       \strng{nameafullhashraw}{22f0354b4cc5a1a7ec397e058f5476e9}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{Unpublished}
@@ -5070,228 +5294,2260 @@
       \endverb
       \keyw{vandendriesscheInfluenceMagneticFields2014}
     \endentry
-    \entry{wenBriefIntroductionFlux2021}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=2cbca7b03c8607a5377a952013d3fbdf}{%
-           family={Wen},
-           familyi={W\bibinitperiod},
-           given={Hai-Hu},
-           giveni={H\bibinithyphendelim H\bibinitperiod}}}%
-        {{hash=5ff4440df7aa93da86709cd3de2e01fd}{%
-           family={{Physics Department, Nanjing University, Nanjing 210093, China}},
-           familyi={P\bibinitperiod}}}%
+    \entry{sakodaOpticalPropertiesPhotonic2005}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=09c6086a8711526ca87db29a79aae52b}{%
+           family={Sakoda},
+           familyi={S\bibinitperiod},
+           given={Kazuaki},
+           giveni={K\bibinitperiod}}}%
       }
-      \name{namea}{2}{}{%
-        {{hash=2cbca7b03c8607a5377a952013d3fbdf}{%
-           family={Wen},
-           familyi={W\bibinitperiod},
-           given={Hai-Hu},
-           giveni={H\bibinithyphendelim H\bibinitperiod}}}%
-        {{hash=5ff4440df7aa93da86709cd3de2e01fd}{%
-           family={{Physics Department, Nanjing University, Nanjing 210093, China}},
-           familyi={P\bibinitperiod}}}%
+      \name{namea}{1}{}{%
+        {{hash=09c6086a8711526ca87db29a79aae52b}{%
+           family={Sakoda},
+           familyi={S\bibinitperiod},
+           given={Kazuaki},
+           giveni={K\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
-      \strng{namehash}{2c9125f6919a6dc5a768b04d485e4a04}
-      \strng{fullhash}{f5c2f5d9563ae3350536072e9a3097c5}
-      \strng{fullhashraw}{f5c2f5d9563ae3350536072e9a3097c5}
-      \strng{bibnamehash}{f5c2f5d9563ae3350536072e9a3097c5}
-      \strng{authorbibnamehash}{f5c2f5d9563ae3350536072e9a3097c5}
-      \strng{authornamehash}{2c9125f6919a6dc5a768b04d485e4a04}
-      \strng{authorfullhash}{f5c2f5d9563ae3350536072e9a3097c5}
-      \strng{authorfullhashraw}{f5c2f5d9563ae3350536072e9a3097c5}
-      \strng{nameabibnamehash}{f5c2f5d9563ae3350536072e9a3097c5}
-      \strng{nameanamehash}{2c9125f6919a6dc5a768b04d485e4a04}
-      \strng{nameafullhash}{f5c2f5d9563ae3350536072e9a3097c5}
-      \strng{nameafullhashraw}{f5c2f5d9563ae3350536072e9a3097c5}
+      \list{location}{1}{%
+        {Berlin ; New York}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{09c6086a8711526ca87db29a79aae52b}
+      \strng{fullhash}{09c6086a8711526ca87db29a79aae52b}
+      \strng{fullhashraw}{09c6086a8711526ca87db29a79aae52b}
+      \strng{bibnamehash}{09c6086a8711526ca87db29a79aae52b}
+      \strng{authorbibnamehash}{09c6086a8711526ca87db29a79aae52b}
+      \strng{authornamehash}{09c6086a8711526ca87db29a79aae52b}
+      \strng{authorfullhash}{09c6086a8711526ca87db29a79aae52b}
+      \strng{authorfullhashraw}{09c6086a8711526ca87db29a79aae52b}
+      \strng{nameabibnamehash}{09c6086a8711526ca87db29a79aae52b}
+      \strng{nameanamehash}{09c6086a8711526ca87db29a79aae52b}
+      \strng{nameafullhash}{09c6086a8711526ca87db29a79aae52b}
+      \strng{nameafullhashraw}{09c6086a8711526ca87db29a79aae52b}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1000-3290, 1000-3290}
-      \field{journaltitle}{Acta Physica Sinica}
-      \field{langid}{chinese}
+      \field{edition}{2nd ed}
+      \field{isbn}{978-3-540-20682-8}
+      \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
-      \field{number}{1}
-      \field{shortjournal}{Acta Phys. Sin.}
-      \field{title}{Brief introduction to flux pinning and vortex dynamics in high temperature superconductors}
-      \field{urlday}{1}
-      \field{urlmonth}{1}
-      \field{urlyear}{2025}
+      \field{number}{80}
+      \field{pagetotal}{253}
+      \field{series}{Springer Series in Optical Sciences}
+      \field{title}{Optical Properties of Photonic Crystals}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\DNX835TD\2005_-_optical_properties_of_photonic_crystals_-_Sakoda_et_al.pdf
+      \endverb
+      \keyw{sakodaOpticalPropertiesPhotonic2005}
+    \endentry
+    \entry{joannopoulosPhotonicCrystalsMolding2008}{book}{}{}
+      \name{editor}{1}{}{%
+        {{hash=bc2d5931b89f57220ca190721e241846}{%
+           family={Joannopoulos},
+           familyi={J\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=bc2d5931b89f57220ca190721e241846}{%
+           family={Joannopoulos},
+           familyi={J\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Princeton}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{bc2d5931b89f57220ca190721e241846}
+      \strng{fullhash}{bc2d5931b89f57220ca190721e241846}
+      \strng{fullhashraw}{bc2d5931b89f57220ca190721e241846}
+      \strng{bibnamehash}{bc2d5931b89f57220ca190721e241846}
+      \strng{editorbibnamehash}{bc2d5931b89f57220ca190721e241846}
+      \strng{editornamehash}{bc2d5931b89f57220ca190721e241846}
+      \strng{editorfullhash}{bc2d5931b89f57220ca190721e241846}
+      \strng{editorfullhashraw}{bc2d5931b89f57220ca190721e241846}
+      \strng{nameabibnamehash}{bc2d5931b89f57220ca190721e241846}
+      \strng{nameanamehash}{bc2d5931b89f57220ca190721e241846}
+      \strng{nameafullhash}{bc2d5931b89f57220ca190721e241846}
+      \strng{nameafullhashraw}{bc2d5931b89f57220ca190721e241846}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{2nd ed}
+      \field{isbn}{978-0-691-12456-8}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{pagetotal}{286}
+      \field{shorttitle}{Photonic Crystals}
+      \field{title}{Photonic Crystals: Molding the Flow of Light}
+      \field{usera}{M}
+      \field{userc}{english}
+      \field{userd}{english}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\D6QHFM8K\2008_-_photonic_crystals_molding_the_flow_of_light_-_.pdf
+      \endverb
+      \keyw{joannopoulosPhotonicCrystalsMolding2008}
+    \endentry
+    \entry{PrinciplesOptics7th}{misc}{}{}
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{title}{Principles of Optics 7th Edition, {{Born M}}., {{Wolf E}}. (光学原理 第7版) 超清晰扫描版.Pdf}
+      \field{usera}{Z}
+      \field{userd}{chinese}
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\6RBAY53G\principles_of_optics_7th_edition,_born_m.,_wolf_e._(光学原理_第7版)_超清晰扫描版.pdf_-_.pdf
+      \endverb
+      \keyw{PrinciplesOptics7th}
+    \endentry
+    \entry{gerkeAperiodicVolumeOptics2010}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=fabfd1d83f409b72b36f2455c6dcc3cc}{%
+           family={Gerke},
+           familyi={G\bibinitperiod},
+           given={Tim\bibnamedelima D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=880e7f55f03b10c07a7bcf63e87afe62}{%
+           family={Piestun},
+           familyi={P\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=fabfd1d83f409b72b36f2455c6dcc3cc}{%
+           family={Gerke},
+           familyi={G\bibinitperiod},
+           given={Tim\bibnamedelima D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=880e7f55f03b10c07a7bcf63e87afe62}{%
+           family={Piestun},
+           familyi={P\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{2dd26b61c8b507cadae57436615fb74c}
+      \strng{fullhash}{fa9f366e5d5a722647300e1b164be4e7}
+      \strng{fullhashraw}{fa9f366e5d5a722647300e1b164be4e7}
+      \strng{bibnamehash}{fa9f366e5d5a722647300e1b164be4e7}
+      \strng{authorbibnamehash}{fa9f366e5d5a722647300e1b164be4e7}
+      \strng{authornamehash}{2dd26b61c8b507cadae57436615fb74c}
+      \strng{authorfullhash}{fa9f366e5d5a722647300e1b164be4e7}
+      \strng{authorfullhashraw}{fa9f366e5d5a722647300e1b164be4e7}
+      \strng{nameabibnamehash}{fa9f366e5d5a722647300e1b164be4e7}
+      \strng{nameanamehash}{2dd26b61c8b507cadae57436615fb74c}
+      \strng{nameafullhash}{fa9f366e5d5a722647300e1b164be4e7}
+      \strng{nameafullhashraw}{fa9f366e5d5a722647300e1b164be4e7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1749-4885, 1749-4893}
+      \field{journaltitle}{Nature Photonics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shortjournal}{Nature Photon}
+      \field{title}{Aperiodic Volume Optics}
+      \field{urlday}{20}
+      \field{urlmonth}{11}
+      \field{urlyear}{2022}
       \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
-      \field{volume}{70}
-      \field{year}{2021}
+      \field{volume}{4}
+      \field{year}{2010}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \field{pages}{017405}
-      \range{pages}{1}
+      \field{pages}{188\bibrangedash 193}
+      \range{pages}{6}
       \verb{doi}
-      \verb 10.7498/aps.70.20201881
+      \verb 10.1038/nphoton.2009.290
       \endverb
       \verb{file}
-      \verb E:\Application\Organizer\Zotero\Data1\storage\PS3XGGRK\2021_-_brief_introduction_to_flux_pinning_and_vortex_dynamics_in_high_temperature_superconductors_-_acta_phys._sin._-_Wen,_Physics Department, Nanjing University, Nanjing 210093, China_et_al.pdf
+      \verb E:\Application\Organizer\Zotero\Data\storage\DQ8B723M\2010_-_aperiodic_volume_optics_-_nature_photon_-_Gerke,_Piestun_et_al.pdf
       \endverb
       \verb{urlraw}
-      \verb https://wulixb.iphy.ac.cn/article/doi/10.7498/aps.70.20201881
+      \verb http://www.nature.com/articles/nphoton.2009.290
       \endverb
       \verb{url}
-      \verb https://wulixb.iphy.ac.cn/article/doi/10.7498/aps.70.20201881
+      \verb http://www.nature.com/articles/nphoton.2009.290
       \endverb
-      \keyw{wenBriefIntroductionFlux2021}
+      \keyw{gerkeAperiodicVolumeOptics2010}
     \endentry
-    \entry{nelsonGeneralizingPoyntingVector1996}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
-           family={Nelson},
-           familyi={N\bibinitperiod},
-           given={D.\bibnamedelimi F.},
-           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+    \entry{moharamRigorousCoupledwaveAnalysis1981}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=59b4c8dabf38dc13cdd6e4baf8e912e9}{%
+           family={Moharam},
+           familyi={M\bibinitperiod},
+           given={M.\bibnamedelimi G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=8231656c657b807e03d59275e03b1771}{%
+           family={Gaylord},
+           familyi={G\bibinitperiod},
+           given={T.\bibnamedelimi K.},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
       }
-      \name{namea}{1}{}{%
-        {{hash=8782edfcbf32d6ea54a8a146903b7302}{%
-           family={Nelson},
-           familyi={N\bibinitperiod},
-           given={D.\bibnamedelimi F.},
-           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      \name{namea}{2}{}{%
+        {{hash=59b4c8dabf38dc13cdd6e4baf8e912e9}{%
+           family={Moharam},
+           familyi={M\bibinitperiod},
+           given={M.\bibnamedelimi G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=8231656c657b807e03d59275e03b1771}{%
+           family={Gaylord},
+           familyi={G\bibinitperiod},
+           given={T.\bibnamedelimi K.},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
       \list{publisher}{1}{%
-        {American Physical Society}%
+        {Optica Publishing Group}%
       }
-      \strng{namehash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{fullhash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{fullhashraw}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{bibnamehash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{authorbibnamehash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{authornamehash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{authorfullhash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{authorfullhashraw}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{nameabibnamehash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{nameanamehash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{nameafullhash}{8782edfcbf32d6ea54a8a146903b7302}
-      \strng{nameafullhashraw}{8782edfcbf32d6ea54a8a146903b7302}
+      \strng{namehash}{7f5c392bb365381799349949bd664810}
+      \strng{fullhash}{694f818c495138c0dac54a50bc7e2b2e}
+      \strng{fullhashraw}{694f818c495138c0dac54a50bc7e2b2e}
+      \strng{bibnamehash}{694f818c495138c0dac54a50bc7e2b2e}
+      \strng{authorbibnamehash}{694f818c495138c0dac54a50bc7e2b2e}
+      \strng{authornamehash}{7f5c392bb365381799349949bd664810}
+      \strng{authorfullhash}{694f818c495138c0dac54a50bc7e2b2e}
+      \strng{authorfullhashraw}{694f818c495138c0dac54a50bc7e2b2e}
+      \strng{nameabibnamehash}{694f818c495138c0dac54a50bc7e2b2e}
+      \strng{nameanamehash}{7f5c392bb365381799349949bd664810}
+      \strng{nameafullhash}{694f818c495138c0dac54a50bc7e2b2e}
+      \strng{nameafullhashraw}{694f818c495138c0dac54a50bc7e2b2e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{journaltitle}{JOSA}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{7}
+      \field{number}{7}
+      \field{shortjournal}{J. Opt. Soc. Am., JOSA}
+      \field{title}{Rigorous Coupled-Wave Analysis of Planar-Grating Diffraction}
+      \field{urlday}{29}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{71}
+      \field{year}{1981}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{811\bibrangedash 818}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1364/JOSA.71.000811
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/josa/abstract.cfm?uri=josa-71-7-811
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/josa/abstract.cfm?uri=josa-71-7-811
+      \endverb
+      \keyw{moharamRigorousCoupledwaveAnalysis1981}
+    \endentry
+    \entry{ZhuBangTaoGeXiangYiXingZhouQiXingJieGourcwaSuanFaJiBingXingJiSuanJiaSu2016}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=957a57b59b33c2a62e57be5f70b947a1}{%
+           family={{朱邦涛}},
+           familyi={朱\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=9bb91e69444cd05ee10e4badf2ad45f1}{%
+           family={{陈树强}},
+           familyi={陈\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {电子科技大学}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{957a57b59b33c2a62e57be5f70b947a1}
+      \strng{fullhash}{957a57b59b33c2a62e57be5f70b947a1}
+      \strng{fullhashraw}{957a57b59b33c2a62e57be5f70b947a1}
+      \strng{bibnamehash}{957a57b59b33c2a62e57be5f70b947a1}
+      \strng{authorbibnamehash}{957a57b59b33c2a62e57be5f70b947a1}
+      \strng{authornamehash}{957a57b59b33c2a62e57be5f70b947a1}
+      \strng{authorfullhash}{957a57b59b33c2a62e57be5f70b947a1}
+      \strng{authorfullhashraw}{957a57b59b33c2a62e57be5f70b947a1}
+      \strng{nameabibnamehash}{9bb91e69444cd05ee10e4badf2ad45f1}
+      \strng{nameanamehash}{9bb91e69444cd05ee10e4badf2ad45f1}
+      \strng{nameafullhash}{9bb91e69444cd05ee10e4badf2ad45f1}
+      \strng{nameafullhashraw}{9bb91e69444cd05ee10e4badf2ad45f1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{信息科技;基础科学}
+      \field{langid}{chinese}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{nameatype}{collaborator}
+      \field{pagetotal}{70}
+      \field{title}{各向异性周期性结构rcwa算法及并行计算加速}
+      \field{type}{硕士学位论文}
+      \field{urlday}{21}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{usera}{D}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\P8BNEBV4\各向异性周期性结构RCWA算法及并行计算加速.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD201601&filename=1015705012.nh
+      \endverb
+      \verb{url}
+      \verb https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD201601&filename=1015705012.nh
+      \endverb
+      \keyw{ZhuBangTaoGeXiangYiXingZhouQiXingJieGourcwaSuanFaJiBingXingJiSuanJiaSu2016}
+    \endentry
+    \entry{arieQuasiPhaseMatching2007a}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=9ab1c5e757781fd3e68322444ded1c17}{%
+           family={Arie},
+           familyi={A\bibinitperiod},
+           given={Ady},
+           giveni={A\bibinitperiod}}}%
+        {{hash=29e2452beb3ea40ade80691a80996ef4}{%
+           family={Habshoosh},
+           familyi={H\bibinitperiod},
+           given={Nili},
+           giveni={N\bibinitperiod}}}%
+        {{hash=30c83c39923a669b3214a26d44efafde}{%
+           family={Bahabad},
+           familyi={B\bibinitperiod},
+           given={Alon},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=9ab1c5e757781fd3e68322444ded1c17}{%
+           family={Arie},
+           familyi={A\bibinitperiod},
+           given={Ady},
+           giveni={A\bibinitperiod}}}%
+        {{hash=29e2452beb3ea40ade80691a80996ef4}{%
+           family={Habshoosh},
+           familyi={H\bibinitperiod},
+           given={Nili},
+           giveni={N\bibinitperiod}}}%
+        {{hash=30c83c39923a669b3214a26d44efafde}{%
+           family={Bahabad},
+           familyi={B\bibinitperiod},
+           given={Alon},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{8e4463c312f223a4f35c968b8d58f060}
+      \strng{fullhash}{2e723265e7c486b9f174906937ae514c}
+      \strng{fullhashraw}{2e723265e7c486b9f174906937ae514c}
+      \strng{bibnamehash}{2e723265e7c486b9f174906937ae514c}
+      \strng{authorbibnamehash}{2e723265e7c486b9f174906937ae514c}
+      \strng{authornamehash}{8e4463c312f223a4f35c968b8d58f060}
+      \strng{authorfullhash}{2e723265e7c486b9f174906937ae514c}
+      \strng{authorfullhashraw}{2e723265e7c486b9f174906937ae514c}
+      \strng{nameabibnamehash}{2e723265e7c486b9f174906937ae514c}
+      \strng{nameanamehash}{8e4463c312f223a4f35c968b8d58f060}
+      \strng{nameafullhash}{2e723265e7c486b9f174906937ae514c}
+      \strng{nameafullhashraw}{2e723265e7c486b9f174906937ae514c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{14}
+      \field{issn}{0306-8919, 1572-817X}
+      \field{journaltitle}{Optical and Quantum Electronics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{8}
+      \field{number}{4--6}
+      \field{shortjournal}{Opt Quant Electron}
+      \field{title}{Quasi Phase Matching in Two-Dimensional Nonlinear Photonic Crystals}
+      \field{urlday}{18}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{39}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{361\bibrangedash 375}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10/dnvmwz
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\NAV6BY4H\2007_-_quasi_phase_matching_in_two-dimensional_nonlinear_photonic_crystals_-_opt_quant_electron_-_Arie,_Habshoosh,_Bahabad_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s11082-007-9102-8
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s11082-007-9102-8
+      \endverb
+      \keyw{arieQuasiPhaseMatching2007a}
+    \endentry
+    \entry{zhangUniversalModelingSecondorder2018}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=948f26b38fba102b6f820808e554bc53}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=55321722470eace2781d32d7dfece900}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Xiaohui},
+           giveni={X\bibinitperiod}}}%
+        {{hash=0a85218ba02df327d70a7fa59948ebaf}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Yuanlin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e3b5ade534e4a6bf38743be8c554564a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Honggen},
+           giveni={H\bibinitperiod}}}%
+        {{hash=85b8e4ec13ec0d417007182e0daab2d3}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xianfeng},
+           giveni={X\bibinitperiod}}}%
+      }
+      \name{namea}{5}{}{%
+        {{hash=948f26b38fba102b6f820808e554bc53}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=55321722470eace2781d32d7dfece900}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Xiaohui},
+           giveni={X\bibinitperiod}}}%
+        {{hash=0a85218ba02df327d70a7fa59948ebaf}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Yuanlin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e3b5ade534e4a6bf38743be8c554564a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Honggen},
+           giveni={H\bibinitperiod}}}%
+        {{hash=85b8e4ec13ec0d417007182e0daab2d3}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xianfeng},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Optica Publishing Group}%
+      }
+      \strng{namehash}{7c6577b2d35f2f0740901109d6027327}
+      \strng{fullhash}{2a51bb047ef7903c9dceeb3064e795cb}
+      \strng{fullhashraw}{2a51bb047ef7903c9dceeb3064e795cb}
+      \strng{bibnamehash}{98b555ef018b63f85da490fb85a33ea9}
+      \strng{authorbibnamehash}{98b555ef018b63f85da490fb85a33ea9}
+      \strng{authornamehash}{7c6577b2d35f2f0740901109d6027327}
+      \strng{authorfullhash}{2a51bb047ef7903c9dceeb3064e795cb}
+      \strng{authorfullhashraw}{2a51bb047ef7903c9dceeb3064e795cb}
+      \strng{nameabibnamehash}{98b555ef018b63f85da490fb85a33ea9}
+      \strng{nameanamehash}{7c6577b2d35f2f0740901109d6027327}
+      \strng{nameafullhash}{2a51bb047ef7903c9dceeb3064e795cb}
+      \strng{nameafullhashraw}{2a51bb047ef7903c9dceeb3064e795cb}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{issn}{1094-4087}
+      \field{journaltitle}{Optics Express}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{6}
+      \field{number}{12}
+      \field{shortjournal}{Opt. Express, OE}
+      \field{title}{Universal Modeling of Second-Order Nonlinear Frequency Conversion in Three-Dimensional Nonlinear Photonic Crystals}
+      \field{urlday}{5}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{26}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{15675\bibrangedash 15682}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1364/OE.26.015675
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\WWJEIMAC\2018_-_universal_modeling_of_second-order_nonlinear_frequency_conversion_in_three-dimensional_nonlinear_pho_-_opt._express,_oe_-_Zhang,_Zhao,_Zheng_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/oe/abstract.cfm?uri=oe-26-12-15675
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/oe/abstract.cfm?uri=oe-26-12-15675
+      \endverb
+      \keyw{zhangUniversalModelingSecondorder2018}
+    \endentry
+    \entry{chenQuasiphasematchingdivisionMultiplexingHolography2021b}{article}{}{}
+      \name{author}{17}{}{%
+        {{hash=9ee833344b4dd8134c19f7ab89d9b5e0}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Pengcheng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=50d27330577a3cc0cbfb16e855bf057f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chaowei},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c6449f8f9938e9ca7e7303b780253bc0}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Dunzhao},
+           giveni={D\bibinitperiod}}}%
+        {{hash=129b185485e0d6bf4aabed4f1af429ac}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yanlei},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=333a405616853d16f0f617b21d2601a9}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaoyi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=d8b2b43c05b32732a033d731dfa87033}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jiawen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=386874df3fffc83b7a7f0f871eeac4e7}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Dong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=043337114d975932b424fbe3448a56d1}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Jianan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d6624cfc69c11d85f5f7d6ca49cdb054}{%
+           family={Ji},
+           familyi={J\bibinitperiod},
+           given={Shengyun},
+           giveni={S\bibinitperiod}}}%
+        {{hash=504e5e21ad27d0124447bde79d228e41}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Leran},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c7237204a8975317e729b93e44656468}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Liqun},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b95aec36eaf6905aa41374ac96bef418}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Tianxin},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3dd80fcd2470e3532159f23ddd5f746f}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Chuan},
+           giveni={C\bibinitperiod}}}%
+        {{hash=6e7603a124425be82e380f905bcf16a9}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Jiaru},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0a61801e6e881a259d95df9149ad7fea}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Shining},
+           giveni={S\bibinitperiod}}}%
+        {{hash=517b82f0954f8c9eb7c168455870a12a}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2c81656c924858824dfb10d50423b77a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \name{namea}{17}{}{%
+        {{hash=9ee833344b4dd8134c19f7ab89d9b5e0}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Pengcheng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=50d27330577a3cc0cbfb16e855bf057f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chaowei},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c6449f8f9938e9ca7e7303b780253bc0}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Dunzhao},
+           giveni={D\bibinitperiod}}}%
+        {{hash=129b185485e0d6bf4aabed4f1af429ac}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yanlei},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=333a405616853d16f0f617b21d2601a9}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaoyi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=d8b2b43c05b32732a033d731dfa87033}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jiawen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=386874df3fffc83b7a7f0f871eeac4e7}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Dong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=043337114d975932b424fbe3448a56d1}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Jianan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d6624cfc69c11d85f5f7d6ca49cdb054}{%
+           family={Ji},
+           familyi={J\bibinitperiod},
+           given={Shengyun},
+           giveni={S\bibinitperiod}}}%
+        {{hash=504e5e21ad27d0124447bde79d228e41}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Leran},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c7237204a8975317e729b93e44656468}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Liqun},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b95aec36eaf6905aa41374ac96bef418}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Tianxin},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3dd80fcd2470e3532159f23ddd5f746f}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Chuan},
+           giveni={C\bibinitperiod}}}%
+        {{hash=6e7603a124425be82e380f905bcf16a9}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Jiaru},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0a61801e6e881a259d95df9149ad7fea}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Shining},
+           giveni={S\bibinitperiod}}}%
+        {{hash=517b82f0954f8c9eb7c168455870a12a}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2c81656c924858824dfb10d50423b77a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{78d809a9356a4947421f7079dcbaad2c}
+      \strng{fullhash}{b68f36030e9cefa0d1f7105ab42ec565}
+      \strng{fullhashraw}{b68f36030e9cefa0d1f7105ab42ec565}
+      \strng{bibnamehash}{0122263ff0ed4f60a91ecd538f591d2b}
+      \strng{authorbibnamehash}{0122263ff0ed4f60a91ecd538f591d2b}
+      \strng{authornamehash}{78d809a9356a4947421f7079dcbaad2c}
+      \strng{authorfullhash}{b68f36030e9cefa0d1f7105ab42ec565}
+      \strng{authorfullhashraw}{b68f36030e9cefa0d1f7105ab42ec565}
+      \strng{nameabibnamehash}{0122263ff0ed4f60a91ecd538f591d2b}
+      \strng{nameanamehash}{78d809a9356a4947421f7079dcbaad2c}
+      \strng{nameafullhash}{b68f36030e9cefa0d1f7105ab42ec565}
+      \strng{nameafullhashraw}{b68f36030e9cefa0d1f7105ab42ec565}
       \field{extraname}{3}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{day}{17}
-      \field{journaltitle}{Physical Review Letters}
+      \field{day}{15}
+      \field{issn}{2047-7538}
+      \field{journaltitle}{Light: Science \& Applications}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
-      \field{month}{6}
-      \field{number}{25}
-      \field{shortjournal}{Phys. Rev. Lett.}
-      \field{title}{Generalizing the Poynting Vector}
-      \field{urlday}{4}
-      \field{urlmonth}{1}
-      \field{urlyear}{2025}
+      \field{month}{7}
+      \field{number}{1}
+      \field{shortjournal}{Light Sci Appl}
+      \field{title}{Quasi-Phase-Matching-Division Multiplexing Holography in a Three-Dimensional Nonlinear Photonic Crystal}
+      \field{urlday}{16}
+      \field{urlmonth}{7}
+      \field{urlyear}{2023}
       \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
-      \field{volume}{76}
-      \field{year}{1996}
+      \field{volume}{10}
+      \field{year}{2021}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \field{pages}{4713\bibrangedash 4716}
-      \range{pages}{4}
+      \field{pages}{146}
+      \range{pages}{1}
       \verb{doi}
-      \verb 10.1103/PhysRevLett.76.4713
+      \verb 10.1038/s41377-021-00588-5
       \endverb
       \verb{file}
-      \verb E:\Application\Organizer\Zotero\Data1\storage\YRWGG6I2\1996_-_generalizing_the_poynting_vector_-_phys._rev._lett._-_Nelson_et_al.pdf
+      \verb E:\Application\Organizer\Zotero\Data\storage\P7FUME3I\2021_-_quasi-phase-matching-division_multiplexing_holography_in_a_three-dimensional_nonlinear_photonic_crys_-_light_sci_appl_-_Chen,_Wang,_Wei_et_al.pdf
       \endverb
       \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevLett.76.4713
+      \verb https://www.nature.com/articles/s41377-021-00588-5
       \endverb
       \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevLett.76.4713
+      \verb https://www.nature.com/articles/s41377-021-00588-5
       \endverb
-      \keyw{nelsonGeneralizingPoyntingVector1996}
+      \keyw{chenQuasiphasematchingdivisionMultiplexingHolography2021b}
     \endentry
-    \entry{richterPoyntingsTheoremEnergy2008}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=ff9630b87ed366ee33cf3ebe59728636}{%
-           family={Richter},
-           familyi={R\bibinitperiod},
-           given={F.},
-           giveni={F\bibinitperiod}}}%
-        {{hash=de2c22865a2dd2ca552be3f79bb31d21}{%
-           family={Florian},
-           familyi={F\bibinitperiod},
-           given={M.},
+    \entry{chenLaserNanoprinting3D2023}{article}{}{}
+      \name{author}{14}{}{%
+        {{hash=9ee833344b4dd8134c19f7ab89d9b5e0}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Pengcheng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=333a405616853d16f0f617b21d2601a9}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaoyi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b95aec36eaf6905aa41374ac96bef418}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Tianxin},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a82f7b211fe415c0eccfd31925edc866}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Chao},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c6449f8f9938e9ca7e7303b780253bc0}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Dunzhao},
+           giveni={D\bibinitperiod}}}%
+        {{hash=043337114d975932b424fbe3448a56d1}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Jianan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f182774ef31d2a885629c81e922238ec}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Junjie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ad221bd7ab7d0e6b02a72e13594ba6f3}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Xuejing},
+           giveni={X\bibinitperiod}}}%
+        {{hash=939e2bc39f4b2971d24d5b175bd5f8d7}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Xiaoyan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=72a5e489700c4a3102878620b75bafe2}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Chenzhu},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b0e12eee0463ac9ff036ddfad8bcc943}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Shuang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0a61801e6e881a259d95df9149ad7fea}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Shining},
+           giveni={S\bibinitperiod}}}%
+        {{hash=517b82f0954f8c9eb7c168455870a12a}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Min},
            giveni={M\bibinitperiod}}}%
-        {{hash=14ad34762a10ffcb2e5267aa2b260c23}{%
-           family={Henneberger},
-           familyi={H\bibinitperiod},
-           given={K.},
-           giveni={K\bibinitperiod}}}%
+        {{hash=2c81656c924858824dfb10d50423b77a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
       }
-      \name{namea}{3}{}{%
-        {{hash=ff9630b87ed366ee33cf3ebe59728636}{%
-           family={Richter},
-           familyi={R\bibinitperiod},
-           given={F.},
-           giveni={F\bibinitperiod}}}%
-        {{hash=de2c22865a2dd2ca552be3f79bb31d21}{%
-           family={Florian},
-           familyi={F\bibinitperiod},
-           given={M.},
+      \name{namea}{14}{}{%
+        {{hash=9ee833344b4dd8134c19f7ab89d9b5e0}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Pengcheng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=333a405616853d16f0f617b21d2601a9}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaoyi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b95aec36eaf6905aa41374ac96bef418}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Tianxin},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a82f7b211fe415c0eccfd31925edc866}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Chao},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c6449f8f9938e9ca7e7303b780253bc0}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Dunzhao},
+           giveni={D\bibinitperiod}}}%
+        {{hash=043337114d975932b424fbe3448a56d1}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Jianan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f182774ef31d2a885629c81e922238ec}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Junjie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ad221bd7ab7d0e6b02a72e13594ba6f3}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Xuejing},
+           giveni={X\bibinitperiod}}}%
+        {{hash=939e2bc39f4b2971d24d5b175bd5f8d7}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Xiaoyan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=72a5e489700c4a3102878620b75bafe2}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Chenzhu},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b0e12eee0463ac9ff036ddfad8bcc943}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Shuang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0a61801e6e881a259d95df9149ad7fea}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Shining},
+           giveni={S\bibinitperiod}}}%
+        {{hash=517b82f0954f8c9eb7c168455870a12a}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Min},
            giveni={M\bibinitperiod}}}%
-        {{hash=14ad34762a10ffcb2e5267aa2b260c23}{%
-           family={Henneberger},
-           familyi={H\bibinitperiod},
-           given={K.},
-           giveni={K\bibinitperiod}}}%
+        {{hash=2c81656c924858824dfb10d50423b77a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
-      \strng{namehash}{ea28270d53745d64b576613e76e2313f}
-      \strng{fullhash}{1a68d38f8846b30ed0d23c206dbd796e}
-      \strng{fullhashraw}{1a68d38f8846b30ed0d23c206dbd796e}
-      \strng{bibnamehash}{1a68d38f8846b30ed0d23c206dbd796e}
-      \strng{authorbibnamehash}{1a68d38f8846b30ed0d23c206dbd796e}
-      \strng{authornamehash}{ea28270d53745d64b576613e76e2313f}
-      \strng{authorfullhash}{1a68d38f8846b30ed0d23c206dbd796e}
-      \strng{authorfullhashraw}{1a68d38f8846b30ed0d23c206dbd796e}
-      \strng{nameabibnamehash}{1a68d38f8846b30ed0d23c206dbd796e}
-      \strng{nameanamehash}{ea28270d53745d64b576613e76e2313f}
-      \strng{nameafullhash}{1a68d38f8846b30ed0d23c206dbd796e}
-      \strng{nameafullhashraw}{1a68d38f8846b30ed0d23c206dbd796e}
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{78d809a9356a4947421f7079dcbaad2c}
+      \strng{fullhash}{5949c83b2e441a3fdd38f2c1445b1ecb}
+      \strng{fullhashraw}{5949c83b2e441a3fdd38f2c1445b1ecb}
+      \strng{bibnamehash}{8cbf968798653d709a28d719dd5c19c2}
+      \strng{authorbibnamehash}{8cbf968798653d709a28d719dd5c19c2}
+      \strng{authornamehash}{78d809a9356a4947421f7079dcbaad2c}
+      \strng{authorfullhash}{5949c83b2e441a3fdd38f2c1445b1ecb}
+      \strng{authorfullhashraw}{5949c83b2e441a3fdd38f2c1445b1ecb}
+      \strng{nameabibnamehash}{8cbf968798653d709a28d719dd5c19c2}
+      \strng{nameanamehash}{78d809a9356a4947421f7079dcbaad2c}
+      \strng{nameafullhash}{5949c83b2e441a3fdd38f2c1445b1ecb}
+      \strng{nameafullhashraw}{5949c83b2e441a3fdd38f2c1445b1ecb}
+      \field{extraname}{4}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{EPL (Europhysics Letters)}
+      \field{day}{8}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
-      \field{number}{6}
-      \field{title}{Poynting's Theorem and Energy Conservation in the Propagation of Light in Bounded Media}
+      \field{month}{9}
+      \field{number}{1}
+      \field{shortjournal}{Nat Commun}
+      \field{title}{Laser Nanoprinting of {{3D}} Nonlinear Holograms beyond 25000 Pixels-per-Inch for Inter-Wavelength-Band Information Processing}
+      \field{urlday}{19}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
       \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
-      \field{volume}{81}
-      \field{year}{2008}
+      \field{volume}{14}
+      \field{year}{2023}
       \field{dateera}{ce}
-      \field{pages}{67005}
+      \field{urldateera}{ce}
+      \field{pages}{5523}
       \range{pages}{1}
       \verb{doi}
-      \verb 10.1209/0295-5075/81/67005
+      \verb 10.1038/s41467-023-41350-2
       \endverb
       \verb{file}
-      \verb E:\Application\Organizer\Zotero\Data1\storage\ZYKHZ5Z5\2008_-_poynting's_theorem_and_energy_conservation_in_the_propagation_of_light_in_bounded_media_-_Richter,_Florian,_Henneberger_et_al.pdf
+      \verb E:\Application\Organizer\Zotero\Data\storage\R4F96XT7\2023_-_laser_nanoprinting_of_3d_nonlinear_holograms_beyond_25000_pixels-per-inch_for_inter-wavelength-band_-_nat_commun_-_Chen,_Xu,_Wang_et_al.pdf
       \endverb
-      \keyw{richterPoyntingsTheoremEnergy2008}
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41467-023-41350-2
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41467-023-41350-2
+      \endverb
+      \keyw{chenLaserNanoprinting3D2023}
+    \endentry
+    \entry{zhangNonlinearPhotonicCrystals2021}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=2c81656c924858824dfb10d50423b77a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6b707b38843012241c216390daf50259}{%
+           family={Sheng},
+           familyi={S\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0a61801e6e881a259d95df9149ad7fea}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Shining},
+           giveni={S\bibinitperiod}}}%
+        {{hash=517b82f0954f8c9eb7c168455870a12a}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c41397dac0c88fc6f6163a1e1eff93dc}{%
+           family={Krolikowski},
+           familyi={K\bibinitperiod},
+           given={Wieslaw},
+           giveni={W\bibinitperiod}}}%
+      }
+      \name{namea}{5}{}{%
+        {{hash=2c81656c924858824dfb10d50423b77a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6b707b38843012241c216390daf50259}{%
+           family={Sheng},
+           familyi={S\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0a61801e6e881a259d95df9149ad7fea}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Shining},
+           giveni={S\bibinitperiod}}}%
+        {{hash=517b82f0954f8c9eb7c168455870a12a}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c41397dac0c88fc6f6163a1e1eff93dc}{%
+           family={Krolikowski},
+           familyi={K\bibinitperiod},
+           given={Wieslaw},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{2810de8af34d5dab287ae58a8692e0cf}
+      \strng{fullhash}{8af11d34084f2abf69124bdc6b8dd5d1}
+      \strng{fullhashraw}{8af11d34084f2abf69124bdc6b8dd5d1}
+      \strng{bibnamehash}{87a287627a07b9643a3ad4f16b47ff70}
+      \strng{authorbibnamehash}{87a287627a07b9643a3ad4f16b47ff70}
+      \strng{authornamehash}{2810de8af34d5dab287ae58a8692e0cf}
+      \strng{authorfullhash}{8af11d34084f2abf69124bdc6b8dd5d1}
+      \strng{authorfullhashraw}{8af11d34084f2abf69124bdc6b8dd5d1}
+      \strng{nameabibnamehash}{87a287627a07b9643a3ad4f16b47ff70}
+      \strng{nameanamehash}{2810de8af34d5dab287ae58a8692e0cf}
+      \strng{nameafullhash}{8af11d34084f2abf69124bdc6b8dd5d1}
+      \strng{nameafullhashraw}{8af11d34084f2abf69124bdc6b8dd5d1}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{20}
+      \field{issn}{2334-2536}
+      \field{journaltitle}{Optica}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{3}
+      \field{number}{3}
+      \field{shortjournal}{Optica}
+      \field{shorttitle}{Nonlinear Photonic Crystals}
+      \field{title}{Nonlinear Photonic Crystals: From {{2D}} to {{3D}}}
+      \field{urlday}{12}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{8}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{372}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1364/OPTICA.416619
+      \endverb
+      \verb{file}
+      \verb E\:\\Application\\Organizer\\Zotero\\Data\\storage\\CY7SRVQ2\\2021_-_nonlinear_photonic_crystals_from_2d_to_3d_-_optica_-_Zhang,_Sheng,_Zhu_et_al.pdf;E\:\\Application\\Organizer\\Zotero\\Data\\storage\\CYVIYVQB\\2021_-_nonlinear_photonic_crystals_from_2d_to_3d_-_optica_-_Zhang,_Sheng,_Zhu_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.osapublishing.org/abstract.cfm?URI=optica-8-3-372
+      \endverb
+      \verb{url}
+      \verb https://www.osapublishing.org/abstract.cfm?URI=optica-8-3-372
+      \endverb
+      \keyw{zhangNonlinearPhotonicCrystals2021}
+    \endentry
+    \entry{maTipinducedNanoscaleDomain2024}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=043337114d975932b424fbe3448a56d1}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Jianan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b128f8c196f018e1091b9901a807ccb8}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Ningchong},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9ee833344b4dd8134c19f7ab89d9b5e0}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Pengcheng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=333a405616853d16f0f617b21d2601a9}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaoyi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=acd0b73bb1427c6ddf408a7a067a7c85}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Yunzhi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=33d0ecd7b827741ddbf5cc47c804832a}{%
+           family={Nie},
+           familyi={N\bibinitperiod},
+           given={Yuefeng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0a61801e6e881a259d95df9149ad7fea}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Shining},
+           giveni={S\bibinitperiod}}}%
+        {{hash=517b82f0954f8c9eb7c168455870a12a}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2c81656c924858824dfb10d50423b77a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \name{namea}{9}{}{%
+        {{hash=043337114d975932b424fbe3448a56d1}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Jianan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b128f8c196f018e1091b9901a807ccb8}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Ningchong},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9ee833344b4dd8134c19f7ab89d9b5e0}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Pengcheng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=333a405616853d16f0f617b21d2601a9}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaoyi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=acd0b73bb1427c6ddf408a7a067a7c85}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Yunzhi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=33d0ecd7b827741ddbf5cc47c804832a}{%
+           family={Nie},
+           familyi={N\bibinitperiod},
+           given={Yuefeng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0a61801e6e881a259d95df9149ad7fea}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Shining},
+           giveni={S\bibinitperiod}}}%
+        {{hash=517b82f0954f8c9eb7c168455870a12a}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2c81656c924858824dfb10d50423b77a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{b20a0ff2ef9b4278c601b53a9f6513e4}
+      \strng{fullhash}{01d127405ca3a0999cad00c0cfdded20}
+      \strng{fullhashraw}{01d127405ca3a0999cad00c0cfdded20}
+      \strng{bibnamehash}{572e1d5e893b00c4beaf3819b9b632e2}
+      \strng{authorbibnamehash}{572e1d5e893b00c4beaf3819b9b632e2}
+      \strng{authornamehash}{b20a0ff2ef9b4278c601b53a9f6513e4}
+      \strng{authorfullhash}{01d127405ca3a0999cad00c0cfdded20}
+      \strng{authorfullhashraw}{01d127405ca3a0999cad00c0cfdded20}
+      \strng{nameabibnamehash}{572e1d5e893b00c4beaf3819b9b632e2}
+      \strng{nameanamehash}{b20a0ff2ef9b4278c601b53a9f6513e4}
+      \strng{nameafullhash}{01d127405ca3a0999cad00c0cfdded20}
+      \strng{nameafullhashraw}{01d127405ca3a0999cad00c0cfdded20}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{issn}{1094-4087}
+      \field{journaltitle}{Optics Express}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{4}
+      \field{number}{8}
+      \field{shortjournal}{Opt. Express}
+      \field{title}{Tip-Induced Nanoscale Domain Engineering in x-Cut Lithium Niobate on Insulator}
+      \field{urlday}{18}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{32}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{14801}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1364/OE.518885
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\Q7XBD3K3\2024_-_tip-induced_nanoscale_domain_engineering_in_x-cut_lithium_niobate_on_insulator_-_opt._express_-_Ma,_Zheng,_Chen_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/abstract.cfm?URI=oe-32-8-14801
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/abstract.cfm?URI=oe-32-8-14801
+      \endverb
+      \keyw{maTipinducedNanoscaleDomain2024}
+    \endentry
+    \entry{maFabrication100nmperiodDomain2023}{article}{}{}
+      \name{author}{11}{}{%
+        {{hash=043337114d975932b424fbe3448a56d1}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Jianan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=939e2bc39f4b2971d24d5b175bd5f8d7}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Xiaoyan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b128f8c196f018e1091b9901a807ccb8}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Ningchong},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9ee833344b4dd8134c19f7ab89d9b5e0}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Pengcheng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=333a405616853d16f0f617b21d2601a9}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaoyi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b95aec36eaf6905aa41374ac96bef418}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Tianxin},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c6449f8f9938e9ca7e7303b780253bc0}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Dunzhao},
+           giveni={D\bibinitperiod}}}%
+        {{hash=33d0ecd7b827741ddbf5cc47c804832a}{%
+           family={Nie},
+           familyi={N\bibinitperiod},
+           given={Yuefeng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0a61801e6e881a259d95df9149ad7fea}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Shining},
+           giveni={S\bibinitperiod}}}%
+        {{hash=517b82f0954f8c9eb7c168455870a12a}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2c81656c924858824dfb10d50423b77a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \name{namea}{11}{}{%
+        {{hash=043337114d975932b424fbe3448a56d1}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Jianan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=939e2bc39f4b2971d24d5b175bd5f8d7}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Xiaoyan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b128f8c196f018e1091b9901a807ccb8}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Ningchong},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9ee833344b4dd8134c19f7ab89d9b5e0}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Pengcheng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=333a405616853d16f0f617b21d2601a9}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaoyi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b95aec36eaf6905aa41374ac96bef418}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Tianxin},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c6449f8f9938e9ca7e7303b780253bc0}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Dunzhao},
+           giveni={D\bibinitperiod}}}%
+        {{hash=33d0ecd7b827741ddbf5cc47c804832a}{%
+           family={Nie},
+           familyi={N\bibinitperiod},
+           given={Yuefeng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0a61801e6e881a259d95df9149ad7fea}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Shining},
+           giveni={S\bibinitperiod}}}%
+        {{hash=517b82f0954f8c9eb7c168455870a12a}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2c81656c924858824dfb10d50423b77a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{b20a0ff2ef9b4278c601b53a9f6513e4}
+      \strng{fullhash}{4cc57d580ef4e6b6232c2c1069ef98d6}
+      \strng{fullhashraw}{4cc57d580ef4e6b6232c2c1069ef98d6}
+      \strng{bibnamehash}{9dfeb110f1ec4eae05bca1bd4d4e8ac7}
+      \strng{authorbibnamehash}{9dfeb110f1ec4eae05bca1bd4d4e8ac7}
+      \strng{authornamehash}{b20a0ff2ef9b4278c601b53a9f6513e4}
+      \strng{authorfullhash}{4cc57d580ef4e6b6232c2c1069ef98d6}
+      \strng{authorfullhashraw}{4cc57d580ef4e6b6232c2c1069ef98d6}
+      \strng{nameabibnamehash}{9dfeb110f1ec4eae05bca1bd4d4e8ac7}
+      \strng{nameanamehash}{b20a0ff2ef9b4278c601b53a9f6513e4}
+      \strng{nameafullhash}{4cc57d580ef4e6b6232c2c1069ef98d6}
+      \strng{nameafullhashraw}{4cc57d580ef4e6b6232c2c1069ef98d6}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{issn}{1094-4087}
+      \field{journaltitle}{Optics Express}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{11}
+      \field{number}{23}
+      \field{shortjournal}{Opt. Express}
+      \field{title}{Fabrication of 100-Nm-Period Domain Structure in Lithium Niobate on Insulator}
+      \field{urlday}{18}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{31}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{37464}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1364/OE.501804
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\BAB384GJ\2023_-_fabrication_of_100-nm-period_domain_structure_in_lithium_niobate_on_insulator_-_opt._express_-_Ma,_Cheng,_Zheng_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/abstract.cfm?URI=oe-31-23-37464
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/abstract.cfm?URI=oe-31-23-37464
+      \endverb
+      \keyw{maFabrication100nmperiodDomain2023}
+    \endentry
+    \entry{ZhengDaHuaiNiSuanLiJingTiCongQuanXiCunChuDaoSanWeiXianShi2023}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=10e5e6b21a91771c5ff8896dee79bae5}{%
+           family={郑大怀},
+           familyi={郑\bibinitperiod}}}%
+        {{hash=19bba90b23068e5aabc79ee5d54750fb}{%
+           family={王烁琳},
+           familyi={王\bibinitperiod}}}%
+        {{hash=797f7117ce9a99b9556ea37ba386803b}{%
+           family={陈俊锟},
+           familyi={陈\bibinitperiod}}}%
+        {{hash=bf450d800aff06369884c61dd8f3ab82}{%
+           family={张宇琦},
+           familyi={张\bibinitperiod}}}%
+        {{hash=8a2a5e0293c4311cd3db92e4db6fd8b8}{%
+           family={刘宏德},
+           familyi={刘\bibinitperiod}}}%
+        {{hash=287e53aba641cd8fe89b073e07bab026}{%
+           family={任梦昕},
+           familyi={任\bibinitperiod}}}%
+        {{hash=9992ae00f4e3c41bb68ef6087d4c65dc}{%
+           family={孔勇发},
+           familyi={孔\bibinitperiod}}}%
+        {{hash=bdd57bb3186696501a3914a009b99bad}{%
+           family={许京军},
+           familyi={许\bibinitperiod}}}%
+      }
+      \name{namea}{8}{}{%
+        {{hash=10e5e6b21a91771c5ff8896dee79bae5}{%
+           family={郑大怀},
+           familyi={郑\bibinitperiod}}}%
+        {{hash=19bba90b23068e5aabc79ee5d54750fb}{%
+           family={王烁琳},
+           familyi={王\bibinitperiod}}}%
+        {{hash=797f7117ce9a99b9556ea37ba386803b}{%
+           family={陈俊锟},
+           familyi={陈\bibinitperiod}}}%
+        {{hash=bf450d800aff06369884c61dd8f3ab82}{%
+           family={张宇琦},
+           familyi={张\bibinitperiod}}}%
+        {{hash=8a2a5e0293c4311cd3db92e4db6fd8b8}{%
+           family={刘宏德},
+           familyi={刘\bibinitperiod}}}%
+        {{hash=287e53aba641cd8fe89b073e07bab026}{%
+           family={任梦昕},
+           familyi={任\bibinitperiod}}}%
+        {{hash=9992ae00f4e3c41bb68ef6087d4c65dc}{%
+           family={孔勇发},
+           familyi={孔\bibinitperiod}}}%
+        {{hash=bdd57bb3186696501a3914a009b99bad}{%
+           family={许京军},
+           familyi={许\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \list{publisher}{1}{%
+        {中国激光杂志社}%
+      }
+      \strng{namehash}{aa4a5294b281b5865063fe7b7f0fd30e}
+      \strng{fullhash}{01fc5023cfd5d7770a45493bb050dbf1}
+      \strng{fullhashraw}{01fc5023cfd5d7770a45493bb050dbf1}
+      \strng{bibnamehash}{1cecab8492bae58c18fbc2355b9caa48}
+      \strng{authorbibnamehash}{1cecab8492bae58c18fbc2355b9caa48}
+      \strng{authornamehash}{aa4a5294b281b5865063fe7b7f0fd30e}
+      \strng{authorfullhash}{01fc5023cfd5d7770a45493bb050dbf1}
+      \strng{authorfullhashraw}{01fc5023cfd5d7770a45493bb050dbf1}
+      \strng{nameabibnamehash}{1cecab8492bae58c18fbc2355b9caa48}
+      \strng{nameanamehash}{aa4a5294b281b5865063fe7b7f0fd30e}
+      \strng{nameafullhash}{01fc5023cfd5d7770a45493bb050dbf1}
+      \strng{nameafullhashraw}{01fc5023cfd5d7770a45493bb050dbf1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{issue}{18}
+      \field{journaltitle}{Chinese Journal of Lasers}
+      \field{langid}{chinese}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{month}{9}
+      \field{number}{18}
+      \field{shortjournal}{中国激光}
+      \field{title}{铌酸锂晶体：从全息存储到三维显示}
+      \field{urlday}{17}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{50}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1813001\bibrangedash 10}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.3788/CJL230850
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\I9PHNLSM\2023_-_铌酸锂晶体：从全息存储到三维显示_-_中国激光_-_郑大怀,_王烁琳,_陈俊锟_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.opticsjournal.net/Articles/OJ14dbd7b949cfc6b8/Abstract
+      \endverb
+      \verb{url}
+      \verb https://www.opticsjournal.net/Articles/OJ14dbd7b949cfc6b8/Abstract
+      \endverb
+      \keyw{ZhengDaHuaiNiSuanLiJingTiCongQuanXiCunChuDaoSanWeiXianShi2023}
+    \endentry
+    \entry{LiuYingHuaGaoJieLianXuJieZhiLiLun2024}{inreference}{}{}
+      \name{author}{1}{}{%
+        {{hash=4e1b0ce764c043af8859fc2b6e32717e}{%
+           family={{刘应华}},
+           familyi={刘\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=4e1b0ce764c043af8859fc2b6e32717e}{%
+           family={{刘应华}},
+           familyi={刘\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \list{publisher}{1}{%
+        {中国大百科全书出版社}%
+      }
+      \strng{namehash}{4e1b0ce764c043af8859fc2b6e32717e}
+      \strng{fullhash}{4e1b0ce764c043af8859fc2b6e32717e}
+      \strng{fullhashraw}{4e1b0ce764c043af8859fc2b6e32717e}
+      \strng{bibnamehash}{4e1b0ce764c043af8859fc2b6e32717e}
+      \strng{authorbibnamehash}{4e1b0ce764c043af8859fc2b6e32717e}
+      \strng{authornamehash}{4e1b0ce764c043af8859fc2b6e32717e}
+      \strng{authorfullhash}{4e1b0ce764c043af8859fc2b6e32717e}
+      \strng{authorfullhashraw}{4e1b0ce764c043af8859fc2b6e32717e}
+      \strng{nameabibnamehash}{4e1b0ce764c043af8859fc2b6e32717e}
+      \strng{nameanamehash}{4e1b0ce764c043af8859fc2b6e32717e}
+      \strng{nameafullhash}{4e1b0ce764c043af8859fc2b6e32717e}
+      \strng{nameafullhashraw}{4e1b0ce764c043af8859fc2b6e32717e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{中国大百科全书}
+      \field{day}{18}
+      \field{edition}{第三版{$\cdot$}网络版}
+      \field{langid}{chinese}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{month}{6}
+      \field{origtitle}{higher order continuum theory}
+      \field{title}{高阶连续介质理论}
+      \field{urlday}{21}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.zgbk.com/ecph/words?SiteID=1&ID=180210&SubID=63746
+      \endverb
+      \verb{url}
+      \verb https://www.zgbk.com/ecph/words?SiteID=1&ID=180210&SubID=63746
+      \endverb
+      \keyw{LiuYingHuaGaoJieLianXuJieZhiLiLun2024}
+    \endentry
+    \entry{zhangRigorousModelingLaser2015}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=3fe833ecfc13fec08739fcd0dce9d850}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Site},
+           giveni={S\bibinitperiod}}}%
+        {{hash=785a2fa71e7431c0f0fb3dac4eb242ab}{%
+           family={Asoubar},
+           familyi={A\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1d41c70dcd7638bd6d3e91776e9da49c}{%
+           family={Wyrowski},
+           familyi={W\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=442ecc5a10bee28eeea35154f4c8a54e}{%
+           family={Glebov},
+           familyi={G\bibinitperiod},
+           given={Alexei\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=99e82a07a96cbf509730e69f6f1adde3}{%
+           family={Leisher},
+           familyi={L\bibinitperiod},
+           given={Paul\bibnamedelima O.},
+           giveni={P\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=3fe833ecfc13fec08739fcd0dce9d850}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Site},
+           giveni={S\bibinitperiod}}}%
+        {{hash=785a2fa71e7431c0f0fb3dac4eb242ab}{%
+           family={Asoubar},
+           familyi={A\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1d41c70dcd7638bd6d3e91776e9da49c}{%
+           family={Wyrowski},
+           familyi={W\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {San Francisco, California, United States}%
+      }
+      \strng{namehash}{4faac0c8e23d9056d74c1ec8813588cf}
+      \strng{fullhash}{fd0ad2fdff9358c23a72a52f7784ed54}
+      \strng{fullhashraw}{fd0ad2fdff9358c23a72a52f7784ed54}
+      \strng{bibnamehash}{fd0ad2fdff9358c23a72a52f7784ed54}
+      \strng{authorbibnamehash}{fd0ad2fdff9358c23a72a52f7784ed54}
+      \strng{authornamehash}{4faac0c8e23d9056d74c1ec8813588cf}
+      \strng{authorfullhash}{fd0ad2fdff9358c23a72a52f7784ed54}
+      \strng{authorfullhashraw}{fd0ad2fdff9358c23a72a52f7784ed54}
+      \strng{editorbibnamehash}{6c6aa006f6377e63615614d129108009}
+      \strng{editornamehash}{f42202304a19219ac62a97b2e0758eee}
+      \strng{editorfullhash}{6c6aa006f6377e63615614d129108009}
+      \strng{editorfullhashraw}{6c6aa006f6377e63615614d129108009}
+      \strng{nameabibnamehash}{fd0ad2fdff9358c23a72a52f7784ed54}
+      \strng{nameanamehash}{4faac0c8e23d9056d74c1ec8813588cf}
+      \strng{nameafullhash}{fd0ad2fdff9358c23a72a52f7784ed54}
+      \strng{nameafullhashraw}{fd0ad2fdff9358c23a72a52f7784ed54}
+      \field{extraname}{4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{20}
+      \field{eventtitle}{{{SPIE LASE}}}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{2}
+      \field{title}{Rigorous Modeling of Laser Light Propagation through Uniaxial and Biaxial Crystals}
+      \field{urlday}{19}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{usera}{C}
+      \field{userc}{english}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{93460N}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1117/12.2079534
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\LFKCFMEX\2015_-_rigorous_modeling_of_laser_light_propagation_through_uniaxial_and_biaxial_crystals_-_Zhang,_Asoubar,_Wyrowski_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://proceedings.spiedigitallibrary.org/proceeding.aspx?doi=10.1117/12.2079534
+      \endverb
+      \verb{url}
+      \verb http://proceedings.spiedigitallibrary.org/proceeding.aspx?doi=10.1117/12.2079534
+      \endverb
+      \keyw{zhangRigorousModelingLaser2015}
+    \endentry
+    \entry{zhangFullyVectorialSimulation2016}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=3fe833ecfc13fec08739fcd0dce9d850}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Site},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1d41c70dcd7638bd6d3e91776e9da49c}{%
+           family={Wyrowski},
+           familyi={W\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=1d41c70dcd7638bd6d3e91776e9da49c}{%
+           family={Wyrowski},
+           familyi={W\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e694e798369e0dc128424868ecb77671}{%
+           family={Sheridan},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=2b25b2ce42c43e64b7a4b6c0feec0e8c}{%
+           family={Meuret},
+           familyi={M\bibinitperiod},
+           given={Youri},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=3fe833ecfc13fec08739fcd0dce9d850}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Site},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1d41c70dcd7638bd6d3e91776e9da49c}{%
+           family={Wyrowski},
+           familyi={W\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Brussels, Belgium}%
+      }
+      \strng{namehash}{4faac0c8e23d9056d74c1ec8813588cf}
+      \strng{fullhash}{496dd42dcca67ef503cd9363d7c5ef86}
+      \strng{fullhashraw}{496dd42dcca67ef503cd9363d7c5ef86}
+      \strng{bibnamehash}{496dd42dcca67ef503cd9363d7c5ef86}
+      \strng{authorbibnamehash}{496dd42dcca67ef503cd9363d7c5ef86}
+      \strng{authornamehash}{4faac0c8e23d9056d74c1ec8813588cf}
+      \strng{authorfullhash}{496dd42dcca67ef503cd9363d7c5ef86}
+      \strng{authorfullhashraw}{496dd42dcca67ef503cd9363d7c5ef86}
+      \strng{editorbibnamehash}{cebfba9776472230bade81ac4e79c013}
+      \strng{editornamehash}{2b6880608fad027d5aab9ad66e59c81c}
+      \strng{editorfullhash}{cebfba9776472230bade81ac4e79c013}
+      \strng{editorfullhashraw}{cebfba9776472230bade81ac4e79c013}
+      \strng{nameabibnamehash}{496dd42dcca67ef503cd9363d7c5ef86}
+      \strng{nameanamehash}{4faac0c8e23d9056d74c1ec8813588cf}
+      \strng{nameafullhash}{496dd42dcca67ef503cd9363d7c5ef86}
+      \strng{nameafullhashraw}{496dd42dcca67ef503cd9363d7c5ef86}
+      \field{extraname}{5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{eventtitle}{{{SPIE Photonics Europe}}}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{5}
+      \field{title}{Fully Vectorial Simulation of Light Propagation through Uniaxial and Biaxial Crystals}
+      \field{urlday}{15}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{usera}{C}
+      \field{userc}{english}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{988909}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1117/12.2234310
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\KYQZUFZT\2016_-_fully_vectorial_simulation_of_light_propagation_through_uniaxial_and_biaxial_crystals_-_Zhang,_Wyrowski_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://proceedings.spiedigitallibrary.org/proceeding.aspx?doi=10.1117/12.2234310
+      \endverb
+      \verb{url}
+      \verb http://proceedings.spiedigitallibrary.org/proceeding.aspx?doi=10.1117/12.2234310
+      \endverb
+      \keyw{zhangFullyVectorialSimulation2016}
+    \endentry
+    \entry{stallingaBerreman4x4Matrix1999}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=82e2e624f253f6f5ebce225c49d49d8c}{%
+           family={Stallinga},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=82e2e624f253f6f5ebce225c49d49d8c}{%
+           family={Stallinga},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{82e2e624f253f6f5ebce225c49d49d8c}
+      \strng{fullhash}{82e2e624f253f6f5ebce225c49d49d8c}
+      \strng{fullhashraw}{82e2e624f253f6f5ebce225c49d49d8c}
+      \strng{bibnamehash}{82e2e624f253f6f5ebce225c49d49d8c}
+      \strng{authorbibnamehash}{82e2e624f253f6f5ebce225c49d49d8c}
+      \strng{authornamehash}{82e2e624f253f6f5ebce225c49d49d8c}
+      \strng{authorfullhash}{82e2e624f253f6f5ebce225c49d49d8c}
+      \strng{authorfullhashraw}{82e2e624f253f6f5ebce225c49d49d8c}
+      \strng{nameabibnamehash}{82e2e624f253f6f5ebce225c49d49d8c}
+      \strng{nameanamehash}{82e2e624f253f6f5ebce225c49d49d8c}
+      \strng{nameafullhash}{82e2e624f253f6f5ebce225c49d49d8c}
+      \strng{nameafullhashraw}{82e2e624f253f6f5ebce225c49d49d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{issn}{0021-8979, 1089-7550}
+      \field{journaltitle}{Journal of Applied Physics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{3}
+      \field{number}{6}
+      \field{title}{Berreman 4\texttimes 4 Matrix Method for Reflective Liquid Crystal Displays}
+      \field{urlday}{29}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{85}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{3023\bibrangedash 3031}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1063/1.369638
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\XZ9XFKLJ\1999_-_berreman_4×4_matrix_method_for_reflective_liquid_crystal_displays_-_Stallinga_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/jap/article/85/6/3023/178429/Berreman-4-4-matrix-method-for-reflective-liquid
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/jap/article/85/6/3023/178429/Berreman-4-4-matrix-method-for-reflective-liquid
+      \endverb
+      \keyw{stallingaBerreman4x4Matrix1999}
+    \endentry
+    \entry{borzdovWavesLinearQuadratic1996}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8eb560a3a5c6bd1ccf6ada445e4d4eee}{%
+           family={Borzdov},
+           familyi={B\bibinitperiod},
+           given={G\bibnamedelima N},
+           giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=8eb560a3a5c6bd1ccf6ada445e4d4eee}{%
+           family={Borzdov},
+           familyi={B\bibinitperiod},
+           given={G\bibnamedelima N},
+           giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{8eb560a3a5c6bd1ccf6ada445e4d4eee}
+      \strng{fullhash}{8eb560a3a5c6bd1ccf6ada445e4d4eee}
+      \strng{fullhashraw}{8eb560a3a5c6bd1ccf6ada445e4d4eee}
+      \strng{bibnamehash}{8eb560a3a5c6bd1ccf6ada445e4d4eee}
+      \strng{authorbibnamehash}{8eb560a3a5c6bd1ccf6ada445e4d4eee}
+      \strng{authornamehash}{8eb560a3a5c6bd1ccf6ada445e4d4eee}
+      \strng{authorfullhash}{8eb560a3a5c6bd1ccf6ada445e4d4eee}
+      \strng{authorfullhashraw}{8eb560a3a5c6bd1ccf6ada445e4d4eee}
+      \strng{nameabibnamehash}{8eb560a3a5c6bd1ccf6ada445e4d4eee}
+      \strng{nameanamehash}{8eb560a3a5c6bd1ccf6ada445e4d4eee}
+      \strng{nameafullhash}{8eb560a3a5c6bd1ccf6ada445e4d4eee}
+      \strng{nameafullhashraw}{8eb560a3a5c6bd1ccf6ada445e4d4eee}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0304-4289, 0973-7111}
+      \field{journaltitle}{Pramana}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{4}
+      \field{number}{4}
+      \field{shortjournal}{Pramana - J. Phys.}
+      \field{title}{Waves with Linear, Quadratic and Cubic Coordinate Dependence of Amplitude in Crystals}
+      \field{urlday}{30}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{46}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{245\bibrangedash 257}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/BF02846911
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\WTXS5Y3F\1996_-_waves_with_linear,_quadratic_and_cubic_coordinate_dependence_of_amplitude_in_crystals_-_pramana_-_j._phys._-_Borzdov_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/BF02846911
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/BF02846911
+      \endverb
+      \keyw{borzdovWavesLinearQuadratic1996}
+    \endentry
+    \entry{changWavePropagationBianisotropic2014}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=8ecad20203e15f1d38f25fe7ef7caa2e}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Po-Han},
+           giveni={P\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=b7499314b36223a575b93436bcb2c2e2}{%
+           family={Kuo},
+           familyi={K\bibinitperiod},
+           given={Chih-Yu},
+           giveni={C\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=b92f249c4a91d09c079a9473f5cef58d}{%
+           family={Chern},
+           familyi={C\bibinitperiod},
+           given={Ruey-Lin},
+           giveni={R\bibinithyphendelim L\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=8ecad20203e15f1d38f25fe7ef7caa2e}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Po-Han},
+           giveni={P\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=b7499314b36223a575b93436bcb2c2e2}{%
+           family={Kuo},
+           familyi={K\bibinitperiod},
+           given={Chih-Yu},
+           giveni={C\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=b92f249c4a91d09c079a9473f5cef58d}{%
+           family={Chern},
+           familyi={C\bibinitperiod},
+           given={Ruey-Lin},
+           giveni={R\bibinithyphendelim L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{694f750cbcac895e59c090e5b4f38ab3}
+      \strng{fullhash}{9b5dd7f17a93c3f677c1237420a6ca85}
+      \strng{fullhashraw}{9b5dd7f17a93c3f677c1237420a6ca85}
+      \strng{bibnamehash}{9b5dd7f17a93c3f677c1237420a6ca85}
+      \strng{authorbibnamehash}{9b5dd7f17a93c3f677c1237420a6ca85}
+      \strng{authornamehash}{694f750cbcac895e59c090e5b4f38ab3}
+      \strng{authorfullhash}{9b5dd7f17a93c3f677c1237420a6ca85}
+      \strng{authorfullhashraw}{9b5dd7f17a93c3f677c1237420a6ca85}
+      \strng{nameabibnamehash}{9b5dd7f17a93c3f677c1237420a6ca85}
+      \strng{nameanamehash}{694f750cbcac895e59c090e5b4f38ab3}
+      \strng{nameafullhash}{9b5dd7f17a93c3f677c1237420a6ca85}
+      \strng{nameafullhashraw}{9b5dd7f17a93c3f677c1237420a6ca85}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Wave Propagation in Bianisotropic Metamaterials: Angular Selective Transmission}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1364/OE.22.025710
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\2Z5SRP5E\2014_-_wave_propagation_in_bianisotropic_metamaterials_angular_selective_transmission_-_Chang,_Kuo,_Chern_et_al.pdf
+      \endverb
+      \keyw{changWavePropagationBianisotropic2014}
+    \endentry
+    \entry{sturmElectromagneticWavesCrystals2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c5e6e06ea26c2f97869ec063ca77210c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=c5e6e06ea26c2f97869ec063ca77210c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{c5e6e06ea26c2f97869ec063ca77210c}
+      \strng{fullhash}{c5e6e06ea26c2f97869ec063ca77210c}
+      \strng{fullhashraw}{c5e6e06ea26c2f97869ec063ca77210c}
+      \strng{bibnamehash}{c5e6e06ea26c2f97869ec063ca77210c}
+      \strng{authorbibnamehash}{c5e6e06ea26c2f97869ec063ca77210c}
+      \strng{authornamehash}{c5e6e06ea26c2f97869ec063ca77210c}
+      \strng{authorfullhash}{c5e6e06ea26c2f97869ec063ca77210c}
+      \strng{authorfullhashraw}{c5e6e06ea26c2f97869ec063ca77210c}
+      \strng{nameabibnamehash}{c5e6e06ea26c2f97869ec063ca77210c}
+      \strng{nameanamehash}{c5e6e06ea26c2f97869ec063ca77210c}
+      \strng{nameafullhash}{c5e6e06ea26c2f97869ec063ca77210c}
+      \strng{nameafullhashraw}{c5e6e06ea26c2f97869ec063ca77210c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{2699-9293}
+      \field{journaltitle}{Advanced Photonics Research}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{shorttitle}{Electromagnetic {{Waves}} in {{Crystals}}}
+      \field{title}{Electromagnetic Waves in Crystals: {{The}} Presence of Exceptional Points}
+      \field{urlday}{30}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{5}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2300235}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1002/adpr.202300235
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\38STJCDB\2024_-_electromagnetic_waves_in_crystals_the_presence_of_exceptional_points_-_Sturm_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/adpr.202300235
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/adpr.202300235
+      \endverb
+      \keyw{sturmElectromagneticWavesCrystals2024}
+    \endentry
+    \entry{pessoaAvoidingMatrixExponentials2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=6376055fc815458c497cbfe8b94bb911}{%
+           family={Pessoa},
+           familyi={P\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c6f805edfc7cc7c3682631ec44be6a13}{%
+           family={Schweiger},
+           familyi={S\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2a14593d3dc9d7f59cd857a3b2608607}{%
+           family={Presse},
+           familyi={P\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=6376055fc815458c497cbfe8b94bb911}{%
+           family={Pessoa},
+           familyi={P\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c6f805edfc7cc7c3682631ec44be6a13}{%
+           family={Schweiger},
+           familyi={S\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2a14593d3dc9d7f59cd857a3b2608607}{%
+           family={Presse},
+           familyi={P\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d3ffe5f7d784801327326f35b02e3409}
+      \strng{fullhash}{97c2bc0ca782707b90ce299ab60f83ee}
+      \strng{fullhashraw}{97c2bc0ca782707b90ce299ab60f83ee}
+      \strng{bibnamehash}{97c2bc0ca782707b90ce299ab60f83ee}
+      \strng{authorbibnamehash}{97c2bc0ca782707b90ce299ab60f83ee}
+      \strng{authornamehash}{d3ffe5f7d784801327326f35b02e3409}
+      \strng{authorfullhash}{97c2bc0ca782707b90ce299ab60f83ee}
+      \strng{authorfullhashraw}{97c2bc0ca782707b90ce299ab60f83ee}
+      \strng{nameabibnamehash}{97c2bc0ca782707b90ce299ab60f83ee}
+      \strng{nameanamehash}{d3ffe5f7d784801327326f35b02e3409}
+      \strng{nameafullhash}{97c2bc0ca782707b90ce299ab60f83ee}
+      \strng{nameafullhashraw}{97c2bc0ca782707b90ce299ab60f83ee}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{eprintclass}{physics, stat}
+      \field{eprinttype}{arXiv}
+      \field{issn}{0021-9606, 1089-7690}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{3}
+      \field{number}{9}
+      \field{title}{Avoiding Matrix Exponentials for Large Transition Rate Matrices}
+      \field{urlday}{8}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{160}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{094109}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0190527
+      \endverb
+      \verb{eprint}
+      \verb 2312.05647
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\J9X5ESRI\2024_-_avoiding_matrix_exponentials_for_large_transition_rate_matrices_-_Pessoa,_Schweiger,_Presse_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2312.05647
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2312.05647
+      \endverb
+      \keyw{pessoaAvoidingMatrixExponentials2024}
+    \endentry
+    \entry{molerNineteenDubiousWays2003}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=0eaaa911086b3df76e4c944adec7dd3e}{%
+           family={Moler},
+           familyi={M\bibinitperiod},
+           given={Cleve},
+           giveni={C\bibinitperiod}}}%
+        {{hash=632df74adafeb5905dcd3526dd53224a}{%
+           family={Van\bibnamedelima Loan},
+           familyi={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=0eaaa911086b3df76e4c944adec7dd3e}{%
+           family={Moler},
+           familyi={M\bibinitperiod},
+           given={Cleve},
+           giveni={C\bibinitperiod}}}%
+        {{hash=632df74adafeb5905dcd3526dd53224a}{%
+           family={Van\bibnamedelima Loan},
+           familyi={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{32b9bafd3c3c208ad0702f878ac2fd34}
+      \strng{fullhash}{b0c2c1c5b15f3a46a9d65c41f197223c}
+      \strng{fullhashraw}{b0c2c1c5b15f3a46a9d65c41f197223c}
+      \strng{bibnamehash}{b0c2c1c5b15f3a46a9d65c41f197223c}
+      \strng{authorbibnamehash}{b0c2c1c5b15f3a46a9d65c41f197223c}
+      \strng{authornamehash}{32b9bafd3c3c208ad0702f878ac2fd34}
+      \strng{authorfullhash}{b0c2c1c5b15f3a46a9d65c41f197223c}
+      \strng{authorfullhashraw}{b0c2c1c5b15f3a46a9d65c41f197223c}
+      \strng{nameabibnamehash}{b0c2c1c5b15f3a46a9d65c41f197223c}
+      \strng{nameanamehash}{32b9bafd3c3c208ad0702f878ac2fd34}
+      \strng{nameafullhash}{b0c2c1c5b15f3a46a9d65c41f197223c}
+      \strng{nameafullhashraw}{b0c2c1c5b15f3a46a9d65c41f197223c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0036-1445, 1095-7200}
+      \field{journaltitle}{SIAM Review}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{SIAM Rev.}
+      \field{title}{Nineteen Dubious Ways to Compute the Exponential of a Matrix, Twenty-Five Years Later}
+      \field{urlday}{8}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{45}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{3\bibrangedash 49}
+      \range{pages}{47}
+      \verb{doi}
+      \verb 10.1137/S00361445024180
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\AI4VFKLP\2003_-_nineteen_dubious_ways_to_compute_the_exponential_of_a_matrix,_twenty-five_years_later_-_siam_rev._-_Moler,_Van Loan_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://epubs.siam.org/doi/10.1137/S00361445024180
+      \endverb
+      \verb{url}
+      \verb http://epubs.siam.org/doi/10.1137/S00361445024180
+      \endverb
+      \keyw{molerNineteenDubiousWays2003}
     \endentry
   \enddatalist
 \endrefsection
