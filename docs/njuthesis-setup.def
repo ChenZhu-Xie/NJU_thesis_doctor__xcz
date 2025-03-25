@@ -26,11 +26,11 @@
     % 作者英文姓名
     % 一般使用拼音
     %
-    keywords = {晶体光学,奇点光学,波动光学,傅里叶光学,非线性光学,角谱理论,各向异性衍射,平面波模型,矢量场,麦克斯韦方程,偏微分方程,本构关系,边界条件,广义斯涅尔定律,特征分析,特征方程},
+    keywords = {多极理论, Volterra 级数, 波动光学, 非线性光学, 晶体光学, 奇点光学, 傅里叶光学, 衍射光学, 电磁场分布, 角谱理论, 双各向异性, 矢量光场, 偏微分方程, 麦克斯韦方程组, 本构关系, 边界条件, 特征方程, 特征分析, 解析解, 非线性光子晶体, 非线性卷积, 核函数, 快速算法, 计算物理, 严格耦合波分析, },
     % 中文关键词列表
     % 使用英文半角逗号(,)分隔
     %
-    keywords* = {Crystal optics, Singular optics, Wave optics, Fourier optics, Nonlinear optics, Angular spectrum theory, Anisotropic diffraction, Plane wave model, Vector field, Maxwell equation, Partial differential equation, Constitutive relations, Boundary conditions, Generalized Snell's law, Eigenanalysis, Characteristic equation},
+    keywords* = {Multipole theory, Volterra series, Crystal optics, Singular optics, Wave optics, Fourier optics, Diffractive Optics, Electromagnetic field distribution, Nonlinear optics, Angular spectrum theory, Bianisotropic, Vector light field, Partial differential equation, Maxwell equations, Constitutive relations, Boundary conditions, Characteristic equation, Eigenanalysis, Analytic solution, Nonlinear photonic crystal, Nonlinear convolution, Kernel function, Fast algorithms, Computational physics, RCWA, },
     % 英文关键词
     % 使用英文半角逗号(,)分隔
     %
