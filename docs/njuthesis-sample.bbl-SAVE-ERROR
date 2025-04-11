@@ -234,7 +234,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
-      \field{eprinttype}{pmid}
+      \field{eprinttype}{pubmed}
       \field{issn}{0163-1829}
       \field{journaltitle}{Physical Review. B, Condensed Matter}
       \field{langid}{english}
@@ -3583,7 +3583,7 @@
       \field{sortinit}{9}
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
-      \field{eprinttype}{pmid}
+      \field{eprinttype}{pubmed}
       \field{langid}{english}
       \field{languageid}{english}
       \field{lansortorder}{4}
@@ -4355,7 +4355,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eprinttype}{pmid}
+      \field{eprinttype}{pubmed}
       \field{issn}{1084-7529}
       \field{journaltitle}{Journal of the Optical Society of America. A, Optics, Image Science, and Vision}
       \field{langid}{english}
@@ -7548,6 +7548,647 @@
       \verb http://epubs.siam.org/doi/10.1137/S00361445024180
       \endverb
       \keyw{molerNineteenDubiousWays2003}
+    \endentry
+    \entry{bornPrinciplesOptics60th2019}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=f3c12b2ab192a232977c790c202ae18a}{%
+           family={Born},
+           familyi={B\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4f3da79454ab0edb86f37a6038d1998f}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Emil},
+           giveni={E\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=f3c12b2ab192a232977c790c202ae18a}{%
+           family={Born},
+           familyi={B\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4f3da79454ab0edb86f37a6038d1998f}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Emil},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{2ecc32babd625467614fcde4c2be138c}
+      \strng{fullhash}{b14dea9f75ec6824071689113c5b3d02}
+      \strng{fullhashraw}{b14dea9f75ec6824071689113c5b3d02}
+      \strng{bibnamehash}{b14dea9f75ec6824071689113c5b3d02}
+      \strng{authorbibnamehash}{b14dea9f75ec6824071689113c5b3d02}
+      \strng{authornamehash}{2ecc32babd625467614fcde4c2be138c}
+      \strng{authorfullhash}{b14dea9f75ec6824071689113c5b3d02}
+      \strng{authorfullhashraw}{b14dea9f75ec6824071689113c5b3d02}
+      \strng{nameabibnamehash}{b14dea9f75ec6824071689113c5b3d02}
+      \strng{nameanamehash}{2ecc32babd625467614fcde4c2be138c}
+      \strng{nameafullhash}{b14dea9f75ec6824071689113c5b3d02}
+      \strng{nameafullhashraw}{b14dea9f75ec6824071689113c5b3d02}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{7}
+      \field{isbn}{978-1-108-47743-7}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{shorttitle}{Principles of {{Optics}}}
+      \field{title}{Principles of {{Optics}}: 60th {{Anniversary Edition}}}
+      \field{urlday}{3}
+      \field{urlmonth}{7}
+      \field{urlyear}{2023}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1017/9781108769914
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/books/principles-of-optics/9D54D6FF0317074912CB285C3FF7341C
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/books/principles-of-optics/9D54D6FF0317074912CB285C3FF7341C
+      \endverb
+      \keyw{bornPrinciplesOptics60th2019}
+    \endentry
+    \entry{chernChiralSurfaceWaves2017}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b92f249c4a91d09c079a9473f5cef58d}{%
+           family={Chern},
+           familyi={C\bibinitperiod},
+           given={Ruey-Lin},
+           giveni={R\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=1e38af8d98c2737d4fb79d3d220071fc}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={You-Zhong},
+           giveni={Y\bibinithyphendelim Z\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=b92f249c4a91d09c079a9473f5cef58d}{%
+           family={Chern},
+           familyi={C\bibinitperiod},
+           given={Ruey-Lin},
+           giveni={R\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=1e38af8d98c2737d4fb79d3d220071fc}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={You-Zhong},
+           giveni={Y\bibinithyphendelim Z\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{81864fe7a1e6e2f4d0bb084fc299d192}
+      \strng{fullhash}{c1c61346abf984821b356ad05c05c905}
+      \strng{fullhashraw}{c1c61346abf984821b356ad05c05c905}
+      \strng{bibnamehash}{c1c61346abf984821b356ad05c05c905}
+      \strng{authorbibnamehash}{c1c61346abf984821b356ad05c05c905}
+      \strng{authornamehash}{81864fe7a1e6e2f4d0bb084fc299d192}
+      \strng{authorfullhash}{c1c61346abf984821b356ad05c05c905}
+      \strng{authorfullhashraw}{c1c61346abf984821b356ad05c05c905}
+      \strng{nameabibnamehash}{c1c61346abf984821b356ad05c05c905}
+      \strng{nameanamehash}{81864fe7a1e6e2f4d0bb084fc299d192}
+      \strng{nameafullhash}{c1c61346abf984821b356ad05c05c905}
+      \strng{nameafullhashraw}{c1c61346abf984821b356ad05c05c905}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Chiral Surface Waves on Hyperbolic-Gyromagnetic Metamaterials}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1364/OE.25.011801
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\SICK7YLC\2017_-_chiral_surface_waves_on_hyperbolic-gyromagnetic_metamaterials_-_Chern,_Yu_et_al.pdf
+      \endverb
+      \keyw{chernChiralSurfaceWaves2017}
+    \endentry
+    \entry{asoubarSimulationBirefringenceEffects2015}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=785a2fa71e7431c0f0fb3dac4eb242ab}{%
+           family={Asoubar},
+           familyi={A\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3fe833ecfc13fec08739fcd0dce9d850}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Site},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1d41c70dcd7638bd6d3e91776e9da49c}{%
+           family={Wyrowski},
+           familyi={W\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=785a2fa71e7431c0f0fb3dac4eb242ab}{%
+           family={Asoubar},
+           familyi={A\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3fe833ecfc13fec08739fcd0dce9d850}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Site},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1d41c70dcd7638bd6d3e91776e9da49c}{%
+           family={Wyrowski},
+           familyi={W\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{18cd236d9366e5eadaa89a273dad6657}
+      \strng{fullhash}{47788e1f344b4cd14bf493b91c2abdae}
+      \strng{fullhashraw}{47788e1f344b4cd14bf493b91c2abdae}
+      \strng{bibnamehash}{47788e1f344b4cd14bf493b91c2abdae}
+      \strng{authorbibnamehash}{47788e1f344b4cd14bf493b91c2abdae}
+      \strng{authornamehash}{18cd236d9366e5eadaa89a273dad6657}
+      \strng{authorfullhash}{47788e1f344b4cd14bf493b91c2abdae}
+      \strng{authorfullhashraw}{47788e1f344b4cd14bf493b91c2abdae}
+      \strng{nameabibnamehash}{47788e1f344b4cd14bf493b91c2abdae}
+      \strng{nameanamehash}{18cd236d9366e5eadaa89a273dad6657}
+      \strng{nameafullhash}{47788e1f344b4cd14bf493b91c2abdae}
+      \strng{nameafullhashraw}{47788e1f344b4cd14bf493b91c2abdae}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{1094-4087}
+      \field{journaltitle}{Optics Express}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{6}
+      \field{number}{11}
+      \field{shortjournal}{Opt. Express}
+      \field{title}{Simulation of Birefringence Effects on the Dominant Transversal Laser Resonator Mode Caused by Anisotropic Crystals}
+      \field{urlday}{11}
+      \field{urlmonth}{9}
+      \field{urlyear}{2022}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{23}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{13848}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10/gqsj3k
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\U8G9BQ2Y\2015_-_simulation_of_birefringence_effects_on_the_dominant_transversal_laser_resonator_mode_caused_by_aniso_-_opt._express_-_Asoubar,_Zhang,_Wyrowski_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/abstract.cfm?URI=oe-23-11-13848
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/abstract.cfm?URI=oe-23-11-13848
+      \endverb
+      \keyw{asoubarSimulationBirefringenceEffects2015}
+    \endentry
+    \entry{liReformulationFourierModal1998}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=e6cd7e48965d8940bf397276abafb62b}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Lifeng},
+           giveni={L\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=e6cd7e48965d8940bf397276abafb62b}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Lifeng},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{e6cd7e48965d8940bf397276abafb62b}
+      \strng{fullhash}{e6cd7e48965d8940bf397276abafb62b}
+      \strng{fullhashraw}{e6cd7e48965d8940bf397276abafb62b}
+      \strng{bibnamehash}{e6cd7e48965d8940bf397276abafb62b}
+      \strng{authorbibnamehash}{e6cd7e48965d8940bf397276abafb62b}
+      \strng{authornamehash}{e6cd7e48965d8940bf397276abafb62b}
+      \strng{authorfullhash}{e6cd7e48965d8940bf397276abafb62b}
+      \strng{authorfullhashraw}{e6cd7e48965d8940bf397276abafb62b}
+      \strng{nameabibnamehash}{e6cd7e48965d8940bf397276abafb62b}
+      \strng{nameanamehash}{e6cd7e48965d8940bf397276abafb62b}
+      \strng{nameafullhash}{e6cd7e48965d8940bf397276abafb62b}
+      \strng{nameafullhashraw}{e6cd7e48965d8940bf397276abafb62b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{0950-0340}
+      \field{journaltitle}{Journal of Modern Optics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Reformulation of the Fourier Modal Method for Surface-Relief Gratings Made with Anisotropic Materials}
+      \field{urlday}{8}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{45}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1313\bibrangedash 1334}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1080/09500349808230632
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\IMGT33AT\1998_-_reformulation_of_the_fourier_modal_method_for_surface-relief_gratings_made_with_anisotropic_material_-_Li_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/09500349808230632
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/09500349808230632
+      \endverb
+      \keyw{liReformulationFourierModal1998}
+    \endentry
+    \entry{wiersigDistanceExceptionalPoints2022}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=9fd7305a8ab9bbaab34ba3d1fed5231e}{%
+           family={Wiersig},
+           familyi={W\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=9fd7305a8ab9bbaab34ba3d1fed5231e}{%
+           family={Wiersig},
+           familyi={W\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{9fd7305a8ab9bbaab34ba3d1fed5231e}
+      \strng{fullhash}{9fd7305a8ab9bbaab34ba3d1fed5231e}
+      \strng{fullhashraw}{9fd7305a8ab9bbaab34ba3d1fed5231e}
+      \strng{bibnamehash}{9fd7305a8ab9bbaab34ba3d1fed5231e}
+      \strng{authorbibnamehash}{9fd7305a8ab9bbaab34ba3d1fed5231e}
+      \strng{authornamehash}{9fd7305a8ab9bbaab34ba3d1fed5231e}
+      \strng{authorfullhash}{9fd7305a8ab9bbaab34ba3d1fed5231e}
+      \strng{authorfullhashraw}{9fd7305a8ab9bbaab34ba3d1fed5231e}
+      \strng{nameabibnamehash}{9fd7305a8ab9bbaab34ba3d1fed5231e}
+      \strng{nameanamehash}{9fd7305a8ab9bbaab34ba3d1fed5231e}
+      \strng{nameafullhash}{9fd7305a8ab9bbaab34ba3d1fed5231e}
+      \strng{nameafullhashraw}{9fd7305a8ab9bbaab34ba3d1fed5231e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Distance between Exceptional Points and Diabolic Points and Its Implication for the Response Strength of Non-Hermitian Systems}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1103/PhysRevResearch.4.033179
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\P66T63LM\2022_-_distance_between_exceptional_points_and_diabolic_points_and_its_implication_for_the_response_strengt_-_Wiersig_et_al.pdf
+      \endverb
+      \keyw{wiersigDistanceExceptionalPoints2022}
+    \endentry
+    \entry{sturmPropagationElectromagneticWaves}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c5e6e06ea26c2f97869ec063ca77210c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b815c67d32eb9aac829f9b1fbf4f1bb8}{%
+           family={Grundmann},
+           familyi={G\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=c5e6e06ea26c2f97869ec063ca77210c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b815c67d32eb9aac829f9b1fbf4f1bb8}{%
+           family={Grundmann},
+           familyi={G\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{671e39d68b96328485ec6c6125964396}
+      \strng{fullhash}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{fullhashraw}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{bibnamehash}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{authorbibnamehash}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{authornamehash}{671e39d68b96328485ec6c6125964396}
+      \strng{authorfullhash}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{authorfullhashraw}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{nameabibnamehash}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{nameanamehash}{671e39d68b96328485ec6c6125964396}
+      \strng{nameafullhash}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{nameafullhashraw}{b86f148fcb33f92a1c13a9b096e8a789}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1862-6270}
+      \field{journaltitle}{physica status solidi (RRL) -- Rapid Research Letters}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{n/a}
+      \field{shorttitle}{Propagation of {{Electromagnetic Waves}} in {{Optically Anisotropic Materials}}}
+      \field{title}{Propagation of Electromagnetic Waves in Optically Anisotropic Materials: {{Polarization}} and Intensity Behavior}
+      \field{urlday}{1}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{n/a}
+      \field{urldateera}{ce}
+      \field{pages}{2400402}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1002/pssr.202400402
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data1\storage\Z4D8WVYA\propagation_of_electromagnetic_waves_in_optically_anisotropic_materials_polarization_and_intensity_-_Sturm,_Grundmann_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/pssr.202400402
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/pssr.202400402
+      \endverb
+      \keyw{sturmPropagationElectromagneticWaves}
+    \endentry
+    \entry{sturmSingularOpticalAxes2016a}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c5e6e06ea26c2f97869ec063ca77210c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b815c67d32eb9aac829f9b1fbf4f1bb8}{%
+           family={Grundmann},
+           familyi={G\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=c5e6e06ea26c2f97869ec063ca77210c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b815c67d32eb9aac829f9b1fbf4f1bb8}{%
+           family={Grundmann},
+           familyi={G\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{671e39d68b96328485ec6c6125964396}
+      \strng{fullhash}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{fullhashraw}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{bibnamehash}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{authorbibnamehash}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{authornamehash}{671e39d68b96328485ec6c6125964396}
+      \strng{authorfullhash}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{authorfullhashraw}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{nameabibnamehash}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{nameanamehash}{671e39d68b96328485ec6c6125964396}
+      \strng{nameafullhash}{b86f148fcb33f92a1c13a9b096e8a789}
+      \strng{nameafullhashraw}{b86f148fcb33f92a1c13a9b096e8a789}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{journaltitle}{Physical Review A}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{5}
+      \field{number}{5}
+      \field{shortjournal}{Phys. Rev. A}
+      \field{title}{Singular Optical Axes in Biaxial Crystals and Analysis of Their Spectral Dispersion Effects in \$\textbackslash ensuremath\{\textbackslash beta\}\textbackslash ensuremath\{-\}\{\textbackslash mathrm\{\vphantom{\}\}}{{Ga}}\vphantom\{\}\vphantom\{\}\_\{2\}\{\textbackslash mathrm\{\vphantom{\}\}}{{O}}\vphantom\{\}\vphantom\{\}\_\{3\}\$}
+      \field{urlday}{25}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{93}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{053839}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.93.053839
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\HBS7A8Q2\2016_-_singular_optical_axes_in_biaxial_crystals_and_analysis_of_their_spectral_dispersion_effects_in_$ens_-_phys._rev._a_-_Sturm,_Grundmann_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.93.053839
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.93.053839
+      \endverb
+      \keyw{sturmSingularOpticalAxes2016a}
+    \endentry
+    \entry{grundmannOpticallyAnisotropicMedia2017}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=b815c67d32eb9aac829f9b1fbf4f1bb8}{%
+           family={Grundmann},
+           familyi={G\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c5e6e06ea26c2f97869ec063ca77210c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4cf42687809919e5d88fe1a71122f342}{%
+           family={Kranert},
+           familyi={K\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bfd05808d3073f7c59edfb368fbe9e52}{%
+           family={Richter},
+           familyi={R\bibinitperiod},
+           given={Steffen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=879d6ea17c4480fcc778d5bb4ece1dcd}{%
+           family={Schmidt-Grund},
+           familyi={S\bibinithyphendelim G\bibinitperiod},
+           given={Rüdiger},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7bbc12c01fea1cf3a09f4a0e6af1eaeb}{%
+           family={Deparis},
+           familyi={D\bibinitperiod},
+           given={Christianne},
+           giveni={C\bibinitperiod}}}%
+        {{hash=efb543f5cb5867e9120f383368862b1c}{%
+           family={Zúñiga-Pérez},
+           familyi={Z\bibinithyphendelim P\bibinitperiod},
+           given={Jesús},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{namea}{7}{}{%
+        {{hash=b815c67d32eb9aac829f9b1fbf4f1bb8}{%
+           family={Grundmann},
+           familyi={G\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c5e6e06ea26c2f97869ec063ca77210c}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4cf42687809919e5d88fe1a71122f342}{%
+           family={Kranert},
+           familyi={K\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bfd05808d3073f7c59edfb368fbe9e52}{%
+           family={Richter},
+           familyi={R\bibinitperiod},
+           given={Steffen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=879d6ea17c4480fcc778d5bb4ece1dcd}{%
+           family={Schmidt-Grund},
+           familyi={S\bibinithyphendelim G\bibinitperiod},
+           given={Rüdiger},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7bbc12c01fea1cf3a09f4a0e6af1eaeb}{%
+           family={Deparis},
+           familyi={D\bibinitperiod},
+           given={Christianne},
+           giveni={C\bibinitperiod}}}%
+        {{hash=efb543f5cb5867e9120f383368862b1c}{%
+           family={Zúñiga-Pérez},
+           familyi={Z\bibinithyphendelim P\bibinitperiod},
+           given={Jesús},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{b83a5eacad4e3a568c39148e3bd57bc0}
+      \strng{fullhash}{c35ffa1f890946dcc110d6c446e5f105}
+      \strng{fullhashraw}{c35ffa1f890946dcc110d6c446e5f105}
+      \strng{bibnamehash}{28bba93fa723476afd484e0037c3eb7b}
+      \strng{authorbibnamehash}{28bba93fa723476afd484e0037c3eb7b}
+      \strng{authornamehash}{b83a5eacad4e3a568c39148e3bd57bc0}
+      \strng{authorfullhash}{c35ffa1f890946dcc110d6c446e5f105}
+      \strng{authorfullhashraw}{c35ffa1f890946dcc110d6c446e5f105}
+      \strng{nameabibnamehash}{28bba93fa723476afd484e0037c3eb7b}
+      \strng{nameanamehash}{b83a5eacad4e3a568c39148e3bd57bc0}
+      \strng{nameafullhash}{c35ffa1f890946dcc110d6c446e5f105}
+      \strng{nameafullhashraw}{c35ffa1f890946dcc110d6c446e5f105}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{18626254}
+      \field{journaltitle}{physica status solidi (RRL) - Rapid Research Letters}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Phys. Status Solidi RRL}
+      \field{shorttitle}{Optically Anisotropic Media}
+      \field{title}{Optically Anisotropic Media: {{New}} Approaches to the Dielectric Function, Singular Axes, Microcavity Modes and {{Raman}} Scattering Intensities}
+      \field{urlday}{19}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{11}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1600295}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1002/pssr.201600295
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\L2FK2AJ8\2017_-_optically_anisotropic_media_new_approaches_to_the_dielectric_function,_singular_axes,_microcavity_m_-_phys._status_solidi_rrl_-_Grundmann,_Sturm,_Kranert_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/pssr.201600295
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/pssr.201600295
+      \endverb
+      \keyw{grundmannOpticallyAnisotropicMedia2017}
     \endentry
   \enddatalist
 \endrefsection
