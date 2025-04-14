@@ -308,9 +308,10 @@
 		类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
 		字体 font & 直体 upright & 物理常量、离散变量（如$\symup{\iota}$分量）、文字（说明） & $\upmu_0$ 中的 $\upmu$ 和 $0$ & \blabel{hook:upright} \\
 		& 斜体 \textit{oblique} & 连续变量（自变量或因变量）、场量、函数 & $\bar{E}$ 中的 $E$ & \blabel{hook:oblique} \\ \midrule
-		细分 font & 黑板粗体 $\mathbb{mathbb}$ & 数学常量 $\mathbb{e},\mathbb{i}$、数学集合 $\mathbb{R},\mathbb{C}$、数学微分符号 $\mathbb{d}$ & $\mathbb{e},\mathbb{i};\mathbb{d};\mathbb{R},\mathbb{C}$ & \blabel{hook:mathbb} \\ 
-		& 打字机体 $\mathtt{mathtt}$ & 另一个（相关的）物理量，如非相位部分 $\to$ 复振幅 & $\Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\!\mathcolor{gray}{\omega} \textcolor{Maroon}{\jmath}}_{\;\! \mathcolor{gray}{z}}$ & \blabel{hook:mathtt} \\ \midrule
-%		& 无衬线体 $\mathsfit{mathsfit}$ & 另一个（相关的）物理量，如非相位部分 $\to$ 偏振态 & $\Xint{{}^{}_{\mathcolor{gray}{-}}}{08}{\bar{\mathsfit{g}}}^{\;\!\mathcolor{gray}{\omega} \textcolor{Maroon}{\jmath}}$ & \blabel{hook:mathsfit} \\ \midrule
+		细分 unique & 黑板粗体 $\mathbb{mathbb}$ & 数学常量 $\mathbb{e},\mathbb{i}$、数学集合 $\mathbb{R},\mathbb{C}$、数学微分符号 $\mathbb{d}$ & $\mathbb{e},\mathbb{i};\mathbb{d};\mathbb{R},\mathbb{C}$ & \blabel{hook:mathbb} \\ 
+		& 打字机体 $\mathtt{mathtt}$ & 另一个（相关）物理量，如非相位部分 $\to$ 复振幅 & $\Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\!\mathcolor{gray}{\omega} \textcolor{Maroon}{\jmath}}_{\;\! \mathcolor{gray}{z}}$ & \blabel{hook:mathtt} \\
+		& 无衬线体 $\mathsf{mathsf}$ & 另一个（相关）物理量，或（转置）算符 & $\overline{\Xint{\mathcolor{gray}{-}}{25}{\bar{\mathsfit{v}}}^{\;\! \mathcolor{gray}{\omega} \textcolor{ForestGreen}{\imath}}_{\textcolor{ForestGreen}{(1)} \textcolor{Peach}{\jmath}}}^\mathsf{T}$ 中的 $\mathsfit{v}$ 和 $\mathsf{T}$ & \blabel{hook:mathsf} \\
+		& 哥特字体 $\mathfrak{mathfrak}$ & 另一个（相关）物理量，如非相位部分 $\to$ 偏振态 & $\Xint{{}^{}_{\mathcolor{gray}{-}}}{08}{\bar{\mathsfit{g}}}^{\;\!\mathcolor{gray}{\omega} \textcolor{Maroon}{\jmath}}$ & \blabel{hook:mathfrak} \\ \midrule
 		粗细 width & 细体 thin\hphantom{k} & 大部分常量与变量 & $\bar{\bar{\chi}},\bar{\bar{\varepsilon}}$ & \blabel{hook:thin} \\
 		& \textbf{粗体 bold} & 另一个（相关的）物理量，以缓解符号耗尽 & & \blabel{hook:bold} \\
 		\bottomrule[2pt]
@@ -331,8 +332,8 @@
 		划线 line & 0 条上短线 \hphantom{$\bar{~}$} & \hphantom{列向量 =} 标量 = 0 阶张量 & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\rho$ & \blabel{hook:0bar} \\
 		& 1 条上短线 $\bar{~}$ & 列向量 = 矢量 = 1 阶张量 & $\bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\bar{J}$ & \blabel{hook:1bar} \\
 		上线 up & 2 条上短线 $\bar{\bar{~}}$ & \hphantom{列向量 =} 张量：2 阶张量 & $\bar{\bar{\varepsilon}}$, $\bar{\bar{Q}}$ & \blabel{hook:2bar} \\
-		& 3 条上短线 $\bar{\bar{\bar{~}}}$ & \hphantom{列向量 =} 张量：3 阶张量 & $\bar{\bar{\bar{\chi}}}$, $\bar{\bar{\bar{O}}}$ & \blabel{hook:3bar} \\
-		& 1 个上波浪 $\tilde{~}$ & “泛函/变分式”对变量的微扰 & $\tilde{\varepsilon}^{\;\! \mathcolor{gray}{t} \hat{1}}_{\;\! \symup{\iota} \mathcolor{gray}{z} \textcolor{Maroon}{(1)}}, \tilde{\zeta}^{\;\! \mathcolor{gray}{t} \hat{1} \mathcolor{gray}{\check{1} \check{2}}}_{\;\! \symup{\iota} \mathcolor{gray}{z} \textcolor{Maroon}{(1)}}$ & \blabel{hook:tilde} \\ 
+		& 3 条上短线 $\bar{\bar{\bar{~}}}$ & \hphantom{列向量 =} 张量：3 阶张量 & $\bar{\bar{\bar{\chi}}}$, $\bar{\bar{\bar{O}}}$ & \blabel{hook:3bar} \\ \midrule
+		上短 other & 1 个上波浪 $\tilde{~}$ & “泛函/变分式”对变量的微扰 & $\tilde{\varepsilon}^{\;\! \mathcolor{gray}{t} \hat{1}}_{\;\! \symup{\iota} \mathcolor{gray}{z} \textcolor{Maroon}{(1)}}, \tilde{\zeta}^{\;\! \mathcolor{gray}{t} \hat{1} \mathcolor{gray}{\check{1} \check{2}}}_{\;\! \symup{\iota} \mathcolor{gray}{z} \textcolor{Maroon}{(1)}}$ & \blabel{hook:tilde} \\ 
 		& 1 个上尖帽 $\hat{~}$ & 将对象提升为（不同于 $\check{~},\dot{~},\breve{~}$ 的）变量 or 归一化矢量 & $\hat{1}, \hat{e}$ & \blabel{hook:hat} \\ 
 		& 1 个上声调 $\breve{~}$ & 将对象提升为（不同于 $\hat{~},\check{~},\dot{~}$ 的）变量 & $\breve{1}, \breve{2}$ & \blabel{hook:breve} \\ 
 		& 1 个下尖帽 $\check{~}$ & 将对象提升为（不同于 $\hat{~},\dot{~},\breve{~}$ 的）变量 & $\check{1}, \check{\symup{\jmath}}, \check{\jmath}$ & \blabel{hook:check} \\ \midrule
@@ -357,8 +358,10 @@
 		\toprule[2pt]
 		类 Class & 对象 Object & 含义 Meaning & 实例 Instance & 来源 Origin \\ \midrule[1.2pt]
 		颜色 color & 黑色 black & 非自变量，包括因变量和（非函数=无自变量的）独立变量 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\bar{E}$ & \blabel{hook:black} \\
-		& {\color{gray} 灰色 gray} & （附属于某个因变量的）自变量，或与之相关的散度分量 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\mathcolor{gray}{t,z}$ & \blabel{hook:gray} \\
-		& {\color{Maroon} 褐红 Maroon} & 起补充说明作用的直体文字 & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}, \bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\textcolor{Maroon}{\text{f}}$ & \blabel{hook:Maroon} \\ \bottomrule[2pt]
+		& {\color{gray} 灰色 gray} & （附属某因变量的）自变量，或对应的散度分量 or 微分算子 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\mathcolor{gray}{t,z}$ & \blabel{hook:gray} \\ \midrule
+		彩色 other & \textcolor{Maroon}{褐红 Maroon} & 起补充说明作用的直体文字 & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}, \bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\textcolor{Maroon}{\text{f}}$ & \blabel{hook:Maroon} \\
+		& \textcolor{ForestGreen}{森林绿 ForestGreen} & （另一种）起补充说明作用的直体文字 or 变量 & $\Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{\bar{v}}^{\;\!\mathcolor{gray}{\omega}}_{\textcolor{ForestGreen}{\jmath}}$ 中的 $\textcolor{ForestGreen}{\jmath}$ & \blabel{hook:ForestGreen} \\
+		& \textcolor{Peach}{桃橘 Peach} & （另一种）起补充说明作用的直体文字 or 变量 & $\Xint{\mathcolor{gray}{-}}{25}{\bar{\mathsfit{v}}}^{\;\! \mathcolor{gray}{\omega} \textcolor{ForestGreen}{\imath}}_{\textcolor{ForestGreen}{(1)} \textcolor{Peach}{\jmath}}$ 中的 $\textcolor{Peach}{\jmath}$ & \blabel{hook:Peach} \\ \bottomrule[2pt]
 	\end{tabular}
 	}
 \end{table}
