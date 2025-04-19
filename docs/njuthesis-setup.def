@@ -30,7 +30,7 @@
     % 中文关键词列表
     % 使用英文半角逗号(,)分隔
     %
-    keywords* = {Multipole theory, Volterra series, Crystal optics, Singular optics, Wave optics, Fourier optics, Diffractive Optics, Electromagnetic field distribution, Nonlinear optics, Angular spectrum theory, Bianisotropic, Vector light field, Partial differential equation, Maxwell equations, Constitutive relations, Boundary conditions, Characteristic equation, Eigenanalysis, Analytic solution, Nonlinear photonic crystal, Nonlinear convolution, Kernel function, Fast algorithms, Computational physics, Potential scattering theory, RCWA, nonlinear convolution, },
+    keywords* = {Multipole theory, Volterra series, Crystal optics, Singular optics, Wave optics, Fourier optics, Diffractive optics, Electromagnetic field distribution, Nonlinear optics, Angular spectrum theory, Bianisotropic, Vector light field, Partial differential equation, Maxwell equations, Constitutive relations, Boundary conditions, Characteristic equation, Eigenanalysis, Analytic solution, Nonlinear photonic crystal, Nonlinear convolution, Kernel function, Fast algorithms, Computational physics, Potential scattering theory, RCWA, nonlinear convolution, },
     % 英文关键词
     % 使用英文半角逗号(,)分隔
     %
