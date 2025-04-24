@@ -3,6 +3,11 @@
   [2024/07/07 v1.0 Amsmath equations/floats back referencing]% float = figure or table
 
 \RequirePackage[dvipsnames]{xcolor}
+
+\ltx@ifpackageloaded{bicaption}{ %检测 bicaption 包是否已经加载，若加载了，则
+	\captionsetup[figure][bi-second]{name=Figure}
+	\captionsetup[table][bi-second]{name=Table}
+}{}
 %https://tex.stackexchange.com/questions/100905/best-practice-for-hyperref-link-colours
 %\newcommand\myshade{85}
 \edef\Aquamarine{Aquamarine!\myshade!black}% read only, so no \global need?
@@ -148,12 +153,21 @@
 }
 
 \newrobustcmd{\backcaption}[4][]{
-	\if\relax\expandafter\detokenize\expandafter{#1}\relax% 空则执行 前面的，否则执行 else 后的
-	\def\rugk@tmpcapt{\caption[#3]}% #3 is \Caption
-	\else% \backcref{} is not allowed in \ShortCaption [], however \cref{eq:0-1} is allowed —— this problem seems to have been fixed by \newrobustcmd
-	\def\rugk@tmpcapt{\caption[#1]}% #1 is \ShortCaption, 
-	\fi%
-	\marginwriteLeft[#2]{#4}\rugk@tmpcapt{#3}\hypcaplabel{#4}% #4 is \label
+	\ltx@ifpackageloaded{bicaption}{%
+		\if\relax\expandafter\detokenize\expandafter{#1}\relax% 空则执行 前面的，否则执行 else 后的
+		\def\rugk@tmpcapt{#3}% #3 is \Caption
+		\else% \backcref{} is not allowed in \ShortCaption [], however \cref{eq:0-1} is allowed —— this problem seems to have been fixed by \newrobustcmd
+		\def\rugk@tmpcapt{#1}% #1 is \ShortCaption, 
+		\fi%
+		\marginwriteLeft[#2]{#4}\bicaption{#3}\rugk@tmpcapt\hypcaplabel{#4}% #4 is \label
+	}{%
+		\if\relax\expandafter\detokenize\expandafter{#1}\relax% 空则执行 前面的，否则执行 else 后的
+		\def\rugk@tmpcapt{\caption[#3]}% #3 is \Caption
+		\else% \backcref{} is not allowed in \ShortCaption [], however \cref{eq:0-1} is allowed —— this problem seems to have been fixed by \newrobustcmd
+		\def\rugk@tmpcapt{\caption[#1]}% #1 is \ShortCaption, 
+		\fi%
+		\marginwriteLeft[#2]{#4}\rugk@tmpcapt{#3}\hypcaplabel{#4}% #4 is \label
+	}%
 }
 
 \newcommand\marginwriteLeft[2][0pt]{% 第 2 个[] = 第 1 个参数 #1=纵向偏移 的 默认值是 0pt
