@@ -85,11 +85,13 @@
 % \usepackage{listings} % 展示代码
 % \usepackage{algorithm,algorithmic} % 展示算法伪代码
 \usepackage{bicaption}
+%\usepackage{ccaption}
 %\setlength{\bicaptionsep}{0.5em}
 %\captionsetup[bi-first]{skip=2.0em}
 %\captionsetup[bi-second]{skip=2.0em}
 %\captionsetup{labelfont=bf,textfont=md}
 \captionsetup[figure]{textfont=md,}
+\DeclareCaptionLabelFormat{adja-page}{\hrulefill\\#1 #2 \emph{(previous page)}} %https://latex.org/forum/viewtopic.php?p=22785#p22785
 
 %%%%%%%%%%%%%%%%%%%%%%% my packages
 \usepackage{hyperref} % 只读的 njuthesis.cls 中，已经用 RequirePackage 定义了
@@ -273,7 +275,9 @@
 %   \include{chapters/environments}
 \include{./chapters/chapter1.tex}
 \include{./chapters/chapter2.tex}
-
+\include{./chapters/chapter3.tex}
+\include{./chapters/chapter4.tex}
+\include{./chapters/chapter5.tex}
 %---------------------------------------------------------------------
 %	参考文献
 %---------------------------------------------------------------------
@@ -371,8 +375,8 @@
 	长线 long & 1 条上长线 $\overline{~~}$ & 广义列向量，其中/下每个元素可能都是列向量 & $\overline{\Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{20}{\bar{\lambda}}^{\;\!\mathcolor{gray}{\omega}}_{\textcolor{Maroon}{\jmath}}}^{\mathsf{\textcolor{Plum}{T}}}$ & \blabel{hook:overline} \\
 	& 2 条上长线 $\overline{\overline{~~}}$ & 广义张量：如广义列向量解包并再排成的张量 & $\overline{\overline{\Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{20}{\lambda}^{\;\!\mathcolor{gray}{\omega}}_{\textcolor{Maroon}{\jmath}}}}$ & \blabel{hook:ooverline} \\ \midrule
 	中线 mid & 1 条中中线 \textcolor{gray}{--} & 自变量中含横向 2 维实空间频率 $\mathcolor{gray}{\bar{k}_{\symup{\rho}}}$ 的因变量 & $\Xint{\mathcolor{gray}{-}}{25}{D}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}, \Xint{\mathcolor{gray}{-}}{25}{E}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}, \Xint{{}^{}_{\mathcolor{gray}{-}}}{23}{\chi}$ & \blabel{hook:Xint} \\ \midrule
-	& 0 条下短线 \hphantom{$\underline{~}$} & $\in$ 实验（室）坐标系 = $\mathcal{Z}$ 系（下的物理量） & $\bar{g}$ & \blabel{hook:lab} \\
-	下线 down & 1 条下短线 $\underline{~}$ & $\in$ 晶体（学）坐标系 = $\mathcal{C}$ 系（下的物理量） & $\bar{\underline{g}}$ & \blabel{hook:crystal} \\ \midrule 
+	& 0 条下短线 \hphantom{$\underline{~}$} & $\in$ 实验（室）坐标系 = $\mathcal{Z}$ 系（下的物理量） & $\varepsilon^{\;\! \mathcolor{gray}{\omega} \textcolor{Maroon}{(1)}}_{\symup{zz}}$ & \blabel{hook:Z_frame} \\
+	下线 down & 1 条下短线 $\underline{~}$ & $\in$ 晶体（学）坐标系 = $\mathcal{C}$ 系（下的物理量） & $\underline{\varepsilon}^{\;\! \mathcolor{gray}{\omega} \textcolor{Maroon}{(1)}}_{\symup{zz}}$ & \blabel{hook:C_frame} \\ \midrule 
 %	& 1 条下长线 $\underline{~~}$ & 未定义；保留的关键修饰符 &  & \blabel{hook:ulong} \\ \midrule 
 	& 1 条下短波浪线 $\uwav{~}$ & $\in$ 另一个（地点、运动状态的）参考系 & $\mathcolor{gray}{\uwav{t}}, \mathcolor{gray}{\bar{\uwav{r}}}$ & \blabel{hook:uwav} \\ 
 	底标 other & 1 个下空圈 $\uo{~}$ & $\in$ （所考虑的）事件/对象 本身的参考系 & $\mathcolor{gray}{\uo{t}}$ & \blabel{hook:uo} \\ 

@@ -23,7 +23,7 @@
 \newlength{\Eqinsep}
 \setlength{\Eqinsep}{0.5em}
 \newlength{\writewidth}
-\setlength{\writewidth}{2.1cm}
+\setlength{\writewidth}{2.2cm}
 
 % -------------------- https://tex.stackexchange.com/questions/558992/how-to-backreference-floating-environments-like-listings-or-figures-to-where-the?rq=1
 % add <page> to the list of pages where <label> was referenced
@@ -152,12 +152,12 @@
 	\label{#1}%
 }
 
-\newrobustcmd{\backcaption}[4][]{
+\newrobustcmd{\biackcaption}[4][]{
 	\ltx@ifpackageloaded{bicaption}{%
 		\if\relax\expandafter\detokenize\expandafter{#1}\relax% 空则执行 前面的，否则执行 else 后的
-		\def\rugk@tmpcapt{#3}% #3 is \Caption
+		\def\rugk@tmpcapt{#3}% #3 is [\ChineseCaption]
 		\else% \backcref{} is not allowed in \ShortCaption [], however \cref{eq:0-1} is allowed —— this problem seems to have been fixed by \newrobustcmd
-		\def\rugk@tmpcapt{#1}% #1 is \ShortCaption, 
+		\def\rugk@tmpcapt{#1}% #1 is [\EnglishCaption], 
 		\fi%
 		\marginwriteLeft[#2]{#4}\bicaption{#3}\rugk@tmpcapt\hypcaplabel{#4}% #4 is \label
 	}{%
@@ -168,6 +168,15 @@
 		\fi%
 		\marginwriteLeft[#2]{#4}\rugk@tmpcapt{#3}\hypcaplabel{#4}% #4 is \label
 	}%
+}
+
+\newrobustcmd{\backcaption}[4][]{
+	\if\relax\expandafter\detokenize\expandafter{#1}\relax% 空则执行 前面的，否则执行 else 后的
+	\def\rugk@tmpcapt{\caption[#3]}% #3 is \Caption
+	\else% \backcref{} is not allowed in \ShortCaption [], however \cref{eq:0-1} is allowed —— this problem seems to have been fixed by \newrobustcmd
+	\def\rugk@tmpcapt{\caption[#1]}% #1 is \ShortCaption, 
+	\fi%
+	\marginwriteLeft[#2]{#4}\rugk@tmpcapt{#3}\hypcaplabel{#4}% #4 is \label
 }
 
 \newcommand\marginwriteLeft[2][0pt]{% 第 2 个[] = 第 1 个参数 #1=纵向偏移 的 默认值是 0pt
@@ -282,7 +291,7 @@
 		%		\transparentrightmarginnote{testestsets}%
 		\marginwriteformatEqRight[#1]{%
 %			\setstretch{0.95}%
-			\simplecolorparboxEqRight{white!0}{\writewidth}{#2}%
+			\simplecolorparboxEqRight{white!0}{2.1cm}{#2}%
 		}% 这个 % 非常重要，去掉会多个空格，而且会递增。
 	}% 这个 % 非常重要，去掉会多个空格，而且会递增。
 }% 这个 % 好像不重要
