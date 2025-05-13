@@ -1,16 +1,56 @@
 
 % based on 北理工博士毕业论文 的 chapter1 https://tex.nju.edu.cn/project/user/10d0ed00-6f46-42fa-8a3a-18270214cfa3/a0ed1339-764d-4cc7-9ac4-d5d05b33da53
 
+\chapter{前言}
+
+非线性光学，又名凝聚态光物理，属于凝聚态物理，因此继承了它的“众说纷纭”。由于量子多体系统各阶重整化导致的复杂涌现特性，每一个新的实现现象背后的机理可能没有单独的甚至确定的主导因素，即（可能）由多个因素级联/共同描述，以至于该领域自从诞生以来，就一沙一世界，群雄割据，体现在许多教科书的每一章，甚至都由不同的人撰写。这种局面既可以说是百花齐放，也可以说是比较“脏”。准确的用词我想应该是因多者异也，只能自下而上、推崇涌现论，从小模型到大模型，先入为主地：先知实验现象后建模去拟合。与物理学中的自上而下的、数学主导、推崇还原论，从大模型到小模型，先建模后去预测实验现象的领域，形成鲜明的对比。
+
+\section{拆开白盒：从还原论的视角解析非线性晶体光学}
+
+本博士毕业大论文，属于“脏脏”凝聚态光物理中的一股“清流”。即反大部分道而行之，从完全脱离实验现象的顶层设计开始，一砖一瓦地构建起一个统一的大数学模型，然后再将该大模型做物理层面的各种简化和近似，并应用于各具体的实验场景，以对比和预测实验现象，以检验模型的正确性。\textbf{它刺激就刺激在，至于最终符不符合实验现象，遵循天意。}最终由实验物理学家的 CCD 相机（掷骰子和投硬币般地）决定。构建整个大模型的数学砖块，甚至代码砖块中，任何一个小砖块的不正确，可能都会使得最终大模型，不符合实验现象。但好的理论工程师喜欢挑战人类的极限，敢于做一些串联起来成功概率无限接近于 0\% 的事。\textbf{幸运的是，随着观众阅读进度的延续，至本文的末尾，本模型会自证至越来越倾向于 100\% 正确。}以至于我相信本文将最终成为填补非线性光学的理论物理研究领域的空白的一段佳话。这也是我分享这段条完整逻辑叙事链的快乐所在：从 0\% 的无力回天，至 100\% 的风致天成，君不见黄河之水天上来，奔流到海不复回。蓦然回首，那人那事已在灯火阑珊处。
+
+\section{文字和符号的色彩的存在意义：符号即将用尽}
+
+严格来说，本文只是一场旅行、体验或者修行。即展示如何无限接近目标的同时，证明无法达到该目标。比如刚开始，本文的第一版发现数学字符和角标，甚至角标的位置，都不够用了\Footnote{许多粒子物理学家所熟悉的境况。}，于是加了第一种黑色以外的颜色。随着理论的纵深和横向发展，后来为数学字符加了共 4 种颜色。再后来，从数学字符的颜色，拓展到文字的 1 种颜色，和文字的 4 种颜色。于是形成了现在这个，从文字到数学符号，均五颜六色的版本。从这个意义上讲，这像自下而上的、无限修 bug 的程序员，虽然他声称他的作品内核理念出于自上而下的还原论，但实际上从形式上看，颜色架构没有从一开始就确定好，所以就理论的发展过程而言，还是属于自下而上、工蜂和青蛙式勤能补拙的涌现论。尽管理论的内核，从出发点上，确实是属于还原论的。
+
+从“可望而不可即”的另一个角度来看，描述电磁源受平面波微扰而动态分布的现代多极理论给出，{\one} 传统电磁场切向连续边界条件不再成立、{\two} 线性晶体光学一般是关于波矢的 6 次方程、{\three} 对例外点处的简并特征向量的通用批量计算包似乎在理论上就已经完全不可行，这将给所有从事以及想从事（甚至体块而非微纳）非线性晶体光学严格计算的理论研究者，当头一棒：连线性晶体光学都做不好，谈何非线性？
+
+这也是 Berry 的名言之“没有肤浅的学问，只有肤浅的人”所映射的现实（而不是具体的人） --- 即这个世界在任何尺度，对于任何对象，在任何层次，均是“一花一世界”的。但对于每一朵花，均只“可以肤浅地理解，但本质上是不可计算，即不可完全理解的”。那么其实做物理甚至非物理学的任何方向都行：因为反正没法（完全）理解 --- 无论是谁，也无论他/她的功夫如何，修炼和打磨到什么程度，最终结果永远将是求之不得，以至于含恨而终的（如果是以此为志向的/想当军官的好士兵）。受限于人类的躯壳和逻辑、计算、寿命的有限性。
+
+此既是爱因斯坦的“我们可以描述宇宙，但无法描述一片弯曲的树叶”，也是他的“这个世界最不可理解的地方是它是可理解的”，以及他的“大统一梦”和梦的破碎 --- 甚至任何方向的“小精尖梦”都只能原则上接近而无法实现。
+
+\section{图表、公式、章节、引文旁的反向链接？}
+
+{\one} 随机漫步的起点。
+
+{\two} VIP 自然浮现：引用数量越多，对象就越重要。
+
+{\three} 逻辑的灯塔：将文章织成一张网可以从任何地方阅读的网，使得几乎每一个对象的任何一个链接，都可以最终导向任何一个其他的被链接对象。
+
+
+
 \label{第一章开始}
 \chapter{绪论}
 
 \section{本论文研究的目的和意义}
 
-自从作为\textcolor{Plum}{超定系统}的 \textcolor{Maroon}{Maxwell-Lorentz-Heaviside} 方程组诞生以来，对其\textcolor{Plum}{微分}和\textcolor{Plum}{积分}形式的\textcolor{Plum}{解析}和\textcolor{Plum}{数值}探索一直是\textcolor{NavyBlue}{理论物理学者}追求的\textbf{圣杯}\cite{olyslagerElectromagneticsExoticMedia2002}。作为\textcolor{Plum}{最简单}的\textcolor{Maroon}{本构关系}与 \textcolor{Maroon}{Maxwell-Lorentz-Heaviside} 方程组的结合的产物之一，即使是\textcolor{Plum}{线性}\textcolor{PineGreen}{晶体光学}这片土地，也足够广袤和深刻，其\textcolor{Plum}{数学形式}上至\textcolor{Plum}{外代数}、\textcolor{Plum}{微分形式}以及\textcolor{NavyBlue}{广义相对论}\cite{yakovNonbirefringenceConditionsSpacetime2005,hehlSpacetimeMetricLocal2006,frankelGeometryPhysicsIntroduction2011,dahlNondissipativeElectromagneticMedium2013,ivezicManifestlyCovariantAharonovbohm2015,hehlAxionDilatonMetric2016,favaroRecentAdvancesClassical2012}，\textcolor{NavyBlue}{微观起源}下至\textcolor{NavyBlue}{相对论性量子电动力学}\cite{obukhovGeneralTreatmentQuantum2017,hehlRecentDevelopmentsPremetric2006,nelsonDerivingTransmissionReflection1995,eimerlQuantumElectrodynamicsOptical1988}。这吸引了一代又一代的扑火飞蛾，呕心沥血般燃尽它们的最后一滴生命。
+自从作为\textcolor{Plum}{超定系统}的 \textcolor{Maroon}{Maxwell-Lorentz-Heaviside} 方程组诞生以来，对其\textcolor{Plum}{微分}和\textcolor{Plum}{积分}形式的\textcolor{Plum}{解析}和\textcolor{Plum}{数值}探索一直是\textcolor{NavyBlue}{理论物理学者}追求的\textbf{圣杯}\cite{olyslagerElectromagneticsExoticMedia2002}。作为\textcolor{Plum}{最简单}的\textcolor{Maroon}{本构关系}与 \textcolor{Maroon}{Maxwell-Lorentz-Heaviside} 方程组的结合的产物之一，即使是\textcolor{Plum}{线性}\textcolor{PineGreen}{晶体光学}这片土地，也足够广袤和深刻，其\textcolor{Plum}{数学形式}上至\textcolor{Plum}{外代数}、\textcolor{Plum}{微分形式}以及\textcolor{NavyBlue}{广义相对论}\cite{yakovNonbirefringenceConditionsSpacetime2005,hehlSpacetimeMetricLocal2006,frankelGeometryPhysicsIntroduction2011,dahlNondissipativeElectromagneticMedium2013,ivezicManifestlyCovariantAharonovbohm2015,hehlAxionDilatonMetric2016,favaroRecentAdvancesClassical2012}，\textcolor{NavyBlue}{微观起源}下至\textcolor{NavyBlue}{量子力学}\cite{nelsonMechanismsDispersionCrystalline1989,nelsonDerivingTransmissionReflection1995,nelsonLagrangianTreatmentMagnetic1994,nelsonOpticallyActiveSurface2000}和\textcolor{NavyBlue}{量子电动力学}\cite{eimerlQuantumElectrodynamicsOptical1988}。这吸引了一代又一代的扑火飞蛾，呕心沥血般燃尽它们的最后一滴生命。
 
-作为比 \textcolor{Maroon}{Maxwell-Lorentz-Heaviside} 方程组更古老的存在们，光学 $\supsetneq$ \textcolor{Plum}{线性}光学 $\supsetneq$ \textcolor{Plum}{线性}\textcolor{PineGreen}{晶体光学}，它们中的每一个，在对其\textcolor{Plum}{数学}即\textcolor{NavyBlue}{物理本质}上的理解和诠释的现代化转型之路，没有一个不是异常曲折的。
+作为比 \textcolor{Maroon}{Maxwell-Lorentz-Heaviside} 方程组更古老的存在们，光学 $\supsetneq$ \textcolor{Plum}{线性}\textcolor{NavyBlue}{光学} $\supsetneq$ \textcolor{Plum}{线性}\textcolor{PineGreen}{晶体光学}，它们中的每一个，在对其\textcolor{Plum}{数学}即\textcolor{NavyBlue}{物理本质}上的理解和诠释的现代化转型之路，没有一个不是异常曲折的。
 
 %引无数英雄前仆后继竞相折腰。
+
+在 32 个\textcolor{Plum}{宏观晶体对称性}中， 21 个显示出\textcolor{Plum}{非中心对称性}，使得这些\textcolor{NavyBlue}{点群}内能够产生二次谐波。然而，在这 21 种\textcolor{NavyBlue}{晶类}中，有 18 种是\textcolor{NavyBlue}{双折射}或\textcolor{Plum}{各向异性}的，超过一半（11 种）表现出自然\textcolor{NavyBlue}{旋光}性，即表现出了固有的\textcolor{NavyBlue}{光学活性}或\textcolor{NavyBlue}{手性}\cite{ossikovskiConstitutiveRelationsOptically2021}。因此，由于\textcolor{Plum}{低对称性}材料中\textcolor{PineGreen}{线性光学}过程的复杂性，包括二次、高次谐波和其他\textcolor{gray}{混频}现象在内的\textcolor{Plum}{非线性}\textcolor{PineGreen}{晶体光学}经常遇到巨大的\textcolor{Plum}{计算挑战}\cite{robertsSimplifiedCharacterizationUniaxial1992,dmitrievEffectiveNonlinearityCoefficients1993,diesperovEffectiveNonlinearCoefficient1997}，即\textcolor{NavyBlue}{泵浦}/\textcolor{PineGreen}{基波}和由其驱动的\textcolor{gray}{新生成的频率} $\mathcolor{gray}{\omega}$ 在随后的\textcolor{PineGreen}{线性叠加}过程中必须经历独立的（\textcolor{Plum}{各向异性}）衍射（\bref{eq:plane_wave_basis_eq-left_L}），同时可能在晶体内承受\textcolor{NavyBlue}{吸收}或\textcolor{NavyBlue}{增益}\cite{shengNonlinearopticalCalculationsUsing1980,grundmannOpticallyAnisotropicMedia2017}。
+
+除了\textcolor{Plum}{均匀分布}的\textcolor{Plum}{复}张量 $\bar{\bar{\varepsilon}}^{\;\! \mathcolor{gray}{\omega}}_{\textcolor{Maroon}{(1)}}$ 本身的\textcolor{Plum}{各向异性}（\bref{eq:nonlinear(2)-wave_wkrho-simplify4}）之外，在最近的工程进展中，所制造出的微纳结构 --- 即受调制的\textcolor{Plum}{非均匀}一阶、二阶材料系数张量 $\bar{\bar{\chi}}^{\;\! \mathcolor{gray}{\omega}}_{ \textcolor{Maroon}{(1)}} \left( \bar{r} \right),\bar{\bar{\chi}}^{\;\! \mathcolor{gray}{2\omega}}_{ \textcolor{Maroon}{(1)}} \left( \bar{r} \right),\bar{\bar{\bar{\chi}}}^{\;\! \mathcolor{gray}{2\omega}}_{ \textcolor{Maroon}{(2)}} \left( \bar{r} \right)$ 等本身\cite{xuFemtosecondLaserWriting2022,weiExperimentalDemonstrationThreedimensional2018,xuThreedimensionalNonlinearPhotonic2018,keren-zurNewDimensionNonlinear2018}，同样需要立即和精确考虑由材料\textcolor{gray}{（亚）波长}尺度\textcolor{Plum}{不均匀性}（\bref{eq:nonlinear(2)-wave_wkrho-simplify4-2}）所引起的（潜在\textcolor{Plum}{各向异性}）散射和衍射效应\cite{chenQuasiphasematchingdivisionMultiplexingHolography2021b,chenLaserNanoprinting3D2023,sunFerroelectricTopologiesBaTiO32025,xuLargeFieldofviewNonlinear2024}，包括\textcolor{PineGreen}{基波}和新产生的\textcolor{gray}{频率组分}\cite{chenQuasiphasematchingdivisionMultiplexingHolography2021b,chenLaserNanoprinting3D2023}。因此，根据\textcolor{NavyBlue}{第一性原理}，\textcolor{Plum}{非线性}\textcolor{PineGreen}{晶体光学}是建立在\textcolor{Plum}{线性}\textcolor{PineGreen}{晶体光学}的基础上的。以至于，在深入研究\textcolor{Plum}{非线性}\textcolor{PineGreen}{晶体光学}之前，彻底掌握\textcolor{Plum}{线性}\textcolor{PineGreen}{晶体光学}是\textcolor{Maroon}{先决条件}。
+
+自上而下\Footnote{从宏观规律或数学形式出发，而不是从微观机制或实验现象出发。以避免陷入“现象学”和“归纳法”等，针对具体现象而特别构造的、适用范围有限/单一的、“为了解释而解释”的、工程导向和表面粉饰的、经不起反复推敲的、用完即焚的“一次性”黑盒子理论。}地重新审视这两个领域，
+
+从\textcolor{PineGreen}{双各向异性}材料中矢量\textcolor{Plum}{非线性}\textcolor{PineGreen}{晶体光学}的精确解 \bref{dd} 一直到以双二次特征方程（$\supsetneq$ Fresnel 波法方程）而闻名的 LCO，评估了每种方法的等效性、优点和局限性。
+
+可是我们发现 {\one} \textcolor{Maroon}{矩阵指数} $\mathbb{e}^{\mathbb{i} \Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{\bar{\bar{k}}}_{\textcolor{Maroon}{\symup{z}}}^{\;\! \mathcolor{gray}{\omega}} \mathcolor{gray}{z}}$, $\mathbb{e}^{-\mathbb{i} \bar{\bar{H}} \mathcolor{gray}{t} \big/ \hbar}$，作为\textcolor{PineGreen}{平面波}的最一般形式\cite{berremanOpticsStratifiedAnisotropic1972,stallingaBerreman4x4Matrix1999,molerNineteenDubiousWays2003,zarifiPlaneWaveReflection2014}（\bref{eq:matrix_exp}），以及彻底解析\textcolor{Plum}{大规模退化}\textcolor{PineGreen}{特征向量场}（\bref{eq:e^ikzz-non_diagonalization2}）的一种有前景的方法，代表了大多数\textcolor{Plum}{线性系统}，包括 \bref{eq:nonlinear(2)-wave_wkrho-simplify6-L4} 所统治的\textcolor{Plum}{线性}\textcolor{PineGreen}{晶体光学}的\textcolor{Plum}{通解}。然而，一个通用且高效的数值解，特别是在\textcolor{PineGreen}{异常点}即\textcolor{PineGreen}{光学奇点}\cite{berryOpticalSingularitiesBirefringent2003,berryOpticalSingularitiesBianisotropic2005} 阵列附近，仍然是难以捉摸的\cite{molerNineteenDubiousWays2003}。{\two} 随着时间或空间的延长，\textcolor{NavyBlue}{增益}甚至\textcolor{NavyBlue}{吸收}都会导致\textcolor{Maroon}{矩阵指数}\textcolor{Plum}{发散}，使\textcolor{Maroon}{矩阵指数}不适合处理大规模的\textcolor{Plum}{非厄米}系统\cite{stallingaBerreman4x4Matrix1999}。{\three} 如果\textcolor{Maroon}{矩阵指数}的\textcolor{NavyBlue}{指数}/\textcolor{NavyBlue}{相位部分}被缩减为仅包括\textcolor{PineGreen}{特征值}，并且\textcolor{PineGreen}{特征向量}被移出\textcolor{NavyBlue}{相位部分}以与\textcolor{Plum}{指数项}相乘（即 $\Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{\bar{v}}^{\;\!\mathcolor{gray}{\omega}}_{\textcolor{PineGreen}{\jmath}} \cdot \mathbb{e}^{\mathbb{i} \Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{22}{\lambda}^{\;\!\mathcolor{gray}{\omega}}_{\textcolor{PineGreen}{\jmath}} \mathcolor{gray}{z}}$ 或 $\overline{\Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{\bar{v}}^{\;\!\mathcolor{gray}{\omega}}_{\textcolor{PineGreen}{\jmath}}}^{{\mathsf{\textcolor{Plum}{T}}}} \cdot \overline{\overline{\mathbb{e}^{\mathbb{i} \Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{22}{\lambda}^{\;\!\mathcolor{gray}{\omega}}_{\textcolor{PineGreen}{\jmath}} \mathcolor{gray}{z}}}} \cdot \overline{\Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{\bar{v}}^{\;\!\mathcolor{gray}{\omega}}_{\textcolor{PineGreen}{\jmath}}}^{\textcolor{Plum}{-\mathsf{T}}}$）--- 如果不通过 \textcolor{PineGreen}{Jordan-Chevalley 分解}或其等效方法进行分解\cite{borzdovWavesLinearQuadratic1996,sturmElectromagneticWavesCrystals2024} --- 则\textcolor{PineGreen}{例外点（们）}不能再（被）展开，届时在该方向（们）的\textcolor{NavyBlue}{场传播和演化}的潜在\textcolor{NavyBlue}{动力学过程}，将变得\textcolor{Plum}{完全无法计算}。
+
+{\four} 作为\textcolor{PineGreen}{平面波}最广为人知的基本形式\cite{borzdovWavesLinearQuadratic1996}和波动方程的\textcolor{Plum}{最简单试探}\textcolor{PineGreen}{本征解}（\bref{eq:plane_wave_basis}），$\mathbb{e}^{\mathbb{i} \Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{\bar{k}}^{\;\! \mathcolor{gray}{\omega}}_{\textcolor{PineGreen}{\jmath}} \cdot \textcolor{gray}{\bar{r}}}$ 为重建任何分布在\textcolor{gray}{实空间} $\in \textcolor{gray}{\mathbb{R}}_{\textcolor{Plum}{3}}$ 中的\textcolor{Plum}{复}标量场 $\in \mathbb{C} (\textcolor{gray}{\mathbb{R}}_{\textcolor{Plum}{3}})$ 提供了一个易于访问的\textcolor{Plum}{正交完备}基础，并为\textcolor{gray}{倒空间} $\in \textcolor{gray}{\mathbb{R}}_{\textcolor{Plum}{2}}$ 中的\textcolor{PineGreen}{本征分析}提供了一个重要工具，于长达 \textcolor{Plum}{2 个世纪}的时间跨幅里，渗透和引领了对\textcolor{NavyBlue}{物理学}各个细分领域的硕果累累的高效探索\cite{borzdovWavesLinearQuadratic1996,olyslagerElectromagneticsExoticMedia2002,berryChapterConicalDiffraction2007}。
 
 
 屈原：天问。\cite{berryOpticalSingularitiesBirefringent2003,ossikovskiConstitutiveRelationsOptically2021}。

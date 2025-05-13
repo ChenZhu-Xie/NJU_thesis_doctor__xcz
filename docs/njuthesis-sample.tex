@@ -112,6 +112,7 @@
 \def\uddot{\underaccent{\"}} % 选这个 还是选 \undertilde{} ← 这个类似 underline
 %\renewcommand{\maketag@@@}[1]{\hbox{\m@th\normalsize\normalfont#1}}% 强制 eqtag 保持 \normalsize
 \makeatother
+%\usepackage{amssymb} % for \circlearrowright
 
 %\usepackage{tipa} % 补充 脚标 和 符号
 \def\Xint#1#2#3{%
@@ -346,7 +347,7 @@
 	& 无衬线体 $\mathsf{mathsf}$ & 另一个（相关）物理量，或（转置）算符 & $\overline{\Xint{\mathcolor{gray}{-}}{25}{\bar{\mathsfit{v}}}^{\;\! \mathcolor{gray}{\omega} \textcolor{PineGreen}{\imath}}_{\textcolor{PineGreen}{(1)} \textcolor{Plum}{\jmath}}}^{\mathsf{\textcolor{Plum}{T}}}$ 中的 $\mathsfit{v}$ 和 ${\mathsf{\textcolor{Plum}{T}}}$ & \blabel{hook:mathsf} \\ \midrule
 %	& 哥特字体 $\mathfrak{mathfrak}$ & 另一个（相关）物理量，如非相位部分 $\to$ 偏振态 & $\Xint{{}^{}_{\mathcolor{gray}{-}}}{08}{\bar{\mathsfit{g}}}^{\;\!\mathcolor{gray}{\omega} \textcolor{Maroon}{\jmath}}$ & \blabel{hook:mathfrak} \\ \midrule
 	粗细 width & 细体 thin\hphantom{k} & 大部分常量与变量 & $\bar{\bar{\chi}},\bar{\bar{\varepsilon}}$ & \blabel{hook:thin} \\
-	& \textbf{粗体 bold} & 另一个（相关的）物理量，以缓解符号耗尽 & & \blabel{hook:bold} \\
+	& \textbf{粗体 bold} & \textbf{强调} or 另一个（相关的）物理量，以缓解符号耗尽 & \textbf{待强调的部分} & \blabel{hook:bold} \\
 	\bottomrule[2pt]
 \end{tabular}
 }
@@ -398,7 +399,7 @@
 	& {\color{gray} 灰色 gray} & （附属某因变量的）\textcolor{gray}{自变量}，或对应的散度分量 or 微分算子 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\mathcolor{gray}{t,z}$ & \blabel{hook:gray} \\ \midrule
 	彩色 other & \textcolor{Maroon}{褐红 Maroon} & 起补充说明作用的直体文字（\textcolor{Maroon}{基础·通用概念}） & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}, \bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\textcolor{Maroon}{\text{f}}$ & \blabel{hook:Maroon} \\
 	& \textcolor{PineGreen}{松树绿 PineGreen} & （另一种）起补充说明作用的文字 or 变量（\textcolor{PineGreen}{进阶·晶体光学}） & $\Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{\bar{v}}^{\;\!\mathcolor{gray}{\omega}}_{\textcolor{PineGreen}{\jmath}}$ 中的 $\textcolor{PineGreen}{\jmath}$ & \blabel{hook:PineGreen} \\
-	& \textcolor{Plum}{李子紫 Plum} & （另一种）起补充说明作用的文字 or 变量（\textcolor{Plum}{进阶·数学名词}） & $\Xint{\mathcolor{gray}{-}}{25}{\bar{\mathsfit{v}}}^{\;\! \mathcolor{gray}{\omega} \textcolor{PineGreen}{\imath}}_{\textcolor{PineGreen}{(1)} \textcolor{Plum}{\jmath}}$ 中的 $\textcolor{Plum}{\jmath}$ & \blabel{hook:Plum} \\ 
+	& \textcolor{Plum}{李子紫 Plum} & （另一种）起补充说明作用的文字 or 变量（\textcolor{Plum}{进阶·数学名词}） & $\Xint{\mathcolor{gray}{-}}{25}{\bar{\mathsfit{v}}}^{\;\! \mathcolor{gray}{\omega} \textcolor{PineGreen}{\imath}}_{\textcolor{Maroon}{\mathbb{1}} \textcolor{Plum}{\jmath}}$ 中的 $\textcolor{Plum}{\jmath}$ & \blabel{hook:Plum} \\ 
 	& \textcolor{NavyBlue}{海军蓝 NavyBlue} & （另一种）起补充说明作用的直体文字（\textcolor{NavyBlue}{进阶·物理术语}） & \textcolor{NavyBlue}{圆二色性 CD} & \blabel{hook:NavyBlue} \\ \bottomrule[2pt]
 \end{tabular}
 }
