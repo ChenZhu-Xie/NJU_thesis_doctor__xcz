@@ -16316,6 +16316,896 @@
       \endverb
       \keyw{adornoMagneticPoleProduced2020}
     \endentry
+    \entry{jangMulticycleTerahertzPulse2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c0d3aecbc0553d60cc428aec04c6c6ae}{%
+           family={Jang},
+           familyi={J\bibinitperiod},
+           given={Dogeun},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d87abe209dc3a566bf32b55977ce2fa1}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Ki-Yong},
+           giveni={K\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=c0d3aecbc0553d60cc428aec04c6c6ae}{%
+           family={Jang},
+           familyi={J\bibinitperiod},
+           given={Dogeun},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d87abe209dc3a566bf32b55977ce2fa1}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Ki-Yong},
+           giveni={K\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{8ef9e8a0f1270c3d0dee3038adc18897}
+      \strng{fullhash}{e182ed75442f54e3b6e89fbad1532e2d}
+      \strng{fullhashraw}{e182ed75442f54e3b6e89fbad1532e2d}
+      \strng{bibnamehash}{e182ed75442f54e3b6e89fbad1532e2d}
+      \strng{authorbibnamehash}{e182ed75442f54e3b6e89fbad1532e2d}
+      \strng{authornamehash}{8ef9e8a0f1270c3d0dee3038adc18897}
+      \strng{authorfullhash}{e182ed75442f54e3b6e89fbad1532e2d}
+      \strng{authorfullhashraw}{e182ed75442f54e3b6e89fbad1532e2d}
+      \strng{nameabibnamehash}{e182ed75442f54e3b6e89fbad1532e2d}
+      \strng{nameanamehash}{8ef9e8a0f1270c3d0dee3038adc18897}
+      \strng{nameafullhash}{e182ed75442f54e3b6e89fbad1532e2d}
+      \strng{nameafullhashraw}{e182ed75442f54e3b6e89fbad1532e2d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Optics Express}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Multicycle Terahertz Pulse Generation by Optical Rectification in {{LiNbO3}}, {{LiTaO3}}, and {{BBO}} Crystals}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{16}
+      \range{pages}{1}
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\K3HYGFHD\2020_-_multicycle_terahertz_pulse_generation_by_optical_rectification_in_linbo3,_litao3,_and_bbo_crystals_-_Jang,_Kim_et_al.pdf
+      \endverb
+      \keyw{jangMulticycleTerahertzPulse2020}
+    \endentry
+    \entry{nyePhysicalPropertiesCrystals2012}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=14f5087d1deb912a7daa2ef071ae5e11}{%
+           family={Nye},
+           familyi={N\bibinitperiod},
+           given={John\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=14f5087d1deb912a7daa2ef071ae5e11}{%
+           family={Nye},
+           familyi={N\bibinitperiod},
+           given={John\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Clarendon Press}%
+      }
+      \strng{namehash}{14f5087d1deb912a7daa2ef071ae5e11}
+      \strng{fullhash}{14f5087d1deb912a7daa2ef071ae5e11}
+      \strng{fullhashraw}{14f5087d1deb912a7daa2ef071ae5e11}
+      \strng{bibnamehash}{14f5087d1deb912a7daa2ef071ae5e11}
+      \strng{authorbibnamehash}{14f5087d1deb912a7daa2ef071ae5e11}
+      \strng{authornamehash}{14f5087d1deb912a7daa2ef071ae5e11}
+      \strng{authorfullhash}{14f5087d1deb912a7daa2ef071ae5e11}
+      \strng{authorfullhashraw}{14f5087d1deb912a7daa2ef071ae5e11}
+      \strng{nameabibnamehash}{14f5087d1deb912a7daa2ef071ae5e11}
+      \strng{nameanamehash}{14f5087d1deb912a7daa2ef071ae5e11}
+      \strng{nameafullhash}{14f5087d1deb912a7daa2ef071ae5e11}
+      \strng{nameafullhashraw}{14f5087d1deb912a7daa2ef071ae5e11}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{Reprinted}
+      \field{isbn}{978-0-19-851165-6}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{pagetotal}{329}
+      \field{series}{Oxford Science Publications}
+      \field{shorttitle}{Physical Properties of Crystals}
+      \field{title}{Physical Properties of Crystals: Their Representation by Tensors and Matrices}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\HXCAIEHU\2012_-_physical_properties_of_crystals_their_representation_by_tensors_and_matrices_-_Nye_et_al.pdf
+      \endverb
+      \keyw{nyePhysicalPropertiesCrystals2012}
+    \endentry
+    \entry{zuOpticalSecondHarmonic2024}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=cef789b9bdf9886ba64d9347a977da94}{%
+           family={Zu},
+           familyi={Z\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2938deb5048323c6e1bfdd80975d5b28}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b64f95af4a026f60e672f0edd4a2b727}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Jingyang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d1112268374799d263ecae0217bb9d17}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Lincoln},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c78c7cf9b71dc7d6e387ecb21bd616bd}{%
+           family={Saha},
+           familyi={S\bibinitperiod},
+           given={Akash},
+           giveni={A\bibinitperiod}}}%
+        {{hash=34354d652ff2839355203c5afea956fd}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Long-Qing},
+           giveni={L\bibinithyphendelim Q\bibinitperiod}}}%
+        {{hash=c95fdf502929a10a2d11ca61de542eb1}{%
+           family={Gopalan},
+           familyi={G\bibinitperiod},
+           given={Venkatraman},
+           giveni={V\bibinitperiod}}}%
+      }
+      \name{namea}{7}{}{%
+        {{hash=cef789b9bdf9886ba64d9347a977da94}{%
+           family={Zu},
+           familyi={Z\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2938deb5048323c6e1bfdd80975d5b28}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b64f95af4a026f60e672f0edd4a2b727}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Jingyang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d1112268374799d263ecae0217bb9d17}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Lincoln},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c78c7cf9b71dc7d6e387ecb21bd616bd}{%
+           family={Saha},
+           familyi={S\bibinitperiod},
+           given={Akash},
+           giveni={A\bibinitperiod}}}%
+        {{hash=34354d652ff2839355203c5afea956fd}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Long-Qing},
+           giveni={L\bibinithyphendelim Q\bibinitperiod}}}%
+        {{hash=c95fdf502929a10a2d11ca61de542eb1}{%
+           family={Gopalan},
+           familyi={G\bibinitperiod},
+           given={Venkatraman},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{598c00498532a054ebb33a18742feee6}
+      \strng{fullhash}{a44cff285814c3913858990d85bb007f}
+      \strng{fullhashraw}{a44cff285814c3913858990d85bb007f}
+      \strng{bibnamehash}{1808af95e9ed7116dae57cdeec3dffb6}
+      \strng{authorbibnamehash}{1808af95e9ed7116dae57cdeec3dffb6}
+      \strng{authornamehash}{598c00498532a054ebb33a18742feee6}
+      \strng{authorfullhash}{a44cff285814c3913858990d85bb007f}
+      \strng{authorfullhashraw}{a44cff285814c3913858990d85bb007f}
+      \strng{nameabibnamehash}{1808af95e9ed7116dae57cdeec3dffb6}
+      \strng{nameanamehash}{598c00498532a054ebb33a18742feee6}
+      \strng{nameafullhash}{a44cff285814c3913858990d85bb007f}
+      \strng{nameafullhashraw}{a44cff285814c3913858990d85bb007f}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{29}
+      \field{issn}{2057-3960}
+      \field{journaltitle}{npj Computational Materials}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{3}
+      \field{number}{1}
+      \field{shortjournal}{npj Comput Mater}
+      \field{title}{Optical Second Harmonic Generation in Anisotropic Multilayers with Complete Multireflection of Linear and Nonlinear Waves Using {$\sharp$}{{SHAARP}}.Ml Package}
+      \field{urlday}{17}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{10}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{64}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41524-024-01229-2
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\UUIU24LH\2024_-_optical_second_harmonic_generation_in_anisotropic_multilayers_with_complete_multireflection_of_linea_-_npj_comput_mater_-_Zu,_Wang,_He_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41524-024-01229-2
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41524-024-01229-2
+      \endverb
+      \keyw{zuOpticalSecondHarmonic2024}
+    \endentry
+    \entry{zuAnalyticalNumericalModeling2022}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=cef789b9bdf9886ba64d9347a977da94}{%
+           family={Zu},
+           familyi={Z\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2938deb5048323c6e1bfdd80975d5b28}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b64f95af4a026f60e672f0edd4a2b727}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Jingyang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=da00946bf332c0f3e13ecd5d7c5e9279}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jian-Jun},
+           giveni={J\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=d1112268374799d263ecae0217bb9d17}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Lincoln},
+           giveni={L\bibinitperiod}}}%
+        {{hash=34354d652ff2839355203c5afea956fd}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Long-Qing},
+           giveni={L\bibinithyphendelim Q\bibinitperiod}}}%
+        {{hash=c95fdf502929a10a2d11ca61de542eb1}{%
+           family={Gopalan},
+           familyi={G\bibinitperiod},
+           given={Venkatraman},
+           giveni={V\bibinitperiod}}}%
+      }
+      \name{namea}{7}{}{%
+        {{hash=cef789b9bdf9886ba64d9347a977da94}{%
+           family={Zu},
+           familyi={Z\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2938deb5048323c6e1bfdd80975d5b28}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b64f95af4a026f60e672f0edd4a2b727}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Jingyang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=da00946bf332c0f3e13ecd5d7c5e9279}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jian-Jun},
+           giveni={J\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=d1112268374799d263ecae0217bb9d17}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Lincoln},
+           giveni={L\bibinitperiod}}}%
+        {{hash=34354d652ff2839355203c5afea956fd}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Long-Qing},
+           giveni={L\bibinithyphendelim Q\bibinitperiod}}}%
+        {{hash=c95fdf502929a10a2d11ca61de542eb1}{%
+           family={Gopalan},
+           familyi={G\bibinitperiod},
+           given={Venkatraman},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{598c00498532a054ebb33a18742feee6}
+      \strng{fullhash}{0f97bb0872035fc43942b8a38f49d01b}
+      \strng{fullhashraw}{0f97bb0872035fc43942b8a38f49d01b}
+      \strng{bibnamehash}{1808af95e9ed7116dae57cdeec3dffb6}
+      \strng{authorbibnamehash}{1808af95e9ed7116dae57cdeec3dffb6}
+      \strng{authornamehash}{598c00498532a054ebb33a18742feee6}
+      \strng{authorfullhash}{0f97bb0872035fc43942b8a38f49d01b}
+      \strng{authorfullhashraw}{0f97bb0872035fc43942b8a38f49d01b}
+      \strng{nameabibnamehash}{1808af95e9ed7116dae57cdeec3dffb6}
+      \strng{nameanamehash}{598c00498532a054ebb33a18742feee6}
+      \strng{nameafullhash}{0f97bb0872035fc43942b8a38f49d01b}
+      \strng{nameafullhashraw}{0f97bb0872035fc43942b8a38f49d01b}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{29}
+      \field{issn}{2057-3960}
+      \field{journaltitle}{npj Computational Materials}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{11}
+      \field{number}{1}
+      \field{shortjournal}{npj Comput Mater}
+      \field{title}{Analytical and Numerical Modeling of Optical Second Harmonic Generation in Anisotropic Crystals Using {$\sharp$}{{SHAARP}} Package}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{8}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{246}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10/grcsgg
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\YKY5JHFU\2022_-_analytical_and_numerical_modeling_of_optical_second_harmonic_generation_in_anisotropic_crystals_usin_-_npj_comput_mater_-_Zu,_Wang,_He_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41524-022-00930-4
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41524-022-00930-4
+      \endverb
+      \keyw{zuAnalyticalNumericalModeling2022}
+    \endentry
+    \entry{gananyQuasiphaseMatchingLiNbO32006}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=4165fa404da3f3e385a1cb6c8134185f}{%
+           family={Ganany},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bb147b50b7c2207de6eea3d65ee9e2d6}{%
+           family={Arie},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e6eca95ec4282351fef4199915694571}{%
+           family={Saltiel},
+           familyi={S\bibinitperiod},
+           given={S.M.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=4165fa404da3f3e385a1cb6c8134185f}{%
+           family={Ganany},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bb147b50b7c2207de6eea3d65ee9e2d6}{%
+           family={Arie},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e6eca95ec4282351fef4199915694571}{%
+           family={Saltiel},
+           familyi={S\bibinitperiod},
+           given={S.M.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{711223da31c0914f9e18d253ba4e53e3}
+      \strng{fullhash}{c8d2734cd48a3383190a2b0830e620d6}
+      \strng{fullhashraw}{c8d2734cd48a3383190a2b0830e620d6}
+      \strng{bibnamehash}{c8d2734cd48a3383190a2b0830e620d6}
+      \strng{authorbibnamehash}{c8d2734cd48a3383190a2b0830e620d6}
+      \strng{authornamehash}{711223da31c0914f9e18d253ba4e53e3}
+      \strng{authorfullhash}{c8d2734cd48a3383190a2b0830e620d6}
+      \strng{authorfullhashraw}{c8d2734cd48a3383190a2b0830e620d6}
+      \strng{nameabibnamehash}{c8d2734cd48a3383190a2b0830e620d6}
+      \strng{nameanamehash}{711223da31c0914f9e18d253ba4e53e3}
+      \strng{nameafullhash}{c8d2734cd48a3383190a2b0830e620d6}
+      \strng{nameafullhashraw}{c8d2734cd48a3383190a2b0830e620d6}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{1432-0649}
+      \field{journaltitle}{Applied Physics B}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{10}
+      \field{number}{1}
+      \field{shortjournal}{Appl. Phys. B}
+      \field{title}{Quasi-Phase Matching in {{LiNbO3}} Using Nonlinear Coefficients in the {{XY}} Plane}
+      \field{urlday}{13}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{85}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{97\bibrangedash 100}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1007/s00340-006-2382-z
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\GR98LFRT\2006_-_quasi-phase_matching_in_linbo3_using_nonlinear_coefficients_in_the_xy_plane_-_appl._phys._b_-_Ganany,_Arie,_Saltiel_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00340-006-2382-z
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00340-006-2382-z
+      \endverb
+      \keyw{gananyQuasiphaseMatchingLiNbO32006}
+    \endentry
+    \entry{segondsLinearNonlinearOptical2004}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=84fefd09ae3bd6072c7f2c9813b230a7}{%
+           family={Segonds},
+           familyi={S\bibinitperiod},
+           given={Patricia},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c6b55f7eccc6740f60d70aa30a0cc7d7}{%
+           family={Boulanger},
+           familyi={B\bibinitperiod},
+           given={Benoît},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a8c582200b684b32c74e69cee51ca465}{%
+           family={Fève},
+           familyi={F\bibinitperiod},
+           given={Jean-Philippe},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=33aa75894cf4bbe753e6b934e0c199b1}{%
+           family={Ménaert},
+           familyi={M\bibinitperiod},
+           given={Bertrand},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2842860de18c2e8e92821a7ebab8fdb4}{%
+           family={Zaccaro},
+           familyi={Z\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=01847140d4d56bba9c94776479b1078d}{%
+           family={Aka},
+           familyi={A\bibinitperiod},
+           given={Gérard},
+           giveni={G\bibinitperiod}}}%
+        {{hash=25cd1c59523386410c73e0e42b9f617b}{%
+           family={Pelenc},
+           familyi={P\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod}}}%
+      }
+      \name{namea}{7}{}{%
+        {{hash=84fefd09ae3bd6072c7f2c9813b230a7}{%
+           family={Segonds},
+           familyi={S\bibinitperiod},
+           given={Patricia},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c6b55f7eccc6740f60d70aa30a0cc7d7}{%
+           family={Boulanger},
+           familyi={B\bibinitperiod},
+           given={Benoît},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a8c582200b684b32c74e69cee51ca465}{%
+           family={Fève},
+           familyi={F\bibinitperiod},
+           given={Jean-Philippe},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=33aa75894cf4bbe753e6b934e0c199b1}{%
+           family={Ménaert},
+           familyi={M\bibinitperiod},
+           given={Bertrand},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2842860de18c2e8e92821a7ebab8fdb4}{%
+           family={Zaccaro},
+           familyi={Z\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=01847140d4d56bba9c94776479b1078d}{%
+           family={Aka},
+           familyi={A\bibinitperiod},
+           given={Gérard},
+           giveni={G\bibinitperiod}}}%
+        {{hash=25cd1c59523386410c73e0e42b9f617b}{%
+           family={Pelenc},
+           familyi={P\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{8d80ff0ea2aa364149aa84ad0367b85a}
+      \strng{fullhash}{19341f521c897a6778ed19e3313e9117}
+      \strng{fullhashraw}{19341f521c897a6778ed19e3313e9117}
+      \strng{bibnamehash}{b7c862d3c23a737220adada21b58f372}
+      \strng{authorbibnamehash}{b7c862d3c23a737220adada21b58f372}
+      \strng{authornamehash}{8d80ff0ea2aa364149aa84ad0367b85a}
+      \strng{authorfullhash}{19341f521c897a6778ed19e3313e9117}
+      \strng{authorfullhashraw}{19341f521c897a6778ed19e3313e9117}
+      \strng{nameabibnamehash}{b7c862d3c23a737220adada21b58f372}
+      \strng{nameanamehash}{8d80ff0ea2aa364149aa84ad0367b85a}
+      \strng{nameafullhash}{19341f521c897a6778ed19e3313e9117}
+      \strng{nameafullhashraw}{19341f521c897a6778ed19e3313e9117}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{0740-3224, 1520-8540}
+      \field{journaltitle}{Journal of the Optical Society of America B}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{4}
+      \field{number}{4}
+      \field{shortjournal}{J. Opt. Soc. Am. B}
+      \field{title}{Linear and Nonlinear Optical Properties of the Monoclinic {{Ca}}\_{{4YO}}({{BO}}\_3)\_3 Crystal}
+      \field{urlday}{15}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{21}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{765}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1364/JOSAB.21.000765
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\KNCL8THC\2004_-_linear_and_nonlinear_optical_properties_of_the_monoclinic_ca_4yo(bo_3)_3_crystal_-_j._opt._soc._am._b_-_Segonds,_Boulanger,_Fève_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/abstract.cfm?URI=josab-21-4-765
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/abstract.cfm?URI=josab-21-4-765
+      \endverb
+      \keyw{segondsLinearNonlinearOptical2004}
+    \endentry
+    \entry{dolevLinearNonlinearOptical2009}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=8f0397ace8791e43b8864c46ea7b85a6}{%
+           family={Dolev},
+           familyi={D\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=e7e335c38419848b3f3cc5928b8c7204}{%
+           family={Ganany-Padowicz},
+           familyi={G\bibinithyphendelim P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=85dd6a03a438c31990dae4058a67f245}{%
+           family={Gayer},
+           familyi={G\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=bb147b50b7c2207de6eea3d65ee9e2d6}{%
+           family={Arie},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2de0197ad050da5d85c192158b66608a}{%
+           family={Mangin},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3bbbf296eb5f62cf5e16b675a47ff1eb}{%
+           family={Gadret},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \name{namea}{6}{}{%
+        {{hash=8f0397ace8791e43b8864c46ea7b85a6}{%
+           family={Dolev},
+           familyi={D\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=e7e335c38419848b3f3cc5928b8c7204}{%
+           family={Ganany-Padowicz},
+           familyi={G\bibinithyphendelim P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=85dd6a03a438c31990dae4058a67f245}{%
+           family={Gayer},
+           familyi={G\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=bb147b50b7c2207de6eea3d65ee9e2d6}{%
+           family={Arie},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2de0197ad050da5d85c192158b66608a}{%
+           family={Mangin},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3bbbf296eb5f62cf5e16b675a47ff1eb}{%
+           family={Gadret},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{b78b464908b8c70b38ade60a7152cc35}
+      \strng{fullhash}{8b4512bdc82d13f491cb2e265ed60dcf}
+      \strng{fullhashraw}{8b4512bdc82d13f491cb2e265ed60dcf}
+      \strng{bibnamehash}{879a7057e1931691c088082466d6fe74}
+      \strng{authorbibnamehash}{879a7057e1931691c088082466d6fe74}
+      \strng{authornamehash}{b78b464908b8c70b38ade60a7152cc35}
+      \strng{authorfullhash}{8b4512bdc82d13f491cb2e265ed60dcf}
+      \strng{authorfullhashraw}{8b4512bdc82d13f491cb2e265ed60dcf}
+      \strng{nameabibnamehash}{879a7057e1931691c088082466d6fe74}
+      \strng{nameanamehash}{b78b464908b8c70b38ade60a7152cc35}
+      \strng{nameafullhash}{8b4512bdc82d13f491cb2e265ed60dcf}
+      \strng{nameafullhashraw}{8b4512bdc82d13f491cb2e265ed60dcf}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0946-2171, 1432-0649}
+      \field{journaltitle}{Applied Physics B}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{8}
+      \field{number}{2--3}
+      \field{shortjournal}{Appl. Phys. B}
+      \field{shorttitle}{Linear and Nonlinear Optical Properties of {{MgO}}}
+      \field{title}{Linear and Nonlinear Optical Properties of {{MgO}}:{{LiTaO3}}}
+      \field{urlday}{30}
+      \field{urlmonth}{11}
+      \field{urlyear}{2022}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{96}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{423\bibrangedash 432}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10/fdjg3r
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\SF7F9S7G\2009_-_linear_and_nonlinear_optical_properties_of_mgolitao3_-_appl._phys._b_-_Dolev,_Ganany-Padowicz,_Gayer_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s00340-009-3502-3
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s00340-009-3502-3
+      \endverb
+      \keyw{dolevLinearNonlinearOptical2009}
+    \endentry
+    \entry{kaschkeCalculationNonlinearOptical1989}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=0e3aee588f201cd086d584da5b9267cb}{%
+           family={Kaschke},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=eed6206739474089fbacb8e0b3c4fc9f}{%
+           family={Koch},
+           familyi={K\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=0e3aee588f201cd086d584da5b9267cb}{%
+           family={Kaschke},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=eed6206739474089fbacb8e0b3c4fc9f}{%
+           family={Koch},
+           familyi={K\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{dd6539c8c2e694e0f899f7069b957a19}
+      \strng{fullhash}{a8d260b19bdc2495e7fbc3076c6d8874}
+      \strng{fullhashraw}{a8d260b19bdc2495e7fbc3076c6d8874}
+      \strng{bibnamehash}{a8d260b19bdc2495e7fbc3076c6d8874}
+      \strng{authorbibnamehash}{a8d260b19bdc2495e7fbc3076c6d8874}
+      \strng{authornamehash}{dd6539c8c2e694e0f899f7069b957a19}
+      \strng{authorfullhash}{a8d260b19bdc2495e7fbc3076c6d8874}
+      \strng{authorfullhashraw}{a8d260b19bdc2495e7fbc3076c6d8874}
+      \strng{nameabibnamehash}{a8d260b19bdc2495e7fbc3076c6d8874}
+      \strng{nameanamehash}{dd6539c8c2e694e0f899f7069b957a19}
+      \strng{nameafullhash}{a8d260b19bdc2495e7fbc3076c6d8874}
+      \strng{nameafullhashraw}{a8d260b19bdc2495e7fbc3076c6d8874}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0721-7269, 1432-0649}
+      \field{journaltitle}{Applied Physics B Photophysics and Laser Chemistry}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{11}
+      \field{number}{5}
+      \field{shortjournal}{Appl. Phys. B}
+      \field{title}{Calculation of Nonlinear Optical Polarization and Phase Matching in Biaxial Crystals}
+      \field{urlday}{3}
+      \field{urlmonth}{11}
+      \field{urlyear}{2022}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{49}
+      \field{year}{1989}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{419\bibrangedash 423}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10/d38zdf
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\SR4RC8PH\1989_-_calculation_of_nonlinear_optical_polarization_and_phase_matching_in_biaxial_crystals_-_appl._phys._b_-_Kaschke,_Koch_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/BF00325343
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/BF00325343
+      \endverb
+      \keyw{kaschkeCalculationNonlinearOptical1989}
+    \endentry
+    \entry{itoGeneralizedStudyAngular1975}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=b144c3c8817cfbae0073cdf028ddeddf}{%
+           family={Ito},
+           familyi={I\bibinitperiod},
+           given={Hiromasa},
+           giveni={H\bibinitperiod}}}%
+        {{hash=64618f12918ab1a21cac1f34dda8a17b}{%
+           family={Naito},
+           familyi={N\bibinitperiod},
+           given={Hatsuhiko},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f1a8561735f44598607b7056872207db}{%
+           family={Inaba},
+           familyi={I\bibinitperiod},
+           given={Humio},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=b144c3c8817cfbae0073cdf028ddeddf}{%
+           family={Ito},
+           familyi={I\bibinitperiod},
+           given={Hiromasa},
+           giveni={H\bibinitperiod}}}%
+        {{hash=64618f12918ab1a21cac1f34dda8a17b}{%
+           family={Naito},
+           familyi={N\bibinitperiod},
+           given={Hatsuhiko},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f1a8561735f44598607b7056872207db}{%
+           family={Inaba},
+           familyi={I\bibinitperiod},
+           given={Humio},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{63c08af77ecd6db54b95a3cb80be4ba4}
+      \strng{fullhash}{6f20d3796933cfd639af3975db0a1cfe}
+      \strng{fullhashraw}{6f20d3796933cfd639af3975db0a1cfe}
+      \strng{bibnamehash}{6f20d3796933cfd639af3975db0a1cfe}
+      \strng{authorbibnamehash}{6f20d3796933cfd639af3975db0a1cfe}
+      \strng{authornamehash}{63c08af77ecd6db54b95a3cb80be4ba4}
+      \strng{authorfullhash}{6f20d3796933cfd639af3975db0a1cfe}
+      \strng{authorfullhashraw}{6f20d3796933cfd639af3975db0a1cfe}
+      \strng{nameabibnamehash}{6f20d3796933cfd639af3975db0a1cfe}
+      \strng{nameanamehash}{63c08af77ecd6db54b95a3cb80be4ba4}
+      \strng{nameafullhash}{6f20d3796933cfd639af3975db0a1cfe}
+      \strng{nameafullhashraw}{6f20d3796933cfd639af3975db0a1cfe}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0021-8979, 1089-7550}
+      \field{journaltitle}{Journal of Applied Physics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{9}
+      \field{number}{9}
+      \field{shortjournal}{Journal of Applied Physics}
+      \field{title}{Generalized Study on Angular Dependence of Induced Second-order Nonlinear Optical Polarizations and Phase Matching in Biaxial Crystals}
+      \field{urlday}{3}
+      \field{urlmonth}{11}
+      \field{urlyear}{2022}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{46}
+      \field{year}{1975}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{3992\bibrangedash 3998}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10/cnp6gf
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\6MXLRZRY\1975_-_generalized_study_on_angular_dependence_of_induced_second‐order_nonlinear_optical_polarizations_and_-_journal_of_applied_physics_-_Ito,_Naito,_Inaba_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://aip.scitation.org/doi/10.1063/1.322151
+      \endverb
+      \verb{url}
+      \verb http://aip.scitation.org/doi/10.1063/1.322151
+      \endverb
+      \keyw{itoGeneralizedStudyAngular1975}
+    \endentry
     \entry{dregerSecondharmonicGenerationNonlinear1990}{article}{}{}
       \name{author}{2}{}{%
         {{hash=fd7a1fec4fcabdc5e3dd385a4a82404a}{%
@@ -16475,6 +17365,416 @@
       \verb https://link.aps.org/doi/10.1103/PhysRevA.31.856
       \endverb
       \keyw{zubairyAnalyticApproachSecondharmonic1985}
+    \endentry
+    \entry{katoSecondharmonicGeneration20481986}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1eb837c3916e36d5a08b80476d357465}{%
+           family={Kato},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=1eb837c3916e36d5a08b80476d357465}{%
+           family={Kato},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{fullhash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{fullhashraw}{1eb837c3916e36d5a08b80476d357465}
+      \strng{bibnamehash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{authorbibnamehash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{authornamehash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{authorfullhash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{authorfullhashraw}{1eb837c3916e36d5a08b80476d357465}
+      \strng{nameabibnamehash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{nameanamehash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{nameafullhash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{nameafullhashraw}{1eb837c3916e36d5a08b80476d357465}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0018-9197}
+      \field{journaltitle}{IEEE Journal of Quantum Electronics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{7}
+      \field{number}{7}
+      \field{shortjournal}{IEEE J. Quantum Electron.}
+      \field{title}{Second-Harmonic Generation to 2048 {{Å}} in {{$B$-Ba}}\&lt;Inf\&gt;2\&lt;/Inf\&gt;{{O}}\&lt;Inf\&gt;4\&lt;/Inf\&gt;}
+      \field{urlday}{21}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{22}
+      \field{year}{1986}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1013\bibrangedash 1014}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10/cqdk5p
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\Z8ARG4PQ\1986_-_second-harmonic_generation_to_2048_å_in_β-ba&lt;inf&gt;2&lt;inf&gt;o&lt;inf&gt;4&lt;inf&gt;_-_ieee_j._quantum_electron._-_Kato_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/1073097/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/1073097/
+      \endverb
+      \keyw{katoSecondharmonicGeneration20481986}
+    \endentry
+    \entry{katoTemperaturetuned90Phasematching1994}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1eb837c3916e36d5a08b80476d357465}{%
+           family={Kato},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=1eb837c3916e36d5a08b80476d357465}{%
+           family={Kato},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{fullhash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{fullhashraw}{1eb837c3916e36d5a08b80476d357465}
+      \strng{bibnamehash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{authorbibnamehash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{authornamehash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{authorfullhash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{authorfullhashraw}{1eb837c3916e36d5a08b80476d357465}
+      \strng{nameabibnamehash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{nameanamehash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{nameafullhash}{1eb837c3916e36d5a08b80476d357465}
+      \strng{nameafullhashraw}{1eb837c3916e36d5a08b80476d357465}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00189197}
+      \field{journaltitle}{IEEE Journal of Quantum Electronics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{12}
+      \field{number}{12}
+      \field{shortjournal}{IEEE J. Quantum Electron.}
+      \field{title}{Temperature-Tuned 90{$^\circ$} Phase-Matching Properties of {{LiB}}/Sub 3/{{O}}/Sub 5/}
+      \field{urlday}{21}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{30}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2950\bibrangedash 2952}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10/fvvc7h
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\I9KZZPAN\1994_-_temperature-tuned_90°_phase-matching_properties_of_libsub_3osub_5_-_ieee_j._quantum_electron._-_Kato_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/362711/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/362711/
+      \endverb
+      \keyw{katoTemperaturetuned90Phasematching1994}
+    \endentry
+    \entry{brunerTemperaturedependentSellmeierEquation2003}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=a66be2598a65a4d0f4490141eb2d4681}{%
+           family={Bruner},
+           familyi={B\bibinitperiod},
+           given={Ariel},
+           giveni={A\bibinitperiod}}}%
+        {{hash=eee50507e30da1e03e15672d2afe7833}{%
+           family={Eger},
+           familyi={E\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=15fe5fe2b586cae9643ed43a31d55539}{%
+           family={Oron},
+           familyi={O\bibinitperiod},
+           given={Moshe\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=a24bd57cefb7ed3dc456a9d26eaa7064}{%
+           family={Blau},
+           familyi={B\bibinitperiod},
+           given={Pinhas},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a1eb0c1b13b2f28717c2534e7e318ae3}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Moti},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a18ec40dcbfe4741365cd4bcde364655}{%
+           family={Ruschin},
+           familyi={R\bibinitperiod},
+           given={Shlomo},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{namea}{6}{}{%
+        {{hash=a66be2598a65a4d0f4490141eb2d4681}{%
+           family={Bruner},
+           familyi={B\bibinitperiod},
+           given={Ariel},
+           giveni={A\bibinitperiod}}}%
+        {{hash=eee50507e30da1e03e15672d2afe7833}{%
+           family={Eger},
+           familyi={E\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=15fe5fe2b586cae9643ed43a31d55539}{%
+           family={Oron},
+           familyi={O\bibinitperiod},
+           given={Moshe\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=a24bd57cefb7ed3dc456a9d26eaa7064}{%
+           family={Blau},
+           familyi={B\bibinitperiod},
+           given={Pinhas},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a1eb0c1b13b2f28717c2534e7e318ae3}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Moti},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a18ec40dcbfe4741365cd4bcde364655}{%
+           family={Ruschin},
+           familyi={R\bibinitperiod},
+           given={Shlomo},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{8cf908463bdee3c653e72bd5efa1adc8}
+      \strng{fullhash}{5b6bf0b85b9a9c5ead0e5bde4ddbf074}
+      \strng{fullhashraw}{5b6bf0b85b9a9c5ead0e5bde4ddbf074}
+      \strng{bibnamehash}{a0fb4fd9026caf6bba9791e26807cc6b}
+      \strng{authorbibnamehash}{a0fb4fd9026caf6bba9791e26807cc6b}
+      \strng{authornamehash}{8cf908463bdee3c653e72bd5efa1adc8}
+      \strng{authorfullhash}{5b6bf0b85b9a9c5ead0e5bde4ddbf074}
+      \strng{authorfullhashraw}{5b6bf0b85b9a9c5ead0e5bde4ddbf074}
+      \strng{nameabibnamehash}{a0fb4fd9026caf6bba9791e26807cc6b}
+      \strng{nameanamehash}{8cf908463bdee3c653e72bd5efa1adc8}
+      \strng{nameafullhash}{5b6bf0b85b9a9c5ead0e5bde4ddbf074}
+      \strng{nameafullhashraw}{5b6bf0b85b9a9c5ead0e5bde4ddbf074}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{0146-9592, 1539-4794}
+      \field{journaltitle}{Optics Letters}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{2}
+      \field{number}{3}
+      \field{shortjournal}{Opt. Lett.}
+      \field{title}{Temperature-Dependent {{Sellmeier}} Equation for the Refractive Index of Stoichiometric Lithium Tantalate}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{28}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{194}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10/fh93sd
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\5G72F5FH\2003_-_temperature-dependent_sellmeier_equation_for_the_refractive_index_of_stoichiometric_lithium_tantalat_-_opt._lett._-_Bruner,_Eger,_Oron_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/abstract.cfm?URI=ol-28-3-194
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/abstract.cfm?URI=ol-28-3-194
+      \endverb
+      \keyw{brunerTemperaturedependentSellmeierEquation2003}
+    \endentry
+    \entry{jundtTemperaturedependentSellmeierEquation1997}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=ce8cd1f2c57dcfee206f0d046c8ab9df}{%
+           family={Jundt},
+           familyi={J\bibinitperiod},
+           given={Dieter\bibnamedelima H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=ce8cd1f2c57dcfee206f0d046c8ab9df}{%
+           family={Jundt},
+           familyi={J\bibinitperiod},
+           given={Dieter\bibnamedelima H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{ce8cd1f2c57dcfee206f0d046c8ab9df}
+      \strng{fullhash}{ce8cd1f2c57dcfee206f0d046c8ab9df}
+      \strng{fullhashraw}{ce8cd1f2c57dcfee206f0d046c8ab9df}
+      \strng{bibnamehash}{ce8cd1f2c57dcfee206f0d046c8ab9df}
+      \strng{authorbibnamehash}{ce8cd1f2c57dcfee206f0d046c8ab9df}
+      \strng{authornamehash}{ce8cd1f2c57dcfee206f0d046c8ab9df}
+      \strng{authorfullhash}{ce8cd1f2c57dcfee206f0d046c8ab9df}
+      \strng{authorfullhashraw}{ce8cd1f2c57dcfee206f0d046c8ab9df}
+      \strng{nameabibnamehash}{ce8cd1f2c57dcfee206f0d046c8ab9df}
+      \strng{nameanamehash}{ce8cd1f2c57dcfee206f0d046c8ab9df}
+      \strng{nameafullhash}{ce8cd1f2c57dcfee206f0d046c8ab9df}
+      \strng{nameafullhashraw}{ce8cd1f2c57dcfee206f0d046c8ab9df}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{issn}{0146-9592, 1539-4794}
+      \field{journaltitle}{Optics Letters}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{10}
+      \field{number}{20}
+      \field{shortjournal}{Opt. Lett.}
+      \field{title}{Temperature-Dependent {{Sellmeier}} Equation for the Index of Refraction, N\_e, in Congruent Lithium Niobate}
+      \field{urlday}{10}
+      \field{urlmonth}{9}
+      \field{urlyear}{2022}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{22}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1553}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10/cdmh4h
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\SK7DYX43\1997_-_temperature-dependent_sellmeier_equation_for_the_index_of_refraction,_n_e,_in_congruent_lithium_niob_-_opt._lett._-_Jundt_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/abstract.cfm?URI=ol-22-20-1553
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/abstract.cfm?URI=ol-22-20-1553
+      \endverb
+      \keyw{jundtTemperaturedependentSellmeierEquation1997}
+    \endentry
+    \entry{katoSellmeierThermoopticDispersion2002}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=4acb3c29682f9aea580fcbe7558d997e}{%
+           family={Kato},
+           familyi={K\bibinitperiod},
+           given={Kiyoshi},
+           giveni={K\bibinitperiod}}}%
+        {{hash=45ba3bd3b32a52009465e95fe4b1787b}{%
+           family={Takaoka},
+           familyi={T\bibinitperiod},
+           given={Eiko},
+           giveni={E\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=4acb3c29682f9aea580fcbe7558d997e}{%
+           family={Kato},
+           familyi={K\bibinitperiod},
+           given={Kiyoshi},
+           giveni={K\bibinitperiod}}}%
+        {{hash=45ba3bd3b32a52009465e95fe4b1787b}{%
+           family={Takaoka},
+           familyi={T\bibinitperiod},
+           given={Eiko},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{96128875f79d39f8d1e8f2005111f9ed}
+      \strng{fullhash}{7c216b523cdff5786bf921de772be25f}
+      \strng{fullhashraw}{7c216b523cdff5786bf921de772be25f}
+      \strng{bibnamehash}{7c216b523cdff5786bf921de772be25f}
+      \strng{authorbibnamehash}{7c216b523cdff5786bf921de772be25f}
+      \strng{authornamehash}{96128875f79d39f8d1e8f2005111f9ed}
+      \strng{authorfullhash}{7c216b523cdff5786bf921de772be25f}
+      \strng{authorfullhashraw}{7c216b523cdff5786bf921de772be25f}
+      \strng{nameabibnamehash}{7c216b523cdff5786bf921de772be25f}
+      \strng{nameanamehash}{96128875f79d39f8d1e8f2005111f9ed}
+      \strng{nameafullhash}{7c216b523cdff5786bf921de772be25f}
+      \strng{nameafullhashraw}{7c216b523cdff5786bf921de772be25f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{20}
+      \field{issn}{0003-6935, 1539-4522}
+      \field{journaltitle}{Applied Optics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{8}
+      \field{number}{24}
+      \field{shortjournal}{Appl. Opt.}
+      \field{title}{Sellmeier and Thermo-Optic Dispersion Formulas for {{KTP}}}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{41}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{5040}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10/b6qf5x
+      \endverb
+      \verb{file}
+      \verb E:\Application\Organizer\Zotero\Data\storage\AXWV55E3\2002_-_sellmeier_and_thermo-optic_dispersion_formulas_for_ktp_-_appl._opt._-_Kato,_Takaoka_et_al.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/abstract.cfm?URI=ao-41-24-5040
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/abstract.cfm?URI=ao-41-24-5040
+      \endverb
+      \keyw{katoSellmeierThermoopticDispersion2002}
     \endentry
   \enddatalist
 \endrefsection

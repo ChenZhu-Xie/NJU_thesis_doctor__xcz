@@ -3,6 +3,7 @@
   [2024/07/07 v1.0 Add section backlinks to TOC]% including sections/subsections in appendix
   
 \RequirePackage{hyperref}
+\newcommand{\middlemark}{}
 % -------------------- https://tex.stackexchange.com/questions/251904/hyperlinks-from-chapter-and-section-headings-back-to-the-table-of-contents
 % -------------------- https://tex.stackexchange.com/questions/419249/table-of-contents-only-for-the-appendix
 % -------------------- https://tex.stackexchange.com/questions/433368/hyperlinks-to-toc-from-chapter-in-appendix
@@ -11,7 +12,8 @@
 \def\appchapter{\@ifstar\starappchapter\myappchapter}
 \def\starappchapter{\hyperappchapter*}
 \newcommand{\myappchapter}[2][\@empty]% #1=optional (toc and top of page), #2=title
-{\ifx#1\@empty \hyperappchapter[#2]{\hyperlink{toc.appendix.\appthechapter}{#2}}
+{\renewcommand{\middlemark}{\appthechapter~~~~\hyperlink{toc.appendix.\appthechapter}{#2}}% 提供给 页脚 footer 以获取 节 sec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
+	\ifx#1\@empty \hyperappchapter[\protect\hyperlink{toc.appendix.\appthechapter}{#2}]{\hyperlink{toc.appendix.\appthechapter}{#2}}
 	\else \hyperappchapter[#1]{\hyperlink{toc.appendix.\appthechapter}{#2}}
 	\fi}
 
@@ -19,24 +21,26 @@
 \def\appsection{\@ifstar\starappsection\myappsection}
 \def\starappsection{\hyperappsection*}
 \newcommand{\myappsection}[2][\@empty]% #1=optional (toc and top of page), #2=title
-{\ifx#1\@empty \hyperappsection[#2]{\hyperlink{toc.appendix.\appthesection}{#2}}
-	\else \hyperappsection[#1]{\hyperlink{toc.appendix.\appthesection}{#2}}
+{\renewcommand{\middlemark}{\appthesection~~~~\hyperlink{toc.section.\appthesection}{#2}}% 提供给 页脚 footer 以获取 节 sec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
+	\ifx#1\@empty \hyperappsection[\protect\hyperlink{toc.section.\appthesection}{#2}]{\hyperlink{toc.section.\appthesection}{#2}}
+	\else \hyperappsection[#1]{\hyperlink{toc.section.\appthesection}{#2}}
 	\fi}
 
 \let\hyperappsubsection\subsection
 \def\appsubsection{\@ifstar\starappsubsection\myappsubsection}
 \def\starappsubsection{\hyperappsubsection*}
 \newcommand{\myappsubsection}[2][\@empty]% #1=optional (toc and top of page), #2=title
-{\ifx#1\@empty \hyperappsubsection[#2]{\hyperlink{toc.appendix.\appthesubsection}{#2}}
-	\else \hyperappsubsection[#1]{\hyperlink{toc.appendix.\appthesubsection}{#2}}
+{\renewcommand{\middlemark}{\appthesubsection~~~~\hyperlink{toc.subsection.\appthesubsection}{#2}}% 提供给 页脚 footer 以获取 小节 ssec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
+	\ifx#1\@empty \hyperappsubsection[\protect\hyperlink{toc.subsection.\appthesubsection}{#2}]{\hyperlink{toc.subsection.\appthesubsection}{#2}}
+	\else \hyperappsubsection[#1]{\hyperlink{toc.subsection.\appthesubsection}{#2}}
 	\fi}
 
 \let\hyperappsubsubsection\subsubsection
 \def\appsubsubsection{\@ifstar\starappsubsubsection\myappsubsubsection}
 \def\starappsubsubsection{\hyperappsubsubsection*}
 \newcommand{\myappsubsubsection}[2][\@empty]% #1=optional (toc and top of page), #2=title
-{\ifx#1\@empty \hyperappsubsubsection[#2]{\hyperlink{toc.appendix.\appthesubsubsection}{#2}}
-	\else \hyperappsubsubsection[#1]{\hyperlink{toc.appendix.\appthesubsubsection}{#2}}
+{\ifx#1\@empty \hyperappsubsubsection[\protect\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}]{\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}}
+	\else \hyperappsubsubsection[#1]{\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}}
 	\fi}
 	
 % ------------------------------------
@@ -45,7 +49,8 @@
 \def\chapter{\@ifstar\starchapter\mychapter}
 \def\starchapter{\hyperchapter*}
 \newcommand{\mychapter}[2][\@empty]% #1=optional (toc), #2=title
-{\ifx#1\@empty \hyperchapter[#2]{\hyperlink{toc.chapter.\thechapter}{#2}}
+{\renewcommand{\middlemark}{\thechapter~~~~\hyperlink{toc.chapter.\thechapter}{#2}}% 提供给 页脚 footer 以获取 节 sec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
+	\ifx#1\@empty \hyperchapter[\protect\hyperlink{toc.chapter.\thechapter}{#2}]{\hyperlink{toc.chapter.\thechapter}{#2}}
 	\else \hyperchapter[#1]{\hyperlink{toc.chapter.\thechapter}{#2}}
 	\fi}
 
@@ -53,7 +58,8 @@
 \def\section{\@ifstar\starsection\mysection}
 \def\starsection{\hypersection*}
 \newcommand{\mysection}[2][\@empty]% #1=optional (toc), #2=title
-{\ifx#1\@empty \hypersection[#2]{\hyperlink{toc.section.\thesection}{#2}}
+{\renewcommand{\middlemark}{\thesection~~~~\hyperlink{toc.section.\thesection}{#2}}% 提供给 页脚 footer 以获取 节 sec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
+	\ifx#1\@empty \hypersection[\protect\hyperlink{toc.section.\thesection}{#2}]{\hyperlink{toc.section.\thesection}{#2}}
 	\else \hypersection[#1]{\hyperlink{toc.section.\thesection}{#2}}
 	\fi}
 
@@ -61,7 +67,8 @@
 \def\subsection{\@ifstar\starsubsection\mysubsection}
 \def\starsubsection{\hypersubsection*}
 \newcommand{\mysubsection}[2][\@empty]% #1=optional (toc), #2=title
-{\ifx#1\@empty \hypersubsection[#2]{\hyperlink{toc.subsection.\thesubsection}{#2}}
+{\renewcommand{\middlemark}{\thesubsection~~~~\hyperlink{toc.subsection.\thesubsection}{#2}}% 提供给 页脚 footer 以获取 小节 ssec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
+	\ifx#1\@empty \hypersubsection[\protect\hyperlink{toc.subsection.\thesubsection}{#2}]{\hyperlink{toc.subsection.\thesubsection}{#2}}
 	\else \hypersubsection[#1]{\hyperlink{toc.subsection.\thesubsection}{#2}}
 	\fi}
 
@@ -69,7 +76,7 @@
 \def\subsubsection{\@ifstar\starsubsubsection\mysubsubsection}
 \def\starsubsubsection{\hypersubsubsection*}
 \newcommand{\mysubsubsection}[2][\@empty]% #1=optional (toc), #2=title
-{\ifx#1\@empty \hypersubsubsection[#2]{\hyperlink{toc.subsubsection.\thesubsubsection}{#2}}
+{\ifx#1\@empty \hypersubsubsection[\protect\hyperlink{toc.subsubsection.\thesubsubsection}{#2}]{\hyperlink{toc.subsubsection.\thesubsubsection}{#2}}
 	\else \hypersubsubsection[#1]{\hyperlink{toc.subsubsection.\thesubsubsection}{#2}}
 	\fi}	
 

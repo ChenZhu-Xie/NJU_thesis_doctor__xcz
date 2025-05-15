@@ -274,11 +274,18 @@
 % 然后在这里用 \include 导入，例如
 %   \include{chapters/introduction}
 %   \include{chapters/environments}
+\include{./chapters/chapter0.tex}
+\clearpage
 \include{./chapters/chapter1.tex}
+\clearpage
 \include{./chapters/chapter2.tex}
+\clearpage
 \include{./chapters/chapter3.tex}
+\clearpage
 \include{./chapters/chapter4.tex}
+\clearpage
 \include{./chapters/chapter5.tex}
+\clearpage
 %---------------------------------------------------------------------
 %	参考文献
 %---------------------------------------------------------------------
@@ -302,7 +309,9 @@
   一曲又一曲，一页又一页。叙事铺陈，后浪拍前浪地燃起苗头，定义覆盖定义地螺旋上升，低级抽象到高级抽象，高潮，收尾，戛然而止，回响云霄。像一首歌，更像一篇文。曲终文末至此，回想 citations 10,000，和 播放量 10 亿哪个更大？或重于泰山，或轻于鸿毛？难说，难说...
   
   然而，18 万字的文章却只有昙花一现，不论是从时间、空间、辐射范围、能够共鸣/共振的对象数量上。它既不可从任何位置品读，也需要一定的门槛才能破译无意间施予的加密信息。对于音乐，一千个人一千个哈姆雷特。对于本文，可能在当前教育和评价体系、欣赏和品味能力、创作和研究背景下，可能找不出一个哈姆雷特。托遗响于悲风！
-  \href{https://git.nju.edu.cn/nju-lug/lug-introduction}{LUG@NJU}。
+  
+  
+  感谢 \href{https://git.nju.edu.cn/nju-lug/lug-introduction}{LUG@NJU}。
 \end{acknowledgement}
 
 %---------------------------------------------------------------------
@@ -327,14 +336,14 @@
 \counterwithin{table}{section}% for custom .sty
 
 % 可以在这里插入补充材料
-\appchapter{正文中的符号/排版/样式约定}
+\marginLeft[-2.4em]{chap:format}\appchapter{正文中的符号/排版/样式约定}\label{chap:format}
 
 \vspace*{-1.0em}
 
-\appsection{各数学字体、上下标、装饰符、颜色的含义}
+\marginLeft[-2.4em]{sec:format}\appsection{各数学字体、上下标、装饰符、颜色的含义}\label{sec:format}
 
 \begin{table}[h!]
-\bicaption{The meaning of mathematical fonts in distinguishing variables.}{\label{tab:font} 数学字体 --- 用于区分变量与常量、不同类变量，的含义}
+\bicaption{\label{tab:font} 数学字体 --- 用于区分变量与常量、不同类变量，的含义}{The meaning of mathematical fonts in distinguishing variables.}
 %\bicaption
 \resizebox{1.0\linewidth}{!}{  % 宽度不超文本宽度
 \begin{tabular}{c|c|c|c|c}
@@ -356,7 +365,7 @@
 \XGap{-1em}
 
 \begin{table}[h!]
-\bicaption{The implications of lines as decorations applied to variables.}{\label{tab:line} 上/中/下 \& 长/短 划线 --- 作为变量的装饰，的含义}
+\bicaption{\label{tab:line} 上/中/下 \& 长/短 划线 --- 作为变量的装饰，的含义}{The implications of lines as decorations applied to variables.}
 \resizebox{1.0\linewidth}{!}{  % 宽度不超文本宽度
 \begin{tabular}{c|c|c|c|c}
 	\toprule[2pt]
@@ -390,7 +399,7 @@
 \XGap{-1em}
 
 \begin{table}[h!]
-\bicaption{The roles of colors for clarifying variable types and text.}{\label{tab:color} 颜色 --- 用于区分变量与文字、变量的类型，的含义}
+\bicaption{\label{tab:color} 颜色 --- 用于区分变量与文字、变量的类型，的含义}{The roles of colors for clarifying variable types and text.}
 \resizebox{1.0\linewidth}{!}{  % 宽度不超文本宽度
 \begin{tabular}{c|c|c|c|c}
 	\toprule[2pt]

@@ -63,7 +63,7 @@
     % 第二导师全称
     % 如果确实没有第二导师，不填写即可
     %
-    submit-date = {2025-05-20},
+    % submit-date = {2025-05-20},
     % 提交日期
     % 格式为 yyyy-mm-dd
     % 不填就是编译当天日期
@@ -164,15 +164,15 @@
     % path = {{./figure/}{./image/}},
     % 图片搜索路径
     %
-    nju-emblem = {nju-emblem},
-    nju-name = {nju-name},
+    % nju-emblem = {nju-emblem},
+    % nju-name = {nju-name},
     % 校徽和校名图片路径
     % 建议使用 PDF 格式的矢量图
     % 使用外置图片有助于减少编译时间
     % 空置时会自动使用 njuvisual 宏包绘制
     %
-    % nju-emblem = {nju-emblem-purple},
-    % nju-name = {nju-name-purple},
+    nju-emblem = {nju-emblem-purple},
+    nju-name = {nju-name-purple},
     % 替换为紫色版本
     % 这个选项只能填写一次
     % 切换时要注释掉上方的黑色版本
@@ -245,20 +245,29 @@
 
 % 页眉页脚内容设置
 \njusetup{
-  % header/content = {
-  %     {OR}{\thepage},{OL}{\rightmark},
-  %     {EL}{\thepage},{ER}{\leftmark}
-  % },
-  % 页眉设置，详见手册
-  % 奇数页页眉：左侧章名，右侧页码
-  % 偶数页页眉：左侧页码，右侧节名
-  %
-  % footer/content = {}
+	header/content = {
+		{OR}{\rightmark},{OL}{\thepage},
+		{EL}{\leftmark},{ER}{\thepage}
+	},
+	% 页眉设置，详见手册
+	% 奇数页页眉：左侧章名，右侧页码
+	% 偶数页页眉：左侧页码，右侧节名
+	%
+	footer/content = {
+		{OR}{\thepage},{OL}{\middlemark},
+		{EL}{\thepage},{ER}{\middlemark}
+	},
 }
 
 % 页眉页脚的字体样式
-% \njusetformat{header}{\small\kaishu}
-% \njusetformat{footer}{}
+\njusetformat{header}{\small\kaishu}
+\njusetformat{footer}{\small\kaishu}
+
+% 额外设置页脚横线
+% \makeatletter
+% \renewcommand{\footrulewidth}{0.4pt}
+% \renewcommand{\footrule}{\hrule height \footrulewidth \vskip 0pt}
+% \makeatother
 
 % 在盲审模式下隐藏学校信息
 % \njusetup{anonymous-mode/no-nju}
