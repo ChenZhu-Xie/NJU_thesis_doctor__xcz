@@ -21,26 +21,26 @@
 \def\appsection{\@ifstar\starappsection\myappsection}
 \def\starappsection{\hyperappsection*}
 \newcommand{\myappsection}[2][\@empty]% #1=optional (toc and top of page), #2=title
-{\renewcommand{\middlemark}{\appthesection~~~~\hyperlink{toc.appsection.\appthesection}{#2}}% 提供给 页脚 footer 以获取 节 sec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
-	\ifx#1\@empty \hyperappsection[\protect\hyperlink{toc.appsection.\appthesection}{#2}]{\hyperlink{toc.appsection.\appthesection}{#2}}
-	\else \hyperappsection[#1]{\hyperlink{toc.appsection.\appthesection}{#2}}
+{\renewcommand{\middlemark}{\appthesection~~~~\hyperlink{toc.section.\appthesection}{#2}}% 提供给 页脚 footer 以获取 节 sec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
+	\ifx#1\@empty \hyperappsection[\protect\hyperlink{toc.section.\appthesection}{#2}]{\hyperlink{toc.section.\appthesection}{#2}}
+	\else \hyperappsection[#1]{\hyperlink{toc.section.\appthesection}{#2}}
 	\fi}
 
 \let\hyperappsubsection\subsection
 \def\appsubsection{\@ifstar\starappsubsection\myappsubsection}
 \def\starappsubsection{\hyperappsubsection*}
 \newcommand{\myappsubsection}[2][\@empty]% #1=optional (toc and top of page), #2=title
-{\renewcommand{\middlemark}{\appthesubsection~~~~\hyperlink{toc.appsubsection.\appthesubsection}{#2}}% 提供给 页脚 footer 以获取 小节 ssec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
-	\ifx#1\@empty \hyperappsubsection[\protect\hyperlink{toc.appsubsection.\appthesubsection}{#2}]{\hyperlink{toc.appsubsection.\appthesubsection}{#2}}
-	\else \hyperappsubsection[#1]{\hyperlink{toc.appsubsection.\appthesubsection}{#2}}
+{\renewcommand{\middlemark}{\appthesubsection~~~~\hyperlink{toc.subsection.\appthesubsection}{#2}}% 提供给 页脚 footer 以获取 小节 ssec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
+	\ifx#1\@empty \hyperappsubsection[\protect\hyperlink{toc.subsection.\appthesubsection}{#2}]{\hyperlink{toc.subsection.\appthesubsection}{#2}}
+	\else \hyperappsubsection[#1]{\hyperlink{toc.subsection.\appthesubsection}{#2}}
 	\fi}
 
 \let\hyperappsubsubsection\subsubsection
 \def\appsubsubsection{\@ifstar\starappsubsubsection\myappsubsubsection}
 \def\starappsubsubsection{\hyperappsubsubsection*}
 \newcommand{\myappsubsubsection}[2][\@empty]% #1=optional (toc and top of page), #2=title
-{\ifx#1\@empty \hyperappsubsubsection[\protect\hyperlink{toc.appsubsubsection.\appthesubsubsection}{#2}]{\hyperlink{toc.appsubsubsection.\appthesubsubsection}{#2}}
-	\else \hyperappsubsubsection[#1]{\hyperlink{toc.appsubsubsection.\appthesubsubsection}{#2}}
+{\ifx#1\@empty \hyperappsubsubsection[\protect\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}]{\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}}
+	\else \hyperappsubsubsection[#1]{\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}}
 	\fi}
 	
 % ------------------------------------
