@@ -87,13 +87,13 @@
 			\dolistcsloop{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}%
 			\setcounter{totalbackrefpages}{\value{backrefpages}}%
 			\setcounter{backrefpages}{0}%
-			\small{\color{gray}Cited~@}~\textit{\arabic{totalbackrefpages}}~\ifnumgreater{\value{totalbackrefpages}}{1}% Mentioned~@
+			\begingroup\small{\color{gray}Cited~@}~\textit{\arabic{totalbackrefpages}}~\ifnumgreater{\value{totalbackrefpages}}{1}% Mentioned~@
 			{\color{gray}pp.}%
 			%		{p.}~%
 			{\color{gray}p.}\par\XGap{5.5pt}%
 			\global\def\tempage\empty% initialize \temp, each time set a margin note
 			\global\edef\colortemp{\Aquamarine}% initialize \colortemp 为数值 1, each time set a margin note
-			{\forlistcsloop{\printbibbackrefpage}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}}%
+			{\forlistcsloop{\printbibbackrefpage}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}}\endgroup%
 	}}
 
 	\newcommand*{\printbibbackrefpage}[1]{%

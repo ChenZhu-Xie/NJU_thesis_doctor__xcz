@@ -2,9 +2,16 @@
 \ProvidesPackage{textbackref}
   [2024/12/24 v1.0 Maintext inline backref formating]% add backlink to all \labels that are not in any env
 
+%-----------------------------------------------------------
 
 \def\blabel#1{%
-	\label{#1}\printlabelbackrefs{#1}%
+%	\label{#1}\printlabelbackrefs{#1}%
+%	\phantomsection\label{#1}\printlabelbackrefs{#1}%
+%	\hypertarget{#1}{}\label{#1}\printlabelbackrefs{#1}%
+%\phantomsection\vspace*{-\baselineskip}\label{#1}\printlabelbackrefs{#1}%
+%	\Hy@raisedlink{\phantomsection}\label{#1}\printlabelbackrefs{#1}%
+%\Hy@raisedlink{\hypertarget{#1}{}}\label{#1}\printlabelbackrefs{#1}%
+\smash{\raisebox{1.2\ht\strutbox}{\phantomsection}}\label{#1}\printlabelbackrefs{#1}% https://tex.stackexchange.com/a/17070/309711
 	}
 
 \newrobustcmd*{\printlabelbackrefs}[1]{%
@@ -16,13 +23,13 @@
 		\dolistcsloop{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}%
 		\setcounter{totalbackrefpages}{\value{backrefpages}}%
 		\setcounter{backrefpages}{0}%
-		\small{\color{gray}Refed~@}~\textit{\arabic{totalbackrefpages}}~\ifnumgreater{\value{totalbackrefpages}}{1}% Mentioned~@
+		\begingroup\small{\color{gray}Refed~@}~\textit{\arabic{totalbackrefpages}}~\ifnumgreater{\value{totalbackrefpages}}{1}% Mentioned~@
 		{\color{gray}pp.}%
 		%		{p.}~%
 		{\color{gray}p.}%
 		\global\def\tempage\empty% initialize \temp, each time set a margin note
 		\global\edef\colortemp{\Aquamarine}% initialize \colortemp 为数值 1, each time set a margin note
-		{\forlistcsloop{\printlabelbackrefpage}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}}\color{black}% 恢复原 black 色
+		{\forlistcsloop{\printlabelbackrefpage}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}}\endgroup% 恢复原 black 色
 }}
 
 \newcommand*{\printlabelbackrefpage}[1]{%
@@ -37,3 +44,18 @@
 	\ifnumless{\value{backrefpages}}{\value{totalbackrefpages}}
 	{, }
 	{]\vphantom{,}}}% add a \vphantom{,} to keep normal vertical height nuchanged whether multiple or single line
+	
+%-----------------------------------------------------------
+
+\def\bypertarget#1{%
+	\smash{\raisebox{1.2\ht\strutbox}{\hypertarget{#1}{}}}\printlabelbackrefs{#1}%
+}
+
+\RequirePackage{amseqfloatbackref}  % 需要用到 \@BRlabels
+
+\newcommand{\byperref}[2]{%
+	\hyperlink{#1}{#2}% \hyperref[#1]{#2} 只能跳转到 label 而非 \hypertarget 定义的 锚点
+	\@BRlabels{#1}%
+}%
+
+

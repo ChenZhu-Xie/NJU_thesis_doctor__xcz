@@ -100,13 +100,13 @@
 		\dolistcsloop{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}%
 		\setcounter{totalbackrefpages}{\value{backrefpages}}%
 		\setcounter{backrefpages}{0}%
-		\small{\color{gray}Quoted~@}~\textit{\arabic{totalbackrefpages}}~\ifnumgreater{\value{totalbackrefpages}}{1}% Mentioned~@
+		\begingroup\small{\color{gray}Quoted~@}~\textit{\arabic{totalbackrefpages}}~\ifnumgreater{\value{totalbackrefpages}}{1}% Mentioned~@
 		{\color{gray}pp.}%
 		%		{p.}~%
 		{\color{gray}p.}\par\XGap{5pt}%
 		\global\def\tempage\empty% initialize \temp, each time set a margin note
 		\global\edef\colortemp{\Aquamarine}% initialize \colortemp 为数值 1, each time set a margin note
-		{\forlistcsloop{\printbackrefpageLeft}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}}%
+		{\forlistcsloop{\printbackrefpageLeft}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}}\endgroup%
 }}
 
 \newcommand*{\printbackrefpageLeft}[1]{%
@@ -219,13 +219,13 @@
 		\dolistcsloop{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}%
 		\setcounter{totalbackrefpages}{\value{backrefpages}}%
 		\setcounter{backrefpages}{0}%
-		\small{\color{gray}Quoted~@}~\textit{\arabic{totalbackrefpages}}~\ifnumgreater{\value{totalbackrefpages}}{1}% Mentioned~@
+		\begingroup\small{\color{gray}Quoted~@}~\textit{\arabic{totalbackrefpages}}~\ifnumgreater{\value{totalbackrefpages}}{1}% Mentioned~@
 		{\color{gray}pp.}%
 		%		{p.}~%
 		{\color{gray}p.}\par\XGap{5pt}%
 		\global\def\tempage\empty% initialize \temp, each time set a margin note
 		\global\edef\colortemp{\Aquamarine}% initialize \colortemp 为数值 1, each time set a margin note
-		{\forlistcsloop{\printbrpageLeft}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}}%
+		{\forlistcsloop{\printbrpageLeft}{rugk@ref@backreflist@\expandafter\detokenize\expandafter{#1}}}\endgroup%
 }}
 
 \newcommand*{\printbrpageLeft}[1]{%
@@ -308,10 +308,10 @@
 	\setcounter{totalbackrefpages}{\value{backrefpages}}%
 	\setcounter{backrefpages}{0}%
 	\scriptsize\raggedright%
-	\small\textit{\arabic{totalbackrefpages}}\kern\Eqinsep% Mentioned~@
+	\begingroup\small\textit{\arabic{totalbackrefpages}}\kern\Eqinsep% Mentioned~@
 	\minipagewithvrule{#2}{\scriptsize\raggedright\printlabelbackrefsRight{#3}}%
 	{\color{gray} \vrule width 0.5pt height \dimexpr(\ht0+5pt)\relax depth \dimexpr(\dp0+4pt)\relax}\kern\Eqinsep%
-	\usebox0%
+	\usebox0\endgroup%
 }%
 
 \newcommand{\minipagewithvrule}[2]{%
