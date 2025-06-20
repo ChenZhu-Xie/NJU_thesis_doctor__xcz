@@ -1016,15 +1016,17 @@ $\bar{\mathcal{B}}^{\;\!\textcolor{Maroon}{(2)}\mathcolor{gray}{t}}_{\;\!  \math
 
 而本文对\textcolor{Maroon}{多极理论}的拓展方面，采用了 \bref{eq:Volterra-time} 中的左一形式的\textcolor{NavyBlue}{理论框架}，这借鉴了\textcolor{Plum}{非局域}\textcolor{Plum}{连续}介质\textcolor{NavyBlue}{力学}理论：有些高阶\textcolor{Plum}{连续}介质\textcolor{NavyBlue}{力学}理论会引入\textcolor{Maroon}{应变梯度}\cite{LiuYingHuaGaoJieLianXuJieZhiLiLun2024}，那么类似地在\textcolor{Plum}{非局域}\textcolor{Plum}{连续}介质\textcolor{NavyBlue}{电动力学}中，\textcolor{Plum}{多极}矩中可能会有\textcolor{Maroon}{材料系数的梯度}带来的高阶响应部分，而不仅仅是传统\textcolor{Maroon}{多极理论}所认为的，只有\textcolor{Maroon}{场的梯度}会贡献到\textcolor{Plum}{多极}响应中。因此本文的理论在超材料、超表面、超高频光栅的严格耦合波分析、纳米畴、带衬底的纳米点/线/面阵列等（涉及空域材料系数起伏的）领域的奇特效应的解释上，也许即将扮演不可或缺的角色。
 
-\vspace*{-0.5em}
+\vspace*{-2.0em}
 
 \marginLeft[-2.4em]{sec:waveq}\section{\textcolor{Maroon}{Wave equation} 波动方程：\textcolor{Maroon}{$f^{-1}(\text{场}) = g(\text{场})$}}\label{sec:waveq}
 
-\vspace*{-6.5em}
+由于 \bref{eq:D_trho2,eq:H_trho} 中已隐含了 \textcolor{Maroon}{\text{法拉第电磁感应定律}} 即一条旋度方程 \bref{eq:curl-EK}，那么只需要第二条旋度方程 \bref{eq:curl-H}，即可在 ${\mathbb{1}}_{\mathcolor{gray}{z}} ~\textcolor{Maroon}{\text{项}}$ 所对应的体区域内，求解 \textcolor{Maroon}{Maxwell-Lorentz-Heaviside} 方程组 与 \textcolor{Maroon}{本构关系} \bref{eq:D_trho2,eq:H_trho} 耦合在一起的整体\Footnote{因为两个散度方程是冗余的，通过源\textcolor{Plum}{连续}性 \bref{eq:Div-em-f} 可以证明。}。
+
+\vspace*{-5.0em}
 
 \marginLeft[-2.4em]{ssec:Exp-waveq}\subsection{非局域、非均匀、非线性电场 $\bar{E}$ 波动方程}\label{ssec:Exp-waveq}
 
-由于 \bref{eq:D_trho2,eq:H_trho} 中已隐含了 \textcolor{Maroon}{\text{法拉第电磁感应定律}} 即一条旋度方程 \bref{eq:curl-EK}，那么只需要第二条旋度方程 \bref{eq:curl-H}，即可在 ${\mathbb{1}}_{\mathcolor{gray}{z}} ~\textcolor{Maroon}{\text{项}}$ 所对应的体区域内，求解 \textcolor{Maroon}{Maxwell-Lorentz-Heaviside} 方程组 与 \textcolor{Maroon}{本构关系} \bref{eq:D_trho2,eq:H_trho} 耦合在一起的整体\Footnote{因为两个散度方程是冗余的，通过源\textcolor{Plum}{连续}性 \bref{eq:Div-em-f} 可以证明。}。如果将 \bref{eq:curl-H} 右侧的自由电流源体密度 $J^{\;\!\mathcolor{gray}{t}}_{\;\! \textcolor{Maroon}{\text{f}} \symup{\iota}\mathcolor{gray}{z}}$ 通过各阶电导率张量连接电场的\textcolor{Plum}{（非）线性}函数，合并至 $D^{\;\!\mathcolor{gray}{t}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}$ 的\textcolor{Plum}{非线性}级数展开 \bref{eq:D_trho2} 中，则在分别代入包含了 \bref{eq:D_trho2,eq:H_trho} 的 \bref{eq:D-01,eq:H-01} 之后，\bref{eq:curl-H} 即 $\epsilon^{\hphantom{\symup{\iota}\dot{1}}\dot{2}}_{\symup{\iota}\mathcolor{gray}{\dot{1}}} \mathcolor{gray}{\nabla^{\dot{1}}} H^{\;\!\mathcolor{gray}{t}}_{\;\! \dot{2}\mathcolor{gray}{z}} = \mathcolor{gray}{\nabla^t} D^{\;\!\mathcolor{gray}{t}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}$ 在 $\left( \mathcolor{gray}{t}, \mathcolor{gray}{\bar{\rho}} \right)$ 域上写作
+如果将 \bref{eq:curl-H} 右侧的自由电流源体密度 $J^{\;\!\mathcolor{gray}{t}}_{\;\! \textcolor{Maroon}{\text{f}} \symup{\iota}\mathcolor{gray}{z}}$ 通过各阶电导率张量连接电场的\textcolor{Plum}{（非）线性}函数，合并至 $D^{\;\!\mathcolor{gray}{t}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}$ 的\textcolor{Plum}{非线性}级数展开 \bref{eq:D_trho2} 中，则在分别代入包含了 \bref{eq:D_trho2,eq:H_trho} 的 \bref{eq:D-01,eq:H-01} 之后，\bref{eq:curl-H} 即 $\epsilon^{\hphantom{\symup{\iota}\dot{1}}\dot{2}}_{\symup{\iota}\mathcolor{gray}{\dot{1}}} \mathcolor{gray}{\nabla^{\dot{1}}} H^{\;\!\mathcolor{gray}{t}}_{\;\! \dot{2}\mathcolor{gray}{z}} = \mathcolor{gray}{\nabla^t} D^{\;\!\mathcolor{gray}{t}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}$ 在 $\left( \mathcolor{gray}{t}, \mathcolor{gray}{\bar{\rho}} \right)$ 域上写作
 \clearpage
 \vspace*{-4.5em}
 \begin{subequations}
@@ -1532,7 +1534,7 @@ $\bar{\mathcal{B}}^{\;\!\textcolor{Maroon}{(2)}\mathcolor{gray}{t}}_{\;\!  \math
 
 \clearpage
 
-\marginLeft[-2.4em]{sec:summary-chapter2}\section{\textcolor{Maroon}{Summary} 小结 \textcolor{Maroon}{of chapter 2}}\label{sec:summary-chapter2}
+\marginLeft[-2.4em]{sec:summary-chapter3}\section{\textcolor{Maroon}{Summary} 小结 \textcolor{Maroon}{of chapter 3}}\label{sec:summary-chapter3}
 
 为了给\textcolor{Plum}{线性}、\textcolor{Plum}{非线性}\textcolor{PineGreen}{晶体光学}的\textcolor{Plum}{分析发展}奠定坚实的（\textcolor{NavyBlue}{半}）\textcolor{NavyBlue}{经典}\textcolor{Plum}{数学}和\textcolor{NavyBlue}{物理}基础，本章先在 \bref{sec:maxwell} 引入了\textcolor{NavyBlue}{电动力学}框架内，\textcolor{NavyBlue}{物理上微观起源}\textcolor{Plum}{明确}、适合作为\textcolor{Maroon}{本构关系}参考的经典\textcolor{Maroon}{多极理论}（\bref{eq:Ob-Lm}）及其现代版本（\bref{eq:Ob-LM}），以概述\textcolor{NavyBlue}{源}（\bref{eq:e-b-01',eq:e-f-01'}）和\textcolor{NavyBlue}{场}（\bref{eq:EB-01}）的体-表\textcolor{Plum}{奇异}层次\textcolor{Plum}{多极}展开，以及它们的\textcolor{Maroon}{边界条件}（\bref{eq:E^(2-0)_0==,eq:B^(2-0)_0==,eq:1BC}）。
 

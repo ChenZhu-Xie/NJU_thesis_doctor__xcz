@@ -95,6 +95,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%% my packages
 \usepackage{hyperref} % 只读的 njuthesis.cls 中，已经用 RequirePackage 定义了
+%\let\oldchapter\chapter % 保存原命令
+%\renewcommand{\chapter}{\vphantom{\par}\noindent\oldchapter} % 为了 给每一章 添加无高度的 phantom 行，以允许被 \cref 的同时，不产生 额外的 空白页
 \usepackage{cases}
 \usepackage{xeCJKfntef}
 \usepackage{stmaryrd}
