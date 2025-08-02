@@ -16,7 +16,7 @@
 		"PKief.material-icon-theme",
 		"OrangeX4.hsnips",
 		]
-  	}
+  	},
 	"settings": {
 		// from https://github.com/shinyypig/latex-vscode-config?tab=readme-ov-file#%E4%BD%BF%E7%94%A8-hypersnips-for-math-%E6%8F%92%E4%BB%B6%E5%BF%AB%E9%80%9F%E8%BE%93%E5%85%A5%E5%85%AC%E5%BC%8F
 		// 鼠标悬停，预览公式时，支持 boldsymbol 宏
@@ -25,8 +25,8 @@
 		],
 		// 是否启用 IntelliSense，自动补全引用的包中的环境和命令
 		"latex-workshop.intellisense.package.enabled": true,
-		// 编译后的文件输出目录
-		"latex-workshop.latex.outDir": "./tmp",
+		// 编译后的文件输出目录:（有点小问题 https://blog.csdn.net/qq_44132224/article/details/144634755）
+		// "latex-workshop.latex.outDir": "./tmp",
 		// 默认编译引擎为上次使用的
 		"latex-workshop.latex.recipe.default": "lastUsed",
 		// 预览复杂公式，使用时需要通过 command palette (命令面板) 打开
@@ -36,9 +36,9 @@
 		// 不允许弹窗显示警告信息
 		"latex-workshop.message.warning.show": false,
 		// 预览 PDF 时，反转颜色
-		"latex-workshop.view.pdf.invert": 1,
+		// "latex-workshop.view.pdf.invert": 1,
 		// 预览 PDF 时，自动检测是否需要反转颜色
-		"latex-workshop.view.pdf.invertMode.enabled": "auto",
+		// "latex-workshop.view.pdf.invertMode.enabled": "auto",
 		// from Ali-loner的文章 - 知乎 https://zhuanlan.zhihu.com/p/166523064
 	    // 设置是否自动编译
 	    "latex-workshop.latex.autoBuild.run":"never",
@@ -49,7 +49,7 @@
 	    //编译出错时设置是否弹出气泡设置（重复）
 	    // "latex-workshop.message.error.show": false,
 	    // "latex-workshop.message.warning.show": false,
-			    //设置为onFaild 在构建失败后清除辅助文件
+		//设置为onFailed 在构建失败后清除辅助文件
 	    "latex-workshop.latex.autoClean.run": "onFailed",
 	    // 使用上次的recipe编译组合（重复）
 	    // "latex-workshop.latex.recipe.default": "lastUsed",
@@ -139,7 +139,7 @@
 				"tools": [
 					"pdflatexmk"
 				]
-			}
+			},
 	        { // from Ali-loner的文章 - 知乎 https://zhuanlan.zhihu.com/p/166523064
 	            "name": "XeLaTeX",
 	            "tools": [
@@ -231,7 +231,7 @@
 	    //     "%PDF%"
 	    // ]
 
-		"latex-workshop.latexindent.args": [ // https://github.com/shinyypig/latex-vscode-config?tab=readme-ov-file#%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE
+		"latex-workshop.formatting.latexindent.args": [ // https://github.com/shinyypig/latex-vscode-config?tab=readme-ov-file#%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE
 			"-g",
 			"./%OUTDIR%/indent.log",
 			"%TMPFILE%",
