@@ -26,7 +26,8 @@
 		// 是否启用 IntelliSense，自动补全引用的包中的环境和命令
 		"latex-workshop.intellisense.package.enabled": true,
 		// 编译后的文件输出目录:（有点小问题 https://blog.csdn.net/qq_44132224/article/details/144634755）
-		// "latex-workshop.latex.outDir": "./tmp",
+		"latex-workshop.latex.outDir": "./tmp",
+		// "latex-workshop.latex.outDir": "./out", // https://blog.csdn.net/qq_44132224/article/details/144634755
 		// 默认编译引擎为上次使用的
 		"latex-workshop.latex.recipe.default": "lastUsed",
 		// 预览复杂公式，使用时需要通过 command palette (命令面板) 打开
@@ -54,7 +55,8 @@
 	    // 使用上次的recipe编译组合（重复）
 	    // "latex-workshop.latex.recipe.default": "lastUsed",
 	    // 用于反向同步的内部查看器的键绑定。ctrl/cmd +点击(默认)或双击
-	    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+	    "latex-workshop.view.pdf.internal.synctex.keybinding": "ctrl-click",
+		"latex-workshop.bind.reverse.search.key": "ctrl-click",
 		// 忘了下面两个 from where
 		"latex-workshop.synctex.afterBuild.enabled": true,
 		"latex-workshop.view.pdf.viewer": "tab",
@@ -66,8 +68,8 @@
 					"-pdfxe",
 					"-interaction=nonstopmode",
 					"-file-line-error",
-					"-outdir=%OUTDIR%",
-					"%DOC%"
+					"--output-directory=%OUTDIR%", // https://blog.csdn.net/qq_44132224/article/details/144634755
+	                "%DOC%" // https://blog.csdn.net/qq_44132224/article/details/144634755
 				],
 				"command": "latexmk",
 				"env": {},
@@ -79,8 +81,8 @@
 					"-pdf",
 					"-interaction=nonstopmode",
 					"-file-line-error",
-					"-outdir=%OUTDIR%",
-					"%DOC%"
+					"--output-directory=%OUTDIR%", // https://blog.csdn.net/qq_44132224/article/details/144634755
+	                "%DOC%" // https://blog.csdn.net/qq_44132224/article/details/144634755
 				],
 				"command": "latexmk",
 				"env": {},
@@ -88,24 +90,26 @@
 			},
 	        { // from Ali-loner的文章 - 知乎 https://zhuanlan.zhihu.com/p/166523064
 	            "name": "xelatex",
-	            "command": "xelatex",
-	            "args": [
-	                "-synctex=1",
-	                "-interaction=nonstopmode",
-	                "-file-line-error",
-	                "%DOCFILE%"
-	            ]
-	        },
+				"command": "xelatex",
+				"args": [
+					"-synctex=1",
+					"-interaction=nonstopmode",
+					"-file-line-error",
+					"--output-directory=%OUTDIR%", // https://blog.csdn.net/qq_44132224/article/details/144634755
+					"%DOCFILE%" // https://blog.csdn.net/qq_44132224/article/details/144634755
+				]
+			},
 	        {
 	            "name": "pdflatex",
 	            "command": "pdflatex",
 	            "args": [
-	                "-synctex=1",
-	                "-interaction=nonstopmode",
-	                "-file-line-error",
-	                "%DOCFILE%"
-	            ]
-	        },
+					"-synctex=1",
+					"-interaction=nonstopmode",
+					"-file-line-error",
+					"--output-directory=%OUTDIR%", // https://blog.csdn.net/qq_44132224/article/details/144634755
+					"%DOCFILE%" // https://blog.csdn.net/qq_44132224/article/details/144634755
+				]
+			},
 	        {
 	            "name": "latexmk",
 	            "command": "latexmk",
@@ -114,15 +118,15 @@
 	                "-interaction=nonstopmode",
 	                "-file-line-error",
 	                "-pdf",
-	                "-outdir=%OUTDIR%",
-	                "%DOCFILE%"
+	                "--output-directory=%OUTDIR%", // https://blog.csdn.net/qq_44132224/article/details/144634755
+	                "%DOC%" // https://blog.csdn.net/qq_44132224/article/details/144634755
 	            ]
 	        },
 	        {
 	            "name": "bibtex",
 	            "command": "bibtex",
 	            "args": [
-	                "%DOCFILE%"
+	                "%OUTDIR%/%DOCFILE%" // https://blog.csdn.net/qq_44132224/article/details/144634755
 	            ]
 	        }
 	    ],
