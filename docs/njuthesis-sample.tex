@@ -1,3 +1,4 @@
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % njuthesis 示例模板 v1.4.3 2025-05-21
 % https://github.com/nju-lug/NJUThesis
@@ -140,9 +141,28 @@
 \usepackage{ulem} % 丰富下划线
 \usepackage{slashed} % \slashed
 \usepackage{leftindex} % \leftindex 左（上下）角标
-
 %\usepackage{bbding} % \CrossOpenShadow 這個十字架符號 https://cthsueh.blogspot.com/2017/01/latex-answer.html
 \usepackage{pifont} % \ding{62} 這個十字架符號 https://tex.stackexchange.com/a/128088/309711
+
+% https://tex.stackexchange.com/a/583976/309711
+\usepackage{xparse} % Required for \NewDocumentCommand
+\ExplSyntaxOn
+\NewDocumentCommand{\getenv}{om}
+  {
+    \sys_get_shell:nnN { kpsewhich ~ --var-value ~ #2 }
+      { \cctab_select:N \c_str_cctab } \l_tmpa_tl
+    \tl_trim_spaces:N \l_tmpa_tl
+    \IfNoValueTF { #1 }
+      { \tl_use:N \l_tmpa_tl }
+      { \tl_set_eq:NN #1 \l_tmpa_tl }
+  }
+\ExplSyntaxOff
+\getenv[\Desktop]{Desktop}
+\newcommand{\mypath}{\Desktop/tex/latex/local/template/Barlow/}
+ % 机魔 PC 的 \Desktop 含中文 folder ``桌面''，
+ % 解决方案：不能更改注册表中的 中文 系统变量中的 %Desktop% 键-值中的 值 中的 ``...\桌面\...'' 为 ``...\Desktop\...''，
+ % 而需要：在保持这个的前提下，去 win11 时间和语言 → 语言和区域 → 管理语言设置 → 更改系统区域设置 → 勾选 “Beta 版： 使用 Unicode UTF-8 提供全球语言支持(U)”
+ % 当然，还需要："双引号"，和 “\renewcommand 自动展开命令后，再总地传入参数” 的这 2 个操作配合...
 
 %\usepackage{amsmath,amssymb,amsfonts}%
 %\usepackage{amsthm}%

@@ -2,18 +2,18 @@
 IniMode=true
 
 [version]
-written_by_TXS_version=4.7.3
-written_by_TXS_hg_revision=4.7.3
-written_by_Qt_version=394754
+written_by_TXS_version=4.8.8
+written_by_TXS_hg_revision=4.8.8
+written_by_Qt_version=395521
 created_by_TXS_version=4.7.3
 created_by_TXS_hg_revision=4.7.3
 created_by_Qt_version=394754
 
 [texmaker]
-Tools\Commands\latex="latex.exe -src -interaction=nonstopmode %.tex"
-Tools\Commands\pdflatex="pdflatex.exe -synctex=1 -interaction=nonstopmode %.tex"
-Tools\Commands\xelatex="xelatex.exe -synctex=1 -interaction=nonstopmode %.tex"
-Tools\Commands\lualatex="lualatex.exe -synctex=1 -interaction=nonstopmode %.tex"
+Tools\Commands\latex="latex.exe -src -interaction=nonstopmode -output-directory=tmp %.tex"
+Tools\Commands\pdflatex="pdflatex.exe -synctex=1 -interaction=nonstopmode -output-directory=tmp %.tex"
+Tools\Commands\xelatex="xelatex.exe -synctex=1 -interaction=nonstopmode -output-directory=tmp %.tex"
+Tools\Commands\lualatex="lualatex.exe -synctex=1 -interaction=nonstopmode -output-directory=tmp %.tex"
 Tools\Commands\view-dvi=\"E:\\Runtime\\texlive\\2023\\bin\\windows\\dviout.exe\" \"?am.dvi\"
 Tools\Commands\view-ps=\"E:\\Runtime\\texlive\\2023\\bin\\windows\\psviewer.exe\" \"?am.ps\"
 Tools\Commands\view-pdf-external=\"F:\\Book_reader\\BookxNote Pro\\BookxNotePro.exe\" \"?am.pdf\"
@@ -21,9 +21,9 @@ Tools\Commands\dvips=dvips.exe -o %.ps %.dvi
 Tools\Commands\dvipng=dvipng.exe -T tight -D 120 %.dvi
 Tools\Commands\ps2pdf=ps2pdf.exe %.ps
 Tools\Commands\dvipdf=dvipdfmx.exe %.dvi
-Tools\Commands\bibtex=bibtex.exe %
-Tools\Commands\bibtex8=bibtex8.exe %
-Tools\Commands\biber=biber.exe %
+Tools\Commands\bibtex="bibtex.exe tmp/% -include-directory=tmp"
+Tools\Commands\bibtex8="bibtex8.exe tmp/% -include-directory=tmp"
+Tools\Commands\biber=biber.exe --output-directory tmp %
 Tools\Commands\makeindex=makeindex.exe %.idx
 Tools\Commands\texindy=texindy.exe %.idx
 Tools\Commands\xindex=xindex.exe -l * %.idx
@@ -31,7 +31,7 @@ Tools\Commands\makeglossaries=makeglossaries.exe %
 Tools\Commands\metapost="mpost.exe -interaction=nonstopmode ?me)"
 Tools\Commands\asy=asy.exe ?m*.asy
 Tools\Commands\gs=\"E:\\Runtime\\texlive\\2023\\bin\\windows\\rungs.exe\" \"?am.ps\"
-Tools\Commands\latexmk="latexmk.exe -xelatex -silent -synctex=1 %"
+Tools\Commands\latexmk="latexmk.exe -xelatex -silent -synctex=1 --output-directory tmp %"
 Tools\Commands\texdoc="texdoc.exe "
 Tools\Commands\quick=txs:///compile | txs:///bibliography | txs:///compile| txs:///compile | txs:///view
 Tools\Commands\compile=txs:///latexmk
@@ -74,14 +74,14 @@ Common%20Encodings=UTF-8, ISO-8859-1, windows-1252, Apple Roman
 Files\Max%20Recent%20Files=5
 Files\Max%20Recent%20Projects=3
 Files\Max%20Recent%20Sessions=5
-Files\Recent%20Files=D:/C2D/Desktop/Code/Latex/TexStudio/0.njuthesis/NJU_thesis_doctor__xcz/docs/njuthesis-sample.tex, D:/C2D/Desktop/Code/Document/CV_xcz/Simple-CV_Copy/main.tex, D:/C2D/Desktop/Code/Document/CV_xcz/Simple-CV_Copy/sections/skills.tex, D:/C2D/Desktop/Code/Document/CV_xcz/Simple-CV_Copy/sections/publications.tex, D:/C2D/Desktop/Code/Document/CV_xcz/Simple-CV_Copy/sections/projects.tex
+Files\Recent%20Files=D:/C2D/Desktop/article/LFCO/LFCO_npj/sn-main.tex, D:/C2D/Desktop/Code/Latex/TexStudio/CV_xcz/sections/publications.tex, D:/C2D/Desktop/Code/Latex/TexStudio/CV_xcz/main.tex, D:/C2D/Desktop/Code/Latex/TexStudio/CV_xcz/sections/research_projects.tex, D:/C2D/Desktop/article/LFCO/LFCO_eLight-final-arxiv/sn-main.tex
 Files\Recent%20Project%20Files=D:/C2D/Desktop/Code/Latex/TexStudio/0.njuthesis/NJUThesis-master/docs/njuthesis-sample.tex, D:/C2D/Desktop/Code/Latex/TexStudio/0.njuthesis/njuthesis-master/docs/chapters/chapter2/chapter2.tex
 Files\Recent%20Session%20Files=@Invalid()
 Files\Remember%20File%20Filter=true
 Files\Use%20Native%20File%20Dialog=true
 Files\Recent%20Files%20Highlighting=@Variant(\0\0\0\x7f\0\0\0\x10StringStringMap\0\0\0\0\0)
 Files\RestoreSession=true
-Files\Last%20Document=D:/C2D/Desktop/Code/Latex/TexStudio/0.njuthesis/NJU_thesis_doctor__xcz/docs/njuthesis-sample.tex
+Files\Last%20Document=D:/C2D/Desktop/Code/Latex/TexStudio/0.njuthesis/NJU_thesis_doctor__xcz/docs/chapters/chapter4.tex
 Files\Parse%20BibTeX=true
 Bibliography\BibFileEncoding=UTF-8
 Files\Parse%20Master=true
@@ -106,7 +106,7 @@ Macros\RepositoryURL=https://api.github.com/repos/texstudio-org/texstudio-macro/
 Update\AutoCheck=true
 Update\UpdateLevel=0
 Update\AutoCheckInvervalDays=7
-Update\LastCheck=@DateTime(\0\0\0\x10\0\0\0\0\0\0%\x8b\v\x3\x94\xff\xbe\0)
+Update\LastCheck=@DateTime(\0\0\0\x10\0\0\0\0\0\0%\x8c\xd5\x4gh\x15\0)
 Editor\WordWrapMode=1
 Editor\WrapLineWidth=80
 Editor\Parentheses%20Matching=true
@@ -222,9 +222,9 @@ Tools\ShowLogInCaseOfCompileError=true
 Tools\ReplaceEnvironmentVariables=true
 Tools\InterpetCommandDefinitionInMagicComment=true
 Tools\SupportShellStyleLiteralQuotes=true
-Tools\Search%20Paths=
-Tools\Log%20Paths=
-Tools\PDF%20Paths=
+Tools\Search%20Paths=.\\tmp
+Tools\Log%20Paths=.\\tmp
+Tools\PDF%20Paths=.\\tmp
 Tools\UseVCS=0
 Tools\Auto%20Checkin%20after%20Save%20level=0
 Tools\SVN%20Undo=false
@@ -251,12 +251,12 @@ Preview\Mode=4
 Preview\Auto%20Preview=1
 Preview\Auto%20Preview%20Delay=300
 Preview\SegmentPreviewScalePercent=150
-Geometries\PdfViewerLeft=1048
+Geometries\PdfViewerLeft=883
 Geometries\PdfViewerTop=0
-Geometries\PdfViewerWidth=659
-Geometries\PdfViewerHeight=871
+Geometries\PdfViewerWidth=824
+Geometries\PdfViewerHeight=787
 Geometries\PdfViewerMaximized=false
-Geometries\PdfViewerState=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\x2\0\0\0\0\0\0\0\0\0\0\0\0\xfc\x2\0\0\0\x3\xfb\0\0\0\xe\0o\0u\0t\0l\0i\0n\0\x65\0\0\0\0\0\xff\xff\xff\xff\0\0\0p\x1\0\0\a\xfb\0\0\0\xe\0p\0\x64\0\x66\0i\0n\0\x66\0o\0\0\0\0\0\xff\xff\xff\xff\0\0\0p\x1\0\0\a\xfb\0\0\0\x10\0o\0v\0\x65\0r\0v\0i\0\x65\0w\0\0\0\0\0\xff\xff\xff\xff\0\0\0p\x1\0\0\a\0\0\0\x3\0\0\0\0\0\0\0\0\xfc\x1\0\0\0\x3\xfb\0\0\0\f\0s\0\x65\0\x61\0r\0\x63\0h\0\0\0\0\0\xff\xff\xff\xff\0\0\x2\x5\x1\0\0\a\xfb\0\0\0\n\0\x66\0o\0n\0t\0s\0\0\0\0\0\xff\xff\xff\xff\0\0\0n\x1\0\0\a\xfb\0\0\0\n\0\x63\0l\0o\0\x63\0k\0\0\0\0\0\xff\xff\xff\xff\0\0\0n\x1\0\0\a\0\0\x2\x93\0\0\x3\x15\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\x1\0\0\0\x2\0\0\0\x1\0\0\0\xe\0t\0o\0o\0l\0\x42\0\x61\0r\x1\0\0\0\0\xff\xff\xff\xff\0\0\0\0\0\0\0\0)
+Geometries\PdfViewerState=@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\x2\0\0\0\0\0\0\0\0\0\0\0\0\xfc\x2\0\0\0\x3\xfb\0\0\0\xe\0o\0u\0t\0l\0i\0n\0\x65\0\0\0\0\0\xff\xff\xff\xff\0\0\0p\x1\0\0\a\xfb\0\0\0\xe\0p\0\x64\0\x66\0i\0n\0\x66\0o\0\0\0\0\0\xff\xff\xff\xff\0\0\0p\x1\0\0\a\xfb\0\0\0\x10\0o\0v\0\x65\0r\0v\0i\0\x65\0w\0\0\0\0\0\xff\xff\xff\xff\0\0\0p\x1\0\0\a\0\0\0\x3\0\0\0\0\0\0\0\0\xfc\x1\0\0\0\x3\xfb\0\0\0\f\0s\0\x65\0\x61\0r\0\x63\0h\0\0\0\0\0\xff\xff\xff\xff\0\0\x2\x5\x1\0\0\a\xfb\0\0\0\n\0\x66\0o\0n\0t\0s\0\0\0\0\0\xff\xff\xff\xff\0\0\0n\x1\0\0\a\xfb\0\0\0\n\0\x63\0l\0o\0\x63\0k\0\0\0\0\0\xff\xff\xff\xff\0\0\0n\x1\0\0\a\0\0\x3\x38\0\0\x2\xc1\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\x1\0\0\0\x2\0\0\0\x1\0\0\0\xe\0t\0o\0o\0l\0\x42\0\x61\0r\x1\0\0\0\0\xff\xff\xff\xff\0\0\0\0\0\0\0\0)
 Preview\ToolbarVisible=true
 Preview\AnnotationPanelVisible=false
 Preview\CacheSize=512
@@ -331,7 +331,7 @@ Tools\User%20Order=@Invalid()
 Tools\Preview%20Compile%20Time%20Out=15000
 Tools\Had%20Successful%20Process%20Start=true
 Files\Default%20File%20Filter=
-PDFSplitter=0.42379835873388044
+PDFSplitter=0.48300117233294254
 Tools\Kind\LaTeX=latex, pdflatex, xelatex, lualatex, latexmk, compile
 Tools\Kind\Rerunnable=latex, pdflatex, xelatex, lualatex
 Tools\Kind\Pdf=pdflatex, xelatex, lualatex, latexmk, dvipdf, ps2pdf
@@ -346,14 +346,14 @@ Grammar\Display%20Error%204=true
 Grammar\Display%20Error%205=true
 Grammar\Display%20Error%206=true
 Grammar\Display%20Error%207=true
-Search\Find%20History=极, 极坐标, cases, 一次电光效应、折射率微扰势散射的时空谱耦合波方程, \\protect\\hypertarget{, \\addtocontents{toc}{\\protect\\hypertarget{, }{}}, "d ", tikzpicture, \\underline{\\bar, fig:0-3, PCS, \\bar{r}, g}^{\\omega, \\mathtt{g}}^{\\omega, \\cdot \\bar{r, spatio-temporal, spatiotemporal, spatiotemporal fr, \\alpha, \\textit, polarization state, "\\bar{k}^{\\;\\!\\omega\\pm} \\cdot \\bar{r}", " \\cdot \\bar{r}", phase component, phase fact, transfer function, \\label{eq:0-87}, \\label{eq:0-, \\label{eq:0-84}, multiply, multip, acquire, a\\leftharpoonup\\hspace{-0.6em}\\upharpoo, k^{2}_{0\\omega}, surroundings, isotropic, " isotropic ", Italic, \\mathbb{C}^, \\mathbb{C}^3, \\mathbb{R}^2, \\mathbb{C}^2, coupling, effect, regular/, regular, regular/upright, purely, purely elec, Maxwell, babel, \\ProcessOptions
+Search\Find%20History=multiply, multip, acquire, a\\leftharpoonup\\hspace{-0.6em}\\upharpoo, k^{2}_{0\\omega}, surroundings, isotropic, " isotropic ", Italic, \\mathbb{C}^, \\mathbb{C}^3, \\mathbb{R}^2, \\mathbb{C}^2, coupling, effect, regular/, regular, regular/upright, purely, purely elec, Maxwell, babel, \\ProcessOptions, discrete, -chieff, frac, \\left(, " \\left(", " \\right)", \\left[, $, spectrum, dag, \\textcolor{NavyBlue}{三波混频}, 基波, olor{PineGreen}{基波}, 窄带, 混频, 解析, 泵浦未, 未耗尽近似条, 未耗尽近似, \\hat{\\jmath}, " (", " )", "\\hspace{-0.5em} ", "\\hspace{-1em} ", "\\hspace{-1.1em} ", "\\hspace{-1.15em} ", "\\Upsilon^{\\;\\! \\hat{3} \\textcolor{PineGreen}{\\hat{3}} \\hat{1} \\hat{2} }_{\\;\\! \\textcolor{Maroon}{(2)} \\textcolor{PineGreen}{\\hat{1} \\hat{2}}}", 域, \\symup{\\rho}, 复振幅, 泵浦, PineGreen, 衍射, \\{, \\text{6-D}, 和频, 时空谱, 耦合波方程, 非线性卷积, \\big(, \\hspace{-0.8em}, \\hspace{-1em}, leftarr, "\\hspace{-1.5em} ", "\\hspace{-1.0em} ", "\\hspace{-1.2em} ", 纵向, 非线性角谱, $\\mathcolor{gray}{z}$ 向, 波矢, 失配, 波矢失配量, 2D, "2D ", \\textcolor{Plum}{自变量}, 场量, extcolor{Plum}{傅立叶变换}, 非线性, 正向, 标量\\tex, Maroon}{时空谱}耦合, 波矢失配, 波动方程, 电磁场, 实空间, 空域, 反向传播, " \\}", 非线性卷, {\\textcolor{NavyBlue}{泵浦未耗尽}近似条件}, 5 维, 4 维, "\\hspace{-1.25em} ", "\\hspace{-1.3em} ", "\\hspace{-1.35em} ", \\label, dd
 Search\Case%20Sensitive=false
 Search\Whole%20Words=false
 Search\Regular%20Expression=false
 Search\Highlight=true
 Search\Cursor=true
 Search\Selection=false
-Search\Replace%20History=, \\addtocontents{toc}{\\protect\\linkdest{, }}, "g}^{\\;\\!\\omega", "\\mathtt{g}}^{\\;\\!\\omega", upright
+Search\Replace%20History=\\addtocontents{toc}{\\protect\\linkdest{, }}, "g}^{\\;\\!\\omega", "\\mathtt{g}}^{\\;\\!\\omega", upright, spectrum, -chieff-scalar, discrete, \\textcolor{Maroon}{三波混频}, olor{NavyBlue}{基波}, " \\big(", " \\big)", "\\hspace{-0.6em} ", "\\hspace{-1em} ", "\\hspace{-1.1em} ", "\\hspace{-1.15em} ", "\\Upsilon^{\\;\\! \\hat{3} \\textcolor{PineGreen}{\\hat{3}} \\hat{1} \\hat{2} }_{\\;\\! \\textcolor{Maroon}{(2)} \\textcolor{PineGreen}{\\hat{1} \\hat{2}}}~", \\hspace{-0.8em}, \\text{\\textcolor{gray}{6D}}, \\text{}, \\hspace{-1em}, \\hspace{-1.2em}, "\\hspace{-1.5em} ", "\\hspace{-1.0em} ", "\\hspace{-1.2em} ", "\\hspace{-1.25em} ", \\textcolor{NavyBlue}{场量}, \\textcolor{Plum}{非线性}, 4 维, , "\\hspace{-1.3em} ", "\\hspace{-1.35em} ", "\\hspace{-1.4em} "
 Search\Ask%20before%20Replace=false
 Search\Escape%20Sequence=false
 Preview\Possible%20Grid%20Sizes=1x1, 2x1, 1x2, 2x2, 3x1, 3x2, 3x3
@@ -404,6 +404,26 @@ customIcons=@Variant(\0\0\0\b\0\0\0\0)
 Symbols\UsageCount=@Variant(\0\0\0\b\0\0\0\0)
 Symbols\FavoriteIDs=@Invalid()
 Symbols\hiddenlists=
+AIchat\Provider=0
+AIchat\APIKEY=
+AIchat\PreferredModel=open-mistral-7b
+AIchat\CustomURL=http://localhost:8080/v1/chat/completions
+AIchat\KnownModels=@Invalid()
+AIchat\SystemPrompt=text:'''%txsSelectedText%'''\n
+AIchat\Temperature=0.7
+AIchat\RecordConversation=true
+AIchat\StreamResults=false
+Preview\GridX=1
+Preview\GridY=1
+Preview\PageOffset=0
+Preview\Single%20Page%20Step=true
+Preview\Continuous=true
+Symbols\docksToBeRaised=structure
+Preview\GridX-Embedded=1
+Preview\GridY-Embedded=1
+Preview\PageOffset-Embedded=1
+Preview\Single%20Page%20Step-Embedded=true
+Preview\Continuous-Embedded=true
 
 [formatsDark]
 version=1.0
