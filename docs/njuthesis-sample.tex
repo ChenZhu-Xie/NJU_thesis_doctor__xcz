@@ -118,23 +118,23 @@
 %\usepackage{amssymb} % for \circlearrowright
 
 %\usepackage{tipa} % 补充 脚标 和 符号
-\def\Xint#1#2#3{%
+\def\xint#1#2#3{%
 	\mathchoice
-	{\XXint\displaystyle\textstyle{#1}{#3}{#2}}%
-	{\XXint\textstyle\scriptstyle{#1}{#3}{#2}}%
-	{\XXint\scriptstyle\scriptscriptstyle{#1}{#3}{#2}}%
-	{\XXint\scriptscriptstyle\scriptscriptstyle{#1}{#3}{#2}}%
+	{\xxint\displaystyle\textstyle{#1}{#3}{#2}}%
+	{\xxint\textstyle\scriptstyle{#1}{#3}{#2}}%
+	{\xxint\scriptstyle\scriptscriptstyle{#1}{#3}{#2}}%
+	{\xxint\scriptscriptstyle\scriptscriptstyle{#1}{#3}{#2}}%
 	\!#3}
-\def\XXint#1#2#3#4#5{%
+\def\xxint#1#2#3#4#5{%
 	{\setbox0=\hbox{$#1{#2#3}{#4}$}%
 		\vcenter{\hbox{$#2#3$}}%
 		\kern-.#5\wd0}}
-\def\ddashint{\Xint{=}{3}{\int}}
-\def\dashint{\Xint{-}{3}{\int}}
-%\Xint{\mathcolor{gray}{-}}{30}{\underline{D}}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}
-%\Xint{\mathcolor{gray}{-}}{295}{\underline{E}}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}
-%\Xint{\mathcolor{gray}{-}}{275}{\underline{H}}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}
-%\Xint{\mathcolor{gray}{-}}{305}{\underline{B}}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}
+\def\ddashint{\xint{=}{3}{\int}}
+\def\dashint{\xint{-}{3}{\int}}
+%\xint{\mathcolor{gray}{-}}{30}{\underline{D}}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}
+%\xint{\mathcolor{gray}{-}}{295}{\underline{E}}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}
+%\xint{\mathcolor{gray}{-}}{275}{\underline{H}}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}
+%\xint{\mathcolor{gray}{-}}{305}{\underline{B}}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}
 
 %\usepackage{abraces} % 集合
 
@@ -360,9 +360,9 @@
 	字体 font & 直体 upright & 物理常量、离散变量（如$\symup{\iota}$分量）、文字（说明） & $\upmu_0$ 中的 $\upmu$ 和 $0$ & \blabel{hook:upright} \\
 	& 斜体 \textit{oblique} & 连续变量（自变量或因变量）、场量、函数 & $\bar{E}$ 中的 $E$ & \blabel{hook:oblique} \\ \midrule
 	细分 unique & 黑板粗体 $\mathbb{mathbb}$ & 数学常量 $\mathbb{e},\mathbb{i}$、数学集合 $\mathbb{R},\mathbb{C}$、数学微分符号 $\mathbb{d}$ & $\mathbb{e},\mathbb{i};\mathbb{d};\mathbb{R},\mathbb{C}$ & \blabel{hook:mathbb} \\ 
-	& 打字机体 $\mathtt{mathtt}$ & 另一个（相关）物理量，如非相位部分 $\to$ 复振幅 & $\Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\!\mathcolor{gray}{\omega} \textcolor{Maroon}{\jmath}}_{\;\! \mathcolor{gray}{z}}$ & \blabel{hook:mathtt} \\
-	& 无衬线体 $\mathsf{mathsf}$ & 另一个（相关）物理量，或（转置）算符 & $\overline{\Xint{\mathcolor{gray}{-}}{25}{\bar{\mathsfit{v}}}^{\;\! \mathcolor{gray}{\omega} \textcolor{PineGreen}{\imath}}_{\textcolor{PineGreen}{(1)} \textcolor{Plum}{\jmath}}}^{\mathsf{\textcolor{Plum}{T}}}$ 中的 $\mathsfit{v}$ 和 ${\mathsf{\textcolor{Plum}{T}}}$ & \blabel{hook:mathsf} \\ \midrule
-%	& 哥特字体 $\mathfrak{mathfrak}$ & 另一个（相关）物理量，如非相位部分 $\to$ 偏振态 & $\Xint{{}^{}_{\mathcolor{gray}{-}}}{08}{\bar{\mathsfit{g}}}^{\;\!\mathcolor{gray}{\omega} \textcolor{Maroon}{\jmath}}$ & \blabel{hook:mathfrak} \\ \midrule
+	& 打字机体 $\mathtt{mathtt}$ & 另一个（相关）物理量，如非相位部分 $\to$ 复振幅 & $\xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\!\mathcolor{gray}{\omega} \textcolor{Maroon}{\jmath}}_{\;\! \mathcolor{gray}{z}}$ & \blabel{hook:mathtt} \\
+	& 无衬线体 $\mathsf{mathsf}$ & 另一个（相关）物理量，或（转置）算符 & $\overline{\xint{\mathcolor{gray}{-}}{25}{\bar{\mathsfit{v}}}^{\;\! \mathcolor{gray}{\omega} \textcolor{PineGreen}{\imath}}_{\textcolor{PineGreen}{(1)} \textcolor{Plum}{\jmath}}}^{\mathsf{\textcolor{Plum}{T}}}$ 中的 $\mathsfit{v}$ 和 ${\mathsf{\textcolor{Plum}{T}}}$ & \blabel{hook:mathsf} \\ \midrule
+%	& 哥特字体 $\mathfrak{mathfrak}$ & 另一个（相关）物理量，如非相位部分 $\to$ 偏振态 & $\xint{{}^{}_{\mathcolor{gray}{-}}}{08}{\bar{\mathsfit{g}}}^{\;\!\mathcolor{gray}{\omega} \textcolor{Maroon}{\jmath}}$ & \blabel{hook:mathfrak} \\ \midrule
 	粗细 width & 细体 thin\hphantom{k} & 大部分常量与变量 & $\bar{\bar{\chi}},\bar{\bar{\varepsilon}}$ & \blabel{hook:thin} \\
 	& \textbf{粗体 bold} & \textbf{强调} or 另一个（相关的）物理量，以缓解符号耗尽 & \textbf{待强调的部分} & \blabel{hook:bold} \\
 	\bottomrule[2pt]
@@ -390,9 +390,9 @@
 	& 1 个上尖帽 $\hat{~}$ & 将对象提升为（不同于 $\check{~},\dot{~},\breve{~}$ 的）变量 or 归一化矢量 & $\hat{1}, \hat{e}$ & \blabel{hook:hat} \\ 
 	& 1 个上声调 $\breve{~}$ & 将对象提升为（不同于 $\hat{~},\check{~},\dot{~}$ 的）变量 & $\breve{1}, \breve{2}$ & \blabel{hook:breve} \\ 
 	& 1 个下尖帽 $\check{~}$ & 将对象提升为（不同于 $\hat{~},\dot{~},\breve{~}$ 的）变量 & $\check{1}, \check{\symup{\jmath}}, \check{\jmath}$ & \blabel{hook:check} \\ \midrule
-	长线 long & 1 条上长线 $\overline{~~}$ & 广义列向量，其中/下每个元素可能都是列向量 & $\overline{\Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{20}{\bar{\lambda}}^{\;\!\mathcolor{gray}{\omega}}_{\textcolor{Maroon}{\jmath}}}^{\mathsf{\textcolor{Plum}{T}}}$ & \blabel{hook:overline} \\
-	& 2 条上长线 $\overline{\overline{~~}}$ & 广义张量：如广义列向量解包并再排成的张量 & $\overline{\overline{\Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{20}{\lambda}^{\;\!\mathcolor{gray}{\omega}}_{\textcolor{Maroon}{\jmath}}}}$ & \blabel{hook:ooverline} \\ \midrule
-	中线 mid & 1 条中中线 \textcolor{gray}{--} & 自变量中含横向 2 维实空间频率 $\mathcolor{gray}{\bar{k}_{\symup{\rho}}}$ 的因变量 & $\Xint{\mathcolor{gray}{-}}{25}{D}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}, \Xint{\mathcolor{gray}{-}}{25}{E}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}, \Xint{{}^{}_{\mathcolor{gray}{-}}}{23}{\chi}$ & \blabel{hook:Xint} \\ \midrule
+	长线 long & 1 条上长线 $\overline{~~}$ & 广义列向量，其中/下每个元素可能都是列向量 & $\overline{\xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{20}{\bar{\lambda}}^{\;\!\mathcolor{gray}{\omega}}_{\textcolor{Maroon}{\jmath}}}^{\mathsf{\textcolor{Plum}{T}}}$ & \blabel{hook:overline} \\
+	& 2 条上长线 $\overline{\overline{~~}}$ & 广义张量：如广义列向量解包并再排成的张量 & $\overline{\overline{\xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{20}{\lambda}^{\;\!\mathcolor{gray}{\omega}}_{\textcolor{Maroon}{\jmath}}}}$ & \blabel{hook:ooverline} \\ \midrule
+	中线 mid & 1 条中中线 \textcolor{gray}{--} & 自变量中含横向 2 维实空间频率 $\mathcolor{gray}{\bar{k}_{\symup{\rho}}}$ 的因变量 & $\xint{\mathcolor{gray}{-}}{25}{D}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}, \xint{\mathcolor{gray}{-}}{25}{E}^{\;\!\mathcolor{gray}{\omega}}_{\;\! \symup{\iota}\mathcolor{gray}{z}}, \xint{{}^{}_{\mathcolor{gray}{-}}}{23}{\chi}$ & \blabel{hook:xint} \\ \midrule
 	& 0 条下短线 \hphantom{$\underline{~}$} & $\in$ 实验（室）坐标系 = $\mathcal{Z}$ 系（下的物理量） & $\varepsilon^{\;\! \mathcolor{gray}{\omega} \textcolor{Maroon}{(1)}}_{\symup{zz}}$ & \blabel{hook:Z_frame} \\
 	下线 down & 1 条下短线 $\underline{~}$ & $\in$ 晶体（学）坐标系 = $\mathcal{C}$ 系（下的物理量） & $\underline{\varepsilon}^{\;\! \mathcolor{gray}{\omega} \textcolor{Maroon}{(1)}}_{\symup{zz}}$ & \blabel{hook:C_frame} \\ \midrule 
 %	& 1 条下长线 $\underline{~~}$ & 未定义；保留的关键修饰符 &  & \blabel{hook:ulong} \\ \midrule 
@@ -415,8 +415,8 @@
 	颜色 color & 黑色 black & 非自变量，包括因变量和（非函数=无自变量的）独立变量 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\bar{E}$ & \blabel{hook:black} \\
 	& {\color{gray} 灰色 gray} & （附属某因变量的）\textcolor{gray}{自变量}，或对应的散度分量 or 微分算子 & $\bar{E}^{\;\!\mathcolor{gray}{t}}_{\;\!\mathcolor{gray}{z}}$ 中的 $\mathcolor{gray}{t,z}$ & \blabel{hook:gray} \\ \midrule
 	彩色 other & \textcolor{Maroon}{褐红 Maroon} & 起补充说明作用的直体文字（\textcolor{Maroon}{基础·通用概念}） & ${\rho}_{\;\!\textcolor{Maroon}{\text{f}}}, \bar{J}_{\;\!\textcolor{Maroon}{\text{f}}}$ 中的 $\textcolor{Maroon}{\text{f}}$ & \blabel{hook:Maroon} \\
-	& \textcolor{PineGreen}{松树绿 PineGreen} & （另一种）起补充说明作用的文字 or 变量（\textcolor{PineGreen}{进阶·晶体光学}） & $\Xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{\bar{v}}^{\;\!\mathcolor{gray}{\omega}}_{\textcolor{PineGreen}{\jmath}}$ 中的 $\textcolor{PineGreen}{\jmath}$ & \blabel{hook:PineGreen} \\
-	& \textcolor{Plum}{李子紫 Plum} & （另一种）起补充说明作用的文字 or 变量（\textcolor{Plum}{进阶·数学名词}） & $\Xint{\mathcolor{gray}{-}}{25}{\bar{\mathsfit{v}}}^{\;\! \mathcolor{gray}{\omega} \textcolor{PineGreen}{\imath}}_{\textcolor{Maroon}{\mathbb{1}} \textcolor{Plum}{\jmath}}$ 中的 $\textcolor{Plum}{\jmath}$ & \blabel{hook:Plum} \\ 
+	& \textcolor{PineGreen}{松树绿 PineGreen} & （另一种）起补充说明作用的文字 or 变量（\textcolor{PineGreen}{进阶·晶体光学}） & $\xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{\bar{v}}^{\;\!\mathcolor{gray}{\omega}}_{\textcolor{PineGreen}{\jmath}}$ 中的 $\textcolor{PineGreen}{\jmath}$ & \blabel{hook:PineGreen} \\
+	& \textcolor{Plum}{李子紫 Plum} & （另一种）起补充说明作用的文字 or 变量（\textcolor{Plum}{进阶·数学名词}） & $\xint{\mathcolor{gray}{-}}{25}{\bar{\mathsfit{v}}}^{\;\! \mathcolor{gray}{\omega} \textcolor{PineGreen}{\imath}}_{\textcolor{Maroon}{\mathbb{1}} \textcolor{Plum}{\jmath}}$ 中的 $\textcolor{Plum}{\jmath}$ & \blabel{hook:Plum} \\ 
 	& \textcolor{NavyBlue}{海军蓝 NavyBlue} & （另一种）起补充说明作用的直体文字（\textcolor{NavyBlue}{进阶·物理术语}） & \textcolor{NavyBlue}{圆二色性 CD} & \blabel{hook:NavyBlue} \\ \bottomrule[2pt]
 \end{tabular}
 }
