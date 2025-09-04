@@ -1,0 +1,877 @@
+
+
+PS D:\C2D\Desktop> (New-Object -ComObject Shell.Application).NameSpace(0x14).Items() |
+>> Where-Object { $_.Name -like "*fang*" } |
+>> Select Name
+
+PS D:\C2D\Desktop> Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts' | Select-String "Noto"
+
+@{Arial (TrueType)=arial.ttf; Arial Black (TrueType)=ariblk.ttf; Arial Bold (TrueType)=arialbd.ttf; Arial Bold Italic (
+TrueType)=arialbi.ttf; Arial Italic (TrueType)=ariali.ttf; Bahnschrift (TrueType)=bahnschrift.ttf; Calibri (TrueType)=c
+alibri.ttf; Calibri Bold (TrueType)=calibrib.ttf; Calibri Bold Italic (TrueType)=calibriz.ttf; Calibri Italic (TrueType
+)=calibrii.ttf; Calibri Light (TrueType)=calibril.ttf; Calibri Light Italic (TrueType)=calibrili.ttf; Cambria & Cambria
+ Math (TrueType)=cambria.ttc; Cambria Bold (TrueType)=cambriab.ttf; Cambria Bold Italic (TrueType)=cambriaz.ttf; Cambri
+a Italic (TrueType)=cambriai.ttf; Candara (TrueType)=candara.ttf; Candara Bold (TrueType)=candarab.ttf; Candara Bold It
+alic (TrueType)=candaraz.ttf; Candara Italic (TrueType)=candarai.ttf; Candara Light (TrueType)=candaral.ttf; Candara Li
+ght Italic (TrueType)=candarali.ttf; Comic Sans MS (TrueType)=comic.ttf; Comic Sans MS Bold (TrueType)=comicbd.ttf; Com
+ic Sans MS Bold Italic (TrueType)=comicz.ttf; Comic Sans MS Italic (TrueType)=comici.ttf; Consolas (TrueType)=consola.t
+tf; Consolas Bold (TrueType)=consolab.ttf; Consolas Bold Italic (TrueType)=consolaz.ttf; Consolas Italic (TrueType)=con
+solai.ttf; Constantia (TrueType)=constan.ttf; Constantia Bold (TrueType)=constanb.ttf; Constantia Bold Italic (TrueType
+)=constanz.ttf; Constantia Italic (TrueType)=constani.ttf; Corbel (TrueType)=corbel.ttf; Corbel Bold (TrueType)=corbelb
+.ttf; Corbel Bold Italic (TrueType)=corbelz.ttf; Corbel Italic (TrueType)=corbeli.ttf; Corbel Light (TrueType)=corbell.
+ttf; Corbel Light Italic (TrueType)=corbelli.ttf; Courier New (TrueType)=cour.ttf; Courier New Bold (TrueType)=courbd.t
+tf; Courier New Bold Italic (TrueType)=courbi.ttf; Courier New Italic (TrueType)=couri.ttf; Ebrima (TrueType)=ebrima.tt
+f; Ebrima Bold (TrueType)=ebrimabd.ttf; Franklin Gothic Medium (TrueType)=framd.ttf; Franklin Gothic Medium Italic (Tru
+eType)=framdit.ttf; Gabriola (TrueType)=Gabriola.ttf; Gadugi (TrueType)=gadugi.ttf; Gadugi Bold (TrueType)=gadugib.ttf;
+ Georgia (TrueType)=georgia.ttf; Georgia Bold (TrueType)=georgiab.ttf; Georgia Bold Italic (TrueType)=georgiaz.ttf; Geo
+rgia Italic (TrueType)=georgiai.ttf; Impact (TrueType)=impact.ttf; Ink Free (TrueType)=Inkfree.ttf; Javanese Text (True
+Type)=javatext.ttf; Leelawadee UI (TrueType)=leelawui.ttf; Leelawadee UI Bold (TrueType)=leelauib.ttf; Leelawadee UI Se
+milight (TrueType)=leeluisl.ttf; Lucida Console (TrueType)=lucon.TTF; Lucida Sans Unicode (TrueType)=l_10646.ttf; Malgu
+n Gothic (TrueType)=malgun.ttf; Malgun Gothic Bold (TrueType)=malgunbd.ttf; Malgun Gothic SemiLight (TrueType)=malgunsl
+.ttf; Microsoft Himalaya (TrueType)=himalaya.ttf; Microsoft JhengHei & Microsoft JhengHei UI (TrueType)=msjh.ttc; Micro
+soft JhengHei Bold & Microsoft JhengHei UI Bold (TrueType)=msjhbd.ttc; Microsoft JhengHei Light & Microsoft JhengHei UI
+ Light (TrueType)=msjhl.ttc; Microsoft New Tai Lue (TrueType)=ntailu.ttf; Microsoft New Tai Lue Bold (TrueType)=ntailub
+.ttf; Microsoft PhagsPa (TrueType)=phagspa.ttf; Microsoft PhagsPa Bold (TrueType)=phagspab.ttf; Microsoft Sans Serif (T
+rueType)=micross.ttf; Microsoft Tai Le (TrueType)=taile.ttf; Microsoft Tai Le Bold (TrueType)=taileb.ttf; Microsoft YaH
+ei & Microsoft YaHei UI (TrueType)=msyh.ttc; Microsoft YaHei Bold & Microsoft YaHei UI Bold (TrueType)=msyhbd.ttc; Micr
+osoft YaHei Light & Microsoft YaHei UI Light (TrueType)=msyhl.ttc; Microsoft Yi Baiti (TrueType)=msyi.ttf; MingLiU-ExtB
+ & PMingLiU-ExtB & MingLiU_HKSCS-ExtB (TrueType)=mingliub.ttc; Modern (All res)=modern.fon; Mongolian Baiti (TrueType)=
+monbaiti.ttf; MS Gothic & MS UI Gothic & MS PGothic (TrueType)=msgothic.ttc; MV Boli (TrueType)=mvboli.ttf; Myanmar Tex
+t (TrueType)=mmrtext.ttf; Myanmar Text Bold (TrueType)=mmrtextb.ttf; Nirmala UI & Nirmala UI Bold & Nirmala UI Semiligh
+t & Nirmala Text & Nirmala Text Bold & Nirmala Text Semilight (TrueType)=Nirmala.ttc; Palatino Linotype (TrueType)=pala
+.ttf; Palatino Linotype Bold (TrueType)=palab.ttf; Palatino Linotype Bold Italic (TrueType)=palabi.ttf; Palatino Linoty
+pe Italic (TrueType)=palai.ttf; Roman (All res)=roman.fon; Sans Serif Collection (TrueType)=SansSerifCollection.ttf; Sc
+ript (All res)=script.fon; Segoe Fluent Icons (TrueType)=SegoeIcons.ttf; Segoe MDL2 Assets (TrueType)=segmdl2.ttf; Sego
+e Print (TrueType)=segoepr.ttf; Segoe Print Bold (TrueType)=segoeprb.ttf; Segoe Script (TrueType)=segoesc.ttf; Segoe Sc
+ript Bold (TrueType)=segoescb.ttf; Segoe UI (TrueType)=segoeui.ttf; Segoe UI Black (TrueType)=seguibl.ttf; Segoe UI Bla
+ck Italic (TrueType)=seguibli.ttf; Segoe UI Bold (TrueType)=segoeuib.ttf; Segoe UI Bold Italic (TrueType)=segoeuiz.ttf;
+ Segoe UI Emoji (TrueType)=seguiemj.ttf; Segoe UI Historic (TrueType)=seguihis.ttf; Segoe UI Italic (TrueType)=segoeuii
+.ttf; Segoe UI Light (TrueType)=segoeuil.ttf; Segoe UI Light Italic (TrueType)=seguili.ttf; Segoe UI Semibold (TrueType
+)=seguisb.ttf; Segoe UI Semibold Italic (TrueType)=seguisbi.ttf; Segoe UI Semilight (TrueType)=segoeuisl.ttf; Segoe UI
+Semilight Italic (TrueType)=seguisli.ttf; Segoe UI Symbol (TrueType)=seguisym.ttf; Segoe UI Variable (TrueType)=SegUIVa
+r.ttf; SimSun & NSimSun (TrueType)=simsun.ttc; SimSun-ExtB (TrueType)=simsunb.ttf; Sitka Text (TrueType)=SitkaVF.ttf; S
+itka Text Italic (TrueType)=SitkaVF-Italic.ttf; Sylfaen (TrueType)=sylfaen.ttf; Symbol (TrueType)=symbol.ttf; Tahoma (T
+rueType)=tahoma.ttf; Tahoma Bold (TrueType)=tahomabd.ttf; Times New Roman (TrueType)=times.ttf; Times New Roman Bold (T
+rueType)=timesbd.ttf; Times New Roman Bold Italic (TrueType)=timesbi.ttf; Times New Roman Italic (TrueType)=timesi.ttf;
+ Trebuchet MS (TrueType)=trebuc.ttf; Trebuchet MS Bold (TrueType)=trebucbd.ttf; Trebuchet MS Bold Italic (TrueType)=tre
+bucbi.ttf; Trebuchet MS Italic (TrueType)=trebucit.ttf; Verdana (TrueType)=verdana.ttf; Verdana Bold (TrueType)=verdana
+b.ttf; Verdana Bold Italic (TrueType)=verdanaz.ttf; Verdana Italic (TrueType)=verdanai.ttf; Webdings (TrueType)=webding
+s.ttf; Wingdings (TrueType)=wingding.ttf; Yu Gothic Bold & Yu Gothic UI Semibold & Yu Gothic UI Bold (TrueType)=YuGothB
+.ttc; Yu Gothic Light & Yu Gothic UI Light (TrueType)=YuGothL.ttc; Yu Gothic Medium & Yu Gothic UI Regular (TrueType)=Y
+uGothM.ttc; Yu Gothic Regular & Yu Gothic UI Semilight (TrueType)=YuGothR.ttc; Courier 10,12,15=COURE.FON; Courier 10,1
+2,15 (120)=COURF.FON; MS Serif 8,10,12,14,18,24=SERIFE.FON; MS Serif 8,10,12,14,18,24 (120)=SERIFF.FON; MS Sans Serif 8
+,10,12,14,18,24=SSERIFE.FON; MS Sans Serif 8,10,12,14,18,24 (120)=SSERIFF.FON; Small Fonts=SMALLE.FON; Small Fonts (120
+)=SMALLF.FON; DengXian (TrueType)=Deng.ttf; DengXian Bold (TrueType)=Dengb.ttf; DengXian Light (TrueType)=Dengl.ttf; Fa
+ngSong (TrueType)=simfang.ttf; KaiTi (TrueType)=simkai.ttf; SimHei (TrueType)=simhei.ttf; SimSun-ExtG (TrueType)=Simsun
+ExtG.ttf; Holo MDL2 Assets (TrueType)=holomdl2.ttf; Agency FB Bold (TrueType)=AGENCYB.TTF; Agency FB (TrueType)=AGENCYR
+.TTF; Algerian (TrueType)=ALGER.TTF; Book Antiqua Bold (TrueType)=ANTQUAB.TTF; Book Antiqua Bold Italic (TrueType)=ANTQ
+UABI.TTF; Book Antiqua Italic (TrueType)=ANTQUAI.TTF; Arial Narrow (TrueType)=ARIALN.TTF; Arial Narrow Bold (TrueType)=
+ARIALNB.TTF; Arial Narrow Bold Italic (TrueType)=ARIALNBI.TTF; Arial Narrow Italic (TrueType)=ARIALNI.TTF; Arial Rounde
+d MT Bold (TrueType)=ARLRDBD.TTF; Baskerville Old Face (TrueType)=BASKVILL.TTF; Bauhaus 93 (TrueType)=BAUHS93.TTF; Bell
+ MT (TrueType)=BELL.TTF; Bell MT Bold (TrueType)=BELLB.TTF; Bell MT Italic (TrueType)=BELLI.TTF; Bernard MT Condensed (
+TrueType)=BERNHC.TTF; Book Antiqua (TrueType)=BKANT.TTF; Bodoni MT Bold (TrueType)=BOD_B.TTF; Bodoni MT Bold Italic (Tr
+ueType)=BOD_BI.TTF; Bodoni MT Black Italic (TrueType)=BOD_BLAI.TTF; Bodoni MT Black (TrueType)=BOD_BLAR.TTF; Bodoni MT
+Condensed Bold (TrueType)=BOD_CB.TTF; Bodoni MT Condensed Bold Italic (TrueType)=BOD_CBI.TTF; Bodoni MT Condensed Itali
+c (TrueType)=BOD_CI.TTF; Bodoni MT Condensed (TrueType)=BOD_CR.TTF; Bodoni MT Italic (TrueType)=BOD_I.TTF; Bodoni MT Po
+ster Compressed (TrueType)=BOD_PSTC.TTF; Bodoni MT (TrueType)=BOD_R.TTF; Bookman Old Style (TrueType)=BOOKOS.TTF; Bookm
+an Old Style Bold (TrueType)=BOOKOSB.TTF; Bookman Old Style Bold Italic (TrueType)=BOOKOSBI.TTF; Bookman Old Style Ital
+ic (TrueType)=BOOKOSI.TTF; Bradley Hand ITC (TrueType)=BRADHITC.TTF; Britannic Bold (TrueType)=BRITANIC.TTF; Berlin San
+s FB Bold (TrueType)=BRLNSB.TTF; Berlin Sans FB Demi Bold (TrueType)=BRLNSDB.TTF; Berlin Sans FB (TrueType)=BRLNSR.TTF;
+ Broadway (TrueType)=BROADW.TTF; Brush Script MT Italic (TrueType)=BRUSHSCI.TTF; Bookshelf Symbol 7 (TrueType)=BSSYM7.T
+TF; Californian FB Bold (TrueType)=CALIFB.TTF; Californian FB Italic (TrueType)=CALIFI.TTF; Californian FB (TrueType)=C
+ALIFR.TTF; Calisto MT (TrueType)=CALIST.TTF; Calisto MT Bold (TrueType)=CALISTB.TTF; Calisto MT Bold Italic (TrueType)=
+CALISTBI.TTF; Calisto MT Italic (TrueType)=CALISTI.TTF; Castellar (TrueType)=CASTELAR.TTF; Century Schoolbook (TrueType
+)=CENSCBK.TTF; Centaur (TrueType)=CENTAUR.TTF; Century (TrueType)=CENTURY.TTF; Chiller (TrueType)=CHILLER.TTF; Colonna
+MT (TrueType)=COLONNA.TTF; Cooper Black (TrueType)=COOPBL.TTF; Copperplate Gothic Bold (TrueType)=COPRGTB.TTF; Copperpl
+ate Gothic Light (TrueType)=COPRGTL.TTF; Curlz MT (TrueType)=CURLZ___.TTF; Dubai Bold (TrueType)=DUBAI-BOLD.TTF; Dubai
+Light (TrueType)=DUBAI-LIGHT.TTF; Dubai Medium (TrueType)=DUBAI-MEDIUM.TTF; Dubai Regular (TrueType)=DUBAI-REGULAR.TTF;
+ Elephant (TrueType)=ELEPHNT.TTF; Elephant Italic (TrueType)=ELEPHNTI.TTF; Engravers MT (TrueType)=ENGR.TTF; Eras Bold
+ITC (TrueType)=ERASBD.TTF; Eras Demi ITC (TrueType)=ERASDEMI.TTF; Eras Light ITC (TrueType)=ERASLGHT.TTF; Eras Medium I
+TC (TrueType)=ERASMD.TTF; Felix Titling (TrueType)=FELIXTI.TTF; Forte (TrueType)=FORTE.TTF; Franklin Gothic Book (TrueT
+ype)=FRABK.TTF; Franklin Gothic Book Italic (TrueType)=FRABKIT.TTF; Franklin Gothic Demi (TrueType)=FRADM.TTF; Franklin
+ Gothic Demi Cond (TrueType)=FRADMCN.TTF; Franklin Gothic Demi Italic (TrueType)=FRADMIT.TTF; Franklin Gothic Heavy (Tr
+ueType)=FRAHV.TTF; Franklin Gothic Heavy Italic (TrueType)=FRAHVIT.TTF; Franklin Gothic Medium Cond (TrueType)=FRAMDCN.
+TTF; Freestyle Script (TrueType)=FREESCPT.TTF; French Script MT (TrueType)=FRSCRIPT.TTF; Footlight MT Light (TrueType)=
+FTLTLT.TTF; 方正舒体 (TrueType)=FZSTK.TTF; 方正姚体 (TrueType)=FZYTK.TTF; Garamond (TrueType)=GARA.TTF; Garamond Bold (TrueType
+)=GARABD.TTF; Garamond Italic (TrueType)=GARAIT.TTF; Gigi (TrueType)=GIGI.TTF; Gill Sans MT Bold Italic (TrueType)=GILB
+I___.TTF; Gill Sans MT Bold (TrueType)=GILB____.TTF; Gill Sans MT Condensed (TrueType)=GILC____.TTF; Gill Sans MT Itali
+c (TrueType)=GILI____.TTF; Gill Sans Ultra Bold Condensed (TrueType)=GILLUBCD.TTF; Gill Sans Ultra Bold (TrueType)=GILS
+ANUB.TTF; Gill Sans MT (TrueType)=GIL_____.TTF; Gloucester MT Extra Condensed (TrueType)=GLECB.TTF; Gill Sans MT Ext Co
+ndensed Bold (TrueType)=GLSNECB.TTF; Century Gothic (TrueType)=GOTHIC.TTF; Century Gothic Bold (TrueType)=GOTHICB.TTF;
+Century Gothic Bold Italic (TrueType)=GOTHICBI.TTF; Century Gothic Italic (TrueType)=GOTHICI.TTF; Goudy Old Style (True
+Type)=GOUDOS.TTF; Goudy Old Style Bold (TrueType)=GOUDOSB.TTF; Goudy Old Style Italic (TrueType)=GOUDOSI.TTF; Goudy Sto
+ut (TrueType)=GOUDYSTO.TTF; Harlow Solid Italic (TrueType)=HARLOWSI.TTF; Harrington (TrueType)=HARNGTON.TTF; Haettensch
+weiler (TrueType)=HATTEN.TTF; High Tower Text (TrueType)=HTOWERT.TTF; High Tower Text Italic (TrueType)=HTOWERTI.TTF; I
+mprint MT Shadow (TrueType)=IMPRISHA.TTF; Informal Roman (TrueType)=INFROMAN.TTF; Blackadder ITC (TrueType)=ITCBLKAD.TT
+F; Edwardian Script ITC (TrueType)=ITCEDSCR.TTF; Kristen ITC (TrueType)=ITCKRIST.TTF; Jokerman (TrueType)=JOKERMAN.TTF;
+ Juice ITC (TrueType)=JUICE___.TTF; Kunstler Script (TrueType)=KUNSTLER.TTF; Wide Latin (TrueType)=LATINWD.TTF; Lucida
+Bright (TrueType)=LBRITE.TTF; Lucida Bright Demibold (TrueType)=LBRITED.TTF; Lucida Bright Demibold Italic (TrueType)=L
+BRITEDI.TTF; Lucida Bright Italic (TrueType)=LBRITEI.TTF; Lucida Calligraphy Italic (TrueType)=LCALLIG.TTF; Lucida Fax
+Regular (TrueType)=LFAX.TTF; Lucida Fax Demibold (TrueType)=LFAXD.TTF; Lucida Fax Demibold Italic (TrueType)=LFAXDI.TTF
+; Lucida Fax Italic (TrueType)=LFAXI.TTF; Lucida Handwriting Italic (TrueType)=LHANDW.TTF; Lucida Sans Typewriter Regul
+ar (TrueType)=LTYPE.TTF; Lucida Sans Typewriter Bold (TrueType)=LTYPEB.TTF; Lucida Sans Typewriter Bold Oblique (TrueTy
+pe)=LTYPEBO.TTF; Lucida Sans Typewriter Oblique (TrueType)=LTYPEO.TTF; Magneto Bold (TrueType)=MAGNETOB.TTF; Maiandra G
+D (TrueType)=MAIAN.TTF; Matura MT Script Capitals (TrueType)=MATURASC.TTF; Mistral (TrueType)=MISTRAL.TTF; Modern No. 2
+0 (TrueType)=MOD20.TTF; Monotype Corsiva (TrueType)=MTCORSVA.TTF; Niagara Engraved (TrueType)=NIAGENG.TTF; Niagara Soli
+d (TrueType)=NIAGSOL.TTF; OCR A Extended (TrueType)=OCRAEXT.TTF; Old English Text MT (TrueType)=OLDENGL.TTF; Onyx (True
+Type)=ONYX.TTF; MS Outlook (TrueType)=OUTLOOK.TTF; Palace Script MT (TrueType)=PALSCRI.TTF; Papyrus (TrueType)=PAPYRUS.
+TTF; Parchment (TrueType)=PARCHM.TTF; Perpetua Bold Italic (TrueType)=PERBI___.TTF; Perpetua Bold (TrueType)=PERB____.T
+TF; Perpetua Italic (TrueType)=PERI____.TTF; Perpetua Titling MT Bold (TrueType)=PERTIBD.TTF; Perpetua Titling MT Light
+ (TrueType)=PERTILI.TTF; Perpetua (TrueType)=PER_____.TTF; Playbill (TrueType)=PLAYBILL.TTF; Poor Richard (TrueType)=PO
+ORICH.TTF; Pristina (TrueType)=PRISTINA.TTF; Rage Italic (TrueType)=RAGE.TTF; Ravie (TrueType)=RAVIE.TTF; MS Reference
+Sans Serif (TrueType)=REFSAN.TTF; MS Reference Specialty (TrueType)=REFSPCL.TTF; Rockwell Condensed Bold (TrueType)=ROC
+CB___.TTF; Rockwell Condensed (TrueType)=ROCC____.TTF; Rockwell (TrueType)=ROCK.TTF; Rockwell Bold (TrueType)=ROCKB.TTF
+; Rockwell Bold Italic (TrueType)=ROCKBI.TTF; Rockwell Extra Bold (TrueType)=ROCKEB.TTF; Rockwell Italic (TrueType)=ROC
+KI.TTF; Century Schoolbook Bold (TrueType)=SCHLBKB.TTF; Century Schoolbook Bold Italic (TrueType)=SCHLBKBI.TTF; Century
+ Schoolbook Italic (TrueType)=SCHLBKI.TTF; Script MT Bold (TrueType)=SCRIPTBL.TTF; Showcard Gothic (TrueType)=SHOWG.TTF
+; 隶书 (TrueType)=SIMLI.TTF; 幼圆 (TrueType)=SIMYOU.TTF; Snap ITC (TrueType)=SNAP____.TTF; 华文彩云 (TrueType)=STCAIYUN.TTF; St
+encil (TrueType)=STENCIL.TTF; 华文仿宋 (TrueType)=STFANGSO.TTF; 华文琥珀 (TrueType)=STHUPO.TTF; 华文楷体 (TrueType)=STKAITI.TTF; 华文
+隶书 (TrueType)=STLITI.TTF; 华文宋体 (TrueType)=STSONG.TTF; 华文细黑 (TrueType)=STXIHEI.TTF; 华文行楷 (TrueType)=STXINGKA.TTF; 华文新魏 (
+TrueType)=STXINWEI.TTF; 华文中宋 (TrueType)=STZHONGS.TTF; Tw Cen MT Bold Italic (TrueType)=TCBI____.TTF; Tw Cen MT Bold (Tr
+ueType)=TCB_____.TTF; Tw Cen MT Condensed Bold (TrueType)=TCCB____.TTF; Tw Cen MT Condensed Extra Bold (TrueType)=TCCEB
+.TTF; Tw Cen MT Condensed (TrueType)=TCCM____.TTF; Tw Cen MT Italic (TrueType)=TCMI____.TTF; Tw Cen MT (TrueType)=TCM__
+___.TTF; Tempus Sans ITC (TrueType)=TEMPSITC.TTF; Viner Hand ITC (TrueType)=VINERITC.TTF; Vivaldi Italic (TrueType)=VIV
+ALDII.TTF; Vladimir Script (TrueType)=VLADIMIR.TTF; Wingdings 2 (TrueType)=WINGDNG2.TTF; Wingdings 3 (TrueType)=WINGDNG
+3.TTF; APLPLUS Regular (TrueType)=APLPLUS.TTF; Ragland (TrueType)=Ragland.otf; 杨任东竹石体-Semibold (TrueType)=YangRenDongZh
+uShiTi-2.ttf; 杨任东竹石体-Regular (TrueType)=YangRenDongZhuShiTi-Regular-2.ttf; 杨任东竹石体-Medium (TrueType)=YangRenDongZhuShiTi
+-Medium-2.ttf; 杨任东竹石体-Light (TrueType)=YangRenDongZhuShiTi-Light-2.ttf; 杨任东竹石体-Heavy (TrueType)=YangRenDongZhuShiTi-Hea
+vy-2.ttf; 杨任东竹石体-Extralight (TrueType)=YangRenDongZhuShiTi-Extralight-2.ttf; 杨任东竹石体-Bold (TrueType)=YangRenDongZhuShiTi
+-Bold-2.ttf; 杨任东正棒体 (TrueType)=YangRenDongZhengBangTi-2.ttf; 苹方-繁 常规体 (TrueType)=PingFangTC.ttf; 苹方-繁 细体 (TrueType)=Pin
+gFangTC-Light.ttf; 苹方-繁 中黑体 (TrueType)=PingFangTC-Medium.ttf; 苹方-繁 中粗体 (TrueType)=PingFangTC-Semibold.ttf; 苹方-繁 纤细体 (Tr
+ueType)=PingFangTC-Thin.ttf; 苹方-繁 极细体 (TrueType)=PingFangTC-Ultralight.ttf; 苹方 粗体 (TrueType)=PingFang Bold.ttf; 苹方 特细 (
+TrueType)=PingFang ExtraLight.ttf; 苹方 特粗 (TrueType)=PingFang Heavy.ttf; 苹方 细体 (TrueType)=PingFang Light.ttf; 苹方 中等 (Tru
+eType)=PingFang Medium.ttf; 苹方 常规 (TrueType)=PingFang Regular.ttf; 庞门正道标题体 (TrueType)=PangMenZhengDaoBiaoTiTi-1.ttf; He
+lvetica-Roman-SemiB (TrueType)=Helvetica-Roman-SemiB.ttf; Helvetica Bold Oblique (TrueType)=Helvetica Bold Oblique.ttf;
+ Helvetica Bold (TrueType)=Helvetica Bold.ttf; Helvetica Condensed Bold Italic (TrueType)=Helvetica Condensed Bold Ital
+ic.ttf; Helvetica Condensed Bold (TrueType)=Helvetica Condensed Bold.ttf; Helvetica Condensed Italic (TrueType)=Helveti
+ca Condensed Italic.ttf; Helvetica Condensed (TrueType)=Helvetica Condensed.ttf; Helvetica Narrow Bold Lefty (TrueType)
+=Helvetica Narrow Bold Lefty.ttf; Helvetica Narrow Bold Oblique (TrueType)=Helvetica Narrow Bold Oblique.ttf; Helvetica
+ Narrow Bold (TrueType)=Helvetica Narrow Bold.ttf; Helvetica Narrow Lefty (TrueType)=Helvetica Narrow Lefty.ttf; Helvet
+ica Narrow Oblique (TrueType)=Helvetica Narrow Oblique.ttf; Helvetica Narrow (TrueType)=Helvetica Narrow.ttf; Helvetica
+ Oblique (TrueType)=Helvetica Oblique.ttf; Helvetica (TrueType)=Helvetica.ttf; Helvetica-Black-SemiBold (TrueType)=Helv
+etica-Black-SemiBold.ttf; Helvetica-BoldOblique (TrueType)=Helvetica-BoldOblique.ttf; Helvetica-Condensed-Black-Se (Tru
+eType)=Helvetica-Condensed-Black-Se.ttf; Helvetica-Condensed-Light-Li (TrueType)=Helvetica-Condensed-Light-Li.ttf; Helv
+etica-Condensed-Light-Light (TrueType)=Helvetica-Condensed-Light-Light.ttf; Helvetica-Condensed-Thin (TrueType)=Helveti
+ca-Condensed-Thin.ttf; Helvetica-Conth (TrueType)=Helvetica-Conth.ttf; HelveticaExt-Normal (TrueType)=HelveticaExt-Norm
+al.ttf; HelveticaExtObl-Heavy (TrueType)=HelveticaExtObl-Heavy.ttf; HelveticaExtObl-Light (TrueType)=HelveticaExtObl-Li
+ght.ttf; HelveticaExtObl-Normal (TrueType)=HelveticaExtObl-Normal.ttf; HelveticaInserat-Roman-SemiB (TrueType)=Helvetic
+aInserat-Roman-SemiB.ttf; HelveticaInserat-Roman-SemiBold (TrueType)=HelveticaInserat-Roman-SemiBold.ttf; Helvetica-Lig
+ht-Light-Italic (TrueType)=Helvetica-Light-Light-Italic.ttf; Helvetica-Narrow (TrueType)=Helvetica-Narrow.ttf; Helvetic
+a-Narrow-Bold (TrueType)=Helvetica-Narrow-Bold.ttf; Helvetica-Narrow-BoldOblique (TrueType)=Helvetica-Narrow-BoldObliqu
+e.ttf; HelveticaObl-Heavy (TrueType)=HelveticaObl-Heavy.ttf; HelveticaObl-Thin (TrueType)=HelveticaObl-Thin.ttf; Fira M
+ath Regular (TrueType)=FiraMath-Regular.otf; GFS Neohellenic Math (TrueType)=GFSNeohellenicMath.otf; Lato Heavy (TrueTy
+pe)=Lato-Heavy.ttf; Lato Heavy Italic (TrueType)=Lato-HeavyItalic.ttf; Lato Italic (TrueType)=Lato-Italic.ttf; Lato Lig
+ht (TrueType)=Lato-Light.ttf; Lato Light Italic (TrueType)=Lato-LightItalic.ttf; Lato Medium (TrueType)=Lato-Medium.ttf
+; Lato Medium Italic (TrueType)=Lato-MediumItalic.ttf; Lato Regular (TrueType)=Lato-Regular.ttf; Lato Semibold (TrueTyp
+e)=Lato-Semibold.ttf; Lato Semibold Italic (TrueType)=Lato-SemiboldItalic.ttf; Lato Thin (TrueType)=Lato-Thin.ttf; Lato
+ Thin Italic (TrueType)=Lato-ThinItalic.ttf; Lato Black (TrueType)=Lato-Black.ttf; Lato Black Italic (TrueType)=Lato-Bl
+ackItalic.ttf; Lato Bold (TrueType)=Lato-Bold.ttf; Lato Bold Italic (TrueType)=Lato-BoldItalic.ttf; Lato Hairline (True
+Type)=Lato-Hairline.ttf; Lato Hairline Italic (TrueType)=Lato-HairlineItalic.ttf; Lucida Sans Demibold Italic (TrueType
+)=lucida sans halbfett kursiv.ttf; Lucida Sans Demibold Roman (TrueType)=lucida sans halbfett.ttf; Lucida Sans Italic (
+TrueType)=Lucida Sans Italic.ttf; Lucida Sans Regular (TrueType)=Lucida Sans.ttf; LucidaSans-Bold (TrueType)=LucidaSans
+-Bold.otf; Lucida Sans Demibold (TrueType)=lucidasansdemibold.ttf; PingFang SC Bold (TrueType)=PingFang SC Bold.ttf; Pi
+ngFang SC ExtraLight (TrueType)=PingFang SC ExtraLight.ttf; PingFang SC Heavy (TrueType)=PingFang SC Heavy.ttf; PingFan
+g SC Semibold 常规 (TrueType)=PingFang SC Semibold.ttf; PingFang SC Semibold (TrueType)=PingFang SC.ttf; Source Han Serif
+ SemiBold & Source Han Serif K SemiBold & 思源宋体 SemiBold & 思源宋體 SemiBold & 思源宋體 香港 SemiBold (TrueType)=SourceHanSerif-Se
+miBold.ttc; Source Han Serif Bold & Source Han Serif K Bold & 思源宋体 Bold & 思源宋體 Bold & 思源宋體 香港 Bold (TrueType)=SourceHan
+Serif-Bold.ttc; Source Han Serif ExtraLight & Source Han Serif K ExtraLight & 思源宋体 ExtraLight & 思源宋體 ExtraLight & 思源宋體
+香港 ExtraLight (TrueType)=SourceHanSerif-ExtraLight.ttc; Source Han Serif Heavy & Source Han Serif K Heavy & 思源宋体 Heavy
+& 思源宋體 Heavy & 思源宋體 香港 Heavy (TrueType)=SourceHanSerif-Heavy.ttc; Source Han Serif Light & Source Han Serif K Light & 思
+源宋体 Light & 思源宋體 Light & 思源宋體 香港 Light (TrueType)=SourceHanSerif-Light.ttc; Source Han Serif Medium & Source Han Serif
+K Medium & 思源宋体 Medium & 思源宋體 Medium & 思源宋體 香港 Medium (TrueType)=SourceHanSerif-Medium.ttc; Source Han Serif & Source H
+an Serif K & 思源宋体 & 思源宋體 & 思源宋體 香港 (TrueType)=SourceHanSerif-Regular.ttc; TeXGyreSchola-Regular (TrueType)=texgyreschol
+a-regular.otf; TeXGyreTermes-Bold (TrueType)=texgyretermes-bold.otf; TeXGyreTermes-BoldItalic (TrueType)=texgyretermes-
+bolditalic.otf; TeXGyreTermes-Italic (TrueType)=texgyretermes-italic.otf; TeXGyreTermes-Regular (TrueType)=texgyreterme
+s-regular.otf; TeXGyreAdventor-Bold (TrueType)=texgyreadventor-bold.otf; TeXGyreAdventor-BoldItalic (TrueType)=texgyrea
+dventor-bolditalic.otf; TeXGyreAdventor-Italic (TrueType)=texgyreadventor-italic.otf; TeXGyreAdventor-Regular (TrueType
+)=texgyreadventor-regular.otf; TeXGyreBonum-Bold (TrueType)=texgyrebonum-bold.otf; TeXGyreBonum-BoldItalic (TrueType)=t
+exgyrebonum-bolditalic.otf; TeXGyreBonum-Italic (TrueType)=texgyrebonum-italic.otf; TeXGyreBonum-Regular (TrueType)=tex
+gyrebonum-regular.otf; TeXGyreChorus-MediumItalic (TrueType)=texgyrechorus-mediumitalic.otf; TeXGyreCursor-Bold (TrueTy
+pe)=texgyrecursor-bold.otf; TeXGyreCursor-BoldItalic (TrueType)=texgyrecursor-bolditalic.otf; TeXGyreCursor-Italic (Tru
+eType)=texgyrecursor-italic.otf; TeXGyreCursor-Regular (TrueType)=texgyrecursor-regular.otf; TeXGyreHeros-Bold (TrueTyp
+e)=texgyreheros-bold.otf; TeXGyreHeros-BoldItalic (TrueType)=texgyreheros-bolditalic.otf; TeXGyreHerosCondensed-Bold (T
+rueType)=texgyreheroscn-bold.otf; TeXGyreHerosCondensed-BoldItalic (TrueType)=texgyreheroscn-bolditalic.otf; TeXGyreHer
+osCondensed-Italic (TrueType)=texgyreheroscn-italic.otf; TeXGyreHerosCondensed-Regular (TrueType)=texgyreheroscn-regula
+r.otf; TeXGyreHeros-Italic (TrueType)=texgyreheros-italic.otf; TeXGyreHeros-Regular (TrueType)=texgyreheros-regular.otf
+; TeXGyrePagella-Bold (TrueType)=texgyrepagella-bold.otf; TeXGyrePagella-BoldItalic (TrueType)=texgyrepagella-bolditali
+c.otf; TeXGyrePagella-Italic (TrueType)=texgyrepagella-italic.otf; TeXGyrePagella-Regular (TrueType)=texgyrepagella-reg
+ular.otf; TeXGyreSchola-Bold (TrueType)=texgyreschola-bold.otf; TeXGyreSchola-BoldItalic (TrueType)=texgyreschola-boldi
+talic.otf; TeXGyreSchola-Italic (TrueType)=texgyreschola-italic.otf; Caveat (TrueType)=Caveat-Regular.ttf; 文鼎谁的字体E5GBK_
+M (TrueType)=文鼎谁的字体.ttf; BubblegumSans-Regular (TrueType)=BubblegumSans-Regular.otf; ￎￄﾶﾦￋﾭﾵￄￗￖￌ￥ﾷﾱ (TrueType)=文鼎谁的字体繁.
+ttf; ￎￄﾶﾦﾴￖﾺￚﾼ￲ (TrueType)=文鼎粗圆简.TTF; ￎￄﾶﾦﾴ￳ﾱ￪ￋￎﾼ￲ (TrueType)=文鼎大标宋简.TTF; ￎￄﾶﾦￊ￩ￋￎﾷﾱ (TrueType)=文鼎书宋繁.TTF; ￎￄﾶﾦￏﾸﾷￂￋￎﾷﾱ
+ (TrueType)=文鼎细仿宋繁.TTF; ￎￄﾶﾦ￐ﾡﾱ￪ￋￎﾼ￲ (TrueType)=文鼎小标宋简.TTF; ￎￄﾶﾦ￐ￂￒￕￌ￥ﾼ￲ (TrueType)=文鼎新艺体简.TTF; ￎￄﾶﾦ￧￺￧￪ﾷﾱ (TrueType)=文
+鼎琥珀繁.TTF; ￎￄﾶﾦￌ￘ﾴￖￋￎﾼ￲ (TrueType)=文鼎特粗宋简.TTF; ﾤ￥ﾹﾩￅRￆEￅ￩ (TrueType)=文鼎霹靂體.ttf; ﾤ￥ﾹﾩﾷsￃ￀ￅ￩ (TrueType)=文鼎新藝體.ttf; ﾤ￥ﾹﾩﾶWﾶ
+￪ (TrueType)=文鼎超圓.ttf; ﾤ￥ﾹﾩﾷsﾤﾤﾶￂﾥ~ﾦrﾤ@ (TrueType)=文鼎新中黑外字一.ttf; ﾤ￥ﾹﾩﾷsﾲￊﾶￂ (TrueType)=文鼎新粗黑.ttf; ﾤ￥ﾹﾩﾷsﾤﾤﾯSﾶￂ (TrueTyp
+e)=文鼎新中特黑.ttf; ﾤ￥ﾹﾩﾷsﾯSﾶￂ (TrueType)=文鼎新特黑.ttf; ﾤ￥ﾹﾩﾷsﾲￓﾶￂ (TrueType)=文鼎新細黑.ttf; ﾤ￥ﾹﾩﾷsﾤﾤﾶￂ (TrueType)=文鼎新中黑.ttf; ﾤ￥ﾹﾩﾶ
+Wﾶￂ (TrueType)=文鼎超黑.ttf; ﾤ￥ﾹﾩﾲￊﾶￂ (TrueType)=文鼎粗黑.ttf; ﾤ￥ﾹﾩﾯSﾶￂ (TrueType)=文鼎特黑.ttf; ﾤ￥ﾹﾩﾲￓﾶￂ (TrueType)=文鼎細黑.ttf; ﾤ￥ﾹﾩ
+ﾲￊﾷﾢ (TrueType)=文鼎粗楷.ttf; ﾤ￥ﾹﾩﾲￓﾷﾢ (TrueType)=文鼎細楷.ttf; ﾤ￥ﾹﾩﾰ￉ﾫFﾬy (TrueType)=文鼎勘亭流.ttf; ﾤ￥ﾹﾩﾲￊ￁￵ (TrueType)=文鼎粗隸.ttf;
+ﾤ￥ﾹﾩﾤﾤﾲￊ￁￵ (TrueType)=文鼎中粗隸.ttf; ﾤ￥ﾹﾩﾤﾤ￁￵ (TrueType)=文鼎中隸.ttf; ﾤ￥ﾹﾩﾲￊﾩ￺ (TrueType)=文鼎粗明.ttf; ﾤ￥ﾹﾩﾮ￼ﾳ￸ￅ￩ (TrueType)=文鼎海報
+體.ttf; ﾤ￥ﾹﾩﾤﾤﾦ￦ﾮ￑ (TrueType)=文鼎中行書.ttf; ﾤ￥ﾹﾩﾲￊￃQﾸO (TrueType)=文鼎粗魏碑.ttf; ﾤ￥ﾹﾩﾶ￪ﾥ￟ￅ￩ (TrueType)=文鼎圓立體.ttf; ﾤ￥ﾹﾩﾲￊﾦ￦ﾷﾢ (T
+rueType)=文鼎粗行楷.ttf; ﾤ￥ﾹﾩﾲￓ﾿￻ﾵﾧﾦ￦ﾷﾢ (TrueType)=文鼎細鋼筆行楷.ttf; ﾤ￥ﾹﾩﾲￊ﾿￻ﾵﾧﾦ￦ﾷﾢ (TrueType)=文鼎粗鋼筆行楷.ttf; 文鼎鬍子體 (TrueType)=文鼎鬍子
+體.ttf; 文鼎淹水體 (TrueType)=文鼎淹水體.ttf; 文鼎彈簧體 (TrueType)=文鼎彈簧體.ttf; 文鼎石頭體 (TrueType)=文鼎石頭體.ttf; 文鼎香腸體 (TrueType)=文鼎香腸體.ttf;
+文鼎竹子體 (TrueType)=文鼎竹子體.ttf; 文鼎花瓣體 (TrueType)=文鼎花瓣體.ttf; ￎￄﾶﾦￏﾰￗￖￌ￥ (TrueType)=文鼎习字体.TTF; ￎￄﾶﾦﾳ￝ￂￖￌ￥ (TrueType)=文鼎齿轮体.TT
+F; ﾤ￥ﾹﾩﾦ￦ﾷﾢﾸOￅ￩ (TrueType)=文鼎行楷碑體.ttf; ﾤ￥ﾹﾩￃtￅxￅ￩ (TrueType)=文鼎瀟灑體.ttf; ﾤ￥ﾹﾩﾽￖﾪﾺﾦrￅ￩ (TrueType)=文鼎誰的字體.ttf; ﾤ￥ﾹﾩﾢ￞ﾢ￝ﾢ￞ﾡ
+￐ﾢﾳ (TrueType)=文鼎POP-4.ttf; ﾤ￥ﾹﾩﾤﾤﾯSﾼsﾧiￅ￩ (TrueType)=文鼎中特廣告體.ttf; ﾤ￥ﾹﾩﾯ￰ﾴￆￅ￩ (TrueType)=文鼎荊棘體.ttf; ﾤ￥ﾹﾩﾽ￢ﾪﾯￅ￩ (TrueTyp
+e)=文鼎賤狗體.ttf; ﾤ￥ﾹﾩ￀Jﾨ￨ￅ￩ (TrueType)=文鼎雕刻體.ttf; ﾤ￥ﾹﾩﾤ￵ﾮ￣ￅ￩ (TrueType)=文鼎火柴體.ttf; ﾤ￥ﾹﾩￃCﾷﾢﾤEﾮcￅ￩ (TrueType)=文鼎顏楷九宮體.ttf;
+ﾤ￥ﾹﾩﾧﾬﾧﾬￅ￩ (TrueType)=文鼎妞妞體.ttf; ￎￄﾶﾦCSﾳﾤￋￎﾷﾱ (TrueType)=文鼎CS长宋体繁.TTF; ￎￄﾶﾦﾹￅￓﾡￌ￥ﾷﾱ (TrueType)=文鼎古印体繁.TTF; ￎￄﾶﾦￌ￘ﾴￖﾺￚﾼ￲
+ (TrueType)=文鼎特粗黑简.TTF; ￎￄﾶﾦﾱﾨￋￎﾼ￲ (TrueType)=文鼎报宋简.TTF; ￎￄﾶﾦﾴￖﾺￚﾷﾱ (TrueType)=文鼎粗黑繁.TTF; ￎￄﾶﾦﾴￖￎﾺﾱﾮﾼ￲ (TrueType)=文鼎粗魏碑
+简.TTF; ￎￄﾶﾦﾴￖ￐￐﾿ﾬﾼ￲ (TrueType)=文鼎粗行楷简.TTF; MT Extra (TrueType)=mtextra.ttf; Euclid (TrueType)=euclid.ttf; Euclid Bold (
+TrueType)=euclidb.ttf; Euclid Bold Italic (TrueType)=euclidbi.ttf; Euclid Italic (TrueType)=euclidi.ttf; Euclid Symbol
+(TrueType)=eucsym.ttf; Euclid Symbol Bold (TrueType)=eucsymb.ttf; Euclid Symbol Bold Italic (TrueType)=eucsymbi.ttf; Eu
+clid Symbol Italic (TrueType)=eucsymi.ttf; Euclid Extra (TrueType)=euextra.ttf; Euclid Extra Bold (TrueType)=euextrab.t
+tf; Euclid Fraktur (TrueType)=eufrak.ttf; Euclid Fraktur Bold (TrueType)=eufrakb.ttf; Euclid Math One (TrueType)=eumat1
+.ttf; Euclid Math One Bold (TrueType)=eumat1b.ttf; Euclid Math Two (TrueType)=eumat2.ttf; Euclid Math Two Bold (TrueTyp
+e)=eumat2b.ttf; Fences Plain (TrueType)=fences.ttf; Tiger (TrueType)=Tiger.ttf; MT Extra Tiger (TrueType)=Mt Extra Tige
+r.ttf; Symbol Tiger (TrueType)=Symbol Tiger.ttf; Tiger Expert (TrueType)=Tiger Expert.ttf; Symbol Tiger Expert (TrueTyp
+e)=Symbol Tiger Expert.ttf; 方正彩云简体 (TrueType)=方正彩云简体.ttf; DejaVu Sans Bold Oblique (TrueType)=DejaVuSans-BoldOblique-4.
+ttf; DejaVu Sans Bold (TrueType)=DejaVuSans-Bold-3.ttf; DejaVuMathTeXGyre-Regular (TrueType)=DejaVuMathTeXGyre-2.ttf; D
+ejaVu Sans Mono (TrueType)=DejaVuSansMono-1.ttf; DejaVu Serif Condensed (TrueType)=DejaVuSerifCondensed-22.ttf; DejaVu
+Serif Condensed Italic (TrueType)=DejaVuSerifCondensed-Italic-21.ttf; DejaVu Serif Condensed Bold Italic (TrueType)=Dej
+aVuSerifCondensed-BoldItalic-20.ttf; DejaVu Serif Condensed Bold (TrueType)=DejaVuSerifCondensed-Bold-19.ttf; DejaVu Se
+rif (TrueType)=DejaVuSerif-18.ttf; DejaVu Serif Italic (TrueType)=DejaVuSerif-Italic-17.ttf; DejaVu Sans Condensed Bold
+ Oblique (TrueType)=DejaVuSansCondensed-BoldOblique-16.ttf; DejaVu Sans Condensed (TrueType)=DejaVuSansCondensed-15.ttf
+; DejaVu Sans Mono Oblique (TrueType)=DejaVuSansMono-Oblique-14.ttf; DejaVu Sans Mono Bold Oblique (TrueType)=DejaVuSan
+sMono-BoldOblique-13.ttf; DejaVu Serif Bold (TrueType)=DejaVuSerif-Bold-12.ttf; DejaVu Sans Condensed Oblique (TrueType
+)=DejaVuSansCondensed-Oblique-10.ttf; DejaVu Sans Condensed Bold (TrueType)=DejaVuSansCondensed-Bold-8.ttf; DejaVu Sans
+ (TrueType)=DejaVuSans-7.ttf; DejaVu Sans Oblique (TrueType)=DejaVuSans-Oblique-6.ttf; DejaVu Sans ExtraLight (TrueType
+)=DejaVuSans-ExtraLight-5.ttf; 方正黑体简体 (TrueType)=方正黑体简体.TTF; 方正正黑简体 (TrueType)=方正正黑简体.ttf; SF Pro Rounded Bold (TrueTyp
+e)=SF-Pro-Rounded-Bold.otf; SF Pro Rounded Heavy (TrueType)=SF-Pro-Rounded-Heavy.otf; SF Pro Rounded Light (TrueType)=S
+F-Pro-Rounded-Light.otf; SF Pro Rounded Medium (TrueType)=SF-Pro-Rounded-Medium.otf; SF Pro Rounded Regular (TrueType)=
+SF-Pro-Rounded-Regular.otf; SF Pro Rounded Semibold (TrueType)=SF-Pro-Rounded-Semibold.otf; SF Pro Rounded Thin (TrueTy
+pe)=SF-Pro-Rounded-Thin.otf; SF Pro Rounded Ultralight (TrueType)=SF-Pro-Rounded-Ultralight.otf; SF Pro Text Black (Tru
+eType)=SF-Pro-Text-Black.otf; SF Pro Text Bold (TrueType)=SF-Pro-Text-Bold.otf; SF Pro Text Heavy (TrueType)=SF-Pro-Tex
+t-Heavy.otf; SF Pro Text Light (TrueType)=SF-Pro-Text-Light.otf; SF Pro Text Medium (TrueType)=SF-Pro-Text-Medium.otf;
+SF Pro Text Regular (TrueType)=SF-Pro-Text-Regular.otf; SF Pro Text Semibold (TrueType)=SF-Pro-Text-Semibold.otf; SF Pr
+o Display Black (TrueType)=SF-Pro-Display-Black.otf; SF Pro Display Bold (TrueType)=SF-Pro-Display-Bold.otf; SF Pro Dis
+play Heavy (TrueType)=SF-Pro-Display-Heavy.otf; SF Pro Display Light (TrueType)=SF-Pro-Display-Light.otf; SF Pro Displa
+y Medium (TrueType)=SF-Pro-Display-Medium.otf; SF Pro Display Regular (TrueType)=SF-Pro-Display-Regular.otf; SF Pro Dis
+play Semibold (TrueType)=SF-Pro-Display-Semibold.otf; SF Pro Display Thin (TrueType)=SF-Pro-Display-Thin.otf; SF Pro Di
+splay Ultralight (TrueType)=SF-Pro-Display-Ultralight.otf; SF Pro Display Heavy Italic (TrueType)=SF-Pro-Display-HeavyI
+talic.otf; SF Pro Display Light Italic (TrueType)=SF-Pro-Display-LightItalic.otf; SF Pro Display Medium Italic (TrueTyp
+e)=SF-Pro-Display-MediumItalic.otf; SF Pro Display Regular Italic (TrueType)=SF-Pro-Display-RegularItalic.otf; SF Pro D
+isplay Semibold Italic (TrueType)=SF-Pro-Display-SemiboldItalic.otf; SF Pro Display Thin Italic (TrueType)=SF-Pro-Displ
+ay-ThinItalic.otf; SF Pro Display Ultralight Italic (TrueType)=SF-Pro-Display-UltralightItalic.otf; SF Pro Text Black I
+talic (TrueType)=SF-Pro-Text-BlackItalic.otf; SF Pro Text Bold Italic (TrueType)=SF-Pro-Text-BoldItalic.otf; SF Pro Tex
+t Heavy Italic (TrueType)=SF-Pro-Text-HeavyItalic.otf; SF Pro Text Light Italic (TrueType)=SF-Pro-Text-LightItalic.otf;
+ SF Pro Text Medium Italic (TrueType)=SF-Pro-Text-MediumItalic.otf; SF Pro Text Italic (TrueType)=SF-Pro-Text-RegularIt
+alic.otf; SF Pro Text Semibold Italic (TrueType)=SF-Pro-Text-SemiboldItalic.otf; SF Pro Text Thin Italic (TrueType)=SF-
+Pro-Text-ThinItalic.otf; SF Pro Text Ultralight Italic (TrueType)=SF-Pro-Text-UltralightItalic.otf; SF Pro Display Blac
+k Italic (TrueType)=SF-Pro-Display-BlackItalic.otf; SF Pro Display Bold Italic (TrueType)=SF-Pro-Display-BoldItalic.otf
+; SF Pro Text Thin (TrueType)=SF-Pro-Text-Thin.otf; SF Pro Text Ultralight (TrueType)=SF-Pro-Text-Ultralight.otf; SF Pr
+o Rounded Black (TrueType)=SF-Pro-Rounded-Black.otf; 苹方-港 常规体 & 苹方-繁 常规体 & 苹方-简 常规体 & 苹方-港 中黑体 & 苹方-繁 中黑体 & 苹方-简 中黑体 &
+苹方-港 中粗体 & 苹方-繁 中粗体 & 苹方-简 中粗体 & 苹方-港 细体 & 苹方-繁 细体 & 苹方-简 细体 & 苹方-港 纤细体 & 苹方-繁 纤细体 & 苹方-简 纤细体 & 苹方-港 极细体 & 苹方-繁 极细体 & 苹
+方-简 极细体 & .苹方-港 常规体 & .苹方-繁 常规体 & .苹方-简 常规体 & .苹方-港 中黑体 & .苹方-繁 中黑体 & .苹方-=PingFang.ttc; Cascadia Code Regular (TrueTyp
+e)=CascadiaCode.ttf; Cascadia Mono Regular (TrueType)=CascadiaMono.ttf; CMU Typewriter Text Variable Width Medium (True
+Type)=cmunvt.ttf; CMU Serif BoldItalic (TrueType)=cmunbi.ttf; CMU Serif Extra BoldSlanted (TrueType)=cmunbl.ttf; CMU Br
+ight Oblique (TrueType)=cmunbmo.ttf; CMU Bright Roman (TrueType)=cmunbmr.ttf; CMU Bright SemiBoldOblique (TrueType)=cmu
+nbso.ttf; CMU Bright SemiBold (TrueType)=cmunbsr.ttf; CMU Typewriter Text Light (TrueType)=cmunbtl.ttf; CMU Typewriter
+Text LightOblique (TrueType)=cmunbto.ttf; CMU Serif Bold (TrueType)=cmunbx.ttf; CMU Classical Serif Italic (TrueType)=c
+munci.ttf; CMU Typewriter Text Italic (TrueType)=cmunit.ttf; CMU Concrete BoldItalic (TrueType)=cmunobi.ttf; CMU Concre
+te Bold (TrueType)=cmunobx.ttf; CMU Concrete Roman (TrueType)=cmunorm.ttf; CMU Concrete Italic (TrueType)=cmunoti.ttf;
+CMU Serif Roman (TrueType)=cmunrm.ttf; CMU Sans Serif Oblique (TrueType)=cmunsi.ttf; CMU Serif Extra RomanSlanted (True
+Type)=cmunsl.ttf; CMU Sans Serif BoldOblique (TrueType)=cmunso.ttf; CMU Sans Serif Medium (TrueType)=cmunss.ttf; CMU Sa
+ns Serif Demi Condensed DemiCondensed (TrueType)=cmunssdc.ttf; CMU Sans Serif Bold (TrueType)=cmunsx.ttf; CMU Typewrite
+r Text Bold (TrueType)=cmuntb.ttf; CMU Serif Italic (TrueType)=cmunti.ttf; CMU Typewriter Text Regular (TrueType)=cmunt
+t.ttf; CMU Typewriter Text BoldItalic (TrueType)=cmuntx.ttf; CMU Serif Upright Italic UprightItalic (TrueType)=cmunui.t
+tf; CMU Typewriter Text Variable Width Italic (TrueType)=cmunvi.ttf; Noto Sans SC (TrueType)=NotoSansSC-VF.ttf; Noto Se
+rif SC (TrueType)=NotoSerifSC-VF.ttf; Noto Sans S Chinese DemiLight (TrueType)=NotoSansHans-DemiLight.otf; Noto Sans S
+Chinese Bold Bold (TrueType)=NotoSansHans-Bold.otf; Noto Sans S Chinese Black Bold (TrueType)=NotoSansHans-Black.otf; N
+oto Sans S Chinese Thin (TrueType)=NotoSansHans-Thin-Windows.otf; Noto Sans S Chinese Regular (TrueType)=NotoSansHans-R
+egular.otf; Noto Sans S Chinese Medium (TrueType)=NotoSansHans-Medium.otf; Noto Sans S Chinese Light (TrueType)=NotoSan
+sHans-Light.otf; 霞鹜文楷 TC Regular (TrueType)=LXGWWenKaiTC-Regular.ttf; 霞鹜文楷等宽 TC Light Regular (TrueType)=LXGWWenKaiMono
+TC-Light.ttf; 霞鹜文楷等宽 TC Medium Regular (TrueType)=LXGWWenKaiMonoTC-Medium.ttf; 霞鹜文楷等宽 TC Regular (TrueType)=LXGWWenKaiM
+onoTC-Regular.ttf; 霞鹜文楷 TC Light Regular (TrueType)=LXGWWenKaiTC-Light.ttf; 霞鹜文楷 TC Medium Regular (TrueType)=LXGWWenKa
+iTC-Medium.ttf; PSPath=Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVers
+ion\Fonts; PSParentPath=Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVer
+sion; PSChildName=Fonts; PSDrive=HKLM; PSProvider=Microsoft.PowerShell.Core\Registry}
+
+
+PS D:\C2D\Desktop> Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts' | Select-String "Noto"
+
+@{Arial (TrueType)=arial.ttf; Arial Black (TrueType)=ariblk.ttf; Arial Bold (TrueType)=arialbd.ttf; Arial Bold Italic (
+TrueType)=arialbi.ttf; Arial Italic (TrueType)=ariali.ttf; Bahnschrift (TrueType)=bahnschrift.ttf; Calibri (TrueType)=c
+alibri.ttf; Calibri Bold (TrueType)=calibrib.ttf; Calibri Bold Italic (TrueType)=calibriz.ttf; Calibri Italic (TrueType
+)=calibrii.ttf; Calibri Light (TrueType)=calibril.ttf; Calibri Light Italic (TrueType)=calibrili.ttf; Cambria & Cambria
+ Math (TrueType)=cambria.ttc; Cambria Bold (TrueType)=cambriab.ttf; Cambria Bold Italic (TrueType)=cambriaz.ttf; Cambri
+a Italic (TrueType)=cambriai.ttf; Candara (TrueType)=candara.ttf; Candara Bold (TrueType)=candarab.ttf; Candara Bold It
+alic (TrueType)=candaraz.ttf; Candara Italic (TrueType)=candarai.ttf; Candara Light (TrueType)=candaral.ttf; Candara Li
+ght Italic (TrueType)=candarali.ttf; Comic Sans MS (TrueType)=comic.ttf; Comic Sans MS Bold (TrueType)=comicbd.ttf; Com
+ic Sans MS Bold Italic (TrueType)=comicz.ttf; Comic Sans MS Italic (TrueType)=comici.ttf; Consolas (TrueType)=consola.t
+tf; Consolas Bold (TrueType)=consolab.ttf; Consolas Bold Italic (TrueType)=consolaz.ttf; Consolas Italic (TrueType)=con
+solai.ttf; Constantia (TrueType)=constan.ttf; Constantia Bold (TrueType)=constanb.ttf; Constantia Bold Italic (TrueType
+)=constanz.ttf; Constantia Italic (TrueType)=constani.ttf; Corbel (TrueType)=corbel.ttf; Corbel Bold (TrueType)=corbelb
+.ttf; Corbel Bold Italic (TrueType)=corbelz.ttf; Corbel Italic (TrueType)=corbeli.ttf; Corbel Light (TrueType)=corbell.
+ttf; Corbel Light Italic (TrueType)=corbelli.ttf; Courier New (TrueType)=cour.ttf; Courier New Bold (TrueType)=courbd.t
+tf; Courier New Bold Italic (TrueType)=courbi.ttf; Courier New Italic (TrueType)=couri.ttf; Ebrima (TrueType)=ebrima.tt
+f; Ebrima Bold (TrueType)=ebrimabd.ttf; Franklin Gothic Medium (TrueType)=framd.ttf; Franklin Gothic Medium Italic (Tru
+eType)=framdit.ttf; Gabriola (TrueType)=Gabriola.ttf; Gadugi (TrueType)=gadugi.ttf; Gadugi Bold (TrueType)=gadugib.ttf;
+ Georgia (TrueType)=georgia.ttf; Georgia Bold (TrueType)=georgiab.ttf; Georgia Bold Italic (TrueType)=georgiaz.ttf; Geo
+rgia Italic (TrueType)=georgiai.ttf; Impact (TrueType)=impact.ttf; Ink Free (TrueType)=Inkfree.ttf; Javanese Text (True
+Type)=javatext.ttf; Leelawadee UI (TrueType)=leelawui.ttf; Leelawadee UI Bold (TrueType)=leelauib.ttf; Leelawadee UI Se
+milight (TrueType)=leeluisl.ttf; Lucida Console (TrueType)=lucon.TTF; Lucida Sans Unicode (TrueType)=l_10646.ttf; Malgu
+n Gothic (TrueType)=malgun.ttf; Malgun Gothic Bold (TrueType)=malgunbd.ttf; Malgun Gothic SemiLight (TrueType)=malgunsl
+.ttf; Microsoft Himalaya (TrueType)=himalaya.ttf; Microsoft JhengHei & Microsoft JhengHei UI (TrueType)=msjh.ttc; Micro
+soft JhengHei Bold & Microsoft JhengHei UI Bold (TrueType)=msjhbd.ttc; Microsoft JhengHei Light & Microsoft JhengHei UI
+ Light (TrueType)=msjhl.ttc; Microsoft New Tai Lue (TrueType)=ntailu.ttf; Microsoft New Tai Lue Bold (TrueType)=ntailub
+.ttf; Microsoft PhagsPa (TrueType)=phagspa.ttf; Microsoft PhagsPa Bold (TrueType)=phagspab.ttf; Microsoft Sans Serif (T
+rueType)=micross.ttf; Microsoft Tai Le (TrueType)=taile.ttf; Microsoft Tai Le Bold (TrueType)=taileb.ttf; Microsoft YaH
+ei & Microsoft YaHei UI (TrueType)=msyh.ttc; Microsoft YaHei Bold & Microsoft YaHei UI Bold (TrueType)=msyhbd.ttc; Micr
+osoft YaHei Light & Microsoft YaHei UI Light (TrueType)=msyhl.ttc; Microsoft Yi Baiti (TrueType)=msyi.ttf; MingLiU-ExtB
+ & PMingLiU-ExtB & MingLiU_HKSCS-ExtB (TrueType)=mingliub.ttc; Modern (All res)=modern.fon; Mongolian Baiti (TrueType)=
+monbaiti.ttf; MS Gothic & MS UI Gothic & MS PGothic (TrueType)=msgothic.ttc; MV Boli (TrueType)=mvboli.ttf; Myanmar Tex
+t (TrueType)=mmrtext.ttf; Myanmar Text Bold (TrueType)=mmrtextb.ttf; Nirmala UI & Nirmala UI Bold & Nirmala UI Semiligh
+t & Nirmala Text & Nirmala Text Bold & Nirmala Text Semilight (TrueType)=Nirmala.ttc; Palatino Linotype (TrueType)=pala
+.ttf; Palatino Linotype Bold (TrueType)=palab.ttf; Palatino Linotype Bold Italic (TrueType)=palabi.ttf; Palatino Linoty
+pe Italic (TrueType)=palai.ttf; Roman (All res)=roman.fon; Sans Serif Collection (TrueType)=SansSerifCollection.ttf; Sc
+ript (All res)=script.fon; Segoe Fluent Icons (TrueType)=SegoeIcons.ttf; Segoe MDL2 Assets (TrueType)=segmdl2.ttf; Sego
+e Print (TrueType)=segoepr.ttf; Segoe Print Bold (TrueType)=segoeprb.ttf; Segoe Script (TrueType)=segoesc.ttf; Segoe Sc
+ript Bold (TrueType)=segoescb.ttf; Segoe UI (TrueType)=segoeui.ttf; Segoe UI Black (TrueType)=seguibl.ttf; Segoe UI Bla
+ck Italic (TrueType)=seguibli.ttf; Segoe UI Bold (TrueType)=segoeuib.ttf; Segoe UI Bold Italic (TrueType)=segoeuiz.ttf;
+ Segoe UI Emoji (TrueType)=seguiemj.ttf; Segoe UI Historic (TrueType)=seguihis.ttf; Segoe UI Italic (TrueType)=segoeuii
+.ttf; Segoe UI Light (TrueType)=segoeuil.ttf; Segoe UI Light Italic (TrueType)=seguili.ttf; Segoe UI Semibold (TrueType
+)=seguisb.ttf; Segoe UI Semibold Italic (TrueType)=seguisbi.ttf; Segoe UI Semilight (TrueType)=segoeuisl.ttf; Segoe UI
+Semilight Italic (TrueType)=seguisli.ttf; Segoe UI Symbol (TrueType)=seguisym.ttf; Segoe UI Variable (TrueType)=SegUIVa
+r.ttf; SimSun & NSimSun (TrueType)=simsun.ttc; SimSun-ExtB (TrueType)=simsunb.ttf; Sitka Text (TrueType)=SitkaVF.ttf; S
+itka Text Italic (TrueType)=SitkaVF-Italic.ttf; Sylfaen (TrueType)=sylfaen.ttf; Symbol (TrueType)=symbol.ttf; Tahoma (T
+rueType)=tahoma.ttf; Tahoma Bold (TrueType)=tahomabd.ttf; Times New Roman (TrueType)=times.ttf; Times New Roman Bold (T
+rueType)=timesbd.ttf; Times New Roman Bold Italic (TrueType)=timesbi.ttf; Times New Roman Italic (TrueType)=timesi.ttf;
+ Trebuchet MS (TrueType)=trebuc.ttf; Trebuchet MS Bold (TrueType)=trebucbd.ttf; Trebuchet MS Bold Italic (TrueType)=tre
+bucbi.ttf; Trebuchet MS Italic (TrueType)=trebucit.ttf; Verdana (TrueType)=verdana.ttf; Verdana Bold (TrueType)=verdana
+b.ttf; Verdana Bold Italic (TrueType)=verdanaz.ttf; Verdana Italic (TrueType)=verdanai.ttf; Webdings (TrueType)=webding
+s.ttf; Wingdings (TrueType)=wingding.ttf; Yu Gothic Bold & Yu Gothic UI Semibold & Yu Gothic UI Bold (TrueType)=YuGothB
+.ttc; Yu Gothic Light & Yu Gothic UI Light (TrueType)=YuGothL.ttc; Yu Gothic Medium & Yu Gothic UI Regular (TrueType)=Y
+uGothM.ttc; Yu Gothic Regular & Yu Gothic UI Semilight (TrueType)=YuGothR.ttc; Courier 10,12,15=COURE.FON; Courier 10,1
+2,15 (120)=COURF.FON; MS Serif 8,10,12,14,18,24=SERIFE.FON; MS Serif 8,10,12,14,18,24 (120)=SERIFF.FON; MS Sans Serif 8
+,10,12,14,18,24=SSERIFE.FON; MS Sans Serif 8,10,12,14,18,24 (120)=SSERIFF.FON; Small Fonts=SMALLE.FON; Small Fonts (120
+)=SMALLF.FON; DengXian (TrueType)=Deng.ttf; DengXian Bold (TrueType)=Dengb.ttf; DengXian Light (TrueType)=Dengl.ttf; Fa
+ngSong (TrueType)=simfang.ttf; KaiTi (TrueType)=simkai.ttf; SimHei (TrueType)=simhei.ttf; SimSun-ExtG (TrueType)=Simsun
+ExtG.ttf; Holo MDL2 Assets (TrueType)=holomdl2.ttf; Agency FB Bold (TrueType)=AGENCYB.TTF; Agency FB (TrueType)=AGENCYR
+.TTF; Algerian (TrueType)=ALGER.TTF; Book Antiqua Bold (TrueType)=ANTQUAB.TTF; Book Antiqua Bold Italic (TrueType)=ANTQ
+UABI.TTF; Book Antiqua Italic (TrueType)=ANTQUAI.TTF; Arial Narrow (TrueType)=ARIALN.TTF; Arial Narrow Bold (TrueType)=
+ARIALNB.TTF; Arial Narrow Bold Italic (TrueType)=ARIALNBI.TTF; Arial Narrow Italic (TrueType)=ARIALNI.TTF; Arial Rounde
+d MT Bold (TrueType)=ARLRDBD.TTF; Baskerville Old Face (TrueType)=BASKVILL.TTF; Bauhaus 93 (TrueType)=BAUHS93.TTF; Bell
+ MT (TrueType)=BELL.TTF; Bell MT Bold (TrueType)=BELLB.TTF; Bell MT Italic (TrueType)=BELLI.TTF; Bernard MT Condensed (
+TrueType)=BERNHC.TTF; Book Antiqua (TrueType)=BKANT.TTF; Bodoni MT Bold (TrueType)=BOD_B.TTF; Bodoni MT Bold Italic (Tr
+ueType)=BOD_BI.TTF; Bodoni MT Black Italic (TrueType)=BOD_BLAI.TTF; Bodoni MT Black (TrueType)=BOD_BLAR.TTF; Bodoni MT
+Condensed Bold (TrueType)=BOD_CB.TTF; Bodoni MT Condensed Bold Italic (TrueType)=BOD_CBI.TTF; Bodoni MT Condensed Itali
+c (TrueType)=BOD_CI.TTF; Bodoni MT Condensed (TrueType)=BOD_CR.TTF; Bodoni MT Italic (TrueType)=BOD_I.TTF; Bodoni MT Po
+ster Compressed (TrueType)=BOD_PSTC.TTF; Bodoni MT (TrueType)=BOD_R.TTF; Bookman Old Style (TrueType)=BOOKOS.TTF; Bookm
+an Old Style Bold (TrueType)=BOOKOSB.TTF; Bookman Old Style Bold Italic (TrueType)=BOOKOSBI.TTF; Bookman Old Style Ital
+ic (TrueType)=BOOKOSI.TTF; Bradley Hand ITC (TrueType)=BRADHITC.TTF; Britannic Bold (TrueType)=BRITANIC.TTF; Berlin San
+s FB Bold (TrueType)=BRLNSB.TTF; Berlin Sans FB Demi Bold (TrueType)=BRLNSDB.TTF; Berlin Sans FB (TrueType)=BRLNSR.TTF;
+ Broadway (TrueType)=BROADW.TTF; Brush Script MT Italic (TrueType)=BRUSHSCI.TTF; Bookshelf Symbol 7 (TrueType)=BSSYM7.T
+TF; Californian FB Bold (TrueType)=CALIFB.TTF; Californian FB Italic (TrueType)=CALIFI.TTF; Californian FB (TrueType)=C
+ALIFR.TTF; Calisto MT (TrueType)=CALIST.TTF; Calisto MT Bold (TrueType)=CALISTB.TTF; Calisto MT Bold Italic (TrueType)=
+CALISTBI.TTF; Calisto MT Italic (TrueType)=CALISTI.TTF; Castellar (TrueType)=CASTELAR.TTF; Century Schoolbook (TrueType
+)=CENSCBK.TTF; Centaur (TrueType)=CENTAUR.TTF; Century (TrueType)=CENTURY.TTF; Chiller (TrueType)=CHILLER.TTF; Colonna
+MT (TrueType)=COLONNA.TTF; Cooper Black (TrueType)=COOPBL.TTF; Copperplate Gothic Bold (TrueType)=COPRGTB.TTF; Copperpl
+ate Gothic Light (TrueType)=COPRGTL.TTF; Curlz MT (TrueType)=CURLZ___.TTF; Dubai Bold (TrueType)=DUBAI-BOLD.TTF; Dubai
+Light (TrueType)=DUBAI-LIGHT.TTF; Dubai Medium (TrueType)=DUBAI-MEDIUM.TTF; Dubai Regular (TrueType)=DUBAI-REGULAR.TTF;
+ Elephant (TrueType)=ELEPHNT.TTF; Elephant Italic (TrueType)=ELEPHNTI.TTF; Engravers MT (TrueType)=ENGR.TTF; Eras Bold
+ITC (TrueType)=ERASBD.TTF; Eras Demi ITC (TrueType)=ERASDEMI.TTF; Eras Light ITC (TrueType)=ERASLGHT.TTF; Eras Medium I
+TC (TrueType)=ERASMD.TTF; Felix Titling (TrueType)=FELIXTI.TTF; Forte (TrueType)=FORTE.TTF; Franklin Gothic Book (TrueT
+ype)=FRABK.TTF; Franklin Gothic Book Italic (TrueType)=FRABKIT.TTF; Franklin Gothic Demi (TrueType)=FRADM.TTF; Franklin
+ Gothic Demi Cond (TrueType)=FRADMCN.TTF; Franklin Gothic Demi Italic (TrueType)=FRADMIT.TTF; Franklin Gothic Heavy (Tr
+ueType)=FRAHV.TTF; Franklin Gothic Heavy Italic (TrueType)=FRAHVIT.TTF; Franklin Gothic Medium Cond (TrueType)=FRAMDCN.
+TTF; Freestyle Script (TrueType)=FREESCPT.TTF; French Script MT (TrueType)=FRSCRIPT.TTF; Footlight MT Light (TrueType)=
+FTLTLT.TTF; 方正舒体 (TrueType)=FZSTK.TTF; 方正姚体 (TrueType)=FZYTK.TTF; Garamond (TrueType)=GARA.TTF; Garamond Bold (TrueType
+)=GARABD.TTF; Garamond Italic (TrueType)=GARAIT.TTF; Gigi (TrueType)=GIGI.TTF; Gill Sans MT Bold Italic (TrueType)=GILB
+I___.TTF; Gill Sans MT Bold (TrueType)=GILB____.TTF; Gill Sans MT Condensed (TrueType)=GILC____.TTF; Gill Sans MT Itali
+c (TrueType)=GILI____.TTF; Gill Sans Ultra Bold Condensed (TrueType)=GILLUBCD.TTF; Gill Sans Ultra Bold (TrueType)=GILS
+ANUB.TTF; Gill Sans MT (TrueType)=GIL_____.TTF; Gloucester MT Extra Condensed (TrueType)=GLECB.TTF; Gill Sans MT Ext Co
+ndensed Bold (TrueType)=GLSNECB.TTF; Century Gothic (TrueType)=GOTHIC.TTF; Century Gothic Bold (TrueType)=GOTHICB.TTF;
+Century Gothic Bold Italic (TrueType)=GOTHICBI.TTF; Century Gothic Italic (TrueType)=GOTHICI.TTF; Goudy Old Style (True
+Type)=GOUDOS.TTF; Goudy Old Style Bold (TrueType)=GOUDOSB.TTF; Goudy Old Style Italic (TrueType)=GOUDOSI.TTF; Goudy Sto
+ut (TrueType)=GOUDYSTO.TTF; Harlow Solid Italic (TrueType)=HARLOWSI.TTF; Harrington (TrueType)=HARNGTON.TTF; Haettensch
+weiler (TrueType)=HATTEN.TTF; High Tower Text (TrueType)=HTOWERT.TTF; High Tower Text Italic (TrueType)=HTOWERTI.TTF; I
+mprint MT Shadow (TrueType)=IMPRISHA.TTF; Informal Roman (TrueType)=INFROMAN.TTF; Blackadder ITC (TrueType)=ITCBLKAD.TT
+F; Edwardian Script ITC (TrueType)=ITCEDSCR.TTF; Kristen ITC (TrueType)=ITCKRIST.TTF; Jokerman (TrueType)=JOKERMAN.TTF;
+ Juice ITC (TrueType)=JUICE___.TTF; Kunstler Script (TrueType)=KUNSTLER.TTF; Wide Latin (TrueType)=LATINWD.TTF; Lucida
+Bright (TrueType)=LBRITE.TTF; Lucida Bright Demibold (TrueType)=LBRITED.TTF; Lucida Bright Demibold Italic (TrueType)=L
+BRITEDI.TTF; Lucida Bright Italic (TrueType)=LBRITEI.TTF; Lucida Calligraphy Italic (TrueType)=LCALLIG.TTF; Lucida Fax
+Regular (TrueType)=LFAX.TTF; Lucida Fax Demibold (TrueType)=LFAXD.TTF; Lucida Fax Demibold Italic (TrueType)=LFAXDI.TTF
+; Lucida Fax Italic (TrueType)=LFAXI.TTF; Lucida Handwriting Italic (TrueType)=LHANDW.TTF; Lucida Sans Typewriter Regul
+ar (TrueType)=LTYPE.TTF; Lucida Sans Typewriter Bold (TrueType)=LTYPEB.TTF; Lucida Sans Typewriter Bold Oblique (TrueTy
+pe)=LTYPEBO.TTF; Lucida Sans Typewriter Oblique (TrueType)=LTYPEO.TTF; Magneto Bold (TrueType)=MAGNETOB.TTF; Maiandra G
+D (TrueType)=MAIAN.TTF; Matura MT Script Capitals (TrueType)=MATURASC.TTF; Mistral (TrueType)=MISTRAL.TTF; Modern No. 2
+0 (TrueType)=MOD20.TTF; Monotype Corsiva (TrueType)=MTCORSVA.TTF; Niagara Engraved (TrueType)=NIAGENG.TTF; Niagara Soli
+d (TrueType)=NIAGSOL.TTF; OCR A Extended (TrueType)=OCRAEXT.TTF; Old English Text MT (TrueType)=OLDENGL.TTF; Onyx (True
+Type)=ONYX.TTF; MS Outlook (TrueType)=OUTLOOK.TTF; Palace Script MT (TrueType)=PALSCRI.TTF; Papyrus (TrueType)=PAPYRUS.
+TTF; Parchment (TrueType)=PARCHM.TTF; Perpetua Bold Italic (TrueType)=PERBI___.TTF; Perpetua Bold (TrueType)=PERB____.T
+TF; Perpetua Italic (TrueType)=PERI____.TTF; Perpetua Titling MT Bold (TrueType)=PERTIBD.TTF; Perpetua Titling MT Light
+ (TrueType)=PERTILI.TTF; Perpetua (TrueType)=PER_____.TTF; Playbill (TrueType)=PLAYBILL.TTF; Poor Richard (TrueType)=PO
+ORICH.TTF; Pristina (TrueType)=PRISTINA.TTF; Rage Italic (TrueType)=RAGE.TTF; Ravie (TrueType)=RAVIE.TTF; MS Reference
+Sans Serif (TrueType)=REFSAN.TTF; MS Reference Specialty (TrueType)=REFSPCL.TTF; Rockwell Condensed Bold (TrueType)=ROC
+CB___.TTF; Rockwell Condensed (TrueType)=ROCC____.TTF; Rockwell (TrueType)=ROCK.TTF; Rockwell Bold (TrueType)=ROCKB.TTF
+; Rockwell Bold Italic (TrueType)=ROCKBI.TTF; Rockwell Extra Bold (TrueType)=ROCKEB.TTF; Rockwell Italic (TrueType)=ROC
+KI.TTF; Century Schoolbook Bold (TrueType)=SCHLBKB.TTF; Century Schoolbook Bold Italic (TrueType)=SCHLBKBI.TTF; Century
+ Schoolbook Italic (TrueType)=SCHLBKI.TTF; Script MT Bold (TrueType)=SCRIPTBL.TTF; Showcard Gothic (TrueType)=SHOWG.TTF
+; 隶书 (TrueType)=SIMLI.TTF; 幼圆 (TrueType)=SIMYOU.TTF; Snap ITC (TrueType)=SNAP____.TTF; 华文彩云 (TrueType)=STCAIYUN.TTF; St
+encil (TrueType)=STENCIL.TTF; 华文仿宋 (TrueType)=STFANGSO.TTF; 华文琥珀 (TrueType)=STHUPO.TTF; 华文楷体 (TrueType)=STKAITI.TTF; 华文
+隶书 (TrueType)=STLITI.TTF; 华文宋体 (TrueType)=STSONG.TTF; 华文细黑 (TrueType)=STXIHEI.TTF; 华文行楷 (TrueType)=STXINGKA.TTF; 华文新魏 (
+TrueType)=STXINWEI.TTF; 华文中宋 (TrueType)=STZHONGS.TTF; Tw Cen MT Bold Italic (TrueType)=TCBI____.TTF; Tw Cen MT Bold (Tr
+ueType)=TCB_____.TTF; Tw Cen MT Condensed Bold (TrueType)=TCCB____.TTF; Tw Cen MT Condensed Extra Bold (TrueType)=TCCEB
+.TTF; Tw Cen MT Condensed (TrueType)=TCCM____.TTF; Tw Cen MT Italic (TrueType)=TCMI____.TTF; Tw Cen MT (TrueType)=TCM__
+___.TTF; Tempus Sans ITC (TrueType)=TEMPSITC.TTF; Viner Hand ITC (TrueType)=VINERITC.TTF; Vivaldi Italic (TrueType)=VIV
+ALDII.TTF; Vladimir Script (TrueType)=VLADIMIR.TTF; Wingdings 2 (TrueType)=WINGDNG2.TTF; Wingdings 3 (TrueType)=WINGDNG
+3.TTF; APLPLUS Regular (TrueType)=APLPLUS.TTF; Ragland (TrueType)=Ragland.otf; 杨任东竹石体-Semibold (TrueType)=YangRenDongZh
+uShiTi-2.ttf; 杨任东竹石体-Regular (TrueType)=YangRenDongZhuShiTi-Regular-2.ttf; 杨任东竹石体-Medium (TrueType)=YangRenDongZhuShiTi
+-Medium-2.ttf; 杨任东竹石体-Light (TrueType)=YangRenDongZhuShiTi-Light-2.ttf; 杨任东竹石体-Heavy (TrueType)=YangRenDongZhuShiTi-Hea
+vy-2.ttf; 杨任东竹石体-Extralight (TrueType)=YangRenDongZhuShiTi-Extralight-2.ttf; 杨任东竹石体-Bold (TrueType)=YangRenDongZhuShiTi
+-Bold-2.ttf; 杨任东正棒体 (TrueType)=YangRenDongZhengBangTi-2.ttf; 苹方-繁 常规体 (TrueType)=PingFangTC.ttf; 苹方-繁 细体 (TrueType)=Pin
+gFangTC-Light.ttf; 苹方-繁 中黑体 (TrueType)=PingFangTC-Medium.ttf; 苹方-繁 中粗体 (TrueType)=PingFangTC-Semibold.ttf; 苹方-繁 纤细体 (Tr
+ueType)=PingFangTC-Thin.ttf; 苹方-繁 极细体 (TrueType)=PingFangTC-Ultralight.ttf; 苹方 粗体 (TrueType)=PingFang Bold.ttf; 苹方 特细 (
+TrueType)=PingFang ExtraLight.ttf; 苹方 特粗 (TrueType)=PingFang Heavy.ttf; 苹方 细体 (TrueType)=PingFang Light.ttf; 苹方 中等 (Tru
+eType)=PingFang Medium.ttf; 苹方 常规 (TrueType)=PingFang Regular.ttf; 庞门正道标题体 (TrueType)=PangMenZhengDaoBiaoTiTi-1.ttf; He
+lvetica-Roman-SemiB (TrueType)=Helvetica-Roman-SemiB.ttf; Helvetica Bold Oblique (TrueType)=Helvetica Bold Oblique.ttf;
+ Helvetica Bold (TrueType)=Helvetica Bold.ttf; Helvetica Condensed Bold Italic (TrueType)=Helvetica Condensed Bold Ital
+ic.ttf; Helvetica Condensed Bold (TrueType)=Helvetica Condensed Bold.ttf; Helvetica Condensed Italic (TrueType)=Helveti
+ca Condensed Italic.ttf; Helvetica Condensed (TrueType)=Helvetica Condensed.ttf; Helvetica Narrow Bold Lefty (TrueType)
+=Helvetica Narrow Bold Lefty.ttf; Helvetica Narrow Bold Oblique (TrueType)=Helvetica Narrow Bold Oblique.ttf; Helvetica
+ Narrow Bold (TrueType)=Helvetica Narrow Bold.ttf; Helvetica Narrow Lefty (TrueType)=Helvetica Narrow Lefty.ttf; Helvet
+ica Narrow Oblique (TrueType)=Helvetica Narrow Oblique.ttf; Helvetica Narrow (TrueType)=Helvetica Narrow.ttf; Helvetica
+ Oblique (TrueType)=Helvetica Oblique.ttf; Helvetica (TrueType)=Helvetica.ttf; Helvetica-Black-SemiBold (TrueType)=Helv
+etica-Black-SemiBold.ttf; Helvetica-BoldOblique (TrueType)=Helvetica-BoldOblique.ttf; Helvetica-Condensed-Black-Se (Tru
+eType)=Helvetica-Condensed-Black-Se.ttf; Helvetica-Condensed-Light-Li (TrueType)=Helvetica-Condensed-Light-Li.ttf; Helv
+etica-Condensed-Light-Light (TrueType)=Helvetica-Condensed-Light-Light.ttf; Helvetica-Condensed-Thin (TrueType)=Helveti
+ca-Condensed-Thin.ttf; Helvetica-Conth (TrueType)=Helvetica-Conth.ttf; HelveticaExt-Normal (TrueType)=HelveticaExt-Norm
+al.ttf; HelveticaExtObl-Heavy (TrueType)=HelveticaExtObl-Heavy.ttf; HelveticaExtObl-Light (TrueType)=HelveticaExtObl-Li
+ght.ttf; HelveticaExtObl-Normal (TrueType)=HelveticaExtObl-Normal.ttf; HelveticaInserat-Roman-SemiB (TrueType)=Helvetic
+aInserat-Roman-SemiB.ttf; HelveticaInserat-Roman-SemiBold (TrueType)=HelveticaInserat-Roman-SemiBold.ttf; Helvetica-Lig
+ht-Light-Italic (TrueType)=Helvetica-Light-Light-Italic.ttf; Helvetica-Narrow (TrueType)=Helvetica-Narrow.ttf; Helvetic
+a-Narrow-Bold (TrueType)=Helvetica-Narrow-Bold.ttf; Helvetica-Narrow-BoldOblique (TrueType)=Helvetica-Narrow-BoldObliqu
+e.ttf; HelveticaObl-Heavy (TrueType)=HelveticaObl-Heavy.ttf; HelveticaObl-Thin (TrueType)=HelveticaObl-Thin.ttf; Fira M
+ath Regular (TrueType)=FiraMath-Regular.otf; GFS Neohellenic Math (TrueType)=GFSNeohellenicMath.otf; Lato Heavy (TrueTy
+pe)=Lato-Heavy.ttf; Lato Heavy Italic (TrueType)=Lato-HeavyItalic.ttf; Lato Italic (TrueType)=Lato-Italic.ttf; Lato Lig
+ht (TrueType)=Lato-Light.ttf; Lato Light Italic (TrueType)=Lato-LightItalic.ttf; Lato Medium (TrueType)=Lato-Medium.ttf
+; Lato Medium Italic (TrueType)=Lato-MediumItalic.ttf; Lato Regular (TrueType)=Lato-Regular.ttf; Lato Semibold (TrueTyp
+e)=Lato-Semibold.ttf; Lato Semibold Italic (TrueType)=Lato-SemiboldItalic.ttf; Lato Thin (TrueType)=Lato-Thin.ttf; Lato
+ Thin Italic (TrueType)=Lato-ThinItalic.ttf; Lato Black (TrueType)=Lato-Black.ttf; Lato Black Italic (TrueType)=Lato-Bl
+ackItalic.ttf; Lato Bold (TrueType)=Lato-Bold.ttf; Lato Bold Italic (TrueType)=Lato-BoldItalic.ttf; Lato Hairline (True
+Type)=Lato-Hairline.ttf; Lato Hairline Italic (TrueType)=Lato-HairlineItalic.ttf; Lucida Sans Demibold Italic (TrueType
+)=lucida sans halbfett kursiv.ttf; Lucida Sans Demibold Roman (TrueType)=lucida sans halbfett.ttf; Lucida Sans Italic (
+TrueType)=Lucida Sans Italic.ttf; Lucida Sans Regular (TrueType)=Lucida Sans.ttf; LucidaSans-Bold (TrueType)=LucidaSans
+-Bold.otf; Lucida Sans Demibold (TrueType)=lucidasansdemibold.ttf; PingFang SC Bold (TrueType)=PingFang SC Bold.ttf; Pi
+ngFang SC ExtraLight (TrueType)=PingFang SC ExtraLight.ttf; PingFang SC Heavy (TrueType)=PingFang SC Heavy.ttf; PingFan
+g SC Semibold 常规 (TrueType)=PingFang SC Semibold.ttf; PingFang SC Semibold (TrueType)=PingFang SC.ttf; Source Han Serif
+ SemiBold & Source Han Serif K SemiBold & 思源宋体 SemiBold & 思源宋體 SemiBold & 思源宋體 香港 SemiBold (TrueType)=SourceHanSerif-Se
+miBold.ttc; Source Han Serif Bold & Source Han Serif K Bold & 思源宋体 Bold & 思源宋體 Bold & 思源宋體 香港 Bold (TrueType)=SourceHan
+Serif-Bold.ttc; Source Han Serif ExtraLight & Source Han Serif K ExtraLight & 思源宋体 ExtraLight & 思源宋體 ExtraLight & 思源宋體
+香港 ExtraLight (TrueType)=SourceHanSerif-ExtraLight.ttc; Source Han Serif Heavy & Source Han Serif K Heavy & 思源宋体 Heavy
+& 思源宋體 Heavy & 思源宋體 香港 Heavy (TrueType)=SourceHanSerif-Heavy.ttc; Source Han Serif Light & Source Han Serif K Light & 思
+源宋体 Light & 思源宋體 Light & 思源宋體 香港 Light (TrueType)=SourceHanSerif-Light.ttc; Source Han Serif Medium & Source Han Serif
+K Medium & 思源宋体 Medium & 思源宋體 Medium & 思源宋體 香港 Medium (TrueType)=SourceHanSerif-Medium.ttc; Source Han Serif & Source H
+an Serif K & 思源宋体 & 思源宋體 & 思源宋體 香港 (TrueType)=SourceHanSerif-Regular.ttc; TeXGyreSchola-Regular (TrueType)=texgyreschol
+a-regular.otf; TeXGyreTermes-Bold (TrueType)=texgyretermes-bold.otf; TeXGyreTermes-BoldItalic (TrueType)=texgyretermes-
+bolditalic.otf; TeXGyreTermes-Italic (TrueType)=texgyretermes-italic.otf; TeXGyreTermes-Regular (TrueType)=texgyreterme
+s-regular.otf; TeXGyreAdventor-Bold (TrueType)=texgyreadventor-bold.otf; TeXGyreAdventor-BoldItalic (TrueType)=texgyrea
+dventor-bolditalic.otf; TeXGyreAdventor-Italic (TrueType)=texgyreadventor-italic.otf; TeXGyreAdventor-Regular (TrueType
+)=texgyreadventor-regular.otf; TeXGyreBonum-Bold (TrueType)=texgyrebonum-bold.otf; TeXGyreBonum-BoldItalic (TrueType)=t
+exgyrebonum-bolditalic.otf; TeXGyreBonum-Italic (TrueType)=texgyrebonum-italic.otf; TeXGyreBonum-Regular (TrueType)=tex
+gyrebonum-regular.otf; TeXGyreChorus-MediumItalic (TrueType)=texgyrechorus-mediumitalic.otf; TeXGyreCursor-Bold (TrueTy
+pe)=texgyrecursor-bold.otf; TeXGyreCursor-BoldItalic (TrueType)=texgyrecursor-bolditalic.otf; TeXGyreCursor-Italic (Tru
+eType)=texgyrecursor-italic.otf; TeXGyreCursor-Regular (TrueType)=texgyrecursor-regular.otf; TeXGyreHeros-Bold (TrueTyp
+e)=texgyreheros-bold.otf; TeXGyreHeros-BoldItalic (TrueType)=texgyreheros-bolditalic.otf; TeXGyreHerosCondensed-Bold (T
+rueType)=texgyreheroscn-bold.otf; TeXGyreHerosCondensed-BoldItalic (TrueType)=texgyreheroscn-bolditalic.otf; TeXGyreHer
+osCondensed-Italic (TrueType)=texgyreheroscn-italic.otf; TeXGyreHerosCondensed-Regular (TrueType)=texgyreheroscn-regula
+r.otf; TeXGyreHeros-Italic (TrueType)=texgyreheros-italic.otf; TeXGyreHeros-Regular (TrueType)=texgyreheros-regular.otf
+; TeXGyrePagella-Bold (TrueType)=texgyrepagella-bold.otf; TeXGyrePagella-BoldItalic (TrueType)=texgyrepagella-bolditali
+c.otf; TeXGyrePagella-Italic (TrueType)=texgyrepagella-italic.otf; TeXGyrePagella-Regular (TrueType)=texgyrepagella-reg
+ular.otf; TeXGyreSchola-Bold (TrueType)=texgyreschola-bold.otf; TeXGyreSchola-BoldItalic (TrueType)=texgyreschola-boldi
+talic.otf; TeXGyreSchola-Italic (TrueType)=texgyreschola-italic.otf; Caveat (TrueType)=Caveat-Regular.ttf; 文鼎谁的字体E5GBK_
+M (TrueType)=文鼎谁的字体.ttf; BubblegumSans-Regular (TrueType)=BubblegumSans-Regular.otf; ￎￄﾶﾦￋﾭﾵￄￗￖￌ￥ﾷﾱ (TrueType)=文鼎谁的字体繁.
+ttf; ￎￄﾶﾦﾴￖﾺￚﾼ￲ (TrueType)=文鼎粗圆简.TTF; ￎￄﾶﾦﾴ￳ﾱ￪ￋￎﾼ￲ (TrueType)=文鼎大标宋简.TTF; ￎￄﾶﾦￊ￩ￋￎﾷﾱ (TrueType)=文鼎书宋繁.TTF; ￎￄﾶﾦￏﾸﾷￂￋￎﾷﾱ
+ (TrueType)=文鼎细仿宋繁.TTF; ￎￄﾶﾦ￐ﾡﾱ￪ￋￎﾼ￲ (TrueType)=文鼎小标宋简.TTF; ￎￄﾶﾦ￐ￂￒￕￌ￥ﾼ￲ (TrueType)=文鼎新艺体简.TTF; ￎￄﾶﾦ￧￺￧￪ﾷﾱ (TrueType)=文
+鼎琥珀繁.TTF; ￎￄﾶﾦￌ￘ﾴￖￋￎﾼ￲ (TrueType)=文鼎特粗宋简.TTF; ﾤ￥ﾹﾩￅRￆEￅ￩ (TrueType)=文鼎霹靂體.ttf; ﾤ￥ﾹﾩﾷsￃ￀ￅ￩ (TrueType)=文鼎新藝體.ttf; ﾤ￥ﾹﾩﾶWﾶ
+￪ (TrueType)=文鼎超圓.ttf; ﾤ￥ﾹﾩﾷsﾤﾤﾶￂﾥ~ﾦrﾤ@ (TrueType)=文鼎新中黑外字一.ttf; ﾤ￥ﾹﾩﾷsﾲￊﾶￂ (TrueType)=文鼎新粗黑.ttf; ﾤ￥ﾹﾩﾷsﾤﾤﾯSﾶￂ (TrueTyp
+e)=文鼎新中特黑.ttf; ﾤ￥ﾹﾩﾷsﾯSﾶￂ (TrueType)=文鼎新特黑.ttf; ﾤ￥ﾹﾩﾷsﾲￓﾶￂ (TrueType)=文鼎新細黑.ttf; ﾤ￥ﾹﾩﾷsﾤﾤﾶￂ (TrueType)=文鼎新中黑.ttf; ﾤ￥ﾹﾩﾶ
+Wﾶￂ (TrueType)=文鼎超黑.ttf; ﾤ￥ﾹﾩﾲￊﾶￂ (TrueType)=文鼎粗黑.ttf; ﾤ￥ﾹﾩﾯSﾶￂ (TrueType)=文鼎特黑.ttf; ﾤ￥ﾹﾩﾲￓﾶￂ (TrueType)=文鼎細黑.ttf; ﾤ￥ﾹﾩ
+ﾲￊﾷﾢ (TrueType)=文鼎粗楷.ttf; ﾤ￥ﾹﾩﾲￓﾷﾢ (TrueType)=文鼎細楷.ttf; ﾤ￥ﾹﾩﾰ￉ﾫFﾬy (TrueType)=文鼎勘亭流.ttf; ﾤ￥ﾹﾩﾲￊ￁￵ (TrueType)=文鼎粗隸.ttf;
+ﾤ￥ﾹﾩﾤﾤﾲￊ￁￵ (TrueType)=文鼎中粗隸.ttf; ﾤ￥ﾹﾩﾤﾤ￁￵ (TrueType)=文鼎中隸.ttf; ﾤ￥ﾹﾩﾲￊﾩ￺ (TrueType)=文鼎粗明.ttf; ﾤ￥ﾹﾩﾮ￼ﾳ￸ￅ￩ (TrueType)=文鼎海報
+體.ttf; ﾤ￥ﾹﾩﾤﾤﾦ￦ﾮ￑ (TrueType)=文鼎中行書.ttf; ﾤ￥ﾹﾩﾲￊￃQﾸO (TrueType)=文鼎粗魏碑.ttf; ﾤ￥ﾹﾩﾶ￪ﾥ￟ￅ￩ (TrueType)=文鼎圓立體.ttf; ﾤ￥ﾹﾩﾲￊﾦ￦ﾷﾢ (T
+rueType)=文鼎粗行楷.ttf; ﾤ￥ﾹﾩﾲￓ﾿￻ﾵﾧﾦ￦ﾷﾢ (TrueType)=文鼎細鋼筆行楷.ttf; ﾤ￥ﾹﾩﾲￊ﾿￻ﾵﾧﾦ￦ﾷﾢ (TrueType)=文鼎粗鋼筆行楷.ttf; 文鼎鬍子體 (TrueType)=文鼎鬍子
+體.ttf; 文鼎淹水體 (TrueType)=文鼎淹水體.ttf; 文鼎彈簧體 (TrueType)=文鼎彈簧體.ttf; 文鼎石頭體 (TrueType)=文鼎石頭體.ttf; 文鼎香腸體 (TrueType)=文鼎香腸體.ttf;
+文鼎竹子體 (TrueType)=文鼎竹子體.ttf; 文鼎花瓣體 (TrueType)=文鼎花瓣體.ttf; ￎￄﾶﾦￏﾰￗￖￌ￥ (TrueType)=文鼎习字体.TTF; ￎￄﾶﾦﾳ￝ￂￖￌ￥ (TrueType)=文鼎齿轮体.TT
+F; ﾤ￥ﾹﾩﾦ￦ﾷﾢﾸOￅ￩ (TrueType)=文鼎行楷碑體.ttf; ﾤ￥ﾹﾩￃtￅxￅ￩ (TrueType)=文鼎瀟灑體.ttf; ﾤ￥ﾹﾩﾽￖﾪﾺﾦrￅ￩ (TrueType)=文鼎誰的字體.ttf; ﾤ￥ﾹﾩﾢ￞ﾢ￝ﾢ￞ﾡ
+￐ﾢﾳ (TrueType)=文鼎POP-4.ttf; ﾤ￥ﾹﾩﾤﾤﾯSﾼsﾧiￅ￩ (TrueType)=文鼎中特廣告體.ttf; ﾤ￥ﾹﾩﾯ￰ﾴￆￅ￩ (TrueType)=文鼎荊棘體.ttf; ﾤ￥ﾹﾩﾽ￢ﾪﾯￅ￩ (TrueTyp
+e)=文鼎賤狗體.ttf; ﾤ￥ﾹﾩ￀Jﾨ￨ￅ￩ (TrueType)=文鼎雕刻體.ttf; ﾤ￥ﾹﾩﾤ￵ﾮ￣ￅ￩ (TrueType)=文鼎火柴體.ttf; ﾤ￥ﾹﾩￃCﾷﾢﾤEﾮcￅ￩ (TrueType)=文鼎顏楷九宮體.ttf;
+ﾤ￥ﾹﾩﾧﾬﾧﾬￅ￩ (TrueType)=文鼎妞妞體.ttf; ￎￄﾶﾦCSﾳﾤￋￎﾷﾱ (TrueType)=文鼎CS长宋体繁.TTF; ￎￄﾶﾦﾹￅￓﾡￌ￥ﾷﾱ (TrueType)=文鼎古印体繁.TTF; ￎￄﾶﾦￌ￘ﾴￖﾺￚﾼ￲
+ (TrueType)=文鼎特粗黑简.TTF; ￎￄﾶﾦﾱﾨￋￎﾼ￲ (TrueType)=文鼎报宋简.TTF; ￎￄﾶﾦﾴￖﾺￚﾷﾱ (TrueType)=文鼎粗黑繁.TTF; ￎￄﾶﾦﾴￖￎﾺﾱﾮﾼ￲ (TrueType)=文鼎粗魏碑
+简.TTF; ￎￄﾶﾦﾴￖ￐￐﾿ﾬﾼ￲ (TrueType)=文鼎粗行楷简.TTF; MT Extra (TrueType)=mtextra.ttf; Euclid (TrueType)=euclid.ttf; Euclid Bold (
+TrueType)=euclidb.ttf; Euclid Bold Italic (TrueType)=euclidbi.ttf; Euclid Italic (TrueType)=euclidi.ttf; Euclid Symbol
+(TrueType)=eucsym.ttf; Euclid Symbol Bold (TrueType)=eucsymb.ttf; Euclid Symbol Bold Italic (TrueType)=eucsymbi.ttf; Eu
+clid Symbol Italic (TrueType)=eucsymi.ttf; Euclid Extra (TrueType)=euextra.ttf; Euclid Extra Bold (TrueType)=euextrab.t
+tf; Euclid Fraktur (TrueType)=eufrak.ttf; Euclid Fraktur Bold (TrueType)=eufrakb.ttf; Euclid Math One (TrueType)=eumat1
+.ttf; Euclid Math One Bold (TrueType)=eumat1b.ttf; Euclid Math Two (TrueType)=eumat2.ttf; Euclid Math Two Bold (TrueTyp
+e)=eumat2b.ttf; Fences Plain (TrueType)=fences.ttf; Tiger (TrueType)=Tiger.ttf; MT Extra Tiger (TrueType)=Mt Extra Tige
+r.ttf; Symbol Tiger (TrueType)=Symbol Tiger.ttf; Tiger Expert (TrueType)=Tiger Expert.ttf; Symbol Tiger Expert (TrueTyp
+e)=Symbol Tiger Expert.ttf; 方正彩云简体 (TrueType)=方正彩云简体.ttf; DejaVu Sans Bold Oblique (TrueType)=DejaVuSans-BoldOblique-4.
+ttf; DejaVu Sans Bold (TrueType)=DejaVuSans-Bold-3.ttf; DejaVuMathTeXGyre-Regular (TrueType)=DejaVuMathTeXGyre-2.ttf; D
+ejaVu Sans Mono (TrueType)=DejaVuSansMono-1.ttf; DejaVu Serif Condensed (TrueType)=DejaVuSerifCondensed-22.ttf; DejaVu
+Serif Condensed Italic (TrueType)=DejaVuSerifCondensed-Italic-21.ttf; DejaVu Serif Condensed Bold Italic (TrueType)=Dej
+aVuSerifCondensed-BoldItalic-20.ttf; DejaVu Serif Condensed Bold (TrueType)=DejaVuSerifCondensed-Bold-19.ttf; DejaVu Se
+rif (TrueType)=DejaVuSerif-18.ttf; DejaVu Serif Italic (TrueType)=DejaVuSerif-Italic-17.ttf; DejaVu Sans Condensed Bold
+ Oblique (TrueType)=DejaVuSansCondensed-BoldOblique-16.ttf; DejaVu Sans Condensed (TrueType)=DejaVuSansCondensed-15.ttf
+; DejaVu Sans Mono Oblique (TrueType)=DejaVuSansMono-Oblique-14.ttf; DejaVu Sans Mono Bold Oblique (TrueType)=DejaVuSan
+sMono-BoldOblique-13.ttf; DejaVu Serif Bold (TrueType)=DejaVuSerif-Bold-12.ttf; DejaVu Sans Condensed Oblique (TrueType
+)=DejaVuSansCondensed-Oblique-10.ttf; DejaVu Sans Condensed Bold (TrueType)=DejaVuSansCondensed-Bold-8.ttf; DejaVu Sans
+ (TrueType)=DejaVuSans-7.ttf; DejaVu Sans Oblique (TrueType)=DejaVuSans-Oblique-6.ttf; DejaVu Sans ExtraLight (TrueType
+)=DejaVuSans-ExtraLight-5.ttf; 方正黑体简体 (TrueType)=方正黑体简体.TTF; 方正正黑简体 (TrueType)=方正正黑简体.ttf; SF Pro Rounded Bold (TrueTyp
+e)=SF-Pro-Rounded-Bold.otf; SF Pro Rounded Heavy (TrueType)=SF-Pro-Rounded-Heavy.otf; SF Pro Rounded Light (TrueType)=S
+F-Pro-Rounded-Light.otf; SF Pro Rounded Medium (TrueType)=SF-Pro-Rounded-Medium.otf; SF Pro Rounded Regular (TrueType)=
+SF-Pro-Rounded-Regular.otf; SF Pro Rounded Semibold (TrueType)=SF-Pro-Rounded-Semibold.otf; SF Pro Rounded Thin (TrueTy
+pe)=SF-Pro-Rounded-Thin.otf; SF Pro Rounded Ultralight (TrueType)=SF-Pro-Rounded-Ultralight.otf; SF Pro Text Black (Tru
+eType)=SF-Pro-Text-Black.otf; SF Pro Text Bold (TrueType)=SF-Pro-Text-Bold.otf; SF Pro Text Heavy (TrueType)=SF-Pro-Tex
+t-Heavy.otf; SF Pro Text Light (TrueType)=SF-Pro-Text-Light.otf; SF Pro Text Medium (TrueType)=SF-Pro-Text-Medium.otf;
+SF Pro Text Regular (TrueType)=SF-Pro-Text-Regular.otf; SF Pro Text Semibold (TrueType)=SF-Pro-Text-Semibold.otf; SF Pr
+o Display Black (TrueType)=SF-Pro-Display-Black.otf; SF Pro Display Bold (TrueType)=SF-Pro-Display-Bold.otf; SF Pro Dis
+play Heavy (TrueType)=SF-Pro-Display-Heavy.otf; SF Pro Display Light (TrueType)=SF-Pro-Display-Light.otf; SF Pro Displa
+y Medium (TrueType)=SF-Pro-Display-Medium.otf; SF Pro Display Regular (TrueType)=SF-Pro-Display-Regular.otf; SF Pro Dis
+play Semibold (TrueType)=SF-Pro-Display-Semibold.otf; SF Pro Display Thin (TrueType)=SF-Pro-Display-Thin.otf; SF Pro Di
+splay Ultralight (TrueType)=SF-Pro-Display-Ultralight.otf; SF Pro Display Heavy Italic (TrueType)=SF-Pro-Display-HeavyI
+talic.otf; SF Pro Display Light Italic (TrueType)=SF-Pro-Display-LightItalic.otf; SF Pro Display Medium Italic (TrueTyp
+e)=SF-Pro-Display-MediumItalic.otf; SF Pro Display Regular Italic (TrueType)=SF-Pro-Display-RegularItalic.otf; SF Pro D
+isplay Semibold Italic (TrueType)=SF-Pro-Display-SemiboldItalic.otf; SF Pro Display Thin Italic (TrueType)=SF-Pro-Displ
+ay-ThinItalic.otf; SF Pro Display Ultralight Italic (TrueType)=SF-Pro-Display-UltralightItalic.otf; SF Pro Text Black I
+talic (TrueType)=SF-Pro-Text-BlackItalic.otf; SF Pro Text Bold Italic (TrueType)=SF-Pro-Text-BoldItalic.otf; SF Pro Tex
+t Heavy Italic (TrueType)=SF-Pro-Text-HeavyItalic.otf; SF Pro Text Light Italic (TrueType)=SF-Pro-Text-LightItalic.otf;
+ SF Pro Text Medium Italic (TrueType)=SF-Pro-Text-MediumItalic.otf; SF Pro Text Italic (TrueType)=SF-Pro-Text-RegularIt
+alic.otf; SF Pro Text Semibold Italic (TrueType)=SF-Pro-Text-SemiboldItalic.otf; SF Pro Text Thin Italic (TrueType)=SF-
+Pro-Text-ThinItalic.otf; SF Pro Text Ultralight Italic (TrueType)=SF-Pro-Text-UltralightItalic.otf; SF Pro Display Blac
+k Italic (TrueType)=SF-Pro-Display-BlackItalic.otf; SF Pro Display Bold Italic (TrueType)=SF-Pro-Display-BoldItalic.otf
+; SF Pro Text Thin (TrueType)=SF-Pro-Text-Thin.otf; SF Pro Text Ultralight (TrueType)=SF-Pro-Text-Ultralight.otf; SF Pr
+o Rounded Black (TrueType)=SF-Pro-Rounded-Black.otf; 苹方-港 常规体 & 苹方-繁 常规体 & 苹方-简 常规体 & 苹方-港 中黑体 & 苹方-繁 中黑体 & 苹方-简 中黑体 &
+苹方-港 中粗体 & 苹方-繁 中粗体 & 苹方-简 中粗体 & 苹方-港 细体 & 苹方-繁 细体 & 苹方-简 细体 & 苹方-港 纤细体 & 苹方-繁 纤细体 & 苹方-简 纤细体 & 苹方-港 极细体 & 苹方-繁 极细体 & 苹
+方-简 极细体 & .苹方-港 常规体 & .苹方-繁 常规体 & .苹方-简 常规体 & .苹方-港 中黑体 & .苹方-繁 中黑体 & .苹方-=PingFang.ttc; Cascadia Code Regular (TrueTyp
+e)=CascadiaCode.ttf; Cascadia Mono Regular (TrueType)=CascadiaMono.ttf; CMU Typewriter Text Variable Width Medium (True
+Type)=cmunvt.ttf; CMU Serif BoldItalic (TrueType)=cmunbi.ttf; CMU Serif Extra BoldSlanted (TrueType)=cmunbl.ttf; CMU Br
+ight Oblique (TrueType)=cmunbmo.ttf; CMU Bright Roman (TrueType)=cmunbmr.ttf; CMU Bright SemiBoldOblique (TrueType)=cmu
+nbso.ttf; CMU Bright SemiBold (TrueType)=cmunbsr.ttf; CMU Typewriter Text Light (TrueType)=cmunbtl.ttf; CMU Typewriter
+Text LightOblique (TrueType)=cmunbto.ttf; CMU Serif Bold (TrueType)=cmunbx.ttf; CMU Classical Serif Italic (TrueType)=c
+munci.ttf; CMU Typewriter Text Italic (TrueType)=cmunit.ttf; CMU Concrete BoldItalic (TrueType)=cmunobi.ttf; CMU Concre
+te Bold (TrueType)=cmunobx.ttf; CMU Concrete Roman (TrueType)=cmunorm.ttf; CMU Concrete Italic (TrueType)=cmunoti.ttf;
+CMU Serif Roman (TrueType)=cmunrm.ttf; CMU Sans Serif Oblique (TrueType)=cmunsi.ttf; CMU Serif Extra RomanSlanted (True
+Type)=cmunsl.ttf; CMU Sans Serif BoldOblique (TrueType)=cmunso.ttf; CMU Sans Serif Medium (TrueType)=cmunss.ttf; CMU Sa
+ns Serif Demi Condensed DemiCondensed (TrueType)=cmunssdc.ttf; CMU Sans Serif Bold (TrueType)=cmunsx.ttf; CMU Typewrite
+r Text Bold (TrueType)=cmuntb.ttf; CMU Serif Italic (TrueType)=cmunti.ttf; CMU Typewriter Text Regular (TrueType)=cmunt
+t.ttf; CMU Typewriter Text BoldItalic (TrueType)=cmuntx.ttf; CMU Serif Upright Italic UprightItalic (TrueType)=cmunui.t
+tf; CMU Typewriter Text Variable Width Italic (TrueType)=cmunvi.ttf; Noto Sans SC (TrueType)=NotoSansSC-VF.ttf; Noto Se
+rif SC (TrueType)=NotoSerifSC-Regular.otf; Noto Sans S Chinese DemiLight (TrueType)=NotoSansHans-DemiLight.otf; Noto Sa
+ns S Chinese Bold Bold (TrueType)=NotoSansHans-Bold.otf; Noto Sans S Chinese Black Bold (TrueType)=NotoSansHans-Black.o
+tf; Noto Sans S Chinese Thin (TrueType)=NotoSansHans-Thin-Windows.otf; Noto Sans S Chinese Regular (TrueType)=NotoSansH
+ans-Regular.otf; Noto Sans S Chinese Medium (TrueType)=NotoSansHans-Medium.otf; Noto Sans S Chinese Light (TrueType)=No
+toSansHans-Light.otf; Source Han Mono EL & Source Han Mono EL Italic & Source Han Mono K EL & Source Han Mono K EL Ital
+ic & 思源等宽 EL & 思源等宽 EL Italic & 思源等寬 EL & 思源等寬 EL Italic & 思源等寬 香港 EL & 思源等寬 香港 EL Italic & Source Han Mono L & Source
+Han Mono L Italic & Source Han Mono K L & S=SourceHanMono.ttc; Noto Sans Mono Regular (TrueType)=NotoSansMono-VariableF
+ont_wdth,wght.ttf; 霞鹜文楷 TC Regular (TrueType)=LXGWWenKaiTC-Regular.ttf; 霞鹜文楷等宽 TC Light Regular (TrueType)=LXGWWenKaiMo
+noTC-Light.ttf; 霞鹜文楷等宽 TC Medium Regular (TrueType)=LXGWWenKaiMonoTC-Medium.ttf; 霞鹜文楷等宽 TC Regular (TrueType)=LXGWWenKa
+iMonoTC-Regular.ttf; 霞鹜文楷 TC Light Regular (TrueType)=LXGWWenKaiTC-Light.ttf; 霞鹜文楷 TC Medium Regular (TrueType)=LXGWWen
+KaiTC-Medium.ttf; Inconsolata Regular (TrueType)=Inconsolata-VariableFont_wdth,wght.ttf; Noto Serif CJK SC Black (TrueT
+ype)=NotoSerifCJKsc-Black.otf; Noto Serif CJK SC Bold (TrueType)=NotoSerifCJKsc-Bold.otf; Noto Serif CJK SC SemiBold (T
+rueType)=NotoSerifCJKsc-SemiBold.otf; Noto Serif CJK SC ExtraLight (TrueType)=NotoSerifCJKsc-ExtraLight.otf; Noto Serif
+ CJK SC Light (TrueType)=NotoSerifCJKsc-Light.otf; Noto Serif CJK SC Medium (TrueType)=NotoSerifCJKsc-Medium.otf; Noto
+Serif CJK SC (TrueType)=NotoSerifCJKsc-Regular.otf; Noto Serif SC SemiBold (TrueType)=NotoSerifSC-SemiBold.otf; Noto Se
+rif SC Black (TrueType)=NotoSerifSC-Black.otf; Noto Serif SC Bold (TrueType)=NotoSerifSC-Bold.otf; Noto Serif SC ExtraL
+ight (TrueType)=NotoSerifSC-ExtraLight.otf; Noto Serif SC Light (TrueType)=NotoSerifSC-Light.otf; Noto Serif SC Medium
+(TrueType)=NotoSerifSC-Medium.otf; Ubuntu Mono (TrueType)=UbuntuMono-Regular.ttf; Ubuntu Mono Bold (TrueType)=UbuntuMon
+o-Bold.ttf; Ubuntu Mono Bold Italic (TrueType)=UbuntuMono-BoldItalic.ttf; Ubuntu Mono Italic (TrueType)=UbuntuMono-Ital
+ic.ttf; PSPath=Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Font
+s; PSParentPath=Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion; PS
+ChildName=Fonts; PSDrive=HKLM; PSProvider=Microsoft.PowerShell.Core\Registry}
+
+
+PS D:\C2D\Desktop> Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts' | Select-String "Noto"
+
+@{Arial (TrueType)=arial.ttf; Arial Black (TrueType)=ariblk.ttf; Arial Bold (TrueType)=arialbd.ttf; Arial Bold Italic (
+TrueType)=arialbi.ttf; Arial Italic (TrueType)=ariali.ttf; Bahnschrift (TrueType)=bahnschrift.ttf; Calibri (TrueType)=c
+alibri.ttf; Calibri Bold (TrueType)=calibrib.ttf; Calibri Bold Italic (TrueType)=calibriz.ttf; Calibri Italic (TrueType
+)=calibrii.ttf; Calibri Light (TrueType)=calibril.ttf; Calibri Light Italic (TrueType)=calibrili.ttf; Cambria & Cambria
+ Math (TrueType)=cambria.ttc; Cambria Bold (TrueType)=cambriab.ttf; Cambria Bold Italic (TrueType)=cambriaz.ttf; Cambri
+a Italic (TrueType)=cambriai.ttf; Candara (TrueType)=candara.ttf; Candara Bold (TrueType)=candarab.ttf; Candara Bold It
+alic (TrueType)=candaraz.ttf; Candara Italic (TrueType)=candarai.ttf; Candara Light (TrueType)=candaral.ttf; Candara Li
+ght Italic (TrueType)=candarali.ttf; Comic Sans MS (TrueType)=comic.ttf; Comic Sans MS Bold (TrueType)=comicbd.ttf; Com
+ic Sans MS Bold Italic (TrueType)=comicz.ttf; Comic Sans MS Italic (TrueType)=comici.ttf; Consolas (TrueType)=consola.t
+tf; Consolas Bold (TrueType)=consolab.ttf; Consolas Bold Italic (TrueType)=consolaz.ttf; Consolas Italic (TrueType)=con
+solai.ttf; Constantia (TrueType)=constan.ttf; Constantia Bold (TrueType)=constanb.ttf; Constantia Bold Italic (TrueType
+)=constanz.ttf; Constantia Italic (TrueType)=constani.ttf; Corbel (TrueType)=corbel.ttf; Corbel Bold (TrueType)=corbelb
+.ttf; Corbel Bold Italic (TrueType)=corbelz.ttf; Corbel Italic (TrueType)=corbeli.ttf; Corbel Light (TrueType)=corbell.
+ttf; Corbel Light Italic (TrueType)=corbelli.ttf; Courier New (TrueType)=cour.ttf; Courier New Bold (TrueType)=courbd.t
+tf; Courier New Bold Italic (TrueType)=courbi.ttf; Courier New Italic (TrueType)=couri.ttf; Ebrima (TrueType)=ebrima.tt
+f; Ebrima Bold (TrueType)=ebrimabd.ttf; Franklin Gothic Medium (TrueType)=framd.ttf; Franklin Gothic Medium Italic (Tru
+eType)=framdit.ttf; Gabriola (TrueType)=Gabriola.ttf; Gadugi (TrueType)=gadugi.ttf; Gadugi Bold (TrueType)=gadugib.ttf;
+ Georgia (TrueType)=georgia.ttf; Georgia Bold (TrueType)=georgiab.ttf; Georgia Bold Italic (TrueType)=georgiaz.ttf; Geo
+rgia Italic (TrueType)=georgiai.ttf; Impact (TrueType)=impact.ttf; Ink Free (TrueType)=Inkfree.ttf; Javanese Text (True
+Type)=javatext.ttf; Leelawadee UI (TrueType)=leelawui.ttf; Leelawadee UI Bold (TrueType)=leelauib.ttf; Leelawadee UI Se
+milight (TrueType)=leeluisl.ttf; Lucida Console (TrueType)=lucon.TTF; Lucida Sans Unicode (TrueType)=l_10646.ttf; Malgu
+n Gothic (TrueType)=malgun.ttf; Malgun Gothic Bold (TrueType)=malgunbd.ttf; Malgun Gothic SemiLight (TrueType)=malgunsl
+.ttf; Microsoft Himalaya (TrueType)=himalaya.ttf; Microsoft JhengHei & Microsoft JhengHei UI (TrueType)=msjh.ttc; Micro
+soft JhengHei Bold & Microsoft JhengHei UI Bold (TrueType)=msjhbd.ttc; Microsoft JhengHei Light & Microsoft JhengHei UI
+ Light (TrueType)=msjhl.ttc; Microsoft New Tai Lue (TrueType)=ntailu.ttf; Microsoft New Tai Lue Bold (TrueType)=ntailub
+.ttf; Microsoft PhagsPa (TrueType)=phagspa.ttf; Microsoft PhagsPa Bold (TrueType)=phagspab.ttf; Microsoft Sans Serif (T
+rueType)=micross.ttf; Microsoft Tai Le (TrueType)=taile.ttf; Microsoft Tai Le Bold (TrueType)=taileb.ttf; Microsoft YaH
+ei & Microsoft YaHei UI (TrueType)=msyh.ttc; Microsoft YaHei Bold & Microsoft YaHei UI Bold (TrueType)=msyhbd.ttc; Micr
+osoft YaHei Light & Microsoft YaHei UI Light (TrueType)=msyhl.ttc; Microsoft Yi Baiti (TrueType)=msyi.ttf; MingLiU-ExtB
+ & PMingLiU-ExtB & MingLiU_HKSCS-ExtB (TrueType)=mingliub.ttc; Modern (All res)=modern.fon; Mongolian Baiti (TrueType)=
+monbaiti.ttf; MS Gothic & MS UI Gothic & MS PGothic (TrueType)=msgothic.ttc; MV Boli (TrueType)=mvboli.ttf; Myanmar Tex
+t (TrueType)=mmrtext.ttf; Myanmar Text Bold (TrueType)=mmrtextb.ttf; Nirmala UI & Nirmala UI Bold & Nirmala UI Semiligh
+t & Nirmala Text & Nirmala Text Bold & Nirmala Text Semilight (TrueType)=Nirmala.ttc; Palatino Linotype (TrueType)=pala
+.ttf; Palatino Linotype Bold (TrueType)=palab.ttf; Palatino Linotype Bold Italic (TrueType)=palabi.ttf; Palatino Linoty
+pe Italic (TrueType)=palai.ttf; Roman (All res)=roman.fon; Sans Serif Collection (TrueType)=SansSerifCollection.ttf; Sc
+ript (All res)=script.fon; Segoe Fluent Icons (TrueType)=SegoeIcons.ttf; Segoe MDL2 Assets (TrueType)=segmdl2.ttf; Sego
+e Print (TrueType)=segoepr.ttf; Segoe Print Bold (TrueType)=segoeprb.ttf; Segoe Script (TrueType)=segoesc.ttf; Segoe Sc
+ript Bold (TrueType)=segoescb.ttf; Segoe UI (TrueType)=segoeui.ttf; Segoe UI Black (TrueType)=seguibl.ttf; Segoe UI Bla
+ck Italic (TrueType)=seguibli.ttf; Segoe UI Bold (TrueType)=segoeuib.ttf; Segoe UI Bold Italic (TrueType)=segoeuiz.ttf;
+ Segoe UI Emoji (TrueType)=seguiemj.ttf; Segoe UI Historic (TrueType)=seguihis.ttf; Segoe UI Italic (TrueType)=segoeuii
+.ttf; Segoe UI Light (TrueType)=segoeuil.ttf; Segoe UI Light Italic (TrueType)=seguili.ttf; Segoe UI Semibold (TrueType
+)=seguisb.ttf; Segoe UI Semibold Italic (TrueType)=seguisbi.ttf; Segoe UI Semilight (TrueType)=segoeuisl.ttf; Segoe UI
+Semilight Italic (TrueType)=seguisli.ttf; Segoe UI Symbol (TrueType)=seguisym.ttf; Segoe UI Variable (TrueType)=SegUIVa
+r.ttf; SimSun & NSimSun (TrueType)=simsun.ttc; SimSun-ExtB (TrueType)=simsunb.ttf; Sitka Text (TrueType)=SitkaVF.ttf; S
+itka Text Italic (TrueType)=SitkaVF-Italic.ttf; Sylfaen (TrueType)=sylfaen.ttf; Symbol (TrueType)=symbol.ttf; Tahoma (T
+rueType)=tahoma.ttf; Tahoma Bold (TrueType)=tahomabd.ttf; Times New Roman (TrueType)=times.ttf; Times New Roman Bold (T
+rueType)=timesbd.ttf; Times New Roman Bold Italic (TrueType)=timesbi.ttf; Times New Roman Italic (TrueType)=timesi.ttf;
+ Trebuchet MS (TrueType)=trebuc.ttf; Trebuchet MS Bold (TrueType)=trebucbd.ttf; Trebuchet MS Bold Italic (TrueType)=tre
+bucbi.ttf; Trebuchet MS Italic (TrueType)=trebucit.ttf; Verdana (TrueType)=verdana.ttf; Verdana Bold (TrueType)=verdana
+b.ttf; Verdana Bold Italic (TrueType)=verdanaz.ttf; Verdana Italic (TrueType)=verdanai.ttf; Webdings (TrueType)=webding
+s.ttf; Wingdings (TrueType)=wingding.ttf; Yu Gothic Bold & Yu Gothic UI Semibold & Yu Gothic UI Bold (TrueType)=YuGothB
+.ttc; Yu Gothic Light & Yu Gothic UI Light (TrueType)=YuGothL.ttc; Yu Gothic Medium & Yu Gothic UI Regular (TrueType)=Y
+uGothM.ttc; Yu Gothic Regular & Yu Gothic UI Semilight (TrueType)=YuGothR.ttc; Courier 10,12,15=COURE.FON; Courier 10,1
+2,15 (120)=COURF.FON; MS Serif 8,10,12,14,18,24=SERIFE.FON; MS Serif 8,10,12,14,18,24 (120)=SERIFF.FON; MS Sans Serif 8
+,10,12,14,18,24=SSERIFE.FON; MS Sans Serif 8,10,12,14,18,24 (120)=SSERIFF.FON; Small Fonts=SMALLE.FON; Small Fonts (120
+)=SMALLF.FON; DengXian (TrueType)=Deng.ttf; DengXian Bold (TrueType)=Dengb.ttf; DengXian Light (TrueType)=Dengl.ttf; Fa
+ngSong (TrueType)=simfang.ttf; KaiTi (TrueType)=simkai.ttf; SimHei (TrueType)=simhei.ttf; SimSun-ExtG (TrueType)=Simsun
+ExtG.ttf; Holo MDL2 Assets (TrueType)=holomdl2.ttf; Agency FB Bold (TrueType)=AGENCYB.TTF; Agency FB (TrueType)=AGENCYR
+.TTF; Algerian (TrueType)=ALGER.TTF; Book Antiqua Bold (TrueType)=ANTQUAB.TTF; Book Antiqua Bold Italic (TrueType)=ANTQ
+UABI.TTF; Book Antiqua Italic (TrueType)=ANTQUAI.TTF; Arial Narrow (TrueType)=ARIALN.TTF; Arial Narrow Bold (TrueType)=
+ARIALNB.TTF; Arial Narrow Bold Italic (TrueType)=ARIALNBI.TTF; Arial Narrow Italic (TrueType)=ARIALNI.TTF; Arial Rounde
+d MT Bold (TrueType)=ARLRDBD.TTF; Baskerville Old Face (TrueType)=BASKVILL.TTF; Bauhaus 93 (TrueType)=BAUHS93.TTF; Bell
+ MT (TrueType)=BELL.TTF; Bell MT Bold (TrueType)=BELLB.TTF; Bell MT Italic (TrueType)=BELLI.TTF; Bernard MT Condensed (
+TrueType)=BERNHC.TTF; Book Antiqua (TrueType)=BKANT.TTF; Bodoni MT Bold (TrueType)=BOD_B.TTF; Bodoni MT Bold Italic (Tr
+ueType)=BOD_BI.TTF; Bodoni MT Black Italic (TrueType)=BOD_BLAI.TTF; Bodoni MT Black (TrueType)=BOD_BLAR.TTF; Bodoni MT
+Condensed Bold (TrueType)=BOD_CB.TTF; Bodoni MT Condensed Bold Italic (TrueType)=BOD_CBI.TTF; Bodoni MT Condensed Itali
+c (TrueType)=BOD_CI.TTF; Bodoni MT Condensed (TrueType)=BOD_CR.TTF; Bodoni MT Italic (TrueType)=BOD_I.TTF; Bodoni MT Po
+ster Compressed (TrueType)=BOD_PSTC.TTF; Bodoni MT (TrueType)=BOD_R.TTF; Bookman Old Style (TrueType)=BOOKOS.TTF; Bookm
+an Old Style Bold (TrueType)=BOOKOSB.TTF; Bookman Old Style Bold Italic (TrueType)=BOOKOSBI.TTF; Bookman Old Style Ital
+ic (TrueType)=BOOKOSI.TTF; Bradley Hand ITC (TrueType)=BRADHITC.TTF; Britannic Bold (TrueType)=BRITANIC.TTF; Berlin San
+s FB Bold (TrueType)=BRLNSB.TTF; Berlin Sans FB Demi Bold (TrueType)=BRLNSDB.TTF; Berlin Sans FB (TrueType)=BRLNSR.TTF;
+ Broadway (TrueType)=BROADW.TTF; Brush Script MT Italic (TrueType)=BRUSHSCI.TTF; Bookshelf Symbol 7 (TrueType)=BSSYM7.T
+TF; Californian FB Bold (TrueType)=CALIFB.TTF; Californian FB Italic (TrueType)=CALIFI.TTF; Californian FB (TrueType)=C
+ALIFR.TTF; Calisto MT (TrueType)=CALIST.TTF; Calisto MT Bold (TrueType)=CALISTB.TTF; Calisto MT Bold Italic (TrueType)=
+CALISTBI.TTF; Calisto MT Italic (TrueType)=CALISTI.TTF; Castellar (TrueType)=CASTELAR.TTF; Century Schoolbook (TrueType
+)=CENSCBK.TTF; Centaur (TrueType)=CENTAUR.TTF; Century (TrueType)=CENTURY.TTF; Chiller (TrueType)=CHILLER.TTF; Colonna
+MT (TrueType)=COLONNA.TTF; Cooper Black (TrueType)=COOPBL.TTF; Copperplate Gothic Bold (TrueType)=COPRGTB.TTF; Copperpl
+ate Gothic Light (TrueType)=COPRGTL.TTF; Curlz MT (TrueType)=CURLZ___.TTF; Dubai Bold (TrueType)=DUBAI-BOLD.TTF; Dubai
+Light (TrueType)=DUBAI-LIGHT.TTF; Dubai Medium (TrueType)=DUBAI-MEDIUM.TTF; Dubai Regular (TrueType)=DUBAI-REGULAR.TTF;
+ Elephant (TrueType)=ELEPHNT.TTF; Elephant Italic (TrueType)=ELEPHNTI.TTF; Engravers MT (TrueType)=ENGR.TTF; Eras Bold
+ITC (TrueType)=ERASBD.TTF; Eras Demi ITC (TrueType)=ERASDEMI.TTF; Eras Light ITC (TrueType)=ERASLGHT.TTF; Eras Medium I
+TC (TrueType)=ERASMD.TTF; Felix Titling (TrueType)=FELIXTI.TTF; Forte (TrueType)=FORTE.TTF; Franklin Gothic Book (TrueT
+ype)=FRABK.TTF; Franklin Gothic Book Italic (TrueType)=FRABKIT.TTF; Franklin Gothic Demi (TrueType)=FRADM.TTF; Franklin
+ Gothic Demi Cond (TrueType)=FRADMCN.TTF; Franklin Gothic Demi Italic (TrueType)=FRADMIT.TTF; Franklin Gothic Heavy (Tr
+ueType)=FRAHV.TTF; Franklin Gothic Heavy Italic (TrueType)=FRAHVIT.TTF; Franklin Gothic Medium Cond (TrueType)=FRAMDCN.
+TTF; Freestyle Script (TrueType)=FREESCPT.TTF; French Script MT (TrueType)=FRSCRIPT.TTF; Footlight MT Light (TrueType)=
+FTLTLT.TTF; 方正舒体 (TrueType)=FZSTK.TTF; 方正姚体 (TrueType)=FZYTK.TTF; Garamond (TrueType)=GARA.TTF; Garamond Bold (TrueType
+)=GARABD.TTF; Garamond Italic (TrueType)=GARAIT.TTF; Gigi (TrueType)=GIGI.TTF; Gill Sans MT Bold Italic (TrueType)=GILB
+I___.TTF; Gill Sans MT Bold (TrueType)=GILB____.TTF; Gill Sans MT Condensed (TrueType)=GILC____.TTF; Gill Sans MT Itali
+c (TrueType)=GILI____.TTF; Gill Sans Ultra Bold Condensed (TrueType)=GILLUBCD.TTF; Gill Sans Ultra Bold (TrueType)=GILS
+ANUB.TTF; Gill Sans MT (TrueType)=GIL_____.TTF; Gloucester MT Extra Condensed (TrueType)=GLECB.TTF; Gill Sans MT Ext Co
+ndensed Bold (TrueType)=GLSNECB.TTF; Century Gothic (TrueType)=GOTHIC.TTF; Century Gothic Bold (TrueType)=GOTHICB.TTF;
+Century Gothic Bold Italic (TrueType)=GOTHICBI.TTF; Century Gothic Italic (TrueType)=GOTHICI.TTF; Goudy Old Style (True
+Type)=GOUDOS.TTF; Goudy Old Style Bold (TrueType)=GOUDOSB.TTF; Goudy Old Style Italic (TrueType)=GOUDOSI.TTF; Goudy Sto
+ut (TrueType)=GOUDYSTO.TTF; Harlow Solid Italic (TrueType)=HARLOWSI.TTF; Harrington (TrueType)=HARNGTON.TTF; Haettensch
+weiler (TrueType)=HATTEN.TTF; High Tower Text (TrueType)=HTOWERT.TTF; High Tower Text Italic (TrueType)=HTOWERTI.TTF; I
+mprint MT Shadow (TrueType)=IMPRISHA.TTF; Informal Roman (TrueType)=INFROMAN.TTF; Blackadder ITC (TrueType)=ITCBLKAD.TT
+F; Edwardian Script ITC (TrueType)=ITCEDSCR.TTF; Kristen ITC (TrueType)=ITCKRIST.TTF; Jokerman (TrueType)=JOKERMAN.TTF;
+ Juice ITC (TrueType)=JUICE___.TTF; Kunstler Script (TrueType)=KUNSTLER.TTF; Wide Latin (TrueType)=LATINWD.TTF; Lucida
+Bright (TrueType)=LBRITE.TTF; Lucida Bright Demibold (TrueType)=LBRITED.TTF; Lucida Bright Demibold Italic (TrueType)=L
+BRITEDI.TTF; Lucida Bright Italic (TrueType)=LBRITEI.TTF; Lucida Calligraphy Italic (TrueType)=LCALLIG.TTF; Lucida Fax
+Regular (TrueType)=LFAX.TTF; Lucida Fax Demibold (TrueType)=LFAXD.TTF; Lucida Fax Demibold Italic (TrueType)=LFAXDI.TTF
+; Lucida Fax Italic (TrueType)=LFAXI.TTF; Lucida Handwriting Italic (TrueType)=LHANDW.TTF; Lucida Sans Typewriter Regul
+ar (TrueType)=LTYPE.TTF; Lucida Sans Typewriter Bold (TrueType)=LTYPEB.TTF; Lucida Sans Typewriter Bold Oblique (TrueTy
+pe)=LTYPEBO.TTF; Lucida Sans Typewriter Oblique (TrueType)=LTYPEO.TTF; Magneto Bold (TrueType)=MAGNETOB.TTF; Maiandra G
+D (TrueType)=MAIAN.TTF; Matura MT Script Capitals (TrueType)=MATURASC.TTF; Mistral (TrueType)=MISTRAL.TTF; Modern No. 2
+0 (TrueType)=MOD20.TTF; Monotype Corsiva (TrueType)=MTCORSVA.TTF; Niagara Engraved (TrueType)=NIAGENG.TTF; Niagara Soli
+d (TrueType)=NIAGSOL.TTF; OCR A Extended (TrueType)=OCRAEXT.TTF; Old English Text MT (TrueType)=OLDENGL.TTF; Onyx (True
+Type)=ONYX.TTF; MS Outlook (TrueType)=OUTLOOK.TTF; Palace Script MT (TrueType)=PALSCRI.TTF; Papyrus (TrueType)=PAPYRUS.
+TTF; Parchment (TrueType)=PARCHM.TTF; Perpetua Bold Italic (TrueType)=PERBI___.TTF; Perpetua Bold (TrueType)=PERB____.T
+TF; Perpetua Italic (TrueType)=PERI____.TTF; Perpetua Titling MT Bold (TrueType)=PERTIBD.TTF; Perpetua Titling MT Light
+ (TrueType)=PERTILI.TTF; Perpetua (TrueType)=PER_____.TTF; Playbill (TrueType)=PLAYBILL.TTF; Poor Richard (TrueType)=PO
+ORICH.TTF; Pristina (TrueType)=PRISTINA.TTF; Rage Italic (TrueType)=RAGE.TTF; Ravie (TrueType)=RAVIE.TTF; MS Reference
+Sans Serif (TrueType)=REFSAN.TTF; MS Reference Specialty (TrueType)=REFSPCL.TTF; Rockwell Condensed Bold (TrueType)=ROC
+CB___.TTF; Rockwell Condensed (TrueType)=ROCC____.TTF; Rockwell (TrueType)=ROCK.TTF; Rockwell Bold (TrueType)=ROCKB.TTF
+; Rockwell Bold Italic (TrueType)=ROCKBI.TTF; Rockwell Extra Bold (TrueType)=ROCKEB.TTF; Rockwell Italic (TrueType)=ROC
+KI.TTF; Century Schoolbook Bold (TrueType)=SCHLBKB.TTF; Century Schoolbook Bold Italic (TrueType)=SCHLBKBI.TTF; Century
+ Schoolbook Italic (TrueType)=SCHLBKI.TTF; Script MT Bold (TrueType)=SCRIPTBL.TTF; Showcard Gothic (TrueType)=SHOWG.TTF
+; 隶书 (TrueType)=SIMLI.TTF; 幼圆 (TrueType)=SIMYOU.TTF; Snap ITC (TrueType)=SNAP____.TTF; 华文彩云 (TrueType)=STCAIYUN.TTF; St
+encil (TrueType)=STENCIL.TTF; 华文仿宋 (TrueType)=STFANGSO.TTF; 华文琥珀 (TrueType)=STHUPO.TTF; 华文楷体 (TrueType)=STKAITI.TTF; 华文
+隶书 (TrueType)=STLITI.TTF; 华文宋体 (TrueType)=STSONG.TTF; 华文细黑 (TrueType)=STXIHEI.TTF; 华文行楷 (TrueType)=STXINGKA.TTF; 华文新魏 (
+TrueType)=STXINWEI.TTF; 华文中宋 (TrueType)=STZHONGS.TTF; Tw Cen MT Bold Italic (TrueType)=TCBI____.TTF; Tw Cen MT Bold (Tr
+ueType)=TCB_____.TTF; Tw Cen MT Condensed Bold (TrueType)=TCCB____.TTF; Tw Cen MT Condensed Extra Bold (TrueType)=TCCEB
+.TTF; Tw Cen MT Condensed (TrueType)=TCCM____.TTF; Tw Cen MT Italic (TrueType)=TCMI____.TTF; Tw Cen MT (TrueType)=TCM__
+___.TTF; Tempus Sans ITC (TrueType)=TEMPSITC.TTF; Viner Hand ITC (TrueType)=VINERITC.TTF; Vivaldi Italic (TrueType)=VIV
+ALDII.TTF; Vladimir Script (TrueType)=VLADIMIR.TTF; Wingdings 2 (TrueType)=WINGDNG2.TTF; Wingdings 3 (TrueType)=WINGDNG
+3.TTF; APLPLUS Regular (TrueType)=APLPLUS.TTF; Ragland (TrueType)=Ragland.otf; 杨任东竹石体-Semibold (TrueType)=YangRenDongZh
+uShiTi-2.ttf; 杨任东竹石体-Regular (TrueType)=YangRenDongZhuShiTi-Regular-2.ttf; 杨任东竹石体-Medium (TrueType)=YangRenDongZhuShiTi
+-Medium-2.ttf; 杨任东竹石体-Light (TrueType)=YangRenDongZhuShiTi-Light-2.ttf; 杨任东竹石体-Heavy (TrueType)=YangRenDongZhuShiTi-Hea
+vy-2.ttf; 杨任东竹石体-Extralight (TrueType)=YangRenDongZhuShiTi-Extralight-2.ttf; 杨任东竹石体-Bold (TrueType)=YangRenDongZhuShiTi
+-Bold-2.ttf; 杨任东正棒体 (TrueType)=YangRenDongZhengBangTi-2.ttf; 苹方-繁 常规体 (TrueType)=PingFangTC.ttf; 苹方-繁 细体 (TrueType)=Pin
+gFangTC-Light.ttf; 苹方-繁 中黑体 (TrueType)=PingFangTC-Medium.ttf; 苹方-繁 中粗体 (TrueType)=PingFangTC-Semibold.ttf; 苹方-繁 纤细体 (Tr
+ueType)=PingFangTC-Thin.ttf; 苹方-繁 极细体 (TrueType)=PingFangTC-Ultralight.ttf; 苹方 粗体 (TrueType)=PingFang Bold.ttf; 苹方 特细 (
+TrueType)=PingFang ExtraLight.ttf; 苹方 特粗 (TrueType)=PingFang Heavy.ttf; 苹方 细体 (TrueType)=PingFang Light.ttf; 苹方 中等 (Tru
+eType)=PingFang Medium.ttf; 苹方 常规 (TrueType)=PingFang Regular.ttf; 庞门正道标题体 (TrueType)=PangMenZhengDaoBiaoTiTi-1.ttf; He
+lvetica-Roman-SemiB (TrueType)=Helvetica-Roman-SemiB.ttf; Helvetica Bold Oblique (TrueType)=Helvetica Bold Oblique.ttf;
+ Helvetica Bold (TrueType)=Helvetica Bold.ttf; Helvetica Condensed Bold Italic (TrueType)=Helvetica Condensed Bold Ital
+ic.ttf; Helvetica Condensed Bold (TrueType)=Helvetica Condensed Bold.ttf; Helvetica Condensed Italic (TrueType)=Helveti
+ca Condensed Italic.ttf; Helvetica Condensed (TrueType)=Helvetica Condensed.ttf; Helvetica Narrow Bold Lefty (TrueType)
+=Helvetica Narrow Bold Lefty.ttf; Helvetica Narrow Bold Oblique (TrueType)=Helvetica Narrow Bold Oblique.ttf; Helvetica
+ Narrow Bold (TrueType)=Helvetica Narrow Bold.ttf; Helvetica Narrow Lefty (TrueType)=Helvetica Narrow Lefty.ttf; Helvet
+ica Narrow Oblique (TrueType)=Helvetica Narrow Oblique.ttf; Helvetica Narrow (TrueType)=Helvetica Narrow.ttf; Helvetica
+ Oblique (TrueType)=Helvetica Oblique.ttf; Helvetica (TrueType)=Helvetica.ttf; Helvetica-Black-SemiBold (TrueType)=Helv
+etica-Black-SemiBold.ttf; Helvetica-BoldOblique (TrueType)=Helvetica-BoldOblique.ttf; Helvetica-Condensed-Black-Se (Tru
+eType)=Helvetica-Condensed-Black-Se.ttf; Helvetica-Condensed-Light-Li (TrueType)=Helvetica-Condensed-Light-Li.ttf; Helv
+etica-Condensed-Light-Light (TrueType)=Helvetica-Condensed-Light-Light.ttf; Helvetica-Condensed-Thin (TrueType)=Helveti
+ca-Condensed-Thin.ttf; Helvetica-Conth (TrueType)=Helvetica-Conth.ttf; HelveticaExt-Normal (TrueType)=HelveticaExt-Norm
+al.ttf; HelveticaExtObl-Heavy (TrueType)=HelveticaExtObl-Heavy.ttf; HelveticaExtObl-Light (TrueType)=HelveticaExtObl-Li
+ght.ttf; HelveticaExtObl-Normal (TrueType)=HelveticaExtObl-Normal.ttf; HelveticaInserat-Roman-SemiB (TrueType)=Helvetic
+aInserat-Roman-SemiB.ttf; HelveticaInserat-Roman-SemiBold (TrueType)=HelveticaInserat-Roman-SemiBold.ttf; Helvetica-Lig
+ht-Light-Italic (TrueType)=Helvetica-Light-Light-Italic.ttf; Helvetica-Narrow (TrueType)=Helvetica-Narrow.ttf; Helvetic
+a-Narrow-Bold (TrueType)=Helvetica-Narrow-Bold.ttf; Helvetica-Narrow-BoldOblique (TrueType)=Helvetica-Narrow-BoldObliqu
+e.ttf; HelveticaObl-Heavy (TrueType)=HelveticaObl-Heavy.ttf; HelveticaObl-Thin (TrueType)=HelveticaObl-Thin.ttf; Fira M
+ath Regular (TrueType)=FiraMath-Regular.otf; GFS Neohellenic Math (TrueType)=GFSNeohellenicMath.otf; Lato Heavy (TrueTy
+pe)=Lato-Heavy.ttf; Lato Heavy Italic (TrueType)=Lato-HeavyItalic.ttf; Lato Italic (TrueType)=Lato-Italic.ttf; Lato Lig
+ht (TrueType)=Lato-Light.ttf; Lato Light Italic (TrueType)=Lato-LightItalic.ttf; Lato Medium (TrueType)=Lato-Medium.ttf
+; Lato Medium Italic (TrueType)=Lato-MediumItalic.ttf; Lato Regular (TrueType)=Lato-Regular.ttf; Lato Semibold (TrueTyp
+e)=Lato-Semibold.ttf; Lato Semibold Italic (TrueType)=Lato-SemiboldItalic.ttf; Lato Thin (TrueType)=Lato-Thin.ttf; Lato
+ Thin Italic (TrueType)=Lato-ThinItalic.ttf; Lato Black (TrueType)=Lato-Black.ttf; Lato Black Italic (TrueType)=Lato-Bl
+ackItalic.ttf; Lato Bold (TrueType)=Lato-Bold.ttf; Lato Bold Italic (TrueType)=Lato-BoldItalic.ttf; Lato Hairline (True
+Type)=Lato-Hairline.ttf; Lato Hairline Italic (TrueType)=Lato-HairlineItalic.ttf; Lucida Sans Demibold Italic (TrueType
+)=lucida sans halbfett kursiv.ttf; Lucida Sans Demibold Roman (TrueType)=lucida sans halbfett.ttf; Lucida Sans Italic (
+TrueType)=Lucida Sans Italic.ttf; Lucida Sans Regular (TrueType)=Lucida Sans.ttf; LucidaSans-Bold (TrueType)=LucidaSans
+-Bold.otf; Lucida Sans Demibold (TrueType)=lucidasansdemibold.ttf; PingFang SC Bold (TrueType)=PingFang SC Bold.ttf; Pi
+ngFang SC ExtraLight (TrueType)=PingFang SC ExtraLight.ttf; PingFang SC Heavy (TrueType)=PingFang SC Heavy.ttf; PingFan
+g SC Semibold 常规 (TrueType)=PingFang SC Semibold.ttf; PingFang SC Semibold (TrueType)=PingFang SC.ttf; Source Han Serif
+ SemiBold & Source Han Serif K SemiBold & 思源宋体 SemiBold & 思源宋體 SemiBold & 思源宋體 香港 SemiBold (TrueType)=SourceHanSerif-Se
+miBold.ttc; Source Han Serif Bold & Source Han Serif K Bold & 思源宋体 Bold & 思源宋體 Bold & 思源宋體 香港 Bold (TrueType)=SourceHan
+Serif-Bold.ttc; Source Han Serif ExtraLight & Source Han Serif K ExtraLight & 思源宋体 ExtraLight & 思源宋體 ExtraLight & 思源宋體
+香港 ExtraLight (TrueType)=SourceHanSerif-ExtraLight.ttc; Source Han Serif Heavy & Source Han Serif K Heavy & 思源宋体 Heavy
+& 思源宋體 Heavy & 思源宋體 香港 Heavy (TrueType)=SourceHanSerif-Heavy.ttc; Source Han Serif Light & Source Han Serif K Light & 思
+源宋体 Light & 思源宋體 Light & 思源宋體 香港 Light (TrueType)=SourceHanSerif-Light.ttc; Source Han Serif Medium & Source Han Serif
+K Medium & 思源宋体 Medium & 思源宋體 Medium & 思源宋體 香港 Medium (TrueType)=SourceHanSerif-Medium.ttc; Source Han Serif & Source H
+an Serif K & 思源宋体 & 思源宋體 & 思源宋體 香港 (TrueType)=SourceHanSerif-Regular.ttc; TeXGyreSchola-Regular (TrueType)=texgyreschol
+a-regular.otf; TeXGyreTermes-Bold (TrueType)=texgyretermes-bold.otf; TeXGyreTermes-BoldItalic (TrueType)=texgyretermes-
+bolditalic.otf; TeXGyreTermes-Italic (TrueType)=texgyretermes-italic.otf; TeXGyreTermes-Regular (TrueType)=texgyreterme
+s-regular.otf; TeXGyreAdventor-Bold (TrueType)=texgyreadventor-bold.otf; TeXGyreAdventor-BoldItalic (TrueType)=texgyrea
+dventor-bolditalic.otf; TeXGyreAdventor-Italic (TrueType)=texgyreadventor-italic.otf; TeXGyreAdventor-Regular (TrueType
+)=texgyreadventor-regular.otf; TeXGyreBonum-Bold (TrueType)=texgyrebonum-bold.otf; TeXGyreBonum-BoldItalic (TrueType)=t
+exgyrebonum-bolditalic.otf; TeXGyreBonum-Italic (TrueType)=texgyrebonum-italic.otf; TeXGyreBonum-Regular (TrueType)=tex
+gyrebonum-regular.otf; TeXGyreChorus-MediumItalic (TrueType)=texgyrechorus-mediumitalic.otf; TeXGyreCursor-Bold (TrueTy
+pe)=texgyrecursor-bold.otf; TeXGyreCursor-BoldItalic (TrueType)=texgyrecursor-bolditalic.otf; TeXGyreCursor-Italic (Tru
+eType)=texgyrecursor-italic.otf; TeXGyreCursor-Regular (TrueType)=texgyrecursor-regular.otf; TeXGyreHeros-Bold (TrueTyp
+e)=texgyreheros-bold.otf; TeXGyreHeros-BoldItalic (TrueType)=texgyreheros-bolditalic.otf; TeXGyreHerosCondensed-Bold (T
+rueType)=texgyreheroscn-bold.otf; TeXGyreHerosCondensed-BoldItalic (TrueType)=texgyreheroscn-bolditalic.otf; TeXGyreHer
+osCondensed-Italic (TrueType)=texgyreheroscn-italic.otf; TeXGyreHerosCondensed-Regular (TrueType)=texgyreheroscn-regula
+r.otf; TeXGyreHeros-Italic (TrueType)=texgyreheros-italic.otf; TeXGyreHeros-Regular (TrueType)=texgyreheros-regular.otf
+; TeXGyrePagella-Bold (TrueType)=texgyrepagella-bold.otf; TeXGyrePagella-BoldItalic (TrueType)=texgyrepagella-bolditali
+c.otf; TeXGyrePagella-Italic (TrueType)=texgyrepagella-italic.otf; TeXGyrePagella-Regular (TrueType)=texgyrepagella-reg
+ular.otf; TeXGyreSchola-Bold (TrueType)=texgyreschola-bold.otf; TeXGyreSchola-BoldItalic (TrueType)=texgyreschola-boldi
+talic.otf; TeXGyreSchola-Italic (TrueType)=texgyreschola-italic.otf; Caveat (TrueType)=Caveat-Regular.ttf; 文鼎谁的字体E5GBK_
+M (TrueType)=文鼎谁的字体.ttf; BubblegumSans-Regular (TrueType)=BubblegumSans-Regular.otf; ￎￄﾶﾦￋﾭﾵￄￗￖￌ￥ﾷﾱ (TrueType)=文鼎谁的字体繁.
+ttf; ￎￄﾶﾦﾴￖﾺￚﾼ￲ (TrueType)=文鼎粗圆简.TTF; ￎￄﾶﾦﾴ￳ﾱ￪ￋￎﾼ￲ (TrueType)=文鼎大标宋简.TTF; ￎￄﾶﾦￊ￩ￋￎﾷﾱ (TrueType)=文鼎书宋繁.TTF; ￎￄﾶﾦￏﾸﾷￂￋￎﾷﾱ
+ (TrueType)=文鼎细仿宋繁.TTF; ￎￄﾶﾦ￐ﾡﾱ￪ￋￎﾼ￲ (TrueType)=文鼎小标宋简.TTF; ￎￄﾶﾦ￐ￂￒￕￌ￥ﾼ￲ (TrueType)=文鼎新艺体简.TTF; ￎￄﾶﾦ￧￺￧￪ﾷﾱ (TrueType)=文
+鼎琥珀繁.TTF; ￎￄﾶﾦￌ￘ﾴￖￋￎﾼ￲ (TrueType)=文鼎特粗宋简.TTF; ﾤ￥ﾹﾩￅRￆEￅ￩ (TrueType)=文鼎霹靂體.ttf; ﾤ￥ﾹﾩﾷsￃ￀ￅ￩ (TrueType)=文鼎新藝體.ttf; ﾤ￥ﾹﾩﾶWﾶ
+￪ (TrueType)=文鼎超圓.ttf; ﾤ￥ﾹﾩﾷsﾤﾤﾶￂﾥ~ﾦrﾤ@ (TrueType)=文鼎新中黑外字一.ttf; ﾤ￥ﾹﾩﾷsﾲￊﾶￂ (TrueType)=文鼎新粗黑.ttf; ﾤ￥ﾹﾩﾷsﾤﾤﾯSﾶￂ (TrueTyp
+e)=文鼎新中特黑.ttf; ﾤ￥ﾹﾩﾷsﾯSﾶￂ (TrueType)=文鼎新特黑.ttf; ﾤ￥ﾹﾩﾷsﾲￓﾶￂ (TrueType)=文鼎新細黑.ttf; ﾤ￥ﾹﾩﾷsﾤﾤﾶￂ (TrueType)=文鼎新中黑.ttf; ﾤ￥ﾹﾩﾶ
+Wﾶￂ (TrueType)=文鼎超黑.ttf; ﾤ￥ﾹﾩﾲￊﾶￂ (TrueType)=文鼎粗黑.ttf; ﾤ￥ﾹﾩﾯSﾶￂ (TrueType)=文鼎特黑.ttf; ﾤ￥ﾹﾩﾲￓﾶￂ (TrueType)=文鼎細黑.ttf; ﾤ￥ﾹﾩ
+ﾲￊﾷﾢ (TrueType)=文鼎粗楷.ttf; ﾤ￥ﾹﾩﾲￓﾷﾢ (TrueType)=文鼎細楷.ttf; ﾤ￥ﾹﾩﾰ￉ﾫFﾬy (TrueType)=文鼎勘亭流.ttf; ﾤ￥ﾹﾩﾲￊ￁￵ (TrueType)=文鼎粗隸.ttf;
+ﾤ￥ﾹﾩﾤﾤﾲￊ￁￵ (TrueType)=文鼎中粗隸.ttf; ﾤ￥ﾹﾩﾤﾤ￁￵ (TrueType)=文鼎中隸.ttf; ﾤ￥ﾹﾩﾲￊﾩ￺ (TrueType)=文鼎粗明.ttf; ﾤ￥ﾹﾩﾮ￼ﾳ￸ￅ￩ (TrueType)=文鼎海報
+體.ttf; ﾤ￥ﾹﾩﾤﾤﾦ￦ﾮ￑ (TrueType)=文鼎中行書.ttf; ﾤ￥ﾹﾩﾲￊￃQﾸO (TrueType)=文鼎粗魏碑.ttf; ﾤ￥ﾹﾩﾶ￪ﾥ￟ￅ￩ (TrueType)=文鼎圓立體.ttf; ﾤ￥ﾹﾩﾲￊﾦ￦ﾷﾢ (T
+rueType)=文鼎粗行楷.ttf; ﾤ￥ﾹﾩﾲￓ﾿￻ﾵﾧﾦ￦ﾷﾢ (TrueType)=文鼎細鋼筆行楷.ttf; ﾤ￥ﾹﾩﾲￊ﾿￻ﾵﾧﾦ￦ﾷﾢ (TrueType)=文鼎粗鋼筆行楷.ttf; 文鼎鬍子體 (TrueType)=文鼎鬍子
+體.ttf; 文鼎淹水體 (TrueType)=文鼎淹水體.ttf; 文鼎彈簧體 (TrueType)=文鼎彈簧體.ttf; 文鼎石頭體 (TrueType)=文鼎石頭體.ttf; 文鼎香腸體 (TrueType)=文鼎香腸體.ttf;
+文鼎竹子體 (TrueType)=文鼎竹子體.ttf; 文鼎花瓣體 (TrueType)=文鼎花瓣體.ttf; ￎￄﾶﾦￏﾰￗￖￌ￥ (TrueType)=文鼎习字体.TTF; ￎￄﾶﾦﾳ￝ￂￖￌ￥ (TrueType)=文鼎齿轮体.TT
+F; ﾤ￥ﾹﾩﾦ￦ﾷﾢﾸOￅ￩ (TrueType)=文鼎行楷碑體.ttf; ﾤ￥ﾹﾩￃtￅxￅ￩ (TrueType)=文鼎瀟灑體.ttf; ﾤ￥ﾹﾩﾽￖﾪﾺﾦrￅ￩ (TrueType)=文鼎誰的字體.ttf; ﾤ￥ﾹﾩﾢ￞ﾢ￝ﾢ￞ﾡ
+￐ﾢﾳ (TrueType)=文鼎POP-4.ttf; ﾤ￥ﾹﾩﾤﾤﾯSﾼsﾧiￅ￩ (TrueType)=文鼎中特廣告體.ttf; ﾤ￥ﾹﾩﾯ￰ﾴￆￅ￩ (TrueType)=文鼎荊棘體.ttf; ﾤ￥ﾹﾩﾽ￢ﾪﾯￅ￩ (TrueTyp
+e)=文鼎賤狗體.ttf; ﾤ￥ﾹﾩ￀Jﾨ￨ￅ￩ (TrueType)=文鼎雕刻體.ttf; ﾤ￥ﾹﾩﾤ￵ﾮ￣ￅ￩ (TrueType)=文鼎火柴體.ttf; ﾤ￥ﾹﾩￃCﾷﾢﾤEﾮcￅ￩ (TrueType)=文鼎顏楷九宮體.ttf;
+ﾤ￥ﾹﾩﾧﾬﾧﾬￅ￩ (TrueType)=文鼎妞妞體.ttf; ￎￄﾶﾦCSﾳﾤￋￎﾷﾱ (TrueType)=文鼎CS长宋体繁.TTF; ￎￄﾶﾦﾹￅￓﾡￌ￥ﾷﾱ (TrueType)=文鼎古印体繁.TTF; ￎￄﾶﾦￌ￘ﾴￖﾺￚﾼ￲
+ (TrueType)=文鼎特粗黑简.TTF; ￎￄﾶﾦﾱﾨￋￎﾼ￲ (TrueType)=文鼎报宋简.TTF; ￎￄﾶﾦﾴￖﾺￚﾷﾱ (TrueType)=文鼎粗黑繁.TTF; ￎￄﾶﾦﾴￖￎﾺﾱﾮﾼ￲ (TrueType)=文鼎粗魏碑
+简.TTF; ￎￄﾶﾦﾴￖ￐￐﾿ﾬﾼ￲ (TrueType)=文鼎粗行楷简.TTF; MT Extra (TrueType)=mtextra.ttf; Euclid (TrueType)=euclid.ttf; Euclid Bold (
+TrueType)=euclidb.ttf; Euclid Bold Italic (TrueType)=euclidbi.ttf; Euclid Italic (TrueType)=euclidi.ttf; Euclid Symbol
+(TrueType)=eucsym.ttf; Euclid Symbol Bold (TrueType)=eucsymb.ttf; Euclid Symbol Bold Italic (TrueType)=eucsymbi.ttf; Eu
+clid Symbol Italic (TrueType)=eucsymi.ttf; Euclid Extra (TrueType)=euextra.ttf; Euclid Extra Bold (TrueType)=euextrab.t
+tf; Euclid Fraktur (TrueType)=eufrak.ttf; Euclid Fraktur Bold (TrueType)=eufrakb.ttf; Euclid Math One (TrueType)=eumat1
+.ttf; Euclid Math One Bold (TrueType)=eumat1b.ttf; Euclid Math Two (TrueType)=eumat2.ttf; Euclid Math Two Bold (TrueTyp
+e)=eumat2b.ttf; Fences Plain (TrueType)=fences.ttf; Tiger (TrueType)=Tiger.ttf; MT Extra Tiger (TrueType)=Mt Extra Tige
+r.ttf; Symbol Tiger (TrueType)=Symbol Tiger.ttf; Tiger Expert (TrueType)=Tiger Expert.ttf; Symbol Tiger Expert (TrueTyp
+e)=Symbol Tiger Expert.ttf; 方正彩云简体 (TrueType)=方正彩云简体.ttf; DejaVu Sans Bold Oblique (TrueType)=DejaVuSans-BoldOblique-4.
+ttf; DejaVu Sans Bold (TrueType)=DejaVuSans-Bold-3.ttf; DejaVuMathTeXGyre-Regular (TrueType)=DejaVuMathTeXGyre-2.ttf; D
+ejaVu Sans Mono (TrueType)=DejaVuSansMono-1.ttf; DejaVu Serif Condensed (TrueType)=DejaVuSerifCondensed-22.ttf; DejaVu
+Serif Condensed Italic (TrueType)=DejaVuSerifCondensed-Italic-21.ttf; DejaVu Serif Condensed Bold Italic (TrueType)=Dej
+aVuSerifCondensed-BoldItalic-20.ttf; DejaVu Serif Condensed Bold (TrueType)=DejaVuSerifCondensed-Bold-19.ttf; DejaVu Se
+rif (TrueType)=DejaVuSerif-18.ttf; DejaVu Serif Italic (TrueType)=DejaVuSerif-Italic-17.ttf; DejaVu Sans Condensed Bold
+ Oblique (TrueType)=DejaVuSansCondensed-BoldOblique-16.ttf; DejaVu Sans Condensed (TrueType)=DejaVuSansCondensed-15.ttf
+; DejaVu Sans Mono Oblique (TrueType)=DejaVuSansMono-Oblique-14.ttf; DejaVu Sans Mono Bold Oblique (TrueType)=DejaVuSan
+sMono-BoldOblique-13.ttf; DejaVu Serif Bold (TrueType)=DejaVuSerif-Bold-12.ttf; DejaVu Sans Condensed Oblique (TrueType
+)=DejaVuSansCondensed-Oblique-10.ttf; DejaVu Sans Condensed Bold (TrueType)=DejaVuSansCondensed-Bold-8.ttf; DejaVu Sans
+ (TrueType)=DejaVuSans-7.ttf; DejaVu Sans Oblique (TrueType)=DejaVuSans-Oblique-6.ttf; DejaVu Sans ExtraLight (TrueType
+)=DejaVuSans-ExtraLight-5.ttf; 方正黑体简体 (TrueType)=方正黑体简体.TTF; 方正正黑简体 (TrueType)=方正正黑简体.ttf; SF Pro Rounded Bold (TrueTyp
+e)=SF-Pro-Rounded-Bold.otf; SF Pro Rounded Heavy (TrueType)=SF-Pro-Rounded-Heavy.otf; SF Pro Rounded Light (TrueType)=S
+F-Pro-Rounded-Light.otf; SF Pro Rounded Medium (TrueType)=SF-Pro-Rounded-Medium.otf; SF Pro Rounded Regular (TrueType)=
+SF-Pro-Rounded-Regular.otf; SF Pro Rounded Semibold (TrueType)=SF-Pro-Rounded-Semibold.otf; SF Pro Rounded Thin (TrueTy
+pe)=SF-Pro-Rounded-Thin.otf; SF Pro Rounded Ultralight (TrueType)=SF-Pro-Rounded-Ultralight.otf; SF Pro Text Black (Tru
+eType)=SF-Pro-Text-Black.otf; SF Pro Text Bold (TrueType)=SF-Pro-Text-Bold.otf; SF Pro Text Heavy (TrueType)=SF-Pro-Tex
+t-Heavy.otf; SF Pro Text Light (TrueType)=SF-Pro-Text-Light.otf; SF Pro Text Medium (TrueType)=SF-Pro-Text-Medium.otf;
+SF Pro Text Regular (TrueType)=SF-Pro-Text-Regular.otf; SF Pro Text Semibold (TrueType)=SF-Pro-Text-Semibold.otf; SF Pr
+o Display Black (TrueType)=SF-Pro-Display-Black.otf; SF Pro Display Bold (TrueType)=SF-Pro-Display-Bold.otf; SF Pro Dis
+play Heavy (TrueType)=SF-Pro-Display-Heavy.otf; SF Pro Display Light (TrueType)=SF-Pro-Display-Light.otf; SF Pro Displa
+y Medium (TrueType)=SF-Pro-Display-Medium.otf; SF Pro Display Regular (TrueType)=SF-Pro-Display-Regular.otf; SF Pro Dis
+play Semibold (TrueType)=SF-Pro-Display-Semibold.otf; SF Pro Display Thin (TrueType)=SF-Pro-Display-Thin.otf; SF Pro Di
+splay Ultralight (TrueType)=SF-Pro-Display-Ultralight.otf; SF Pro Display Heavy Italic (TrueType)=SF-Pro-Display-HeavyI
+talic.otf; SF Pro Display Light Italic (TrueType)=SF-Pro-Display-LightItalic.otf; SF Pro Display Medium Italic (TrueTyp
+e)=SF-Pro-Display-MediumItalic.otf; SF Pro Display Regular Italic (TrueType)=SF-Pro-Display-RegularItalic.otf; SF Pro D
+isplay Semibold Italic (TrueType)=SF-Pro-Display-SemiboldItalic.otf; SF Pro Display Thin Italic (TrueType)=SF-Pro-Displ
+ay-ThinItalic.otf; SF Pro Display Ultralight Italic (TrueType)=SF-Pro-Display-UltralightItalic.otf; SF Pro Text Black I
+talic (TrueType)=SF-Pro-Text-BlackItalic.otf; SF Pro Text Bold Italic (TrueType)=SF-Pro-Text-BoldItalic.otf; SF Pro Tex
+t Heavy Italic (TrueType)=SF-Pro-Text-HeavyItalic.otf; SF Pro Text Light Italic (TrueType)=SF-Pro-Text-LightItalic.otf;
+ SF Pro Text Medium Italic (TrueType)=SF-Pro-Text-MediumItalic.otf; SF Pro Text Italic (TrueType)=SF-Pro-Text-RegularIt
+alic.otf; SF Pro Text Semibold Italic (TrueType)=SF-Pro-Text-SemiboldItalic.otf; SF Pro Text Thin Italic (TrueType)=SF-
+Pro-Text-ThinItalic.otf; SF Pro Text Ultralight Italic (TrueType)=SF-Pro-Text-UltralightItalic.otf; SF Pro Display Blac
+k Italic (TrueType)=SF-Pro-Display-BlackItalic.otf; SF Pro Display Bold Italic (TrueType)=SF-Pro-Display-BoldItalic.otf
+; SF Pro Text Thin (TrueType)=SF-Pro-Text-Thin.otf; SF Pro Text Ultralight (TrueType)=SF-Pro-Text-Ultralight.otf; SF Pr
+o Rounded Black (TrueType)=SF-Pro-Rounded-Black.otf; 苹方-港 常规体 & 苹方-繁 常规体 & 苹方-简 常规体 & 苹方-港 中黑体 & 苹方-繁 中黑体 & 苹方-简 中黑体 &
+苹方-港 中粗体 & 苹方-繁 中粗体 & 苹方-简 中粗体 & 苹方-港 细体 & 苹方-繁 细体 & 苹方-简 细体 & 苹方-港 纤细体 & 苹方-繁 纤细体 & 苹方-简 纤细体 & 苹方-港 极细体 & 苹方-繁 极细体 & 苹
+方-简 极细体 & .苹方-港 常规体 & .苹方-繁 常规体 & .苹方-简 常规体 & .苹方-港 中黑体 & .苹方-繁 中黑体 & .苹方-=PingFang.ttc; Cascadia Code Regular (TrueTyp
+e)=CascadiaCode.ttf; Cascadia Mono Regular (TrueType)=CascadiaMono.ttf; CMU Typewriter Text Variable Width Medium (True
+Type)=cmunvt.ttf; CMU Serif BoldItalic (TrueType)=cmunbi.ttf; CMU Serif Extra BoldSlanted (TrueType)=cmunbl.ttf; CMU Br
+ight Oblique (TrueType)=cmunbmo.ttf; CMU Bright Roman (TrueType)=cmunbmr.ttf; CMU Bright SemiBoldOblique (TrueType)=cmu
+nbso.ttf; CMU Bright SemiBold (TrueType)=cmunbsr.ttf; CMU Typewriter Text Light (TrueType)=cmunbtl.ttf; CMU Typewriter
+Text LightOblique (TrueType)=cmunbto.ttf; CMU Serif Bold (TrueType)=cmunbx.ttf; CMU Classical Serif Italic (TrueType)=c
+munci.ttf; CMU Typewriter Text Italic (TrueType)=cmunit.ttf; CMU Concrete BoldItalic (TrueType)=cmunobi.ttf; CMU Concre
+te Bold (TrueType)=cmunobx.ttf; CMU Concrete Roman (TrueType)=cmunorm.ttf; CMU Concrete Italic (TrueType)=cmunoti.ttf;
+CMU Serif Roman (TrueType)=cmunrm.ttf; CMU Sans Serif Oblique (TrueType)=cmunsi.ttf; CMU Serif Extra RomanSlanted (True
+Type)=cmunsl.ttf; CMU Sans Serif BoldOblique (TrueType)=cmunso.ttf; CMU Sans Serif Medium (TrueType)=cmunss.ttf; CMU Sa
+ns Serif Demi Condensed DemiCondensed (TrueType)=cmunssdc.ttf; CMU Sans Serif Bold (TrueType)=cmunsx.ttf; CMU Typewrite
+r Text Bold (TrueType)=cmuntb.ttf; CMU Serif Italic (TrueType)=cmunti.ttf; CMU Typewriter Text Regular (TrueType)=cmunt
+t.ttf; CMU Typewriter Text BoldItalic (TrueType)=cmuntx.ttf; CMU Serif Upright Italic UprightItalic (TrueType)=cmunui.t
+tf; CMU Typewriter Text Variable Width Italic (TrueType)=cmunvi.ttf; Noto Sans SC (TrueType)=NotoSansSC-VF.ttf; Noto Se
+rif SC (TrueType)=NotoSerifSC-Regular.otf; Source Han Mono EL & Source Han Mono EL Italic & Source Han Mono K EL & Sour
+ce Han Mono K EL Italic & 思源等宽 EL & 思源等宽 EL Italic & 思源等寬 EL & 思源等寬 EL Italic & 思源等寬 香港 EL & 思源等寬 香港 EL Italic & Source
+ Han Mono L & Source Han Mono L Italic & Source Han Mono K L & S=SourceHanMono.ttc; Noto Sans Mono Regular (TrueType)=N
+otoSansMono-VariableFont_wdth,wght.ttf; 霞鹜文楷 TC Regular (TrueType)=LXGWWenKaiTC-Regular.ttf; 霞鹜文楷等宽 TC Light Regular (T
+rueType)=LXGWWenKaiMonoTC-Light.ttf; 霞鹜文楷等宽 TC Medium Regular (TrueType)=LXGWWenKaiMonoTC-Medium.ttf; 霞鹜文楷等宽 TC Regular
+ (TrueType)=LXGWWenKaiMonoTC-Regular.ttf; 霞鹜文楷 TC Light Regular (TrueType)=LXGWWenKaiTC-Light.ttf; 霞鹜文楷 TC Medium Regul
+ar (TrueType)=LXGWWenKaiTC-Medium.ttf; Inconsolata Regular (TrueType)=Inconsolata-VariableFont_wdth,wght.ttf; Noto Seri
+f CJK SC Black (TrueType)=NotoSerifCJKsc-Black.otf; Noto Serif CJK SC Bold (TrueType)=NotoSerifCJKsc-Bold.otf; Noto Ser
+if CJK SC SemiBold (TrueType)=NotoSerifCJKsc-SemiBold.otf; Noto Serif CJK SC ExtraLight (TrueType)=NotoSerifCJKsc-Extra
+Light.otf; Noto Serif CJK SC Light (TrueType)=NotoSerifCJKsc-Light.otf; Noto Serif CJK SC Medium (TrueType)=NotoSerifCJ
+Ksc-Medium.otf; Noto Serif CJK SC (TrueType)=NotoSerifCJKsc-Regular.otf; Noto Serif SC SemiBold (TrueType)=NotoSerifSC-
+SemiBold.otf; Noto Serif SC Black (TrueType)=NotoSerifSC-Black.otf; Noto Serif SC Bold (TrueType)=NotoSerifSC-Bold.otf;
+ Noto Serif SC ExtraLight (TrueType)=NotoSerifSC-ExtraLight.otf; Noto Serif SC Light (TrueType)=NotoSerifSC-Light.otf;
+Noto Serif SC Medium (TrueType)=NotoSerifSC-Medium.otf; Ubuntu Mono (TrueType)=UbuntuMono-Regular.ttf; Ubuntu Mono Bold
+ (TrueType)=UbuntuMono-Bold.ttf; Ubuntu Mono Bold Italic (TrueType)=UbuntuMono-BoldItalic.ttf; Ubuntu Mono Italic (True
+Type)=UbuntuMono-Italic.ttf; Noto Sans S Chinese Black Bold (TrueType)=NotoSansHans-Black.otf; Noto Sans S Chinese Bold
+ Bold (TrueType)=NotoSansHans-Bold.otf; Noto Sans S Chinese DemiLight (TrueType)=NotoSansHans-DemiLight.otf; Noto Sans
+S Chinese Light (TrueType)=NotoSansHans-Light.otf; Noto Sans S Chinese Medium (TrueType)=NotoSansHans-Medium.otf; Noto
+Sans S Chinese Regular (TrueType)=NotoSansHans-Regular.otf; Noto Sans S Chinese Thin (TrueType)=NotoSansHans-Thin-Windo
+ws.otf; 霞鹜文楷等宽 GB Light (TrueType)=LXGWWenKaiMonoGB-Light.ttf; 霞鹜文楷等宽 GB Medium (TrueType)=LXGWWenKaiMonoGB-Medium.ttf;
+ 霞鹜文楷等宽 GB Regular (TrueType)=LXGWWenKaiMonoGB-Regular.ttf; 霞鹜文楷 GB Light (TrueType)=LXGWWenKaiGB-Light.ttf; 霞鹜文楷 GB Me
+dium (TrueType)=LXGWWenKaiGB-Medium.ttf; 霞鹜文楷 GB Regular (TrueType)=LXGWWenKaiGB-Regular.ttf; PSPath=Microsoft.PowerShe
+ll.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts; PSParentPath=Microsoft.PowerSh
+ell.Core\Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion; PSChildName=Fonts; PSDrive=HKLM; PS
+Provider=Microsoft.PowerShell.Core\Registry}

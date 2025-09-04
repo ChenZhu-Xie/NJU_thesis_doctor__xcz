@@ -48,6 +48,7 @@
     % 模板选项(注意右端逗号)：
     %
     type = doctor,
+    fontset = none,
     % type = bachelor|master|doctor|postdoc, % 文档类型，默认为本科生
     % degree = academic|professional,        % 学位类型，默认为学术型
     %
@@ -192,6 +193,16 @@
 
 \def\sf{\fontspec{Lato-Italic.ttf}} % \text{\sf g}
 \setmathtt{Arial Italic} % 需要 \usepackage{fontspec}（现在已经用 isomath 来替代）
+
+% 设置西文字体
+\setmainfont{LXGW WenKai GB}     % 主体字体
+% \setsansfont{Noto Sans SC}       % 无衬线字体
+% \setmonofont{Ubuntu Mono}        % 等宽字体
+
+% 设置中文字体
+\setCJKmainfont{LXGW WenKai GB}       % 中文正文
+% \setCJKsansfont{Noto Sans SC}         % 中文无衬线
+% \setCJKmonofont{Source Han Mono SC}   % 中文等宽
 
 \allowdisplaybreaks[4] % 允许 align 环境自动跨页
 \ctexset{
