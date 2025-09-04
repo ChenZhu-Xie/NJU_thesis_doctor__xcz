@@ -480,7 +480,7 @@
 \end{subequations}
 注意，严格意义上讲，在使用了\textbf{\textcolor{NavyBlue}{泵浦未耗尽}近似条件}\bref{eq:Nondepleted-Pump-Approximation} 如 $\xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\! \textcolor{PineGreen}{\hat{1}}}_{\;\! \mathcolor{gray}{z}} \equiv \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\! \textcolor{PineGreen}{\hat{1}}}_{\;\! \mathcolor{gray}{0}}, \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\! \textcolor{PineGreen}{\hat{2}}}_{\;\! \mathcolor{gray}{z}} \equiv \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\! \textcolor{PineGreen}{\hat{2}}}_{\;\! \mathcolor{gray}{0}}$ 后，则 \bref{eq:3wavemix-scalar-g-EE-discrete-Since} 中的 \bref{eq:down-scalar-g-EE-231-discrete-Since,eq:down-scalar-g-EE-132-discrete-Since} 不再成立，耦合波方程组\textcolor{NavyBlue}{解耦}，退化为\textcolor{NavyBlue}{无耦合的}\textcolor{NavyBlue}{连续光}\textcolor{Maroon}{和频}标量\textcolor{Maroon}{时空谱}上转换方程 \bref{eq:up-scalar-g-EE-312-discrete-since2}。故而，\bref{eq:3wavemix-scalar-g-EE-discrete-Since} 整体不成立，只旨在 3 个 \bref{eq:up-scalar-g-EE-312-discrete-Since,eq:down-scalar-g-EE-231-discrete-Since,eq:down-scalar-g-EE-132-discrete-Since} 中的某一个成立，以至于 \bref{eq:3wavemix-scalar-g-EE-discrete-Since} 原则上不能称为``耦合波方程组的解"。
 
-\marginLeft[-2.4em]{sec:down_convert}\section{\textcolor{Maroon}{Self coupling} 像线性的非线性、像非线性的线性光学 \textcolor{Maroon}{process}}\label{sec:down_convert}
+\marginLeft[-2.4em]{sec:LNO_that_sim_NLO}\section{\textcolor{Maroon}{Self coupling} 像线性的非线性、像非线性的线性光学 \textcolor{Maroon}{process}}\label{sec:LNO_that_sim_NLO}
 
 在所有类型的二阶\textcolor{Plum}{非线性}光学过程中，除了上述连续波\textcolor{Maroon}{三波混频}和\textcolor{NavyBlue}{脉冲}\textcolor{Maroon}{光整流}之外，涉及\textcolor{NavyBlue}{自耦合}\Footnote{即自身的变化率 $\mathcolor{gray}{\nabla^t} f^{\;\!\mathcolor{gray}{t}}$ 与自身的值 $f^{\;\!\mathcolor{gray}{t}}$ 相关。}的动力学过程，还有典型的\textcolor{gray}{射频}/\textcolor{gray}{微波}波段的\textcolor{Maroon}{一次电光效应}以及\textcolor{PineGreen}{折射率微调制}介质中的线性\textcolor{Maroon}{（势）散射}过程。
 
@@ -488,7 +488,7 @@
 
 相反，有一些看似是\textcolor{PineGreen}{线性光学}的过程，却由\textcolor{Plum}{非线性}波动方程统治：比如，\textcolor{NavyBlue}{泵浦}在空 $\mathcolor{gray}{\bar{r}} \in \mathcolor{gray}{\bar{\mathbb{R}}_{\textcolor{Plum}{3}}}$ 域上，因受到材料内\textcolor{NavyBlue}{微扰起伏}的\textcolor{PineGreen}{折射率}\textcolor{NavyBlue}{调制}，而被线性\textcolor{Maroon}{（势）散射}。该过程就始于\textcolor{Plum}{线性}、但终于\textcolor{Plum}{非线性}。
 
-\marginLeft[-2.4em]{ssec:cross-correlation}\subsection{一次电光效应：像线性的非线性光学过程}\label{ssec:cross-correlation}
+\marginLeft[-2.4em]{ssec:EO=LO_that_sim_NO}\subsection{一次电光效应：像线性的非线性光学过程}\label{ssec:EO=LO_that_sim_NO}
 
 为完整描述\textcolor{Maroon}{一次电光效应}，需要回退至 \bref{eq:nonlinear(2)-wave_wkrho-simplify6} 的\textcolor{Maroon}{非矩阵指数}对应物
 \begin{align} \label{eq:nonlinear(2)-wave_wkrho-spectrum}
@@ -537,7 +537,7 @@
 
 从 \bref{eq:nonlinear(2)-wave_wkrho-EO-bulk-spectrum3} 可以看出，由于参与混频的电极电场\textcolor{gray}{频率}大多处于\textcolor{NavyBlue}{直流}/\textcolor{NavyBlue}{交流}/\textcolor{NavyBlue}{射频}/\textcolor{NavyBlue}{微波}波段\Footnote{即使\textcolor{gray}{调制}/\textcolor{gray}{载波}\textcolor{gray}{频率}很高，也远低于\textcolor{gray}{光场频率}，甚至远低于\textcolor{gray}{太赫兹频率}，因此它们的\textcolor{NavyBlue}{电场性质}非常不同。}，远低于\textcolor{NavyBlue}{太赫兹}、\textcolor{NavyBlue}{近红外}、\textcolor{NavyBlue}{可见光}波段，导致\textcolor{NavyBlue}{直流}/\textcolor{NavyBlue}{射频}/\textcolor{NavyBlue}{微波}波段与\textcolor{NavyBlue}{光波段}的混频结果，大多只是在以\textcolor{NavyBlue}{直流}/\textcolor{NavyBlue}{射频}/\textcolor{NavyBlue}{微波}\textcolor{gray}{频率}改变\textcolor{NavyBlue}{光波段}的偏振态，而并未产生\textcolor{gray}{新频率}的\textcolor{NavyBlue}{光}（除了从\textcolor{Maroon}{电光频率梳}的意义上来讲）。
 
-\marginLeft[-2.4em]{ssec:cross-correlation}\subsection{折射率微扰势散射：像非线性的线性光学过程}\label{ssec:cross-correlation}
+\marginLeft[-2.4em]{ssec:holo_L=NO_that_sim_LO}\subsection{折射率微扰势散射：像非线性的线性光学过程}\label{ssec:holo_L=NO_that_sim_LO}
 
 回到 \bref{ssec:Exp-waveq} 中，\textbf{\textcolor{Plum}{线性}材料系数\textcolor{NavyBlue}{弱调制}条件}下的 \bref{eq:nonlinear(2)-wave_wkrho-simplify4}。当时，我们继续往下推导时，忽略了这个方程右侧的\textcolor{NavyBlue}{势散射项} \bref{eq:nonlinear(2)-wave_wkrho-simplify4-2}，以集中精力处理方程右侧的二阶\textcolor{Plum}{非线性}\textcolor{NavyBlue}{波源}项 $\xint{\mathcolor{gray}{-}}{25}{\bar{P}}^{\;\! \mathcolor{gray}{\omega} }_{\;\! \mathcolor{gray}{z} \textcolor{Maroon}{(2)}}$。现在，反过来地，在这 2 个\textcolor{NavyBlue}{驱动源}中，选择性地忽略掉\textcolor{Plum}{非线性}\textcolor{NavyBlue}{散射源} $\xint{\mathcolor{gray}{-}}{25}{\bar{P}}^{\;\! \mathcolor{gray}{\omega} }_{\;\! \mathcolor{gray}{z} \textcolor{Maroon}{(2)}}$，所产生的散射式\textcolor{PineGreen}{谐波}生成；只考察\textcolor{Plum}{线性}\textcolor{NavyBlue}{势散射源}，对\textcolor{PineGreen}{基波}散射的影响。为描述\textcolor{PineGreen}{介电张量} $\bar{\bar{\varepsilon}}^{\;\! \mathcolor{gray}{\omega}}_{\textcolor{Maroon}{(1)}}$ 的\textcolor{NavyBlue}{微扰} $\tilde{\tilde{\varepsilon}}^{\;\! \mathcolor{gray}{\omega}}_{\textcolor{Maroon}{(1)}}$ 所引起的\textcolor{NavyBlue}{势散射}过程，应回退至 \bref{eq:nonlinear(2)-wave_wkrho-simplify4} 的\textcolor{Maroon}{非矩阵指数}对应物
 \begin{align} \label{eq:linear_potential_scattering}
