@@ -2947,3 +2947,36 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">./referfence/science.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1" intorder="1">olyslagerElectromagneticsExoticMedia2002</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">yakovNonbirefringenceConditionsSpacetime2005</bcf:citekey>
+    <bcf:citekey order="2" intorder="2">hehlSpacetimeMetricLocal2006</bcf:citekey>
+    <bcf:citekey order="2" intorder="3">frankelGeometryPhysicsIntroduction2011</bcf:citekey>
+    <bcf:citekey order="2" intorder="4">dahlNondissipativeElectromagneticMedium2013</bcf:citekey>
+    <bcf:citekey order="2" intorder="5">ivezicManifestlyCovariantAharonovbohm2015</bcf:citekey>
+    <bcf:citekey order="2" intorder="6">hehlAxionDilatonMetric2016</bcf:citekey>
+    <bcf:citekey order="2" intorder="7">favaroRecentAdvancesClassical2012</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">nelsonMechanismsDispersionCrystalline1989</bcf:citekey>
+    <bcf:citekey order="3" intorder="2">nelsonDerivingTransmissionReflection1995</bcf:citekey>
+    <bcf:citekey order="3" intorder="3">nelsonLagrangianTreatmentMagnetic1994</bcf:citekey>
+    <bcf:citekey order="3" intorder="4">nelsonOpticallyActiveSurface2000</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">eimerlQuantumElectrodynamicsOptical1988</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">ossikovskiConstitutiveRelationsOptically2021</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">robertsSimplifiedCharacterizationUniaxial1992</bcf:citekey>
+    <bcf:citekey order="6" intorder="2">dmitrievEffectiveNonlinearityCoefficients1993</bcf:citekey>
+    <bcf:citekey order="6" intorder="3">diesperovEffectiveNonlinearCoefficient1997</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">shengNonlinearopticalCalculationsUsing1980</bcf:citekey>
+    <bcf:citekey order="7" intorder="2">grundmannOpticallyAnisotropicMedia2017</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">xuFemtosecondLaserWriting2022</bcf:citekey>
+    <bcf:citekey order="8" intorder="2">weiExperimentalDemonstrationThreedimensional2018</bcf:citekey>
+    <bcf:citekey order="8" intorder="3">xuThreedimensionalNonlinearPhotonic2018</bcf:citekey>
+    <bcf:citekey order="8" intorder="4">keren-zurNewDimensionNonlinear2018</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">chenQuasiphasematchingdivisionMultiplexingHolography2021b</bcf:citekey>
+    <bcf:citekey order="9" intorder="2">chenLaserNanoprinting3D2023</bcf:citekey>
+    <bcf:citekey order="9" intorder="3">sunFerroelectricTopologiesBaTiO32025</bcf:citekey>
+    <bcf:citekey order="9" intorder="4">xuLargeFieldofviewNonlinear2024</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">chenQuasiphasematchingdivisionMultiplexingHolography2021b</bcf:citekey>
+    <bcf:citekey order="10" intorder="2">chenLaserNanoprinting3D2023</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">berremanOpticsStratifiedAnisotropic1972</bcf:citekey>
+    <bcf:citekey order="11" intorder="2">stallingaBerreman4x4Matrix1999</bcf:citekey>
+    <bcf:citekey order="11" intorder="3">molerNineteenDubiousWays2003</bcf:citekey>
+    <bcf:citekey order
