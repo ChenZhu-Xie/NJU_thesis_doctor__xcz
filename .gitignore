@@ -298,3 +298,5 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+*.sublime-workspace
