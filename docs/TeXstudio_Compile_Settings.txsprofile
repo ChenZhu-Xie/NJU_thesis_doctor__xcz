@@ -10,10 +10,10 @@ created_by_TXS_hg_revision=4.7.3
 created_by_Qt_version=394754
 
 [texmaker]
-Tools\Commands\latex="latex.exe -src -interaction=nonstopmode %.tex"
-Tools\Commands\pdflatex="pdflatex.exe -synctex=1 -interaction=nonstopmode %.tex"
-Tools\Commands\xelatex="xelatex.exe -synctex=1 -interaction=nonstopmode %.tex"
-Tools\Commands\lualatex="lualatex.exe -synctex=1 -interaction=nonstopmode %.tex"
+Tools\Commands\latex="latex.exe -src -interaction=nonstopmode -output-directory=tmp %.tex"
+Tools\Commands\pdflatex="pdflatex.exe -synctex=1 -interaction=nonstopmode -output-directory=tmp %.tex"
+Tools\Commands\xelatex="xelatex.exe -synctex=1 -interaction=nonstopmode -output-directory=tmp %.tex"
+Tools\Commands\lualatex="lualatex.exe -synctex=1 -interaction=nonstopmode -output-directory=tmp %.tex"
 Tools\Commands\view-dvi=\"E:\\Runtime\\texlive\\2023\\bin\\windows\\dviout.exe\" \"?am.dvi\"
 Tools\Commands\view-ps=\"E:\\Runtime\\texlive\\2023\\bin\\windows\\psviewer.exe\" \"?am.ps\"
 Tools\Commands\view-pdf-external=\"F:\\Book_reader\\BookxNote Pro\\BookxNotePro.exe\" \"?am.pdf\"
@@ -21,9 +21,9 @@ Tools\Commands\dvips=dvips.exe -o %.ps %.dvi
 Tools\Commands\dvipng=dvipng.exe -T tight -D 120 %.dvi
 Tools\Commands\ps2pdf=ps2pdf.exe %.ps
 Tools\Commands\dvipdf=dvipdfmx.exe %.dvi
-Tools\Commands\bibtex=bibtex.exe %
-Tools\Commands\bibtex8=bibtex8.exe %
-Tools\Commands\biber=biber.exe %
+Tools\Commands\bibtex=bibtex.exe tmp/%
+Tools\Commands\bibtex8=bibtex8.exe tmp/%
+Tools\Commands\biber=biber.exe --output-directory tmp %
 Tools\Commands\makeindex=makeindex.exe %.idx
 Tools\Commands\texindy=texindy.exe %.idx
 Tools\Commands\xindex=xindex.exe -l * %.idx
@@ -31,13 +31,13 @@ Tools\Commands\makeglossaries=makeglossaries.exe %
 Tools\Commands\metapost="mpost.exe -interaction=nonstopmode ?me)"
 Tools\Commands\asy=asy.exe ?m*.asy
 Tools\Commands\gs=\"E:\\Runtime\\texlive\\2023\\bin\\windows\\rungs.exe\" \"?am.ps\"
-Tools\Commands\latexmk="latexmk.exe -xelatex -silent -synctex=1 %"
+Tools\Commands\latexmk="latexmk.exe -xelatex -silent -synctex=1 --output-directory=tmp %"
 Tools\Commands\texdoc="texdoc.exe "
 Tools\Commands\quick=txs:///compile | txs:///bibliography | txs:///compile| txs:///compile | txs:///view
-Tools\Commands\compile=txs:///pdflatex
+Tools\Commands\compile=txs:///latexmk
 Tools\Commands\view=txs:///view-pdf
 Tools\Commands\view-pdf=txs:///view-pdf-internal --embedded
-Tools\Commands\bibliography=txs:///bibtex
+Tools\Commands\bibliography=txs:///biber
 Tools\Commands\index=txs:///makeindex
 Tools\Commands\glossary=txs:///makeglossaries
 Tools\Commands\ps-chain=txs:///latex | txs:///dvips | txs:///view-ps
@@ -81,7 +81,7 @@ Files\Remember%20File%20Filter=true
 Files\Use%20Native%20File%20Dialog=true
 Files\Recent%20Files%20Highlighting=@Variant(\0\0\0\x7f\0\0\0\x10StringStringMap\0\0\0\0\0)
 Files\RestoreSession=true
-Files\Last%20Document=D:/C2D/Desktop/Code/Latex/TexStudio/0.njuthesis/NJUThesis-master/docs/chapters/chapter2/chapter2.tex
+Files\Last%20Document=D:/C2D/Desktop/article/LFCO/LFCO_iop/LFCO_iop.tex
 Files\Parse%20BibTeX=true
 Bibliography\BibFileEncoding=UTF-8
 Files\Parse%20Master=true
@@ -149,8 +149,8 @@ Editor\Close%20Search%20Replace%20Together=true
 Editor\Use%20Line%20For%20Search=true
 Editor\Search%20Only%20In%20Selection=true
 Editor\Auto%20Replace%20Commands=true
-Editor\OnlyMonospacedFonts=false
-Editor\Font%20Family=Source Han Mono SC
+Editor\OnlyMonospacedFonts=true
+Editor\Font%20Family=Inconsolata-LXGWMono
 Editor\Font%20Size=14
 Editor\Line%20Spacing%20Percent=100
 Editor\Esc%20for%20closing%20log=false
@@ -162,7 +162,7 @@ Editor\Mouse%20Wheel%20Zoom=true
 Editor\Smooth%20Scrolling=true
 Editor\Vertical%20Over%20Scroll=false
 Editor\Hack%20Auto%20Choose=true
-Editor\Hack%20Disable%20Fixed%20Pitch=false
+Editor\Hack%20Disable%20Fixed%20Pitch=true
 Editor\Hack%20Disable%20Width%20Cache=true
 Editor\Hack%20Disable%20Line%20Cache=true
 Editor\Hack%20Disable%20Accent%20Workaround=false
@@ -222,9 +222,9 @@ Tools\ShowLogInCaseOfCompileError=true
 Tools\ReplaceEnvironmentVariables=true
 Tools\InterpetCommandDefinitionInMagicComment=true
 Tools\SupportShellStyleLiteralQuotes=true
-Tools\Search%20Paths=
-Tools\Log%20Paths=
-Tools\PDF%20Paths=
+Tools\Search%20Paths=.\\tmp
+Tools\Log%20Paths=.\\tmp
+Tools\PDF%20Paths=.\\tmp
 Tools\UseVCS=0
 Tools\Auto%20Checkin%20after%20Save%20level=0
 Tools\SVN%20Undo=false
@@ -331,7 +331,7 @@ Tools\User%20Order=@Invalid()
 Tools\Preview%20Compile%20Time%20Out=15000
 Tools\Had%20Successful%20Process%20Start=true
 Files\Default%20File%20Filter=
-PDFSplitter=0.48300117233294254
+PDFSplitter=0.4770231801545344
 Tools\Kind\LaTeX=latex, pdflatex, xelatex, lualatex, latexmk, compile
 Tools\Kind\Rerunnable=latex, pdflatex, xelatex, lualatex
 Tools\Kind\Pdf=pdflatex, xelatex, lualatex, latexmk, dvipdf, ps2pdf
