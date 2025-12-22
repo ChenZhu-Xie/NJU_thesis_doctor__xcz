@@ -298,3 +298,6 @@ TSWLatexianTemp*
 *.lpz
 
 *.sublime-workspace
+*.bbl-SAVE-ERROR
+*.bcf-SAVE-ERROR
+*.synctex.gz.sum.synctex
