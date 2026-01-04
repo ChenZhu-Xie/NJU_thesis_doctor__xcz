@@ -2,218 +2,21 @@
 本文档汇总了 chapter1.tex, chapter2.tex, chapter3.tex, chapter4.tex 中使用 `\textcolor` 和 `\mathcolor` 标记的所有关键字，按颜色分组。
 
 ## 灰色 gray — 自变量，或对应的散度分量 / 微分算子
-共 271 个关键字：
+共 69 个关键字：
 
-$\omega$ 域
-( \bar{\nabla} \cdot \bar{\nabla} )
-*
--
-- \bar{k}_{\symup{\rho}}
-- \omega
-- k_{\symup{z}}
---
--0.2
-0
-0^+
-0^-
-1
-2
 2D 倒
 2D 傅立叶空间
-2\omega
-3
 3D 正
-4D
-6D
-\Big|
-\Omega
-\bar{0}
-\bar{\kappa}
-\bar{\mathbb{C}}_{\textcolor{Plum}{3}}
-\bar{\mathbb{R}}_{1+2}
-\bar{\mathbb{R}}_{\textcolor{Maroon}{1+3}}
-\bar{\mathbb{R}}_{\textcolor{Maroon}{3+1}}
-\bar{\mathbb{R}}_{\textcolor{Plum}{1}}
-\bar{\mathbb{R}}_{\textcolor{Plum}{2}}
-\bar{\mathbb{R}}_{\textcolor{Plum}{3}}
-\bar{\mathbb{R}}_{\textcolor{Plum}{4}}
-\bar{\nabla}
-\bar{\nabla} \cdot
-\bar{\nabla} \colon
-\bar{\nabla} \times
-\bar{\nabla}^2
-\bar{\nabla}^\intercal
-\bar{\nabla}^\times
-\bar{\nabla}^\times \cdot
-\bar{\nabla}_{\bar{r}}
-\bar{\rho}
-\bar{k}
-\bar{k}'_{\symup{\rho}}
-\bar{k}_{1\symup{\rho}}
-\bar{k}_{2\symup{\rho}}
-\bar{k}_{3\symup{\rho}}
-\bar{k}_{\symup{\rho}}
-\bar{q}
-\bar{q}_{\symup{\rho}}
-\bar{r}
-\bar{r}'
-\bar{x}
-\check{1}
-\check{1} \check{2}
-\check{1} \symup{z}
-\check{2}
-\check{2} \check{1}
-\check{3}
-\check{\jmath}
-\check{\symup{\jmath}}
-\circ
-\dot{1}
-\hat{1}
-\hat{1}\hat{2}
-\hat{1}\hat{3}
-\hat{2}
-\hat{2} \hat{3}
-\hat{3}
-\hat{3} \hat{2}
-\hat{3} \hat{4}
-\hat{4}
-\hat{4} \hat{3}
-\hat{m}
-\iiint_{-\infty}^{+\infty}
-\iint_{-\infty}^{+\infty}
-\int_{-\infty}^{+\infty}
-\jmath
-\lambda
-\left( \bar{\nabla} \bar{\nabla} \right)^\intercal
-\mathbb{R}
-\mathbb{R}_{\textcolor{Maroon}{1}}
-\mathcal F
-\mathcal F^{-1}
-\mathcal F^{-1}_z
-\mathcal F^{-\bar{\rho}}_{t}
-\mathcal F_{\bar{\kappa}}
-\mathcal F_{\bar{k}_{\symup{\rho}}}^{-\omega}
-\mathcal F_{\bar{k}}
-\mathcal F_{\bar{r}}^{-1}
-\mathcal F_{\bar{x}}^{-1}
-\mathcal F_{\omega}^{-1}
-\mathcal F_{t}
-\mathcal F_{z}
-\mathcal F_{z}^{-1}
-\mathcal F_{z}^{-\mathcolor{Plum}{*}}
-\mathcal F_{z}^{-\textcolor{Plum}{*}}
-\mathcal F_{z}^{\mathcolor{Plum}{*}}
-\mathtt{z}
-\nabla^2
-\nabla^\iota
-\nabla^m
-\nabla^n_{\hat{1}}
-\nabla^t
-\nabla^{\dot{1}}
-\nabla^{\hat{1}}
-\nabla^{\hat{2}}
-\nabla^{\hat{3}}
-\nabla^{\hat{m}}
-\nabla^{x}
-\nabla_x
-\nabla_x^2
-\nabla_x^n
-\nabla_y
-\nabla_y^2
-\nabla_y^n
-\nabla_z
-\nabla_z^2
-\nabla_{\check{1}}
-\nabla_{\check{2}}
-\nabla_{\check{3}}
-\nabla_{\hat{1}}
-\nabla_{\hat{2}}
-\nabla_{\hat{3}}
-\nabla_{\hat{m}}
-\omega
-\omega'
-\overbrace{\check{\symup{\jmath}}}
-\partial \mathcolor{black}{\underline{~~}} \big/ \partial \mathcolor{gray}{\hat{1}}
-\partial \mathcolor{black}{\underline{~~}} \big/ \partial t
-\rho
-\sim
-\symup{\iota}
-\symup{\iota} \hat{1}
-\symup{\iota} \hat{1} \hat{2}
-\symup{\rho}
-\symup{m}
-\symup{m}^{-1}
-\symup{m}^{-2}
-\symup{x}
-\symup{x} \symup{z}
-\symup{y}
-\symup{y} \symup{z}
-\symup{z}
-\symup{z} \check{2}
-\symup{z} \symup{x}
-\symup{z} \symup{y}
-\symup{z} \symup{z}
-\text{dc}
-\underbrace{\nabla_{\check{\jmath}}}
-\underbrace{k^\nabla_{\;\! \check{\symup{\jmath}}}}
-\uo{\bar{x}}
-\uo{t}
-\uwav{\bar{r}}
-\uwav{\bar{x}}
-\uwav{t}
-\widetilde *
-\widetilde \circ
-\widetilde \circledast
-\widetilde \circledcirc
-\xint{{}^{}_{\mathcolor{gray}{-}}}{23}{\widetilde{\textcolor{black}{\chi}}}
-f
-k^2_{\symup{x}}
-k^2_{\symup{y}}
-k^\nabla_{\;\! \check{\symup{\jmath}}}
-k^\nabla_{\check{1}}
-k^\nabla_{\check{2}}
-k^\nabla_{\dot{1}}
-k^{\hat{1}}
-k_{\hat{1}}
-k_{\hat{2}}
-k_{\hat{3}}
-k_{\hat{4}}
-k_{\hat{4}} k_{\hat{3}}
-k_{\hat{m}}
-k_{\symup{\rho}}
-k_{\symup{x}}
-k_{\symup{y}}
-k_{\symup{z}}
-l
 mm
-q_{\symup{z}}
-t
-x
 x,y
-y
-z
-z \mathcolor{black}{<} 0
-z \mathcolor{black}{=} 0
-z \mathcolor{black}{=} 0^+
-z \mathcolor{black}{=} 0^-
-z \mathcolor{black}{>} 0
-z^0
-z^1
-z^2
-z^n
-z_0
-z_i
-“$-$”标志
 不含空地
 中心频率
 互易空间
 任何组分
 传播距离
-倒
 倒空间
 傅立叶域
 光场频率
-光波段单色 $\omega$
 光源
 动量守恒
 单一频率
@@ -233,31 +36,26 @@ z_i
 新频率
 新频率组分
 旧频率
-时
 时间
 时间频率
 时间频率组分
 横向动量守恒
 横向波矢守恒
 横向空间频率
-正
 正空间
 波矢总是守恒、匹配的
 波长
 混频
-灰
 灰色
 灰色宽波浪
 灰色数字 3
 灰色的
-空
 空域
 空间
 空间频率
 空间频率域
 第三个波长
 能量守恒
-自
 自变量
 角频率
 调制
@@ -277,31 +75,8 @@ z_i
 （角）频率
 
 ## 褐红 Maroon — 基础·通用概念
-共 305 个关键字：
+共 218 个关键字：
 
-$G$
-$U$
-$\text{场} = f(\text{源})$
-$\text{源} = g(\text{场})$
-$f^{-1}(\text{场}) = g(\text{场})$
-(0)
-(1)
-(1\textcolor{NavyBlue}{\text{A}})
-(1\textcolor{NavyBlue}{\text{S}})
-(2)
-(3)
-(4)
-(\textcolor{NavyBlue}{\text{S}})
-(i)
-+\symup{c}
-+\symup{z}
--\symup{c}
-0
-0,1
-1
-1+3
-2
-3+1
 8 字形环
 8 形圈
 8 形环
@@ -350,72 +125,14 @@ Wave equation
 Z 扣
 Zeeman
 Zusin
-\Yup
-\mathbb{1}
-\mathbb{2}
-\mathsfit{0}
-\mathsfit{1}
-\mathsfit{z}
-\mathsf{o}
-\perp
-\symup{\rho}
-\symup{z}
-\textcolor{Plum}{非线性}卷积
-\text{(1)}
-\text{(2)}
-\text{Amp\`{e}re-Maxwell circuital law}
-\text{Biot-Savart}
-\text{B}
-\text{CR for electricity}
-\text{CR for magnetism}
-\text{CR}
-\text{Constitutive Relation}
-\text{Continuity for free electric charge}
-\text{Continuity for free magnetic charge}
-\text{Coulomb's}
-\text{E}
-\text{Faraday's law of electromagnetic induction}
-\text{Gauss's law for electricity}
-\text{Gauss's law for magnetism}
-\text{HG}
-\text{Jefimenko's}
-\text{LG}
-\text{M}
-\text{NL}
-\text{Ohm's law}
-\text{P}
-\text{Q}
-\text{THz}
-\text{b}
-\text{ex}
-\text{e}
-\text{f}
-\text{g}
-\text{m}
-\text{r}
-\text{z}
-\text{安倍环路定律}
-\text{法拉第电磁感应定律}
-\text{电偶、磁四极矩}
-\text{电偶极矩}
-\text{电八、磁四极矩}
-\text{电荷守恒定律}
-\text{项}
-\text{高斯定律（电）}
-\text{高斯定律（磁）}
 electromagnetic waves
 else
 equation
 free
-i
 if
-of chapter 3
-of chapter 4
-of chapter 5
 process
 一次电光
 一次电光效应
-三
 三波混频
 上转换
 下转换
@@ -427,7 +144,6 @@ process
 二次电光效应
 二阶导部分
 交叉相位调制
-倍
 倍频
 倒易空间
 倒空间
@@ -468,7 +184,6 @@ process
 参量过程
 变量替换
 台阶状悬崖
-和
 和频
 四波混频
 固体
@@ -516,7 +231,6 @@ process
 核心之二
 楚河汉界
 模式
-正
 正折射
 正空间
 沟槽
@@ -548,15 +262,12 @@ process
 经典力学
 结构
 聚焦离子束切割
-自
 自由电流
 自由电荷守恒
-荷
 萦绕定理
 装饰着空心水滴的心形吊坠
 褐红色
 角谱
-谱
 谱分析
 谱方法
 贝塞尔
@@ -586,15 +297,8 @@ process
 （势）散射过程
 
 ## 松树绿 PineGreen — 进阶·晶体光学
-共 272 个关键字：
+共 227 个关键字：
 
-$\mathcal{C}$ 系
-$\mathcal{Z}$ 系
-+
--
-1
-2
-3
 Abraham 形式
 Booker
 C 点
@@ -618,38 +322,10 @@ Raman spike
 Schur 分解
 V 方向线偏
 Voigt 波
-\hat{1}
-\hat{1} \hat{2}
-\hat{1} \hat{2} \hat{3}
-\hat{2}
-\hat{2} \hat{1}
-\hat{3}
-\hat{3} \hat{1}
-\hat{3} \hat{1} \hat{2}
-\hat{3} \hat{2}
-\hat{3} \hat{2} \hat{1}
-\hat{\imath}
-\hat{\jmath}
-\hat{l}
-\imath
-\imath \jmath l
-\jmath
-\jmath l
-\pm
-\textbf{有效/表观折射率}
-\textcolor{gray}{单色}平面波
-\text{diag}
-e
 e 型本征偏振
 e 波
-f
-l
-o
 o 型本征偏振
 o 波
-p 116
-p 206
-s
 一对奇点
 两种基
 中心消光
@@ -710,7 +386,6 @@ s
 奇点们
 奇点圈
 奇点环
-实
 实线
 实验室
 实验（室）
@@ -720,7 +395,6 @@ s
 平面波基
 平面波解
 异常点
-快
 总光场
 总模场
 总电场列向量
@@ -728,7 +402,6 @@ s
 总矢量场
 总矢量电场
 恶魔点
-慢
 慢模
 手性
 折射率
@@ -779,7 +452,6 @@ s
 椭圆
 椭圆偏振
 模式
-每个 ($\textcolor{PineGreen}{\jmath}$ th) 模式
 水平极化
 波矢
 波矢匹配
@@ -797,10 +469,8 @@ s
 特征方程
 特征矢量
 特征系统
-环
 环状奇点
 电矢量总场
-盘
 相位匹配
 相位匹配条件
 相位匹配的相干水平
@@ -833,16 +503,12 @@ s
 线偏振
 线性光学
 线性叠加
-线性叠加的\textcolor{gray}{单色}平面波
-线性叠加的\textcolor{gray}{单色}平面波基
 线性极化
 线性过程
 经典平面波
-群
 群速度
 聚焦
 能流
-虚
 虚线
 谐波
 起-检偏
@@ -862,46 +528,14 @@ s
 非常光
 
 ## 李子紫 Plum — 进阶·数学名词
-共 551 个关键字：
+共 466 个关键字：
 
-$!$H
-$!$S
-$1$
-$3$ 个数量级
-$\symup{z}$ 分量
-$\symup{z}\symup{z}$ 分量
-$i$
-$n$
-$n-1$
-(0)
-(1)
-(2)
-(\textcolor{NavyBlue}{\text{S}})
-(i)
-(i-1)
-(n)
-(n-1)
-(n-2)
-*
--\mathsf{T}
-0
-1
-2
-2 \times 1
-2 \times 2
 2 个世纪
-3
-3 \times 1
-3 \times 2
-3 \times 3
 3 个数量级
-4
-4 \times 4
 6 条边
 Dirac
 Dirac delta
 FT
-H
 Heaviside step
 Heaviside 单位函数
 IFT
@@ -911,33 +545,6 @@ Levi-Civita 张量
 Logic can be patient for it is eternal.
 Moore-Penrose 伪逆
 Re
-S
-T
-\dag
-\det
-\jmath
-\langle\textcolor{black}{|\xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{08}{e}^{\;\!\textcolor{PineGreen}{\pm}}_{\mathcolor{gray}{\omega}}|}\rangle
-\left[3 \times 2\right]
-\left[3 \times 3\right]
-\left[4 \times 4\right]
-\min
-\symup{x}
-\symup{y}
-\symup{z}
-\text{I}
-\text{Levi-Civita symbol}
-\text{Re}
-\text{R}
-\text{Tr}
-\text{b}
-\text{e}
-\text{undefined}
-i
-i+1
-n
-n-1
-x
-y
 z 轴
 z 轴正向
 一维
@@ -1002,19 +609,15 @@ z 轴正向
 共轭转置
 具有可计算性
 内部结构
-减
 几乎无解
 几乎纯净
-分
 分析发展
 分离
 分量
 分量形式
 前向解
 前端面
-加
 十字形图案
-半 $\symup{\pi}$ 螺旋线
 半张量
 半张量式
 半张量形式
@@ -1038,7 +641,6 @@ z 轴正向
 厄米 `H'
 厄米 `H' 边
 厄米部分
-厚
 厚非厄米板
 原函数
 原因张量
@@ -1054,7 +656,6 @@ z 轴正向
 双轴夹角
 双轴材料
 反厄米
-反厄米 $!$H
 反厄米 `!H'
 反厄米 `!H' 边
 反变
@@ -1062,7 +663,6 @@ z 轴正向
 反向传播
 反向传播解
 反对称
-反对称 $!$S
 反对称 `!S'
 反对称 `!S' 边
 反称
@@ -1081,9 +681,7 @@ z 轴正向
 同类项
 后端面
 吸收
-和
 哈达马积
-因
 因变量
 固定
 圆盘
@@ -1097,7 +695,6 @@ z 轴正向
 基础研究
 增量
 增长率
-复
 复共轭
 复共轭解
 复各向异性
@@ -1119,7 +716,6 @@ z 轴正向
 宏观晶体对称性
 定常
 定积分
-实
 实对称
 实数部分
 实部
@@ -1138,7 +734,6 @@ z 轴正向
 局域
 峰值
 左点乘
-差
 平均值
 平方
 并集
@@ -1220,7 +815,6 @@ z 轴正向
 李子紫
 极值
 极限值
-标
 标准化
 标量形式
 椭圆度
@@ -1229,7 +823,6 @@ z 轴正向
 椭球面
 概率
 横向
-正
 正交
 正交完备
 正反向
@@ -1243,9 +836,7 @@ z 轴正向
 水平且笔直
 水平扫描
 泵浦参数
-浅
 消除
-深
 混叠误差
 满秩
 点乘
@@ -1254,8 +845,6 @@ z 轴正向
 爱因斯坦求和
 特征矩阵
 独立
-环
-理
 理论
 理论部分
 畸变
@@ -1269,7 +858,6 @@ z 轴正向
 省略符号
 真值
 瞬时值
-矢
 矢量
 矢量形式
 矩阵对称
@@ -1289,7 +877,6 @@ z 轴正向
 级数项
 纯标量
 纵向
-线
 线性
 线性卷积
 线性卷积方程组
@@ -1307,7 +894,6 @@ z 轴正向
 置换反称
 置换对称
 置换对称性
-自
 自变量
 自洽
 自由度
@@ -1322,7 +908,6 @@ z 轴正向
 被积函数
 被调制
 角标
-解
 解析
 解析延拓
 解析求解
@@ -1346,16 +931,13 @@ z 轴正向
 输入
 输入面的内法向
 输出
-边
 过程量
 远低于
 远场
 连续
 连续互补的相交流形
 连续性
-迹
 退化
-逆
 逆变
 逆变换
 逆变换傅立叶正
@@ -1396,7 +978,6 @@ z 轴正向
 非零张量元
 非零虚部
 非齐次
-面
 顶点
 飞鸟
 高度
@@ -1417,11 +998,8 @@ z 轴正向
 （非）线性
 
 ## 海军蓝 NavyBlue — 进阶·物理术语
-共 406 个关键字：
+共 354 个关键字：
 
-$\nabla \text{电}$ $\otimes$ $\nabla \text{电}$
-$\nabla \text{电}$ $\otimes$ 磁
-0 阶
 0 阶微扰
 1 阶微扰
 4 个顶点
@@ -1441,26 +1019,6 @@ PT 反（对）称
 PT 对称
 PT 对称性
 Pulse
-R$\to$L 自旋轨道相互作用（SOI）
-\sigma
-\text{A}
-\text{S}
-\text{eff}
-\text{mm}
-\text{mp}
-\text{m}
-\text{n}
-\text{o}
-\text{pm}
-\text{pn}
-\text{po}
-\text{pp}
-\text{pq}
-\text{p}
-\text{qm}
-\text{qp}
-\text{qq}
-\text{q}
 pump
 一强一弱
 主动
@@ -1478,7 +1036,6 @@ pump
 偏振模式间的耦合/混合程度
 傅立叶光学
 傅里叶光学
-光
 光-光
 光-光相互作用
 光-物质
@@ -1510,7 +1067,6 @@ pump
 动力学过程
 势散射源
 势散射项
-半
 单色
 压电
 原子物理
@@ -1537,13 +1093,11 @@ pump
 吸收
 哈密顿量
 回流
-固
 圆二向色性
 圆二向色性（CD）
 圆二色性
 圆二色性 CD
 圆二色性 `CD'
-场
 场传播和演化
 场分布和演化
 场量
@@ -1570,14 +1124,11 @@ pump
 宽带
 对象
 射频
-工
-左
 左侧场
 左旋
 左旋圆偏振
 常振幅
 广义相对论
-弱
 弱光
 弱散射
 弱泵浦
@@ -1604,7 +1155,6 @@ pump
 拓扑荷
 指数
 振幅
-损
 损耗
 放大
 效率饱和
@@ -1642,7 +1192,6 @@ pump
 框架
 椭球材料
 正四面体罗盘
-气
 波函数
 波前（等相面）
 波源
@@ -1655,10 +1204,8 @@ pump
 泵浦源
 测量
 海军蓝
-液
 混频场
 混频源
-源
 源场
 演化
 激发态
@@ -1688,21 +1235,11 @@ pump
 理论框架
 理论物理
 理论物理学者
-电
-电 $\to$ 电
-电 $\to$ 磁
-电$\longleftarrow$磁
-电$\otimes$ $\nabla \text{电}$
-电$\otimes$ $\nabla \text{磁}$
-电$\otimes$ $\nabla\nabla \text{电}$
-电$\otimes$磁
 电、磁偶
 电、磁八
 电、磁四
 电二/四/八
 电偶
-电偶-$(\text{电偶}\otimes\text{电偶})$
-电偶-$(\text{电偶}\otimes\text{电四/磁偶})$
 电偶-电偶
 电偶-电八
 电偶-电八/磁四
@@ -1721,7 +1258,6 @@ pump
 电磁多
 电磁学
 电磁诱导透明
-电（偶）$\longleftarrow$电（和/或）磁（场）
 畴壁
 直流
 相位
@@ -1735,12 +1271,6 @@ pump
 相对论（量子）电动力学
 瞬态
 瞬时弹性
-磁
-磁 $\otimes$ 磁
-磁$\longleftarrow$电
-磁$\longleftrightarrow$电
-磁偶$\longleftarrow$磁
-磁偶-$(\text{电偶}\otimes\text{电偶})$
 磁偶-电偶
 磁偶-电四/磁偶
 磁偶/磁四
@@ -1759,7 +1289,6 @@ pump
 第一性原理
 等离子体
 纯电
-线
 线二向色性
 线二向色性 LD
 线二向色性（LD）
@@ -1825,4 +1354,3 @@ pump
 高频场
 黄昆方程
 （准）连续光
-

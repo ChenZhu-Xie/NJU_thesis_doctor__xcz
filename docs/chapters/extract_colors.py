@@ -67,7 +67,7 @@ for color in colors:
     output_lines.append(f'## {color_meanings[color]}\n')
     output_lines.append(f'共 {len(keywords)} 个关键字：\n\n')
     for kw in keywords:
-        output_lines.append(f'- {kw}\n')
+        output_lines.append(f'{kw}\n')
     output_lines.append('\n')
 
 output_path = chapters_dir / 'color_keywords.md'
