@@ -1,30 +1,208 @@
 # 颜色关键字汇总
-本文档汇总了 chapter1.tex ~ chapter4.tex 中使用 `\textcolor` 标记的所有关键字，按颜色分组。
+本文档汇总了 chapter1.tex, chapter2.tex, chapter3.tex, chapter4.tex 中使用 `\textcolor` 和 `\mathcolor` 标记的所有关键字，按颜色分组。
 
 ## 灰色 gray — 自变量，或对应的散度分量 / 微分算子
-共 93 个关键字：
+共 271 个关键字：
 
 - $\omega$ 域
+- ( \bar{\nabla} \cdot \bar{\nabla} )
 - *
+- -
+- - \bar{k}_{\symup{\rho}}
+- - \omega
+- - k_{\symup{z}}
 - --
+- -0.2
 - 0
+- 0^+
+- 0^-
 - 1
 - 2
 - 2D 倒
 - 2D 傅立叶空间
+- 2\omega
 - 3
 - 3D 正
 - 4D
 - 6D
-- \bar{r
+- \Big|
+- \Omega
+- \bar{0}
+- \bar{\kappa}
+- \bar{\mathbb{C}}_{\textcolor{Plum}{3}}
+- \bar{\mathbb{R}}_{1+2}
+- \bar{\mathbb{R}}_{\textcolor{Maroon}{1+3}}
+- \bar{\mathbb{R}}_{\textcolor{Maroon}{3+1}}
+- \bar{\mathbb{R}}_{\textcolor{Plum}{1}}
+- \bar{\mathbb{R}}_{\textcolor{Plum}{2}}
+- \bar{\mathbb{R}}_{\textcolor{Plum}{3}}
+- \bar{\mathbb{R}}_{\textcolor{Plum}{4}}
+- \bar{\nabla}
+- \bar{\nabla} \cdot
+- \bar{\nabla} \colon
+- \bar{\nabla} \times
+- \bar{\nabla}^2
+- \bar{\nabla}^\intercal
+- \bar{\nabla}^\times
+- \bar{\nabla}^\times \cdot
+- \bar{\nabla}_{\bar{r}}
+- \bar{\rho}
+- \bar{k}
+- \bar{k}'_{\symup{\rho}}
+- \bar{k}_{1\symup{\rho}}
+- \bar{k}_{2\symup{\rho}}
+- \bar{k}_{3\symup{\rho}}
+- \bar{k}_{\symup{\rho}}
+- \bar{q}
+- \bar{q}_{\symup{\rho}}
+- \bar{r}
+- \bar{r}'
+- \bar{x}
+- \check{1}
+- \check{1} \check{2}
+- \check{1} \symup{z}
+- \check{2}
+- \check{2} \check{1}
+- \check{3}
+- \check{\jmath}
+- \check{\symup{\jmath}}
 - \circ
-- \mathbb{R
+- \dot{1}
+- \hat{1}
+- \hat{1}\hat{2}
+- \hat{1}\hat{3}
+- \hat{2}
+- \hat{2} \hat{3}
+- \hat{3}
+- \hat{3} \hat{2}
+- \hat{3} \hat{4}
+- \hat{4}
+- \hat{4} \hat{3}
+- \hat{m}
+- \iiint_{-\infty}^{+\infty}
+- \iint_{-\infty}^{+\infty}
+- \int_{-\infty}^{+\infty}
+- \jmath
+- \lambda
+- \left( \bar{\nabla} \bar{\nabla} \right)^\intercal
+- \mathbb{R}
+- \mathbb{R}_{\textcolor{Maroon}{1}}
+- \mathcal F
+- \mathcal F^{-1}
+- \mathcal F^{-1}_z
+- \mathcal F^{-\bar{\rho}}_{t}
+- \mathcal F_{\bar{\kappa}}
+- \mathcal F_{\bar{k}_{\symup{\rho}}}^{-\omega}
+- \mathcal F_{\bar{k}}
+- \mathcal F_{\bar{r}}^{-1}
+- \mathcal F_{\bar{x}}^{-1}
+- \mathcal F_{\omega}^{-1}
+- \mathcal F_{t}
+- \mathcal F_{z}
+- \mathcal F_{z}^{-1}
+- \mathcal F_{z}^{-\mathcolor{Plum}{*}}
+- \mathcal F_{z}^{-\textcolor{Plum}{*}}
+- \mathcal F_{z}^{\mathcolor{Plum}{*}}
+- \mathtt{z}
+- \nabla^2
+- \nabla^\iota
+- \nabla^m
+- \nabla^n_{\hat{1}}
+- \nabla^t
+- \nabla^{\dot{1}}
+- \nabla^{\hat{1}}
+- \nabla^{\hat{2}}
+- \nabla^{\hat{3}}
+- \nabla^{\hat{m}}
+- \nabla^{x}
+- \nabla_x
+- \nabla_x^2
+- \nabla_x^n
+- \nabla_y
+- \nabla_y^2
+- \nabla_y^n
+- \nabla_z
+- \nabla_z^2
+- \nabla_{\check{1}}
+- \nabla_{\check{2}}
+- \nabla_{\check{3}}
+- \nabla_{\hat{1}}
+- \nabla_{\hat{2}}
+- \nabla_{\hat{3}}
+- \nabla_{\hat{m}}
 - \omega
 - \omega'
-- \xint{{
-- k_{\symup{x
-- k_{\symup{y
+- \overbrace{\check{\symup{\jmath}}}
+- \partial \mathcolor{black}{\underline{~~}} \big/ \partial \mathcolor{gray}{\hat{1}}
+- \partial \mathcolor{black}{\underline{~~}} \big/ \partial t
+- \rho
+- \sim
+- \symup{\iota}
+- \symup{\iota} \hat{1}
+- \symup{\iota} \hat{1} \hat{2}
+- \symup{\rho}
+- \symup{m}
+- \symup{m}^{-1}
+- \symup{m}^{-2}
+- \symup{x}
+- \symup{x} \symup{z}
+- \symup{y}
+- \symup{y} \symup{z}
+- \symup{z}
+- \symup{z} \check{2}
+- \symup{z} \symup{x}
+- \symup{z} \symup{y}
+- \symup{z} \symup{z}
+- \text{dc}
+- \underbrace{\nabla_{\check{\jmath}}}
+- \underbrace{k^\nabla_{\;\! \check{\symup{\jmath}}}}
+- \uo{\bar{x}}
+- \uo{t}
+- \uwav{\bar{r}}
+- \uwav{\bar{x}}
+- \uwav{t}
+- \widetilde *
+- \widetilde \circ
+- \widetilde \circledast
+- \widetilde \circledcirc
+- \xint{{}^{}_{\mathcolor{gray}{-}}}{23}{\widetilde{\textcolor{black}{\chi}}}
+- f
+- k^2_{\symup{x}}
+- k^2_{\symup{y}}
+- k^\nabla_{\;\! \check{\symup{\jmath}}}
+- k^\nabla_{\check{1}}
+- k^\nabla_{\check{2}}
+- k^\nabla_{\dot{1}}
+- k^{\hat{1}}
+- k_{\hat{1}}
+- k_{\hat{2}}
+- k_{\hat{3}}
+- k_{\hat{4}}
+- k_{\hat{4}} k_{\hat{3}}
+- k_{\hat{m}}
+- k_{\symup{\rho}}
+- k_{\symup{x}}
+- k_{\symup{y}}
+- k_{\symup{z}}
+- l
 - mm
+- q_{\symup{z}}
+- t
+- x
+- x,y
+- y
+- z
+- z \mathcolor{black}{<} 0
+- z \mathcolor{black}{=} 0
+- z \mathcolor{black}{=} 0^+
+- z \mathcolor{black}{=} 0^-
+- z \mathcolor{black}{>} 0
+- z^0
+- z^1
+- z^2
+- z^n
+- z_0
+- z_i
 - “$-$”标志
 - 不含空地
 - 中心频率
@@ -99,24 +277,25 @@
 - （角）频率
 
 ## 褐红 Maroon — 基础·通用概念
-共 304 个关键字：
+共 305 个关键字：
 
 - $G$
 - $U$
-- $\text{场
-- $\text{源
-- $f^{-1
+- $\text{场} = f(\text{源})$
+- $\text{源} = g(\text{场})$
+- $f^{-1}(\text{场}) = g(\text{场})$
 - (0)
 - (1)
-- (1\textcolor{NavyBlue
+- (1\textcolor{NavyBlue}{\text{A}})
+- (1\textcolor{NavyBlue}{\text{S}})
 - (2)
 - (3)
 - (4)
-- (\textcolor{NavyBlue
+- (\textcolor{NavyBlue}{\text{S}})
 - (i)
-- +\symup{c
-- +\symup{z
-- -\symup{c
+- +\symup{c}
+- +\symup{z}
+- -\symup{c}
 - 0
 - 0,1
 - 1
@@ -172,58 +351,58 @@
 - Zeeman
 - Zusin
 - \Yup
-- \mathbb{1
-- \mathbb{2
-- \mathsfit{0
-- \mathsfit{1
-- \mathsfit{z
-- \mathsf{o
+- \mathbb{1}
+- \mathbb{2}
+- \mathsfit{0}
+- \mathsfit{1}
+- \mathsfit{z}
+- \mathsf{o}
 - \perp
-- \symup{\rho
-- \symup{z
-- \textcolor{Plum
-- \text{(1)
-- \text{(2)
-- \text{Amp\`{e
-- \text{B
-- \text{Biot-Savart
-- \text{CR
-- \text{CR for electricity
-- \text{CR for magnetism
-- \text{Constitutive Relation
-- \text{Continuity for free electric charge
-- \text{Continuity for free magnetic charge
-- \text{Coulomb's
-- \text{E
-- \text{Faraday's law of electromagnetic induction
-- \text{Gauss's law for electricity
-- \text{Gauss's law for magnetism
-- \text{HG
-- \text{Jefimenko's
-- \text{LG
-- \text{M
-- \text{NL
-- \text{Ohm's law
-- \text{P
-- \text{Q
-- \text{THz
-- \text{b
-- \text{e
-- \text{ex
-- \text{f
-- \text{g
-- \text{m
-- \text{r
-- \text{z
-- \text{安倍环路定律
-- \text{法拉第电磁感应定律
-- \text{电偶、磁四极矩
-- \text{电偶极矩
-- \text{电八、磁四极矩
-- \text{电荷守恒定律
-- \text{项
-- \text{高斯定律（电）
-- \text{高斯定律（磁）
+- \symup{\rho}
+- \symup{z}
+- \textcolor{Plum}{非线性}卷积
+- \text{(1)}
+- \text{(2)}
+- \text{Amp\`{e}re-Maxwell circuital law}
+- \text{Biot-Savart}
+- \text{B}
+- \text{CR for electricity}
+- \text{CR for magnetism}
+- \text{CR}
+- \text{Constitutive Relation}
+- \text{Continuity for free electric charge}
+- \text{Continuity for free magnetic charge}
+- \text{Coulomb's}
+- \text{E}
+- \text{Faraday's law of electromagnetic induction}
+- \text{Gauss's law for electricity}
+- \text{Gauss's law for magnetism}
+- \text{HG}
+- \text{Jefimenko's}
+- \text{LG}
+- \text{M}
+- \text{NL}
+- \text{Ohm's law}
+- \text{P}
+- \text{Q}
+- \text{THz}
+- \text{b}
+- \text{ex}
+- \text{e}
+- \text{f}
+- \text{g}
+- \text{m}
+- \text{r}
+- \text{z}
+- \text{安倍环路定律}
+- \text{法拉第电磁感应定律}
+- \text{电偶、磁四极矩}
+- \text{电偶极矩}
+- \text{电八、磁四极矩}
+- \text{电荷守恒定律}
+- \text{项}
+- \text{高斯定律（电）}
+- \text{高斯定律（磁）}
 - electromagnetic waves
 - else
 - equation
@@ -407,10 +586,10 @@
 - （势）散射过程
 
 ## 松树绿 PineGreen — 进阶·晶体光学
-共 264 个关键字：
+共 272 个关键字：
 
-- $\mathcal{C
-- $\mathcal{Z
+- $\mathcal{C}$ 系
+- $\mathcal{Z}$ 系
 - +
 - -
 - 1
@@ -439,20 +618,27 @@
 - Schur 分解
 - V 方向线偏
 - Voigt 波
-- \hat{1
-- \hat{2
-- \hat{3
-- \hat{\imath
-- \hat{\jmath
-- \hat{l
+- \hat{1}
+- \hat{1} \hat{2}
+- \hat{1} \hat{2} \hat{3}
+- \hat{2}
+- \hat{2} \hat{1}
+- \hat{3}
+- \hat{3} \hat{1}
+- \hat{3} \hat{1} \hat{2}
+- \hat{3} \hat{2}
+- \hat{3} \hat{2} \hat{1}
+- \hat{\imath}
+- \hat{\jmath}
+- \hat{l}
 - \imath
 - \imath \jmath l
 - \jmath
 - \jmath l
 - \pm
-- \textbf{有效/表观折射率
-- \textcolor{gray
-- \text{diag
+- \textbf{有效/表观折射率}
+- \textcolor{gray}{单色}平面波
+- \text{diag}
 - e
 - e 型本征偏振
 - e 波
@@ -593,7 +779,7 @@
 - 椭圆
 - 椭圆偏振
 - 模式
-- 每个 ($\textcolor{PineGreen
+- 每个 ($\textcolor{PineGreen}{\jmath}$ th) 模式
 - 水平极化
 - 波矢
 - 波矢匹配
@@ -647,7 +833,8 @@
 - 线偏振
 - 线性光学
 - 线性叠加
-- 线性叠加的\textcolor{gray
+- 线性叠加的\textcolor{gray}{单色}平面波
+- 线性叠加的\textcolor{gray}{单色}平面波基
 - 线性极化
 - 线性过程
 - 经典平面波
@@ -675,27 +862,28 @@
 - 非常光
 
 ## 李子紫 Plum — 进阶·数学名词
-共 550 个关键字：
+共 551 个关键字：
 
 - $!$H
 - $!$S
 - $1$
 - $3$ 个数量级
-- $\symup{z
+- $\symup{z}$ 分量
+- $\symup{z}\symup{z}$ 分量
 - $i$
 - $n$
 - $n-1$
 - (0)
 - (1)
 - (2)
-- (\textcolor{NavyBlue
+- (\textcolor{NavyBlue}{\text{S}})
 - (i)
 - (i-1)
 - (n)
 - (n-1)
 - (n-2)
 - *
-- -\mathsf{T
+- -\mathsf{T}
 - 0
 - 1
 - 2
@@ -728,22 +916,22 @@
 - \dag
 - \det
 - \jmath
-- \langle\textcolor{black
+- \langle\textcolor{black}{|\xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{08}{e}^{\;\!\textcolor{PineGreen}{\pm}}_{\mathcolor{gray}{\omega}}|}\rangle
 - \left[3 \times 2\right]
 - \left[3 \times 3\right]
 - \left[4 \times 4\right]
 - \min
-- \symup{x
-- \symup{y
-- \symup{z
-- \text{I
-- \text{Levi-Civita symbol
-- \text{R
-- \text{Re
-- \text{Tr
-- \text{b
-- \text{e
-- \text{undefined
+- \symup{x}
+- \symup{y}
+- \symup{z}
+- \text{I}
+- \text{Levi-Civita symbol}
+- \text{Re}
+- \text{R}
+- \text{Tr}
+- \text{b}
+- \text{e}
+- \text{undefined}
 - i
 - i+1
 - n
@@ -826,7 +1014,7 @@
 - 前端面
 - 加
 - 十字形图案
-- 半 $\symup{\pi
+- 半 $\symup{\pi}$ 螺旋线
 - 半张量
 - 半张量式
 - 半张量形式
@@ -1229,9 +1417,10 @@
 - （非）线性
 
 ## 海军蓝 NavyBlue — 进阶·物理术语
-共 402 个关键字：
+共 406 个关键字：
 
-- $\nabla \text{电
+- $\nabla \text{电}$ $\otimes$ $\nabla \text{电}$
+- $\nabla \text{电}$ $\otimes$ 磁
 - 0 阶
 - 0 阶微扰
 - 1 阶微扰
@@ -1254,22 +1443,24 @@
 - Pulse
 - R$\to$L 自旋轨道相互作用（SOI）
 - \sigma
-- \text{eff
-- \text{m
-- \text{mm
-- \text{mp
-- \text{n
-- \text{o
-- \text{p
-- \text{pm
-- \text{pn
-- \text{po
-- \text{pp
-- \text{pq
-- \text{q
-- \text{qm
-- \text{qp
-- \text{qq
+- \text{A}
+- \text{S}
+- \text{eff}
+- \text{mm}
+- \text{mp}
+- \text{m}
+- \text{n}
+- \text{o}
+- \text{pm}
+- \text{pn}
+- \text{po}
+- \text{pp}
+- \text{pq}
+- \text{p}
+- \text{qm}
+- \text{qp}
+- \text{qq}
+- \text{q}
 - pump
 - 一强一弱
 - 主动
@@ -1501,16 +1692,17 @@
 - 电 $\to$ 电
 - 电 $\to$ 磁
 - 电$\longleftarrow$磁
-- 电$\otimes$ $\nabla \text{电
-- 电$\otimes$ $\nabla \text{磁
-- 电$\otimes$ $\nabla\nabla \text{电
+- 电$\otimes$ $\nabla \text{电}$
+- 电$\otimes$ $\nabla \text{磁}$
+- 电$\otimes$ $\nabla\nabla \text{电}$
 - 电$\otimes$磁
 - 电、磁偶
 - 电、磁八
 - 电、磁四
 - 电二/四/八
 - 电偶
-- 电偶-$(\text{电偶
+- 电偶-$(\text{电偶}\otimes\text{电偶})$
+- 电偶-$(\text{电偶}\otimes\text{电四/磁偶})$
 - 电偶-电偶
 - 电偶-电八
 - 电偶-电八/磁四
@@ -1548,7 +1740,7 @@
 - 磁$\longleftarrow$电
 - 磁$\longleftrightarrow$电
 - 磁偶$\longleftarrow$磁
-- 磁偶-$(\text{电偶
+- 磁偶-$(\text{电偶}\otimes\text{电偶})$
 - 磁偶-电偶
 - 磁偶-电四/磁偶
 - 磁偶/磁四
