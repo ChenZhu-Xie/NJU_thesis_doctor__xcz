@@ -1,3 +1,26 @@
 %!TEX root = ..\njuthesis-sample.tex
 
 \marginLeft[-2.4em]{chap:NLAST}\chapter{任意 \texorpdfstring{$\chi ( \bar{r} )$}{$\text{χ} ( \bar{r} )$} 材料中的（标量）非线性角谱理论}\label{chap:NLAST}
+
+有了\textcolor{NavyBlue}{无耦合}\textcolor{Plum}{非线性}过程的\textcolor{Plum}{非线性卷积}解 \bref{eq:up-scalar-g-EE-312-discrete-since2,eq:down-scalar-g-EE-132-discrete-Since,eq:Born_approx-scalar-g-E-12-since5}，接下来将尝试将其转化为\textcolor{Plum}{线性卷积}，进而将其过渡到\textcolor{Plum}{傅立叶变换}，以彻底\textcolor{Plum}{解析}该\textcolor{Plum}{非线性卷积}过程的同时，结合现代\textcolor{Maroon}{快速傅立叶变换}（\textcolor{Maroon}{Fast Fourier Transform}, \textcolor{Maroon}{FFT}）算法，在尽量不牺牲\textcolor{Plum}{精度}的前提下，大幅加快对上述\textcolor{Plum}{非线性卷积}过程的实际计算\textcolor{Plum}{速度}。
+
+\marginLeft[-2.4em]{sec:NLAST_match}\section{\textcolor{Maroon}{Matched} 匹配型非线性角谱 \textcolor{Maroon}{NLAST}}\label{sec:NLAST_match}
+
+由于大多数\textcolor{Plum}{非线性}过程被当作\textcolor{gray}{频率转换}的工具，自然期望该过程的\textcolor{NavyBlue}{转换效率}较高；因此相比\textcolor{PineGreen}{失配}\textcolor{Plum}{解}，人们更关注\textcolor{NavyBlue}{波矢}/\textcolor{PineGreen}{相位匹配}情况下的\textcolor{Plum}{解析解}。
+
+\marginLeft[-2.4em]{ssec:NLAST_sinc_expand}\subsection{Sinc 函数的无穷乘积展开}\label{ssec:NLAST_sinc_expand}
+
+\textcolor{Maroon}{非线性角谱}的\textbf{出发点}很简单：如果不把\textcolor{Plum}{微-积分方程} \bref{eq:up-scalar-g-EE-312-discrete-convolution4,} 沿 $\mathcolor{gray}{z}$。
+
+\marginLeft[-2.4em]{ssec:NLAST_sinc_chord}\subsection{Sinc 函数的和弦级数展开}\label{ssec:NLAST_sinc_chord}
+
+数学上，总存在一共正整数 $J \in \mathbb{N}^+$ 对合适的系数对 $a_j, b_j$ 所构成的集合 $\left\{ a_j, b_j \right\}$，加上直流偏置 $a_0$，一共 $2J + 1$ 个待定系数，使得可以将 $\text{sinc}, \text{since}$ 函数在该自变量范围内
+\begin{equation} \label{eq:2-254}
+	\left| x \right| \leq \left( J+1 \right) \pi ~,
+\end{equation}
+展开为“分数阶非正交余弦基和弦级数”（注意，使用了爱因斯坦求和约定，以遍历角/哑标 $j$ 甚至遍历 $\pm$ 并求和）：
+
+\marginLeft[-2.4em]{sec:NLAST_dismatch}\section{\textcolor{Maroon}{Mismatched} 失配型非线性角谱 \textcolor{Maroon}{NLAST}}\label{sec:NLAST_dismatch}
+
+
+那么仍先以和频为例，一步步给出其匹配型\textcolor{Maroon}{非线性角谱}解。
