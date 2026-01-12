@@ -2,7 +2,19 @@
 
 \marginLeft[-2.4em]{chap:NLAST}\chapter{任意 \texorpdfstring{$\chi ( \bar{r} )$}{$\text{χ} ( \bar{r} )$} 材料中的（标量）非线性角谱理论}\label{chap:NLAST}
 
-有了\textcolor{NavyBlue}{无耦合}\textcolor{Plum}{非线性}过程的\textcolor{Plum}{非线性卷积}解 \bref{eq:up-scalar-g-EE-312-discrete-since2,eq:down-scalar-g-EE-132-discrete-Since,eq:Born_approx-scalar-g-E-12-since5}，接下来将尝试将其转化为\textcolor{Plum}{线性卷积}，进而将其过渡到\textcolor{Plum}{傅立叶变换}，以彻底\textcolor{Plum}{解析}该\textcolor{Plum}{非线性卷积}过程的同时，结合现代\textcolor{Maroon}{快速傅立叶变换}（\textcolor{Maroon}{Fast Fourier Transform}, \textcolor{Maroon}{FFT}）算法，在尽量不牺牲\textcolor{Plum}{精度}的前提下，大幅加快对上述\textcolor{Plum}{非线性卷积}过程的实际计算\textcolor{Plum}{速度}。
+在\textcolor{Maroon}{非线性角谱}之前，求解\textcolor{Plum}{非线性}光学衍射过程所\textbf{面临的问题}有二。
+
+{\one} 如果不把\textcolor{Plum}{微-积分方程} \bref{eq:up-scalar-g-EE-312-discrete-convolution4,eq:Born_approx-scalar-g-E-12-convolution4} 沿 $\mathcolor{gray}{z}$ \textcolor{Plum}{定积分}，那么在\textcolor{gray}{纵向}上，一般进行\textcolor{Maroon}{分步傅立叶变换}（\textcolor{Maroon}{split-step Fourier transform}, \textcolor{Maroon}{SSF}）\cite{ellenbogenNonlinearGenerationManipulation2009,saltielCerenkovTypeSecondHarmonicGeneration2009, barsiImagingNonlinearMedia2009, trajtenberg-millsSimulatingCorrelationsStructured2020, rozenbergInverseDesignSpontaneous2022, yesharimObservationAllopticalStern2022}、$\mathcolor{gray}{\bar{k}_{\symup{\rho}}}$ \textcolor{gray}{空间}\textcolor{Maroon}{龙格库塔法}（\textcolor{Maroon}{Runge-Kutta methods}, \textcolor{Maroon}{RK}）\cite{zhangFullyVectorialSimulation2016,zhongKdomainMethodFast2020}迭代求解\textcolor{Plum}{非齐次}\textcolor{NavyBlue}{有源}偏微分方程。—— 这些方法的\textcolor{Plum}{缺点}\Footnote{此外，它还有一个缺点，就是没有统一的\textcolor{Plum}{迭代格式}，\textcolor{Plum}{具体算法}在实施时会\textbf{因人而异}（比如，\textcolor{NavyBlue}{场衍射传播}和\textcolor{NavyBlue}{源驱动的场增量}分别各自应实施在\textcolor{gray}{倒空间}还是在\textcolor{gray}{正空间}？）。相应地，\textcolor{Plum}{误差分析}也没有统一的标准。}是：为了保证\textcolor{Plum}{精度}，同时受\textcolor{gray}{正空间}\textcolor{NavyBlue}{调制结构}的\textcolor{Plum}{最小线宽}、算法在\textcolor{gray}{倒空间}的\textcolor{Plum}{低速度精度积}限制，\textcolor{Maroon}{SSF} 以及 $\mathcolor{gray}{\bar{k}_{\symup{\rho}}}$\textcolor{gray}{-space} \textcolor{Maroon}{RK} 的每一步的\textcolor{Plum}{步长}必须足够小\Footnote{此外，\textcolor{Plum}{步长}可取到的\textcolor{Plum}{最大值}的\textcolor{Plum}{数学定义}较为模糊：即缺乏\textcolor{Plum}{不显著牺牲精度}的\textcolor{Plum}{最大步长}的\textcolor{Plum}{显式表达式}。}，从而导致对于\textcolor{NavyBlue}{长调制区域}，需要进行\textcolor{Plum}{较多步数}的\textbf{迭代计算}。
+
+{\two} 如果沿 $\mathcolor{gray}{z}$ \textcolor{Plum}{定积分}了，那么最终只能到达\textcolor{Plum}{非线性卷积}解 \bref{eq:up-scalar-g-EE-312-discrete-since2,eq:down-scalar-g-EE-132-discrete-Since,eq:Born_approx-scalar-g-E-12-since5}，而无法继续深入下去。—— 然而，对\textcolor{Plum}{非线性卷积}的运算，要求对 2 维 $\mathcolor{gray}{\bar{k}_{\symup{\rho}}}$ 阵列中的每一个点，都进行一次\textcolor{gray}{横向}\textcolor{Plum}{高维线性卷积}积分（维度 = 2 $\times$ \textcolor{NavyBlue}{驱动源}中的\textcolor{NavyBlue}{混频场}数量），\textcolor{Plum}{for 循环}层数 = 2 $\times$ 参与\textcolor{NavyBlue}{混频}的电场总数。这对于\textcolor{Maroon}{三波混频}过程而言，即使是单个光场的单个\textcolor{gray}{空间频率}，\textcolor{Plum}{求和}层数是 $2\times 3=6$，每层索引数 = 该维度\textcolor{Plum}{采样数} $\sim 500$，总的计算量约为 $500^6=1.5625 \times 10^{16}$ 的天文数字。
+
+综上，前、后两个旧方案\Footnote{还有一些其他算法，比如 \textcolor{Maroon}{Green 函数法}\cite{yaoWavefrontPhasemodulationControl2013, chenPhaseMatchingControlledOrbital2020}、\textcolor{Maroon}{转移矩阵法}（\textcolor{Maroon}{transfer-matrix method}, \textcolor{Maroon}{TTM}）\cite{liSecondHarmonicGeneration2007, liNonlinearFrequencyConversion2008}等。它们在起源上与\textcolor{Maroon}{非线性角谱}不严格共处于同一条谱系上，没法与\textcolor{Maroon}{非线性角谱}进行直接对比。}，分别在横、纵两个方向上，计算负担较大。
+
+\textcolor{Maroon}{非线性角谱}立足于\textcolor{NavyBlue}{无耦合}\textcolor{Plum}{非线性}过程的\textcolor{Plum}{非线性卷积}解 \bref{eq:up-scalar-g-EE-312-discrete-since2,eq:down-scalar-g-EE-132-discrete-Since,eq:Born_approx-scalar-g-E-12-since5}。在\textcolor{Plum}{非线性卷积}解的基础上，尝试将其转化为\textcolor{Plum}{线性卷积}，进而将其过渡到\textcolor{Plum}{傅立叶变换}。它既在\textcolor{NavyBlue}{物理}上\textcolor{Plum}{解析}了该\textcolor{Plum}{非线性卷积}过程的\textcolor{Plum}{数学本质}；又在\textcolor{NavyBlue}{工程}上，结合现代\textcolor{Maroon}{快速傅立叶变换}（\textcolor{Maroon}{Fast Fourier Transform}, \textcolor{Maroon}{FFT}）算法，在尽量不牺牲\textcolor{Plum}{精度}的前提下，大幅加快对上述\textcolor{Plum}{非线性卷积}过程的实际计算\textcolor{Plum}{速度}。
+
+\textcolor{Maroon}{非线性角谱}的\textbf{出发点}很简单：以 \bref{eq:up-scalar-g-EE-312-discrete-convolution4,eq:up-scalar-g-EE-312-discrete-since2} 为例，同样作为\textcolor{Plum}{非线性卷积核}，$\mathbb{e}^{\mathbb{i} \Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}^{\;\! \textcolor{PineGreen}{\hat{1} \hat{2} \hat{3}} } \mathcolor{gray}{z} }$ 可以被化简为\textcolor{Plum}{线性卷积}，但它的\textcolor{Plum}{定积分}结果 $\text{since} \left( \frac{ \Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}^{\;\! \textcolor{PineGreen}{\hat{1} \hat{2} \hat{3}} } \mathcolor{gray}{z} }{ 2 } \right) \mathcolor{gray}{z} = \text{sinc} \left( \frac{ \Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}^{\;\! \textcolor{PineGreen}{\hat{1} \hat{2} \hat{3}} } \mathcolor{gray}{z} }{ 2 } \right) \mathbb{e}^{\mathbb{i} \frac{ \Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}^{\;\! \textcolor{PineGreen}{\hat{1} \hat{2} \hat{3}} } \mathcolor{gray}{z} }{ 2 } } \mathcolor{gray}{z}$ 却因其中的 $\text{sinc} \left( \frac{ \Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}^{\;\! \textcolor{PineGreen}{\hat{1} \hat{2} \hat{3}} } \mathcolor{gray}{z} }{ 2 } \right)$ 无法化简为\textcolor{Plum}{线性卷积}，而无法直接继承 \textcolor{Maroon}{FFT} 的加速。然而，如果不对 $\mathbb{e}^{\mathbb{i} \Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}^{\;\! \textcolor{PineGreen}{\hat{1} \hat{2} \hat{3}} } \mathcolor{gray}{z} }$ \textcolor{Plum}{定积分}，又只能退回 \textcolor{Maroon}{SSF} 或 $\mathcolor{gray}{\bar{k}_{\symup{\rho}}}$\textcolor{gray}{-domain} \textcolor{Maroon}{RK} 法。
+
+\textcolor{Maroon}{非线性角谱}的\textbf{核心技巧}即“先入世后出世再入世”般二渡赤水：既然 $\text{sinc} \left( x \right)$ 本身无法分解为 $\mathbb{e}$ 指数之和及 $\mathbb{e}$ 指数之积的排列组合\Footnote{进而分配与对应的初始电场标量\textcolor{Maroon}{时空谱} $\xint{{}^{}_{\mathcolor{gray}{-}}}{10}{g}^{\;\! \textcolor{PineGreen}{\hat{1}}}_{\;\! \hat{1} \mathcolor{gray}{0}} \left( \mathcolor{gray}{\bar{k}_{1\symup{\rho}}} \right), \xint{{}^{}_{\mathcolor{gray}{-}}}{10}{g}^{\;\! \textcolor{PineGreen}{\hat{2}}}_{\;\! \hat{2} \mathcolor{gray}{0}} \left( \mathcolor{gray}{\bar{k}_{2\symup{\rho}}} \right)$ 分别相乘，以最终可化简为\textcolor{Plum}{线性卷积}。}，那 $\text{sinc} \left( x \right)$ 函数的各种近似呢？
 
 \marginLeft[-2.4em]{sec:NLAST_match}\section{\textcolor{Maroon}{Matched} 匹配型非线性角谱 \textcolor{Maroon}{NLAST}}\label{sec:NLAST_match}
 
@@ -10,7 +22,37 @@
 
 \marginLeft[-2.4em]{ssec:NLAST_sinc_expand}\subsection{Sinc 函数的无穷乘积展开}\label{ssec:NLAST_sinc_expand}
 
-\textcolor{Maroon}{非线性角谱}的\textbf{出发点}很简单：如果不把\textcolor{Plum}{微-积分方程} \bref{eq:up-scalar-g-EE-312-discrete-convolution4,eq:Born_approx-scalar-g-E-12-convolution4} 沿 $\mathcolor{gray}{z}$ 定积分，那么在不考虑\textcolor{gray}{纵向}\textcolor{NavyBlue}{倒格矢} $\mathcolor{gray}{q_{\symup{z}}}$ 的情况下，要么对 \textcolor{gray}{2 维} $\mathcolor{gray}{\bar{k}_{\symup{\rho}}}$ 阵列中的每一个点，都进行一次\textcolor{gray}{横向}\textcolor{Plum}{高维卷积}积分（\textcolor{gray}{维度} = 2 * \textcolor{NavyBlue}{驱动源}中的\textcolor{NavyBlue}{混频场}数量），要么\textcolor{gray}{纵向}以\textcolor{Plum}{小步长}、\textcolor{Plum}{大步数}，进行\textcolor{Maroon}{分步傅立叶变换}迭代。
+有一些函数，在零点的邻域上，近似 $\text{sinc} \left( x \right)$ 函数。
+
+它们是：$\cos \left( {\frac{x}{{\sqrt 3 }}} \right), \exp \left( { - \frac{{{x^2}}}{6}} \right), \frac{{1 - \frac{7}{{60}}{x^2}}}{{1 + \frac{3}{{60}}{x^2}}}, \mathbb{e}^{3.2\left(\sqrt{1-{\left( \frac{x}{\pi} \right)}^2}-1\right)}, \left( \mathbb{e}^{7.2\left(\sqrt{1-{\left( \frac{x}{\pi} \right)}^2}-1\right)} + \mathbb{e}^{3.2\left(\sqrt[4]{1-{\left( \frac{x}{\pi} \right)}^4}-1\right)} \right) \big/ 2$，对比一下
+
+% f(x)=c0+c2 x^2+c4 x^4+c6 x^6+O(x^8)
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{lcccc}
+		\hline
+		$f(x)$ & $c_0$ & $c_2$ (for $x^2$) & $c_4$ (for $x^4$) & $c_6$ (for $x^6$) \\
+		\hline
+		$\text{sinc}(x)=\sin(x)/x$ 
+		& $1$ & $-\frac{1}{6}$ & $\frac{1}{120}$ & $-\frac{1}{5040}$ \\
+		
+		$\cos\!\left(\frac{x}{\sqrt{3}}\right)$ 
+		& $1$ & $-\frac{1}{6}$ & $\frac{1}{216}$ & $-\frac{1}{19440}$ \\
+		
+		$\exp\!\left(-\frac{x^2}{6}\right)$
+		& $1$ & $-\frac{1}{6}$ & $\frac{1}{72}$ & $-\frac{1}{1296}$ \\
+		
+		$\dfrac{1-\frac{7}{60}x^2}{1+\frac{3}{60}x^2}$
+		& $1$ & $-\frac{1}{6}$ & $\frac{1}{120}$ & $-\frac{1}{2400}$ \\
+		
+		$\exp\!\left(3.2\left(\sqrt{1-(\left( \frac{x}{\pi} \right))^2}-1\right)\right)$
+		& $1$ & $-\dfrac{8}{5\pi^2}$ & $\dfrac{22}{25\pi^4}$ & $-\dfrac{91}{375\pi^6}$ \\
+		
+		$\exp\!\left(7.2(\sqrt{1-(\left( \frac{x}{\pi} \right))^2}-1)\right)\big/2$ \\ $+\exp\!\left(3.2(\sqrt[4]{1-(\left( \frac{x}{\pi} \right))^4}-1)\right)\big/2$
+		& $1$ & $-\dfrac{9}{5\pi^2}$ & $\dfrac{239}{100\pi^4}$ & $-\dfrac{2493}{1000\pi^6}$ \\
+		\hline
+	\end{tabular}
+\end{table}
 
 \marginLeft[-2.4em]{ssec:NLAST_sinc_chord}\subsection{Sinc 函数的和弦级数展开}\label{ssec:NLAST_sinc_chord}
 
