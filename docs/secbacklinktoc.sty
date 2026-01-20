@@ -35,13 +35,18 @@
 	\else \hyperappsubsection[#1]{\hyperlink{toc.subsection.\appthesubsection}{#2}}
 	\fi}
 
-\let\hyperappsubsubsection\subsubsection
-\def\appsubsubsection{\@ifstar\starappsubsubsection\myappsubsubsection}
-\def\starappsubsubsection{\hyperappsubsubsection*}
-\newcommand{\myappsubsubsection}[2][\@empty]% #1=optional (toc and top of page), #2=title
-{\ifx#1\@empty \hyperappsubsubsection[\protect\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}]{\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}}
-	\else \hyperappsubsubsection[#1]{\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}}
-	\fi}
+\newcommand{\myappsubsubsection}[2][\@empty]%
+{%
+    % 1. 先执行章节命令（这会更新计数器）
+ 	\ifx#1\@empty
+        \hyperappsubsubsection[\protect\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}]{\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}}%
+	\else
+        \hyperappsubsubsection[#1]{\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}}%
+	\fi
+    % 2. 再更新页眉/页脚标记（此时 \appthesubsubsection 已是最新）
+    \renewcommand{\middlemark}{\appthesubsubsection~~~~\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}}%
+}
+
 	
 % ------------------------------------
 
@@ -75,10 +80,19 @@
 \let\hypersubsubsection\subsubsection
 \def\subsubsection{\@ifstar\starsubsubsection\mysubsubsection}
 \def\starsubsubsection{\hypersubsubsection*}
-\newcommand{\mysubsubsection}[2][\@empty]% #1=optional (toc), #2=title
-{\ifx#1\@empty \hypersubsubsection[\protect\hyperlink{toc.subsubsection.\thesubsubsection}{#2}]{\hyperlink{toc.subsubsection.\thesubsubsection}{#2}}
-	\else \hypersubsubsection[#1]{\hyperlink{toc.subsubsection.\thesubsubsection}{#2}}
-	\fi}	
+
+% 修正点：将 \middlemark 的重定义放入 \mysubsubsection 内部
+\newcommand{\mysubsubsection}[2][\@empty]{%
+	% 先执行原始的 subsubsection 命令，确保计数器 \thesubsubsection 被更新
+	\ifx#1\@empty
+	\hypersubsubsection[\protect\hyperlink{toc.subsubsection.\thesubsubsection}{#2}]{\hyperlink{toc.subsubsection.\thesubsubsection}{#2}}%
+	\else
+	\hypersubsubsection[#1]{\hyperlink{toc.subsubsection.\thesubsubsection}{#2}}%
+	\fi
+	% 在这里重定义 \middlemark，此时 #2 (标题) 是有效的
+	\renewcommand{\middlemark}{\thesubsubsection~~~~\hyperlink{toc.subsubsection.\thesubsubsection}{#2}}%
+}
+
 
 
 % -------------------- remove section numbers link from TOC: https://tex.stackexchange.com/questions/412773/how-can-i-make-the-section-text-in-a-table-of-contents-clickable-but-keep-the-s

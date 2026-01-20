@@ -5,7 +5,7 @@
 \RequirePackage{appendix}
 % -------------------- Appendix Toc: https://tex.stackexchange.com/questions/447662/separate-toc-for-appendix
 
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{4}
 %\renewcommand{\appendixtocname}{List of appendices}
 \renewcommand{\appendixtocname}{Appendices} % not crucial
 \renewcommand{\appendixpagename}{Appendices} % not crucial
@@ -22,7 +22,7 @@
 	% From now, everything goes to the app - file and not to the toc
 	% is this how why we have to inplement toc.appendix. ?
 	\let\tf@toc\tf@app
-	\addtocontents{app}{\protect\setcounter{tocdepth}{3}}
+	\addtocontents{app}{\protect\setcounter{tocdepth}{4}}
 	\immediate\write\@auxout{%
 		\string\let\string\tf@toc\string\tf@app
 	}
