@@ -73,6 +73,21 @@
 %    unicode-math = false,
   ]{njuthesis}
 
+\ctexset{
+	secnumdepth=3,
+	subsubsection/number = \arabic{subsubsection}
+} % https://github.com/nju-lug/NJUThesis/discussions/103#discussioncomment-2535481
+
+%\setcounter{secnumdepth}{3}
+%\ctexset{subsubsection = {
+%		format = {},
+%%		indent = 2em,
+%		beforeskip = 0pt,
+%		afterskip  = 0pt,
+%		aftername = {},
+%}}
+%\renewcommand\thesubsubsection{（\arabic{subsubsection}）} %群友 子非
+
 % 模板选项设置，包括个人信息、外观样式等
 % 较为冗长且一般不需要反复修改，我们把它放在单独的文件里
 \input{njuthesis-setup.def}

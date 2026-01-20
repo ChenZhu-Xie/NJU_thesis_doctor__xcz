@@ -1,191 +1,168 @@
-
 \ProvidesPackage{secbacklinktoc}
-  [2024/07/07 v1.0 Add section backlinks to TOC]% including sections/subsections in appendix
-  
+  [2024/07/07 v1.1 Add section backlinks to TOC]
+
 \RequirePackage{hyperref}
 \newcommand{\middlemark}{}
-% -------------------- https://tex.stackexchange.com/questions/251904/hyperlinks-from-chapter-and-section-headings-back-to-the-table-of-contents
-% -------------------- https://tex.stackexchange.com/questions/419249/table-of-contents-only-for-the-appendix
-% -------------------- https://tex.stackexchange.com/questions/433368/hyperlinks-to-toc-from-chapter-in-appendix
-	
+
+% =========================================================================
+% Appendix Commands (App Chapter/Section/Subsection/Subsubsection)
+% =========================================================================
+
 \let\hyperappchapter\chapter
 \def\appchapter{\@ifstar\starappchapter\myappchapter}
 \def\starappchapter{\hyperappchapter*}
-\newcommand{\myappchapter}[2][\@empty]% #1=optional (toc and top of page), #2=title
-{\renewcommand{\middlemark}{\appthechapter~~~~\hyperlink{toc.appendix.\appthechapter}{#2}}% 提供给 页脚 footer 以获取 节 sec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
-	\ifx#1\@empty \hyperappchapter[\protect\hyperlink{toc.appendix.\appthechapter}{#2}]{\hyperlink{toc.appendix.\appthechapter}{#2}}
-	\else \hyperappchapter[#1]{\hyperlink{toc.appendix.\appthechapter}{#2}}
-	\fi}
+\newcommand{\myappchapter}[2][\@empty]%
+{%
+    % 1. 执行命令（更新计数器）
+	\ifx#1\@empty
+        \hyperappchapter[\protect\hyperlink{toc.appendix.\appthechapter}{#2}]{\hyperlink{toc.appendix.\appthechapter}{#2}}%
+	\else
+        \hyperappchapter[#1]{\hyperlink{toc.appendix.\appthechapter}{#2}}%
+	\fi
+    % 2. 更新标记（此时 \appthechapter 已是最新）
+    \renewcommand{\middlemark}{\appthechapter~~~~\hyperlink{toc.appendix.\appthechapter}{#2}}%
+}
 
 \let\hyperappsection\section
 \def\appsection{\@ifstar\starappsection\myappsection}
 \def\starappsection{\hyperappsection*}
-\newcommand{\myappsection}[2][\@empty]% #1=optional (toc and top of page), #2=title
-{\renewcommand{\middlemark}{\appthesection~~~~\hyperlink{toc.section.\appthesection}{#2}}% 提供给 页脚 footer 以获取 节 sec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
-	\ifx#1\@empty \hyperappsection[\protect\hyperlink{toc.section.\appthesection}{#2}]{\hyperlink{toc.section.\appthesection}{#2}}
-	\else \hyperappsection[#1]{\hyperlink{toc.section.\appthesection}{#2}}
-	\fi}
+\newcommand{\myappsection}[2][\@empty]%
+{%
+	\ifx#1\@empty
+        \hyperappsection[\protect\hyperlink{toc.section.\appthesection}{#2}]{\hyperlink{toc.section.\appthesection}{#2}}%
+	\else
+        \hyperappsection[#1]{\hyperlink{toc.section.\appthesection}{#2}}%
+	\fi
+    \renewcommand{\middlemark}{\appthesection~~~~\hyperlink{toc.section.\appthesection}{#2}}%
+}
 
 \let\hyperappsubsection\subsection
 \def\appsubsection{\@ifstar\starappsubsection\myappsubsection}
 \def\starappsubsection{\hyperappsubsection*}
-\newcommand{\myappsubsection}[2][\@empty]% #1=optional (toc and top of page), #2=title
-{\renewcommand{\middlemark}{\appthesubsection~~~~\hyperlink{toc.subsection.\appthesubsection}{#2}}% 提供给 页脚 footer 以获取 小节 ssec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
-	\ifx#1\@empty \hyperappsubsection[\protect\hyperlink{toc.subsection.\appthesubsection}{#2}]{\hyperlink{toc.subsection.\appthesubsection}{#2}}
-	\else \hyperappsubsection[#1]{\hyperlink{toc.subsection.\appthesubsection}{#2}}
-	\fi}
+\newcommand{\myappsubsection}[2][\@empty]%
+{%
+	\ifx#1\@empty
+        \hyperappsubsection[\protect\hyperlink{toc.subsection.\appthesubsection}{#2}]{\hyperlink{toc.subsection.\appthesubsection}{#2}}%
+	\else
+        \hyperappsubsection[#1]{\hyperlink{toc.subsection.\appthesubsection}{#2}}%
+	\fi
+    \renewcommand{\middlemark}{\appthesubsection~~~~\hyperlink{toc.subsection.\appthesubsection}{#2}}%
+}
 
+\let\hyperappsubsubsection\subsubsection
+\def\appsubsubsection{\@ifstar\starappsubsubsection\myappsubsubsection}
+\def\starappsubsubsection{\hyperappsubsubsection*}
 \newcommand{\myappsubsubsection}[2][\@empty]%
 {%
-    % 1. 先执行章节命令（这会更新计数器）
  	\ifx#1\@empty
         \hyperappsubsubsection[\protect\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}]{\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}}%
 	\else
         \hyperappsubsubsection[#1]{\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}}%
 	\fi
-    % 2. 再更新页眉/页脚标记（此时 \appthesubsubsection 已是最新）
     \renewcommand{\middlemark}{\appthesubsubsection~~~~\hyperlink{toc.subsubsection.\appthesubsubsection}{#2}}%
 }
 
-	
-% ------------------------------------
+% =========================================================================
+% Standard Commands (Chapter/Section/Subsection/Subsubsection)
+% =========================================================================
 
 \let\hyperchapter\chapter
 \def\chapter{\@ifstar\starchapter\mychapter}
 \def\starchapter{\hyperchapter*}
-\newcommand{\mychapter}[2][\@empty]% #1=optional (toc), #2=title
-{\renewcommand{\middlemark}{\thechapter~~~~\hyperlink{toc.chapter.\thechapter}{#2}}% 提供给 页脚 footer 以获取 节 sec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
-	\ifx#1\@empty \hyperchapter[\protect\hyperlink{toc.chapter.\thechapter}{#2}]{\hyperlink{toc.chapter.\thechapter}{#2}}
-	\else \hyperchapter[#1]{\hyperlink{toc.chapter.\thechapter}{#2}}
-	\fi}
+\newcommand{\mychapter}[2][\@empty]%
+{%
+    % 1. 执行命令
+	\ifx#1\@empty
+        \hyperchapter[\protect\hyperlink{toc.chapter.\thechapter}{#2}]{\hyperlink{toc.chapter.\thechapter}{#2}}%
+	\else
+        \hyperchapter[#1]{\hyperlink{toc.chapter.\thechapter}{#2}}%
+	\fi
+    % 2. 更新标记
+    \renewcommand{\middlemark}{\thechapter~~~~\hyperlink{toc.chapter.\thechapter}{#2}}%
+}
 
 \let\hypersection\section
 \def\section{\@ifstar\starsection\mysection}
 \def\starsection{\hypersection*}
-\newcommand{\mysection}[2][\@empty]% #1=optional (toc), #2=title
-{\renewcommand{\middlemark}{\thesection~~~~\hyperlink{toc.section.\thesection}{#2}}% 提供给 页脚 footer 以获取 节 sec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
-	\ifx#1\@empty \hypersection[\protect\hyperlink{toc.section.\thesection}{#2}]{\hyperlink{toc.section.\thesection}{#2}}
-	\else \hypersection[#1]{\hyperlink{toc.section.\thesection}{#2}}
-	\fi}
+\newcommand{\mysection}[2][\@empty]%
+{%
+	\ifx#1\@empty
+        \hypersection[\protect\hyperlink{toc.section.\thesection}{#2}]{\hyperlink{toc.section.\thesection}{#2}}%
+	\else
+        \hypersection[#1]{\hyperlink{toc.section.\thesection}{#2}}%
+	\fi
+    \renewcommand{\middlemark}{\thesection~~~~\hyperlink{toc.section.\thesection}{#2}}%
+}
 
 \let\hypersubsection\subsection
 \def\subsection{\@ifstar\starsubsection\mysubsection}
 \def\starsubsection{\hypersubsection*}
-\newcommand{\mysubsection}[2][\@empty]% #1=optional (toc), #2=title
-{\renewcommand{\middlemark}{\thesubsection~~~~\hyperlink{toc.subsection.\thesubsection}{#2}}% 提供给 页脚 footer 以获取 小节 ssec 名（前面加序号） https://www.perplexity.ai/search/latex-jiang-ye-mei-lian-jie-zh-VjwEK5f4QBKuWGD2TBuyLw#5
-	\ifx#1\@empty \hypersubsection[\protect\hyperlink{toc.subsection.\thesubsection}{#2}]{\hyperlink{toc.subsection.\thesubsection}{#2}}
-	\else \hypersubsection[#1]{\hyperlink{toc.subsection.\thesubsection}{#2}}
-	\fi}
+\newcommand{\mysubsection}[2][\@empty]%
+{%
+	\ifx#1\@empty
+        \hypersubsection[\protect\hyperlink{toc.subsection.\thesubsection}{#2}]{\hyperlink{toc.subsection.\thesubsection}{#2}}%
+	\else
+        \hypersubsection[#1]{\hyperlink{toc.subsection.\thesubsection}{#2}}%
+	\fi
+    \renewcommand{\middlemark}{\thesubsection~~~~\hyperlink{toc.subsection.\thesubsection}{#2}}%
+}
 
 \let\hypersubsubsection\subsubsection
 \def\subsubsection{\@ifstar\starsubsubsection\mysubsubsection}
 \def\starsubsubsection{\hypersubsubsection*}
-
-% 修正点：将 \middlemark 的重定义放入 \mysubsubsection 内部
-\newcommand{\mysubsubsection}[2][\@empty]{%
-	% 先执行原始的 subsubsection 命令，确保计数器 \thesubsubsection 被更新
+\newcommand{\mysubsubsection}[2][\@empty]%
+{%
 	\ifx#1\@empty
-	\hypersubsubsection[\protect\hyperlink{toc.subsubsection.\thesubsubsection}{#2}]{\hyperlink{toc.subsubsection.\thesubsubsection}{#2}}%
+	    \hypersubsubsection[\protect\hyperlink{toc.subsubsection.\thesubsubsection}{#2}]{\hyperlink{toc.subsubsection.\thesubsubsection}{#2}}%
 	\else
-	\hypersubsubsection[#1]{\hyperlink{toc.subsubsection.\thesubsubsection}{#2}}%
+	    \hypersubsubsection[#1]{\hyperlink{toc.subsubsection.\thesubsubsection}{#2}}%
 	\fi
-	% 在这里重定义 \middlemark，此时 #2 (标题) 是有效的
 	\renewcommand{\middlemark}{\thesubsubsection~~~~\hyperlink{toc.subsubsection.\thesubsubsection}{#2}}%
 }
 
+% =========================================================================
+% TOC Linking Logic
+% =========================================================================
 
-
-% -------------------- remove section numbers link from TOC: https://tex.stackexchange.com/questions/412773/how-can-i-make-the-section-text-in-a-table-of-contents-clickable-but-keep-the-s
-
-% set backlink target in TOC
+% Set backlink target in TOC
 \let\hypercontentsline=\contentsline
 \renewcommand{\contentsline}[4]{\hypertarget{toc.#4}{}\hypercontentsline{#1}{#2}{#3}{#4}}
 
-% For clickable numbers in section headers
+% For clickable numbers in section headers (redefining internal logic)
 \def\@sect#1#2#3#4#5#6[#7]#8{%
 	\ifnum #2>\c@secnumdepth
-	\let\@svsec\@empty
+	  \let\@svsec\@empty
 	\else
-	\refstepcounter{#1}%
-	\protected@edef\@svsec{\@seccntformat{#1}\relax}%
+	  \refstepcounter{#1}%
+	  \protected@edef\@svsec{\@seccntformat{#1}\relax}%
 	\fi
 	\@tempskipa #5\relax
 	\ifdim \@tempskipa>\z@
-	\begingroup
-	#6{\sbox0{\@svsec}% measure width
+	  \begingroup
+	    #6{\sbox0{\@svsec}% measure width
 		\interlinepenalty \@M
 		\hangindent=\dimexpr \wd0+#3\relax
 		\noindent\hskip #3\relax
+        % Modified: Add Link to the Number
 		\hyperlink{toc.#1.\csname the#1\endcsname}%
 		{\@svsec #8}%
 		\@@par}%
-	\endgroup
-	\csname #1mark\endcsname{#7}%
-	\addcontentsline{toc}{#1}{%
+	  \endgroup
+	  \csname #1mark\endcsname{#7}%
+	  \addcontentsline{toc}{#1}{%
 		\ifnum #2>\c@secnumdepth \else
-		\protect\numberline{\csname the#1\endcsname}%
+		  \protect\numberline{\csname the#1\endcsname}%
 		\fi
 		#7}%
 	\else
-	\def\@svsechd{%
+	  \def\@svsechd{%
 		#6{\hskip #3\relax
 			\@svsec #8}%
 		\csname #1mark\endcsname{#7}%
 		\addcontentsline{toc}{#1}{%
 			\ifnum #2>\c@secnumdepth \else
-			\protect\numberline{\csname the#1\endcsname}%
+			  \protect\numberline{\csname the#1\endcsname}%
 			\fi
 			#7}}%
 	\fi
 	\@xsect{#5}}
-
-
-%% begin code to remove section numbers from the TOC
-%\newcommand{\@savenumber}{}% reserve global names
-%\newcommand{\@gettitle}[1]% remove \numberline from title
-%{\bgroup\let\numberline=\@gobble#1\egroup}
-%
-%\def\contentsline#1#2#3#4{% #1=type, #2=entry, #3=page, #4=anchor
-%	\hypertarget{toc.#4}{}% set up backlink
-%	\bgroup% separate \numberline from title
-%	\renewcommand{\numberline}[1]{\gdef\@savenumber{##1}}%
-%	\sbox0{#2}% throw away title, keep number
-%	\egroup
-%	\begingroup
-%	\Hy@safe@activestrue
-%	\edef\x{\endgroup
-%		\def\noexpand\Hy@tocdestname{#4}%
-%	}\x
-%	\ifx\Hy@tocdestname\ltx@empty
-%	\csname l@#1\endcsname{#2}{#3}%
-%	\else
-%	\ifcase\Hy@linktoc % none
-%	\csname l@#1\endcsname{#2}{#3}%
-%	\or % section
-%	\csname l@#1\endcsname{\numberline{\@savenumber}%
-%		{\hyper@linkstart{link}{\Hy@tocdestname}\@gettitle{#2}\hyper@linkend}}{#3}%
-%	\or % page
-%	\def\Hy@temp{#3}%
-%	\ifx\Hy@temp\ltx@empty
-%	\csname l@#1\endcsname{#2}{#3}%
-%	\else
-%	\csname l@#1\endcsname{{#2}}{%
-%		\hyper@linkstart{link}{\Hy@tocdestname}{#3}\hyper@linkend
-%	}%
-%	\fi
-%	\else % all
-%	\def\Hy@temp{#3}%
-%	\ifx\Hy@temp\ltx@empty
-%	\csname l@#1\endcsname{\numberline{\@savenumber}%
-%		{\hyper@linkstart{link}{\Hy@tocdestname}\@gettitle{#2}\hyper@linkend}
-%		\egroup}{}%
-%	\else
-%	\csname l@#1\endcsname{\numberline{\@savenumber}%
-%		{\hyper@linkstart{link}{\Hy@tocdestname}\@gettitle{#2}\hyper@linkend}
-%	}{%
-%		\hyper@linkstart{link}{\Hy@tocdestname}{#3}\hyper@linkend
-%	}%
-%	\fi
-%	\fi
-%	\fi
-%}

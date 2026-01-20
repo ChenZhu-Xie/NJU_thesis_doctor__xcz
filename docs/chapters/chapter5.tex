@@ -2,6 +2,8 @@
 
 \marginLeft[-2.4em]{chap:NLAST}\chapter{任意 \texorpdfstring{$\chi ( \bar{r} )$}{$\text{χ} ( \bar{r} )$} 材料中的（标量）非线性角谱理论}\label{chap:NLAST}
 
+\bref{chap:NLAST}
+
 在\textcolor{Maroon}{非线性角谱}之前，求解\textcolor{Plum}{非线性}光学衍射过程所\textbf{面临的问题}有二。
 
 {\one} 如果不把\textcolor{Plum}{微-积分方程} \bref{eq:up-scalar-g-EE-312-discrete-convolution4,eq:Born_approx-scalar-g-E-12-convolution4} 沿 $\mathcolor{gray}{z}$ \textcolor{Plum}{定积分}，那么在\textcolor{gray}{纵向}上，一般进行\textcolor{Maroon}{分步傅立叶变换}（\textcolor{Maroon}{split-step Fourier transform}, \textcolor{Maroon}{SSF}）\cite{ellenbogenNonlinearGenerationManipulation2009,saltielCerenkovTypeSecondHarmonicGeneration2009, barsiImagingNonlinearMedia2009, trajtenberg-millsSimulatingCorrelationsStructured2020, rozenbergInverseDesignSpontaneous2022, yesharimObservationAllopticalStern2022}、$\mathcolor{gray}{\bar{k}_{\symup{\rho}}}$ \textcolor{gray}{空间}\textcolor{Maroon}{龙格库塔法}（\textcolor{Maroon}{Runge-Kutta methods}, \textcolor{Maroon}{RK}）\cite{zhangFullyVectorialSimulation2016,zhongKdomainMethodFast2020}迭代求解\textcolor{Plum}{非齐次}\textcolor{NavyBlue}{有源}偏微分方程。—— 这些方法的\textcolor{Plum}{缺点}\Footnote{此外，它还有一个缺点，就是没有统一的\textcolor{Plum}{迭代格式}，\textcolor{Plum}{具体算法}在实施时会\textbf{因人而异}（比如，\textcolor{NavyBlue}{场衍射传播}和\textcolor{NavyBlue}{源驱动的场增量}分别各自应实施在\textcolor{gray}{倒空间}还是在\textcolor{gray}{正空间}？）。相应地，\textcolor{Plum}{误差分析}也没有统一的标准。}是：为了保证\textcolor{Plum}{精度}，同时受\textcolor{gray}{正空间}\textcolor{NavyBlue}{调制结构}的\textcolor{Plum}{最小线宽}、算法在\textcolor{gray}{倒空间}的\textcolor{Plum}{低速度精度积}限制，\textcolor{Maroon}{SSF} 以及 $\mathcolor{gray}{\bar{k}_{\symup{\rho}}}$\textcolor{gray}{-space} \textcolor{Maroon}{RK} 的每一步的\textcolor{Plum}{步长}必须足够小\Footnote{此外，\textcolor{Plum}{步长}可取到的\textcolor{Plum}{最大值}的\textcolor{Plum}{数学定义}较为模糊：即缺乏\textcolor{Plum}{不显著牺牲精度}的\textcolor{Plum}{最大步长}的\textcolor{Plum}{显式表达式}。}，从而导致对于\textcolor{NavyBlue}{长调制区域}，需要进行\textcolor{Plum}{较多步数}的\textbf{迭代计算}。
@@ -16,9 +18,11 @@
 
 \textcolor{Maroon}{非线性角谱}的\textbf{核心技巧}即“先入世后出世再入世”般“二渡赤水”（\textcolor{Maroon}{ZigZag}?）：既然 $\text{sinc} \left( x \right)$ 本身无法分解为 $\mathbb{e}$ 指数之和及 $\mathbb{e}$ 指数之积的排列组合\Footnote{进而分配与对应的初始电场标量\textcolor{Maroon}{时空谱} $\xint{{}^{}_{\mathcolor{gray}{-}}}{10}{g}^{\;\! \textcolor{PineGreen}{\hat{1}}}_{\;\! \hat{1} \mathcolor{gray}{0}} \left( \mathcolor{gray}{\bar{k}_{1\symup{\rho}}} \right), \xint{{}^{}_{\mathcolor{gray}{-}}}{10}{g}^{\;\! \textcolor{PineGreen}{\hat{2}}}_{\;\! \hat{2} \mathcolor{gray}{0}} \left( \mathcolor{gray}{\bar{k}_{2\symup{\rho}}} \right)$ 分别相乘，以最终可化简为\textcolor{Plum}{线性卷积}。}，那 $\text{sinc} \left( x \right)$ 函数的各种近似呢？它们有无可能分解为 $\mathbb{e}$ 指数之和及 $\mathbb{e}$ 指数之积的排列组合？
 
-\marginLeft[-2.4em]{sec:NLAST_match}\section{\textcolor{Maroon}{Matched} 匹配型非线性角谱 \textcolor{Maroon}{NLAST}}\label{sec:NLAST_match}
+\marginLeft[-2.4em]{sec:NLCOV_chord}\section{\textcolor{Maroon}{Chord} 级数替换非线性卷积核 \textcolor{Maroon}{Sinc}}\label{sec:NLCOV_chord}
 
 由于大多数\textcolor{Plum}{非线性}过程被当作\textcolor{gray}{频率转换}的工具，自然期望该过程的\textcolor{NavyBlue}{转换效率}较高；因此相比\textcolor{PineGreen}{失配}\textcolor{Plum}{解}，人们更关注\textcolor{NavyBlue}{波矢}/\textcolor{PineGreen}{相位匹配}情况下的\textcolor{Plum}{解析解}。
+
+在得到该\textcolor{Plum}{解析解}（见 \bref{sec:NLAST_match}）之前，需要先找到一些数学\textcolor{Plum}{函数}或\textcolor{Plum}{级数}，以在\textcolor{Plum}{有限区间}内\textcolor{Plum}{无限精度}地近似 Sinc 函数。
 
 \marginLeft[-2.4em]{ssec:NLAST_sinc_series}\subsection{Sinc 函数的 Maclaurin 和 Padé 级数}\label{ssec:NLAST_sinc_series}
 
@@ -181,9 +185,9 @@ ${\textcolor{NavyBlue}{J}} = \textcolor{NavyBlue}{4}$ 及其他\textcolor{gray}{
 
 接下来将用上述 \textcolor{Maroon}{chord 级数} 替换各式（即 \bref{eq:up-scalar-g-EE-312-discrete-since2,eq:down-scalar-g-EE-132-discrete-Since,eq:Born_approx-scalar-g-E-12-since5}）中的 $\text{sinc} \left( x \right)$ \textcolor{Plum}{卷积核}，并对\textcolor{Plum}{非线性} \textcolor{Maroon}{Chord 级数} \textcolor{Plum}{卷积核} 进行 \textcolor{Plum}{线性化}，以解析\textcolor{Plum}{非线性}光学\textcolor{NavyBlue}{动力学过程}底层运行的，大量此类\textcolor{Plum}{非线性卷积}积分。
 
-\marginLeft[-2.4em]{ssec:NLAST_chord}\subsection{非线性 Chord 级数 卷积核 的 线性化}\label{ssec:NLAST_chord}
+\marginLeft[-2.4em]{sec:NLAST_match}\section{\textcolor{Maroon}{Matched} 匹配型非线性角谱 \textcolor{Maroon}{NLAST}}\label{sec:NLAST_match}
 
-\marginLeft[-2.4em]{sssec:NLAST_match_SFG}\subsubsection{\textcolor{Maroon}{SFG} 和频过程的匹配型 \textcolor{Maroon}{NLAST}}\label{sssec:NLAST_match_SFG}
+\marginLeft[-2.4em]{ssec:NLAST_match_SFG}\subsection{SFG 和频过程的匹配型 NLAST}\label{ssec:NLAST_match_SFG}
 
 一方面，将 \bref{eq:since-chord} 的\textcolor{Plum}{级数}/\textcolor{NavyBlue}{交流}/\textcolor{Plum}{余弦}部分 $\dfrac{a^{\textcolor{NavyBlue}{j}}}{2} \cdot \mathbb{e}^{\mathbb{i} {\frac{b_{\textcolor{NavyBlue}{j}} \pm 1}{b_{\textcolor{NavyBlue}{j}}}} x}$，代入\textcolor{Maroon}{和频}标量\textcolor{Maroon}{时空谱}耦合波方程的\textcolor{Plum}{非线性卷积解} \bref{eq:up-scalar-g-EE-312-discrete-since2}，得到 $\xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\! \textcolor{PineGreen}{\hat{3}}}_{\;\! \mathcolor{gray}{z}}$ 的\textcolor{NavyBlue}{交流项} $\xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\! \textcolor{PineGreen}{\hat{3}}}_{\;\! \mathcolor{gray}{z};\text{\textcolor{NavyBlue}{AC}}}$：
 \begin{subequations} \label{eq:up-scalar-g-EE-312-discrete-AC}
@@ -221,8 +225,10 @@ ${\textcolor{NavyBlue}{J}} = \textcolor{NavyBlue}{4}$ 及其他\textcolor{gray}{
 	\end{align}
 \end{subequations}
 
-\marginLeft[-2.4em]{sec:NLAST_iterate}\section{\textcolor{Maroon}{Iterative} 迭代型非线性角谱 \textcolor{Maroon}{NLAST}}\label{sec:NLAST_iterate}
+\marginLeft[-2.4em]{sssec:NLAST_match_DFG}\subsubsection{DFG 差频过程的匹配型 NLAST}\label{sssec:NLAST_match_DFG}
 
+
+\marginLeft[-2.4em]{sec:NLAST_iterate}\section{\textcolor{Maroon}{Iterative} 迭代型非线性角谱 \textcolor{Maroon}{NLAST}}\label{sec:NLAST_iterate}
 
 
 
