@@ -11,7 +11,7 @@
 
 {\two} 如果沿 $\mathcolor{gray}{z}$ \textcolor{Plum}{定积分}了，那么最终只能到达\textcolor{Plum}{非线性卷积}解 \bref{eq:up-scalar-g-EE-312-discrete-since2,eq:down-scalar-g-EE-132-discrete-Since,eq:Born_approx-scalar-g-E-12-since5}，而无法继续深入下去。—— 然而，对\textcolor{Plum}{非线性卷积}的运算，要求对 2 维 $\mathcolor{gray}{\bar{k}_{\symup{\rho}}}$ 阵列中的每一个点，都进行一次\textcolor{gray}{横向}\textcolor{Plum}{高维线性卷积}积分（维度 = 2 $\times$ \textcolor{NavyBlue}{驱动源}中的\textcolor{NavyBlue}{混频场}数量），\textcolor{Plum}{for 循环}层数 = 2 $\times$ 参与\textcolor{NavyBlue}{混频}的电场总数。这对于\textcolor{Maroon}{三波混频}过程而言，即使是单个光场的单个\textcolor{gray}{空间频率}，\textcolor{Plum}{求和}层数是 $2\times 3=6$，每层索引数 = 该维度\textcolor{Plum}{采样数} $\sim 500$，总的计算量约为 $500^6=1.5625 \times 10^{16}$ 的天文数字。
 
-综上，前、后两个旧方案\Footnote{还有一些其他算法，比如 \textcolor{Maroon}{Green 函数法}\cite{yaoWavefrontPhasemodulationControl2013, chenPhaseMatchingControlledOrbital2020}、\textcolor{Maroon}{转移矩阵法}（\textcolor{Maroon}{transfer-matrix method}, \textcolor{Maroon}{TTM}）\cite{liSecondHarmonicGeneration2007, liNonlinearFrequencyConversion2008}等。它们在起源上与\textcolor{Maroon}{非线性角谱}不严格共处于同一条谱系上，没法与\textcolor{Maroon}{非线性角谱}进行直接对比。}，分别在横、纵两个方向上，计算负担较大。
+综上，前、后两个旧方案\Footnote{还有一些其他算法，比如 \textcolor{Maroon}{Green 函数法}\cite{yaoWavefrontPhasemodulationControl2013, chenPhaseMatchingControlledOrbital2020}、\textcolor{Maroon}{转移矩阵法}（\textcolor{Maroon}{transfer-matrix method}, \textcolor{Maroon}{TTM}）\cite{liSecondHarmonicGeneration2007, liNonlinearFrequencyConversion2008}等。它们在起源上与\textcolor{Maroon}{非线性角谱}不严格共处于同一条谱系上，没法与\textcolor{Maroon}{非线性角谱}进行直接对比：\textcolor{Maroon}{Green 函数法}与\textcolor{Plum}{非线性}\textcolor{Maroon}{惠更斯菲涅尔}原理，以及\textcolor{Plum}{线性}光学中的\textcolor{PineGreen}{并矢格林函数}、一次\textcolor{Plum}{傅立叶变换}的\textcolor{Plum}{线性}\textcolor{NavyBlue}{衍射积分}处于同一条谱系；\textcolor{Maroon}{TTM} 与 \textcolor{Maroon}{NLAST} 在\textcolor{gray}{倒空间}中的相容性很好，但没有 \textcolor{Maroon}{SSF} 和 \textcolor{Maroon}{RK} 那样着重于\textcolor{Plum}{非线性}\textcolor{NavyBlue}{衍射}过程。}，分别在\textcolor{gray}{横}、\textcolor{gray}{纵}两个方向上，计算负担较大。
 
 \textcolor{Maroon}{非线性角谱}立足于\textcolor{NavyBlue}{无耦合}\textcolor{Plum}{非线性}过程的\textcolor{Plum}{非线性卷积}解 \bref{eq:up-scalar-g-EE-312-discrete-since2,eq:down-scalar-g-EE-132-discrete-Since,eq:Born_approx-scalar-g-E-12-since5}。在\textcolor{Plum}{非线性卷积}解的基础上，尝试将其转化为\textcolor{Plum}{线性卷积}，进而将其过渡到\textcolor{Plum}{傅立叶变换}。它既在\textcolor{NavyBlue}{物理}上\textcolor{Plum}{解析}了该\textcolor{Plum}{非线性卷积}过程的\textcolor{Plum}{数学本质}；又在\textcolor{NavyBlue}{工程}上，结合现代\textcolor{Maroon}{快速傅立叶变换}（\textcolor{Maroon}{Fast Fourier Transform}, \textcolor{Maroon}{FFT}）算法，在尽量不牺牲\textcolor{Plum}{精度}的前提下，大幅加快对上述\textcolor{Plum}{非线性卷积}过程的实际计算\textcolor{Plum}{速度}。
 
@@ -21,15 +21,17 @@
 
 \vspace*{-2.0em}
 
-%\marginLeft[-2.4em]{sec:NLCOV_chord}\section{\textcolor{Maroon}{Chord} 级数替换非线性卷积核 \textcolor{Maroon}{Sinc}}\label{sec:NLCOV_chord}
-
 \marginLeft[-2.4em]{sec:NLAST_match}\section{\textcolor{Maroon}{Matched} 匹配型非线性角谱 \textcolor{Maroon}{NLAST}}\label{sec:NLAST_match}
 
 由于大多数\textcolor{Plum}{非线性}过程被当作\textcolor{gray}{频率转换}的工具，自然期望该过程的\textcolor{NavyBlue}{转换效率}较高；因此相比\textcolor{PineGreen}{失配}\textcolor{Plum}{解}，人们更关注\textcolor{NavyBlue}{波矢}/\textcolor{PineGreen}{相位匹配}情况下的\textcolor{Plum}{解析解}。
 
 在得到该\textcolor{Plum}{解析解}（见 \bref{sec:NLAST_match}）之前，需要先找到一些数学\textcolor{Plum}{函数}或\textcolor{Plum}{级数}，以在\textcolor{Plum}{有限区间}内\textcolor{Plum}{无限精度}地近似 Sinc 函数。
 
-\marginLeft[-2.4em]{ssec:NLAST_sinc_series}\subsection{Sinc 函数的 Maclaurin 和 Padé 级数}\label{ssec:NLAST_sinc_series}
+%\marginLeft[-2.4em]{sec:NLCOV_chord}\section{\textcolor{Maroon}{Chord} 级数替换非线性卷积核 \textcolor{Maroon}{Sinc}}\label{sec:NLCOV_chord}
+
+\marginLeft[-2.4em]{ssec:NLCOV_chord}\subsection{Chord 级数替换非线性卷积核 Sinc}\label{ssec:NLCOV_chord}
+
+\marginLeft[-2.4em]{sssec:NLAST_sinc_series}\subsubsection{\textcolor{Plum}{Sinc} 函数的 Maclaurin 和 Padé \textcolor{Plum}{series}}\label{sssec:NLAST_sinc_series}
 
 \begin{figure}[htbp!]
 	\centering
@@ -82,9 +84,9 @@ $ 和 \textcolor{Plum}{Padé 分式} $\dfrac{{1 - \frac{7}{{60}}{x^2}}}{{1 + \fr
 	\end{tabular}
 \end{table}
 
-上\bref{tab:taylor-sinc_alternatives} 展示了这 5 个函数的\textcolor{Maroon}{麦克劳林}级数。几乎否定了所有截断的\textcolor{Maroon}{麦克劳林}（\textcolor{Plum}{原点}处的\textcolor{Maroon}{泰勒}）和\textcolor{Maroon}{帕德}（\textcolor{Maroon}{Padé}）级数，作为可分解的 $\text{sinc} \left( x \right)$ 函数在\textcolor{Plum}{原点}附近大面积（可拓展地）\textcolor{Plum}{高精度}近似的可能。还能有什么其他的\textcolor{Plum}{函数}或\textcolor{Plum}{级数}虚位以待？有的。
+上\bref{tab:taylor-sinc_alternatives} 展示了这 5 个函数的\textcolor{Maroon}{麦克劳林}（\textcolor{Maroon}{Maclaurin}）级数。几乎否定了所有截断的\textcolor{Maroon}{麦克劳林}（\textcolor{Plum}{原点}处的\textcolor{Maroon}{泰勒}）和\textcolor{Maroon}{帕德}（\textcolor{Maroon}{Padé}）级数，作为可分解的 $\text{sinc} \left( x \right)$ 函数在\textcolor{Plum}{原点}附近大面积（可拓展地）\textcolor{Plum}{高精度}近似的可能。还能有什么其他的\textcolor{Plum}{函数}或\textcolor{Plum}{级数}虚位以待？有的。
 
-\marginLeft[-2.4em]{ssec:NLAST_sinc_expand}\subsection{Sinc 函数的 Viète 无穷乘积 展开}\label{ssec:NLAST_sinc_expand}
+\marginLeft[-2.4em]{sssec:NLAST_sinc_expand}\subsubsection{\textcolor{Plum}{Sinc} 函数的 Viète 无穷乘积  \textcolor{Plum}{expansion}}\label{sssec:NLAST_sinc_expand}
 
 \begin{figure}[htbp!]
 	\centering
@@ -110,7 +112,7 @@ $ {\three} $\text{sinc} \left( x \right)$ 的\textcolor{Plum}{分数阶}\textcol
 
 \vspace*{-2.5em}
 
-\marginLeft[-2.4em]{ssec:NLAST_sinc_chord}\subsection{Sinc 函数的 Chord 和弦级数 展开}\label{ssec:NLAST_sinc_chord}
+\marginLeft[-2.4em]{sssec:NLAST_sinc_chord}\subsubsection{\textcolor{Plum}{Sinc} 函数的 Chord 和弦级数 \textcolor{Plum}{expansion}}\label{sssec:NLAST_sinc_chord}
 
 数学上，总存在一共\textcolor{Plum}{正整数} ${\textcolor{NavyBlue}{J}} \in \mathbb{N}^+$ \textcolor{Plum}{对}合适的\textcolor{Plum}{系数对} $a_{\textcolor{NavyBlue}{j}}, b_{\textcolor{NavyBlue}{j}}$ 所构成的\textcolor{Plum}{集合} $\left\{ a_{\textcolor{NavyBlue}{j}}, b_{\textcolor{NavyBlue}{j}} \right\}$，加上\textcolor{Plum}{直流偏置} $a_{\textcolor{NavyBlue}{0}}$，一共 $2{\textcolor{NavyBlue}{J}} + 1$ 个\textcolor{Plum}{待定系数}，使得可以将 $\text{sinc} \left( x \right), \text{since} \left( x \right)$ 函数在该\textcolor{Plum}{自变量范围}内
 \begin{equation} \label{eq:sinc(e)-chord-x_interval}
@@ -194,7 +196,7 @@ ${\textcolor{NavyBlue}{J}} = \textcolor{NavyBlue}{4}$ 及其他\textcolor{gray}{
 
 即使有了 \textcolor{Maroon}{Chord 级数} 来作为\textcolor{Plum}{非线性}\textcolor{Plum}{卷积核}，整个\textcolor{Plum}{卷积积分}仍然是\textcolor{Plum}{非线性}的。但 \textcolor{Maroon}{Chord 级数} 的\textcolor{Plum}{可欧拉分解}的\textcolor{Plum}{数学特征}，使得对 \textcolor{Maroon}{Chord 级数} \textcolor{Plum}{卷积核}的\textcolor{Plum}{线性化}变得可能。接下来，以三种代表性\textcolor{Plum}{非线性}过程（\bref{eq:up-scalar-g-EE-312-discrete-since2,eq:down-scalar-g-EE-132-discrete-Since,eq:Born_approx-scalar-g-E-12-since5}）为例，将\textcolor{Plum}{卷积核}替换为了\textcolor{Maroon}{Chord 级数}的\textcolor{Plum}{非线性卷积积分}转换为\textcolor{Plum}{线性卷积}，并最终落脚于级联/嵌套\textcolor{Plum}{线性傅立叶变换}。
 
-\marginLeft[-2.4em]{sssec:NLAST_match_SFG}\subsubsection{SFG 和频过程的匹配型 NLAST}\label{sssec:NLAST_match_SFG}
+\marginLeft[-2.4em]{sssec:NLAST_match_SFG}\subsubsection{\textcolor{Plum}{SFG} 和频过程的匹配型 \textcolor{Plum}{NLAST}}\label{sssec:NLAST_match_SFG}
 
 一方面，将 \bref{eq:since-chord} 的\textcolor{Plum}{级数}/\textcolor{NavyBlue}{交流}/\textcolor{Plum}{余弦}部分 $\dfrac{a^{\textcolor{NavyBlue}{j}}}{2} \cdot \mathbb{e}^{\mathbb{i} {\frac{b_{\textcolor{NavyBlue}{j}} \pm 1}{b_{\textcolor{NavyBlue}{j}}}} x}$，代入\textcolor{Maroon}{和频}标量\textcolor{Maroon}{时空谱}耦合波方程的\textcolor{Plum}{非线性卷积解} \bref{eq:up-scalar-g-EE-312-discrete-since2}，得到 $\xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\! \textcolor{PineGreen}{\hat{3}}}_{\;\! \mathcolor{gray}{z}}$ 的\textcolor{NavyBlue}{交流项} $\xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\! \textcolor{PineGreen}{\hat{3}}}_{\;\! \mathcolor{gray}{z};\text{\textcolor{NavyBlue}{AC}}}$：
 \begin{subequations} \label{eq:up-scalar-g-EE-312-discrete-AC}
@@ -231,7 +233,7 @@ ${\textcolor{NavyBlue}{J}} = \textcolor{NavyBlue}{4}$ 及其他\textcolor{gray}{
 	\end{align}
 \end{subequations}
 
-\marginLeft[-2.4em]{sssec:NLAST_match_DFG}\subsubsection{DFG 差频过程的匹配型 NLAST}\label{sssec:NLAST_match_DFG}
+\marginLeft[-2.4em]{sssec:NLAST_match_DFG}\subsubsection{\textcolor{Plum}{DFG} 差频过程的匹配型 \textcolor{Plum}{NLAST}}\label{sssec:NLAST_match_DFG}
 
 同样，对于\textcolor{Maroon}{差频}过程，将 \bref{eq:since-chord} 的\textcolor{Plum}{级数}/\textcolor{NavyBlue}{交流}/\textcolor{Plum}{余弦}部分 $\dfrac{a^{\textcolor{NavyBlue}{j}}}{2} \cdot \mathbb{e}^{\mathbb{i} {\frac{b_{\textcolor{NavyBlue}{j}} \pm 1}{b_{\textcolor{NavyBlue}{j}}}} x}$，代入\textcolor{Maroon}{差频}标量\textcolor{Maroon}{时空谱}耦合波方程的\textcolor{Plum}{非线性互相关解} \bref{eq:down-scalar-g-EE-132-discrete-Since}，有 $\xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\! \textcolor{PineGreen}{\hat{1}}}_{\;\! \mathcolor{gray}{z}}$ 的\textcolor{NavyBlue}{交流项}：
 \begin{subequations} \label{eq:down-scalar-g-EE-132-discrete-AC}
@@ -268,7 +270,7 @@ ${\textcolor{NavyBlue}{J}} = \textcolor{NavyBlue}{4}$ 及其他\textcolor{gray}{
 	\end{align}
 \end{subequations}
 
-\marginLeft[-2.4em]{sssec:NLAST_match-holo_L}\subsubsection{L-Scatter 线性散射的匹配型 NLAST}\label{sssec:NLAST_match-holo_L}
+\marginLeft[-2.4em]{sssec:NLAST_match-holo_L}\subsubsection{\textcolor{Plum}{L-Scatter} 线性散射的匹配型 \textcolor{Plum}{NLAST}}\label{sssec:NLAST_match-holo_L}
 
 类似地，对于\textcolor{PineGreen}{折射率}\textcolor{NavyBlue}{微扰}\textcolor{Maroon}{势散射}，将 \bref{eq:since-chord} 的\textcolor{Plum}{级数}/\textcolor{NavyBlue}{交流}/\textcolor{Plum}{余弦}部分 $\dfrac{a^{\textcolor{NavyBlue}{j}}}{2} \cdot \mathbb{e}^{\mathbb{i} {\frac{b_{\textcolor{NavyBlue}{j}} \pm 1}{b_{\textcolor{NavyBlue}{j}}}} x}$，代入\textcolor{PineGreen}{折射率}\textcolor{NavyBlue}{微扰}诱导的\textcolor{Maroon}{势散射}过程的\textcolor{Maroon}{时空谱}\textcolor{Plum}{自耦合}波动方程的\textcolor{Plum}{非线性卷积解} \bref{eq:Born_approx-scalar-g-E-12-since5}，得到 $\xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\tilde{\mathtt{g}}}^{\;\!\mathcolor{gray}{\omega} \textcolor{PineGreen}{\hat{1}}}_{\;\! \textcolor{Plum}{(i-1)} \mathcolor{gray}{z}}$ 的\textcolor{NavyBlue}{交流项} $\xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\tilde{\mathtt{g}}}^{\;\!\mathcolor{gray}{\omega} \textcolor{PineGreen}{\hat{1}} ;\text{\textcolor{NavyBlue}{AC}} }_{\;\! \textcolor{Plum}{(i-1)} \mathcolor{gray}{z}}$：
 \begin{subequations} \label{eq:Born_approx-scalar-g-E-12-discrete-AC}
@@ -309,8 +311,89 @@ ${\textcolor{NavyBlue}{J}} = \textcolor{NavyBlue}{4}$ 及其他\textcolor{gray}{
 	\end{align}
 \end{subequations}
 
+可以看出，所有\textcolor{Maroon}{Chord}-\textcolor{Plum}{级数型}\textcolor{Maroon}{非线性角谱}\textcolor{Plum}{解}的\textcolor{Plum}{线性}\textcolor{NavyBlue}{衍射}的\textcolor{NavyBlue}{相位}部分，在某种程度上，是参与相互作用的\textcolor{PineGreen}{波矢}、\textcolor{NavyBlue}{倒格矢}的\textcolor{Plum}{算术平均}，所构成的新混合\textcolor{PineGreen}{波矢}，在\textcolor{PineGreen}{晶体}内的\textcolor{NavyBlue}{衍射}贡献的；原本的\textcolor{Plum}{线性}\textcolor{PineGreen}{衍射相位}的\textcolor{Plum}{权重}只占约\textcolor{Plum}{一半}左右($\pm,\mp$)。
+
+\marginLeft[-2.4em]{ssec:NLAST_speed_accuracy_product}\subsection{NLAST 算法的 速度精度积}\label{ssec:NLAST_speed_accuracy_product}
+
+在特定\textcolor{Plum}{步长} $\mathcolor{gray}{\Delta z}$ 和具体\textcolor{PineGreen}{匹配}程度 $\textcolor{Plum}{\left|\textcolor{black}{\Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}}\right|_{\max}}$\Footnote{通常由参与\textcolor{gray}{混频}的各场，其（标量）\textcolor{Maroon}{时空谱}们 $\left\{ \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\! \textcolor{PineGreen}{\hat{\jmath}}}_{\;\! \mathcolor{gray}{z}} \right\}$，在\textcolor{gray}{倒空间}的 \textcolor{NavyBlue}{Spectrum 宽度}（的组合）决定。} 下，\textcolor{Maroon}{和弦级数} \bref{eq:sinc-chord} 的\textcolor{NavyBlue}{项} $\textcolor{NavyBlue}{J}$ 在超过某一\textcolor{Plum}{正整数}后（见 \bref{eq:sinc(e)-chord-x_interval}），\textcolor{Plum}{计算结果}将完全准确且保持不变（即与 $\textcolor{NavyBlue}{J}$ 无关）；因此对于任何实际情况，$\textcolor{NavyBlue}{J}$ 都是有限的\Footnote{只要 $\textcolor{NavyBlue}{J}$ 取得够大，足以覆盖任何情况，包括\textcolor{PineGreen}{完全失配}。}，对应 $\textcolor{NavyBlue}{J}$ 的取值是某个\textcolor{Plum}{正整数}\Footnote{\textcolor{Plum}{半开集}的\textcolor{Plum}{下限}为最佳，而不是更大或\textcolor{Plum}{无限大}。}，这也就意味着为保证该\textcolor{Plum}{傅立叶变换解}的准确性，$\textcolor{NavyBlue}{J}$ 一般取满足
+\begin{equation} \label{eq:NLAST-accuracy-J-condition}
+	\textcolor{Plum}{\left| \textcolor{black}{\frac{ \Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}} \mathcolor{gray}{\Delta z} }{ 2 }}  \right|_{\max}} \leq \left( \textcolor{NavyBlue}{J}+1 \right) \symup{\pi}
+\end{equation}
+的最小\textcolor{Plum}{正整数}值
+\begin{subequations} \label{eq:NLAST-accuracy-J-min}
+	\begin{align}
+		\textcolor{NavyBlue}{J} = \textcolor{NavyBlue}{J}_{\textcolor{Plum}{\min}} &= \textcolor{Plum}{\lceil \textcolor{black}{\textcolor{Plum}{\left| \textcolor{black}{\frac{ \Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}} \mathcolor{gray}{\Delta z} }{ 2 \symup{\pi} }} \right|_{\max}}} \rceil} - 1 \label{eq:NLAST-accuracy-J-min-a} \\ \textcolor{NavyBlue}{J} \left( \textcolor{Plum}{\left| \textcolor{black}{\Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}} \right|_{\max}}, \mathcolor{gray}{\Delta z} \right) &= \textcolor{Plum}{\lceil \textcolor{black}{\frac{ \textcolor{Plum}{\left| \textcolor{black}{\Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}} \right|_{\max}} \mathcolor{gray}{\Delta z} }{ 2 \symup{\pi} }} \rceil} - 1 \label{eq:NLAST-accuracy-J-min-b} ~,
+	\end{align}
+\end{subequations}
+其中，\textcolor{Plum}{算符} $\textcolor{Plum}{\lceil \textcolor{black}{\cdot} \rceil}$ 表示\textcolor{Plum}{向上取整}。
+
+可以看出，为同时保证\textcolor{Plum}{精度}和\textcolor{Plum}{速度}，“\textcolor{gray}{横向阶数}”的\textcolor{Plum}{最小值} $\textcolor{NavyBlue}{J} = \textcolor{NavyBlue}{J}_{\textcolor{Plum}{\min}}$ 大致分别\textcolor{Plum}{正比于}最大\textcolor{gray}{纵向}\textcolor{PineGreen}{失配量} $\textcolor{Plum}{\left|\textcolor{black}{\Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}}\right|_{\max}}$ 和\textcolor{Plum}{步长} $\mathcolor{gray}{\Delta z}$ 这两个变量。
+
 \marginLeft[-2.4em]{sec:NLAST_iterate}\section{\textcolor{Maroon}{Iterative} 迭代型非线性角谱 \textcolor{Maroon}{NLAST}}\label{sec:NLAST_iterate}
 
+上一节（\bref{sec:NLAST_match}）主要关注\textcolor{Plum}{横向求和}，这一节主要关注\textcolor{Plum}{纵向迭代}。\textcolor{Plum}{求和}与\textcolor{Plum}{迭代}的\textbf{主要区别}在于：\textcolor{Plum}{求和}因项与项间\textcolor{NavyBlue}{无耦合}而可以\textcolor{Plum}{并行化}，\textcolor{Plum}{迭代}却反之：因\textcolor{NavyBlue}{有耦合}而无法\textcolor{Plum}{并行化}，必须按\textcolor{Plum}{顺序}执行 --- 这意味着等待，即计算时间随着计算量\textcolor{Plum}{线性增长} --- 其背后隐含着\textcolor{NavyBlue}{物理图像}不清晰、没有挖到\textcolor{NavyBlue}{动力学过程}的\textcolor{Plum}{数学内核}，以及\textcolor{Plum}{计算资源}未得到有效分配、充分利用和潜力释放。
+
+\marginLeft[-2.4em]{ssec:non-couple_NLwaveq_theorem}\subsection{单向耦合非线性波动方程的 z 向迭代 \texorpdfstring{$\parallelogram$}{▱} 定则}\label{ssec:non-couple_NLwaveq_theorem}
+
+出于求解和理解 \bref{ssec:pulse-3wavemix,ssec:CW-3wavemix,ssec:EO=LO_that_sim_NO} 中\textcolor{Plum}{高维度}\textcolor{Plum}{卷积积分}的内禀高难度，\bref{ssec:NLAST_chord} 中 \bref{sssec:NLAST_match_SFG,sssec:NLAST_match_DFG,sssec:NLAST_match-holo_L} 的\textcolor{NavyBlue}{无耦合} \textcolor{Maroon}{NLAST} \textcolor{Plum}{解}的\textcolor{Plum}{数学形式}的初步得到和\textcolor{NavyBlue}{物理图像}的后续构建（章），已经是漫漫长征，那么满足\textcolor{Maroon}{能量守恒}和\textcolor{Maroon}{曼利罗兰关系}的\textcolor{NavyBlue}{有耦合} \textcolor{Maroon}{NLAST} \textcolor{Plum}{解}则更是远在天边。
+
+因此，\textcolor{Maroon}{NLAST} 暂时 将自身局限于\textcolor{NavyBlue}{泵浦}\textcolor{Maroon}{未耗尽近似}条件 \bref{eq:Nondepleted-Pump-Approximation-discrete} 对应的\textcolor{Plum}{非线性}\textcolor{Maroon}{和频}/\textcolor{Maroon}{差频}、\textcolor{Plum}{线性}\textcolor{Maroon}{势散射}这 3 个典型的\textcolor{NavyBlue}{无耦合}场景下。
+
+\textcolor{NavyBlue}{泵浦}\textcolor{Maroon}{未耗尽近似}条件一般等价于\textcolor{NavyBlue}{无（双向）耦合}即\textcolor{NavyBlue}{单向耦合}/\textcolor{NavyBlue}{转换}条件。在这样的条件下，\textcolor{NavyBlue}{能量}是\textcolor{NavyBlue}{单向流动的}（\textcolor{NavyBlue}{基波} $\to$ \textcolor{NavyBlue}{新频率组分} or \textcolor{NavyBlue}{散射场}），以至于\textcolor{NavyBlue}{能量}是\textcolor{Maroon}{不守恒的}，因此是整个过程包括条件是\textcolor{NavyBlue}{非物理的}。
+
+但这样的“\textcolor{NavyBlue}{一阶微扰}”，既容易理解，又可以带来一些计算方便。比如，在这样的\textcolor{NavyBlue}{无（双向）耦合}条件下，（对）\textcolor{Plum}{非线性}光学过程（的计算），（不论什么算法均）理应遵循以下\textbf{“平行四边形 ▱ 法则”}\Footnote{“先$a$后$b$ $+$ 先$b$后$a$”的这种“\textcolor{NavyBlue}{（非）对易} $ab-ba$ 式”的表述，让人联想起平形四边形 ▱ 的 2 组对顶点 A,C 和 B,D ------ 对于其中一组对顶点 AC，从点 A 到点 C 有 2 种路径：{\one} 边 AB $+$ 边 BC {\two} 边 AD $+$ 边 DC。\textbf{“平行四边形 ▱ 法则”} 就是在对这两条路径产生的\textcolor{NavyBlue}{混频场}求和\cite{chenReconfigurableNonlinearPancharatnamberry2025}。注意，通常而言，这两条路径产生的\textcolor{NavyBlue}{混频场}不同，因此是二者是\textcolor{NavyBlue}{非对易}的。}：
+\begin{align} \label{eq:parallelogram-theorem}
+	\text{\textbf{\textcolor{NavyBlue}{基波}直接\textcolor{Plum}{非线性} = \textcolor{NavyBlue}{基波}先\textcolor{Plum}{非线性}后\textcolor{NavyBlue}{衍射}} + \textcolor{NavyBlue}{基波}先\textcolor{NavyBlue}{衍射}后\textcolor{Plum}{非线性}}
+\end{align}
+
+这个 \textcolor{Maroon}{theorem} 是\textbf{\textcolor{Plum}{非线性}\textcolor{Maroon}{惠更斯菲涅尔}原理}的推论，是它的\textcolor{NavyBlue}{单向耦合}、\textcolor{NavyBlue}{基波}无\textcolor{NavyBlue}{散射}无\textcolor{NavyBlue}{反射}的“\textcolor{gray}{准一维}”版本。二者的得出，都是首先出于\textcolor{NavyBlue}{物理}而非\textcolor{Plum}{数学}。
+
+\textbf{\textcolor{Plum}{非线性}\textcolor{Maroon}{惠更斯菲涅尔}原理}指出：\textbf{（某\textcolor{Plum}{面}上或）某点处的\textcolor{NavyBlue}{某频率组分}，由相同\textcolor{gray}{波长}的波，从\textcolor{Plum}{非线性}\textcolor{NavyBlue}{相互作用}区域内的各个部分（不同时地）产生后，（经过不同的推迟时长/光程）\textcolor{Plum}{线性}\textcolor{NavyBlue}{衍射}至同一个地点（或 \textcolor{Plum}{manifold}），并相干叠加\Footnote{不一定发生\textcolor{NavyBlue}{干涉}，因为\textcolor{PineGreen}{矢量光}的\textcolor{PineGreen}{偏振态}可能\textcolor{Plum}{正交}。}而成}。
+
+上述\textbf{\textcolor{Plum}{非线性}\textcolor{Maroon}{惠更斯菲涅尔}原理}，这一“更背景”地说法，只 focus \textcolor{NavyBlue}{新频率组分}（的\textcolor{NavyBlue}{产生}结果和\textcolor{NavyBlue}{衍射}，而不关心其怎么\textcolor{NavyBlue}{产生}的过程），不关心且未提到\textcolor{NavyBlue}{基波}，而 \bref{eq:parallelogram-theorem} 弥补并平衡了这一点。此外，二者对\textcolor{Maroon}{非线性系数}的分布无特殊要求（即 $\bar{\bar{\bar{\chi}}}^{\;\! \mathcolor{gray}{\omega} \mathcolor{gray}{\overbrace{\check{\symup{\jmath}}}}}_{\mathcolor{gray}{z} \textcolor{Maroon}{(2)}} \left( \textcolor{gray}{r} \right), \bar{\bar{\bar{\bar{\chi}}}}^{\;\! \mathcolor{gray}{\omega} \mathcolor{gray}{\overbrace{\check{\symup{\jmath}}}}}_{\mathcolor{gray}{z} \textcolor{Maroon}{(3)}} \left( \textcolor{gray}{r} \right)$ 等均可以是任意的）。
+
+\textbf{“平行四边形 ▱ 法则”}即 \bref{eq:parallelogram-theorem} 的\textcolor{Plum}{数学描述}是：
+\begin{align} \label{eq:parallelogram-math}
+	\xint{\mathcolor{gray}{-}}{20}{\mathtt{G}}_{\mathcolor{gray}{z}} &= \xint{\mathcolor{gray}{-}}{20}{\mathtt{G}}_{\mathcolor{gray}{z_0}} \cdot \mathbb{e}^{\mathbb{i} \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}} \left( \mathcolor{gray}{z} - {\mathcolor{gray}{z}}_{\textcolor{NavyBlue}{0}} \right)} + \Delta \xint{\mathcolor{gray}{-}}{20}{\mathtt{G}}_{\mathcolor{gray}{z_0}} ~,
+\end{align}
+其中，前一项 $\xint{\mathcolor{gray}{-}}{16}{\mathtt{G}}_{\mathcolor{gray}{z_0}} \cdot \mathbb{e}^{\mathbb{i} \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}} \left( \mathcolor{gray}{z} - {\mathcolor{gray}{z}}_{\textcolor{NavyBlue}{0}} \right)}$ 表示\textcolor{NavyBlue}{基波}\textcolor{Plum}{非线性} $\mathcolor{gray}{0} \to {\mathcolor{gray}{z}}_{\textcolor{NavyBlue}{0}}$ 所得的\textcolor{gray}{新频率组分}，后续 ${\mathcolor{gray}{z}}_{\textcolor{NavyBlue}{0}} \to \mathcolor{gray}{z}$ \textcolor{Plum}{线性}\textcolor{NavyBlue}{衍射}的部分；后一项 $\Delta \xint{\mathcolor{gray}{-}}{16}{\mathtt{G}}_{\mathcolor{gray}{z_0}}$ 表示\textcolor{NavyBlue}{衍射} $\mathcolor{gray}{0} \to {\mathcolor{gray}{z}}_{\textcolor{NavyBlue}{0}}$ 后的\textcolor{NavyBlue}{基波}，后续 ${\mathcolor{gray}{z}}_{\textcolor{NavyBlue}{0}} \to \mathcolor{gray}{z}$ \textcolor{Plum}{非线性}产生的那部分\textcolor{gray}{新频率组分}。
+
+\bref{eq:parallelogram-math} 可以视为将 \textcolor{NavyBlue}{调制区域}按 $\mathcolor{gray}{z}$ 一分为二：在 $\mathcolor{gray}{0} \sim \mathcolor{gray}{z}$ 的区间上，于 $\mathcolor{gray}{z_0}$ 处切一刀。同样的道理还可以适用于 $\mathcolor{gray}{z_0}$：在 $\mathcolor{gray}{0} \sim \mathcolor{gray}{z_0}$ 的区间上，于其中某处再切一刀。此即 \bref{eq:parallelogram-math} 中的 $\xint{\mathcolor{gray}{-}}{16}{\mathtt{G}}_{\mathcolor{gray}{z_0}}$ 本身，也可以将其 $\mathcolor{gray}{z_0}$ 视为 $\mathcolor{gray}{z}$，进而再次按照 \bref{eq:parallelogram-math} 进一步拆分 $\mathcolor{gray}{z_0}$ 和对应的 $\xint{\mathcolor{gray}{-}}{16}{\mathtt{G}}_{\mathcolor{gray}{z_0}}$。
+
+递归下去，便可得到
+
+\marginLeft[-2.4em]{sssec:NLSSF_math}\subsubsection{分步傅立叶变换的数学基础}\label{sssec:NLSSF_math}
+
+在使用这一小节的\textcolor{Plum}{级数}\textcolor{Plum}{解}，对\textcolor{Plum}{非线性}\textcolor{NavyBlue}{过程}进行实际计算时，不一定直接一步计算至\textcolor{NavyBlue}{晶体}后端面，即\textcolor{Plum}{步长}不一定为\textcolor{NavyBlue}{晶体}\textcolor{gray}{长度} $\mathcolor{gray}{z} \neq \mathcolor{gray}{L}$，而是可以每次只算 $\mathcolor{gray}{z} = {\mathcolor{gray}{\Delta z}}_{\textcolor{NavyBlue}{i}}$，通过\textcolor{gray}{纵向}\textcolor{NavyBlue}{迭代数} $\textcolor{NavyBlue}{I}$ 次\textcolor{Plum}{迭代}，得到\textcolor{NavyBlue}{晶体}后端面的\textcolor{Maroon}{时空谱}\textcolor{Plum}{分布}；具体的\textcolor{gray}{纵向}\textcolor{Plum}{迭代式}，可以是\textcolor{Maroon}{迭代型}或\textcolor{Maroon}{求和型}：
+
+
+\begin{subequations} \label{eq:NLAST-iterate-g}
+	\begin{align}
+		\xint{\mathcolor{gray}{-}}{20}{\mathtt{G}}_{\mathcolor{gray}{z}} = \xint{\mathcolor{gray}{-}}{20}{\mathtt{G}}_{\mathcolor{gray}{z_{\textcolor{NavyBlue}{I}}}} &= \xint{\mathcolor{gray}{-}}{20}{\mathtt{G}}_{\mathcolor{gray}{z_{\textcolor{NavyBlue}{I-1}}}} \cdot \mathbb{e}^{\mathbb{i} \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}} {\mathcolor{gray}{\Delta z}}_{\textcolor{NavyBlue}{I}}} + \mathbb{d} \xint{\mathcolor{gray}{-}}{20}{\mathtt{G}}_{\mathcolor{gray}{z_{\textcolor{NavyBlue}{I}}}} \label{eq:NLAST-iterate-g-a} \\ &= \left( \xint{\mathcolor{gray}{-}}{20}{\mathtt{G}}_{\mathcolor{gray}{z_{\textcolor{NavyBlue}{I-2}}}} \cdot \mathbb{e}^{\mathbb{i} \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}} {\mathcolor{gray}{\Delta z}}_{\textcolor{NavyBlue}{I-1}}} + \mathbb{d} \xint{\mathcolor{gray}{-}}{20}{\mathtt{G}}_{\mathcolor{gray}{z_{\textcolor{NavyBlue}{I-1}}}} \right) \cdot \mathbb{e}^{\mathbb{i} \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}} {\mathcolor{gray}{\Delta z}}_{\textcolor{NavyBlue}{I}}} + \mathbb{d} \xint{\mathcolor{gray}{-}}{20}{\mathtt{G}}_{\mathcolor{gray}{z_{\textcolor{NavyBlue}{I}}}} \label{eq:NLAST-iterate-g-b} \\ &= \sum^{\textcolor{NavyBlue}{I}}_{\textcolor{NavyBlue}{i}=\textcolor{NavyBlue}{1}} \mathbb{d} \xint{\mathcolor{gray}{-}}{20}{\mathtt{G}}_{\mathcolor{gray}{z_{\textcolor{NavyBlue}{i}}}} \cdot \mathbb{e}^{\mathbb{i} \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}} \left( \mathcolor{gray}{z_{\textcolor{NavyBlue}{I}}} - \mathcolor{gray}{z_{\textcolor{NavyBlue}{i}}} \right)} = \mathbb{d} \xint{\mathcolor{gray}{-}}{20}{\mathtt{G}}_{\mathcolor{gray}{z_{\textcolor{NavyBlue}{i}}}} \cdot \mathbb{e}^{\mathbb{i} \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}} \left( \mathcolor{gray}{z_{\textcolor{NavyBlue}{I}}} - \mathcolor{gray}{z_{\textcolor{NavyBlue}{i}}} \right)} \label{eq:NLAST-iterate-g-c} ~,
+	\end{align}
+\end{subequations}
+其中，\textcolor{Maroon}{爱因斯坦约定}下的\textcolor{NavyBlue}{角标} $\textcolor{NavyBlue}{i} \in \left[ \textcolor{NavyBlue}{1}, \textcolor{NavyBlue}{I} \right]$，类似 \bref{eq:sinc-chord} 中的 $\textcolor{NavyBlue}{j} \in \left[ \textcolor{NavyBlue}{1}, \textcolor{NavyBlue}{J} \right]$；此外，规定了总\textcolor{gray}{距离}（\textcolor{NavyBlue}{晶体}\textcolor{gray}{长度}）$\mathcolor{gray}{z} = \mathcolor{gray}{z_{\textcolor{NavyBlue}{I}}} = \mathcolor{gray}{L}$ 与各\textcolor{Plum}{步长} $\mathcolor{gray}{z_{\textcolor{NavyBlue}{i}}}$ 的关系
+\begin{subequations} \label{eq:NLAST-iterate-z}
+	\begin{align}
+		\mathcolor{gray}{z} = \mathcolor{gray}{z_{\textcolor{NavyBlue}{I}}} &= \mathcolor{gray}{z_{\textcolor{NavyBlue}{I-1}}} + {\mathcolor{gray}{\Delta z}}_{\textcolor{NavyBlue}{I}} \label{eq:NLAST-iterate-z-a} \\ &= \left( \mathcolor{gray}{z_{\textcolor{NavyBlue}{I-2}}} + {\mathcolor{gray}{\Delta z}}_{\textcolor{NavyBlue}{I-1}} \right) + {\mathcolor{gray}{\Delta z}}_{\textcolor{NavyBlue}{I}} \label{eq:NLAST-iterate-z-b} \\ &= \sum^{\textcolor{NavyBlue}{I}}_{\textcolor{NavyBlue}{i}=\textcolor{NavyBlue}{1}} {\mathcolor{gray}{\Delta z}}_{\textcolor{NavyBlue}{i}} \label{eq:NLAST-iterate-z-c} ~, \\ \text{where}\ \ \ \ \ \ {\mathcolor{gray}{\Delta z}}_{\textcolor{NavyBlue}{1}} &= \mathcolor{gray}{z_{\textcolor{NavyBlue}{1}}} - \mathcolor{gray}{z_{\textcolor{NavyBlue}{0}}} = \mathcolor{gray}{z_{\textcolor{NavyBlue}{1}}} \label{eq:NLAST-iterate-z-d} ~,
+	\end{align}
+\end{subequations}
+一般地，如果\textcolor{NavyBlue}{晶体}在通光方向，即\textcolor{gray}{纵向}或 $\mathcolor{gray}{z}$ 向有以 $\mathcolor{gray}{\Lambda_{\symup{z}}}$ 为\textcolor{Plum}{周期}的\textcolor{NavyBlue}{一阶}或\textcolor{NavyBlue}{二阶}\textcolor{Maroon}{非线性系数调制} $\mathcolor{gray}{M_z}$，则要求每一个\textcolor{Plum}{步长} ${\mathcolor{gray}{\Delta z}}_{\textcolor{NavyBlue}{i}}$ 都被\textcolor{gray}{纵向}\textcolor{Plum}{调制周期} $\mathcolor{gray}{\Lambda_{\symup{z}}}$ \textcolor{Plum}{整除}（定义 $"\textcolor{Plum}{\%}"$ 为“\textcolor{Plum}{整除}”\textcolor{Plum}{算符}），即
+\begin{equation} \label{eq:NLAST-iterate-mod-z}
+	{\mathcolor{gray}{\Delta z}}_{\textcolor{NavyBlue}{i}} ~\textcolor{Plum}{\%}~ \mathcolor{gray}{\Lambda_{\symup{z}}} = 0 ~, \ \ \ \text{for} \ \ \ \textcolor{NavyBlue}{i} \in \left[ \textcolor{NavyBlue}{1}, \textcolor{NavyBlue}{I} \right] ~,
+\end{equation}
+否则，可能会出现\textcolor{Plum}{数值问题}。
+
+为了简化，前 $\textcolor{NavyBlue}{I-1}$ 步或前 $\textcolor{NavyBlue}{I}$ 步的\textcolor{Plum}{步长}可统一为 $\mathcolor{gray}{\Delta z}_{\textcolor{NavyBlue}{i}} = \mathcolor{gray}{\Delta z}$，此时
+\begin{subequations} \label{eq:NLAST-iterate-step}
+	\begin{align}
+		\mathcolor{gray}{\Delta z}_{\textcolor{NavyBlue}{i}} &= \begin{cases}
+			\mathcolor{gray}{\Delta z} ~, &\quad \text{for} \ \ \ \textcolor{NavyBlue}{i} \in \left[ \textcolor{NavyBlue}{1}, \textcolor{NavyBlue}{I-1} \right]\\
+			\mathcolor{gray}{z} - \left( \textcolor{NavyBlue}{I-1} \right) \mathcolor{gray}{\Delta z} ~, &\quad \text{for} \ \ \ \textcolor{NavyBlue}{i} = \textcolor{NavyBlue}{I} \\
+		\end{cases} \label{eq:NLAST-iterate-step-a} \\ \textcolor{NavyBlue}{I} &= \textcolor{Plum}{\lceil \textcolor{black}{\frac{\mathcolor{gray}{z}}{\mathcolor{gray}{\Delta z}}} \rceil} \label{eq:NLAST-iterate-step-b} ~,
+	\end{align}
+\end{subequations}
+注意，上述 \bref{eq:NLAST-iterate-step-a} 也需要满足 \bref{eq:NLAST-iterate-mod-z}。
 
 
 \marginLeft[-2.4em]{sec:NLAST_dismatch}\section{\textcolor{Maroon}{Mismatched} 失配型非线性角谱 \textcolor{Maroon}{NLAST}}\label{sec:NLAST_dismatch}
