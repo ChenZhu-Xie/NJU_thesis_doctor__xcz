@@ -534,29 +534,62 @@ ${\textcolor{NavyBlue}{J}} = \textcolor{NavyBlue}{4}$ 及其他\textcolor{gray}{
 
 \marginLeft[-2.4em]{sec:NLAST_iterate}\section{\textcolor{Maroon}{Iterative} 迭代型非线性角谱 \textcolor{Maroon}{NLAST}}\label{sec:NLAST_iterate}
 
-从 \bref{eq:NLAST-accuracy-J-min-a} 可见，上一节的\textcolor{Plum}{级数型}\textcolor{Maroon}{非线性角谱解}，其\textcolor{Plum}{精度}同时与最大\textcolor{gray}{纵向}\textcolor{PineGreen}{波矢失配量} $\textcolor{Plum}{\left|\textcolor{black}{\Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}}\right|_{\max}}$ 和\textcolor{gray}{步长} $\mathcolor{gray}{\Delta z}$ 这两个因素有关，以至于只有当\textcolor{PineGreen}{波矢}的\textcolor{gray}{纵向}分量接近\textcolor{PineGreen}{匹配}的情况下，\textcolor{Plum}{级数解}的\textcolor{Plum}{精度速度积}才有显著的优势；对于接近\textcolor{PineGreen}{失配}，或者不太\textcolor{PineGreen}{匹配}的情况，\textcolor{Plum}{级数解}的\textcolor{Plum}{精度速度积}优势不太大（为\textcolor{Plum}{迭代}完相同的\textcolor{PineGreen}{晶体}\textcolor{gray}{长度} $\textcolor{gray}{z}$，所需的 $\textcolor{NavyBlue}{J}$ 和 $N_{\textcolor{NavyBlue}{J}}$ 以及 $\textcolor{NavyBlue}{I} \cdot N_{\textcolor{NavyBlue}{J}}$ 都太大了）；为克服这一个\textcolor{Plum}{缺点}，这一节将导出与\textcolor{gray}{纵向}\textcolor{PineGreen}{波矢失配量} $\Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}$ 几乎无关的、只与\textcolor{gray}{步长} $\mathcolor{gray}{\Delta z}$ 有关的\textcolor{Plum}{迭代型}\textcolor{Maroon}{非线性角谱解}。
+从 \bref{eq:NLAST-accuracy-J-min-a} 可见，上一节的 \textcolor{PineGreen}{Matched}/\textcolor{Maroon}{Chord 型} \textcolor{Plum}{级数型}\textcolor{Maroon}{非线性角谱解}，其\textcolor{Plum}{精度}同时与最大\textcolor{gray}{纵向}\textcolor{PineGreen}{波矢失配量} $\textcolor{Plum}{\left|\textcolor{black}{\Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}}\right|_{\max}}$ 和\textcolor{gray}{步长} $\mathcolor{gray}{\Delta z}$ 这两个因素有关，以至于只有当\textcolor{PineGreen}{波矢}的\textcolor{gray}{纵向}分量接近\textcolor{PineGreen}{匹配}的情况下，\textcolor{Plum}{级数解}的\textcolor{Plum}{精度速度积}才有显著的优势；对于接近\textcolor{PineGreen}{失配}，或者不太\textcolor{PineGreen}{匹配}的情况，\textcolor{Plum}{级数解}的\textcolor{Plum}{精度速度积}优势不太大（为\textcolor{Plum}{迭代}完相同的\textcolor{PineGreen}{晶体}\textcolor{gray}{长度} $\textcolor{gray}{z}$，所需的 $\textcolor{NavyBlue}{J}$ 和 $N_{\textcolor{NavyBlue}{J}}$ 以及 $\textcolor{NavyBlue}{I} \cdot N_{\textcolor{NavyBlue}{J}}$ 都太大了，但仍然比 \textcolor{Maroon}{SSF} 算法所需的\textcolor{Plum}{步数}小）；为克服这一个\textcolor{Plum}{缺点}，这一节将导出与\textcolor{gray}{纵向}\textcolor{PineGreen}{波矢失配量} $\Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}$ 几乎无关的、只与\textcolor{gray}{步长} $\mathcolor{gray}{\Delta z}$ 有关的\textcolor{Plum}{迭代型}\textcolor{Maroon}{非线性角谱解}。
 
-通过异于 Eq.(\ref{eq:2-258}) 的另一途径，处理\textcolor{Maroon}{和频}\textcolor{Maroon}{时空谱}\textcolor{NavyBlue}{耦合波方程}的\textcolor{Plum}{非线性卷积解} Eq.(\ref{eq:2-241b})，可得到双\textcolor{NavyBlue}{泵浦} ${\mathtt{G}}^{\symup{p}_{1}}_{z}, {\mathtt{G}}^{\symup{p}_{2}}_{z}$ \textcolor{Maroon}{未耗尽近似}条件下的，\textcolor{Maroon}{和频}\textcolor{Maroon}{时空谱}（无衍射复振幅）\textcolor{Plum}{迭代型}\textcolor{Maroon}{非线性角谱解}：
-
-
-以及\textcolor{Maroon}{和频}\textcolor{Maroon}{时空谱}（复振幅）\textcolor{Plum}{迭代型}\textcolor{Maroon}{非线性角谱解}：
-
+通过异于 \bref{eq:up-scalar-g-EE-312-discrete-SINCE} 的另一途径，处理\textcolor{NavyBlue}{连续光}\textcolor{Maroon}{和频}标量\textcolor{Maroon}{时空谱}耦合波方程的\textcolor{Plum}{非线性卷积解} \bref{eq:up-scalar-g-EE-312-discrete-since1}，可得到双\textcolor{NavyBlue}{泵浦} ${\mathtt{G}}^{\symup{p}_{1}}_{z}, {\mathtt{G}}^{\symup{p}_{2}}_{z}$ \textcolor{Maroon}{未耗尽近似}条件下的，\textcolor{Maroon}{和频}\textcolor{Maroon}{时空谱}（\textcolor{NavyBlue}{无衍射}\textcolor{PineGreen}{复振幅}）\textcolor{Plum}{迭代型}\textcolor{Maroon}{非线性角谱}\textcolor{Plum}{解}：
+\begin{subequations} \label{eq:2-282}
+	\abovedisplayskip=13pt
+	\belowdisplayskip=13pt
+	\begin{align}
+		{\mathtt{g}}^{\symup{p}_{3(12)}}_{z;\text{sinc}} &= \Upsilon^{\symup{p}_{312}}_{3z} \iiint C_{\symbf q} \iint {\mathtt{G}}^{\symup{p}_{1}}_{10} {\mathtt{G}}^{\symup{p}_{2}}_{20} \cdot \text{sinc} \left( \frac{ \Delta k^{\symup{p}_{123}}_{3\symup{z}} z }{ 2 } \right) \mathbb{e}^{\mathbb{i} \frac{ \Delta k^{\symup{p}_{123}}_{3\symup{z}} z }{ 2 }} ~ \mathbb{d}{\symbf k_{1\symup{\rho}}} \mathbb{d}{\symbf q} \label{eq:2-282a} \\ &\hspace{-3.5em} \xrightarrow[\Delta k^{\symup{p}_{123}}_{3\symup{z}} \to \Delta k^{\symup{p}_{\overline{12}3}}_{3\symup{z}}]{z\ \text{is not so big}} \Upsilon^{\symup{p}_{312}}_{3z} \iiint C_{\symbf q} \iint {\mathtt{G}}^{\symup{p}_{1}}_{10} {\mathtt{G}}^{\symup{p}_{2}}_{20} \cdot \mathbb{e}^{\mathbb{i} \frac{ \Delta k^{\symup{p}_{123}}_{3\symup{z}} z }{ 2 }} ~ \mathbb{d}{\symbf k_{1\symup{\rho}}} \mathbb{d}{\symbf q} \cdot \text{sinc} \left( \frac{ \Delta k^{\symup{p}_{\overline{12}3}}_{3\symup{z}} z }{ 2 } \right) \label{eq:2-282b} \\ &\hspace{-3.5em} \xrightarrow[\text{ignore}\ a_0]{\text{Eq.(\ref{eq:2-259})}} \frac{{\mathtt{g}}^{\symup{p}_{3(12)}}_{z;\text{DC}}}{a_0} \cdot \text{sinc} \left( \frac{ \Delta k^{\symup{p}_{\overline{12}3}}_{3\symup{z}} z }{ 2 } \right) = {\mathtt{g}}^{\symup{p}_{3(12)}}_{\frac{ z }{ 2 };\text{form}} \cdot \text{sinc} \left( \frac{ \Delta k^{\symup{p}_{\overline{12}3}}_{3\symup{z}} z }{ 2 } \right) \label{eq:2-282c}~,
+	\end{align}
+\end{subequations}
+以及\textcolor{Maroon}{和频时空谱}\textcolor{NavyBlue}{含衍射}\textcolor{PineGreen}{复振幅}\textcolor{Plum}{迭代型} \textcolor{Maroon}{NLAST} \textcolor{Plum}{解}：
+\begin{subequations} \label{eq:2-283}
+	\abovedisplayskip=13pt
+	\belowdisplayskip=13pt
+	\begin{align}
+		{\mathtt{G}}^{\symup{p}_{3(12)}}_{z;\text{sinc}} \xrightarrow[\text{ignore}\ a_0]{\text{Eq.(\ref{eq:2-261})}} &\ {\mathtt{G}}^{\symup{p}_{3(12)}}_{\frac{ z }{ 2 };\text{form}} \cdot \text{sinc} \left( \frac{ \Delta k^{\symup{p}_{\overline{12}3}}_{3\symup{z}} z }{ 2 } \right) \label{eq:2-283a}~, \\ \text{where}\ \ \ \ \text{2-D} \ \ \ \ \Delta k^{\symup{p}_{\overline{12}3}}_{3\symup{z}} :=&\ k^{\symup{p}_{\overline{12}}}_{3\symup{z}} - k^{\symup{p}_{3}}_{\symup{z}} := \overline{k}^{\symup{p}_{1}}_{\symup{z}} + \overline{k}^{\symup{p}_{2}}_{\symup{z}} + q_{\symup{z}} - k^{\symup{p}_{3}}_{\symup{z}} \label{eq:2-283b}~, \\ \text{in which}\ \ \ \ \text{0-D} \hspace{2.42em} \overline{k}^{\symup{p}_{i}}_{\symup{z}} :=&\ \frac{ \int \left| {\mathtt{G}}^{\symup{p}_{i}}_{0} \left( \symbf k_{\symup{\rho}} \right) \right|^2 k^{\symup{p}_{i}}_{\symup{z}} \left( \symbf k_{\symup{\rho}} \right) \mathbb{d}{\symbf k_{\symup{\rho}}} }{ \int \left| {\mathtt{G}}^{\symup{p}_{i}}_{0} \left( \symbf k_{\symup{\rho}} \right) \right|^2 \mathbb{d}{\symbf k_{\symup{\rho}}} } \label{eq:2-283c}~,
+	\end{align}
+\end{subequations}
 
 其中，从 Eq.(\ref{eq:2-240d}) 来看，$k^{\symup{p}_{2}}_{\symup{z}}$ 本身是 $6$ \textcolor{Plum}{维}的（$\symbf k_{3\symup{\rho}}, \symbf k_{1\symup{\rho}}, \symbf q_{\symup{\rho}}$ 的函数），\textcolor{Plum}{取平均}后\textcolor{Plum}{压缩}至现在 $\overline{k}^{\symup{p}_{2}}_{\symup{z}}$ 的 \textcolor{Plum}{0 维}；以至于 $\Delta k^{\symup{p}_{123}}_{3\symup{z}}$ 也从原来的 \textcolor{Plum}{6 维}\textcolor{Plum}{压缩}至现在 $\Delta k^{\symup{p}_{\overline{12}3}}_{3\symup{z}}$ 的 \textcolor{Plum}{2 维}。允许这样对 $k^{\symup{p}_{12}}_{3\symup{z}} \to k^{\symup{p}_{\overline{12}}}_{3\symup{z}}$ \textcolor{Plum}{取平均}的原因是，在\textcolor{PineGreen}{非紧聚焦}的情况下，\textcolor{NavyBlue}{泵浦}的\textcolor{gray}{倒空间}\textcolor{PineGreen}{发散角}不大，且能量集中于某一 $k^{\symup{p}_{i}}_{\symup{z}}$ 值附近（但在 $\symbf k_{\symup{\rho}}$ 方面不一定集中）。
 
 不对产生场的 $k^{\symup{p}_{3}}_{\symup{z}}$ \textcolor{Plum}{取平均}，是因为本身就应该/需要、且可以保留其\textcolor{Plum}{二维分布特征}，同时因其不参与\textcolor{Plum}{非线性卷积}过程而\textcolor{Plum}{可分离}；所以综合来看，对 $k^{\symup{p}_{12}}_{3\symup{z}}$ \textcolor{Plum}{取平均}但保留 $k^{\symup{p}_{3}}_{\symup{z}}$ 不变，是为了在不牺牲太大\textcolor{Plum}{精度}的前提下（保留 $k^{\symup{p}_{3}}_{\symup{z}}$ 不变），将非 $\mathbb{e}$ \textcolor{Maroon}{指数}部分，即 \textcolor{Plum}{sinc} 部分，从\textcolor{Plum}{非线性卷积}中\textcolor{Plum}{提取}出来；这样略牺牲一点\textcolor{Plum}{精度}，但至少可化为\textcolor{Plum}{线性卷积}。
 
 类似的过程，异于 Eq.(\ref{eq:2-263}) 地处理 Eq.(\ref{eq:2-244b})，可得到双\textcolor{NavyBlue}{泵浦} ${\mathtt{G}}^{\symup{p}_{3}}_{z}, {\mathtt{G}}^{\symup{p}_{2}}_{z}$ \textcolor{Maroon}{未耗尽近似}条件下的，\textcolor{Maroon}{差频}\textcolor{Maroon}{时空谱}（无衍射复振幅）\textcolor{Plum}{迭代型}\textcolor{Maroon}{非线性角谱解}：
-
-
+\begin{subequations} \label{eq:2-284}
+	\abovedisplayskip=13pt
+	\belowdisplayskip=13pt
+	\begin{align}
+		{\mathtt{g}}^{\symup{p}_{1(32)}}_{z;\text{sinc}} &= \Upsilon^{\symup{p}_{132}}_{1z} \iiint C^*_{\symbf q} \iint {\mathtt{G}}^{\symup{p}_{3}}_{30} {\mathtt{G}}^{\symup{p}_{2}*}_{20} \cdot \text{sinc} \left( \frac{ \Delta k^{\symup{p}_{321}}_{1\symup{z}} z }{ 2 } \right) \mathbb{e}^{\mathbb{i} \frac{ \Delta k^{\symup{p}_{321}}_{1\symup{z}} z }{ 2 }} ~ \mathbb{d}{\symbf k_{3\symup{\rho}}} \mathbb{d}{\symbf q} \label{eq:2-284a} \\ &\hspace{-3.5em} \xrightarrow[\Delta k^{\symup{p}_{321}}_{1\symup{z}} \to \Delta k^{\symup{p}_{\overline{32}1}}_{1\symup{z}}]{z\ \text{is not so big}} \Upsilon^{\symup{p}_{132}}_{1z} \iiint C^*_{\symbf q} \iint {\mathtt{G}}^{\symup{p}_{3}}_{30} {\mathtt{G}}^{\symup{p}_{2}*}_{20} \cdot \mathbb{e}^{\mathbb{i} \frac{ \Delta k^{\symup{p}_{321}}_{1\symup{z}} z }{ 2 }} ~ \mathbb{d}{\symbf k_{3\symup{\rho}}} \mathbb{d}{\symbf q} \cdot \text{sinc} \left( \frac{ \Delta k^{\symup{p}_{\overline{32}1}}_{1\symup{z}} z }{ 2 } \right) \label{eq:2-284b} \\ &\hspace{-3.5em} \xrightarrow[\text{ignore}\ a_0]{\text{Eq.(\ref{eq:2-264})}} \frac{{\mathtt{g}}^{\symup{p}_{1(32)}}_{z;\text{DC}}}{a_0} \cdot \text{sinc} \left( \frac{ \Delta k^{\symup{p}_{\overline{32}1}}_{1\symup{z}} z }{ 2 } \right) = {\mathtt{g}}^{\symup{p}_{1(32)}}_{\frac{ z }{ 2 };\text{form}} \cdot \text{sinc} \left( \frac{ \Delta k^{\symup{p}_{\overline{32}1}}_{1\symup{z}} z }{ 2 } \right) \label{eq:2-284c}~,
+	\end{align}
+\end{subequations}
 以及\textcolor{Maroon}{差频}\textcolor{Maroon}{时空谱}（复振幅）\textcolor{Plum}{迭代型}\textcolor{Maroon}{非线性角谱解}：
-
-
+\begin{subequations} \label{eq:2-285}
+	\abovedisplayskip=13pt
+	\belowdisplayskip=13pt
+	\begin{align}
+		{\mathtt{G}}^{\symup{p}_{1(32)}}_{z;\text{sinc}} \xrightarrow[\text{ignore}\ a_0]{\text{Eq.(\ref{eq:2-266})}} &\ {\mathtt{G}}^{\symup{p}_{1(32)}}_{\frac{ z }{ 2 };\text{form}} \cdot \text{sinc} \left( \frac{ \Delta k^{\symup{p}_{\overline{32}1}}_{1\symup{z}} z }{ 2 } \right) \label{eq:2-285a} ~, \\ \text{where}\ \ \ \ \text{2-D}\ \ \ \ \Delta k^{\symup{p}_{\overline{32}1}}_{1\symup{z}} :=&\ k^{\symup{p}_{\overline{32}}}_{1\symup{z}} - k^{\symup{p}_{1}}_{\symup{z}} := \overline{k}^{\symup{p}_{3}}_{\symup{z}} - \overline{k}^{\symup{p}_{2}}_{\symup{z}} - q_{\symup{z}} - k^{\symup{p}_{1}}_{\symup{z}} \label{eq:2-285b} ~, \\ \text{in which} \ \ \ \ \text{0-D} \hspace{2.42em} \overline{k}^{\symup{p}_{i}}_{\symup{z}} :=&\ \frac{ \int \left| {\mathtt{G}}^{\symup{p}_{i}}_{0} \right|^2 k^{\symup{p}_{i}}_{\symup{z}} ~ \mathbb{d}{\symbf k_{\symup{\rho}}} }{ \int \left| {\mathtt{G}}^{\symup{p}_{i}}_{0} \right|^2 \mathbb{d}{\symbf k_{\symup{\rho}}} } \label{eq:2-285c}~.
+	\end{align}
+\end{subequations}
 
 同样的手法，异于 Eq.(\ref{eq:2-267}) 地处理 Eq.(\ref{eq:2-252b})，可得到单\textcolor{NavyBlue}{泵浦} ${\mathtt{G}}^{\symup{p}_{n-1}}_{z}$ \textcolor{Maroon}{未耗尽近似}条件下的，\textcolor{PineGreen}{折射率微扰}诱导的\textcolor{Maroon}{势散射}过程的\textcolor{Maroon}{时空谱}（无衍射复振幅）\textcolor{Plum}{迭代型}\textcolor{Maroon}{非线性角谱解}：
-
+\begin{subequations} \label{eq:2-286}
+	\abovedisplayskip=13pt
+	\belowdisplayskip=13pt
+	\begin{align}
+		{\mathtt{g}}^{\symup{p}_{n(,n-1)}}_{z;\text{sinc}} &= \Upsilon^{\symup{p}_{n,n-1}}_{nz} \iiint C_{\symbf q} {\mathtt{G}}^{\symup{p}_{n-1}}_{n-1,0} \cdot \text{sinc} \left( \frac{ \Delta k^{\symup{p}_{n-1,n}}_{n\symup{z}} z }{ 2 } \right) \mathbb{e}^{\mathbb{i} \frac{ \Delta k^{\symup{p}_{n-1,n}}_{n\symup{z}} z }{ 2 }} ~ \mathbb{d}{\symbf q} \label{eq:2-286a} \\ &\hspace{-3.5em} \xrightarrow[\Delta k^{\symup{p}_{n-1,n}}_{n\symup{z}} \to \Delta k^{\symup{p}_{\overline{n-1},n}}_{n\symup{z}}]{z\ \text{is not so big}} \Upsilon^{\symup{p}_{n,n-1}}_{nz} \iiint C_{\symbf q} {\mathtt{G}}^{\symup{p}_{n-1}}_{n-1,0} \cdot \mathbb{e}^{\mathbb{i} \frac{ \Delta k^{\symup{p}_{n-1,n}}_{n\symup{z}} z }{ 2 }} ~ \mathbb{d}{\symbf q} \cdot \text{sinc} \left( \frac{ \Delta k^{\symup{p}_{\overline{n-1},n}}_{n\symup{z}} z }{ 2 } \right) \label{eq:2-286b} \\ &\hspace{-3.5em} \xrightarrow[\text{ignore}\ a_0]{\text{Eq.(\ref{eq:2-268})}} \frac{{\mathtt{g}}^{\symup{p}_{n(,n-1)}}_{z;\text{DC}}}{a_0} \cdot \text{sinc} \left( \frac{ \Delta k^{\symup{p}_{\overline{n-1},n}}_{n\symup{z}} z }{ 2 } \right) = {\mathtt{g}}^{\symup{p}_{n(,n-1)}}_{\frac{ z }{ 2 };\text{form}} \cdot \text{sinc} \left( \frac{ \Delta k^{\symup{p}_{\overline{n-1},n}}_{n\symup{z}} z }{ 2 } \right) \label{eq:2-286c}~,
+	\end{align}
+\end{subequations}
 以及\textcolor{PineGreen}{折射率微扰}诱导的\textcolor{Maroon}{势散射}过程的\textcolor{Maroon}{时空谱}（复振幅）\textcolor{Plum}{迭代型}\textcolor{Maroon}{非线性角谱解}：
-
+\begin{subequations} \label{eq:2-287}
+	\abovedisplayskip=13pt
+	\belowdisplayskip=13pt
+	\begin{align}
+		\hspace{-1.8em} {\mathtt{G}}^{\symup{p}_{n(,n-1)}}_{z;\text{sinc}} \xrightarrow[\text{ignore}\ a_0]{\text{Eq.(\ref{eq:2-270})}} &\ {\mathtt{G}}^{\symup{p}_{n(,n-1)}}_{\frac{ z }{ 2 };\text{form}} \cdot \text{sinc} \left( \frac{ \Delta k^{\symup{p}_{\overline{n-1},n}}_{n\symup{z}} z }{ 2 } \right) \label{eq:2-287a}~, \\ \hspace{-1.8em} \text{where}\ \ \ \ \text{2-D}\ \ \ \ \Delta k^{\symup{p}_{\overline{n-1},n}}_{n\symup{z}} :=&\ \overline{k}^{\symup{p}_{n-1}}_{n\symup{z}} - k^{\symup{p}_{n}}_{\symup{z}} := \overline{k}^{\symup{p}_{n-1}}_{\symup{z}} + q_{\symup{z}} - k^{\symup{p}_{n}}_{\symup{z}} \label{eq:2-287b}~, \\ \hspace{-1.8em} \text{in which} \ \ \ \ \text{0-D} \hspace{2.2em} \overline{k}^{\symup{p}_{n-1}}_{\symup{z}} :=&\ \frac{ \sum_{\symbf k_{\symup{\rho}}} \left| {\mathtt{G}}^{\symup{p}_{n-1}}_{0} \right|^2 k^{\symup{p}_{n-1}}_{\symup{z}} }{ \sum_{\symbf k_{\symup{\rho}}} \left| {\mathtt{G}}^{\symup{p}_{n-1}}_{0} \right|^2 } \label{eq:2-287c}~.
+	\end{align}
+\end{subequations}
 
 
 \marginLeft[-2.4em]{sssec:NLSSF_math}\subsubsection{分步傅立叶变换的数学基础}\label{sssec:NLSSF_math}
