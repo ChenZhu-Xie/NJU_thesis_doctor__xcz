@@ -123,6 +123,8 @@
 
 \marginLeft[-2.4em]{ssec:NLCOV_chord}\subsection{Chord 级数替换非线性卷积核 Sinc}\label{ssec:NLCOV_chord}
 
+有很多数学\textcolor{Plum}{函数}或\textcolor{Plum}{级数}，在\textcolor{Plum}{原点}的\textcolor{Plum}{邻域}上，近似 $\text{sinc} \left( x \right)$ 函数。
+
 \marginLeft[-2.4em]{sssec:NLAST_sinc_series}\subsubsection{\textcolor{Plum}{Sinc} 函数的 Maclaurin 和 Padé \textcolor{Plum}{series}}\label{sssec:NLAST_sinc_series}
 
 \begin{figure}[htbp!]
@@ -206,7 +208,7 @@ $ {\three} $\text{sinc} \left( x \right)$ 的\textcolor{Plum}{分数阶}\textcol
 
 \marginLeft[-2.4em]{sssec:NLAST_sinc_chord}\subsubsection{\textcolor{Plum}{Sinc} 函数的 Chord 和弦级数 \textcolor{Plum}{expansion}}\label{sssec:NLAST_sinc_chord}
 
-数学上，总存在一共\textcolor{Plum}{正整数} ${\textcolor{NavyBlue}{J}} \in \mathbb{N}^+$ \textcolor{Plum}{对}合适的\textcolor{Plum}{系数对} $a_{\textcolor{NavyBlue}{j}}, b_{\textcolor{NavyBlue}{j}}$ 所构成的\textcolor{Plum}{集合} $\left\{ a_{\textcolor{NavyBlue}{j}}, b_{\textcolor{NavyBlue}{j}} \right\}$，加上\textcolor{Plum}{直流偏置} $a_{\textcolor{NavyBlue}{0}}$，一共 $2{\textcolor{NavyBlue}{J}} + 1$ 个\textcolor{Plum}{待定系数}，使得可以将 $\text{sinc} \left( x \right), \text{since} \left( x \right)$ 函数在该\textcolor{Plum}{自变量范围}内
+数学上，总存在一共\textcolor{Plum}{正整数} ${\textcolor{NavyBlue}{J}} \in \mathbb{N}^+$ \textcolor{Plum}{对}合适的\textcolor{Plum}{系数对} $a_{\textcolor{NavyBlue}{j}}, b_{\textcolor{NavyBlue}{j}}$ 所构成的\textcolor{Plum}{集合} $\left\{ a_{\textcolor{NavyBlue}{j}}, b_{\textcolor{NavyBlue}{j}} \right\}$，加上\textcolor{Plum}{直流偏置} $a_{\textcolor{NavyBlue}{0}}$，一共 $2{\textcolor{NavyBlue}{J}} + 1$ 个\textcolor{Plum}{待定系数}，使得可以将 $\text{sinc} \left( x \right), \text{since} \left( x \right)$ 函数在该\textcolor{Plum}{自变量范围}内\Footnote{严格来说，有效的\textcolor{Plum}{自变量}区间宽度，与 $\textcolor{NavyBlue}{J}$ 有关，不严格为 $\left( \textcolor{NavyBlue}{J}+1 \right) \symup{\pi}$，而应表示为 $\left( \textcolor{NavyBlue}{J}+f_{\textcolor{NavyBlue}{J}} \right) \symup{\pi}$。随着 $\textcolor{NavyBlue}{J}$ 的增大，其中的 $f_{\textcolor{NavyBlue}{J}}$ 会从 $f_{\textcolor{NavyBlue}{1}} = -0.3$ 到 $f_{\textcolor{NavyBlue}{2}} = 0.7$，再到 $f_{\textcolor{NavyBlue}{3}} = f_{\textcolor{NavyBlue}{4}} = \cdots = 1$，并一直缓慢上升至诸如 $f_{\textcolor{NavyBlue}{\infty}} = 2.3$。}
 \begin{align} \label{eq:sinc(e)-chord-x_interval}
 	\left| x \right| \leq \left( {\textcolor{NavyBlue}{J}}+1 \right) \symup{\pi} ~,
 \end{align}
@@ -445,7 +447,7 @@ ${\textcolor{NavyBlue}{J}} = \textcolor{NavyBlue}{4}$ 及其他\textcolor{gray}{
 
 \marginLeft[-2.4em]{ssec:NLAST_speed_accuracy_product}\subsection{Chord 型 NLAST 算法的 速度精度积}\label{ssec:NLAST_speed_accuracy_product}
 
-在特定单步\textcolor{gray}{步长} $\mathcolor{gray}{\Delta z}$ 和具体\textcolor{PineGreen}{匹配}程度 $\textcolor{Plum}{\left|\textcolor{black}{\Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}}\right|_{\max}}$\Footnote{通常由参与\textcolor{gray}{混频}的各场，其（标量）\textcolor{Maroon}{时空谱}们 $\left\{ \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\! \textcolor{PineGreen}{\hat{\jmath}}}_{\;\! \mathcolor{gray}{z}} \right\}$，在\textcolor{gray}{倒空间}的 \textcolor{NavyBlue}{Spectrum 宽度}（的组合）决定。} 下，\textcolor{Maroon}{和弦级数} \bref{eq:sinc-chord} 的\textcolor{NavyBlue}{项} $\textcolor{NavyBlue}{J}$ 在超过某一\textcolor{Plum}{正整数}后（见 \bref{eq:sinc(e)-chord-x_interval}），\textcolor{Plum}{计算结果}将完全准确且保持不变（即与 $\textcolor{NavyBlue}{J}$ 无关\Footnote{不再受益于 $\textcolor{NavyBlue}{J}$: 的增大。}）；因此对于任何实际情况，$\textcolor{NavyBlue}{J}$ 都是有限的\Footnote{只要 $\textcolor{NavyBlue}{J}$ 取得够大，足以覆盖任何情况，包括\textcolor{PineGreen}{完全失配}。}，对应 $\textcolor{NavyBlue}{J}$ 的取值是某个\textcolor{Plum}{正整数}\Footnote{\textcolor{Plum}{半开集}的\textcolor{Plum}{下限}为最佳，而不是更大或\textcolor{Plum}{无限大}。}，这也就意味着为保证该\textcolor{Plum}{傅立叶变换解}的准确性，$\textcolor{NavyBlue}{J}$ 一般取满足\Footnote{严格来说，有效的\textcolor{Plum}{自变量}区间宽度，与 $\textcolor{NavyBlue}{J}$ 有关，不严格为 $\left( \textcolor{NavyBlue}{J}+1 \right) \symup{\pi}$，而应表示为 $\left( \textcolor{NavyBlue}{J}+1_{\textcolor{NavyBlue}{J}} \right) \symup{\pi}$。随着 $\textcolor{NavyBlue}{J}$ 的增大，其中的 $1_{\textcolor{NavyBlue}{J}}$ 会从 $1_{\textcolor{NavyBlue}{1}} = -0.3$ 到 $1_{\textcolor{NavyBlue}{2}} = 0.7$，再到 $1_{\textcolor{NavyBlue}{3}} = 1_{\textcolor{NavyBlue}{4}} = \cdots = 1$，最后到 $1_{\textcolor{NavyBlue}{\infty}} = \sqrt{2}$。}
+在特定单步\textcolor{gray}{步长} $\mathcolor{gray}{\Delta z}$ 和具体\textcolor{PineGreen}{匹配}程度 $\textcolor{Plum}{\left|\textcolor{black}{\Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}}}\right|_{\max}}$\Footnote{通常由参与\textcolor{gray}{混频}的各场，其（标量）\textcolor{Maroon}{时空谱}们 $\left\{ \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{09}{\mathtt{g}}^{\;\! \textcolor{PineGreen}{\hat{\jmath}}}_{\;\! \mathcolor{gray}{z}} \right\}$，在\textcolor{gray}{倒空间}的 \textcolor{NavyBlue}{Spectrum 宽度}（的组合）决定。} 下，\textcolor{Maroon}{和弦级数} \bref{eq:sinc-chord} 的\textcolor{NavyBlue}{项} $\textcolor{NavyBlue}{J}$ 在超过某一\textcolor{Plum}{正整数}后（见 \bref{eq:sinc(e)-chord-x_interval}），\textcolor{Plum}{计算结果}将完全准确且保持不变（即与 $\textcolor{NavyBlue}{J}$ 无关\Footnote{不再受益于 $\textcolor{NavyBlue}{J}$: 的增大。}）；因此对于任何实际情况，$\textcolor{NavyBlue}{J}$ 都是有限的\Footnote{只要 $\textcolor{NavyBlue}{J}$ 取得够大，足以覆盖任何情况，包括\textcolor{PineGreen}{完全失配}。}，对应 $\textcolor{NavyBlue}{J}$ 的取值是某个\textcolor{Plum}{正整数}\Footnote{\textcolor{Plum}{半开集}的\textcolor{Plum}{下限}为最佳，而不是更大或\textcolor{Plum}{无限大}。}，这也就意味着为保证该\textcolor{Plum}{傅立叶变换解}的准确性，$\textcolor{NavyBlue}{J}$ 一般取满足
 \begin{align} \label{eq:Chord-accuracy-J-condition}
 	\textcolor{Plum}{\left| \textcolor{black}{\frac{ \Delta \xint{\begin{smallmatrix} ~ \\ {}^{}_{\mathcolor{gray}{-}} \\ ~ \end{smallmatrix}}{15}{k}_{\symup{z}} \mathcolor{gray}{\Delta z} }{ 2 }}  \right|_{\max}} \leq \left( \textcolor{NavyBlue}{J}+1 \right) \symup{\pi}
 \end{align}
@@ -542,6 +544,8 @@ ${\textcolor{NavyBlue}{J}} = \textcolor{NavyBlue}{4}$ 及其他\textcolor{gray}{
 一方面，普通个人 PC 上的计算一般更关注\textcolor{Plum}{时间复杂度} $T$ 而非\textcolor{Plum}{空间复杂度} $S$，因为内存不够；另一方面，由于此物理过程的计算性质的特殊性，似乎没法很好地通过牺牲空间储存，来换取时间上的效率显著提高？
 
 \marginLeft[-2.4em]{sec:NLAST_iterate}\section{\textcolor{Maroon}{Iterative} 迭代型非线性角谱 \textcolor{Maroon}{NLAST}}\label{sec:NLAST_iterate}
+
+\textcolor{Maroon}{迭代型} \textcolor{Maroon}{NLAST} 的灵感，来自于
 
 \marginLeft[-2.4em]{ssec:NLSSF_math}\subsection{分步傅立叶变换的数学基础}\label{ssec:NLSSF_math}
 
